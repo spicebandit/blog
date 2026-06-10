@@ -1,0 +1,141 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  type?: string;
+  pubDate?: Date;
+  updatedDate?: Date;
+}
+const { title, description, type = 'website', pubDate, updatedDate } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const SITE_NAME = '고구미 블로그'; // TODO: 블로그 이름 변경
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title === SITE_NAME ? title : `${title} | ${SITE_NAME}`}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
+
+    <!-- TODO: 서치콘솔/서치어드바이저 등록 시 발급받은 코드로 교체 -->
+    <!-- <meta name="google-site-verification" content="XXXX" /> -->
+    <!-- <meta name="naver-site-verification" content="XXXX" /> -->
+
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+
+    {pubDate && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: title,
+        description,
+        datePublished: pubDate.toISOString(),
+        dateModified: (updatedDate ?? pubDate).toISOString(),
+        url: canonical.toString(),
+      })} />
+    )}
+
+    <style is:global>
+      :root {
+        --ink: #221c2e;
+        --muted: #6d6580;
+        --accent: #7a3ff2;
+        --accent-soft: #efe8ff;
+        --line: #e8e4f0;
+        --bg: #ffffff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+          'Noto Sans KR', system-ui, sans-serif;
+        line-height: 1.75;
+        font-size: 17px;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+      header.site {
+        border-bottom: 1px solid var(--line);
+        padding: 28px 0;
+        margin-bottom: 48px;
+      }
+      header.site a.logo {
+        font-weight: 800;
+        font-size: 1.15rem;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        text-decoration: none;
+      }
+      header.site a.logo::after {
+        content: '';
+        display: inline-block;
+        width: 8px; height: 8px;
+        margin-left: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+        vertical-align: 2px;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; text-underline-offset: 3px; }
+      h1, h2, h3 { letter-spacing: -0.025em; line-height: 1.35; }
+      article h2 {
+        margin-top: 2.2em;
+        padding-left: 14px;
+        border-left: 4px solid var(--accent);
+      }
+      article img { max-width: 100%; border-radius: 8px; }
+      article code {
+        background: var(--accent-soft);
+        padding: 0.15em 0.4em;
+        border-radius: 4px;
+        font-size: 0.88em;
+      }
+      article pre { padding: 16px; border-radius: 10px; overflow-x: auto; font-size: 0.85em; }
+      article pre code { background: none; padding: 0; }
+      article blockquote {
+        margin: 1.5em 0;
+        padding: 4px 18px;
+        border-left: 4px solid var(--line);
+        color: var(--muted);
+      }
+      footer.site {
+        border-top: 1px solid var(--line);
+        margin-top: 80px;
+        padding: 32px 0 48px;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      time, .meta { color: var(--muted); font-size: 0.85rem; }
+      :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+    </style>
+    <link rel="stylesheet" as="style" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="logo" href="/">고구미 블로그</a>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        © {new Date().getFullYear()} 고구미 · <a href="/rss.xml">RSS</a>
+      </div>
+    </footer>
+  </body>
+</html>
