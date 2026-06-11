@@ -1,5 +1,5 @@
 ---
-title: "에이전틱 AI, 위임의 시대가 온다"
+title: "[1/3] 에이전틱 AI, 위임의 시대가 온다"
 description: "에이전틱 AI는 답을 주는 도구를 넘어 스스로 실행하는 주체입니다. 위임이 사람에게서 에이전트로 이동할 때 시장과 조직이 어떻게 다시 설계되는지, 3부작의 첫 글로 짚어봅니다."
 pubDate: 2026-06-11
 tags: ["에이전틱 AI", "AI 에이전트", "위임"]
@@ -7,8 +7,8 @@ tags: ["에이전틱 AI", "AI 에이전트", "위임"]
 
 에이전틱 AI(Agentic AI)는 단순히 답을 잘하는 AI가 아니라, 목표를 위임받아 스스로 실행하는 AI입니다. 지금까지의 AI가 "무엇을 할지 알려주는 도구"였다면, 에이전틱 AI는 "대신 해주는 주체"라는 점에서 차원이 다릅니다. 이 변화의 핵심은 기술의 성능이 아니라 **위임의 이동**에 있습니다. 사람이 하던 결정과 실행을 에이전트에게 넘기는 순간, 시장과 조직의 작동 방식 자체가 다시 설계됩니다. 이 글은 그 변화를 다루는 3부작 시리즈의 첫 번째 글입니다.
 
-![a computer chip with the letter a on top of it](https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzgxMTg4NDI5fDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a person's head with a circuit board in front of it](https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2FydG9vbiUyMGlsbHVzdHJhdGlvbnxlbnwxfDB8fHwxNzgxMTg4OTkwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Steve A Johnson](https://unsplash.com/@steve_j?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-persons-head-with-a-circuit-board-in-front-of-it-WhAQMsdRKMI?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 에이전틱 AI는 왜 다른가: 혁신의 주체가 바뀐다
 
@@ -36,8 +36,8 @@ tags: ["에이전틱 AI", "AI 에이전트", "위임"]
 
 ## 모든 위임의 중심에는 '하이퍼에이전트'
 
-![an abstract image of a sphere with dots and lines](https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzgxMTg4NDI5fDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Growtika](https://unsplash.com/@growtika?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/an-abstract-image-of-a-sphere-with-dots-and-lines-nGoCBxiaRO0?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Ai brain inside a lightbulb illustrates an idea.](https://images.unsplash.com/photo-1750365919971-7dd273e7b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2FydG9vbiUyMGlsbHVzdHJhdGlvbnxlbnwxfDB8fHwxNzgxMTg4OTkwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Omar:. Lopez-Rincon](https://unsplash.com/@procopiopi?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/ai-brain-inside-a-lightbulb-illustrates-an-idea-zips8ILZd04?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 이 모든 위임을 받아내는 새로운 실행 주체를 하이퍼에이전트라고 부를 수 있습니다. 단순한 개인 비서가 아니라, 고객의 목표를 통째로 위임받아 선택·운영·실행을 직접 처리하는 목표 위임형 에이전틱 AI입니다. 하이퍼에이전트의 경쟁력은 세 가지에서 나옵니다 — **전문성, 신뢰, 그리고 맥락 이해.** 비서·집사·주치의·세무사 같은 역할을 한 몸에 담은 존재라고 생각하면 이해가 쉽습니다.
 

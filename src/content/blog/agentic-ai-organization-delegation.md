@@ -1,5 +1,5 @@
 ---
-title: "에이전틱 AI 시대의 조직 변화와 1인 기업화"
+title: "[3/3] 에이전틱 AI 시대의 조직 변화와 1인 기업화"
 description: "운영을 에이전트에게 위임하면 의사결정은 빨라지고 조직은 1인 기업화됩니다. 리더의 일이 실행관리에서 기준설계로 이동하는 에이전틱 AI 시대의 조직 변화와 운영위임률을 짚어봅니다."
 pubDate: 2026-06-11
 tags: ["에이전틱 AI", "조직 변화", "1인 기업", "운영위임"]
@@ -13,8 +13,8 @@ tags: ["에이전틱 AI", "조직 변화", "1인 기업", "운영위임"]
 
 여기서 중요한 것은 AI가 전문가를 대체하는 것이 아니라 **역할을 재배치**한다는 점입니다. 반복 업무는 AI가 맡고, 사람은 더 본질적인 일로 이동합니다. 대체가 아니라 재배치라는 관점이 조직 설계의 출발점이 되어야 합니다.
 
-![talking people sitting beside table](https://images.unsplash.com/photo-1568992688065-536aad8a12f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtd29ya3xlbnwxfDB8fHwxNzgxMTg4NDMxfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Redd Francisco](https://unsplash.com/@reddfrancisco?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/talking-people-sitting-beside-table-PTRzqc_h1r4?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a computer screen with a drawing of two people talking to each other](https://images.unsplash.com/photo-1642132652859-3ef5a1048fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHx0ZWFtd29yayUyMGNhcnRvb24lMjBpbGx1c3RyYXRpb258ZW58MXwwfHx8MTc4MTE4OTAwMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Team Nocoloco](https://unsplash.com/@teamnocoloco?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-screen-with-a-drawing-of-two-people-talking-to-each-other-aFbs3cwlpZI?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 의사결정은 빨라지고 조직은 1인 기업화된다
 
@@ -34,8 +34,8 @@ tags: ["에이전틱 AI", "조직 변화", "1인 기업", "운영위임"]
 
 ## 운영위임률, 조직 전환의 새로운 지표
 
-![three men sitting on chair beside tables](https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtd29ya3xlbnwxfDB8fHwxNzgxMTg4NDMxfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Austin Distel](https://unsplash.com/@austindistel?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/three-men-sitting-on-chair-beside-tables-mpN7xjKQ_Ns?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a group of white robots sitting on top of laptops](https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMHdvcmtpbmclMjB3aXRoJTIwcGVvcGxlJTIwY2FydG9vbiUyMGlsbHVzdHJhdGlvbnxlbnwxfDB8fHwxNzgxMTg5MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Mohamed Nohassi](https://unsplash.com/@coopery?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-group-of-white-robots-sitting-on-top-of-laptops-2iUrK025cec?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 지금까지 조직은 KPI로 성과를 관리했습니다. 에이전틱 AI 시대에는 그다음 지표가 필요합니다. 바로 **운영위임률**입니다. 단순한 AI 사용률은 도입의 지표일 뿐이지만, 운영위임률은 조직 전환의 지표입니다. 사람이 활용하는 단계(HITL, Human-in-the-loop)를 넘어 AI가 운영을 위임받는 단계(HOTL, Human-on-the-loop)로 얼마나 이동했는지를 보여주기 때문입니다.
 
