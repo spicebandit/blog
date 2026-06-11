@@ -2,17 +2,19 @@
 /**
  * Cusdis 댓글 위젯 (정적 사이트용, 독자 로그인 불필요)
  *
- * App ID는 공개값이지만 코드에 하드코딩하지 않고 환경변수로 주입한다.
- *   - 로컬: .env 의 PUBLIC_CUSDIS_APP_ID
- *   - 배포: Vercel 프로젝트 환경변수에 PUBLIC_CUSDIS_APP_ID 등록
- * ID가 없으면 아무것도 렌더하지 않아 빌드/사이트가 깨지지 않는다.
+ * App ID는 비밀값이 아니라 페이지 HTML에 그대로 노출되는 공개 식별자다.
+ * 따라서 기본값을 코드에 두어 별도 설정 없이 배포에서 바로 동작하게 하고,
+ * 환경변수(PUBLIC_CUSDIS_APP_ID)가 있으면 그 값이 우선하도록 한다.
+ * 값이 전혀 없으면 아무것도 렌더하지 않아 빌드/사이트가 깨지지 않는다.
  */
+const CUSDIS_APP_ID = '71e4c2f8-54af-4d19-824d-aba38787c7e9';
+
 interface Props {
   pageId: string;
   pageTitle: string;
 }
 const { pageId, pageTitle } = Astro.props;
-const appId = import.meta.env.PUBLIC_CUSDIS_APP_ID;
+const appId = import.meta.env.PUBLIC_CUSDIS_APP_ID || CUSDIS_APP_ID;
 const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 {appId && (
