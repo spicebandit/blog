@@ -8,7 +8,7 @@ interface Props {
 }
 const { title, description, type = 'website', pubDate, updatedDate } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const SITE_NAME = '고구미 블로그'; // TODO: 블로그 이름 변경
+const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
 ---
 <!doctype html>
 <html lang="ko">
@@ -126,7 +126,7 @@ const SITE_NAME = '고구미 블로그'; // TODO: 블로그 이름 변경
   <body>
     <header class="site">
       <div class="wrap">
-        <a class="logo" href="/">고구미 블로그</a>
+        <a class="logo" href="/">세상은 니가 구해라</a>
       </div>
     </header>
     <main class="wrap">
