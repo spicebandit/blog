@@ -72,20 +72,33 @@ const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
         margin-bottom: 48px;
       }
       header.site a.logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         font-weight: 800;
         font-size: 1.15rem;
         letter-spacing: -0.02em;
         color: var(--ink);
         text-decoration: none;
       }
-      header.site a.logo::after {
-        content: '';
-        display: inline-block;
-        width: 8px; height: 8px;
-        margin-left: 6px;
-        border-radius: 50%;
-        background: var(--accent);
-        vertical-align: 2px;
+      header.site a.logo:hover { text-decoration: none; }
+      header.site a.logo .mascot {
+        width: 30px;
+        height: 30px;
+        flex: none;
+        transform-origin: 50% 80%;
+        transition: transform 0.25s ease;
+      }
+      header.site a.logo:hover .mascot {
+        animation: mascot-wiggle 0.6s ease-in-out;
+      }
+      @keyframes mascot-wiggle {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-9deg); }
+        75% { transform: rotate(9deg); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        header.site a.logo:hover .mascot { animation: none; }
       }
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -127,7 +140,33 @@ const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
   <body>
     <header class="site">
       <div class="wrap">
-        <a class="logo" href="/">세상은 니가 구해라</a>
+        <a class="logo" href="/">
+          <span>세상은 니가 구해라</span>
+          <svg class="mascot" viewBox="0 0 64 64" role="img" aria-label="말티푸 마스코트">
+            <!-- 귀 -->
+            <ellipse cx="15" cy="39" rx="9" ry="13" fill="#e7b083"/>
+            <ellipse cx="49" cy="39" rx="9" ry="13" fill="#e7b083"/>
+            <!-- 복슬복슬 머리(겹친 원으로 솜털 느낌) -->
+            <g fill="#fbf4ea" stroke="#ecc9a3" stroke-width="1.6">
+              <circle cx="23" cy="21" r="9"/>
+              <circle cx="41" cy="21" r="9"/>
+              <circle cx="32" cy="15" r="9"/>
+              <circle cx="17" cy="32" r="10"/>
+              <circle cx="47" cy="32" r="10"/>
+              <circle cx="32" cy="35" r="15"/>
+            </g>
+            <!-- 눈 -->
+            <circle cx="25.5" cy="33" r="3.1" fill="#4a3b34"/>
+            <circle cx="38.5" cy="33" r="3.1" fill="#4a3b34"/>
+            <circle cx="26.6" cy="31.9" r="1" fill="#fff"/>
+            <circle cx="39.6" cy="31.9" r="1" fill="#fff"/>
+            <!-- 코 -->
+            <ellipse cx="32" cy="41" rx="3.3" ry="2.5" fill="#4a3b34"/>
+            <!-- 입 -->
+            <path d="M32 43.5 q-3.2 3.8 -6.2 1.6 M32 43.5 q3.2 3.8 6.2 1.6"
+              stroke="#4a3b34" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </a>
       </div>
     </header>
     <main class="wrap">
