@@ -1,0 +1,45 @@
+---
+/**
+ * Cusdis 댓글 위젯 (정적 사이트용, 독자 로그인 불필요)
+ *
+ * App ID는 공개값이지만 코드에 하드코딩하지 않고 환경변수로 주입한다.
+ *   - 로컬: .env 의 PUBLIC_CUSDIS_APP_ID
+ *   - 배포: Vercel 프로젝트 환경변수에 PUBLIC_CUSDIS_APP_ID 등록
+ * ID가 없으면 아무것도 렌더하지 않아 빌드/사이트가 깨지지 않는다.
+ */
+interface Props {
+  pageId: string;
+  pageTitle: string;
+}
+const { pageId, pageTitle } = Astro.props;
+const appId = import.meta.env.PUBLIC_CUSDIS_APP_ID;
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+{appId && (
+  <section class="comments">
+    <h2>댓글</h2>
+    <div
+      id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id={appId}
+      data-page-id={pageId}
+      data-page-url={pageUrl}
+      data-page-title={pageTitle}
+      data-theme="auto"
+    >
+    </div>
+    <script is:inline async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  </section>
+)}
+
+<style>
+  .comments {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+  .comments h2 {
+    font-size: 1.1rem;
+    margin: 0 0 16px;
+  }
+</style>
