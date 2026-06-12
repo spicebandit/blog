@@ -132,9 +132,15 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err.message);
-  process.exit(1);
-});
+// 직접 실행(node scripts/fetch-images.mjs ...)할 때만 main 실행.
+// 다른 스크립트가 import 할 때는 fetchImages 함수만 노출한다.
+const isDirectRun =
+  process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
+if (isDirectRun) {
+  main().catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
+}
 
 export { fetchImages };
