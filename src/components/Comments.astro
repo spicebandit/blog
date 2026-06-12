@@ -31,6 +31,46 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
     >
     </div>
     <script is:inline async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    {/* Cusdis 위젯은 iframe 안에서 [입력폼 → 댓글목록] 순서로 그려져, 폼 높이만큼
+        스크롤해야 기존 댓글이 보인다. iframe이 same-origin(srcdoc)인 점을 이용해
+        댓글 목록을 폼 위로 올려, 도착하자마자 기존 댓글이 보이게 한다.
+        접근 불가/구조 변경 시에는 조용히 기본 순서로 폴백한다. */}
+    <script is:inline>
+      (function () {
+        function reorder(doc) {
+          try {
+            var form = doc.querySelector('.grid.grid-cols-1.gap-4');
+            if (!form || !form.parentElement) return;
+            var wrapper = form.parentElement;
+            var list = Array.prototype.find.call(wrapper.children, function (c) {
+              return c !== form && c.querySelector && c.querySelector('.my-4');
+            });
+            if (!list) return; // 댓글이 없으면 폼을 그대로 위에 둔다
+            // 이미 목록이 폼 앞에 있으면 통과 (무한 이동 방지)
+            if (list.compareDocumentPosition(form) & Node.DOCUMENT_POSITION_FOLLOWING) return;
+            wrapper.insertBefore(list, form);
+          } catch (e) { /* cross-origin/구조변경 → 기본 순서 유지 */ }
+        }
+        var attached = false;
+        var timer = setInterval(function () {
+          var host = document.querySelector('#cusdis_thread iframe');
+          if (!host) return;
+          var doc;
+          try { doc = host.contentDocument; } catch (e) { clearInterval(timer); return; }
+          if (!doc || !doc.body) return;
+          reorder(doc);
+          if (!attached) {
+            attached = true;
+            try {
+              new MutationObserver(function () { reorder(doc); })
+                .observe(doc.body, { childList: true, subtree: true });
+            } catch (e) {}
+            clearInterval(timer);
+          }
+        }, 400);
+        setTimeout(function () { clearInterval(timer); }, 20000);
+      })();
+    </script>
   </section>
 )}
 
