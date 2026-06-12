@@ -2,6 +2,7 @@
 title: "블로그를 시작합니다"
 description: "Claude Code와 Astro로 만든 자동화 블로그의 첫 글. 글 생성부터 발행까지의 파이프라인을 소개합니다."
 pubDate: 2026-06-10
+category: ai
 tags: ["블로그", "자동화"]
 ---
 

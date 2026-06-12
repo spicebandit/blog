@@ -10,6 +10,8 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
    - `title`: 타겟 키워드를 앞쪽에 포함, 30자 내외
    - `description`: 80~150자 메타 디스크립션. 검색결과에 노출되는 문장이므로 클릭을 유도하는 요약
    - `pubDate`: 오늘 날짜 (YYYY-MM-DD)
+   - `category`: **필수**. `energy` / `economy` / `ai` / `life` 중 정확히 하나(영문 슬러그). 4개 외 값이거나 누락 시 빌드가 실패한다. 카테고리 정의는 `src/lib/categories.ts` 한 곳에서 관리한다.
+     - 영역 ↔ 카테고리 매핑: 에너지 글 → `energy`, 경제·경영 글 → `economy`, AI·공부 글 → `ai`, 일상/잡담 글 → `life`
    - `tags`: 2~4개
 3. 본문 SEO 규칙:
    - h2(`##`) 소제목 3개 이상, 소제목에도 연관 키워드 자연스럽게 포함

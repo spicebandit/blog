@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { categoryName } from '../lib/categories';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -13,9 +14,12 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
           {post.data.title}
         </a>
         <p style="margin: 6px 0 8px; color: var(--muted);">{post.data.description}</p>
-        <time datetime={post.data.pubDate.toISOString()}>
-          {post.data.pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
-        </time>
+        <span style="display:inline-flex; gap:10px; align-items:center;">
+          <a href={`/category/${post.data.category}/`} class="cat-chip">{categoryName(post.data.category)}</a>
+          <time datetime={post.data.pubDate.toISOString()}>
+            {post.data.pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+        </span>
       </li>
     ))}
   </ul>

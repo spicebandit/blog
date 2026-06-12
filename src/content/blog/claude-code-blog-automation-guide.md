@@ -2,6 +2,7 @@
 title: "Claude Code로 블로그 자동화 시작하기"
 description: "Claude Code로 블로그 글 작성부터 발행까지 자동화하는 방법을 단계별로 정리했습니다. Astro와 Vercel을 연결해 git push 한 번으로 배포되는 파이프라인을 만들어 보세요."
 pubDate: 2026-06-11
+category: ai
 tags: ["Claude Code", "블로그 자동화", "Astro"]
 ---
 

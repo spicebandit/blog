@@ -1,5 +1,6 @@
 ---
 import Analytics from '@vercel/analytics/astro';
+import { CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
 interface Props {
   title: string;
   description: string;
@@ -10,6 +11,15 @@ interface Props {
 const { title, description, type = 'website', pubDate, updatedDate } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
+
+const pathname = Astro.url.pathname;
+// 네비게이션 항목: 전체(홈) + 4개 카테고리
+const navItems = [
+  { href: '/', label: '전체' },
+  ...CATEGORY_SLUGS.map((slug) => ({ href: `/category/${slug}/`, label: CATEGORY_NAMES[slug] })),
+];
+const isActive = (href: string) =>
+  href === '/' ? pathname === '/' : pathname === href || pathname === href.replace(/\/$/, '');
 ---
 <!doctype html>
 <html lang="ko">
@@ -100,6 +110,49 @@ const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
       @media (prefers-reduced-motion: reduce) {
         header.site a.logo:hover .mascot { animation: none; }
       }
+      /* 카테고리 네비게이션 */
+      header.site nav.cats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 8px;
+        margin-top: 16px;
+      }
+      header.site nav.cats .cat-link {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1.2;
+        padding: 5px 11px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        white-space: nowrap;
+        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+      }
+      header.site nav.cats .cat-link:hover {
+        text-decoration: none;
+        color: var(--accent);
+        border-color: var(--accent);
+        background: var(--accent-soft);
+      }
+      header.site nav.cats .cat-link.active {
+        color: #fff;
+        background: var(--accent);
+        border-color: var(--accent);
+      }
+      /* 글 목록·상세에서 쓰는 작은 카테고리 칩 */
+      .cat-chip {
+        display: inline-block;
+        font-size: 0.78rem;
+        font-weight: 700;
+        line-height: 1;
+        padding: 4px 9px;
+        border-radius: 999px;
+        color: var(--accent);
+        background: var(--accent-soft);
+        text-decoration: none;
+      }
+      .cat-chip:hover { text-decoration: none; background: var(--accent); color: #fff; }
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; text-underline-offset: 3px; }
       h1, h2, h3 { letter-spacing: -0.025em; line-height: 1.35; }
@@ -168,6 +221,17 @@ const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
             <path d="M28 43 q5 5 11 1" stroke="#7a4a32" stroke-width="1.8" fill="none" stroke-linecap="round"/>
           </svg>
         </a>
+        <nav class="cats" aria-label="카테고리">
+          {navItems.map((item) => (
+            <a
+              href={item.href}
+              class:list={['cat-link', { active: isActive(item.href) }]}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
       </div>
     </header>
     <main class="wrap">

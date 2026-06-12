@@ -16,6 +16,15 @@
       "type": "string",
       "format": "date-time"
     },
+    "category": {
+      "type": "string",
+      "enum": [
+        "energy",
+        "economy",
+        "ai",
+        "life"
+      ]
+    },
     "tags": {
       "default": [],
       "type": "array",
@@ -34,6 +43,7 @@
   "required": [
     "title",
     "description",
-    "pubDate"
+    "pubDate",
+    "category"
   ]
 }
