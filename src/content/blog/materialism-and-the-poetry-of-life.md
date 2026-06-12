@@ -20,9 +20,6 @@ tags: ["에세이", "물질주의", "조재도", "삶"]
 
 이 전도된 욕망은 다음 세대로 고스란히 대물림된다. 하다못해 아이들에게까지 영어의 굴레를 씌워 예비 노예로 제조해낼 생각뿐이라니. 물론 언어를 배우는 일 자체가 굴레는 아니다. 다만 그것이 '더 비싸게 팔릴 나'를 만들기 위한 조기 훈련으로만 소비될 때, 배움은 호기심이 아니라 시장 가치가 된다. 아이는 세상을 사랑하는 법보다 세상에서 값을 매겨지는 법을 먼저 익힌다. 스머프가 스머프를 가가멜로 길러내는 순환, 그 안에서 우리는 모두 조금씩 가가멜이 되어 간다.
 
-![photography of green-leafed plants field during daytime](https://images.unsplash.com/photo-1573119798379-011dfedae008?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBnYXJkZW4lMjBmaWVsZCUyMGNvdW50cnlzaWRlfGVufDF8MHx8fDE3ODEyMjg3NDF8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Clay LeConey](https://unsplash.com/@clayleconey?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/photography-of-green-leafed-plants-field-during-daytime-D6gB8bVu4PE?utm_source=spice-bandit-blog&utm_medium=referral)*
-
 ## 자연을 노래하던 선순환은 어디로 갔을까
 
 한때 사람은 자연을 노래했다. 계절을 읽고, 흙을 만지고, 삶을 생각하며 살아가는 선순환이 있었다. 씨를 뿌리면 거두고, 거둔 것을 나누고, 다시 땅으로 돌려보내는 리듬. 그 안에서 사람은 자신이 거대한 생명의 순환 가운데 잠시 머무는 존재임을 알았다.
@@ -37,21 +34,18 @@ tags: ["에세이", "물질주의", "조재도", "삶"]
 
 아래에 그 시를 옮겨 둔다.
 
-> 죽은 어머니를 고추밭에 묻었다
-> 한 길 땅 속 허공에 반듯이 누워
-> 분해되어 가는 어머니
-> 푸른 햇살 되퉁기는 풋고추에 몸을 실어
-> 올여름 우리에게 싱싱하게 오신다
-> 생명은 이렇게 한 치 건너 두 치
-> 보이지 않는 길 따라
-> 목숨을 싸고 돈다
-> 고추장에 된장 듬뿍 찍어
-> 와삭, 어머니를 먹는다
-> 어머니 살을 먹는다
-> 어머니를 움켜쥐고 있는 흙의 손을 먹는다
+> 죽은 어머니를 고추밭에 묻었다\
+> 한 길 땅 속 허공에 반듯이 누워\
+> 분해되어 가는 어머니\
+> 푸른 햇살 되퉁기는 풋고추에 몸을 실어\
+> 올여름 우리에게 싱싱하게 오신다\
+> 생명은 이렇게 한 치 건너 두 치\
+> 보이지 않는 길 따라\
+> 목숨을 싸고 돈다\
+> 고추장에 된장 듬뿍 찍어\
+> 와삭, 어머니를 먹는다\
+> 어머니 살을 먹는다\
+> 어머니를 움켜쥐고 있는 흙의 손을 먹는다\
 > 얼얼하구나, 오냐, 살 수 있겠다
 >
 > ― 조재도, 「유물론」
-
-![Open book near flowering plant and window](https://images.unsplash.com/photo-1768282768597-7475cfc8ff3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxvcGVuJTIwcG9ldHJ5JTIwYm9vayUyMHF1aWV0JTIwd2luZG93fGVufDF8MHx8fDE3ODEyMjg3MjF8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Wenzy Wong](https://unsplash.com/@wenzywong?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/open-book-near-flowering-plant-and-window-RaVsBMxKoxU?utm_source=spice-bandit-blog&utm_medium=referral)*
