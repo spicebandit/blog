@@ -13,6 +13,10 @@ const blog = defineCollection({
     category: z.enum(CATEGORY_SLUGS),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    // 버니 샌더스 숏츠 아카이브(category: bernie) 전용 선택 필드
+    videoId: z.string().optional(), // 유튜브 영상 ID (중복 발행 방지 키)
+    videoUrl: z.string().optional(), // 유튜브 숏츠 링크
+    videoDate: z.string().optional(), // 유튜브 등록일자(YYYY-MM-DD)
   }),
 });
 
