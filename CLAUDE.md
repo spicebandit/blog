@@ -9,7 +9,7 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
 2. frontmatter 필수 항목:
    - `title`: 타겟 키워드를 앞쪽에 포함, 30자 내외
    - `description`: 80~150자 메타 디스크립션. 검색결과에 노출되는 문장이므로 클릭을 유도하는 요약
-   - `pubDate`: 오늘 날짜 (YYYY-MM-DD)
+   - `pubDate`: 발행 시각을 시간까지 ISO로 (예: `2026-06-13T14:30:00+09:00`). 목록은 `pubDate` 내림차순 정렬이라, **같은 날 글이 둘 이상이면 시간이 있어야 최신 글이 맨 위로** 온다. 날짜만(YYYY-MM-DD) 쓰면 같은 날끼리 순서가 섞인다.
    - `category`: **필수**. `energy` / `economy` / `ai` / `life` 중 정확히 하나(영문 슬러그). 4개 외 값이거나 누락 시 빌드가 실패한다. 카테고리 정의는 `src/lib/categories.ts` 한 곳에서 관리한다.
      - 영역 ↔ 카테고리 매핑: 에너지 글 → `energy`, 경제·경영 글 → `economy`, AI·공부 글 → `ai`, 일상/잡담 글 → `life`
    - `tags`: 2~4개
@@ -94,7 +94,7 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
 4. **글 작성**: 파일 `src/content/blog/bernie-<id>.md`. frontmatter:
    - `title`: 영상 주제를 나타내는 한국어 제목(영문 제목 참고, 30자 내외)
    - `description`: 한 줄 요약(80~150자)
-   - `pubDate`: 오늘 날짜(발행일)
+   - `pubDate`: **스크립트 출력의 `pubDateTime` 값을 그대로** 넣는다(예: `2026-06-13T14:14:14+09:00`). 같은 날 여러 글이 올라와도 시각순으로 정렬돼 최신 글이 목록 맨 위에 온다. (날짜만 넣으면 같은 날 글끼리 순서가 섞인다.)
    - `category: bernie`, `draft: false`(자동 발행)
    - `videoId: <id>`(중복 발행 방지 키 — **반드시 정확히**), `videoUrl: <url>`, `videoDate: <uploadDate>`
    - `tags`: ["버니 샌더스", 그 외 주제 태그]

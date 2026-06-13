@@ -1,7 +1,7 @@
 ---
 title: "버니의 공약, 무엇 하나 '급진적'이지 않다"
 description: "전 국민 건강보험, 최저임금 15달러, 공립대 무상교육… 버니 샌더스가 자신의 공약을 하나씩 짚으며 '이게 정말 급진적이냐'고 되묻는다."
-pubDate: 2026-06-13
+pubDate: 2026-06-13T13:45:49+09:00
 category: bernie
 draft: false
 videoId: 8LO1s0fwLgo

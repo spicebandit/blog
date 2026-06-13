@@ -55,6 +55,17 @@ const asJson = has('--json');
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** 현재 시각을 로컬 오프셋 포함 ISO(예: 2026-06-13T14:14:14+09:00)로. pubDate 정렬용. */
+function isoNowLocal() {
+  const d = new Date();
+  const pad = (n) => String(n).padStart(2, '0');
+  const off = -d.getTimezoneOffset(); // 분, 동쪽이 양수
+  const sign = off >= 0 ? '+' : '-';
+  const oh = pad(Math.floor(Math.abs(off) / 60));
+  const om = pad(Math.abs(off) % 60);
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}${sign}${oh}:${om}`;
+}
+
 // --js-runtimes node + --remote-components ejs:github:
 //   유튜브가 요구하는 JS 챌린지(n-sig)를 풀어야 자막 포맷이 누락되지 않는다.
 //   솔버 lib는 최초 1회만 내려받아 캐시된다. 이게 없으면 자막이 간헐적으로 빠진다.
@@ -284,6 +295,9 @@ function pickNextFromCache() {
 function cmdNext() {
   const { candidate, unscanned } = pickNextFromCache();
   if (candidate) {
+    // pubDate에 쓸 '지금 시각'(ISO, 로컬 오프셋 포함). 같은 날 여러 글이 올라와도
+    // 이 타임스탬프로 정렬되어 최신 글이 목록 맨 위에 온다.
+    candidate.pubDateTime = isoNowLocal();
     if (asJson) console.log(JSON.stringify(candidate, null, 2));
     else {
       console.log('━━━━━━ 다음 버니 숏츠 후보 ━━━━━━');
