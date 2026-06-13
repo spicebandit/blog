@@ -147,12 +147,50 @@ function printHuman(a) {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 }
 
+/** HTML 특수문자 이스케이프 (텔레그램 parse_mode=HTML 안전) */
+function escapeHtml(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/** 텔레그램 알림 메시지 본문 구성 */
+function buildTelegramMessage(a) {
+  const lines = [];
+  lines.push('📝 <b>오늘의 블로그 초안이 생성됐어요</b>');
+  lines.push('');
+  lines.push(`<b>제목</b>: ${escapeHtml(a.recommended.keyword)}`);
+  lines.push(`<b>카테고리</b>: ${escapeHtml(a.categoryLabel)}`);
+  lines.push(`<b>추천 키워드</b>: ${escapeHtml(a.recommended.keyword)}`);
+  lines.push('');
+  lines.push('<b>키워드 후보 3개</b>:');
+  a.candidates.forEach((c, i) => {
+    const mark = i === a.recommendedIndex ? ' ★추천' : '';
+    lines.push(`  ${i + 1}. ${escapeHtml(c.keyword)}${mark}`);
+  });
+  lines.push('');
+  lines.push(`<b>파일 경로</b>: <code>${escapeHtml(a.suggestedFile)}</code>`);
+  lines.push('');
+  lines.push('🔎 검토 후 발행하려면 Claude Code에서 확인하세요.');
+  return lines.join('\n');
+}
+
 const wantJson = process.argv.includes('--json');
 const assignment = buildAssignment();
 if (wantJson) {
   console.log(JSON.stringify(assignment, null, 2));
 } else {
   printHuman(assignment);
+  // 초안 글감 선정 결과를 텔레그램으로 알림. 실패해도 스크립트는 죽지 않게 try/catch.
+  try {
+    const { sendTelegram } = await import('./notify-telegram.mjs');
+    const result = await sendTelegram(buildTelegramMessage(assignment));
+    if (result.ok) {
+      console.log('\n📨 텔레그램 알림 전송 완료');
+    } else {
+      console.log('\n⚠️ 텔레그램 알림 전송 실패 (스크립트는 계속 진행):', result.reason);
+    }
+  } catch (err) {
+    console.log('\n⚠️ 텔레그램 알림 중 예외 (스크립트는 계속 진행):', err?.message ?? String(err));
+  }
 }
 
 export { buildAssignment, TOPIC_POOLS, DAY_CATEGORY };
