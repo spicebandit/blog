@@ -15,7 +15,7 @@ draft: false
 >
 > **시장 반응(발표 직후):** 닛케이225 +0.46%, 엔화는 달러당 **160.22엔으로 소폭 강세**(다만 여전히 160엔 위 — 한 번의 인상으로 약세 흐름이 바뀌긴 어렵다는 시장의 회의적 시각), 10년물 국채금리는 +3bp 오른 **2.615%**.
 >
-> **아직 남은 '진짜 변수':** '다음 한 걸음(7월 추가 인상 여부)'에 대한 가이던스는 우치다 신이치 부총재의 오후 3시 반(JST) 기자회견에서 나옵니다. 그 발언 내용은 회견 이후 반영하겠습니다.
+> **기자회견 결과 (우치다 부총재, 오후 3시 반 JST):** 우치다 부총재는 *"여건이 맞으면 정책금리를 계속 올리겠다"*는 기존 데이터 의존 입장을 재확인했을 뿐, **7월 추가 인상을 명시적으로 약속하지는 않았습니다.** 시장은 연내 한 차례 더(대체로 12월) 인상을 점치는 분위기입니다. 한편 BOJ는 **국채 매입 감액(테이퍼링)을 일시 중단**하고 매입 규모를 월 약 2조엔 수준으로 고정하기로 했습니다 — 긴축(금리인상) 속에 들어간 완화적 요소입니다. 엔화는 회견 이후에도 **달러당 160엔대를 유지**하며 미지근한 반응을 보였는데, '한 번의 점진적 인상'만으로는 약세 흐름을 되돌리기 어렵고 실물경기 모멘텀과 지속적 인상 경로에 대한 신뢰가 필요하다는 시장 시각이 재확인된 셈입니다. **→ 이 글 본문에서 짚은 "방향은 확실, 속도는 안갯속"이라는 구도가 그대로 확인됐습니다.**
 
 ![tokyo tower illuminated at dusk with city skyline](https://images.unsplash.com/photo-1513407030348-c983a97b98d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxCYW5rJTIwb2YlMjBKYXBhbiUyMFRva3lvfGVufDF8MHx8fDE3ODE1NjgxNDN8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Louie Martinez](https://unsplash.com/@thetalkinglens?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/tokyo-tower-illuminated-at-dusk-with-city-skyline-IocJwyqRv3M?utm_source=spice-bandit-blog&utm_medium=referral)*
