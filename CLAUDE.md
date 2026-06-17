@@ -75,35 +75,6 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
 
 **검토**: draft 글은 빌드/목록/카테고리/사이트에 노출되지 않는다(`draft` 필터). 내용 확인 후 발행한다.
 
-## 버니 샌더스 숏츠 아카이브 (12시간마다 자동 발행)
-
-버니 샌더스 공식 유튜브 채널(`@BernieSanders/shorts`)의 숏츠를 **오래된 순으로 12시간마다 하나씩** 자동 발행하는 별도 파이프라인. 각 글 = 숏츠 1개. 카테고리는 `bernie`("버니 샌더스" 메뉴).
-
-**역할 분리** (daily-draft와 동일 철학: 무거운 작업은 Node, 번역·판단은 Claude)
-- `scripts/bernie-next.mjs` (Node + yt-dlp): 영상 분류·선정만. 글은 쓰지 않음.
-  - `--scan`: 채널 전체를 한 번 분류해 `scripts/.bernie/classified.json`에 캐싱(자막 정제본·글자수·hasSpeech). 증분·재개 가능. **새 숏츠가 올라오면 가끔 다시 실행**(`--refresh` 후 `--scan`)해 큐를 갱신한다.
-  - `--json`: 캐시에서 **다음 후보 1개**(가장 오래된 미발행·연설영상)를 JSON으로 출력(네트워크 없음, 빠름). 출력 필드: `id, url, title, uploadDate, thumbnail, english, speechChars`.
-  - `--skip <id> "<사유>"`: 영상 영구 제외(`scripts/bernie-skipped.json`, 커밋됨).
-  - `--status`: 진행 현황.
-- **Claude Code** (12시간마다): 후보를 받아 **연설 여부 최종판단 → 번역 → 글 작성 → 발행**.
-
-**Claude가 매 실행 때 하는 일** (순서)
-1. `node scripts/bernie-next.mjs --json` 실행. `{"done":true}`면 종료(처리할 영상 없음).
-2. **연설 여부 최종판단**: `english` 스크립트가 **버니 샌더스 본인의 발언/연설**인지 본다. 지지자 후기·타인 인터뷰·행사 홍보 등 버니 본인 연설이 아니면 `--skip <id> "사유"`로 제외하고 1번부터 다시(다음 후보로). 자막 빈약 영상은 스크립트가 이미 걸러주지만, 내용상 부적합한 것은 여기서 거른다.
-3. **번역**: `english`(자동자막 정제본)를 자연스러운 한국어로 번역한다. 자동자막이라 오탈자·문장끊김이 있을 수 있으니 의미가 통하게 다듬되, **없는 내용을 지어내지 않는다.** 정치적 발언이므로 중립적으로 그대로 옮기고 논평을 덧붙이지 않는다.
-4. **글 작성**: 파일 `src/content/blog/bernie-<id>.md`. frontmatter:
-   - `title`: 영상 주제를 나타내는 한국어 제목(영문 제목 참고, 30자 내외) + **끝에 유튜브 등록일을 괄호로 붙인다** (예: `취임 첫날, 대마초를 합법화하겠다 (2020-02-26)`). 날짜는 `videoDate`(uploadDate)와 동일하게 `(YYYY-MM-DD)` 형식.
-   - `description`: 한 줄 요약(80~150자)
-   - `pubDate`: **스크립트 출력의 `pubDateTime` 값을 그대로** 넣는다(예: `2026-06-13T14:14:14+09:00`). 같은 날 여러 글이 올라와도 시각순으로 정렬돼 최신 글이 목록 맨 위에 온다. (날짜만 넣으면 같은 날 글끼리 순서가 섞인다.)
-   - `category: bernie`, `draft: false`(자동 발행)
-   - `videoId: <id>`(중복 발행 방지 키 — **반드시 정확히**), `videoUrl: <url>`, `videoDate: <uploadDate>`
-   - `tags`: ["버니 샌더스", 그 외 주제 태그]
-   - 본문 구성(순서): ① 맨 위 **유튜브 썸네일 이미지**(`![제목](썸네일URL)`) — 클릭 가능하게 바로 아래 `▶ [유튜브에서 보기](videoUrl)` + `🗓 등록일: <videoDate>` ② `## 🇺🇸 English` 아래 영문 스크립트 ③ `## 🇰🇷 한국어` 아래 한국어 번역 ④ 맨 아래 출처: `> 출처: 버니 샌더스 공식 유튜브 채널 [@BernieSanders](https://www.youtube.com/@BernieSanders). 영문은 유튜브 자동자막 기반이며, 한국어는 자동 번역 정리본입니다.`
-   - **이미지는 유튜브 썸네일을 그대로 쓴다**(fetch-images.mjs 사용 안 함). 썸네일이 곧 관련 이미지.
-5. **발행**: `git add . && git commit -m "bernie: <제목>" && git push`. 그 뒤 텔레그램으로 발행 알림.
-
-**자동화(12시간)**: `scripts/run-bernie.sh`를 launchd가 12시간마다 호출 → 래퍼가 `claude -p`로 위 단계를 실행. 분류 캐시(`--scan`)는 최초 1회 + 새 숏츠 생길 때만.
-
 ## 절대 하지 말 것
 - draft가 아닌 기존 글 무단 수정/삭제
 - astro.config.mjs의 site 값 변경 (사용자 승인 필요)

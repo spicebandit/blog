@@ -22,8 +22,7 @@
         "energy",
         "economy",
         "ai",
-        "life",
-        "bernie"
+        "life"
       ]
     },
     "tags": {
@@ -36,15 +35,6 @@
     "draft": {
       "default": false,
       "type": "boolean"
-    },
-    "videoId": {
-      "type": "string"
-    },
-    "videoUrl": {
-      "type": "string"
-    },
-    "videoDate": {
-      "type": "string"
     },
     "$schema": {
       "type": "string"

@@ -3,7 +3,7 @@
 // 카테고리를 추가·변경하려면 여기만 수정하면 된다.
 
 // 슬러그 순서 = 네비게이션 노출 순서. content.config.ts의 z.enum도 이 배열에서 파생된다.
-export const CATEGORY_SLUGS = ['energy', 'economy', 'ai', 'life', 'bernie'] as const;
+export const CATEGORY_SLUGS = ['energy', 'economy', 'ai', 'life'] as const;
 
 export type CategorySlug = (typeof CATEGORY_SLUGS)[number];
 
@@ -12,7 +12,6 @@ export const CATEGORY_NAMES: Record<CategorySlug, string> = {
   economy: '경제·경영',
   ai: 'AI·공부',
   life: '일상',
-  bernie: '버니 샌더스',
 };
 
 /** 슬러그를 한글 표시 이름으로 변환 */
