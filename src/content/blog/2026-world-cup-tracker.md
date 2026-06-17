@@ -2,7 +2,7 @@
 title: "2026 미국 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-17T08:00:00+09:00
+updatedDate: 2026-06-17T14:45:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -35,11 +35,14 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 .wc-sched { width:100%; border-collapse:collapse; font-size:0.9rem; }
 .wc-sched th, .wc-sched td { border-bottom:1px solid #f3f4f6; padding:7px 6px; text-align:left; }
 .wc-sched th { color:#6b7280; font-size:0.8rem; }
+.wc-sched .kst { color:#1e2761; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.wc-sched tr.kr td { background:#e7f6ef; font-weight:700; }
+.wc-sched tr.kr td:first-child { border-left:3px solid #15803d; }
 </style>
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 17일 오전 8시 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 17일 오후 2시 45분 (KST)</span>
 
 매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 미국 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -217,18 +220,23 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div></div>
 
-## 다가오는 경기 (6월 17일~)
+## 다가오는 경기 (한국시간)
 
-아래는 향후 일정입니다. 한국시간 기준 정확한 킥오프와 결과는 매일 오전 갱신됩니다.
+모든 시각은 **한국시간(KST)** 기준입니다. <b style="color:#15803d">🇰🇷 대한민국 경기</b>는 초록색으로 표시했습니다. 결과는 매일 오전 8시 갱신됩니다.
 
 <table class="wc-sched">
-<tr><th>날짜(현지)</th><th>경기</th><th>조</th></tr>
-<tr><td>6/17</td><td>🇦🇹 오스트리아 vs 🇯🇴 요르단</td><td>J</td></tr>
-<tr><td>6/17</td><td>🇵🇹 포르투갈 vs 🇨🇩 콩고DR</td><td>K</td></tr>
-<tr><td>6/17</td><td>🇺🇿 우즈베키스탄 vs 🇨🇴 콜롬비아</td><td>K</td></tr>
-<tr><td>6/17</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드 vs 🇭🇷 크로아티아</td><td>L</td></tr>
-<tr><td>6/17</td><td>🇬🇭 가나 vs 🇵🇦 파나마</td><td>L</td></tr>
+<tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
+<tr><td class="kst">6/18(목) 02:00</td><td>🇵🇹 포르투갈 vs 🇨🇩 콩고DR</td><td>K</td></tr>
+<tr><td class="kst">6/18(목) 05:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드 vs 🇭🇷 크로아티아</td><td>L</td></tr>
+<tr><td class="kst">6/18(목) 08:00</td><td>🇬🇭 가나 vs 🇵🇦 파나마</td><td>L</td></tr>
+<tr><td class="kst">6/18(목) 11:00</td><td>🇺🇿 우즈베키스탄 vs 🇨🇴 콜롬비아</td><td>K</td></tr>
+<tr><td class="kst">6/19(금) 01:00</td><td>🇨🇿 체코 vs 🇿🇦 남아공</td><td>A</td></tr>
+<tr><td class="kst">6/19(금) 04:00</td><td>🇨🇭 스위스 vs 🇧🇦 보스니아</td><td>B</td></tr>
+<tr><td class="kst">6/19(금) 07:00</td><td>🇨🇦 캐나다 vs 🇶🇦 카타르</td><td>B</td></tr>
+<tr class="kr"><td class="kst">6/19(금) 10:00</td><td>🇲🇽 멕시코 vs 🇰🇷 대한민국 ⭐</td><td>A</td></tr>
 </table>
+
+<p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
 <p class="wc-note">데이터 출처: FIFA·NBC Sports 등 공개 자료(2026-06-17 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
