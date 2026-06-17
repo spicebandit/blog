@@ -48,6 +48,8 @@ if [ "$TODAY_NUM" -ge "$END_DATE" ]; then
     echo "===== [$TS] 월드컵 종료 — 자동 갱신 해제 ====="
   } >> "$LOG_FILE" 2>&1
   node scripts/notify-telegram.mjs "🏁 2026 미국 월드컵이 끝났습니다. 트래커 자동 갱신을 종료합니다. 그동안의 기록은 블로그에 그대로 남아 있어요: https://blog-x84m.vercel.app/blog/2026-world-cup-tracker/" >> "$LOG_FILE" 2>&1
+  # 상단 공지(핀)는 빌드 시 until(7/21) 경과로 자동 숨김 → 마지막 재배포 1회를 유발해 공지를 내린다
+  git commit --allow-empty -m "chore: 월드컵 종료 — 상단 공지 자동 해제" >> "$LOG_FILE" 2>&1 && git push >> "$LOG_FILE" 2>&1
   rm -f "$PLIST"
   launchctl bootout "gui/$(id -u)/$LABEL" >/dev/null 2>&1
   exit 0
