@@ -1,0 +1,235 @@
+---
+title: "2026 미국 월드컵 한눈에 보기 — 조편성·결과·대진표"
+description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
+pubDate: 2026-06-17T08:00:00+09:00
+updatedDate: 2026-06-17T08:00:00+09:00
+category: life
+tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
+---
+
+<style>
+.wc-wrap { font-size: 0.95rem; }
+.wc-note { color:#6b7280; font-size:0.85rem; margin:.3em 0 1.2em; }
+.wc-updated { display:inline-block; background:#eef2ff; color:#3730a3; border-radius:6px; padding:4px 10px; font-size:0.85rem; font-weight:600; }
+.wc-groups { display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:14px; margin:1em 0 1.5em; }
+.wc-group { border:1px solid #e5e7eb; border-radius:10px; padding:10px 12px; background:#fff; }
+.wc-group h3 { margin:.1em 0 .5em; font-size:1rem; color:#1e2761; border-bottom:2px solid #eef2ff; padding-bottom:4px; }
+.wc-group table { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0; }
+.wc-group th { text-align:right; color:#9ca3af; font-weight:600; font-size:0.72rem; padding:2px 3px; }
+.wc-group th:first-child { text-align:left; }
+.wc-group td { padding:3px 3px; border-top:1px solid #f3f4f6; text-align:right; }
+.wc-group td:first-child { text-align:left; white-space:nowrap; }
+.wc-group tr.adv td { font-weight:700; }
+.wc-group tr.adv td:first-child { color:#15803d; }
+.wc-legend { font-size:0.8rem; color:#6b7280; margin:-0.5em 0 1.5em; }
+.wc-legend b { color:#15803d; }
+.wc-bracket-scroll { overflow-x:auto; padding-bottom:8px; -webkit-overflow-scrolling:touch; }
+.wc-bracket { display:flex; gap:10px; min-width:780px; }
+.wc-round { display:flex; flex-direction:column; justify-content:space-around; flex:1; gap:8px; min-width:130px; }
+.wc-round > h4 { text-align:center; font-size:0.8rem; color:#1e2761; margin:0 0 4px; padding:3px; background:#eef2ff; border-radius:6px; }
+.wc-m { border:1px solid #e5e7eb; border-radius:8px; padding:6px 8px; background:#fff; font-size:0.8rem; }
+.wc-m .t { display:flex; justify-content:space-between; gap:6px; }
+.wc-m .t span:first-child { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.wc-m .t .sc { color:#6b7280; font-variant-numeric:tabular-nums; }
+.wc-m.final { border-color:#f59e0b; background:#fffbeb; }
+.wc-sched { width:100%; border-collapse:collapse; font-size:0.9rem; }
+.wc-sched th, .wc-sched td { border-bottom:1px solid #f3f4f6; padding:7px 6px; text-align:left; }
+.wc-sched th { color:#6b7280; font-size:0.8rem; }
+</style>
+
+<div class="wc-wrap">
+
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 17일 오전 8시 (KST)</span>
+
+매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 미국 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
+
+## 대회 개요
+
+| 항목 | 내용 |
+|---|---|
+| 대회 | 2026 FIFA 월드컵 |
+| 개최국 | 🇺🇸 미국 · 🇨🇦 캐나다 · 🇲🇽 멕시코 (3개국 공동) |
+| 기간 | 2026년 6월 11일 ~ 7월 19일 |
+| 참가국 | 48개국 (사상 최다) |
+| 방식 | 12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출 |
+| 현재 단계 | **조별리그 진행 중** (1차전) |
+| 대한민국 | **A조** (멕시코·체코·남아공과 한 조) |
+
+> 48개국 체제는 이번 대회부터 처음 적용됩니다. 조 3위라도 성적이 좋으면(상위 8팀) 32강에 오를 수 있어, 1패를 해도 끝까지 가능성이 열려 있는 구조입니다.
+
+## 조편성 & 조별 순위
+
+상위 2팀(<b style="color:#15803d">초록색</b>)은 32강 직행, 각 조 3위는 12개 조 중 상위 8팀이 추가 진출합니다.
+
+<div class="wc-groups">
+
+<div class="wc-group"><h3>A조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇲🇽 멕시코</td><td>1</td><td>3</td><td>+2</td></tr>
+<tr class="adv"><td>🇰🇷 대한민국</td><td>1</td><td>3</td><td>+1</td></tr>
+<tr><td>🇨🇿 체코</td><td>1</td><td>0</td><td>-1</td></tr>
+<tr><td>🇿🇦 남아공</td><td>1</td><td>0</td><td>-2</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>B조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇨🇭 스위스</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="adv"><td>🇨🇦 캐나다</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇶🇦 카타르</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇧🇦 보스니아</td><td>1</td><td>1</td><td>0</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>C조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>1</td><td>3</td><td>+1</td></tr>
+<tr class="adv"><td>🇧🇷 브라질</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇲🇦 모로코</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇭🇹 아이티</td><td>1</td><td>0</td><td>-1</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>D조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇺🇸 미국</td><td>1</td><td>3</td><td>+3</td></tr>
+<tr class="adv"><td>🇦🇺 호주</td><td>1</td><td>3</td><td>+2</td></tr>
+<tr><td>🇹🇷 튀르키예</td><td>1</td><td>0</td><td>-1</td></tr>
+<tr><td>🇵🇾 파라과이</td><td>1</td><td>0</td><td>-3</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>E조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇩🇪 독일</td><td>1</td><td>3</td><td>+6</td></tr>
+<tr class="adv"><td>🇨🇮 코트디부아르</td><td>1</td><td>3</td><td>+1</td></tr>
+<tr><td>🇪🇨 에콰도르</td><td>1</td><td>0</td><td>-1</td></tr>
+<tr><td>🇨🇼 쿠라소</td><td>1</td><td>0</td><td>-6</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>F조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇸🇪 스웨덴</td><td>1</td><td>3</td><td>+4</td></tr>
+<tr class="adv"><td>🇯🇵 일본</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇳🇱 네덜란드</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇹🇳 튀니지</td><td>1</td><td>0</td><td>-4</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>G조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇳🇿 뉴질랜드</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="adv"><td>🇮🇷 이란</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇧🇪 벨기에</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇪🇬 이집트</td><td>1</td><td>1</td><td>0</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>H조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇺🇾 우루과이</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="adv"><td>🇸🇦 사우디</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇪🇸 스페인</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇨🇻 카보베르데</td><td>1</td><td>1</td><td>0</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>I조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇳🇴 노르웨이</td><td>1</td><td>3</td><td>+3</td></tr>
+<tr class="adv"><td>🇫🇷 프랑스</td><td>1</td><td>3</td><td>+2</td></tr>
+<tr><td>🇸🇳 세네갈</td><td>1</td><td>0</td><td>-2</td></tr>
+<tr><td>🇮🇶 이라크</td><td>1</td><td>0</td><td>-3</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>J조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇦🇷 아르헨티나</td><td>1</td><td>3</td><td>+3</td></tr>
+<tr class="adv"><td>🇦🇹 오스트리아</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇯🇴 요르단</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇩🇿 알제리</td><td>1</td><td>0</td><td>-3</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>K조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr><td>🇨🇴 콜롬비아</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇨🇩 콩고DR</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇵🇹 포르투갈</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇺🇿 우즈베키스탄</td><td>0</td><td>0</td><td>0</td></tr>
+</table></div>
+
+<div class="wc-group"><h3>L조</h3><table>
+<tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr><td>🇭🇷 크로아티아</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇬🇭 가나</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>🇵🇦 파나마</td><td>0</td><td>0</td><td>0</td></tr>
+</table></div>
+
+</div>
+
+<p class="wc-legend">※ K·L조는 6월 17일 첫 경기 예정. 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. 정밀 전적은 매일 오전 갱신됩니다.</p>
+
+## 토너먼트 대진표 (32강 → 결승)
+
+조별리그가 끝나면(6월 27일경) 아래 대진이 채워집니다. 현재는 진행 계획표이며, 진출팀이 확정되는 대로 매일 갱신됩니다. (모바일에서는 좌우로 스크롤)
+
+<div class="wc-bracket-scroll"><div class="wc-bracket">
+
+<div class="wc-round"><h4>32강</h4>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+</div>
+
+<div class="wc-round"><h4>16강</h4>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+</div>
+
+<div class="wc-round"><h4>8강</h4>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+</div>
+
+<div class="wc-round"><h4>4강</h4>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+</div>
+
+<div class="wc-round"><h4>결승</h4>
+<div class="wc-m final"><div class="t"><span>🏆 미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+</div>
+
+</div></div>
+
+## 다가오는 경기 (6월 17일~)
+
+아래는 향후 일정입니다. 한국시간 기준 정확한 킥오프와 결과는 매일 오전 갱신됩니다.
+
+<table class="wc-sched">
+<tr><th>날짜(현지)</th><th>경기</th><th>조</th></tr>
+<tr><td>6/17</td><td>🇦🇹 오스트리아 vs 🇯🇴 요르단</td><td>J</td></tr>
+<tr><td>6/17</td><td>🇵🇹 포르투갈 vs 🇨🇩 콩고DR</td><td>K</td></tr>
+<tr><td>6/17</td><td>🇺🇿 우즈베키스탄 vs 🇨🇴 콜롬비아</td><td>K</td></tr>
+<tr><td>6/17</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드 vs 🇭🇷 크로아티아</td><td>L</td></tr>
+<tr><td>6/17</td><td>🇬🇭 가나 vs 🇵🇦 파나마</td><td>L</td></tr>
+</table>
+
+<p class="wc-note">데이터 출처: FIFA·NBC Sports 등 공개 자료(2026-06-17 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+
+</div>
