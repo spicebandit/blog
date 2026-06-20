@@ -4,7 +4,6 @@ description: "주식 봇의 토대인 증권사 API 연결. 토큰 1분 제한, 
 pubDate: 2026-06-20T09:00:00+09:00
 category: "ai"
 tags: ["ClaudeCode", "KIS API", "한국투자증권", "주식자동매매", "Python"]
-draft: true
 ---
 
 > 📚 **연재 — 클로드코드로 주식투자 에이전트 만들기**
