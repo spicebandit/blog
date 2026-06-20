@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { categoryName } from '../lib/categories';
+import PostCard from '../components/PostCard.astro';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -9,18 +9,13 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft || import.m
 <Base title="세상은 니가 구해라" description="AI 자동화, 개발, 생산성에 대한 기록">
   <ul style="list-style:none; padding:0; margin:0;">
     {posts.map((post) => (
-      <li style="padding: 22px 0; border-bottom: 1px solid var(--line);">
-        <a href={`/blog/${post.id}/`} style="color: var(--ink); font-weight: 700; font-size: 1.2rem;">
-          {post.data.title}
-        </a>
-        <p style="margin: 6px 0 8px; color: var(--muted);">{post.data.description}</p>
-        <span style="display:inline-flex; gap:10px; align-items:center;">
-          <a href={`/category/${post.data.category}/`} class="cat-chip">{categoryName(post.data.category)}</a>
-          <time datetime={post.data.pubDate.toISOString()}>
-            {post.data.pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </time>
-        </span>
-      </li>
+      <PostCard
+        id={post.id}
+        title={post.data.title}
+        description={post.data.description}
+        category={post.data.category}
+        pubDate={post.data.pubDate}
+      />
     ))}
   </ul>
 </Base>

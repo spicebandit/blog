@@ -1,0 +1,68 @@
+---
+import { categoryName, type CategorySlug } from '../lib/categories';
+
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+  category: CategorySlug;
+  pubDate: Date;
+  showCategory?: boolean;
+}
+
+const { id, title, description, category, pubDate, showCategory = true } = Astro.props;
+const dateLabel = pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<li class="card">
+  <a class="card-link" href={`/blog/${id}/`} aria-label={title}>
+    <span class="title">{title}</span>
+    <span class="desc">{description}</span>
+    <span class="meta-row">
+      {showCategory && <span class="cat-chip">{categoryName(category)}</span>}
+      <time datetime={pubDate.toISOString()}>{dateLabel}</time>
+    </span>
+  </a>
+</li>
+
+<style>
+  .card {
+    list-style: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .card-link {
+    display: block;
+    padding: 20px 14px;
+    margin: 0 -14px;
+    border-radius: 14px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .card-link:hover {
+    text-decoration: none;
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(122, 63, 242, 0.12);
+  }
+  .title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    transition: color 0.15s ease;
+  }
+  .card-link:hover .title { color: var(--accent); }
+  .desc {
+    display: block;
+    margin: 6px 0 10px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .meta-row {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .meta-row time { color: var(--muted); font-size: 0.85rem; }
+</style>
