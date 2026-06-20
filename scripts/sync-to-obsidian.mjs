@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 /**
- * 블로그 글 → ~/Documents/blog + 옵시디언 보관함 동기화 (상호 연결 포함)
+ * 블로그 글 → 옵시디언 보관함 동기화 (상호 연결 포함)
  *
- * 발행된(draft 아님) 글을 다음 두 곳에 idempotent하게 복제한다:
- *   1) ~/Documents/blog/<원본파일명>.md   — 원문 그대로 보관(아카이브)
- *   2) <vault>/Blog/<글제목>.md           — 옵시디언 노트(프론트매터+본문+관련글 링크)
+ * 발행된(draft 아님) 글을 옵시디언 보관함의 'Blog/' 폴더에 노트로 등록한다:
+ *   <vault>/Blog/<글제목>.md  — 프론트매터 + 본문 + 라이브 URL + 관련글 링크
  *
  * 옵시디언 노트는 같은 카테고리/태그를 공유하는 다른 블로그 노트와
  * [[위키링크]]로 상호 연결되고, 라이브 블로그 URL을 함께 담는다.
@@ -15,7 +14,7 @@
  *   node scripts/sync-to-obsidian.mjs <파일경로> # 특정 글만(그래도 관련글 링크는 전체 기준)
  */
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, basename } from 'node:path';
 
@@ -23,7 +22,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
 const HOME = process.env.HOME;
 const BLOG_DIR = join(PROJECT_ROOT, 'src/content/blog');
-const DOCS_BLOG = join(HOME, 'Documents/blog');
 const VAULT_BLOG = join(HOME, 'Documents/obsidian/mynotes/Blog');
 const SITE = 'https://blog-x84m.vercel.app';
 
@@ -124,7 +122,6 @@ function buildObsidianNote(post, all) {
 }
 
 function main() {
-  mkdirSync(DOCS_BLOG, { recursive: true });
   mkdirSync(VAULT_BLOG, { recursive: true });
 
   const all = collectPosts();
@@ -132,18 +129,13 @@ function main() {
   const targets = argFile ? all.filter((p) => p.file === argFile) : all;
 
   // 관련글 링크는 항상 전체(all) 기준으로 계산해 양방향이 맞도록 한다.
-  let docCount = 0, noteCount = 0;
+  let noteCount = 0;
   for (const post of targets) {
-    // 1) Documents/blog 원문 복사
-    copyFileSync(join(BLOG_DIR, post.file), join(DOCS_BLOG, post.file));
-    docCount++;
-    // 2) 옵시디언 노트
     writeFileSync(join(VAULT_BLOG, `${safeName(post.title)}.md`), buildObsidianNote(post, all));
     noteCount++;
   }
 
-  console.log(`✅ 동기화 완료: Documents/blog ${docCount}개, 옵시디언 Blog/ ${noteCount}개`);
-  console.log(`   - 아카이브: ${DOCS_BLOG}`);
+  console.log(`✅ 옵시디언 동기화 완료: Blog/ ${noteCount}개`);
   console.log(`   - 옵시디언: ${VAULT_BLOG}`);
 }
 
