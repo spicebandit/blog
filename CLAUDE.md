@@ -75,6 +75,19 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
 
 **검토**: draft 글은 빌드/목록/카테고리/사이트에 노출되지 않는다(`draft` 필터). 내용 확인 후 발행한다.
 
+## 글 작성·발행 후 동기화 (Documents/blog + 옵시디언)
+
+새 글을 **발행한 뒤(= `draft` 제거하고 git push 한 뒤)** 반드시 다음을 실행해 아카이브와 옵시디언 보관함에 동기화한다.
+
+```bash
+node scripts/sync-to-obsidian.mjs
+```
+
+- 동작: 발행된(draft 아님) 모든 글을 ① `~/Documents/blog/`에 원문 복사, ② 옵시디언 보관함의 **`Blog/` 전용 폴더**(`~/Documents/obsidian/mynotes/Blog/`)에 노트로 등록한다. idempotent하므로 매번 전체를 다시 써도 안전하다(인자 없이 전체 실행 권장 — 관련 글 링크가 양방향으로 갱신됨).
+- 옵시디언 노트: frontmatter(title/category/tags/date/url) + 본문 + 라이브 블로그 URL + **같은 카테고리·태그 글과 `[[위키링크]]` 상호 연결**(`## 관련 글` 섹션).
+- 충돌 방지: 보관함의 `Blog/` 폴더에만 쓴다(사용자가 직접 만든 다른 노트는 건드리지 않음). 라이브 데이터 페이지(예: 월드컵 트래커)는 `SKIP_SLUGS`로 제외한다.
+- draft 글은 동기화하지 않는다(발행된 글만). 예약 발행 스크립트에는 이 동기화가 이미 포함돼 있다.
+
 ## 절대 하지 말 것
 - draft가 아닌 기존 글 무단 수정/삭제
 - astro.config.mjs의 site 값 변경 (사용자 승인 필요)
