@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-20T11:30:00+09:00
+updatedDate: 2026-06-20T20:56:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -42,7 +42,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 20일 오전 11시 30분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 20일 오후 8시 56분 (KST)</span>
 
 매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -84,18 +84,18 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-group"><h3>C조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇧🇷 브라질</td><td>2</td><td>4</td><td>+3</td></tr>
 <tr class="adv"><td>🇲🇦 모로코</td><td>2</td><td>4</td><td>+1</td></tr>
-<tr class="adv"><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇧🇷 브라질</td><td>2</td><td>2</td><td>0</td></tr>
-<tr><td>🇭🇹 아이티</td><td>2</td><td>1</td><td>-1</td></tr>
+<tr><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>🇭🇹 아이티</td><td>2</td><td>0</td><td>-4</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>D조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇺🇸 미국</td><td>2</td><td>6</td><td>+5</td></tr>
 <tr class="adv"><td>🇦🇺 호주</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇹🇷 튀르키예</td><td>1</td><td>0</td><td>-2</td></tr>
-<tr><td>🇵🇾 파라과이</td><td>1</td><td>0</td><td>-3</td></tr>
+<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-1</td></tr>
+<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-4</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>E조</h3><table>
@@ -229,7 +229,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td class="kst">6/21(일) 02:00</td><td>🇳🇱 네덜란드 vs 🇸🇪 스웨덴</td><td>F</td></tr>
 <tr><td class="kst">6/21(일) 05:00</td><td>🇩🇪 독일 vs 🇨🇮 코트디부아르</td><td>E</td></tr>
 <tr><td class="kst">6/21(일) 09:00</td><td>🇪🇨 에콰도르 vs 🇨🇼 쿠라소</td><td>E</td></tr>
-<tr><td class="kst">6/21(일) 13:00</td><td>🇹🇷 튀르키예 vs 🇵🇾 파라과이</td><td>D</td></tr>
 <tr><td class="kst">6/21(일) 13:00</td><td>🇹🇳 튀니지 vs 🇯🇵 일본</td><td>F</td></tr>
 <tr><td class="kst">6/22(월) 01:00</td><td>🇪🇸 스페인 vs 🇸🇦 사우디</td><td>H</td></tr>
 <tr><td class="kst">6/22(월) 04:00</td><td>🇧🇪 벨기에 vs 🇮🇷 이란</td><td>G</td></tr>
