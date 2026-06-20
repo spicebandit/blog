@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-20T20:56:00+09:00
+updatedDate: 2026-06-21T08:45:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -42,7 +42,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 20일 오후 8시 56분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 21일 오전 8시 45분 (KST)</span>
 
 매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -55,7 +55,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 | 기간 | 2026년 6월 11일 ~ 7월 19일 |
 | 참가국 | 48개국 (사상 최다) |
 | 방식 | 12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출 |
-| 현재 단계 | **조별리그 2차전 진행 중** (멕시코·미국 32강 진출 확정) |
+| 현재 단계 | **조별리그 진행 중 — C·D조 종료** (멕시코·미국·독일·브라질·모로코·파라과이 32강 진출 확정) |
 | 대한민국 | **A조** (멕시코·체코·남아공과 한 조) |
 
 > 48개국 체제는 이번 대회부터 처음 적용됩니다. 조 3위라도 성적이 좋으면(상위 8팀) 32강에 오를 수 있어, 1패를 해도 끝까지 가능성이 열려 있는 구조입니다.
@@ -84,33 +84,33 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-group"><h3>C조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇧🇷 브라질</td><td>2</td><td>4</td><td>+3</td></tr>
-<tr class="adv"><td>🇲🇦 모로코</td><td>2</td><td>4</td><td>+1</td></tr>
-<tr><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇭🇹 아이티</td><td>2</td><td>0</td><td>-4</td></tr>
+<tr class="adv"><td>🇧🇷 브라질</td><td>3</td><td>7</td><td>+6</td></tr>
+<tr class="adv"><td>🇲🇦 모로코</td><td>3</td><td>7</td><td>+2</td></tr>
+<tr><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>3</td><td>3</td><td>-1</td></tr>
+<tr><td>🇭🇹 아이티</td><td>3</td><td>0</td><td>-7</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>D조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇺🇸 미국</td><td>2</td><td>6</td><td>+5</td></tr>
-<tr class="adv"><td>🇦🇺 호주</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-2</td></tr>
-<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-3</td></tr>
+<tr class="adv"><td>🇺🇸 미국</td><td>3</td><td>9</td><td>+7</td></tr>
+<tr class="adv"><td>🇵🇾 파라과이</td><td>3</td><td>6</td><td>-1</td></tr>
+<tr><td>🇦🇺 호주</td><td>3</td><td>3</td><td>-2</td></tr>
+<tr><td>🇹🇷 튀르키예</td><td>3</td><td>0</td><td>-4</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>E조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇩🇪 독일</td><td>1</td><td>3</td><td>+6</td></tr>
-<tr class="adv"><td>🇨🇮 코트디부아르</td><td>1</td><td>3</td><td>+1</td></tr>
+<tr class="adv"><td>🇩🇪 독일</td><td>2</td><td>6</td><td>+7</td></tr>
+<tr class="adv"><td>🇨🇮 코트디부아르</td><td>2</td><td>3</td><td>0</td></tr>
 <tr><td>🇪🇨 에콰도르</td><td>1</td><td>0</td><td>-1</td></tr>
 <tr><td>🇨🇼 쿠라소</td><td>1</td><td>0</td><td>-6</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>F조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇸🇪 스웨덴</td><td>1</td><td>3</td><td>+4</td></tr>
-<tr class="adv"><td>🇯🇵 일본</td><td>1</td><td>1</td><td>0</td></tr>
-<tr><td>🇳🇱 네덜란드</td><td>1</td><td>1</td><td>0</td></tr>
+<tr class="adv"><td>🇳🇱 네덜란드</td><td>2</td><td>4</td><td>+4</td></tr>
+<tr class="adv"><td>🇸🇪 스웨덴</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>🇯🇵 일본</td><td>1</td><td>1</td><td>0</td></tr>
 <tr><td>🇹🇳 튀니지</td><td>1</td><td>0</td><td>-4</td></tr>
 </table></div>
 
@@ -164,7 +164,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A·B·C·D조는 2차전까지, 나머지 조는 1차전까지 반영했습니다. 정밀 전적은 매일 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A·B조는 2차전, C·D조는 3차전(조별리그 종료), E·F조는 2차전 일부, 나머지 조는 1차전까지 반영했습니다. 정밀 전적은 매일 갱신됩니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
@@ -226,8 +226,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/21(일) 02:00</td><td>🇳🇱 네덜란드 vs 🇸🇪 스웨덴</td><td>F</td></tr>
-<tr><td class="kst">6/21(일) 05:00</td><td>🇩🇪 독일 vs 🇨🇮 코트디부아르</td><td>E</td></tr>
 <tr><td class="kst">6/21(일) 09:00</td><td>🇪🇨 에콰도르 vs 🇨🇼 쿠라소</td><td>E</td></tr>
 <tr><td class="kst">6/21(일) 13:00</td><td>🇹🇳 튀니지 vs 🇯🇵 일본</td><td>F</td></tr>
 <tr><td class="kst">6/22(월) 01:00</td><td>🇪🇸 스페인 vs 🇸🇦 사우디</td><td>H</td></tr>
@@ -238,6 +236,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports 등 공개 자료(2026-06-20 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports 등 공개 자료(2026-06-21 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
