@@ -115,6 +115,21 @@ async function fetchReport(token, propertyId) {
             orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
             limit: 5,
           },
+          {
+            // 최근 7일 일별 추이 (그제까지 말고 어제까지 7일)
+            dateRanges: [{ startDate: '7daysAgo', endDate: 'yesterday' }],
+            dimensions: [{ name: 'date' }],
+            metrics: [{ name: 'screenPageViews' }],
+            orderBys: [{ dimension: { dimensionName: 'date' } }],
+          },
+          {
+            // 유입 경로 TOP (어제) — 검색/직접/SNS 등
+            dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
+            dimensions: [{ name: 'sessionDefaultChannelGroup' }],
+            metrics: [{ name: 'sessions' }],
+            orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+            limit: 5,
+          },
         ],
       }),
     },
@@ -149,6 +164,41 @@ function parseTopPages(report) {
   }));
 }
 
+/** 최근 7일 일별 [{date:'YYYYMMDD', views}] (날짜 오름차순) */
+function parseDailySeries(report) {
+  return (report?.rows ?? []).map((row) => ({
+    date: row.dimensionValues?.[0]?.value ?? '',
+    views: Number(row.metricValues?.[0]?.value ?? 0),
+  }));
+}
+
+// GA4 채널 그룹(영문) → 한글
+const CHANNEL_KR = {
+  'Direct': '직접 유입',
+  'Organic Search': '검색',
+  'Organic Social': 'SNS',
+  'Social': 'SNS',
+  'Referral': '외부 링크',
+  'Email': '이메일',
+  'Organic Video': '동영상',
+  'Unassigned': '미분류',
+  '(Other)': '기타',
+};
+
+function parseChannels(report) {
+  return (report?.rows ?? []).map((row) => {
+    const raw = row.dimensionValues?.[0]?.value ?? '미분류';
+    return { channel: CHANNEL_KR[raw] ?? raw, sessions: Number(row.metricValues?.[0]?.value ?? 0) };
+  });
+}
+
+/** 값 배열 → 블록문자 스파크라인 */
+function sparkline(values) {
+  const blocks = '▁▂▃▄▅▆▇█';
+  const max = Math.max(...values, 1);
+  return values.map((v) => blocks[Math.min(7, Math.round((v / max) * 7))]).join('');
+}
+
 /** 증감 화살표 문자열 */
 function delta(now, prev) {
   const d = now - prev;
@@ -157,7 +207,13 @@ function delta(now, prev) {
   return ' (─)';
 }
 
-function formatMessage(totals, topPages, propertyId) {
+/** 'YYYYMMDD' → 'M/D' */
+function mdLabel(ymd) {
+  if (!ymd || ymd.length !== 8) return ymd;
+  return `${Number(ymd.slice(4, 6))}/${Number(ymd.slice(6, 8))}`;
+}
+
+function formatMessage(totals, topPages, dailySeries, channels) {
   // 어제 날짜 (KST)
   const y = new Date(Date.now() - 24 * 60 * 60 * 1000);
   const dateStr = y.toLocaleDateString('ko-KR', {
@@ -175,6 +231,25 @@ function formatMessage(totals, topPages, propertyId) {
     `<i>(괄호는 그제 대비 증감)</i>`,
   ];
 
+  // 최근 7일 추이 (스파크라인 + 합계/일평균)
+  if (dailySeries.length > 0) {
+    const vals = dailySeries.map((d) => d.views);
+    const total7 = vals.reduce((s, v) => s + v, 0);
+    const avg7 = Math.round(total7 / vals.length);
+    const range = `${mdLabel(dailySeries[0].date)}~${mdLabel(dailySeries[dailySeries.length - 1].date)}`;
+    lines.push(
+      '',
+      `📅 <b>최근 7일</b> · 총 ${total7.toLocaleString()} · 일평균 ${avg7.toLocaleString()}`,
+      `<code>${sparkline(vals)}</code> <i>${range}</i>`,
+    );
+  }
+
+  // 유입 경로 (어제)
+  if (channels.length > 0 && t.sessions > 0) {
+    const top = channels.slice(0, 4).map((c) => `${c.channel} ${c.sessions}`).join(' · ');
+    lines.push('', `🚪 <b>유입경로</b> ${top}`);
+  }
+
   if (topPages.length > 0 && t.views > 0) {
     lines.push('', '🔥 <b>인기 글 TOP5</b>');
     topPages.forEach((page, i) => {
@@ -183,10 +258,6 @@ function formatMessage(totals, topPages, propertyId) {
   } else {
     lines.push('', '어제는 집계된 조회가 없었어요.');
   }
-
-  // GA를 모바일에서 바로 열어 자세히 보는 링크
-  const gaUrl = `https://analytics.google.com/analytics/web/#/p${propertyId}/reports/intelligenthome`;
-  lines.push('', `📈 <a href="${gaUrl}">구글 애널리틱스에서 자세히 보기</a>`);
 
   return lines.join('\n');
 }
@@ -217,7 +288,9 @@ async function main() {
     const data = await fetchReport(token, propertyId);
     const totals = parseTotals(data.reports?.[0]);
     const topPages = parseTopPages(data.reports?.[1]);
-    const message = formatMessage(totals, topPages, propertyId);
+    const dailySeries = parseDailySeries(data.reports?.[2]);
+    const channels = parseChannels(data.reports?.[3]);
+    const message = formatMessage(totals, topPages, dailySeries, channels);
 
     if (DRY) {
       console.log('--- DRY RUN (전송 안 함) ---');
