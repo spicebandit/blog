@@ -157,7 +157,7 @@ function delta(now, prev) {
   return ' (─)';
 }
 
-function formatMessage(totals, topPages) {
+function formatMessage(totals, topPages, propertyId) {
   // 어제 날짜 (KST)
   const y = new Date(Date.now() - 24 * 60 * 60 * 1000);
   const dateStr = y.toLocaleDateString('ko-KR', {
@@ -183,6 +183,10 @@ function formatMessage(totals, topPages) {
   } else {
     lines.push('', '어제는 집계된 조회가 없었어요.');
   }
+
+  // GA를 모바일에서 바로 열어 자세히 보는 링크
+  const gaUrl = `https://analytics.google.com/analytics/web/#/p${propertyId}/reports/intelligenthome`;
+  lines.push('', `📈 <a href="${gaUrl}">구글 애널리틱스에서 자세히 보기</a>`);
 
   return lines.join('\n');
 }
@@ -213,7 +217,7 @@ async function main() {
     const data = await fetchReport(token, propertyId);
     const totals = parseTotals(data.reports?.[0]);
     const topPages = parseTopPages(data.reports?.[1]);
-    const message = formatMessage(totals, topPages);
+    const message = formatMessage(totals, topPages, propertyId);
 
     if (DRY) {
       console.log('--- DRY RUN (전송 안 함) ---');
