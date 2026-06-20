@@ -94,8 +94,8 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇺🇸 미국</td><td>2</td><td>6</td><td>+5</td></tr>
 <tr class="adv"><td>🇦🇺 호주</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-1</td></tr>
-<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-4</td></tr>
+<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-2</td></tr>
+<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-3</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>E조</h3><table>
