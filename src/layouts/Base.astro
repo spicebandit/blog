@@ -322,12 +322,36 @@ const showNotice = new Date() < NOTICE.until;
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
     <!-- Google Analytics 4 (측정 ID는 공개값) -->
+    <script is:inline>
+      // 내 방문 제외 스위치: `?me`로 한 번 접속하면 이 기기에 표식 저장 → 이후 GA 미집계.
+      // `?me=off`로 접속하면 해제. localStorage 키는 'ga_exclude_owner'.
+      (function () {
+        try {
+          var p = new URLSearchParams(location.search);
+          if (p.has('me')) {
+            if (p.get('me') === 'off') {
+              localStorage.removeItem('ga_exclude_owner');
+            } else {
+              localStorage.setItem('ga_exclude_owner', '1');
+            }
+          }
+          window.__gaExcludeOwner = localStorage.getItem('ga_exclude_owner') === '1';
+        } catch (e) {
+          window.__gaExcludeOwner = false;
+        }
+      })();
+    </script>
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-KM0XNWHRCM"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-KM0XNWHRCM');
+      if (window.__gaExcludeOwner) {
+        // 내 기기: 측정 자체를 끈다.
+        window['ga-disable-G-KM0XNWHRCM'] = true;
+      } else {
+        gtag('config', 'G-KM0XNWHRCM');
+      }
     </script>
   </head>
   <body>
