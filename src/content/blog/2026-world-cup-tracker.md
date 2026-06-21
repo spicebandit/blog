@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-21T13:05:00+09:00
+updatedDate: 2026-06-21T20:23:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -42,7 +42,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 21일 오전 8시 49분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 21일 오후 8시 23분 (KST)</span>
 
 매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -109,9 +109,9 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-group"><h3>F조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇳🇱 네덜란드</td><td>2</td><td>4</td><td>+4</td></tr>
-<tr class="adv"><td>🇸🇪 스웨덴</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇯🇵 일본</td><td>1</td><td>1</td><td>0</td></tr>
-<tr><td>🇹🇳 튀니지</td><td>1</td><td>0</td><td>-4</td></tr>
+<tr class="adv"><td>🇯🇵 일본</td><td>2</td><td>4</td><td>+4</td></tr>
+<tr><td>🇸🇪 스웨덴</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>🇹🇳 튀니지</td><td>2</td><td>0</td><td>-8</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>G조</h3><table>
@@ -164,7 +164,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~F조는 2차전까지(코트디부아르·일본은 1차전), G~L조는 1차전까지 반영했습니다. 최종 3차전은 6월 25일이며, 정밀 전적은 매일 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~F조는 2차전까지(코트디부아르는 1차전), G~L조는 1차전까지 반영했습니다. 최종 3차전은 6월 25일이며, 정밀 전적은 매일 갱신됩니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
@@ -226,15 +226,18 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/21(일) 13:00</td><td>🇹🇳 튀니지 vs 🇯🇵 일본</td><td>F</td></tr>
 <tr><td class="kst">6/22(월) 01:00</td><td>🇪🇸 스페인 vs 🇸🇦 사우디</td><td>H</td></tr>
 <tr><td class="kst">6/22(월) 04:00</td><td>🇧🇪 벨기에 vs 🇮🇷 이란</td><td>G</td></tr>
 <tr><td class="kst">6/22(월) 07:00</td><td>🇺🇾 우루과이 vs 🇨🇻 카보베르데</td><td>H</td></tr>
 <tr><td class="kst">6/22(월) 10:00</td><td>🇳🇿 뉴질랜드 vs 🇪🇬 이집트</td><td>G</td></tr>
+<tr><td class="kst">6/23(화) 02:00</td><td>🇦🇷 아르헨티나 vs 🇦🇹 오스트리아</td><td>J</td></tr>
+<tr><td class="kst">6/23(화) 06:00</td><td>🇫🇷 프랑스 vs 🇮🇶 이라크</td><td>I</td></tr>
+<tr><td class="kst">6/23(화) 09:00</td><td>🇳🇴 노르웨이 vs 🇸🇳 세네갈</td><td>I</td></tr>
+<tr><td class="kst">6/23(화) 12:00</td><td>🇯🇴 요르단 vs 🇩🇿 알제리</td><td>J</td></tr>
 </table>
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports 등 공개 자료(2026-06-21 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports 등 공개 자료(2026-06-21 20시 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
