@@ -17,6 +17,8 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     author: z.string().optional(),
     readingTime: z.number().optional(), // minutes
+    series: z.string().optional(), // 연재 제목 (히어로에 배지 표시)
+    seriesParts: z.array(z.object({ label: z.string(), slug: z.string() })).optional(), // 연재 편 목록
   }),
 });
 
