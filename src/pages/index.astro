@@ -1,12 +1,27 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import FeaturedCard from '../components/FeaturedCard.astro';
 import PostCard from '../components/PostCard.astro';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// 편집국장이 featured: true 로 지정한 기사 중 가장 최신 1건
+const featured = allPosts.find((p) => p.data.featured);
+// 1면 기사는 목록에서 제외해 중복 노출 방지
+const posts = featured ? allPosts.filter((p) => p.id !== featured.id) : allPosts;
 ---
 <Base title="세상은 니가 구해라" description="AI 자동화, 개발, 생산성에 대한 기록">
+  {featured && (
+    <FeaturedCard
+      id={featured.id}
+      title={featured.data.title}
+      description={featured.data.description}
+      category={featured.data.category}
+      pubDate={featured.data.pubDate}
+    />
+  )}
   <ul style="list-style:none; padding:0; margin:0;">
     {posts.map((post) => (
       <PostCard
