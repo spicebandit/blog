@@ -136,6 +136,10 @@ const adfitDim = ADFIT_DIM[position];
     color: var(--muted);
     margin-bottom: 4px;
   }
+  /* AdSense가 광고를 채우지 않으면(unfilled) 슬롯 전체 숨김 */
+  .ad-slot:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
+    display: none;
+  }
 
   /* Placeholder (DEV only) */
   .ad-placeholder {
