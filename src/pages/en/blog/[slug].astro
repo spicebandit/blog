@@ -1,0 +1,159 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Comments from '../../../components/Comments.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog-en', ({ data }) => !data.draft || import.meta.env.DEV);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+
+const SITE = Astro.site!;
+
+const toc = headings.filter((h) => h.depth === 2);
+const showToc = toc.length >= 3;
+
+const plain = post.body
+  ? post.body
+      .replace(/```[\s\S]*?```/g, '')
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+      .replace(/[#>*`_~\-]/g, '')
+  : '';
+const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 200)); // English ~200 wpm
+
+const hrefLangAlts = [
+  { lang: 'en', href: new URL(`/en/blog/${post.id}/`, SITE).toString() },
+  ...(post.data.koSlug
+    ? [{ lang: 'ko', href: new URL(`/blog/${post.data.koSlug}/`, SITE).toString() }]
+    : []),
+  { lang: 'x-default', href: new URL(post.data.koSlug ? `/blog/${post.data.koSlug}/` : '/', SITE).toString() },
+];
+---
+<Base
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  pubDate={post.data.pubDate}
+  updatedDate={post.data.updatedDate}
+  lang="en"
+  hrefLangAlts={hrefLangAlts}
+>
+  <article>
+    <p class="breadcrumb"><a href="/en/">← BASELOAD English</a></p>
+    <h1>{post.data.title}</h1>
+    <p class="post-meta">
+      <time datetime={post.data.pubDate.toISOString()}>
+        {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+      </time>
+      <span class="reading-time">· {readingMin} min read</span>
+      {post.data.koSlug && (
+        <a href={`/blog/${post.data.koSlug}/`} class="ko-link">한국어 원문</a>
+      )}
+    </p>
+
+    {showToc && (
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-title">Contents</p>
+        <ol>
+          {toc.map((h) => (
+            <li><a href={`#${h.slug}`}>{h.text}</a></li>
+          ))}
+        </ol>
+      </nav>
+    )}
+
+    <Content />
+
+    {post.data.tags.length > 0 && (
+      <div class="tag-list" aria-label="Tags">
+        {post.data.tags.map((tag) => (
+          <a class="tag-pill" href={`/tag/${encodeURIComponent(tag)}/`}>#{tag}</a>
+        ))}
+      </div>
+    )}
+  </article>
+  <Comments pageId={`en-${post.id}`} pageTitle={post.data.title} />
+</Base>
+
+<style>
+  .breadcrumb { margin: 0 0 1.5rem; font-size: 0.875rem; }
+  .breadcrumb a { color: var(--muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--accent); }
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 0 0 1.5em;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .reading-time { color: var(--muted); font-size: 0.85rem; }
+  .ko-link {
+    color: var(--accent);
+    font-size: 0.78rem;
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    padding: 2px 7px;
+    border-radius: 4px;
+  }
+  .ko-link:hover { background: var(--accent-soft); }
+  .toc {
+    margin: 0 0 2.5em;
+    padding: 16px 20px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--accent-soft);
+  }
+  .toc-title {
+    margin: 0 0 8px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+  }
+  .toc ol {
+    margin: 0;
+    padding-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .toc li { line-height: 1.45; }
+  .toc a { color: var(--ink); text-decoration: none; font-size: 0.94rem; }
+  .toc a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  article :is(h2, h3) { scroll-margin-top: 20px; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--line);
+  }
+  .tag-pill {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    background: transparent;
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  .tag-pill:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    text-decoration: none;
+  }
+</style>

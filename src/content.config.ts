@@ -20,4 +20,23 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+// English pilot: translated articles. Korean slug stored in koSlug for hreflang cross-linking.
+const blogEn = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog-en' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    category: z.enum(CATEGORY_SLUGS),
+    tags: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
+    heroImage: z.string().optional(),
+    author: z.string().optional(),
+    lang: z.string().optional(), // article language tag (e.g. 'en')
+    koSlug: z.string().optional(), // original Korean article slug for hreflang alternate
+    sourceSlug: z.string().optional(), // alias used by EditorInChief translations
+  }),
+});
+
+export const collections = { blog, 'blog-en': blogEn };

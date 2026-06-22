@@ -12,6 +12,11 @@ const adsenseSrc = ADSENSE_PUB
   ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB}`
   : '';
 
+interface HrefLangAlt {
+  lang: string; // e.g. 'ko', 'en'
+  href: string; // absolute URL
+}
+
 interface Props {
   title: string;
   description: string;
@@ -19,9 +24,11 @@ interface Props {
   pubDate?: Date;
   updatedDate?: Date;
   wide?: boolean;
+  lang?: string; // page language, defaults to 'ko'
+  hrefLangAlts?: HrefLangAlt[]; // hreflang alternate links
 }
 
-const { title, description, type = 'website', pubDate, updatedDate, wide = false } = Astro.props;
+const { title, description, type = 'website', pubDate, updatedDate, wide = false, lang = 'ko', hrefLangAlts } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const SITE_NAME = 'BASELOAD';
 
@@ -43,7 +50,7 @@ const NOTICE = {
 const showNotice = new Date() < NOTICE.until;
 ---
 <!doctype html>
-<html lang="ko">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,6 +68,9 @@ const showNotice = new Date() < NOTICE.until;
     <title>{title === SITE_NAME ? title : `${title} | ${SITE_NAME}`}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {hrefLangAlts && hrefLangAlts.map((alt) => (
+      <link rel="alternate" hreflang={alt.lang} href={alt.href} />
+    ))}
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
 

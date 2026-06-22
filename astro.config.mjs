@@ -4,6 +4,13 @@ import rehypeExternalLinks from 'rehype-external-links';
 
 export default defineConfig({
   site: 'https://www.baseload.co.kr',
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['ko', 'en'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   integrations: [sitemap()],
   markdown: {
     // 외부 링크(유튜브·Unsplash 등)는 새 창으로 열고 보안 속성 부여.
