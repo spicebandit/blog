@@ -25,12 +25,11 @@ const plain = post.body
   : '';
 const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 200)); // English ~200 wpm
 
+const koSlug = post.data.koSlug ?? post.data.sourceSlug;
 const hrefLangAlts = [
   { lang: 'en', href: new URL(`/en/blog/${post.id}/`, SITE).toString() },
-  ...(post.data.koSlug
-    ? [{ lang: 'ko', href: new URL(`/blog/${post.data.koSlug}/`, SITE).toString() }]
-    : []),
-  { lang: 'x-default', href: new URL(post.data.koSlug ? `/blog/${post.data.koSlug}/` : '/', SITE).toString() },
+  ...(koSlug ? [{ lang: 'ko', href: new URL(`/blog/${koSlug}/`, SITE).toString() }] : []),
+  { lang: 'x-default', href: new URL(koSlug ? `/blog/${koSlug}/` : '/', SITE).toString() },
 ];
 ---
 <Base
@@ -50,8 +49,8 @@ const hrefLangAlts = [
         {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       </time>
       <span class="reading-time">· {readingMin} min read</span>
-      {post.data.koSlug && (
-        <a href={`/blog/${post.data.koSlug}/`} class="ko-link">한국어 원문</a>
+      {koSlug && (
+        <a href={`/blog/${koSlug}/`} class="ko-link">한국어 원문</a>
       )}
     </p>
 
