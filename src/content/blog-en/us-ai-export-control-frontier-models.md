@@ -6,7 +6,6 @@ category: economy
 tags: ["AI export controls", "Fable 5", "tech competition", "sovereign AI", "AI policy"]
 lang: en
 sourceSlug: 2026-06-14-us-ai-model-export-control-fable5
-draft: true
 ---
 
 On June 12, 2026, the US government notified AI company Anthropic that its cutting-edge models "Claude Fable 5" and "Mythos 5" were subject to export controls. It had been three days since the models launched. The core issue is not simply a service interruption. Until now, US AI export controls had targeted the *tools that build AI* — semiconductors, advanced manufacturing equipment. This time, the government classified a **finished AI model itself** as a national security asset and blocked it from crossing US borders. It is the first case in which the line of export control has moved from chips to models.

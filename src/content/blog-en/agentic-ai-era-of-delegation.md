@@ -6,7 +6,6 @@ category: economy
 tags: ["agentic AI", "AI agents", "delegation", "future of work"]
 lang: en
 sourceSlug: agentic-ai-delegation-era
-draft: true
 ---
 
 Agentic AI is not simply a smarter AI — it is AI that receives a goal and executes it on its own. Where previous AI was a tool that told you *what* to do, Agentic AI is a *doer* that acts on your behalf — and that distinction is fundamental. The core of this shift is not technical performance. It is **the movement of delegation**: the moment humans hand decision-making and execution over to agents, the very mechanics of markets and organizations must be redesigned. This article is the first in a three-part series exploring that transformation.

@@ -6,7 +6,6 @@ category: economy
 tags: ["agentic AI", "organizational change", "leadership", "AI strategy", "future of work"]
 lang: en
 sourceSlug: agentic-ai-organization-delegation
-draft: true
 ---
 
 The organizational change brought by Agentic AI begins with a single sentence: *people no longer manage operations directly.* Just as customers delegate choices to agents, when organizations start delegating operations to agents, decision-making speed and organizational structure change at a fundamental level. This is the third and final article in a series on the movement of delegation. It follows [Part 1](/en/blog/agentic-ai-era-of-delegation/) and [Part 2](/en/blog/how-agentic-ai-reshapes-markets/).

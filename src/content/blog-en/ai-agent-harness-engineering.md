@@ -6,7 +6,6 @@ category: ai
 tags: ["harness engineering", "AI agents", "LLM", "agent design", "production AI"]
 lang: en
 sourceSlug: ai-agent-harness-engineering
-draft: true
 ---
 
 Anyone who has built AI agents has hit the same wall: the demo is impressive, but once it goes into actual production, it fails two or three times out of ten. Interestingly, the fix is rarely "get a smarter model." The real variable is the **harness** — the scaffold that surrounds the model. Harness engineering refers to designing that scaffold, and after Anthropic popularized the term "agent harness," it has emerged by 2026 as an independent engineering discipline. This article explains exactly what a harness is, and why the center of gravity in AI competition is shifting from models to harnesses.

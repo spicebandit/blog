@@ -6,7 +6,6 @@ category: energy
 tags: ["nuclear power", "SMR", "energy transition", "power grid", "clean energy"]
 lang: en
 sourceSlug: 2026-06-18-nuclear-power-role-and-debate
-draft: true
 ---
 
 Nuclear power has returned to center stage. After years of being overshadowed by phase-out debates and safety controversies — written off as a "fading technology" — the mood in 2026 is the exact opposite. Nuclear power generation, at its core, means using the heat from uranium fission to produce steam and spin turbines. Its defining feature is that it delivers consistent "baseload" output 24 hours a day, regardless of weather. As the climate crisis drives demand for carbon-free electricity and AI data centers simultaneously absorb enormous amounts of power, that combination — **carbon-free plus stable output** — has become newly precious.

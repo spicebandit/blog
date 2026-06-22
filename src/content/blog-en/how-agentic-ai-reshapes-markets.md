@@ -6,7 +6,6 @@ category: economy
 tags: ["agentic AI", "market competition", "delegation economy", "AI strategy"]
 lang: en
 sourceSlug: agentic-ai-market-delegation
-draft: true
 ---
 
 The biggest change Agentic AI brings to markets is a shift in *who makes the choice*. Until now, markets were places where customers directly compared options and made decisions. But when customers start delegating their choices to agents, the rules of competition change at a fundamental level. This is the second article in a three-part series on the movement of delegation. It follows [Part 1: The Era of Delegation Has Arrived](/en/blog/agentic-ai-era-of-delegation/).

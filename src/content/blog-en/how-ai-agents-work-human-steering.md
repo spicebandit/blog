@@ -6,7 +6,6 @@ category: ai
 tags: ["AI agents", "agentic AI", "LLM", "human-AI collaboration", "AI explainer"]
 lang: en
 sourceSlug: 2026-06-13-how-ai-agents-work
-draft: true
 ---
 
 The term "AI agent" is coming up everywhere. The short version: an **AI agent is an AI that, given a goal, breaks it into steps, uses tools, checks results, and completes the task end-to-end**. Tell it to "prepare tomorrow's meeting notes," and it opens the calendar, finds related documents, summarizes them, and produces a draft — autonomously. That is the decisive difference from a chatbot that only answers questions.
