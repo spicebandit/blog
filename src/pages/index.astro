@@ -11,6 +11,13 @@ import { CATEGORY_SLUGS } from '../lib/categories';
 const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+// Extract the first Unsplash/http image URL from a markdown body when heroImage frontmatter is absent
+function firstBodyImage(body: string | undefined): string | undefined {
+  if (!body) return undefined;
+  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/);
+  return m?.[1];
+}
+
 const featured = allPosts.find((p) => p.data.featured);
 const remaining = featured ? allPosts.filter((p) => p.id !== featured.id) : allPosts;
 
@@ -21,7 +28,7 @@ const sidebarPosts = remaining.slice(0, 5).map((p) => ({
   description: p.data.description,
   category: p.data.category,
   pubDate: p.data.pubDate,
-  heroImage: p.data.heroImage,
+  heroImage: p.data.heroImage || firstBodyImage(p.body),
   author: p.data.author,
   readingTime: p.data.readingTime,
 }));
@@ -40,7 +47,7 @@ const byCat = (cat: CategorySlug) =>
       description: p.data.description,
       category: p.data.category,
       pubDate: p.data.pubDate,
-      heroImage: p.data.heroImage,
+      heroImage: p.data.heroImage || firstBodyImage(p.body),
       author: p.data.author,
       readingTime: p.data.readingTime,
     }));
@@ -56,7 +63,7 @@ const byCat = (cat: CategorySlug) =>
         description: featured.data.description,
         category: featured.data.category,
         pubDate: featured.data.pubDate,
-        heroImage: featured.data.heroImage,
+        heroImage: featured.data.heroImage || firstBodyImage(featured.body),
         author: featured.data.author,
         readingTime: featured.data.readingTime,
       }}
@@ -78,7 +85,7 @@ const byCat = (cat: CategorySlug) =>
             description={post.data.description}
             category={post.data.category}
             pubDate={post.data.pubDate}
-            heroImage={post.data.heroImage}
+            heroImage={post.data.heroImage || firstBodyImage(post.body)}
             author={post.data.author}
             readingTime={post.data.readingTime}
           />
