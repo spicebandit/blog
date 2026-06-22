@@ -456,7 +456,9 @@ const showNotice = new Date() < NOTICE.until;
       if (window.__gaExcludeOwner) {
         window['ga-disable-G-KM0XNWHRCM'] = true;
       } else {
-        gtag('config', 'G-KM0XNWHRCM');
+        gtag('config', 'G-KM0XNWHRCM', {
+          language_version: location.pathname.startsWith('/en/') ? 'en' : 'ko'
+        });
       }
     </script>
   </head>
