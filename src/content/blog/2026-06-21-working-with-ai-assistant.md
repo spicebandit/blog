@@ -4,7 +4,6 @@ description: "1인 기업가가 AI 비서에게 리서치와 글쓰기를 맡기
 pubDate: 2026-06-21T14:20:00+09:00
 category: life
 tags: ["AI", "1인기업", "AI비서", "일하는법"]
-draft: true
 ---
 
 혼자 일하면서 가장 자주 하는 생각은 "이 일을 누가 좀 대신해 줬으면"이었다. 직원을 뽑자니 고정비가 무섭고, 안 뽑자니 내 몸이 하나뿐이다. 그 사이에서 나는 작년부터 **AI를 직원처럼 쓰기 시작했다.** 처음엔 검색을 좀 빨리 해 주는 도구 정도로 봤는데, 몇 달 써 보니 일하는 방식 자체가 달라져 있었다. 오늘은 AI 비서와 함께 일한다는 게 1인 기업가에게 실제로 어떤 의미인지, 좋았던 점과 새로 생긴 고민까지 솔직하게 적어 본다.
@@ -32,6 +31,8 @@ draft: true
 좋은 점만 있는 건 아니다. AI에 익숙해지면서 새로 생긴 고민이 두 가지 있다. 첫째는 **검수를 게을리하게 되는 위험**이다. AI가 내놓는 답은 늘 자신만만하고 매끄러워서, 바쁠 때는 그대로 믿고 넘어가고 싶어진다. 하지만 한두 번 틀린 숫자나 그럴듯한 거짓 정보에 데이고 나면, 결국 "빨리 받되 반드시 확인한다"는 원칙으로 돌아오게 된다. 속도를 얻는 대신 검수라는 새로운 책임이 생긴 셈이다.
 
 둘째는 **내 감각이 무뎌지는 건 아닐까 하는 불안**이다. 초안을 늘 AI에게 받다 보면, 백지에서 혼자 끝까지 써내는 근육이 약해질 수 있다. 그래서 나는 일부러 어떤 글은 처음부터 끝까지 직접 쓴다. AI는 어디까지나 나를 빠르게 만들어 주는 도구이지, 나를 대체하는 존재가 되어선 안 된다고 보기 때문이다. 결국 AI를 직원처럼 쓴다는 건, **일을 떠넘기는 게 아니라 더 중요한 일에 내 시간을 쓰기 위한 선택**이다. 도구가 똑똑해질수록, 무엇을 맡기고 무엇을 끝까지 붙잡을지 정하는 사람의 감각이 더 중요해진다.
+
+그리고 그 '끝까지 붙잡아야 할 것'의 정점에 있는 게 바로 **시장에 대한 나만의 포지션(position)과 매매전략**이다. 자료 수집도, 정리도, 초안 작성도 전부 AI에게 맡길 수 있지만, 지금 시장을 어떻게 읽고 어디에 베팅할지, 어떤 전략으로 들어가고 나올지는 누구도 대신 정해 주지 않는다. AI가 모든 걸 빠르게 처리해 주는 시대일수록, 이 한 가지 — 시장에 대한 관점과 매매전략을 얼마나 치열하게 고민하느냐 — 가 결국 성패를 가를 것이라고 나는 믿는다.
 
 ![a man sitting at a table using a laptop computer](https://images.unsplash.com/photo-1637249820580-a877474a889d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjB3b3JraW5nJTIwd2l0aCUyMGFpJTIwbGFwdG9wJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzgyMDE5MDUxfDA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Jakob Owens](https://unsplash.com/@jakobowens1?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-man-sitting-at-a-table-using-a-laptop-computer-fB_kHwH6Sf0?utm_source=spice-bandit-blog&utm_medium=referral)*
