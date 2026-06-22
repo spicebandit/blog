@@ -1,0 +1,120 @@
+---
+// Brand identity hero — The Verge style: dominant wordmark fills the viewport header
+---
+<div class="brand-hero">
+  <div class="brand-bg-grid" aria-hidden="true"></div>
+  <div class="brand-inner">
+    <div class="brand-eyebrow">에너지 · 경제 · AI · 일상</div>
+    <h1 class="brand-wordmark" aria-label="BASELOAD">
+      <span class="wm-base">BASE</span><span class="wm-load">LOAD</span>
+    </h1>
+    <p class="brand-tagline">세상의 흐름을 읽는 인사이트</p>
+    <div class="brand-cats">
+      <a href="/category/energy/"  class="bcat energy">⚡ 에너지</a>
+      <a href="/category/economy/" class="bcat economy">📈 경제경영</a>
+      <a href="/category/ai/"      class="bcat ai">🤖 AI·공부</a>
+      <a href="/category/life/"    class="bcat life">☀️ 일상</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.brand-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #080613 0%, #13103a 45%, #0a1a30 100%);
+  /* bleed to full width past the .wide wrap */
+  margin: -28px -24px 48px;
+  padding: 64px 48px 56px;
+}
+
+/* Subtle grid pattern overlay */
+.brand-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(122,63,242,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122,63,242,.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+/* Glow orb */
+.brand-hero::before {
+  content: '';
+  position: absolute;
+  top: -120px; left: -80px;
+  width: 600px; height: 600px;
+  background: radial-gradient(ellipse at center, rgba(122,63,242,.22) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.brand-inner {
+  position: relative;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.brand-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(169,139,246,.8);
+  margin-bottom: 16px;
+}
+
+.brand-wordmark {
+  margin: 0 0 16px;
+  font-size: clamp(4.5rem, 12vw, 10rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+.wm-base { color: #ffffff; }
+.wm-load { color: #a98bf6; }
+
+.brand-tagline {
+  margin: 0 0 32px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255,255,255,.5);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.brand-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bcat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-decoration: none;
+  transition: background .15s, transform .15s;
+  letter-spacing: 0.01em;
+}
+.bcat:hover { transform: translateY(-1px); text-decoration: none; }
+
+.bcat.energy  { color: #fbbf24; border-color: rgba(251,191,36,.35);  background: rgba(251,191,36,.08); }
+.bcat.economy { color: #34d399; border-color: rgba(52,211,153,.35);  background: rgba(52,211,153,.08); }
+.bcat.ai      { color: #a98bf6; border-color: rgba(169,139,246,.4);  background: rgba(169,139,246,.1); }
+.bcat.life    { color: #f472b6; border-color: rgba(244,114,182,.35); background: rgba(244,114,182,.08); }
+
+.bcat.energy:hover  { background: rgba(251,191,36,.18); }
+.bcat.economy:hover { background: rgba(52,211,153,.18); }
+.bcat.ai:hover      { background: rgba(169,139,246,.2); }
+.bcat.life:hover    { background: rgba(244,114,182,.18); }
+
+@media (max-width: 767px) {
+  .brand-hero { padding: 44px 24px 40px; margin: -28px -20px 36px; }
+  .brand-wordmark { font-size: clamp(3.5rem, 14vw, 5.5rem); }
+}
+</style>

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import BrandHero from '../components/BrandHero.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import CategorySection from '../components/CategorySection.astro';
@@ -53,6 +54,9 @@ const byCat = (cat: CategorySlug) =>
     }));
 ---
 <Base title="BASELOAD" description="에너지·경제·AI·일상을 다루는 뉴스 블로그" wide={true}>
+
+  <!-- Brand Identity Hero — The Verge style -->
+  <BrandHero />
 
   <!-- Hero: featured article + recent sidebar -->
   {featured ? (

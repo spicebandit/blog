@@ -206,14 +206,14 @@ const showNotice = new Date() < NOTICE.until;
         position: sticky;
         top: 0;
         z-index: 100;
-        background: rgba(255,255,255,0.92);
+        background: rgba(8,6,19,0.96);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid var(--line);
+        border-bottom: 1px solid rgba(122,63,242,.25);
         height: var(--nav-h);
       }
       [data-theme="dark"] .site-nav {
-        background: rgba(21,18,29,0.92);
+        background: rgba(8,6,19,0.98);
       }
       .nav-inner {
         max-width: var(--max-w);
@@ -229,7 +229,7 @@ const showNotice = new Date() < NOTICE.until;
         font-weight: 900;
         letter-spacing: 0.10em;
         text-transform: uppercase;
-        color: var(--ink);
+        color: #fff;
         flex: none;
         display: flex;
         align-items: center;
@@ -238,14 +238,14 @@ const showNotice = new Date() < NOTICE.until;
         margin-right: 8px;
         transition: color .15s;
       }
-      .nav-logo:hover { text-decoration: none; color: var(--accent); }
+      .nav-logo:hover { text-decoration: none; color: #a98bf6; }
       .logo-bolt {
         width: 20px; height: 20px; flex: none;
-        color: var(--accent);
+        color: #a98bf6;
         transition: transform .2s;
       }
-      .logo-base { color: var(--ink); font-weight: 800; }
-      .logo-load { color: var(--accent); font-weight: 900; }
+      .logo-base { color: #fff; font-weight: 800; }
+      .logo-load { color: #a98bf6; font-weight: 900; }
       .nav-logo:hover .logo-bolt { transform: scale(1.15); }
 
       .nav-cats {
@@ -266,18 +266,18 @@ const showNotice = new Date() < NOTICE.until;
         padding: 6px 12px;
         font-size: 0.8125rem;
         font-weight: 600;
-        color: var(--muted);
+        color: rgba(255,255,255,.55);
         border-radius: var(--radius-sm);
         transition: color .15s, background .15s;
         white-space: nowrap;
         text-decoration: none;
       }
-      .nav-cats a:hover { color: var(--ink); background: var(--line-2); text-decoration: none; }
-      .nav-cats a.active { color: var(--accent); background: var(--accent-soft); }
-      .nav-cats a[data-cat="energy"].active  { color: var(--cat-energy);  background: var(--cat-energy-soft); }
-      .nav-cats a[data-cat="economy"].active { color: var(--cat-economy); background: var(--cat-economy-soft); }
-      .nav-cats a[data-cat="ai"].active      { color: var(--cat-ai);      background: var(--cat-ai-soft); }
-      .nav-cats a[data-cat="life"].active    { color: var(--cat-life);    background: var(--cat-life-soft); }
+      .nav-cats a:hover { color: #fff; background: rgba(255,255,255,.08); text-decoration: none; }
+      .nav-cats a.active { color: #a98bf6; background: rgba(169,139,246,.15); }
+      .nav-cats a[data-cat="energy"].active  { color: #fbbf24; background: rgba(251,191,36,.12); }
+      .nav-cats a[data-cat="economy"].active { color: #34d399; background: rgba(52,211,153,.12); }
+      .nav-cats a[data-cat="ai"].active      { color: #a98bf6; background: rgba(169,139,246,.15); }
+      .nav-cats a[data-cat="life"].active    { color: #f472b6; background: rgba(244,114,182,.12); }
 
       .nav-actions {
         display: flex;
@@ -289,14 +289,14 @@ const showNotice = new Date() < NOTICE.until;
         display: inline-flex; align-items: center; justify-content: center;
         width: 34px; height: 34px;
         background: none;
-        border: 1px solid var(--line);
+        border: 1px solid rgba(255,255,255,.18);
         border-radius: 999px;
-        color: var(--muted);
+        color: rgba(255,255,255,.55);
         cursor: pointer;
         transition: color .15s, border-color .15s, background .15s;
         text-decoration: none;
       }
-      .nav-btn:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+      .nav-btn:hover { color: #a98bf6; border-color: #a98bf6; background: rgba(169,139,246,.15); text-decoration: none; }
       .nav-btn .icon-sun { display: none; }
       [data-theme="dark"] .nav-btn .icon-moon { display: none; }
       [data-theme="dark"] .nav-btn .icon-sun { display: inline-flex; }
