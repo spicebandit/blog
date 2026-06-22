@@ -2,11 +2,6 @@
 import { categoryName, type CategorySlug } from '../lib/categories';
 import AdSlot from './AdSlot.astro';
 
-interface SeriesPart {
-  label: string;
-  slug: string;
-}
-
 interface PostData {
   id: string;
   title: string;
@@ -16,8 +11,6 @@ interface PostData {
   heroImage?: string;
   author?: string;
   readingTime?: number;
-  series?: string;
-  seriesParts?: SeriesPart[];
 }
 
 interface Props {
@@ -41,22 +34,9 @@ const dateLabel = featured.pubDate.toLocaleDateString('ko-KR', { month: 'long', 
       <div class="hero-meta-top">
         <span class:list={['cat-badge', featured.category]}>{categoryName(featured.category)}</span>
         <span class="top-badge">1면 톱</span>
-        {featured.series && <span class="series-badge">📚 {featured.seriesParts?.length ?? 0}부작 연재</span>}
       </div>
       <h1 class="hero-headline">{featured.title}</h1>
       <p class="hero-deck">{featured.description}</p>
-      {featured.seriesParts && featured.seriesParts.length > 0 && (
-        <div class="series-nav">
-          {featured.seriesParts.map((part) => (
-            <a
-              href={`/blog/${part.slug}/`}
-              class:list={['series-part', part.slug === featured.id ? 'series-part-active' : '']}
-            >
-              {part.label}
-            </a>
-          ))}
-        </div>
-      )}
       <div class="hero-meta-bottom">
         {featured.author && <span class="author">{featured.author}</span>}
         {featured.author && <span class="sep">·</span>}
@@ -160,39 +140,6 @@ const dateLabel = featured.pubDate.toLocaleDateString('ko-KR', { month: 'long', 
   font-size: 11px; font-weight: 800; letter-spacing: 0.05em;
   color: var(--accent); background: var(--accent-soft);
   padding: 3px 9px; border-radius: 999px;
-}
-
-.series-badge {
-  font-size: 11px; font-weight: 700; letter-spacing: 0.03em;
-  color: var(--ink-2, #64748b); background: var(--bg-3, #f1f5f9);
-  border: 1px solid var(--line);
-  padding: 3px 9px; border-radius: 999px;
-}
-
-.series-nav {
-  display: flex; flex-wrap: wrap; gap: 6px;
-  margin-bottom: 16px;
-}
-.series-part {
-  display: inline-block;
-  font-size: 12px; font-weight: 600;
-  color: var(--muted); background: var(--bg-2, #f9fafb);
-  border: 1px solid var(--line);
-  padding: 4px 10px; border-radius: 6px;
-  text-decoration: none;
-  transition: background .15s, color .15s, border-color .15s;
-  white-space: nowrap;
-}
-.series-part:hover {
-  color: var(--accent); background: var(--accent-soft);
-  border-color: var(--accent);
-  text-decoration: none;
-}
-.series-part-active {
-  color: var(--accent); background: var(--accent-soft);
-  border-color: var(--accent);
-  font-weight: 700;
-  pointer-events: none;
 }
 
 .hero-headline {

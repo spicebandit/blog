@@ -5,22 +5,7 @@ pubDate: 2026-06-19T09:00:00+09:00
 category: "ai"
 tags: ["ClaudeCode", "주식자동매매", "멀티에이전트", "KIS API", "LLM"]
 featured: true
-series: "클로드코드로 주식투자 에이전트 만들기"
-seriesParts:
-  - label: "① 목적과 설계"
-    slug: "claude-code-stock-agent-1-design"
-  - label: "② 한투 API"
-    slug: "claude-code-stock-agent-2-kis-api"
-  - label: "③ 분석가 두뇌"
-    slug: "claude-code-stock-agent-3-analysts"
-  - label: "④ 매매와 안전장치"
-    slug: "claude-code-stock-agent-4-trade-safety"
-  - label: "⑤ 운영 자동화"
-    slug: "claude-code-stock-agent-5-operations"
 ---
-
-> 📚 **연재 — 클로드코드로 주식투자 에이전트 만들기**
-> **① 목적과 설계** · [② 한투 API 연결](/blog/claude-code-stock-agent-2-kis-api/) · [③ 분석가 두뇌](/blog/claude-code-stock-agent-3-analysts/) · [④ 매매와 안전장치](/blog/claude-code-stock-agent-4-trade-safety/) · [⑤ 운영 자동화](/blog/claude-code-stock-agent-5-operations/)
 
 ## 시작하며
 
