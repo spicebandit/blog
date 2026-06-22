@@ -1,0 +1,56 @@
+---
+interface Props {
+  text: string;
+  time?: string;
+  show?: boolean;
+}
+
+const { text, time, show = true } = Astro.props;
+---
+{show && (
+  <div class="breaking-bar" role="complementary" aria-label="속보">
+    <div class="breaking-inner">
+      <span class="breaking-label">속보</span>
+      <span class="breaking-text">{text}</span>
+      {time && <span class="breaking-time">{time}</span>}
+    </div>
+  </div>
+)}
+
+<style>
+.breaking-bar {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+.breaking-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  gap: 12px;
+}
+.breaking-label {
+  background: rgba(0,0,0,.2);
+  padding: 2px 8px;
+  border-radius: 3px;
+  flex: none;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+}
+.breaking-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+.breaking-time {
+  flex: none;
+  opacity: 0.7;
+  font-weight: 500;
+}
+</style>

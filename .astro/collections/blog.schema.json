@@ -36,6 +36,19 @@
       "default": false,
       "type": "boolean"
     },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "heroImage": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "readingTime": {
+      "type": "number"
+    },
     "$schema": {
       "type": "string"
     }

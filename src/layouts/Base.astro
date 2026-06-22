@@ -1,28 +1,28 @@
 ---
 import Analytics from '@vercel/analytics/astro';
 import { CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
+
 interface Props {
   title: string;
   description: string;
   type?: string;
   pubDate?: Date;
   updatedDate?: Date;
+  wide?: boolean;
 }
-const { title, description, type = 'website', pubDate, updatedDate } = Astro.props;
+
+const { title, description, type = 'website', pubDate, updatedDate, wide = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const SITE_NAME = '세상은 니가 구해라'; // TODO: 블로그 이름 변경
+const SITE_NAME = '세상은 니가 구해라';
 
 const pathname = Astro.url.pathname;
-// 네비게이션 항목: 전체(홈) + 4개 카테고리
 const navItems = [
-  { href: '/', label: '전체' },
-  ...CATEGORY_SLUGS.map((slug) => ({ href: `/category/${slug}/`, label: CATEGORY_NAMES[slug] })),
+  { href: '/', label: '전체', cat: null as string | null },
+  ...CATEGORY_SLUGS.map((slug) => ({ href: `/category/${slug}/`, label: CATEGORY_NAMES[slug], cat: slug })),
 ];
 const isActive = (href: string) =>
   href === '/' ? pathname === '/' : pathname === href || pathname === href.replace(/\/$/, '');
 
-// 상단 공지(핀) — 모든 페이지의 카테고리 메뉴 아래에 노출.
-// until 이후에는 빌드 시 자동으로 사라진다. 월드컵 종료(7/21)에 맞춰 정리.
 const NOTICE = {
   href: '/blog/2026-world-cup-tracker/',
   emoji: '⚽',
@@ -37,7 +37,6 @@ const showNotice = new Date() < NOTICE.until;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- 다크모드: 본문 렌더 전에 테마를 먼저 정해 깜빡임(FOUC) 방지 -->
     <script is:inline>
       (function () {
         try {
@@ -55,7 +54,6 @@ const showNotice = new Date() < NOTICE.until;
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
 
-    <!-- TODO: 서치콘솔/서치어드바이저 등록 시 발급받은 코드로 교체 -->
     <meta name="google-site-verification" content="9CN_w6tkNr_y8h6bhS5zyXZtWi9HnmRwhUNbk3_4foA" />
     <meta name="naver-site-verification" content="2304962573c68823df2550048d161b1d87227173" />
 
@@ -79,26 +77,78 @@ const showNotice = new Date() < NOTICE.until;
     )}
 
     <style is:global>
+      /* ── DESIGN TOKENS ─────────────────────── */
       :root {
-        --ink: #221c2e;
-        --muted: #6d6580;
-        --accent: #7a3ff2;
-        --accent-soft: #efe8ff;
-        --line: #e8e4f0;
-        --bg: #ffffff;
+        /* Brand */
+        --accent:       #7a3ff2;
+        --accent-soft:  #efe8ff;
+        --accent-dark:  #5a2ec0;
+
+        /* Semantic */
+        --ink:     #221c2e;
+        --ink-2:   #374151;
+        --muted:   #6d6580;
+        --line:    #e8e4f0;
+        --line-2:  #f3f4f6;
+        --bg:      #ffffff;
+        --bg-2:    #f9fafb;
+        --ad-bg:   #f3f4f6;
+
+        /* Notice gradient */
         --notice-grad-end: #fbf9ff;
+
+        /* Category colors */
+        --cat-energy:        #d97706;
+        --cat-economy:       #059669;
+        --cat-ai:            #7a3ff2;
+        --cat-life:          #db2777;
+        --cat-energy-soft:   #fef3c7;
+        --cat-economy-soft:  #d1fae5;
+        --cat-ai-soft:       #ede9fe;
+        --cat-life-soft:     #fce7f3;
+
+        /* Layout */
+        --max-w:      1200px;
+        --nav-h:      56px;
+        --radius-sm:  6px;
+        --radius-md:  10px;
+        --radius-lg:  14px;
+        --radius-xl:  18px;
+        --shadow-sm:  0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
+        --shadow-md:  0 4px 16px rgba(0,0,0,.10), 0 2px 4px rgba(0,0,0,.06);
+        --shadow-lg:  0 10px 40px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
       }
+
       [data-theme="dark"] {
-        --ink: #ece8f4;
-        --muted: #a59cb8;
-        --accent: #a98bf6;
+        --accent:      #a98bf6;
         --accent-soft: #2a2440;
-        --line: #322b44;
-        --bg: #15121d;
+        --accent-dark: #c3a8ff;
+
+        --ink:    #ece8f4;
+        --ink-2:  #c9c5d8;
+        --muted:  #a59cb8;
+        --line:   #322b44;
+        --line-2: #1e1c2a;
+        --bg:     #15121d;
+        --bg-2:   #1c1730;
+        --ad-bg:  #1a1826;
+
         --notice-grad-end: #1c1730;
+
+        --cat-energy:        #fbbf24;
+        --cat-economy:       #34d399;
+        --cat-ai:            #a68bf5;
+        --cat-life:          #f472b6;
+        --cat-energy-soft:   #292214;
+        --cat-economy-soft:  #0d2218;
+        --cat-ai-soft:       #1e1830;
+        --cat-life-soft:     #2a1220;
+
         color-scheme: dark;
       }
-      * { box-sizing: border-box; }
+
+      /* ── RESET ─────────────────────────────── */
+      *, *::before, *::after { box-sizing: border-box; }
       body {
         margin: 0;
         background: var(--bg);
@@ -109,184 +159,213 @@ const showNotice = new Date() < NOTICE.until;
         font-size: 17px;
         -webkit-font-smoothing: antialiased;
       }
-      .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
-      header.site {
+
+      /* Skip link */
+      .skip-link {
+        position: absolute; top: -9999px; left: 8px;
+        background: var(--accent); color: #fff;
+        padding: 6px 12px; border-radius: 4px;
+        font-size: 0.8125rem; font-weight: 700;
+        z-index: 9999;
+      }
+      .skip-link:focus { top: 8px; }
+
+      /* ── WRAP ──────────────────────────────── */
+      .wrap {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .wrap.wide {
+        max-width: 1200px;
+        padding: 0 24px;
+      }
+
+      /* ── STICKY NAV ────────────────────────── */
+      .site-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255,255,255,0.92);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         border-bottom: 1px solid var(--line);
-        padding: 28px 0;
-        margin-bottom: 48px;
+        height: var(--nav-h);
       }
-      header.site a.logo {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-weight: 800;
-        font-size: 1.3rem;
-        letter-spacing: -0.02em;
-        color: var(--ink);
-        text-decoration: none;
+      [data-theme="dark"] .site-nav {
+        background: rgba(21,18,29,0.92);
       }
-      header.site a.logo:hover { text-decoration: none; }
-      /* 로고 + 다크모드 토글 한 줄 */
-      header.site .top-row {
+      .nav-inner {
+        max-width: var(--max-w);
+        margin: 0 auto;
+        padding: 0 24px;
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 12px;
+        gap: 8px;
       }
-      .theme-toggle {
+      .nav-logo {
+        font-size: 1.1rem;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        color: var(--ink);
         flex: none;
-        width: 38px;
-        height: 38px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        justify-content: center;
-        background: none;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        color: var(--muted);
-        cursor: pointer;
-        transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
-      }
-      .theme-toggle:hover {
-        color: var(--accent);
-        border-color: var(--accent);
-        background: var(--accent-soft);
-      }
-      .theme-toggle .icon-sun { display: none; }
-      [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-      [data-theme="dark"] .theme-toggle .icon-sun { display: inline-flex; }
-      header.site a.logo .mascot {
-        width: 34px;
-        height: 34px;
-        flex: none;
+        gap: 8px;
+        text-decoration: none;
+        margin-right: 8px;
         transform-origin: 50% 80%;
-        transition: transform 0.25s ease;
       }
-      header.site a.logo:hover .mascot {
-        animation: mascot-wiggle 0.6s ease-in-out;
+      .nav-logo:hover { text-decoration: none; color: var(--ink); }
+      .nav-logo .mascot {
+        width: 28px; height: 28px; flex: none;
+        transform-origin: 50% 80%;
       }
+      .nav-logo:hover .mascot { animation: mascot-wiggle .6s ease-in-out; }
       @keyframes mascot-wiggle {
         0%, 100% { transform: rotate(0deg); }
         25% { transform: rotate(-9deg); }
         75% { transform: rotate(9deg); }
       }
       @media (prefers-reduced-motion: reduce) {
-        header.site a.logo:hover .mascot { animation: none; }
+        .nav-logo:hover .mascot { animation: none; }
       }
-      /* 카테고리 네비게이션 */
-      header.site nav.cats {
+
+      .nav-cats {
+        flex: 1;
+        min-width: 0;
+      }
+      .nav-cats ul {
         display: flex;
-        flex-wrap: wrap;
-        gap: 6px 8px;
-        margin-top: 16px;
+        gap: 2px;
+        list-style: none;
+        padding: 0; margin: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
       }
-      header.site nav.cats .cat-link {
-        color: var(--muted);
-        text-decoration: none;
-        font-size: 0.92rem;
+      .nav-cats ul::-webkit-scrollbar { display: none; }
+      .nav-cats a {
+        display: block;
+        padding: 6px 12px;
+        font-size: 0.8125rem;
         font-weight: 600;
-        line-height: 1.2;
-        padding: 5px 11px;
+        color: var(--muted);
+        border-radius: var(--radius-sm);
+        transition: color .15s, background .15s;
+        white-space: nowrap;
+        text-decoration: none;
+      }
+      .nav-cats a:hover { color: var(--ink); background: var(--line-2); text-decoration: none; }
+      .nav-cats a.active { color: var(--accent); background: var(--accent-soft); }
+      .nav-cats a[data-cat="energy"].active  { color: var(--cat-energy);  background: var(--cat-energy-soft); }
+      .nav-cats a[data-cat="economy"].active { color: var(--cat-economy); background: var(--cat-economy-soft); }
+      .nav-cats a[data-cat="ai"].active      { color: var(--cat-ai);      background: var(--cat-ai-soft); }
+      .nav-cats a[data-cat="life"].active    { color: var(--cat-life);    background: var(--cat-life-soft); }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex: none;
+      }
+      .nav-btn {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 34px; height: 34px;
+        background: none;
         border: 1px solid var(--line);
         border-radius: 999px;
-        white-space: nowrap;
-        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-      }
-      header.site nav.cats .cat-link:hover {
+        color: var(--muted);
+        cursor: pointer;
+        transition: color .15s, border-color .15s, background .15s;
         text-decoration: none;
-        color: var(--accent);
-        border-color: var(--accent);
-        background: var(--accent-soft);
       }
-      header.site nav.cats .cat-link.active {
-        color: #fff;
-        background: var(--accent);
-        border-color: var(--accent);
-      }
-      /* 상단 공지(핀) 바 */
-      header.site a.notice {
+      .nav-btn:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+      .nav-btn .icon-sun { display: none; }
+      [data-theme="dark"] .nav-btn .icon-moon { display: none; }
+      [data-theme="dark"] .nav-btn .icon-sun { display: inline-flex; }
+
+      /* ── NOTICE WIRE (below nav) ───────────── */
+      a.notice-wire {
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-top: 14px;
-        padding: 11px 14px;
+        max-width: var(--max-w);
+        margin: 12px auto;
+        padding: 10px 20px;
         border: 1px solid var(--line);
-        border-radius: 12px;
+        border-radius: var(--radius-lg);
         background: linear-gradient(180deg, var(--accent-soft), var(--notice-grad-end));
         color: var(--ink);
         text-decoration: none;
-        font-size: 0.93rem;
+        font-size: 0.875rem;
         font-weight: 600;
         line-height: 1.3;
-        transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        transition: border-color .15s, transform .15s, box-shadow .15s;
+        /* left/right margins align with wide content */
+        padding-left: 24px;
+        padding-right: 24px;
       }
-      header.site a.notice:hover {
+      a.notice-wire:hover {
         text-decoration: none;
         border-color: var(--accent);
         transform: translateY(-1px);
-        box-shadow: 0 4px 14px rgba(122, 63, 242, 0.13);
+        box-shadow: 0 4px 14px rgba(122,63,242,.13);
       }
-      header.site a.notice .notice-tag {
+      .notice-tag {
         flex: none;
-        font-size: 0.72rem;
-        font-weight: 800;
-        letter-spacing: 0.02em;
-        padding: 3px 9px;
-        border-radius: 999px;
-        background: var(--accent);
-        color: #fff;
+        font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em;
+        padding: 3px 9px; border-radius: 999px;
+        background: var(--accent); color: #fff;
       }
-      header.site a.notice .notice-title {
+      .notice-title {
         flex: 1 1 auto;
         min-width: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
       }
-      header.site a.notice .notice-badge {
+      .notice-badge {
         flex: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 0.76rem;
-        font-weight: 700;
-        color: var(--accent);
+        display: inline-flex; align-items: center; gap: 5px;
+        font-size: 0.76rem; font-weight: 700; color: var(--accent);
       }
-      header.site a.notice .notice-badge .dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
+      .notice-badge .dot {
+        width: 7px; height: 7px; border-radius: 50%;
         background: #e0392b;
-        box-shadow: 0 0 0 0 rgba(224, 57, 43, 0.55);
+        box-shadow: 0 0 0 0 rgba(224,57,43,.55);
         animation: notice-pulse 1.8s ease-out infinite;
       }
       @keyframes notice-pulse {
-        0% { box-shadow: 0 0 0 0 rgba(224, 57, 43, 0.55); }
-        70% { box-shadow: 0 0 0 6px rgba(224, 57, 43, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(224, 57, 43, 0); }
-      }
-      @media (max-width: 420px) {
-        header.site a.notice .notice-badge-text { display: none; }
+        0%   { box-shadow: 0 0 0 0 rgba(224,57,43,.55); }
+        70%  { box-shadow: 0 0 0 6px rgba(224,57,43,0); }
+        100% { box-shadow: 0 0 0 0 rgba(224,57,43,0); }
       }
       @media (prefers-reduced-motion: reduce) {
-        header.site a.notice .notice-badge .dot { animation: none; }
+        .notice-badge .dot { animation: none; }
       }
-      /* 글 목록·상세에서 쓰는 작은 카테고리 칩 */
+      @media (max-width: 420px) { .notice-badge-text { display: none; } }
+
+      /* ── MAIN CONTENT ──────────────────────── */
+      main.wrap,
+      main.wrap.wide {
+        padding-top: 28px;
+      }
+
+      /* ── CATEGORY CHIP ─────────────────────── */
       .cat-chip {
         display: inline-block;
-        font-size: 0.78rem;
-        font-weight: 700;
-        line-height: 1;
-        padding: 4px 9px;
-        border-radius: 999px;
-        color: var(--accent);
-        background: var(--accent-soft);
+        font-size: 0.78rem; font-weight: 700; line-height: 1;
+        padding: 4px 9px; border-radius: 999px;
+        color: var(--accent); background: var(--accent-soft);
         text-decoration: none;
       }
       .cat-chip:hover { text-decoration: none; background: var(--accent); color: #fff; }
+
+      /* ── GLOBAL LINKS / HEADINGS ───────────── */
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; text-underline-offset: 3px; }
       h1, h2, h3 { letter-spacing: -0.025em; line-height: 1.35; }
+
+      /* ── ARTICLE PAGE STYLES ───────────────── */
       article h2 {
         margin-top: 2.2em;
         padding-left: 14px;
@@ -307,6 +386,8 @@ const showNotice = new Date() < NOTICE.until;
         border-left: 4px solid var(--line);
         color: var(--muted);
       }
+
+      /* ── FOOTER ────────────────────────────── */
       footer.site {
         border-top: 1px solid var(--line);
         margin-top: 80px;
@@ -314,17 +395,24 @@ const showNotice = new Date() < NOTICE.until;
         color: var(--muted);
         font-size: 0.85rem;
       }
+
       time, .meta { color: var(--muted); font-size: 0.85rem; }
-      :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-      @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+      :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { transition: none !important; animation: none !important; }
+      }
+
+      /* ── RESPONSIVE NAV ─────────────────────── */
+      @media (max-width: 767px) {
+        :root { --nav-h: 48px; }
+      }
     </style>
     <link rel="stylesheet" as="style" crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
-    <!-- Google Analytics 4 (측정 ID는 공개값) -->
     <script is:inline>
-      // 내 방문 제외 스위치: `?me`로 한 번 접속하면 이 기기에 표식 저장 → 이후 GA 미집계.
-      // `?me=off`로 접속하면 해제. localStorage 키는 'ga_exclude_owner'.
       (function () {
         try {
           var p = new URLSearchParams(location.search);
@@ -347,7 +435,6 @@ const showNotice = new Date() < NOTICE.until;
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       if (window.__gaExcludeOwner) {
-        // 내 기기: 측정 자체를 끈다.
         window['ga-disable-G-KM0XNWHRCM'] = true;
       } else {
         gtag('config', 'G-KM0XNWHRCM');
@@ -355,76 +442,93 @@ const showNotice = new Date() < NOTICE.until;
     </script>
   </head>
   <body>
-    <header class="site">
-      <div class="wrap">
-        <div class="top-row">
-        <a class="logo" href="/">
-          <span>세상은 니가 구해라</span>
+    <a class="skip-link" href="#main">콘텐츠로 건너뛰기</a>
+
+    <!-- ── STICKY NAV ──────────────────────────── -->
+    <nav class="site-nav" role="navigation" aria-label="주 메뉴">
+      <div class="nav-inner">
+        <a class="nav-logo" href="/">
           <svg class="mascot" viewBox="0 0 64 64" role="img" aria-label="Spice Bandit 해적 마스코트">
-            <!-- 얼굴 -->
             <circle cx="32" cy="35" r="18" fill="#f4c89f" stroke="#e0a878" stroke-width="1.4"/>
-            <!-- 금 귀걸이 -->
             <circle cx="14.5" cy="42" r="3" fill="none" stroke="#e8b53a" stroke-width="2"/>
-            <!-- 반다나(두건) -->
             <path d="M13 27 Q32 11 51 27 Q32 20 13 27 Z" fill="#d6473f"/>
             <path d="M13 27 Q32 20 51 27 L51 31 Q32 25 13 31 Z" fill="#c33b34"/>
-            <!-- 반다나 매듭 + 꼬리 -->
             <path d="M50 27 l7 -3 -2 6 z" fill="#c33b34"/>
             <path d="M55 26 q8 2 9 9 q-6 -3 -10 -2 z" fill="#d6473f"/>
-            <!-- 반다나 물방울무늬 -->
             <circle cx="24" cy="24" r="1.4" fill="#f6d3cf"/>
             <circle cx="33" cy="21.5" r="1.4" fill="#f6d3cf"/>
             <circle cx="42" cy="24" r="1.4" fill="#f6d3cf"/>
-            <!-- 눈가리개 끈 -->
             <path d="M18 30 L46 26" stroke="#3a322e" stroke-width="1.6"/>
-            <!-- 눈가리개(왼눈) -->
             <ellipse cx="24" cy="34" rx="5" ry="5.4" fill="#3a322e"/>
-            <!-- 뜬 눈(오른눈) -->
             <circle cx="40" cy="34" r="2.7" fill="#3a322e"/>
             <circle cx="41" cy="33" r="0.9" fill="#fff"/>
-            <!-- 웃는 입 -->
             <path d="M28 43 q5 5 11 1" stroke="#7a4a32" stroke-width="1.8" fill="none" stroke-linecap="round"/>
           </svg>
+          <span>세상은 니가 구해라</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="다크 모드 전환" title="다크 모드 전환">
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>
-          </svg>
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>
-          </svg>
-        </button>
-        </div>
-        <nav class="cats" aria-label="카테고리">
-          {navItems.map((item) => (
-            <a
-              href={item.href}
-              class:list={['cat-link', { active: isActive(item.href) }]}
-              aria-current={isActive(item.href) ? 'page' : undefined}
-            >
-              {item.label}
-            </a>
-          ))}
+
+        <nav class="nav-cats" aria-label="카테고리">
+          <ul role="list">
+            {navItems.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class:list={[{ active: isActive(item.href) }]}
+                  data-cat={item.cat ?? undefined}
+                  aria-current={isActive(item.href) ? 'page' : undefined}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </nav>
-        {showNotice && (
-          <a class="notice" href={NOTICE.href} aria-label={`공지: ${NOTICE.label}`}>
-            <span class="notice-tag">공지</span>
-            <span class="notice-title">{NOTICE.emoji} {NOTICE.label}</span>
-            <span class="notice-badge"><span class="dot" aria-hidden="true"></span><span class="notice-badge-text">{NOTICE.badge}</span></span>
+
+        <div class="nav-actions">
+          <button class="nav-btn theme-toggle" type="button" aria-label="다크 모드 전환">
+            <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>
+            </svg>
+            <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>
+            </svg>
+          </button>
+          <a class="nav-btn" href="/rss.xml" aria-label="RSS 피드">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/>
+              <circle cx="5" cy="19" r="1" fill="currentColor"/>
+            </svg>
           </a>
-        )}
+        </div>
       </div>
-    </header>
-    <main class="wrap">
+    </nav>
+
+    <!-- ── NOTICE WIRE ─────────────────────────── -->
+    {showNotice && (
+      <a class="notice-wire" href={NOTICE.href} aria-label={`공지: ${NOTICE.label}`}>
+        <span class="notice-tag">공지</span>
+        <span class="notice-title">{NOTICE.emoji} {NOTICE.label}</span>
+        <span class="notice-badge">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="notice-badge-text">{NOTICE.badge}</span>
+        </span>
+      </a>
+    )}
+
+    <!-- ── MAIN CONTENT ────────────────────────── -->
+    <main id="main" class:list={['wrap', { wide }]}>
       <slot />
     </main>
+
     <footer class="site">
       <div class="wrap">
         © {new Date().getFullYear()} Spice Bandit · <a href="/rss.xml">RSS</a>
       </div>
     </footer>
+
     <Analytics />
+
     <script is:inline>
       (function () {
         var btn = document.querySelector('.theme-toggle');

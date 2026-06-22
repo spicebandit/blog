@@ -1,0 +1,253 @@
+---
+import { categoryName, type CategorySlug } from '../lib/categories';
+import AdSlot from './AdSlot.astro';
+
+interface PostData {
+  id: string;
+  title: string;
+  description: string;
+  category: CategorySlug;
+  pubDate: Date;
+  heroImage?: string;
+  author?: string;
+  readingTime?: number;
+}
+
+interface Props {
+  featured: PostData;
+  recent: PostData[];
+}
+
+const { featured, recent } = Astro.props;
+const dateLabel = featured.pubDate.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
+---
+<div class="hero-zone">
+  <!-- Top story (left) -->
+  <a class="hero-article" href={`/blog/${featured.id}/`}>
+    <div class:list={['hero-thumb', `hero-thumb-${featured.category}`]}>
+      {featured.heroImage
+        ? <img src={featured.heroImage} alt="" loading="eager" />
+        : <div class="hero-thumb-placeholder" aria-hidden="true">{featured.category.toUpperCase()}</div>
+      }
+    </div>
+    <div class="hero-body">
+      <div class="hero-meta-top">
+        <span class:list={['cat-badge', featured.category]}>{categoryName(featured.category)}</span>
+        <span class="top-badge">1면 톱</span>
+      </div>
+      <h1 class="hero-headline">{featured.title}</h1>
+      <p class="hero-deck">{featured.description}</p>
+      <div class="hero-meta-bottom">
+        {featured.author && <span class="author">{featured.author}</span>}
+        {featured.author && <span class="sep">·</span>}
+        <time datetime={featured.pubDate.toISOString()}>{dateLabel}</time>
+        {featured.readingTime && <><span class="sep">·</span><span>{featured.readingTime}분</span></>}
+      </div>
+      <span class="read-btn">
+        전문 읽기
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </span>
+    </div>
+  </a>
+
+  <!-- Sidebar (right) -->
+  <div class="hero-sidebar">
+    {recent.length > 0 && (
+      <div class="sidebar-section">
+        <div class="sidebar-header">
+          <h3>최신 기사</h3>
+          <a href="/">전체 보기</a>
+        </div>
+        <ul class="latest-list" role="list">
+          {recent.slice(0, 5).map((post) => {
+            const t = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+            return (
+              <li class="latest-item">
+                <a href={`/blog/${post.id}/`}>
+                  <span class:list={['item-badge', post.category]}>{categoryName(post.category)}</span>
+                  <p class="item-title">{post.title}</p>
+                  <time class="item-time" datetime={post.pubDate.toISOString()}>{t}</time>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    )}
+    <AdSlot size="rectangle" />
+  </div>
+</div>
+
+<style>
+.hero-zone {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* Hero article */
+.hero-article {
+  display: block;
+  border-radius: var(--radius-xl, 18px);
+  overflow: hidden;
+  background: var(--bg-2, #f9fafb);
+  border: 1px solid var(--line);
+  transition: box-shadow .2s, transform .2s;
+  color: var(--ink);
+  text-decoration: none;
+}
+.hero-article:hover {
+  box-shadow: var(--shadow-lg, 0 10px 40px rgba(0,0,0,.12));
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.hero-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.hero-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-thumb-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 48px; color: rgba(255,255,255,.3);
+  font-weight: 900; letter-spacing: -2px;
+}
+.hero-thumb-energy  { background: linear-gradient(135deg, #451a03, #92400e, #d97706); }
+.hero-thumb-economy { background: linear-gradient(135deg, #022c22, #065f46, #059669); }
+.hero-thumb-ai      { background: linear-gradient(135deg, #1e1b4b, #4c1d95, #7a3ff2); }
+.hero-thumb-life    { background: linear-gradient(135deg, #500724, #9d174d, #db2777); }
+
+.hero-body { padding: 24px; }
+.hero-meta-top { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+
+.cat-badge {
+  display: inline-block;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 999px;
+}
+.cat-badge.energy  { background: var(--cat-energy-soft, #fef3c7);  color: var(--cat-energy, #d97706); }
+.cat-badge.economy { background: var(--cat-economy-soft, #d1fae5); color: var(--cat-economy, #059669); }
+.cat-badge.ai      { background: var(--cat-ai-soft, #ede9fe);      color: var(--cat-ai, #7a3ff2); }
+.cat-badge.life    { background: var(--cat-life-soft, #fce7f3);    color: var(--cat-life, #db2777); }
+
+.top-badge {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.05em;
+  color: var(--accent); background: var(--accent-soft);
+  padding: 3px 9px; border-radius: 999px;
+}
+
+.hero-headline {
+  margin: 0 0 12px;
+  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  word-break: keep-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.hero-deck {
+  margin: 0 0 16px;
+  font-size: 1.0625rem;
+  color: var(--ink-2, var(--muted));
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: keep-all;
+}
+.hero-meta-bottom {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.8125rem; color: var(--muted);
+  flex-wrap: wrap;
+}
+.hero-meta-bottom .author { font-weight: 600; color: var(--ink-2, var(--muted)); }
+.hero-meta-bottom .sep { color: var(--line); }
+
+.read-btn {
+  margin-top: 20px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  background: var(--accent); color: #fff;
+  border-radius: 999px;
+  font-size: 0.8125rem; font-weight: 700;
+  transition: background .15s, transform .15s;
+}
+.hero-article:hover .read-btn { background: var(--accent-dark, #5a2ec0); transform: translateX(2px); }
+
+/* Sidebar */
+.hero-sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+.sidebar-section {
+  background: var(--bg-2, #f9fafb);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg, 14px);
+  overflow: hidden;
+  flex: 1;
+}
+.sidebar-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted);
+}
+.sidebar-header a {
+  font-size: 0.75rem; color: var(--accent); font-weight: 600;
+  text-decoration: none;
+}
+.sidebar-header a:hover { text-decoration: underline; }
+
+.latest-list { list-style: none; padding: 0; margin: 0; }
+.latest-item { border-bottom: 1px solid var(--line-2, #f3f4f6); }
+.latest-item:last-child { border-bottom: none; }
+.latest-item a {
+  display: block; padding: 11px 16px;
+  transition: background .15s; text-decoration: none;
+}
+.latest-item a:hover { background: var(--accent-soft); text-decoration: none; }
+
+.item-badge {
+  display: block; font-size: 10px; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px;
+}
+.item-badge.energy  { color: var(--cat-energy, #d97706); }
+.item-badge.economy { color: var(--cat-economy, #059669); }
+.item-badge.ai      { color: var(--cat-ai, #7a3ff2); }
+.item-badge.life    { color: var(--cat-life, #db2777); }
+
+.item-title {
+  margin: 0 0 4px;
+  font-size: 0.8125rem; font-weight: 700; line-height: 1.4;
+  color: var(--ink); word-break: keep-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.latest-item a:hover .item-title { color: var(--accent); }
+.item-time { font-size: 11px; color: var(--muted); }
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .hero-zone { grid-template-columns: 1fr; }
+  .hero-sidebar { display: none; }
+}
+@media (max-width: 767px) {
+  .hero-headline { font-size: 1.5rem; }
+  .hero-deck { font-size: 1rem; }
+  .hero-body { padding: 16px; }
+}
+</style>

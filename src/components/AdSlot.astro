@@ -1,0 +1,59 @@
+---
+type AdSize = 'leaderboard' | 'rectangle' | 'mobile';
+
+interface Props {
+  size: AdSize;
+  class?: string;
+}
+
+const { size, class: className } = Astro.props;
+
+const minHeights: Record<AdSize, string> = {
+  leaderboard: '90px',
+  rectangle: '250px',
+  mobile: '50px',
+};
+
+const sizeLabels: Record<AdSize, string> = {
+  leaderboard: '728 × 90',
+  rectangle: '300 × 250',
+  mobile: '320 × 50',
+};
+---
+<div class:list={['ad-slot', size, className]}>
+  <span class="ad-label">광고</span>
+  <div class="ad-area" style={`min-height: ${minHeights[size]}`}>
+    <span class="ad-size-label">{sizeLabels[size]}</span>
+  </div>
+</div>
+
+<style>
+.ad-slot {
+  background: var(--ad-bg, #f3f4f6);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg, 14px);
+  overflow: hidden;
+}
+.ad-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid var(--line);
+}
+.ad-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ad-size-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--line);
+}
+</style>
