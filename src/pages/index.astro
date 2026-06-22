@@ -7,6 +7,7 @@ import CategorySection from '../components/CategorySection.astro';
 import AdSlot from '../components/AdSlot.astro';
 import type { CategorySlug } from '../lib/categories';
 import { CATEGORY_SLUGS } from '../lib/categories';
+import popularData from '../data/popular-posts.json';
 
 const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -21,17 +22,30 @@ function firstBodyImage(body: string | undefined): string | undefined {
 const featured = allPosts.find((p) => p.data.featured);
 const remaining = featured ? allPosts.filter((p) => p.id !== featured.id) : allPosts;
 
-// Sidebar: 7 most recent excluding featured
-const sidebarPosts = remaining.slice(0, 7).map((p) => ({
-  id: p.id,
-  title: p.data.title,
-  description: p.data.description,
-  category: p.data.category,
-  pubDate: p.data.pubDate,
-  heroImage: p.data.heroImage || firstBodyImage(p.body),
-  author: p.data.author,
-  readingTime: p.data.readingTime,
-}));
+// 최근 7일 조회수 순위맵: slug → rank (0부터, 낮을수록 인기)
+const popularRankMap = new Map<string, number>(
+  (popularData.posts as { slug: string; views: number }[]).map((p, i) => [p.slug, i])
+);
+
+// 에디터픽(사이드바): 최근 7일 조회수 내림차순, 미집계 글은 최신순으로 후순위
+const sidebarPosts = [...remaining]
+  .sort((a, b) => {
+    const rankA = popularRankMap.has(a.id) ? popularRankMap.get(a.id)! : Infinity;
+    const rankB = popularRankMap.has(b.id) ? popularRankMap.get(b.id)! : Infinity;
+    if (rankA !== rankB) return rankA - rankB;
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  })
+  .slice(0, 7)
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    description: p.data.description,
+    category: p.data.category,
+    pubDate: p.data.pubDate,
+    heroImage: p.data.heroImage || firstBodyImage(p.body),
+    author: p.data.author,
+    readingTime: p.data.readingTime,
+  }));
 
 // Featured grid: next 3 after featured
 const featuredGrid = remaining.slice(0, 3);
