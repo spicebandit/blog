@@ -227,7 +227,7 @@ const showNotice = new Date() < NOTICE.until;
       .nav-logo {
         font-size: 0.9375rem;
         font-weight: 900;
-        letter-spacing: 0.13em;
+        letter-spacing: 0.10em;
         text-transform: uppercase;
         color: var(--ink);
         flex: none;
@@ -240,10 +240,12 @@ const showNotice = new Date() < NOTICE.until;
       }
       .nav-logo:hover { text-decoration: none; color: var(--accent); }
       .logo-bolt {
-        width: 18px; height: 18px; flex: none;
+        width: 20px; height: 20px; flex: none;
         color: var(--accent);
         transition: transform .2s;
       }
+      .logo-base { color: var(--ink); font-weight: 800; }
+      .logo-load { color: var(--accent); font-weight: 900; }
       .nav-logo:hover .logo-bolt { transform: scale(1.15); }
 
       .nav-cats {
@@ -476,7 +478,7 @@ const showNotice = new Date() < NOTICE.until;
           <svg class="logo-bolt" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M13 2L4 14h7l-1 8 10-12h-7l1-8z" fill="currentColor"/>
           </svg>
-          <span>BASELOAD</span>
+          <span class="logo-text"><span class="logo-base">BASE</span><span class="logo-load">LOAD</span></span>
         </a>
 
         <nav class="nav-cats" aria-label="카테고리">
