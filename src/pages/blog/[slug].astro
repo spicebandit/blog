@@ -85,9 +85,12 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
 <style>
   .article-layout {
     display: grid;
-    grid-template-columns: minmax(0, 640px) 280px;
-    gap: 48px;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
     align-items: start;
+  }
+  .article-main article {
+    max-width: 680px;
   }
   @media (max-width: 959px) {
     .article-layout {
