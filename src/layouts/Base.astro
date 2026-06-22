@@ -2,6 +2,16 @@
 import Analytics from '@vercel/analytics/astro';
 import { CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
 
+const ADSENSE_PUB = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
+const ADFIT_ENABLED =
+  !!(import.meta.env.PUBLIC_ADFIT_UNIT_HEADER     ||
+     import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M   ||
+     import.meta.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ||
+     import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM);
+const adsenseSrc = ADSENSE_PUB
+  ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB}`
+  : '';
+
 interface Props {
   title: string;
   description: string;
@@ -411,6 +421,15 @@ const showNotice = new Date() < NOTICE.until;
     </style>
     <link rel="stylesheet" as="style" crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+    {/* Google AdSense */}
+    {adsenseSrc && (
+      <script is:inline async src={adsenseSrc} crossorigin="anonymous"></script>
+    )}
+    {/* Kakao AdFit */}
+    {ADFIT_ENABLED && (
+      <script is:inline async src="//t1.daumcdn.net/kas/static/ba.min.js"></script>
+    )}
 
     <script is:inline>
       (function () {

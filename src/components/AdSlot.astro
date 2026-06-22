@@ -1,59 +1,176 @@
 ---
-type AdSize = 'leaderboard' | 'rectangle' | 'mobile';
+/**
+ * AdSlot — Google AdSense + Kakao AdFit 광고 슬롯
+ *
+ * 빌드 시 환경변수 확인:
+ *   PUBLIC_ADSENSE_PUBLISHER_ID   e.g. ca-pub-1234567890123456
+ *   PUBLIC_ADSENSE_SLOT_HEADER    header 슬롯 ID (10자리)
+ *   PUBLIC_ADSENSE_SLOT_IN_ARTICLE
+ *   PUBLIC_ADSENSE_SLOT_BOTTOM
+ *   PUBLIC_ADSENSE_SLOT_SIDEBAR
+ *   PUBLIC_ADFIT_UNIT_HEADER      e.g. DAN-XXXXXXXXXX (PC 728×90)
+ *   PUBLIC_ADFIT_UNIT_HEADER_M    e.g. DAN-XXXXXXXXXX (모바일 320×100)
+ *   PUBLIC_ADFIT_UNIT_IN_ARTICLE
+ *   PUBLIC_ADFIT_UNIT_BOTTOM
+ *
+ * 환경변수가 없으면 DEV에서만 플레이스홀더 표시, 프로덕션에서는 아무것도 렌더링하지 않음.
+ */
+
+type AdPosition = 'header' | 'in-article' | 'bottom' | 'sidebar';
 
 interface Props {
-  size: AdSize;
+  position: AdPosition;
   class?: string;
 }
 
-const { size, class: className } = Astro.props;
+const { position, class: className } = Astro.props;
 
-const minHeights: Record<AdSize, string> = {
-  leaderboard: '90px',
-  rectangle: '250px',
-  mobile: '50px',
+const PUB_ID = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
+
+const ADSENSE_SLOTS: Record<AdPosition, string> = {
+  'header':     import.meta.env.PUBLIC_ADSENSE_SLOT_HEADER     ?? '',
+  'in-article': import.meta.env.PUBLIC_ADSENSE_SLOT_IN_ARTICLE ?? '',
+  'bottom':     import.meta.env.PUBLIC_ADSENSE_SLOT_BOTTOM     ?? '',
+  'sidebar':    import.meta.env.PUBLIC_ADSENSE_SLOT_SIDEBAR     ?? '',
 };
 
-const sizeLabels: Record<AdSize, string> = {
-  leaderboard: '728 × 90',
-  rectangle: '300 × 250',
-  mobile: '320 × 50',
+const ADFIT_UNITS: Record<AdPosition, string> = {
+  'header':     import.meta.env.PUBLIC_ADFIT_UNIT_HEADER     ?? '',
+  'in-article': import.meta.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ?? '',
+  'bottom':     import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM     ?? '',
+  'sidebar':    import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM     ?? '',
 };
+const ADFIT_HEADER_M = import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M ?? '';
+
+const slotId  = ADSENSE_SLOTS[position];
+const adfitId = ADFIT_UNITS[position];
+
+const hasAdsense = !!(PUB_ID && slotId);
+const hasAdfit   = !!adfitId;
+const showAd     = hasAdsense || hasAdfit;
+const isInArticle = position === 'in-article';
+const isDev      = import.meta.env.DEV;
+
+// AdFit dimensions per position (PC / mobile handled via CSS)
+const ADFIT_DIM: Record<AdPosition, { w: number; h: number }> = {
+  'header':     { w: 728, h: 90 },
+  'in-article': { w: 320, h: 100 },
+  'bottom':     { w: 300, h: 250 },
+  'sidebar':    { w: 160, h: 600 },
+};
+const adfitDim = ADFIT_DIM[position];
 ---
-<div class:list={['ad-slot', size, className]}>
-  <span class="ad-label">광고</span>
-  <div class="ad-area" style={`min-height: ${minHeights[size]}`}>
-    <span class="ad-size-label">{sizeLabels[size]}</span>
+
+{showAd ? (
+  <div class:list={['ad-slot', `ad-${position}`, className]}>
+    <span class="ad-label">광고</span>
+
+    {hasAdsense && (
+      isInArticle ? (
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client={PUB_ID}
+          data-ad-slot={slotId}>
+        </ins>
+        <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      ) : (
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client={PUB_ID}
+          data-ad-slot={slotId}
+          data-ad-format="auto"
+          data-full-width-responsive="true">
+        </ins>
+        <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      )
+    )}
+
+    {/* AdFit: PC 헤더 광고 (728×90) */}
+    {!hasAdsense && hasAdfit && position === 'header' && (
+      <>
+        <ins class="kakao_ad_area adfit-pc" style="display:none;"
+          data-ad-unit={adfitId}
+          data-ad-width="728"
+          data-ad-height="90">
+        </ins>
+        {ADFIT_HEADER_M && (
+          <ins class="kakao_ad_area adfit-mobile" style="display:none;"
+            data-ad-unit={ADFIT_HEADER_M}
+            data-ad-width="320"
+            data-ad-height="100">
+          </ins>
+        )}
+      </>
+    )}
+    {!hasAdsense && hasAdfit && position !== 'header' && (
+      <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit={adfitId}
+        data-ad-width={adfitDim.w}
+        data-ad-height={adfitDim.h}>
+      </ins>
+    )}
   </div>
-</div>
+) : isDev ? (
+  <div class:list={['ad-slot', 'ad-placeholder', `ad-${position}`, className]}>
+    <span class="ad-label">광고 슬롯 [{position}]</span>
+    <div class="ad-hint">
+      ENV 미설정 — <code>PUBLIC_ADSENSE_PUBLISHER_ID</code> 등 필요
+    </div>
+  </div>
+) : null}
 
 <style>
-.ad-slot {
-  background: var(--ad-bg, #f3f4f6);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg, 14px);
-  overflow: hidden;
-}
-.ad-label {
-  display: block;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-align: center;
-  padding: 5px;
-  border-bottom: 1px solid var(--line);
-}
-.ad-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ad-size-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .04em;
-  color: var(--line);
-}
+  .ad-slot {
+    margin: 2em 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .ad-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  /* Placeholder (DEV only) */
+  .ad-placeholder {
+    background: var(--ad-bg, #f3f4f6);
+    border: 1px dashed var(--line);
+    border-radius: var(--radius-lg, 14px);
+    padding: 20px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .ad-hint {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .ad-hint code {
+    font-size: 0.75rem;
+    background: var(--line-2);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  /* AdFit 반응형: 헤더는 PC/모바일 분리 */
+  .adfit-mobile { display: none !important; }
+  @media (max-width: 767px) {
+    .adfit-pc     { display: none !important; }
+    .adfit-mobile { display: block !important; }
+  }
+
+  /* 사이드바 sticky (상위 컨테이너에서 grid 구성 시 활성) */
+  .ad-sidebar {
+    position: sticky;
+    top: calc(var(--nav-h, 56px) + 16px);
+  }
 </style>
