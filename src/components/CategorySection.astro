@@ -26,6 +26,7 @@ const { category, posts } = Astro.props;
       <h2 class:list={['cat-section-title', category]}>
         <span class="cat-dot" aria-hidden="true"></span>
         {categoryName(category)}
+        <span class="cat-count">{posts.length}편</span>
       </h2>
       <a class="cat-more" href={`/category/${category}/`}>
         더 보기
@@ -97,6 +98,17 @@ const { category, posts } = Astro.props;
 .cat-section-title.economy .cat-dot { background: var(--cat-economy, #059669); }
 .cat-section-title.ai      .cat-dot { background: var(--cat-ai, #7a3ff2); }
 .cat-section-title.life    .cat-dot { background: var(--cat-life, #db2777); }
+
+.cat-count {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  background: var(--line-2);
+  padding: 2px 7px;
+  border-radius: 999px;
+  margin-left: 4px;
+}
 
 .cat-more {
   font-size: 0.8125rem;

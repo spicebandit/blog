@@ -21,8 +21,8 @@ function firstBodyImage(body: string | undefined): string | undefined {
 const featured = allPosts.find((p) => p.data.featured);
 const remaining = featured ? allPosts.filter((p) => p.id !== featured.id) : allPosts;
 
-// Sidebar: 5 most recent excluding featured
-const sidebarPosts = remaining.slice(0, 5).map((p) => ({
+// Sidebar: 7 most recent excluding featured
+const sidebarPosts = remaining.slice(0, 7).map((p) => ({
   id: p.id,
   title: p.data.title,
   description: p.data.description,
