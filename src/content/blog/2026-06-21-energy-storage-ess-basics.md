@@ -1,7 +1,7 @@
 ---
 title: "ESS란? 원리부터 최근 입찰 결과까지"
 description: "에너지 저장장치(ESS)의 원리와 역할을 쉽게 풀고, 8곳 563MW가 확정된 최근 ESS 중앙계약시장 입찰 결과와 1.1GW 추가 입찰 전망까지 함께 정리했다."
-pubDate: 2026-06-22T15:40:00+09:00
+pubDate: 2026-06-21T15:40:00+09:00
 category: energy
 tags: ["ESS", "에너지저장장치", "재생에너지", "전력시장"]
 featured: false
