@@ -155,11 +155,10 @@ function escapeHtml(s) {
 /** 텔레그램 알림 메시지 본문 구성 */
 function buildTelegramMessage(a) {
   const lines = [];
-  lines.push('📝 <b>오늘의 블로그 초안이 생성됐어요</b>');
+  lines.push('📝 <b>오늘의 블로그 주제 후보 (글감 선정기)</b>');
   lines.push('');
-  lines.push(`<b>제목</b>: ${escapeHtml(a.recommended.keyword)}`);
+  lines.push(`<b>추천 주제</b>: ${escapeHtml(a.recommended.keyword)}`);
   lines.push(`<b>카테고리</b>: ${escapeHtml(a.categoryLabel)}`);
-  lines.push(`<b>추천 키워드</b>: ${escapeHtml(a.recommended.keyword)}`);
   lines.push('');
   lines.push('<b>키워드 후보 3개</b>:');
   a.candidates.forEach((c, i) => {
@@ -167,9 +166,10 @@ function buildTelegramMessage(a) {
     lines.push(`  ${i + 1}. ${escapeHtml(c.keyword)}${mark}`);
   });
   lines.push('');
-  lines.push(`<b>파일 경로</b>: <code>${escapeHtml(a.suggestedFile)}</code>`);
+  lines.push(`<b>제안 파일</b>: <code>${escapeHtml(a.suggestedFile)}</code>`);
   lines.push('');
-  lines.push('🔎 검토 후 발행하려면 Claude Code에서 확인하세요.');
+  lines.push('ℹ️ Paperclip 시스템: <b>EditorInChief</b>가 초안 작성 담당.');
+  lines.push('직접 작성이 필요하면 Claude Code에서 위 키워드로 요청하세요.');
   return lines.join('\n');
 }
 
