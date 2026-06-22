@@ -46,6 +46,9 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
+![high angel photography of football stadium](https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHwyMDI2JTIwRklGQSUyMFdvcmxkJTIwQ3VwJTIwc29jY2VyJTIwc3RhZGl1bXxlbnwxfDB8fHwxNzgyMTEyNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Mario Klassen](https://unsplash.com/@marioklassen?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/high-angel-photography-of-football-stadium-70YxSTWa2Zw?utm_source=spice-bandit-blog&utm_medium=referral)*
+
 ## 대회 개요
 
 | 항목 | 내용 |
