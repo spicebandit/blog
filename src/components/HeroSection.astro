@@ -68,7 +68,7 @@ const dateLabel = featured.pubDate.toLocaleDateString('ko-KR', { month: 'long', 
           <a href="/">전체 보기</a>
         </div>
         <ul class="latest-list" role="list">
-          {recent.slice(0, 5).map((post) => {
+          {recent.slice(0, 7).map((post) => {
             const t = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
             return (
               <li class="latest-item">
