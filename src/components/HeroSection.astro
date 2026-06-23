@@ -112,7 +112,7 @@ const hasCarousel = slides.length > 1;
           <a href="/">전체 보기</a>
         </div>
         <ul class="latest-list" role="list">
-          {recent.slice(0, 7).map((post, i) => {
+          {recent.slice(0, 3).map((post, i) => {
             const t = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
             return (
               <li class="latest-item">
