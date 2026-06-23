@@ -10,7 +10,7 @@ export type CategorySlug = (typeof CATEGORY_SLUGS)[number];
 export const CATEGORY_NAMES: Record<CategorySlug, string> = {
   energy: '에너지',
   economy: '경제·경영',
-  ai: 'AI·공부',
+  ai: 'AI·AX',
   life: '일상',
 };
 
