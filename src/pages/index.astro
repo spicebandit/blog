@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import HeroSection from '../components/HeroSection.astro';
-import ArticleCard from '../components/ArticleCard.astro';
+import BriefList from '../components/BriefList.astro';
 import CategorySection from '../components/CategorySection.astro';
 import AdSlot from '../components/AdSlot.astro';
 import type { CategorySlug } from '../lib/categories';
@@ -47,8 +47,19 @@ const sidebarPosts = [...remaining]
     readingTime: p.data.readingTime,
   }));
 
-// Featured grid: next 3 after featured
-const featuredGrid = remaining.slice(0, 3);
+// Latest Brief: 최신 6개, 에디터픽과 겹치지 않도록 제외
+const sidebarIds = new Set(sidebarPosts.map((p) => p.id));
+const briefPosts = remaining
+  .filter((p) => !sidebarIds.has(p.id))
+  .slice(0, 6)
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    category: p.data.category,
+    pubDate: p.data.pubDate,
+    heroImage: p.data.heroImage || firstBodyImage(p.body),
+    author: p.data.author,
+  }));
 
 // Category sections: latest 3 per category, excluding featured
 const byCat = (cat: CategorySlug) =>
@@ -68,7 +79,7 @@ const byCat = (cat: CategorySlug) =>
 ---
 <Base title="BASELOAD" description="에너지·경제·AI·일상을 다루는 뉴스 블로그" wide={true}>
 
-  <!-- Hero: featured article + recent sidebar -->
+  <!-- Hero: featured article + editor's pick sidebar -->
   {featured ? (
     <HeroSection
       featured={{
@@ -85,28 +96,8 @@ const byCat = (cat: CategorySlug) =>
     />
   ) : null}
 
-  <!-- Featured grid: 3 most-recent articles -->
-  {featuredGrid.length > 0 && (
-    <section class="featured-section" aria-label="Latest">
-      <div class="section-header">
-        <h2 class="section-title">Latest</h2>
-      </div>
-      <div class="featured-grid">
-        {featuredGrid.map((post) => (
-          <ArticleCard
-            id={post.id}
-            title={post.data.title}
-            description={post.data.description}
-            category={post.data.category}
-            pubDate={post.data.pubDate}
-            heroImage={post.data.heroImage || firstBodyImage(post.body)}
-            author={post.data.author}
-            readingTime={post.data.readingTime}
-          />
-        ))}
-      </div>
-    </section>
-  )}
+  <!-- Latest Brief: horizontal card list (6 articles) -->
+  {briefPosts.length > 0 && <BriefList posts={briefPosts} />}
 
   <!-- Ad band -->
   <div class="ad-band">
@@ -121,45 +112,5 @@ const byCat = (cat: CategorySlug) =>
 </Base>
 
 <style>
-.featured-section { margin-bottom: 40px; }
-
-.section-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--line);
-  position: relative;
-}
-.section-header::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: -2px;
-  width: 48px; height: 2px;
-  background: var(--accent);
-  border-radius: 1px;
-}
-.section-title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--ink);
-  margin: 0;
-}
-
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
 .ad-band { margin: 32px 0; }
-
-@media (max-width: 1023px) {
-  .featured-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 767px) {
-  .featured-grid { grid-template-columns: 1fr; }
-}
 </style>

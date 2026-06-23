@@ -1,0 +1,179 @@
+---
+import { categoryName, type CategorySlug } from '../lib/categories';
+
+interface PostData {
+  id: string;
+  title: string;
+  category: CategorySlug;
+  pubDate: Date;
+  heroImage?: string;
+  author?: string;
+}
+
+interface Props {
+  posts: PostData[];
+}
+
+const { posts } = Astro.props;
+---
+<section class="brief-section">
+  <div class="brief-header">
+    <h2 class="brief-title">Latest Brief</h2>
+    <a href="/blog/" class="brief-more">전체 보기 →</a>
+  </div>
+  <ul class="brief-list" role="list">
+    {posts.map((post) => {
+      const dateLabel = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+      return (
+        <li class="brief-item">
+          <a href={`/blog/${post.id}/`} class="brief-link">
+            <div class:list={['brief-thumb', !post.heroImage && `thumb-${post.category}`]}>
+              {post.heroImage
+                ? <img src={post.heroImage} alt="" loading="lazy" />
+                : <div class="thumb-placeholder" aria-hidden="true"></div>
+              }
+            </div>
+            <div class="brief-body">
+              <span class:list={['cat-badge', post.category]}>{categoryName(post.category)}</span>
+              <p class="brief-headline">{post.title}</p>
+              <span class="brief-meta">
+                {post.author && <>{post.author} · </>}<time datetime={post.pubDate.toISOString()}>{dateLabel}</time>
+              </span>
+            </div>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</section>
+
+<style>
+.brief-section {
+  margin-bottom: 40px;
+}
+
+.brief-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--line);
+  position: relative;
+}
+.brief-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+.brief-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin: 0;
+}
+.brief-more {
+  font-size: 0.8125rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.brief-more:hover { text-decoration: underline; }
+
+.brief-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brief-item {
+  border-bottom: 1px solid var(--line-2, #f3f4f6);
+}
+.brief-item:last-child { border-bottom: none; }
+
+.brief-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  text-decoration: none;
+  color: inherit;
+}
+.brief-link:hover { text-decoration: none; }
+.brief-link:hover .brief-headline { color: var(--accent); }
+
+.brief-thumb {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.brief-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.thumb-placeholder { width: 100%; height: 100%; }
+.brief-thumb.thumb-energy  .thumb-placeholder { background: linear-gradient(135deg, #451a03, #92400e, #d97706); }
+.brief-thumb.thumb-economy .thumb-placeholder { background: linear-gradient(135deg, #022c22, #065f46, #059669); }
+.brief-thumb.thumb-ai      .thumb-placeholder { background: linear-gradient(135deg, #1e1b4b, #4c1d95, #7a3ff2); }
+.brief-thumb.thumb-life    .thumb-placeholder { background: linear-gradient(135deg, #500724, #9d174d, #db2777); }
+
+.brief-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cat-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 999px;
+  align-self: flex-start;
+}
+.cat-badge.energy  { background: var(--cat-energy-soft, #fef3c7);  color: var(--cat-energy, #d97706); }
+.cat-badge.economy { background: var(--cat-economy-soft, #d1fae5); color: var(--cat-economy, #059669); }
+.cat-badge.ai      { background: var(--cat-ai-soft, #ede9fe);      color: var(--cat-ai, #7a3ff2); }
+.cat-badge.life    { background: var(--cat-life-soft, #fce7f3);    color: var(--cat-life, #db2777); }
+
+.brief-headline {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  word-break: keep-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  transition: color .15s;
+}
+
+.brief-meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .brief-thumb {
+    width: 56px;
+    height: 56px;
+  }
+}
+</style>
