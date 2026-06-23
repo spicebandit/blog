@@ -11,7 +11,7 @@ export const CATEGORY_NAMES: Record<CategorySlug, string> = {
   energy: '에너지',
   economy: '경제·경영',
   ai: 'AI·AX',
-  life: '일상',
+  life: 'Editor',
 };
 
 /** 슬러그를 한글 표시 이름으로 변환 */

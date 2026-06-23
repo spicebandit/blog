@@ -29,7 +29,7 @@ const DAY_CATEGORY = {
   5: 'economy',  // 금: 경제/경영
   6: 'ai',       // 토: AI/공부
 };
-const CATEGORY_LABEL = { energy: '에너지', economy: '경제·경영', ai: 'AI·AX', life: '일상' };
+const CATEGORY_LABEL = { energy: '에너지', economy: '경제·경영', ai: 'AI·AX', life: 'Editor' };
 const DOW_KO = ['일', '월', '화', '수', '목', '금', '토'];
 
 // 영역별 주제 풀. 모두 공개 정보 기반의 안전한 에버그린 주제(특정 기업 내부정보·종목추천 배제).
