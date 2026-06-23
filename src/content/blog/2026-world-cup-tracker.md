@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-23T08:00:00+09:00
+updatedDate: 2026-06-24T08:00:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -42,7 +42,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 23일 오전 8시 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 24일 오전 8시 (KST)</span>
 
 매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -151,23 +151,23 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-group"><h3>K조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>🇵🇹 포르투갈</td><td>2</td><td>4</td><td>+5</td></tr>
 <tr class="adv"><td>🇨🇴 콜롬비아</td><td>1</td><td>3</td><td>+2</td></tr>
-<tr class="adv"><td>🇨🇩 콩고DR</td><td>1</td><td>1</td><td>0</td></tr>
-<tr><td>🇵🇹 포르투갈</td><td>1</td><td>1</td><td>0</td></tr>
-<tr><td>🇺🇿 우즈베키스탄</td><td>1</td><td>0</td><td>-2</td></tr>
+<tr><td>🇨🇩 콩고DR</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>🇺🇿 우즈베키스탄</td><td>2</td><td>0</td><td>-7</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>L조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</td><td>1</td><td>3</td><td>+2</td></tr>
-<tr class="adv"><td>🇬🇭 가나</td><td>1</td><td>3</td><td>+1</td></tr>
+<tr class="adv"><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</td><td>2</td><td>4</td><td>+2</td></tr>
+<tr class="adv"><td>🇬🇭 가나</td><td>2</td><td>4</td><td>+1</td></tr>
 <tr><td>🇵🇦 파나마</td><td>1</td><td>0</td><td>-1</td></tr>
 <tr><td>🇭🇷 크로아티아</td><td>1</td><td>0</td><td>-2</td></tr>
 </table></div>
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~I조는 2차전까지, J조는 아르헨티나·오스트리아만 2차전을 마쳤고(요르단·알제리는 1차전까지), K·L조는 1차전까지 반영했습니다. 최종전은 6월 24~27일이며, 정밀 전적은 매일 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~I조는 2차전까지, J조는 아르헨티나·오스트리아만 2차전을 마쳤고(요르단·알제리는 1차전까지), K조는 포르투갈·우즈베키스탄, L조는 잉글랜드·가나만 2차전을 마쳤습니다(나머지는 1차전까지). 최종전은 6월 24~27일이며, 정밀 전적은 매일 갱신됩니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
@@ -229,8 +229,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/24(수) 02:00</td><td>🇵🇹 포르투갈 vs 🇺🇿 우즈베키스탄</td><td>K</td></tr>
-<tr><td class="kst">6/24(수) 05:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드 vs 🇬🇭 가나</td><td>L</td></tr>
 <tr><td class="kst">6/24(수) 08:00</td><td>🇵🇦 파나마 vs 🇭🇷 크로아티아</td><td>L</td></tr>
 <tr><td class="kst">6/24(수) 11:00</td><td>🇨🇴 콜롬비아 vs 🇨🇩 콩고DR</td><td>K</td></tr>
 <tr><td class="kst">6/25(목) 04:00</td><td>🇨🇭 스위스 vs 🇨🇦 캐나다</td><td>B</td></tr>
@@ -243,6 +241,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports 등 공개 자료(2026-06-23 08시 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports 등 공개 자료(2026-06-24 08시 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
