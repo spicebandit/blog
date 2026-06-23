@@ -133,6 +133,15 @@ async function fetchReport(token, propertyId) {
             orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
             limit: 5,
           },
+          {
+            // 국가별 방문자 (어제). 해외(특히 미국 데이터센터)는 대부분 크롤러봇이라
+            // 방문자=조회수 1:1로 잡힌다. 조회수까지 함께 받아 사람/봇 구분에 참고한다.
+            dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
+            dimensions: [{ name: 'country' }],
+            metrics: [{ name: 'totalUsers' }, { name: 'screenPageViews' }],
+            orderBys: [{ metric: { metricName: 'totalUsers' }, desc: true }],
+            limit: 6,
+          },
         ],
       }),
     },
@@ -225,6 +234,33 @@ function parseChannels(report) {
   });
 }
 
+// GA4 국가명(영문) → 한글 + 국기
+const COUNTRY_KR = {
+  'South Korea': '🇰🇷 한국',
+  'United States': '🇺🇸 미국',
+  'United Kingdom': '🇬🇧 영국',
+  'Japan': '🇯🇵 일본',
+  'China': '🇨🇳 중국',
+  'Netherlands': '🇳🇱 네덜란드',
+  'Poland': '🇵🇱 폴란드',
+  'Germany': '🇩🇪 독일',
+  'France': '🇫🇷 프랑스',
+  'India': '🇮🇳 인도',
+  'Canada': '🇨🇦 캐나다',
+  'Singapore': '🇸🇬 싱가포르',
+};
+
+function parseCountries(report) {
+  return (report?.rows ?? []).map((row) => {
+    const raw = row.dimensionValues?.[0]?.value ?? '(미상)';
+    return {
+      country: COUNTRY_KR[raw] ?? raw,
+      users: Number(row.metricValues?.[0]?.value ?? 0),
+      views: Number(row.metricValues?.[1]?.value ?? 0),
+    };
+  });
+}
+
 /** 값 배열 → 블록문자 스파크라인 */
 function sparkline(values) {
   const blocks = '▁▂▃▄▅▆▇█';
@@ -246,7 +282,7 @@ function mdLabel(ymd) {
   return `${Number(ymd.slice(4, 6))}/${Number(ymd.slice(6, 8))}`;
 }
 
-function formatMessage(totals, topPages, dailySeries, channels, keywords) {
+function formatMessage(totals, topPages, dailySeries, channels, keywords, countries) {
   // 어제 날짜 (KST)
   const y = new Date(Date.now() - 24 * 60 * 60 * 1000);
   const dateStr = y.toLocaleDateString('ko-KR', {
@@ -281,6 +317,17 @@ function formatMessage(totals, topPages, dailySeries, channels, keywords) {
   if (channels.length > 0 && t.sessions > 0) {
     const top = channels.slice(0, 4).map((c) => `${c.channel} ${c.sessions}`).join(' · ');
     lines.push('', `🚪 <b>유입경로</b> ${top}`);
+  }
+
+  // 국가별 방문자 (어제). 한국이 아닌데 조회수가 방문자 수 이하(1인 1페이지)면
+  // 데이터센터 크롤러봇일 가능성이 높아 '봇 추정'으로 표시한다.
+  if (countries && countries.length > 0 && t.users > 0) {
+    lines.push('', '🌍 <b>국가별 방문자</b>');
+    countries.forEach((c) => {
+      const isKR = c.country.includes('한국');
+      const botish = !isKR && c.views <= c.users;
+      lines.push(`· ${c.country} ${c.users}명 (조회 ${c.views})${botish ? ' <i>↩봇 추정</i>' : ''}`);
+    });
   }
 
   // 검색 키워드 (최근 7일, Search Console) — 데이터 있을 때만 노출
@@ -332,7 +379,8 @@ async function main() {
     const dailySeries = parseDailySeries(data.reports?.[2]);
     const channels = parseChannels(data.reports?.[3]);
     const keywords = await fetchSearchKeywords(token);
-    const message = formatMessage(totals, topPages, dailySeries, channels, keywords);
+    const countries = parseCountries(data.reports?.[4]);
+    const message = formatMessage(totals, topPages, dailySeries, channels, keywords, countries);
 
     if (DRY) {
       console.log('--- DRY RUN (전송 안 함) ---');
