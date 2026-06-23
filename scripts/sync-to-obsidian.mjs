@@ -23,7 +23,7 @@ const PROJECT_ROOT = join(__dirname, '..');
 const HOME = process.env.HOME;
 const BLOG_DIR = join(PROJECT_ROOT, 'src/content/blog');
 const VAULT_BLOG = join(HOME, 'Documents/obsidian/mynotes/Blog');
-const SITE = 'https://blog-x84m.vercel.app';
+const SITE = 'https://www.baseload.co.kr';
 
 // 라이브 데이터 페이지 등 옵시디언 노트로 부적합한 글은 제외
 const SKIP_SLUGS = new Set(['2026-world-cup-tracker']);
