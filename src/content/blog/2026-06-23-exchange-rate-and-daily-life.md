@@ -9,6 +9,9 @@ draft: false
 
 원달러 환율이 2026년 6월 들어 1,530원대까지 올라서며 '고환율'이 다시 일상의 화두가 됐다. 6월 22일 기준 USD/KRW는 약 1,538원으로, 최근 한 달 새 원화 가치가 1.7%가량, 지난 1년 동안은 두 자릿수 가까이 떨어졌다. 환율은 단순한 숫자가 아니라 우리가 마시는 커피값, 해외여행 경비, 대출 금리까지 조용히 흔드는 변수다. 이 글에서는 **환율이 왜 움직이는지, 그리고 그 움직임이 내 생활에 어떻게 닿는지**를 차근차근 풀어본다. 투자 종목을 고르기 위한 글이 아니라, 뉴스 속 '환율 급등'을 내 살림의 언어로 번역하기 위한 글이다.
 
+![a one hundred dollar bill with a picture of a man's face on it](https://images.unsplash.com/photo-1636115734305-aac2f83cd8d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxjdXJyZW5jeSUyMGV4Y2hhbmdlJTIwcmF0ZSUyMGRvbGxhcnxlbnwxfDB8fHwxNzgyMTgzOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [engin akyurt](https://unsplash.com/@enginakyurt?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-one-hundred-dollar-bill-with-a-picture-of-a-mans-face-on-it-7aWvQdR36Y0?utm_source=spice-bandit-blog&utm_medium=referral)*
+
 ## 환율은 결국 '달러의 수요와 공급'이다
 
 환율을 어렵게 느끼는 이유는 방향이 헷갈리기 때문이다. "환율이 오른다"는 말은 **1달러를 사는 데 더 많은 원화가 든다**는 뜻, 즉 원화 가치가 떨어진다(원화 약세)는 의미다. 1,300원이던 환율이 1,530원이 됐다면 같은 1달러를 230원 더 주고 사야 한다.
@@ -29,6 +32,9 @@ draft: false
 
 여기서 얻을 So-What은 분명하다. **환율 뉴스를 볼 때 '수출이 잘 되니 곧 내릴 것'이라는 단선적 기대는 빗나가기 쉽다.** 환율은 여러 힘이 겹친 결과값이며, 한 가지 호재로 방향이 바로 바뀌지 않는다.
 
+![1 U.S.A dollar banknotes](https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxjdXJyZW5jeSUyMGV4Y2hhbmdlJTIwcmF0ZSUyMGRvbGxhcnxlbnwxfDB8fHwxNzgyMTgzOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Alexander Grey](https://unsplash.com/@sharonmccutcheon?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/1-usa-dollar-banknotes-8lnbXtxFGZw?utm_source=spice-bandit-blog&utm_medium=referral)*
+
 ## 1,530원 환율이 내 지갑에 닿는 경로
 
 고환율은 추상적인 거시지표가 아니라 생활비 명세서로 돌아온다. 소비자 관점에서 체감 경로는 다음과 같다.
@@ -39,6 +45,9 @@ draft: false
 - **유학·해외 송금**: 자녀 학비나 생활비를 달러로 보내는 가구는 같은 금액을 보내는 데 더 많은 원화가 필요해진다.
 
 반대로 **수출 기업, 해외에서 달러로 버는 사람, 외화 자산 보유자에게는 고환율이 유리**할 수 있다. 환율은 누구에게나 나쁜 변수가 아니라, 내가 달러를 '쓰는 쪽'이냐 '버는 쪽'이냐에 따라 손익이 갈리는 상대적 지표다. 그래서 환율 뉴스를 읽을 때는 '나는 이 흐름에서 어느 편에 서 있나'를 먼저 따져보는 습관이 유용하다.
+
+![100 U.S. dollar banknote lot](https://images.unsplash.com/photo-1568581357391-c71a1675ef93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxjdXJyZW5jeSUyMGV4Y2hhbmdlJTIwcmF0ZSUyMGRvbGxhcnxlbnwxfDB8fHwxNzgyMTgzOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Mackenzie Marco](https://unsplash.com/@kenziem?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/100-us-dollar-banknote-lot-XG88BYDSDZA?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 환율을 대하는 생활자의 자세
 
