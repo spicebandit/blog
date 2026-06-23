@@ -27,14 +27,15 @@ const popularRankMap = new Map<string, number>(
   (popularData.posts as { slug: string; views: number }[]).map((p, i) => [p.slug, i])
 );
 
-// 에디터픽(사이드바): 최근 7일 조회수 내림차순, 미집계 글은 최신순으로 후순위
-const sidebarPosts = [...remaining]
-  .sort((a, b) => {
-    const rankA = popularRankMap.has(a.id) ? popularRankMap.get(a.id)! : Infinity;
-    const rankB = popularRankMap.has(b.id) ? popularRankMap.get(b.id)! : Infinity;
-    if (rankA !== rankB) return rankA - rankB;
-    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
-  })
+// 많이 본 기사(사이드바): 최근 7일 조회수 내림차순, 미집계 글은 최신순으로 후순위
+const popularSorted = [...remaining].sort((a, b) => {
+  const rankA = popularRankMap.has(a.id) ? popularRankMap.get(a.id)! : Infinity;
+  const rankB = popularRankMap.has(b.id) ? popularRankMap.get(b.id)! : Infinity;
+  if (rankA !== rankB) return rankA - rankB;
+  return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+});
+
+const sidebarPosts = popularSorted
   .slice(0, 7)
   .map((p) => ({
     id: p.id,
@@ -46,6 +47,36 @@ const sidebarPosts = [...remaining]
     author: p.data.author,
     readingTime: p.data.readingTime,
   }));
+
+// Today Pick 캐러셀: featured 우선, 그 다음 인기 기사로 최대 3슬라이드
+const featuredSlide = featured ? {
+  id: featured.id,
+  title: featured.data.title,
+  description: featured.data.description,
+  category: featured.data.category,
+  pubDate: featured.data.pubDate,
+  heroImage: featured.data.heroImage || firstBodyImage(featured.body),
+  author: featured.data.author,
+  readingTime: featured.data.readingTime,
+} : null;
+
+const extraCount = featuredSlide ? 2 : 3;
+const todayPickSlides = [
+  ...(featuredSlide ? [featuredSlide] : []),
+  ...popularSorted
+    .filter((p) => p.id !== featured?.id)
+    .slice(0, extraCount)
+    .map((p) => ({
+      id: p.id,
+      title: p.data.title,
+      description: p.data.description,
+      category: p.data.category,
+      pubDate: p.data.pubDate,
+      heroImage: p.data.heroImage || firstBodyImage(p.body),
+      author: p.data.author,
+      readingTime: p.data.readingTime,
+    })),
+];
 
 // Latest Brief: 최신 6개, 에디터픽과 겹치지 않도록 제외
 const sidebarIds = new Set(sidebarPosts.map((p) => p.id));
@@ -79,22 +110,13 @@ const byCat = (cat: CategorySlug) =>
 ---
 <Base title="BASELOAD" description="에너지·경제·AI·일상을 다루는 뉴스 블로그" wide={true}>
 
-  <!-- Hero: featured article + editor's pick sidebar -->
-  {featured ? (
+  <!-- Hero: Today Pick carousel + 많이 본 기사 sidebar -->
+  {todayPickSlides.length > 0 && (
     <HeroSection
-      featured={{
-        id: featured.id,
-        title: featured.data.title,
-        description: featured.data.description,
-        category: featured.data.category,
-        pubDate: featured.data.pubDate,
-        heroImage: featured.data.heroImage || firstBodyImage(featured.body),
-        author: featured.data.author,
-        readingTime: featured.data.readingTime,
-      }}
+      slides={todayPickSlides}
       recent={sidebarPosts}
     />
-  ) : null}
+  )}
 
   <!-- Latest Brief: horizontal card list (6 articles) -->
   {briefPosts.length > 0 && <BriefList posts={briefPosts} />}
