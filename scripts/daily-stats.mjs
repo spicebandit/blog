@@ -28,6 +28,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
 const DRY = process.argv.includes('--dry');
 const SITE_SUFFIX = ' | 세상은 니가 구해라'; // pageTitle에서 떼어낼 사이트명
+// Search Console 속성 (도메인 속성). .env GSC_SITE로 덮어쓸 수 있음.
+const GSC_SITE = process.env.GSC_SITE || 'sc-domain:baseload.co.kr';
 
 /** .env 직접 파싱 (다른 스크립트와 동일 패턴) */
 function loadEnv() {
@@ -58,7 +60,8 @@ async function getAccessToken(sa) {
   const header = b64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }));
   const claim = b64url(JSON.stringify({
     iss: sa.client_email,
-    scope: 'https://www.googleapis.com/auth/analytics.readonly',
+    // analytics(GA4) + Search Console(검색 키워드) 둘 다 읽기
+    scope: 'https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/webmasters.readonly',
     aud: 'https://oauth2.googleapis.com/token',
     iat: now,
     exp: now + 3600,
@@ -141,6 +144,36 @@ async function fetchReport(token, propertyId) {
   return data;
 }
 
+/**
+ * Search Console 검색 키워드 TOP (최근 7일).
+ * GSC는 2~3일 지연이 있어 '어제'만 보면 비기 쉬우므로 7일 창으로 조회한다.
+ * 실패(권한/전파 지연 등)해도 GA 리포트를 막지 않도록 throw하지 않고 []를 돌려준다.
+ */
+async function fetchSearchKeywords(token) {
+  try {
+    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' });
+    const start = new Date(Date.now() - 7 * 86400000).toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' });
+    const res = await fetch(
+      `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(GSC_SITE)}/searchAnalytics/query`,
+      {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ startDate: start, endDate: today, dimensions: ['query'], rowLimit: 5 }),
+      },
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    return (data.rows ?? []).map((row) => ({
+      query: row.keys?.[0] ?? '',
+      clicks: Number(row.clicks ?? 0),
+      impressions: Number(row.impressions ?? 0),
+      position: Number(row.position ?? 0),
+    }));
+  } catch {
+    return [];
+  }
+}
+
 /** 두 dateRange 합계 응답에서 어제/그제 지표를 뽑는다 */
 function parseTotals(report) {
   const out = {
@@ -213,7 +246,7 @@ function mdLabel(ymd) {
   return `${Number(ymd.slice(4, 6))}/${Number(ymd.slice(6, 8))}`;
 }
 
-function formatMessage(totals, topPages, dailySeries, channels) {
+function formatMessage(totals, topPages, dailySeries, channels, keywords) {
   // 어제 날짜 (KST)
   const y = new Date(Date.now() - 24 * 60 * 60 * 1000);
   const dateStr = y.toLocaleDateString('ko-KR', {
@@ -248,6 +281,14 @@ function formatMessage(totals, topPages, dailySeries, channels) {
   if (channels.length > 0 && t.sessions > 0) {
     const top = channels.slice(0, 4).map((c) => `${c.channel} ${c.sessions}`).join(' · ');
     lines.push('', `🚪 <b>유입경로</b> ${top}`);
+  }
+
+  // 검색 키워드 (최근 7일, Search Console) — 데이터 있을 때만 노출
+  if (keywords && keywords.length > 0) {
+    lines.push('', '🔑 <b>검색 키워드 TOP</b> <i>(최근 7일)</i>');
+    keywords.forEach((k, i) => {
+      lines.push(`${i + 1}. ${k.query} — 클릭 ${k.clicks} · 노출 ${k.impressions}`);
+    });
   }
 
   if (topPages.length > 0 && t.views > 0) {
@@ -290,7 +331,8 @@ async function main() {
     const topPages = parseTopPages(data.reports?.[1]);
     const dailySeries = parseDailySeries(data.reports?.[2]);
     const channels = parseChannels(data.reports?.[3]);
-    const message = formatMessage(totals, topPages, dailySeries, channels);
+    const keywords = await fetchSearchKeywords(token);
+    const message = formatMessage(totals, topPages, dailySeries, channels, keywords);
 
     if (DRY) {
       console.log('--- DRY RUN (전송 안 함) ---');
