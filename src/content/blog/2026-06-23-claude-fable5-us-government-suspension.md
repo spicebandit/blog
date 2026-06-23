@@ -7,6 +7,8 @@ tags: ["AI 규제", "Claude", "Anthropic", "수출통제"]
 draft: false
 ---
 
+> **편집자 주:** 이 기사는 [6월 14일 보도 — 미국의 첫 AI 모델 수출규제, 페이블5 사태](/blog/2026-06-14-us-ai-model-export-control-fable5/)의 심층 후속 분석입니다. 사건 개요와 한국 기업 시사점은 이전 기사를 참조하세요.
+
 2026년 6월 9일, Anthropic은 차세대 AI 모델 Claude Fable 5를 정식 출시했다. 출시 사흘 뒤인 6월 12일 오후 5시 21분(미국 동부 시간), Anthropic은 미국 정부로부터 예기치 못한 지시를 받았다. Fable 5와 그보다 고급 모델인 Mythos 5에 대한 전 세계 모든 접근을 즉시 차단하라는 수출통제 명령이었다. 상용 배포된 AI 모델에 미국 정부가 수출통제를 발동한 것은 역사상 처음 있는 일이었다. 이 사건은 단순한 기업 해프닝이 아니다. AI 기술이 국가안보의 핵심 변수로 올라선 시대에, 정부와 AI 기업 사이에 어떤 긴장이 잠재해 있는지를 압축적으로 보여준 사건이다.
 
 ![a magnifying glass sitting on top of a piece of paper](https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxBSSUyMGdvdmVybm1lbnQlMjByZWd1bGF0aW9uJTIwcG9saWN5fGVufDF8MHx8fDE3ODIxNzI5MTl8MA&ixlib=rb-4.1.0&q=80&w=1080)
