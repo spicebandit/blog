@@ -58,7 +58,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 | 기간 | 2026년 6월 11일 ~ 7월 19일 |
 | 참가국 | 48개국 (사상 최다) |
 | 방식 | 12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출 |
-| 현재 단계 | **조별리그 진행 중 — 각 조 1·2차전 소화** (최종 3차전 6/25, 독일·멕시코·미국·아르헨티나 32강 진출권 확정) |
+| 현재 단계 | **조별리그 진행 중 — 대부분 2차전까지 소화** (최종전 6/24~27, 멕시코·미국·독일·프랑스·아르헨티나 32강 진출권 확정) |
 | 대한민국 | **A조** (멕시코·체코·남아공과 한 조) |
 
 > 48개국 체제는 이번 대회부터 처음 적용됩니다. 조 3위라도 성적이 좋으면(상위 8팀) 32강에 오를 수 있어, 1패를 해도 끝까지 가능성이 열려 있는 구조입니다.
@@ -88,7 +88,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-group"><h3>C조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇧🇷 브라질</td><td>2</td><td>4</td><td>+3</td></tr>
-<tr class="adv"><td>🇲🇦 모로코</td><td>2</td><td>4</td><td>0</td></tr>
+<tr class="adv"><td>🇲🇦 모로코</td><td>2</td><td>4</td><td>+1</td></tr>
 <tr><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>2</td><td>3</td><td>0</td></tr>
 <tr><td>🇭🇹 아이티</td><td>2</td><td>0</td><td>-4</td></tr>
 </table></div>
@@ -97,14 +97,14 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇺🇸 미국</td><td>2</td><td>6</td><td>+5</td></tr>
 <tr class="adv"><td>🇦🇺 호주</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-1</td></tr>
-<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-4</td></tr>
+<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-2</td></tr>
+<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-3</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>E조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇩🇪 독일</td><td>2</td><td>6</td><td>+7</td></tr>
-<tr class="adv"><td>🇨🇮 코트디부아르</td><td>1</td><td>3</td><td>+1</td></tr>
+<tr class="adv"><td>🇨🇮 코트디부아르</td><td>2</td><td>3</td><td>0</td></tr>
 <tr><td>🇪🇨 에콰도르</td><td>2</td><td>1</td><td>-1</td></tr>
 <tr><td>🇨🇼 쿠라소</td><td>2</td><td>1</td><td>-6</td></tr>
 </table></div>
@@ -128,25 +128,25 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-group"><h3>H조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇪🇸 스페인</td><td>2</td><td>4</td><td>+4</td></tr>
-<tr class="adv"><td>🇺🇾 우루과이</td><td>2</td><td>4</td><td>+1</td></tr>
-<tr><td>🇨🇻 카보베르데</td><td>2</td><td>1</td><td>-1</td></tr>
+<tr class="adv"><td>🇺🇾 우루과이</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>🇨🇻 카보베르데</td><td>2</td><td>2</td><td>0</td></tr>
 <tr><td>🇸🇦 사우디</td><td>2</td><td>1</td><td>-4</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>I조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇳🇴 노르웨이</td><td>2</td><td>6</td><td>+4</td></tr>
-<tr class="adv"><td>🇫🇷 프랑스</td><td>1</td><td>3</td><td>+2</td></tr>
-<tr><td>🇸🇳 세네갈</td><td>2</td><td>0</td><td>-3</td></tr>
-<tr><td>🇮🇶 이라크</td><td>1</td><td>0</td><td>-3</td></tr>
+<tr class="adv"><td>🇫🇷 프랑스</td><td>2</td><td>6</td><td>+5</td></tr>
+<tr class="adv"><td>🇳🇴 노르웨이</td><td>2</td><td>3</td><td>+3</td></tr>
+<tr><td>🇸🇳 세네갈</td><td>2</td><td>0</td><td>-2</td></tr>
+<tr><td>🇮🇶 이라크</td><td>2</td><td>0</td><td>-6</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>J조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
 <tr class="adv"><td>🇦🇷 아르헨티나</td><td>2</td><td>6</td><td>+5</td></tr>
-<tr class="adv"><td>🇦🇹 오스트리아</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇯🇴 요르단</td><td>2</td><td>1</td><td>-2</td></tr>
-<tr><td>🇩🇿 알제리</td><td>2</td><td>1</td><td>-3</td></tr>
+<tr class="adv"><td>🇦🇹 오스트리아</td><td>2</td><td>3</td><td>+1</td></tr>
+<tr><td>🇯🇴 요르단</td><td>1</td><td>0</td><td>-2</td></tr>
+<tr><td>🇩🇿 알제리</td><td>1</td><td>0</td><td>-3</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>K조</h3><table>
@@ -167,7 +167,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~J조는 2차전까지(E조 코트디부아르·I조 프랑스/이라크는 1차전까지 — 프랑스–이라크전은 기상 악화로 중단되어 미확정), K·L조는 1차전까지 반영했습니다. 최종 3차전은 6월 25일이며, 정밀 전적은 매일 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~I조는 2차전까지, J조는 아르헨티나·오스트리아만 2차전을 마쳤고(요르단·알제리는 1차전까지), K·L조는 1차전까지 반영했습니다. 최종전은 6월 24~27일이며, 정밀 전적은 매일 갱신됩니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
