@@ -68,14 +68,18 @@ const dateLabel = featured.pubDate.toLocaleDateString('ko-KR', { month: 'long', 
           <a href="/">전체 보기</a>
         </div>
         <ul class="latest-list" role="list">
-          {recent.slice(0, 7).map((post) => {
+          {recent.slice(0, 7).map((post, i) => {
             const t = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+            const rankChar = ['①','②','③','④','⑤','⑥','⑦'][i];
             return (
               <li class="latest-item">
                 <a href={`/blog/${post.id}/`}>
-                  <span class:list={['item-badge', post.category]}>{categoryName(post.category)}</span>
-                  <p class="item-title">{post.title}</p>
-                  <time class="item-time" datetime={post.pubDate.toISOString()}>{t}</time>
+                  <span class:list={['item-rank', i < 3 ? 'rank-top' : 'rank-rest']}>{rankChar}</span>
+                  <div class="item-content">
+                    <span class:list={['item-badge', post.category]}>{categoryName(post.category)}</span>
+                    <p class="item-title">{post.title}</p>
+                    <time class="item-time" datetime={post.pubDate.toISOString()}>{t}</time>
+                  </div>
                 </a>
               </li>
             );
@@ -222,10 +226,22 @@ const dateLabel = featured.pubDate.toLocaleDateString('ko-KR', { month: 'long', 
 .latest-item { border-bottom: 1px solid var(--line-2, #f3f4f6); }
 .latest-item:last-child { border-bottom: none; }
 .latest-item a {
-  display: block; padding: 11px 16px;
+  display: flex; align-items: flex-start; gap: 8px; padding: 11px 16px;
   transition: background .15s; text-decoration: none;
 }
 .latest-item a:hover { background: var(--accent-soft); text-decoration: none; }
+
+.item-rank {
+  flex-shrink: 0;
+  width: 24px;
+  font-size: 1.125rem; font-weight: 900;
+  line-height: 1.2;
+  padding-top: 1px;
+}
+.item-rank.rank-top  { color: var(--accent); }
+.item-rank.rank-rest { color: var(--muted); }
+
+.item-content { flex: 1; min-width: 0; }
 
 .item-badge {
   display: block; font-size: 10px; font-weight: 800;
