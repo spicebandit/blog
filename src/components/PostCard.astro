@@ -29,6 +29,11 @@ const thumbUrl = heroImage ? toThumbUrl(heroImage) : null;
 ---
 <li class="card">
   <a class={`card-link${thumbUrl ? ' has-thumb' : ''}`} href={`/blog/${id}/`} aria-label={title}>
+    {thumbUrl && (
+      <span class="thumb-wrap">
+        <img src={thumbUrl} alt="" class="thumb" loading="lazy" decoding="async" width="110" height="71" />
+      </span>
+    )}
     <span class="text-content">
       <span class="title">{title}</span>
       <span class="desc">{description}</span>
@@ -37,11 +42,6 @@ const thumbUrl = heroImage ? toThumbUrl(heroImage) : null;
         <time datetime={pubDate.toISOString()}>{dateLabel}</time>
       </span>
     </span>
-    {thumbUrl && (
-      <span class="thumb-wrap">
-        <img src={thumbUrl} alt="" class="thumb" loading="lazy" decoding="async" width="100" height="65" />
-      </span>
-    )}
   </a>
 </li>
 
@@ -77,8 +77,8 @@ const thumbUrl = heroImage ? toThumbUrl(heroImage) : null;
   }
   .thumb-wrap {
     flex-shrink: 0;
-    width: 100px;
-    height: 65px;
+    width: 110px;
+    height: 71px;
     border-radius: 8px;
     overflow: hidden;
   }
