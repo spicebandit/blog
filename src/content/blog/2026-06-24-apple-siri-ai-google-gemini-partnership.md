@@ -1,58 +1,87 @@
 ---
-title: "애플 Siri AI, Google Gemini 품다 — 빅테크 AI 전략의 변곡점"
-description: "WWDC 2026에서 애플이 공개한 Siri AI는 Google Gemini 기반으로 완전 재설계됐다. 연간 10억 달러짜리 이 파트너십이 시사하는 것은 단순한 기술 제휴가 아니다."
+title: "Siri AI 실제로 뭐가 달라지나 — iOS 27 9월 출시 기대와 우려 총정리"
+description: "iOS 27과 함께 9월 출시될 Siri AI의 구체적 신기능 5가지, 아이폰 17 RAM 제한 이슈, 그리고 기대와 우려가 동시에 쌓이는 이유를 정리했다."
 pubDate: 2026-06-24T09:00:00+09:00
 category: ai
-tags: ["Apple", "Siri AI", "Google Gemini", "WWDC 2026"]
-draft: true
+tags: ["Siri AI", "iOS 27", "Apple", "WWDC 2026"]
+draft: false
 ---
 
-올 6월 8일, 애플의 연례 개발자 컨퍼런스 WWDC 2026 키노트가 끝난 뒤 기술 업계에는 묘한 침묵이 흘렀다. 애플이 10년 넘게 독자 개발해온 시리(Siri)를 경쟁사 구글의 AI 모델 '제미나이(Gemini)'로 재설계했다는 발표 때문이다. 수직 통합의 대명사였던 애플이 핵심 사용자 인터페이스를 경쟁사 기술에 의탁하는 선택을 했다. 이것이 단순한 기술 파트너십인지, 아니면 AI 시대 빅테크 경쟁 구도의 근본적 변화를 알리는 신호인지를 따져볼 필요가 있다.
+WWDC 2026에서 애플이 공개한 'Siri AI'는 기존 시리와 이름만 같다. 구글 제미나이(Gemini) 기반의 1.2조 파라미터 모델을 탑재한 이번 시리 AI는 iOS 27과 함께 오는 9월 정식 출시될 예정이다. 테크 커뮤니티에는 지금 기대와 우려가 동시에 쌓이고 있다. 기능 자체는 인상적인데, 디바이스 제한과 애플의 지연 전적이 발목을 잡기 때문이다. 실제로 달라지는 것이 무엇인지, 내 기종에는 어디까지 지원되는지 정리했다.
 
 ![apple logo on blue surface](https://images.unsplash.com/photo-1621768216002-5ac171876625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcHBsZSUyMHNpcmklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8MHx8fDE3ODIyNTkzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Sumudu Mohottige](https://unsplash.com/@stm_2790?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/apple-logo-on-blue-surface-bIgpii04UIg?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-## Gemini를 품은 Siri: 연간 10억 달러짜리 선택
+## Siri AI가 실제로 할 수 있게 되는 것들
 
-애플은 이번 WWDC 2026에서 새 AI 어시스턴트를 공식적으로 **'Siri AI'**라고 명명하며 별도 앱으로 독립시켰다. 기존 Siri가 제한된 명령어 기반 인터페이스였다면, Siri AI는 맥락을 이해하는 대화형 에이전트로 탈바꿈했다. 메시지·이메일·사진을 가로질러 개인 정보를 참조하고, 여러 앱에 걸친 복잡한 작업을 자율적으로 수행할 수 있다.
+### 1. 화면 인식 (Screen Awareness)
 
-이 뒤에는 구글과의 밀약이 있다. 블룸버그 마크 거먼 등의 보도에 따르면 애플은 구글에 **연간 약 10억 달러(약 1조 4천억 원)**를 지불하고, 1.2조 개(1.2 trillion) 파라미터 규모의 커스텀 제미나이 모델 사용권을 확보했다. 이는 애플이 자체 클라우드 모델로 운용하던 1,500억 파라미터 규모보다 8배 큰 규모다. 아키텍처는 **전문가 혼합(MoE, Mixture of Experts)** 방식으로, 방대한 파라미터 중 쿼리에 필요한 전문가 그룹만 선택적으로 활성화해 효율을 높인다.
+지금의 시리는 눈이 없다. "앱 좀 봐줘"라고 해도 어떤 앱을 켜고 있는지 모른다. Siri AI는 이 한계를 넘는다. 지금 화면에 뭐가 떠있는지 이해하고, 거기 맞춰 답하거나 행동한다.
 
-애플은 개인정보 보호 원칙을 지키기 위해 기존 **프라이빗 클라우드 컴퓨트(Private Cloud Compute)** 인프라와 제미나이 모델을 결합했다. 온디바이스 처리가 가능한 요청은 기기 내에서, 복잡한 추론이 필요한 요청은 서버로 전달하되 사용자 데이터를 외부에 저장하지 않는 구조다. 이 기능은 iOS 26.4 업데이트를 통해 전 세계 **15억 명 일일 사용자**에게 순차 배포될 예정이다.
+예를 들어 카카오맵에서 식당을 검색 중이라면 "여기 주차장 있어?"라고 바로 물을 수 있다. 이메일을 읽다가 "이 사람 번호 저장해줘"라고 하면 시리가 화면에서 연락처를 읽어 저장한다. 앱 이름이나 내용을 따로 말할 필요 없다.
 
-## 시장이 냉담한 이유: "구글 따라가는 수준"
+### 2. 개인 맥락 이해 (Personal Context)
 
-발표 당일 애플 주가는 하락했다. 한국경제 등 국내외 언론은 "구글을 따라가는 수준"이라고 혹평했다. 시장의 냉담한 반응에는 몇 가지 이유가 있다.
+메시지, 이메일, 사진, 메모를 가로질러 내 정보를 알아서 찾아준다. "지난달에 엄마가 보내준 반찬 레시피 어딨지?"라고 물으면 카카오톡 메시지에서, 메일에서, 메모에서 모두 뒤져서 찾아준다.
+
+중요한 점은 이 과정이 기기 내 처리(On-device)와 애플 Private Cloud Compute를 통해 이뤄진다는 것이다. 애플은 이 데이터를 외부에 저장하지 않고 구글에도 내용이 넘어가지 않는다고 공식 발표했다.
+
+### 3. 멀티스텝 앱 간 작업
+
+기존 시리가 앱 하나의 명령만 처리했다면, Siri AI는 여러 앱을 연결하는 작업을 한 번에 처리한다. 애플이 WWDC에서 직접 시연한 예시가 있다.
+
+**실제 시연 시나리오**: 항공편 세부사항이 담긴 문자를 받은 상태에서, 사이드 버튼을 길게 누르고 이렇게 말한다. "이거 캘린더에 추가하고, 도착 시간 엄마한테 문자로 보내줘." 시리 AI는 화면의 문자를 읽고, 캘린더 이벤트를 생성하고, 메시지 앱에서 엄마에게 도착 시간을 포함한 문자를 자동으로 보낸다. 복사-붙여넣기, 앱 전환 없이 음성 한 번으로 끝난다.
+
+### 4. Visual Intelligence 카메라 모드
+
+카메라에 Siri 모드가 추가된다. 사진·동영상·인물·파노라마처럼 독립된 촬영 모드로 자리잡는다. 카메라를 건물에 대고 "여기 뭐야?"라고 물으면 실시간으로 정보를 가져온다. 메뉴판이나 간판을 찍으면 번역, 검색, 저장을 바로 할 수 있다. 구글 이미지 검색과 연동해 사물 인식 정확도를 높였다.
+
+### 5. 독립 Siri AI 앱 + 대화 이력
+
+시리가 처음으로 독립 앱으로 분리된다. 앱 안에서 과거 대화를 다시 볼 수 있고, 중요한 대화는 핀 고정도 가능하다. iCloud를 통해 아이폰, 맥, 아이패드에서 대화가 연동된다. 챗GPT처럼 대화 맥락이 이어지는 방식으로 사용할 수 있다.
 
 ![people standing in front of white wall](https://images.unsplash.com/photo-1615725802642-936d9aade2ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcHBsZSUyMHNpcmklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8MHx8fDE3ODIyNTkzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Jimmy Jin](https://unsplash.com/@jimmyjin?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/people-standing-in-front-of-white-wall-IaDnLLFMqhk?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-첫째, **차별화 부재**다. 삼성 갤럭시 AI도 구글 제미나이를 핵심 엔진으로 사용한다. 결국 한국 소비자 입장에서는 아이폰 Siri AI와 갤럭시 AI가 같은 엔진을 쓰는 상황이 됐다. 애플이 그토록 강조해온 하드웨어-소프트웨어 수직 통합의 우위가 AI 레이어에서는 무의미해진 셈이다.
+## 9월 iOS 27 출시: 기대와 우려가 동시에 쌓이는 이유
 
-둘째, **타이밍이 늦었다**는 지적이다. ChatGPT가 2022년 말 세상을 놀라게 한 지 3년 반이 지났다. 구글 제미나이, 메타 라마, 앤트로픽 클로드가 치열하게 경쟁하는 사이 애플은 자체 모델 개발에 집착하다가 결국 경쟁사 기술을 수입하는 선택을 했다. AI 지각생이라는 오명은 쉽게 지워지지 않는다.
+### 기대 요인
 
-셋째, **성능 완성도**에 대한 의구심이다. 발표된 기능은 인상적이지만 실제 배포 범위가 제한적이고, iOS 26.4 업데이트를 통한 완전 출시까지 시간이 필요하다. 기대만큼의 실사용 경험을 언제 제공할 수 있을지가 관건이다.
+iOS 27은 오는 9월 아이폰 신제품 발표와 함께 정식 출시된다. iOS 26을 지원하는 모든 기기(아이폰 11 이상)가 iOS 27로 업그레이드될 수 있고, 앱 실행 속도가 최대 30% 빨라진다는 것도 눈에 띈다. 시리 AI 기능은 기본적으로 위 5가지가 순차적으로 탑재될 예정이다.
 
-## AI가 '공유 인프라'가 되고 있다
+### 우려 요인 ①: 아이폰 17 일반 모델은 일부 기능 제외
 
-이번 파트너십의 더 큰 의미는 개별 기업의 전략 실패를 넘어선 곳에 있다.
+핵심 문제가 있다. Siri AI의 고급 기능 일부는 **12GB 통합 메모리**가 필요하다. 구체적으로는 더 정교한 음성 표현과 전 시스템 받아쓰기(Dictation) 정확도 향상이 해당된다.
 
-애플-구글의 기존 관계를 보면, 구글은 애플 기기의 기본 검색 엔진 자리를 유지하기 위해 연간 **약 200억 달러($20B)**를 애플에 지불한다. 이번 Siri AI 제미나이 계약(연간 10억 달러)은 그 위에 추가되는 셈이다. 미국 법무부와 EU는 이미 두 회사 간 검색 기본값 계약을 반독점 심사 대상으로 보고 있는데, AI 파트너십이 더해지면 규제 리스크는 더 커질 수 있다.
+| 기종 | RAM | Siri AI 전체 기능 |
+|---|---|---|
+| 아이폰 17 Pro Max | 12GB | 지원 |
+| 아이폰 17 Pro | 12GB | 지원 |
+| 아이폰 Air | 12GB | 지원 |
+| **아이폰 17 (일반)** | **8GB** | **일부 제외** |
+
+아이폰 17 일반 모델을 살 계획이라면 일부 Siri AI 기능은 쓸 수 없다. 애플이 이를 사전에 충분히 고지하지 않아 논란이 되고 있다.
+
+### 우려 요인 ②: 애플의 AI 지연 전적
+
+애플은 2024년부터 더 스마트한 시리를 약속해왔다. 그런데 2026년 5월, 시리 AI 기능이 약속 기간 내에 제공되지 않았다며 아이폰 구매자들이 제기한 집단 소송에서 **약 2억 5천만 달러(약 3,400억 원)** 합의금을 지불했다. 기대만 키우고 지연시키는 패턴이 반복됐기 때문에, 9월 iOS 27 출시 이후에도 기능이 순차적으로 제한되거나 특정 지역에서 늦게 활성화될 가능성이 있다.
 
 ![silhouette of people standing near wall](https://images.unsplash.com/photo-1579693409321-1be2df1ab130?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcHBsZSUyMHNpcmklMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDF8MHx8fDE3ODIyNTkzMzN8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Zhiyue](https://unsplash.com/@zhiyue?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/silhouette-of-people-standing-near-wall-7DOU5NlNIcE?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-한편 애플은 이 파트너십을 영구 전략으로 제시하지 않았다. 2027~2028년까지 자체 파운데이션 모델 개발을 완료해 서버 연산의 상당 부분을 인하우스로 전환한다는 로드맵을 내부적으로 유지하고 있는 것으로 알려졌다. 제미나이 의존은 일종의 '전략적 브리지'다.
+## 결론: 9월에 무엇을 확인해야 하나
 
-그러나 여기서 주목해야 할 흐름이 있다. 파운데이션 모델 개발은 이미 수백억 달러 단위의 자본과 수천 명의 AI 연구 인력이 필요한 사업이 됐다. 애플처럼 시가총액 3조 달러짜리 기업도 독자 개발을 포기하고 타사 모델을 임대해 쓰기로 했다면, 이는 AI 파운데이션 모델이 개별 기업이 독점하기엔 너무 자본집약적인 **공유 기반 인프라**로 자리매김하고 있음을 시사한다. 마치 OS나 CPU가 그랬듯이, AI 모델도 특정 기업의 차별화 무기이기보다 업계 전체가 공유하는 플랫폼이 되어가고 있는 것이다.
+Siri AI 기능 자체는 인상적이다. 화면 인식, 멀티스텝 작업, 개인 맥락 이해는 기존 시리가 한 번도 가지지 못한 능력이다. 문제는 **누구에게, 언제, 얼마나 완전하게** 주어지느냐다.
 
-Siri AI와 제미나이의 결합이 가져올 진짜 변화는 주가 등락보다 이 지점에 있다. 누가 파운데이션 모델을 만드느냐보다, 그 위에서 어떤 사용자 경험과 애플리케이션을 구축하느냐가 경쟁의 핵심으로 이동하고 있다.
+9월 iOS 27이 출시되면 가장 먼저 확인해야 할 것은 두 가지다. 첫째, 내 기종에서 전체 기능이 지원되는지. 둘째, 한국 시장에서 언어·지역 제한 없이 한국어로 제대로 작동하는지다. 애플의 AI 기능은 미국에서 먼저 활성화되고 한국어 지원이 늦어지는 사례가 반복된 전적이 있다.
+
+기대하되, 9월 업데이트 직후 실사용 리뷰가 나올 때까지 판단을 보류하는 것이 현명하다.
 
 ---
 
 **출처**
-- [WWDC 2026: Apple unveils Siri AI, Gemini-powered Apple Intelligence](https://www.business-standard.com/technology/tech-news/wwdc-2026-apple-unveils-siri-ai-gemini-powered-apple-intelligence-more-126060900042_1.html) — Business Standard, 2026.06.09
-- [Apple nears $1 billion Google deal for custom Gemini model to power Siri](https://9to5mac.com/2025/11/05/google-gemini-1-billion-deal-apple-siri/) — 9to5Mac, 2025.11.05
-- [Apple Reveals New AI Architecture Built Around Google Gemini Models](https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/) — MacRumors, 2026.06.08
-- [애플 시리AI 내놨지만…구글 따라가는 수준](https://www.hankyung.com/amp/2026060964881) — 한국경제, 2026.06.09
+- [Apple introduces Siri AI, a profoundly more capable and personal assistant](https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/) — Apple Newsroom, 2026.06.08
+- [Siri AI in iOS 27: Features, Requirements, and How It Works](https://www.macrumors.com/guide/ios-27-siri/) — MacRumors
+- [iPhone 17's 8GB Limit Costs It These Two Siri AI Features in iOS 27](https://www.macrumors.com/2026/06/10/iphone-17s-8gb-limit-loses-siri-ai-features/) — MacRumors, 2026.06.10
+- [iOS 27 Guide: All the new features coming to compatible iPhones](https://www.macworld.com/article/2986799/ios-27-new-iphone-features-release-date-beta-compatiblity-apple-intelligence-siri.html) — Macworld
 - [애플의 'Siri AI' 승부수: 늦은 추격은 아이폰 생태계를 지킬 수 있나](https://www.koreabizreview.com/articles/global-radar-ai-tech-siri-ai-20260609-1nlw) — Korea Business Review, 2026.06.09
