@@ -1,0 +1,62 @@
+---
+title: "코스피 대폭락 원인과 2주 전망: 서킷브레이커까지 발동된 '검은 화요일'"
+description: "6월 23일 코스피가 하루 10% 급락하며 서킷브레이커가 두 차례 발동됐다. MSCI 제외, 미국 AI 테크 급락, HBM4 감산 공포가 동시에 터진 복합 쇼크의 원인과 향후 2주 전망을 분석한다."
+pubDate: 2026-06-24T08:00:00+09:00
+category: economy
+tags: ["코스피", "주식시장", "반도체", "AI"]
+---
+
+2026년 6월 23일, 코스피는 하루 만에 910포인트 넘게 폭락하며 8,200선까지 밀렸다. 서킷브레이커가 단 하루에 두 차례 발동된 것은 극히 이례적인 사건이다. 외국인 투자자들은 이날 하루에만 5조 7,900억 원(약 38억 달러) 규모의 주식을 던졌고, 삼성전자와 SK하이닉스는 각각 12% 이상씩 폭락했다. 연초 대비 80%에 가까운 상승률을 자랑하며 글로벌 상위권 증시였던 코스피가 왜 이렇게 무너졌는지, 그리고 향후 2주 안에 어떤 흐름이 예상되는지를 짚어본다. 이 글은 시장 동향 분석이며 특정 종목 매수·매도를 권유하지 않는다.
+
+![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMGNyYXNofGVufDF8MHx8fDE3ODIyNzgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+
+## 폭락의 규모: '검은 화요일'이 된 6월 23일
+
+코스피는 6월 23일 종가 기준 8,203.84포인트로 마감했다. 전일 대비 910.71포인트, 약 10% 하락이다. 장 중에는 서킷브레이커가 두 차례 발동됐다. 서킷브레이커는 코스피 200 선물이 5% 이상 하락한 상태가 1분 이상 지속될 때 발동되는 비상 제동 장치로, 20분간 프로그램 매매가 전면 중단된다. 하루에 두 번 발동된 것은 2020년 코로나 팬데믹 당시 이후 처음이다.
+
+시가총액 1·2위인 삼성전자(-12.3%)와 SK하이닉스(-12.5%)가 동반 폭락하면서 지수를 끌어내렸다. 코스닥도 6%대 급락을 기록했으며, 아시아 시장 전반에서도 한국 증시가 가장 큰 낙폭을 나타냈다. CNN 비즈니스는 "AI 매도세에 월스트리트가 짓눌렸고, 한국 시장은 10%나 폭락했다"고 헤드라인을 뽑았다. 한국이 그날 글로벌 시장의 '진원지'였다는 뜻이다.
+
+그러나 맥락을 놓치면 사태의 본질을 오해하기 쉽다. 코스피는 이날 폭락 직전까지도 연초 대비 약 80% 상승해 있었다. 전 세계 주요 증시 가운데 최고 성과를 기록하고 있었던 시장이, 하루 만에 10%를 반납한 것이다.
+
+## 세 가지 복합 원인: 왜 이날 한꺼번에 터졌나
+
+단 하루 만에 10%가 무너지려면, 하나의 악재로는 부족하다. 6월 23일에는 서로 다른 세 가지 충격이 동시에 겹쳤다.
+
+**첫째, 미국 AI·기술주의 전날 밤 폭락이다.** 뉴욕 증시에서는 AI 관련주들이 전날 큰 폭으로 하락했다. 아마존(-4.75%), 마이크로소프트(-3.18%), 메타(-2.32%), 엔비디아(-0.97%)가 일제히 하락세를 보였다. AI 버블 우려가 재점화되면서 글로벌 반도체 밸류체인 전반에 차익 실현 압력이 쏟아진 것이다. 한국 코스피는 삼성전자와 SK하이닉스를 중심으로 반도체 비중이 매우 높기 때문에, 미국발 AI 공포는 곧바로 한국 시장의 직격탄이 됐다.
+
+**둘째, MSCI 선진국지수 편입 제외 결정이다.** MSCI(모건스탠리 캐피털 인터내셔널)는 정기 검토에서 한국을 선진국지수에 편입하지 않기로 했다. 한국은 수년간 MSCI 선진국지수 편입을 기대해왔으나, 이번에도 '관찰 대상국' 상태에 머물렀다. 선진국지수 편입이 성사되면 수조 원의 패시브 자금이 자동으로 유입되지만, 이번 결정으로 그 기대가 사라졌다. 이 소식은 이미 고평가 우려가 쌓여있던 한국 증시에서 외국인 자금 이탈의 촉매제가 됐다.
+
+**셋째, SK하이닉스의 HBM4 감산 보도다.** SK하이닉스가 HBM4(고대역폭메모리 4세대) 생산 확장 속도를 늦추고 기존 일반 DRAM 생산으로 자원을 재배분하고 있다는 보도가 나왔다. HBM은 AI 가속기(특히 엔비디아 GPU)에 필수적인 메모리 반도체로, SK하이닉스가 글로벌 공급의 절반 이상을 담당하고 있다. HBM4 확장 속도 조정 소식은 "AI 수요가 기대만큼 탄탄하지 않을 수 있다"는 공포를 키웠고, 이미 레버리지(대출)를 통해 반도체주에 베팅해 있던 투자자들의 강제 청산(마진콜)으로 이어졌다.
+
+![graphical user interface, application](https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzdG9jayUyMG1hcmtldCUyMGNyYXNofGVufDF8MHx8fDE3ODIyNzgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Anne Nygård](https://unsplash.com/@polarmermaid?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphical-user-interface-application-x07ELaNFt34?utm_source=spice-bandit-blog&utm_medium=referral)*
+
+세 악재가 동시에 터지자, 외국인 투자자들은 이날 현물 시장에서 5조 7,900억 원어치를 순매도했다. 국내 개인 투자자들이 "저가 매수" 기회로 인식하며 일부 매수에 나섰지만, 외국인의 매도 물량을 받아내기엔 역부족이었다.
+
+## 2주 단기 전망: 반등이냐 추가 조정이냐
+
+결론부터 말하면, **단기 변동성은 크겠지만 추세적 붕괴 가능성은 낮다.** 근거는 세 가지다.
+
+**1. 연간 상승분의 여전한 존재.** 6월 23일 10% 폭락 이후에도 코스피의 연초 대비 상승률은 약 78~83%다. 2026년 AI·반도체 슈퍼사이클이 만들어낸 구조적 상승세가 하루의 급락으로 무너지지는 않았다는 얘기다. 지수 자체는 여전히 연초의 두 배 가까운 수준에서 움직이고 있다.
+
+**2. 골드만삭스는 코스피 12,000 목표를 유지하고 있다.** 코스피가 폭락한 당일에도 골드만삭스는 코스피 목표치 1만 2,000을 철회하지 않았다. 이번 급락을 "AI 테마의 구조적 소멸"이 아니라 "고밸류에이션 조정"으로 해석하고 있다는 신호다.
+
+**3. AI 반도체 수요 펀더멘털은 훼손되지 않았다.** 삼성전자의 HBM4 제품은 출시 4개월 만에 누적 매출 10억 달러를 넘겼다. 글로벌 AI 인프라(컴퓨팅·데이터센터·전력) 설비투자는 2026년 약 7,650억 달러에서 2031년까지 연평균 15% 이상 성장할 것으로 예측된다(골드만삭스·블룸버그 인텔리전스). AI 수요가 없어진 게 아니라, 단기 레버리지 포지션이 청산된 것이다.
+
+반면, 주의해야 할 리스크도 있다. MSCI 선진국지수 편입 실패로 인한 외국인 패시브 자금의 장기적 이탈 가능성, 미국 AI 기업들의 실적 우려가 7월 실적 시즌(어닝 시즌)까지 이어지는 시나리오, 그리고 국내 레버리지 ETF 투자자들의 추가 강제 청산 압력이 2주 내에 변수로 작용할 수 있다.
+
+![screen showing bitcoin trading chart](https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxzdG9jayUyMG1hcmtldCUyMGNyYXNofGVufDF8MHx8fDE3ODIyNzgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Nick Chong](https://unsplash.com/@nick604?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/screen-showing-bitcoin-trading-chart-N__BnvQ_w18?utm_source=spice-bandit-blog&utm_medium=referral)*
+
+## 이 폭락이 남긴 교훈
+
+6월 23일의 충격이 투자자들에게 되새겨주는 본질적인 질문이 있다. **"80% 올랐을 때의 주식은 그 전과 같은 주식인가?"** 주가가 2배 가까이 오른 상황에서는 좋은 소식의 여지가 줄어들고, 나쁜 소식의 타격은 커진다. 세 개의 악재가 하나만 있었다면 5% 하락에 그쳤을 수도 있다. 하지만 고밸류에이션 환경에서는 악재의 상호작용이 증폭된다. 이것이 서킷브레이커가 두 차례 발동된 이유다.
+
+단기적으로는 미국 7월 어닝 시즌(실적 발표)이 최대 분수령이 될 것이다. 엔비디아, 마이크로소프트, 메타 등 빅테크의 AI 투자 가이던스가 시장의 방향을 결정할 공산이 크다. 한국 반도체 기업들의 실적과 HBM4 수주 현황도 코스피 반등의 속도를 좌우할 핵심 변수다.
+
+---
+
+*본 글은 공개된 시장 정보를 바탕으로 작성된 시장 동향 분석이며, 특정 종목에 대한 투자 조언이 아닙니다. 투자 결정은 본인 판단과 책임 하에 이루어져야 합니다.*
+
+**출처**: CNN Business, Business Standard, Bloomberg, Goldman Sachs (시장 리포트), TradingKey, IndexBox, BeinCrypto
