@@ -19,25 +19,8 @@ function firstBodyImage(body: string | undefined): string | undefined {
   return m?.[1];
 }
 
-const featured = allPosts.find((p) => p.data.featured);
-const remaining = featured ? allPosts.filter((p) => p.id !== featured.id) : allPosts;
-
-// 최근 7일 조회수 순위맵: slug → rank (0부터, 낮을수록 인기)
-const popularRankMap = new Map<string, number>(
-  (popularData.posts as { slug: string; views: number }[]).map((p, i) => [p.slug, i])
-);
-
-// 많이 본 기사(사이드바): 최근 7일 조회수 내림차순, 미집계 글은 최신순으로 후순위
-const popularSorted = [...remaining].sort((a, b) => {
-  const rankA = popularRankMap.has(a.id) ? popularRankMap.get(a.id)! : Infinity;
-  const rankB = popularRankMap.has(b.id) ? popularRankMap.get(b.id)! : Infinity;
-  if (rankA !== rankB) return rankA - rankB;
-  return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
-});
-
-const sidebarPosts = popularSorted
-  .slice(0, 7)
-  .map((p) => ({
+function postToSlide(p: (typeof allPosts)[0]) {
+  return {
     id: p.id,
     title: p.data.title,
     description: p.data.description,
@@ -46,44 +29,49 @@ const sidebarPosts = popularSorted
     heroImage: p.data.heroImage || firstBodyImage(p.body),
     author: p.data.author,
     readingTime: p.data.readingTime,
-  }));
+  };
+}
 
-// Today Pick 캐러셀: featured 우선, 그 다음 인기 기사로 최대 3슬라이드
-const featuredSlide = featured ? {
-  id: featured.id,
-  title: featured.data.title,
-  description: featured.data.description,
-  category: featured.data.category,
-  pubDate: featured.data.pubDate,
-  heroImage: featured.data.heroImage || firstBodyImage(featured.body),
-  author: featured.data.author,
-  readingTime: featured.data.readingTime,
-} : null;
+// KST 날짜 문자열 (YYYY-MM-DD) — 빌드 시점 기준
+function kstDateStr(d: Date): string {
+  return d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
+}
 
-const extraCount = featuredSlide ? 2 : 3;
-const todayPickSlides = [
-  ...(featuredSlide ? [featuredSlide] : []),
-  ...popularSorted
-    .filter((p) => p.id !== featured?.id)
-    .slice(0, extraCount)
-    .map((p) => ({
-      id: p.id,
-      title: p.data.title,
-      description: p.data.description,
-      category: p.data.category,
-      pubDate: p.data.pubDate,
-      heroImage: p.data.heroImage || firstBodyImage(p.body),
-      author: p.data.author,
-      readingTime: p.data.readingTime,
-    })),
-];
+const buildDate = new Date();
+const todayStr = kstDateStr(buildDate);
+const yesterdayStr = kstDateStr(new Date(buildDate.getTime() - 86400000));
 
-// Latest Brief: 최신 6개, 에디터픽과 겹치지 않도록 제외
-const sidebarIds = new Set(sidebarPosts.map((p) => p.id));
-const briefPosts = remaining
-  .filter((p) => !sidebarIds.has(p.id))
+// Today Pick 캐러셀: 오늘 발행 → 없으면 어제 발행 → 없으면 최신 3개 폴백
+let todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === todayStr);
+if (todayPickSource.length === 0)
+  todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === yesterdayStr);
+if (todayPickSource.length === 0)
+  todayPickSource = allPosts.slice(0, 3);
+
+const todayPickSlides = todayPickSource.slice(0, 5).map(postToSlide);
+const todayPickIds = new Set(todayPickSlides.map(p => p.id));
+
+// 많이 본 기사 (사이드바): GA4 7일 조회수 순위
+const popularRankMap = new Map<string, number>(
+  (popularData.posts as { slug: string; views: number }[]).map((p, i) => [p.slug, i])
+);
+
+const sidebarPosts = [...allPosts]
+  .sort((a, b) => {
+    const rankA = popularRankMap.has(a.id) ? popularRankMap.get(a.id)! : Infinity;
+    const rankB = popularRankMap.has(b.id) ? popularRankMap.get(b.id)! : Infinity;
+    if (rankA !== rankB) return rankA - rankB;
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  })
+  .slice(0, 3)
+  .map(postToSlide);
+
+// Latest Brief: 최신 6개, todayPick·사이드바와 겹치지 않도록 제외
+const sidebarIds = new Set(sidebarPosts.map(p => p.id));
+const briefPosts = allPosts
+  .filter(p => !todayPickIds.has(p.id) && !sidebarIds.has(p.id))
   .slice(0, 6)
-  .map((p) => ({
+  .map(p => ({
     id: p.id,
     title: p.data.title,
     category: p.data.category,
@@ -92,21 +80,12 @@ const briefPosts = remaining
     author: p.data.author,
   }));
 
-// Category sections: latest 3 per category, excluding featured
+// Category sections: 카테고리별 최신 3개
 const byCat = (cat: CategorySlug) =>
   allPosts
-    .filter((p) => p.data.category === cat && p.id !== featured?.id)
+    .filter(p => p.data.category === cat)
     .slice(0, 3)
-    .map((p) => ({
-      id: p.id,
-      title: p.data.title,
-      description: p.data.description,
-      category: p.data.category,
-      pubDate: p.data.pubDate,
-      heroImage: p.data.heroImage || firstBodyImage(p.body),
-      author: p.data.author,
-      readingTime: p.data.readingTime,
-    }));
+    .map(postToSlide);
 ---
 <Base title="BASELOAD" description="에너지·경제·AI·일상을 다루는 뉴스 블로그" wide={true}>
 

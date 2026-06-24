@@ -1,14 +1,18 @@
 {
-  "updatedAt": "2026-06-22T23:46:36.761Z",
+  "updatedAt": "2026-06-24T07:10:52.325Z",
   "period": "7d",
   "posts": [
     {
       "slug": "2026-world-cup-tracker",
-      "views": 20
+      "views": 28
     },
     {
       "slug": "claude-code-stock-agent-2-kis-api",
-      "views": 9
+      "views": 11
+    },
+    {
+      "slug": "claude-code-stock-agent-1-design",
+      "views": 7
     },
     {
       "slug": "claude-code-stock-agent-4-trade-safety",
@@ -19,11 +23,15 @@
       "views": 6
     },
     {
-      "slug": "claude-code-stock-agent-1-design",
-      "views": 6
+      "slug": "claude-code-stock-agent-5-operations",
+      "views": 5
     },
     {
-      "slug": "claude-code-stock-agent-5-operations",
+      "slug": "2026-06-21-korea-power-generation-merger",
+      "views": 4
+    },
+    {
+      "slug": "2026-06-22-won-dollar-exchange-rate-1500-impact",
       "views": 4
     },
     {
@@ -35,11 +43,11 @@
       "views": 3
     },
     {
-      "slug": "2026-06-21-korea-power-generation-merger",
+      "slug": "2026-06-22-smr-mmr-nuclear-market-spectrum",
       "views": 3
     },
     {
-      "slug": "2026-06-22-smr-mmr-nuclear-market-spectrum",
+      "slug": "2026-06-23-exchange-rate-and-daily-life",
       "views": 3
     },
     {
@@ -55,7 +63,11 @@
       "views": 2
     },
     {
-      "slug": "2026-06-22-won-dollar-exchange-rate-1500-impact",
+      "slug": "2026-06-23-claude-fable5-us-government-suspension",
+      "views": 2
+    },
+    {
+      "slug": "2026-06-23-korea-ai-datacenter-outlook",
       "views": 2
     },
     {
@@ -63,7 +75,23 @@
       "views": 2
     },
     {
+      "slug": "2026-06-14-us-ai-model-export-control-fable5",
+      "views": 1
+    },
+    {
       "slug": "2026-06-21-working-with-ai-assistant",
+      "views": 1
+    },
+    {
+      "slug": "2026-06-22-agentic-ai-enterprise-productivity-2026",
+      "views": 1
+    },
+    {
+      "slug": "2026-06-24-kospi-crash-june-23-cause-outlook",
+      "views": 1
+    },
+    {
+      "slug": "2026-06-24-kospi-won-divergence-2026",
       "views": 1
     },
     {
