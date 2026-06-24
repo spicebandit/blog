@@ -112,7 +112,7 @@ const hasCarousel = slides.length > 1;
           <a href="/">전체 보기</a>
         </div>
         <ul class="latest-list" role="list">
-          {recent.slice(0, 3).map((post, i) => {
+          {recent.slice(0, 4).map((post, i) => {
             const t = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
             return (
               <li class="latest-item">
@@ -436,7 +436,7 @@ const hasCarousel = slides.length > 1;
 .latest-item { border-bottom: 1px solid var(--line-2, #f3f4f6); }
 .latest-item:last-child { border-bottom: none; }
 .latest-item a {
-  display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+  display: flex; align-items: center; gap: 7px; padding: 6px 12px;
   transition: background .15s; text-decoration: none;
 }
 .latest-item a:hover { background: var(--accent-soft); text-decoration: none; }
@@ -454,14 +454,14 @@ const hasCarousel = slides.length > 1;
 
 .item-thumb {
   flex-shrink: 0;
-  width: 52px; height: 52px;
-  border-radius: 6px;
+  width: 42px; height: 42px;
+  border-radius: 5px;
   object-fit: cover;
 }
 .item-thumb-placeholder {
   flex-shrink: 0;
-  width: 52px; height: 52px;
-  border-radius: 6px;
+  width: 42px; height: 42px;
+  border-radius: 5px;
 }
 .item-thumb-placeholder.energy  { background: linear-gradient(135deg, #92400e, #d97706); }
 .item-thumb-placeholder.economy { background: linear-gradient(135deg, #065f46, #059669); }
@@ -471,8 +471,8 @@ const hasCarousel = slides.length > 1;
 .item-content { flex: 1; min-width: 0; }
 
 .item-badge {
-  display: block; font-size: 10px; font-weight: 800;
-  letter-spacing: .04em; text-transform: uppercase; margin-bottom: 2px;
+  display: block; font-size: 9px; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; margin-bottom: 1px;
 }
 .item-badge.energy  { color: var(--cat-energy, #d97706); }
 .item-badge.economy { color: var(--cat-economy, #059669); }
@@ -480,8 +480,8 @@ const hasCarousel = slides.length > 1;
 .item-badge.life    { color: var(--cat-life, #db2777); }
 
 .item-title {
-  margin: 0 0 3px;
-  font-size: 0.8125rem; font-weight: 700; line-height: 1.35;
+  margin: 0 0 2px;
+  font-size: 0.75rem; font-weight: 700; line-height: 1.3;
   color: var(--ink); word-break: keep-all;
   display: -webkit-box;
   -webkit-box-orient: vertical;
