@@ -15,7 +15,15 @@ export async function getStaticPaths() {
   });
 }
 
-const { tag, posts } = Astro.props;
+const { tag, posts: rawTagPosts } = Astro.props;
+
+function extractFirstImage(body: string | undefined): string | undefined {
+  if (!body) return undefined;
+  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)]+)\)/);
+  return m?.[1];
+}
+
+const posts = rawTagPosts.map((p: any) => ({ post: p, heroImage: p.data.heroImage ?? extractFirstImage(p.body) }));
 ---
 <Base title={`#${tag} | 태그`} description={`'${tag}' 태그가 달린 글 모음입니다.`}>
   <p class="meta" style="margin: 0 0 4px;">태그</p>
@@ -23,13 +31,14 @@ const { tag, posts } = Astro.props;
   <p class="meta" style="margin-top: 0;">{posts.length}개의 글</p>
 
   <ul style="list-style:none; padding:0; margin: 24px 0 0;">
-    {posts.map((post) => (
+    {posts.map(({ post, heroImage }: { post: any; heroImage: string | undefined }) => (
       <PostCard
         id={post.id}
         title={post.data.title}
         description={post.data.description}
         category={post.data.category}
         pubDate={post.data.pubDate}
+        heroImage={heroImage}
       />
     ))}
   </ul>

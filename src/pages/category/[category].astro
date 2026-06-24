@@ -12,8 +12,16 @@ export async function getStaticPaths() {
 const category = Astro.params.category as CategorySlug;
 const name = categoryName(category);
 
-const posts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && data.category === category))
+const rawPosts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && data.category === category))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+function extractFirstImage(body: string | undefined): string | undefined {
+  if (!body) return undefined;
+  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)]+)\)/);
+  return m?.[1];
+}
+
+const posts = rawPosts.map(p => ({ post: p, heroImage: p.data.heroImage ?? extractFirstImage(p.body) }));
 ---
 <Base title={`${name} | 카테고리`} description={`${name} 카테고리의 글 모음입니다.`}>
   <h1 style="margin-bottom: 4px;">{name}</h1>
@@ -23,7 +31,7 @@ const posts = (await getCollection('blog', ({ data }) => (!data.draft || import.
     <p style="color: var(--muted); padding: 24px 0;">아직 이 카테고리에 글이 없습니다.</p>
   ) : (
     <ul style="list-style:none; padding:0; margin: 24px 0 0;">
-      {posts.map((post) => (
+      {posts.map(({ post, heroImage }) => (
         <PostCard
           id={post.id}
           title={post.data.title}
@@ -31,6 +39,7 @@ const posts = (await getCollection('blog', ({ data }) => (!data.draft || import.
           category={post.data.category}
           pubDate={post.data.pubDate}
           showCategory={false}
+          heroImage={heroImage}
         />
       ))}
     </ul>
