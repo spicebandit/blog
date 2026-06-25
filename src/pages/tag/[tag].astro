@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
+import { firstBodyImage } from '../../lib/format';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV);
@@ -17,13 +18,7 @@ export async function getStaticPaths() {
 
 const { tag, posts: rawTagPosts } = Astro.props;
 
-function extractFirstImage(body: string | undefined): string | undefined {
-  if (!body) return undefined;
-  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)]+)\)/);
-  return m?.[1];
-}
-
-const posts = rawTagPosts.map((p: any) => ({ post: p, heroImage: p.data.heroImage ?? extractFirstImage(p.body) }));
+const posts = rawTagPosts.map((p: any) => ({ post: p, heroImage: p.data.heroImage ?? firstBodyImage(p.body) }));
 ---
 <Base title={`#${tag} | 태그`} description={`'${tag}' 태그가 달린 글 모음입니다.`}>
   <p class="meta" style="margin: 0 0 4px;">태그</p>

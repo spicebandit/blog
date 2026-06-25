@@ -5,6 +5,7 @@ import Comments from '../../components/Comments.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Sidebar from '../../components/Sidebar.astro';
 import { categoryName } from '../../lib/categories';
+import { formatDateKR } from '../../lib/format';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV);
@@ -50,7 +51,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
         <p style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 0 0 1.5em;">
           <a href={`/category/${post.data.category}/`} class="cat-chip">{categoryName(post.data.category)}</a>
           <time datetime={post.data.pubDate.toISOString()}>
-            {post.data.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' })}
+            {formatDateKR(post.data.pubDate)}
           </time>
           <span class="reading-time">· 약 {readingMin}분</span>
         </p>

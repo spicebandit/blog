@@ -1,5 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
+import { formatDateKRShort } from '../lib/format';
 
 interface Props {
   id: string;
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const { id, title, description, category, pubDate, heroImage, author, readingTime } = Astro.props;
-const dateLabel = pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric' });
+const dateLabel = formatDateKRShort(pubDate);
 ---
 <a class="article-card" href={`/blog/${id}/`} aria-label={title}>
   <div class:list={['card-thumb', !heroImage && `thumb-${category}`]}>

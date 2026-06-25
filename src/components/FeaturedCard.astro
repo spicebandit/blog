@@ -1,5 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
+import { formatDateKR } from '../lib/format';
 
 interface Props {
   id: string;
@@ -10,7 +11,7 @@ interface Props {
 }
 
 const { id, title, description, category, pubDate } = Astro.props;
-const dateLabel = pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' });
+const dateLabel = formatDateKR(pubDate);
 ---
 <div class="featured-wrap">
   <span class="featured-label">1면 톱기사</span>

@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import Comments from '../../../components/Comments.astro';
+import { formatDateEN } from '../../../lib/format';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog-en', ({ data }) => !data.draft || import.meta.env.DEV);
@@ -46,7 +47,7 @@ const hrefLangAlts = [
     <h1>{post.data.title}</h1>
     <p class="post-meta">
       <time datetime={post.data.pubDate.toISOString()}>
-        {post.data.pubDate.toLocaleDateString('en-US', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' })}
+        {formatDateEN(post.data.pubDate)}
       </time>
       <span class="reading-time">· {readingMin} min read</span>
       {koSlug && (

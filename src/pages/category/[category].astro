@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
 import { CATEGORY_SLUGS, categoryName, type CategorySlug } from '../../lib/categories';
+import { firstBodyImage } from '../../lib/format';
 
 export async function getStaticPaths() {
   // 4개 카테고리 각각에 대해 페이지를 생성한다(글이 없는 카테고리도 빈 목록으로 생성).
@@ -15,13 +16,7 @@ const name = categoryName(category);
 const rawPosts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && data.category === category))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-function extractFirstImage(body: string | undefined): string | undefined {
-  if (!body) return undefined;
-  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)]+)\)/);
-  return m?.[1];
-}
-
-const posts = rawPosts.map(p => ({ post: p, heroImage: p.data.heroImage ?? extractFirstImage(p.body) }));
+const posts = rawPosts.map(p => ({ post: p, heroImage: p.data.heroImage ?? firstBodyImage(p.body) }));
 ---
 <Base title={`${name} | 카테고리`} description={`${name} 카테고리의 글 모음입니다.`}>
   <h1 style="margin-bottom: 4px;">{name}</h1>

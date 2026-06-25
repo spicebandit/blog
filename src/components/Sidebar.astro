@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { categoryName } from '../lib/categories';
 import type { CategorySlug } from '../lib/categories';
+import { formatDateKRCompact } from '../lib/format';
 
 interface Props {
   recentPosts: CollectionEntry<'blog'>[];
@@ -25,7 +26,7 @@ const { recentPosts, catPosts, category } = Astro.props;
                 {categoryName(p.data.category)}
               </span>
               <time datetime={p.data.pubDate.toISOString()}>
-                {p.data.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'short', day: 'numeric' })}
+                {formatDateKRCompact(p.data.pubDate)}
               </time>
             </span>
           </a>
@@ -47,7 +48,7 @@ const { recentPosts, catPosts, category } = Astro.props;
               <span class="sb-title">{p.data.title}</span>
               <span class="sb-meta">
                 <time datetime={p.data.pubDate.toISOString()}>
-                  {p.data.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'short', day: 'numeric' })}
+                  {formatDateKRCompact(p.data.pubDate)}
                 </time>
               </span>
             </a>

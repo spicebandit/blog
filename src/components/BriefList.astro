@@ -1,5 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
+import { formatDateKRCompact } from '../lib/format';
 
 interface PostData {
   id: string;
@@ -23,7 +24,7 @@ const { posts } = Astro.props;
   </div>
   <ul class="brief-list" role="list">
     {posts.map((post) => {
-      const dateLabel = post.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'short', day: 'numeric' });
+      const dateLabel = formatDateKRCompact(post.pubDate);
       return (
         <li class="brief-item">
           <a href={`/blog/${post.id}/`} class="brief-link">
