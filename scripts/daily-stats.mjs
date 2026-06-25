@@ -27,7 +27,9 @@ import { sendTelegram } from './notify-telegram.mjs';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
 const DRY = process.argv.includes('--dry');
-const SITE_SUFFIX = ' | 세상은 니가 구해라'; // pageTitle에서 떼어낼 사이트명
+// pageTitle 끝에 붙는 사이트명 접미사를 떼어낸다. 현재는 ' | BASELOAD'(Base.astro의 <title> 형식),
+// 과거 데이터에는 옛 사이트명도 섞여 있어 둘 다 제거한다.
+const SITE_SUFFIX = / \| (BASELOAD|세상은 니가 구해라)$/;
 // Search Console 속성 (도메인 속성). .env GSC_SITE로 덮어쓸 수 있음.
 const GSC_SITE = process.env.GSC_SITE || 'sc-domain:baseload.co.kr';
 

@@ -162,9 +162,11 @@ async function fetchWikimedia(keyword, count) {
     const artist = stripHtml(meta.Artist?.value) || 'Unknown author';
     const license = stripHtml(meta.LicenseShortName?.value) || 'see source';
     const licenseUrl = meta.LicenseUrl?.value || '';
-    const descUrl = info.descriptionurl || page.title
-      ? info.descriptionurl || `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title)}`
-      : 'https://commons.wikimedia.org';
+    const descUrl =
+      info.descriptionurl ||
+      (page.title
+        ? `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title)}`
+        : 'https://commons.wikimedia.org');
     const alt = stripHtml(meta.ImageDescription?.value).slice(0, 120) || page.title?.replace(/^File:/, '') || keyword;
 
     const licenseMd = licenseUrl ? `[${license}](${licenseUrl})` : license;
