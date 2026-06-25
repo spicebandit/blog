@@ -7,17 +7,11 @@ import CategorySection from '../components/CategorySection.astro';
 import AdSlot from '../components/AdSlot.astro';
 import type { CategorySlug } from '../lib/categories';
 import { CATEGORY_SLUGS } from '../lib/categories';
+import { firstBodyImage, kstDateStr } from '../lib/format';
 import popularData from '../data/popular-posts.json';
 
 const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-// Extract the first Unsplash/http image URL from a markdown body when heroImage frontmatter is absent
-function firstBodyImage(body: string | undefined): string | undefined {
-  if (!body) return undefined;
-  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/);
-  return m?.[1];
-}
 
 function postToSlide(p: (typeof allPosts)[0]) {
   return {
@@ -30,11 +24,6 @@ function postToSlide(p: (typeof allPosts)[0]) {
     author: p.data.author,
     readingTime: p.data.readingTime,
   };
-}
-
-// KST 날짜 문자열 (YYYY-MM-DD) — 빌드 시점 기준
-function kstDateStr(d: Date): string {
-  return d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
 }
 
 const buildDate = new Date();
@@ -102,7 +91,7 @@ const byCat = (cat: CategorySlug) =>
 
   <!-- Ad band -->
   <div class="ad-band">
-    <AdSlot size="leaderboard" />
+    <AdSlot position="header" />
   </div>
 
   <!-- Category sections × 4 -->
