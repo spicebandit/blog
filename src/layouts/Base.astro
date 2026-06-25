@@ -403,13 +403,38 @@ const showNotice = new Date() < NOTICE.until;
         color: var(--muted);
       }
 
-      /* ── FOOTER ────────────────────────────── */
+      /* ── FOOTER (Apple-inspired) ───────────── */
       footer.site {
+        background: var(--bg-2);          /* Apple canvas-parchment */
         border-top: 1px solid var(--line);
-        margin-top: 80px;
-        padding: 32px 0 48px;
+        margin-top: 0;
+        padding: 48px 0 56px;             /* Apple footer: 64px — 실용 버전 */
         color: var(--muted);
-        font-size: 0.85rem;
+        font-size: 0.75rem;               /* Apple fine-print: 12px */
+        letter-spacing: -0.12px;          /* Apple fine-print tracking */
+        line-height: 2.0;                 /* Apple dense-link: 2.41 — 링크 열 가독성 */
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 24px;
+        margin-bottom: 10px;
+      }
+      .footer-links a {
+        color: var(--ink-2);
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: -0.12px;
+        text-decoration: none;
+        transition: color .15s;
+      }
+      .footer-links a:hover {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .footer-legal {
+        margin: 0;
+        color: var(--muted);
       }
 
       time, .meta { color: var(--muted); font-size: 0.85rem; }
@@ -537,7 +562,14 @@ const showNotice = new Date() < NOTICE.until;
 
     <footer class="site">
       <div class="wrap">
-        © {new Date().getFullYear()} BASELOAD · <a href="/rss.xml">RSS</a>
+        <div class="footer-links">
+          <a href="/category/energy/">에너지</a>
+          <a href="/category/economy/">경제·경영</a>
+          <a href="/category/ai/">AI·AX</a>
+          <a href="/category/life/">Editor</a>
+          <a href="/rss.xml">RSS</a>
+        </div>
+        <p class="footer-legal">© {new Date().getFullYear()} BASELOAD</p>
       </div>
     </footer>
 
