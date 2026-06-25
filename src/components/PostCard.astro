@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { id, title, description, category, pubDate, showCategory = true, heroImage } = Astro.props;
-const dateLabel = pubDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
+const dateLabel = pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' });
 
 function toThumbUrl(url: string): string {
   try {

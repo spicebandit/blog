@@ -46,7 +46,7 @@ const hrefLangAlts = [
     <h1>{post.data.title}</h1>
     <p class="post-meta">
       <time datetime={post.data.pubDate.toISOString()}>
-        {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        {post.data.pubDate.toLocaleDateString('en-US', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' })}
       </time>
       <span class="reading-time">· {readingMin} min read</span>
       {koSlug && (

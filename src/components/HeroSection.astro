@@ -36,7 +36,7 @@ const hasCarousel = slides.length > 1;
     <div class="carousel-viewport">
       <div class="carousel-track" id="hero-track">
         {slides.map((post, i) => {
-          const dateLabel = post.pubDate.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
+          const dateLabel = post.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric' });
           return (
             <a
               class="carousel-slide"
@@ -113,7 +113,7 @@ const hasCarousel = slides.length > 1;
         </div>
         <ul class="latest-list" role="list">
           {recent.slice(0, 4).map((post, i) => {
-            const t = post.pubDate.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric' });
+            const t = post.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'short', day: 'numeric' });
             return (
               <li class="latest-item">
                 <a href={`/blog/${post.id}/`}>

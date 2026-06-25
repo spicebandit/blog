@@ -43,7 +43,7 @@ const hrefLangAlts = [
               <p class="post-desc">{post.data.description}</p>
               <span class="post-meta">
                 <time datetime={post.data.pubDate.toISOString()}>
-                  {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  {post.data.pubDate.toLocaleDateString('en-US', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' })}
                 </time>
                 {post.data.koSlug && (
                   <a href={`/blog/${post.data.koSlug}/`} class="ko-link">한국어 원문</a>
