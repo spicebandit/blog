@@ -1,5 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
+import { formatDateKRShort, formatDateKRCompact } from '../lib/format';
 import AdSlot from './AdSlot.astro';
 
 interface PostData {
@@ -36,7 +37,7 @@ const hasCarousel = slides.length > 1;
     <div class="carousel-viewport">
       <div class="carousel-track" id="hero-track">
         {slides.map((post, i) => {
-          const dateLabel = post.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric' });
+          const dateLabel = formatDateKRShort(post.pubDate);
           return (
             <a
               class="carousel-slide"
@@ -113,7 +114,7 @@ const hasCarousel = slides.length > 1;
         </div>
         <ul class="latest-list" role="list">
           {recent.slice(0, 4).map((post, i) => {
-            const t = post.pubDate.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'short', day: 'numeric' });
+            const t = formatDateKRCompact(post.pubDate);
             return (
               <li class="latest-item">
                 <a href={`/blog/${post.id}/`}>
@@ -134,7 +135,7 @@ const hasCarousel = slides.length > 1;
         </ul>
       </div>
     )}
-    <AdSlot size="rectangle" />
+    <AdSlot position="sidebar" />
   </div>
 </div>
 
@@ -283,7 +284,7 @@ const hasCarousel = slides.length > 1;
 
 .hero-headline {
   margin: 0 0 12px;
-  font-size: clamp(1.55rem, 3vw, 2.4rem);
+  font-size: clamp(1.35rem, 2.7vw, 2.2rem);
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: -0.04em;
