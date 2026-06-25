@@ -33,6 +33,18 @@ draft: true
 
 미국 회계감사원(GAO)도 국가 양자전략을 갱신해 미국의 주도권을 다질 필요가 있다고 권고해 왔다. 즉 이번 행정명령은 '연구실의 진보 + 감독기관의 권고 + 기술패권 경쟁'이 한 점에서 만난 결과물이다. 다만 큐비트 수치나 성능 주장은 기업·매체마다 편차가 크므로, 특정 숫자보다 '방향'으로 읽는 편이 안전하다.
 
+## 정책의 실제 수혜 기업은 누구인가
+
+정책이 돈으로 움직이기 시작하면, 수혜의 윤곽이 드러난다. 실제로 2026년 5~6월 미국 상무부는 양자 기업 9곳에 비(非)지배 지분을 받는 조건으로 약 20억 달러를 투입했다. 정부가 보조금을 넘어 '지분 투자자'로 직접 들어온 것이다. 여기에 IBM은 초전도 양자 파운드리 자회사 설립에 10억 달러, 글로벌파운드리는 미국 내 양자 파운드리에 3억 7,500만 달러를 배정받았다. 이번 행정명령은 이 흐름에 '국가 전략'이라는 명분과 추진력을 더한다. 대표적으로 거론되는 기업과 이유는 다음과 같다. *(아래는 사업 구조 설명이며, 특정 종목의 매수·매도 권유가 아니다. 순수 양자 기업들은 대부분 아직 적자·초기 상업화 단계로 주가 변동성이 매우 크다.)*
+
+- **아이온큐(IonQ)**: 이온트랩(trapped-ion) 방식의 대표 주자. AWS·애저 클라우드로 양자컴을 제공하고, 양자 네트워킹으로 사업을 넓히고 있다. 미국 미사일방어청(MDA) 등과의 정부 계약 이력이 있어, 국방·정보 부처가 추진 주체로 명시된 이번 명령의 조달 확대에서 유리하다.
+- **리게티(Rigetti)**: 초전도 방식의 '풀스택' 기업으로, **미국 내 자체 양자칩 제조 시설(팹)을 보유**한다. 이번 명령의 '국내 공급망·제조 역량' 조항에 가장 직접적으로 맞물리는 대목이다. 인도 C-DAC에 108큐비트 시스템 공급 계약을 따내는 등 정부 조달 실적도 쌓고 있고, 상무부 자금(최대 1억 달러) 대상에도 포함됐다.
+- **디웨이브(D-Wave)**: 최적화 문제에 특화된 양자 어닐링(annealing) 방식의 상용화를 가장 앞서 끌어온 기업. 물류·스케줄링 같은 실제 산업 문제에 적용 사례가 많고, 게이트형 양자컴 개발도 병행한다. 상무부 자금(1억 달러)과 미국 내 신규 R&D 시설 확장이 맞물린다.
+- **퀀티넘(Quantinuum)**: 하니웰 계열의 이온트랩 기업으로 상업화 수준이 높다는 평가를 받으며 2026년 상장(IPO)했다. 상무부 자금(1억 달러) 대상에 포함됐고, 이번 IPO는 순수 양자 기업들의 '상업화 체력'을 가르는 시험대가 되고 있다.
+- **그 외**: 광자(photonic) 방식의 대형 주자 사이큐(PsiQuantum), 중성원자 방식의 아톰컴퓨팅(Atom Computing)·인플렉션(Infleqtion) 등도 상무부 자금 대상이다. 칩 제조 측면에선 IBM과 글로벌파운드리의 양자 파운드리가 '국내 제조' 정책의 핵심 축이다.
+
+여기서 한 가지 균형 잡힌 시각이 필요하다. 정책의 직접 자금과 조달 시장은 분명 호재지만, 가장 큰 과실은 의외로 순수 양자 기업이 아니라 IBM·구글·엔비디아처럼 '체력 있는 대형 플레이어'에게 돌아갈 수도 있다. 정부 자금은 마중물일 뿐, 결국 상업화와 실제 매출로 증명해야 하는 단계가 남아 있기 때문이다.
+
 ## 한국은 무엇을 봐야 하나
 
 두 번째 명령, 즉 포스트양자암호(PQC) 전환이 한국 입장에서 더 시급한 시사점을 던진다. '지금 훔쳐서 나중에 푼다(harvest now, decrypt later)'는 위협 때문이다. 오늘 암호화된 데이터라도 미래의 양자컴퓨터가 등장하면 소급해 해독될 수 있어, 금융·국방·통신처럼 데이터 수명이 긴 영역일수록 암호 교체를 미룰수록 위험이 쌓인다. 미국이 연방 차원의 전환에 나선 만큼, 글로벌 표준과 공급망에 연결된 한국 기업·기관도 PQC 전환 로드맵을 더 이상 '먼 미래의 일'로 미루기 어렵게 됐다.
@@ -41,4 +53,4 @@ draft: true
 
 ---
 
-*참고: [The White House — Ushering in the Next Frontier of Quantum Innovation](https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/), [White House Fact Sheet (2026.6)](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-ushers-in-the-next-frontier-of-quantum-innovation/), [U.S. GAO — Quantum Computing](https://www.gao.gov/products/gao-26-107759). 본 글은 공개된 정책·기술 동향에 대한 일반적 해설입니다.*
+*참고: [The White House — Ushering in the Next Frontier of Quantum Innovation](https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/), [White House Fact Sheet (2026.6)](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-ushers-in-the-next-frontier-of-quantum-innovation/), [U.S. GAO — Quantum Computing](https://www.gao.gov/products/gao-26-107759), [DCD — Commerce awards quantum firms $2bn for equity stakes](https://www.datacenterdynamics.com/en/news/us-dept-of-commerce-awards-nine-quantum-computing-companies-2bn-in-exchange-for-non-controlling-equity-stakes/), [The Motley Fool — Quantum computing stocks (2026.6)](https://www.fool.com/investing/2026/06/16/quantinuums-ipo-is-putting-pressure-on-ionq-rigett/). 본 글은 공개된 정책·기술·시장 동향에 대한 일반적 해설이며, 특정 종목에 대한 투자 조언이 아닙니다. 투자 판단과 책임은 본인에게 있습니다.*
