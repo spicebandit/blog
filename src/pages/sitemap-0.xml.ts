@@ -6,9 +6,19 @@ function toDate(d: Date): string {
   return d.toISOString().split('T')[0];
 }
 
+// XML 본문에서 위험한 문자를 이스케이프(loc에 &가 그대로 들어가면 XML이 깨진다)
+function xmlEscape(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 function entry(loc: string, lastmod: string, changefreq: string, priority: string) {
   return `  <url>
-    <loc>${loc}</loc>
+    <loc>${xmlEscape(loc)}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
@@ -56,7 +66,8 @@ export const GET: APIRoute = async ({ site }) => {
     }
   }
   for (const [tag, lastmod] of tagLatest) {
-    entries.push(entry(`${base}/tag/${tag}/`, lastmod, 'weekly', '0.5'));
+    // 태그 페이지의 실제 URL은 encodeURIComponent(tag)로 생성되므로 sitemap도 동일하게 인코딩한다.
+    entries.push(entry(`${base}/tag/${encodeURIComponent(tag)}/`, lastmod, 'weekly', '0.5'));
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
