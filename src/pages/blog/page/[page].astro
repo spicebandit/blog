@@ -1,0 +1,109 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { firstBodyImage } from '../../../lib/format';
+
+const PAGE_SIZE = 20;
+
+export async function getStaticPaths() {
+  const PAGE_SIZE = 20;
+  const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+
+  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, i) => {
+    const page = i + 2;
+    return {
+      params: { page: String(page) },
+      props: {
+        pagePosts: allPosts.slice(i * PAGE_SIZE + PAGE_SIZE, (i + 1) * PAGE_SIZE + PAGE_SIZE),
+        currentPage: page,
+        totalPages,
+        totalPosts: allPosts.length,
+      },
+    };
+  });
+}
+
+interface Props {
+  pagePosts: Awaited<ReturnType<typeof getCollection<'blog'>>>;
+  currentPage: number;
+  totalPages: number;
+  totalPosts: number;
+}
+
+const { pagePosts, currentPage, totalPages, totalPosts } = Astro.props;
+---
+<Base
+  title={`전체 글 — ${currentPage}페이지`}
+  description="BASELOAD의 모든 글을 최신순으로 확인합니다."
+>
+  <div class="list-header">
+    <h1 class="list-title">전체 글</h1>
+    <p class="list-meta">{totalPosts}개의 글 · 최신순</p>
+  </div>
+
+  <ul class="post-list">
+    {pagePosts.map((post) => (
+      <PostCard
+        id={post.id}
+        title={post.data.title}
+        description={post.data.description}
+        category={post.data.category}
+        pubDate={post.data.pubDate}
+        showCategory={true}
+        heroImage={post.data.heroImage ?? firstBodyImage(post.body)}
+      />
+    ))}
+  </ul>
+
+  <nav class="pagination" aria-label="페이지 탐색">
+    <a
+      href={currentPage === 2 ? '/blog/' : `/blog/page/${currentPage - 1}/`}
+      class="page-btn"
+    >← 이전</a>
+    <span class="page-current" aria-current="page">{currentPage}</span>
+    <span class="page-sep">/ {totalPages}</span>
+    {currentPage < totalPages && (
+      <a href={`/blog/page/${currentPage + 1}/`} class="page-btn">다음 →</a>
+    )}
+  </nav>
+</Base>
+
+<style>
+  .list-header { margin-bottom: 24px; }
+  .list-title {
+    margin: 0 0 4px;
+    font-size: 1.5rem; font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+  .list-meta { margin: 0; color: var(--muted); font-size: 0.875rem; }
+
+  .post-list { list-style: none; padding: 0; margin: 0; }
+
+  .pagination {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin: 40px 0 8px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.875rem;
+  }
+  .page-current {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+    background: var(--accent); color: #fff;
+    border-radius: 50%; font-weight: 700;
+  }
+  .page-sep { color: var(--muted); }
+  .page-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 7px 16px;
+    background: var(--bg-2); color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 999px; font-weight: 600;
+    text-decoration: none; transition: border-color .15s, color .15s;
+  }
+  .page-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+</style>
