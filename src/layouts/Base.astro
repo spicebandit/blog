@@ -484,7 +484,10 @@ const showNotice = new Date() < NOTICE.until;
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      if (window.__gaExcludeOwner) {
+      // 프로덕션 도메인(www.baseload.co.kr)에서만 GA4 활성화
+      // localhost, Vercel 프리뷰 URL, 구 도메인 트래픽 차단
+      var __gaAllowed = location.hostname === 'www.baseload.co.kr';
+      if (!__gaAllowed || window.__gaExcludeOwner) {
         window['ga-disable-G-KM0XNWHRCM'] = true;
       } else {
         gtag('config', 'G-KM0XNWHRCM', {
