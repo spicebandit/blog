@@ -38,6 +38,29 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 .wc-sched .kst { color:#1e2761; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .wc-sched tr.kr td { background:#e7f6ef; font-weight:700; }
 .wc-sched tr.kr td:first-child { border-left:3px solid #15803d; }
+/* ── 모바일 최적화 (가로 넘침 방지 · 촘촘하게) ── */
+@media (max-width:600px) {
+  .wc-wrap { font-size:0.9rem; }
+  .wc-wrap table { max-width:100%; }
+  .wc-wrap td, .wc-wrap th { word-break:keep-all; overflow-wrap:anywhere; }
+  .wc-updated { font-size:0.78rem; }
+  /* 조별 순위: 2열로 더 촘촘하게 (세로 길이 절반) */
+  .wc-groups { grid-template-columns:repeat(2,1fr); gap:8px; }
+  .wc-group { padding:8px 9px; }
+  .wc-group h3 { font-size:0.92rem; }
+  .wc-group table { font-size:0.76rem; }
+  .wc-group th { font-size:0.64rem; }
+  .wc-group td { padding:3px 2px; }
+  .wc-group td:first-child { white-space:normal; }
+  /* 토너먼트 대진표: 모바일 폭 축소로 좌우 스크롤 거리 단축 */
+  .wc-bracket { min-width:0; gap:7px; }
+  .wc-round { min-width:92px; }
+  .wc-round > h4 { font-size:0.72rem; }
+  .wc-m { font-size:0.7rem; padding:5px 6px; }
+  /* 다가오는 경기 표: 촘촘하게 */
+  .wc-sched { font-size:0.8rem; }
+  .wc-sched th, .wc-sched td { padding:6px 4px; }
+}
 </style>
 
 <div class="wc-wrap">
