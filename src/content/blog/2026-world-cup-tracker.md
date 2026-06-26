@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-26T10:30:00+09:00
+updatedDate: 2026-06-26T13:30:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -70,7 +70,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 26일 오전 10시 30분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 26일 오후 1시 30분 (KST)</span>
 
 경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -86,7 +86,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
 <tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
 <tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
-<tr><td>현재 단계</td><td><b>조별리그 최종전 진행 중 (6/24~27)</b> — A·B·C·E·F조 마감. A조 멕시코·남아공, B조 스위스·캐나다, C조 브라질·모로코, E조 독일·코트디부아르, F조 네덜란드·일본 32강 진출 확정. 일본은 스웨덴과 1-1로 비기며 F조 2위로 토너먼트행을 확정했다. 대한민국은 남아공에 0-1로 패해 A조 3위, 32강행은 각 조 3위 성적 비교 결과를 기다린다</td></tr>
+<tr><td>현재 단계</td><td><b>조별리그 최종전 진행 중 (6/24~28)</b> — A~F조 6개 조 마감. D조는 미국이 1위, 호주가 2위로 진출했다(미국은 튀르키예에 2-3으로 졌지만 조 1위 유지). G~L조 6개 조는 6/27~28 최종전이 남았다. 대한민국은 A조 3위(승점 3)로, 각 조 3위 8팀 비교에서 현재 6위로 잠정 32강권에 들어 있으나 남은 조 결과에 따라 확정된다. 32강 토너먼트는 6/28 시작</td></tr>
 <tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
 </table>
 
@@ -124,10 +124,10 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-group"><h3>D조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇺🇸 미국</td><td>2</td><td>6</td><td>+5</td></tr>
-<tr class="adv"><td>🇦🇺 호주</td><td>2</td><td>3</td><td>0</td></tr>
-<tr><td>🇵🇾 파라과이</td><td>2</td><td>3</td><td>-2</td></tr>
-<tr><td>🇹🇷 튀르키예</td><td>2</td><td>0</td><td>-3</td></tr>
+<tr class="adv"><td>🇺🇸 미국</td><td>3</td><td>6</td><td>+4</td></tr>
+<tr class="adv"><td>🇦🇺 호주</td><td>3</td><td>4</td><td>0</td></tr>
+<tr><td>🇵🇾 파라과이</td><td>3</td><td>4</td><td>-2</td></tr>
+<tr><td>🇹🇷 튀르키예</td><td>3</td><td>3</td><td>-2</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>E조</h3><table>
@@ -196,30 +196,30 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. 조별리그 최종전이 6월 24~27일 순차 진행 중이며, A·B·C·E조에 이어 F조까지 마감됐습니다. A조는 멕시코가 체코를 3-0으로 꺾고 1위, 남아공이 대한민국을 1-0으로 잡고 사상 첫 토너먼트 진출(2위)에 성공했습니다. 대한민국은 3위로, 각 조 3위 8개 팀 비교 결과를 기다립니다. F조는 네덜란드가 튀니지를 3-1로 꺾고 1위, 일본이 스웨덴과 1-1로 비기며 2위로 토너먼트 진출을 확정했습니다. 나머지 조는 최종전 결과가 확정되는 대로 매일 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~F조 6개 조가 모두 마감됐습니다. D조는 미국이 튀르키예에 2-3으로 졌지만 조 1위를 지켰고, 호주가 파라과이와 0-0으로 비기며 2위로 진출했습니다. 대한민국은 A조 3위(승점 3, 득실 -1)로, 각 조 3위 8팀 비교에서 현재 6위에 올라 잠정 32강권에 들어 있습니다(G~L조 최종전 결과에 따라 확정). G~L조 6개 조는 6월 27~28일 최종전이 남았으며, 결과가 나오는 대로 매일 갱신됩니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-조별리그가 끝나면(6월 27일경) 아래 대진이 채워집니다. 현재는 진행 계획표이며, 진출팀이 확정되는 대로 경기 종료 후 갱신됩니다. (모바일에서는 세로로 표시)
+A~F조가 마감되며 일부 32강 대진이 확정됐습니다. 나머지 칸은 G~L조 최종전 결과가 나오는 대로 채워집니다. 32강은 6월 28일 시작합니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
 <div class="wc-round"><h4>32강</h4>
+<div class="wc-m"><div class="t"><span>🇿🇦 남아공</span><span class="sc">vs</span></div><div class="t"><span>🇨🇦 캐나다</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇧🇷 브라질</span><span class="sc">vs</span></div><div class="t"><span>🇯🇵 일본</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇩🇪 독일</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇳🇱 네덜란드</span><span class="sc">vs</span></div><div class="t"><span>🇲🇦 모로코</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇨🇮 코트디부아르</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇺🇸 미국</span><span class="sc">vs</span></div><div class="t"><span>🇧🇦 보스니아</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇨🇭 스위스</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇦🇺 호주</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇦🇷 아르헨티나</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 </div>
 
@@ -258,8 +258,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/26(금) 11:00</td><td>🇹🇷 튀르키예 vs 🇺🇸 미국</td><td>D</td></tr>
-<tr><td class="kst">6/26(금) 11:00</td><td>🇵🇾 파라과이 vs 🇦🇺 호주</td><td>D</td></tr>
 <tr><td class="kst">6/27(토) 04:00</td><td>🇳🇴 노르웨이 vs 🇫🇷 프랑스</td><td>I</td></tr>
 <tr><td class="kst">6/27(토) 04:00</td><td>🇸🇳 세네갈 vs 🇮🇶 이라크</td><td>I</td></tr>
 <tr><td class="kst">6/27(토) 09:00</td><td>🇺🇾 우루과이 vs 🇪🇸 스페인</td><td>H</td></tr>
@@ -276,6 +274,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-26 10시 30분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-26 13시 30분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
