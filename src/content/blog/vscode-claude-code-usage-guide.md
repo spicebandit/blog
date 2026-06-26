@@ -1,6 +1,6 @@
 ---
-title: "VS Code 사용법: 탭 지옥 탈출과 Claude Code 동거기"
-description: "창 20개 띄우던 분들을 위한 VS Code 사용법. 폴더 열기, 파일 편집, 터미널, Claude Code 대화까지 한 화면에서 끝내는 작업 환경을 화면 영역별로 쉽게 정리했습니다."
+title: "VS Code + Claude Code 사용법 완전 가이드 — 개발환경 세팅부터 AI 코딩까지"
+description: "VS Code와 Claude Code를 함께 쓰는 방법을 초보자도 따라 할 수 있게 정리했습니다. 폴더 열기·파일 편집·터미널·AI 대화를 한 화면에서 끝내는 작업환경 세팅 가이드."
 pubDate: 2026-06-12T10:23:26+09:00
 category: ai
 tags: ["VS Code", "Claude Code", "개발 환경"]

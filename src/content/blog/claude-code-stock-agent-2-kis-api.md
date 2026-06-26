@@ -1,6 +1,6 @@
 ---
-title: "클로드코드로 주식투자 에이전트 만들기 (2) — 한국투자증권 API 연결"
-description: "주식 봇의 토대인 증권사 API 연결. 토큰 1분 제한, 모의투자 서버의 변덕, SSL 인증서 에러까지 실제로 부딪힌 함정과 해결법."
+title: "KIS API(한국투자증권 Open API) Python 연결 가이드 — 실전 함정과 해결법"
+description: "한국투자증권 KIS Open API를 Python으로 연결하는 실전 가이드. 토큰 1분 제한·모의투자 서버·SSL 에러 등 실제 부딪힌 함정과 해결법을 Claude Code 주식봇 개발 경험에서 공개합니다."
 pubDate: 2026-06-20T09:00:00+09:00
 category: "ai"
 tags: ["ClaudeCode", "KIS API", "한국투자증권", "주식자동매매", "Python"]
