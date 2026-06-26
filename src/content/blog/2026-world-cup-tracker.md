@@ -38,6 +38,10 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 .wc-sched .kst { color:#1e2761; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .wc-sched tr.kr td { background:#e7f6ef; font-weight:700; }
 .wc-sched tr.kr td:first-child { border-left:3px solid #15803d; }
+.wc-overview { width:100%; border-collapse:collapse; margin:0 0 1em; }
+.wc-overview th { text-align:left; color:#6b7280; font-size:0.85rem; border-bottom:2px solid #eef2ff; padding:6px 8px; }
+.wc-overview td { border-bottom:1px solid #f3f4f6; padding:7px 8px; vertical-align:top; line-height:1.5; }
+.wc-overview td:first-child, .wc-overview th:first-child { white-space:nowrap; width:78px; color:#1e2761; font-weight:600; }
 /* ── 모바일 최적화 (가로 넘침 방지 · 촘촘하게) ── */
 @media (max-width:600px) {
   .wc-wrap { font-size:0.9rem; }
@@ -75,15 +79,16 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 대회 개요
 
-| 항목 | 내용 |
-|---|---|
-| 대회 | 2026 FIFA 월드컵 |
-| 개최국 | 🇺🇸 미국 · 🇨🇦 캐나다 · 🇲🇽 멕시코 (3개국 공동) |
-| 기간 | 2026년 6월 11일 ~ 7월 19일 |
-| 참가국 | 48개국 (사상 최다) |
-| 방식 | 12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출 |
-| 현재 단계 | **조별리그 최종전 진행 중 (6/24~27)** — A·B·C·E·F조 마감. A조 멕시코·남아공, B조 스위스·캐나다, C조 브라질·모로코, E조 독일·코트디부아르, F조 네덜란드·일본 32강 진출 확정. 일본은 스웨덴과 1-1로 비기며 F조 2위로 토너먼트행을 확정했다. 대한민국은 남아공에 0-1로 패해 A조 3위, 32강행은 각 조 3위 성적 비교 결과를 기다린다 |
-| 대한민국 | **A조** (멕시코·체코·남아공과 한 조) |
+<table class="wc-overview">
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>대회</td><td>2026 FIFA 월드컵</td></tr>
+<tr><td>개최국</td><td>🇺🇸 미국 · 🇨🇦 캐나다 · 🇲🇽 멕시코 (3개국 공동)</td></tr>
+<tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
+<tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
+<tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
+<tr><td>현재 단계</td><td><b>조별리그 최종전 진행 중 (6/24~27)</b> — A·B·C·E·F조 마감. A조 멕시코·남아공, B조 스위스·캐나다, C조 브라질·모로코, E조 독일·코트디부아르, F조 네덜란드·일본 32강 진출 확정. 일본은 스웨덴과 1-1로 비기며 F조 2위로 토너먼트행을 확정했다. 대한민국은 남아공에 0-1로 패해 A조 3위, 32강행은 각 조 3위 성적 비교 결과를 기다린다</td></tr>
+<tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
+</table>
 
 > 48개국 체제는 이번 대회부터 처음 적용됩니다. 조 3위라도 성적이 좋으면(상위 8팀) 32강에 오를 수 있어, 1패를 해도 끝까지 가능성이 열려 있는 구조입니다.
 
