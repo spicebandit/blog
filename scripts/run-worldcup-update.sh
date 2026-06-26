@@ -48,7 +48,8 @@ fi
 SLOT_KEY="$TODAY-$SLOT"
 
 # launchd는 PATH가 빈약하므로 보강 (homebrew의 node/claude 위치 포함)
-export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.bun/bin:/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
+export TELEGRAM_SEND_ONLY=1  # 예약(headless) 잡: 텔레그램 폴러 경쟁 방지(송신 전용)
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   # shellcheck disable=SC1090
   . "$HOME/.nvm/nvm.sh" >/dev/null 2>&1 || true

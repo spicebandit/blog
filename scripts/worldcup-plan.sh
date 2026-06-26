@@ -19,7 +19,8 @@ LOG_FILE="$PROJECT_ROOT/logs/worldcup-update.log"
 PLAN_PLIST="$HOME/Library/LaunchAgents/com.gogumi.blog.worldcup.plan.plist"
 TS="$(date '+%Y-%m-%d %H:%M:%S')"
 
-export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.bun/bin:/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
+export TELEGRAM_SEND_ONLY=1  # 예약(headless) 잡: 텔레그램 폴러 경쟁 방지(송신 전용)
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   # shellcheck disable=SC1090
   . "$HOME/.nvm/nvm.sh" >/dev/null 2>&1 || true
