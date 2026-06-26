@@ -52,11 +52,12 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
   .wc-group th { font-size:0.64rem; }
   .wc-group td { padding:3px 2px; }
   .wc-group td:first-child { white-space:normal; }
-  /* 토너먼트 대진표: 모바일 폭 축소로 좌우 스크롤 거리 단축 */
-  .wc-bracket { min-width:0; gap:7px; }
-  .wc-round { min-width:92px; }
-  .wc-round > h4 { font-size:0.72rem; }
-  .wc-m { font-size:0.7rem; padding:5px 6px; }
+  /* 토너먼트 대진표: 모바일에서는 세로로 쌓기 (좌우 스크롤 제거) */
+  .wc-bracket-scroll { overflow-x:visible; }
+  .wc-bracket { flex-direction:column; min-width:0; gap:14px; }
+  .wc-round { min-width:0; width:100%; }
+  .wc-round > h4 { font-size:0.82rem; }
+  .wc-m { font-size:0.78rem; padding:6px 8px; }
   /* 다가오는 경기 표: 촘촘하게 */
   .wc-sched { font-size:0.8rem; }
   .wc-sched th, .wc-sched td { padding:6px 4px; }
@@ -67,7 +68,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 26일 오전 10시 30분 (KST)</span>
 
-매일 오전 8시(한국시간) 전날 경기 결과로 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
+경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
 ![high angel photography of football stadium](https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHwyMDI2JTIwRklGQSUyMFdvcmxkJTIwQ3VwJTIwc29jY2VyJTIwc3RhZGl1bXxlbnwxfDB8fHwxNzgyMTEyNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Mario Klassen](https://unsplash.com/@marioklassen?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/high-angel-photography-of-football-stadium-70YxSTWa2Zw?utm_source=spice-bandit-blog&utm_medium=referral)*
@@ -194,7 +195,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-조별리그가 끝나면(6월 27일경) 아래 대진이 채워집니다. 현재는 진행 계획표이며, 진출팀이 확정되는 대로 매일 갱신됩니다. (모바일에서는 좌우로 스크롤)
+조별리그가 끝나면(6월 27일경) 아래 대진이 채워집니다. 현재는 진행 계획표이며, 진출팀이 확정되는 대로 경기 종료 후 갱신됩니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
@@ -248,7 +249,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 다가오는 경기 (한국시간)
 
-모든 시각은 **한국시간(KST)** 기준입니다. <b style="color:#15803d">🇰🇷 대한민국 경기</b>는 초록색으로 표시했습니다. 결과는 매일 오전 8시 갱신됩니다.
+모든 시각은 **한국시간(KST)** 기준입니다. <b style="color:#15803d">🇰🇷 대한민국 경기</b>는 초록색으로 표시했습니다. 결과는 경기 종료 후 자동 갱신됩니다.
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
@@ -270,6 +271,6 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-26 10시 30분 기준). 본 페이지는 매일 오전 8시(KST) 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-26 10시 30분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
