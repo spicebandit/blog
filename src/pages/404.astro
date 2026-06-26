@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import { CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
+---
+<Base title="페이지를 찾을 수 없습니다" description="요청하신 페이지가 존재하지 않거나 아직 발행 전입니다.">
+  <div class="not-found">
+    <div class="nf-icon" aria-hidden="true">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+        <circle cx="28" cy="28" r="27" stroke="var(--line)" stroke-width="2"/>
+        <!-- 느낌표 -->
+        <rect x="26" y="14" width="4" height="20" rx="2" fill="var(--muted)"/>
+        <circle cx="28" cy="40" r="2.5" fill="var(--muted)"/>
+      </svg>
+    </div>
+
+    <p class="nf-code">404</p>
+    <h1 class="nf-title">페이지를 찾을 수 없습니다</h1>
+    <p class="nf-desc">
+      아직 발행되지 않은 기사이거나, 주소가 변경·삭제된 경우입니다.<br>
+      연재 기사라면 다음 편이 곧 발행될 예정입니다.
+    </p>
+
+    <div class="nf-actions">
+      <a href="/" class="nf-btn primary">홈으로 돌아가기</a>
+      <a href="/blog/" class="nf-btn secondary">전체 글 보기</a>
+    </div>
+
+    <div class="nf-cats">
+      <p class="nf-cats-label">카테고리 둘러보기</p>
+      <div class="nf-cat-links">
+        {CATEGORY_SLUGS.map((slug) => (
+          <a href={`/category/${slug}/`} class={`nf-cat-link ${slug}`}>
+            {CATEGORY_NAMES[slug]}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px 24px 80px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .nf-icon {
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+
+  .nf-code {
+    margin: 0 0 8px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .nf-title {
+    margin: 0 0 16px;
+    font-size: clamp(1.4rem, 4vw, 1.875rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+
+  .nf-desc {
+    margin: 0 0 32px;
+    font-size: 0.9375rem;
+    color: var(--muted);
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+
+  .nf-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .nf-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: background .15s, color .15s, border-color .15s, transform .1s;
+  }
+  .nf-btn:hover { text-decoration: none; transform: translateY(-1px); }
+  .nf-btn.primary {
+    background: var(--accent);
+    color: #fff;
+  }
+  .nf-btn.primary:hover { background: var(--accent-dark); }
+  .nf-btn.secondary {
+    background: var(--bg-2);
+    color: var(--ink-2);
+    border: 1px solid var(--line);
+  }
+  .nf-btn.secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+  .nf-cats {
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+    width: 100%;
+  }
+  .nf-cats-label {
+    margin: 0 0 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .nf-cat-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nf-cat-link {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity .15s, transform .1s;
+  }
+  .nf-cat-link:hover { opacity: 0.8; text-decoration: none; transform: translateY(-1px); }
+
+  .nf-cat-link.energy  { background: var(--cat-energy-soft);  color: var(--cat-energy); }
+  .nf-cat-link.economy { background: var(--cat-economy-soft); color: var(--cat-economy); }
+  .nf-cat-link.ai      { background: var(--cat-ai-soft);      color: var(--cat-ai); }
+  .nf-cat-link.life    { background: var(--cat-life-soft);     color: var(--cat-life); }
+</style>
