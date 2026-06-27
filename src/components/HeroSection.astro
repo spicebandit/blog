@@ -1,7 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
 import { formatDateKRShort, formatDateKRCompact } from '../lib/format';
-import AdSlot from './AdSlot.astro';
 
 interface PostData {
   id: string;
@@ -135,7 +134,6 @@ const hasCarousel = slides.length > 1;
         </ul>
       </div>
     )}
-    <AdSlot position="sidebar" />
   </div>
 </div>
 

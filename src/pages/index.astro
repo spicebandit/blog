@@ -4,7 +4,6 @@ import Base from '../layouts/Base.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BriefList from '../components/BriefList.astro';
 import CategorySection from '../components/CategorySection.astro';
-import AdSlot from '../components/AdSlot.astro';
 import type { CategorySlug } from '../lib/categories';
 import { CATEGORY_SLUGS } from '../lib/categories';
 import { firstBodyImage, kstDateStr } from '../lib/format';
@@ -89,11 +88,6 @@ const byCat = (cat: CategorySlug) =>
   <!-- Latest Brief: horizontal card list (6 articles) -->
   {briefPosts.length > 0 && <BriefList posts={briefPosts} />}
 
-  <!-- Ad band -->
-  <div class="ad-band">
-    <AdSlot position="header" />
-  </div>
-
   <!-- Category sections × 4 -->
   {CATEGORY_SLUGS.map((cat) => (
     <CategorySection category={cat} posts={byCat(cat)} />
@@ -102,5 +96,4 @@ const byCat = (cat: CategorySlug) =>
 </Base>
 
 <style>
-.ad-band { margin: 32px 0; }
 </style>
