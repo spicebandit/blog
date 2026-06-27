@@ -12,6 +12,62 @@ draft: true
 ![a computer chip with the letter a on top of it](https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwcm9ib3QlMjB0ZXJtaW5hbHxlbnwxfDB8fHwxNzgyNTY2Mjc2fDA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_source=spice-bandit-blog&utm_medium=referral)*
 
+## 헤르메스 vs Claude Code·CrewAI·Paperclip — 경쟁 도구와 무엇이 다른가
+
+글을 더 읽기 전에 한 가지부터 정리하자. 2026년 현재 "AI 에이전트" 카테고리에는 비슷해 보이는 도구가 넘쳐나지만, 실제로는 **서로 다른 레이어를 커버**한다. 헤르메스 에이전트가 자주 비교되는 **Claude Code(클로드 코드)**, **CrewAI**, **Paperclip**과 어떻게 다른지 먼저 이해하면 나머지 내용이 훨씬 선명해진다.
+
+### 도구별 한 줄 포지셔닝
+
+- **Hermes Agent** — 서버·터미널·메신저에서 **상시 실행**되며, 대화를 쌓을수록 스스로 성장하는 1인용 자율 에이전트.
+- **Claude Code(클로드 코드)** — Anthropic의 터미널·IDE 통합 AI. **코딩·리팩토링·버그 수정** 등 개발 작업에 특화된 세션 기반 에이전트.
+- **CrewAI** — Python 코드로 "마케터·리서처·라이터" 등 **역할 기반 멀티에이전트 팀**을 구성하는 개발자용 오케스트레이션 프레임워크.
+- **Paperclip** — 여러 AI 에이전트에게 태스크를 배정하고 팀처럼 관리하는 **에이전트 관리 SaaS 플랫폼**. 직접 코드를 실행하기보다 워크플로를 감독한다.
+
+### 핵심 기능 비교표
+
+| 기준 | Hermes Agent | Claude Code | CrewAI | Paperclip |
+|------|-------------|-------------|--------|-----------|
+| **유형** | 단일 자율 에이전트 | 코딩 전문 에이전트 | 멀티에이전트 프레임워크 | 에이전트 관리 플랫폼 |
+| **실행 환경** | 터미널·메신저·서버 상시 | 터미널·IDE (세션 기반) | Python 스크립트 실행 | 웹 보드 UI |
+| **영속 메모리** | ✅ 디스크에 저장, 세션 간 유지 | ❌ 세션 종료 시 초기화 | ❌ (외부 DB 별도 연동) | ✅ 이슈·댓글·컨텍스트 저장 |
+| **LLM 프로바이더** | 40+ 프로바이더, 300+ 모델 | Anthropic 전용 | LangChain 경유 다수 | Anthropic Claude 기반 |
+| **자가 학습·스킬 누적** | ✅ 스킬 자동 저장·재사용 | ❌ | ❌ | ✅ 에이전트별 메모리 |
+| **메신저 게이트웨이** | ✅ Telegram·Discord·Slack 등 20+ | ❌ | ❌ | ✅ (플러그인 방식) |
+| **코딩 없이 사용 가능** | ✅ CLI·자연어 | ✅ 자연어 | ❌ Python 필수 | ✅ 보드 UI |
+| **멀티 에이전트** | ⚡ 병렬 서브에이전트(실험적) | ❌ 단일 | ✅ 핵심 기능 | ✅ 팀 구조 지원 |
+| **오픈소스** | ✅ MIT 라이선스 | ❌ 상용 (Anthropic 구독) | ✅ MIT 라이선스 | ❌ 상용 SaaS |
+| **셋업 난이도** | ★★★☆☆ 중간 | ★★☆☆☆ 낮음 | ★★★★☆ 높음 | ★★☆☆☆ 낮음 |
+| **주 대상** | 개발자·자동화 파워유저 | 개발자 (코딩 작업) | Python 개발자 | 1인기업·소규모 팀 |
+
+### 각 도구를 선택하는 상황
+
+**Hermes Agent가 맞는 경우:**
+- LLM 벤더에 종속되지 않고 언제든 모델을 교체하고 싶을 때 (오늘은 Claude, 내일은 GPT-4o)
+- 텔레그램·슬랙 등 메신저로 이동 중에도 서버의 에이전트에 원격 접근하고 싶을 때
+- 오픈소스 코드를 직접 수정하거나 사내 인프라에 자체 호스팅이 필요할 때
+- 반복할수록 더 똑똑해지는 AI 동료를 원할 때
+
+**Claude Code가 맞는 경우:**
+- 코딩·리팩토링·PR 리뷰 등 개발 업무가 주 목적일 때
+- Anthropic Claude의 최신 모델을 최고 품질로 쓰고 싶을 때
+- 별도 설정 없이 즉시 시작할 수 있는 개발 에이전트가 필요할 때
+
+**CrewAI가 맞는 경우:**
+- Python 개발자로서 복잡한 멀티에이전트 워크플로를 코드로 정밀 제어하고 싶을 때
+- "리서처 에이전트 → 분석 에이전트 → 작성 에이전트" 같은 역할 분업 파이프라인이 필요할 때
+- 엔터프라이즈 수준의 AI 자동화 시스템을 직접 구축하는 것이 목적일 때
+
+**Paperclip이 맞는 경우:**
+- 코딩 없이 여러 AI 에이전트에게 업무를 배정하고 진척을 관리하고 싶을 때
+- 이슈 트래커처럼 에이전트를 팀원으로 운용하고 싶을 때
+- AI 에이전트를 직접 만들기보다 **관리·감독**하는 레이어가 필요할 때
+
+### 결론: 레이어가 다르다, 혼합 사용이 정답
+
+네 도구는 경쟁이라기보다 **보완 관계**다. 실제로 Paperclip으로 태스크를 관리하면서 Hermes Agent가 실행·자동화를 담당하게 하거나, CrewAI로 파이프라인을 짜고 Claude Code로 코드 품질을 검토하는 조합도 가능하다. 다만 단 하나를 골라야 한다면: **서버에서 상시 실행되며, LLM 종속 없이, 메신저로 어디서나 접근 가능한 자율 에이전트**가 필요하다면 헤르메스가 2026년 현재 가장 명확한 선택지다.
+
+---
+
 ## 헤르메스 에이전트란? — 코딩 어시스턴트와 무엇이 다른가
 
 흔히 쓰는 AI 도구는 두 가지 유형이다. ChatGPT·Claude처럼 **웹 채팅창에서만 동작하는 챗봇**, 그리고 GitHub Copilot처럼 **IDE 안에서만 작동하는 코딩 보조도구**. 둘 다 창을 닫으면 대화가 사라지고, 다음에 접속하면 처음부터 다시 시작해야 한다.
