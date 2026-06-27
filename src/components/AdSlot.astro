@@ -46,7 +46,8 @@ const slotId  = ADSENSE_SLOTS[position];
 const adfitId = ADFIT_UNITS[position];
 
 const hasAdsense = !!(PUB_ID && slotId);
-const hasAdfit   = !!adfitId;
+// 헤더 위치는 PC 단위(adfitId) 또는 모바일 단위(ADFIT_HEADER_M) 중 하나만 있어도 렌더
+const hasAdfit   = position === 'header' ? !!(adfitId || ADFIT_HEADER_M) : !!adfitId;
 const showAd     = hasAdsense || hasAdfit;
 const isInArticle = position === 'in-article';
 const isDev      = import.meta.env.DEV;
@@ -87,14 +88,16 @@ const adfitDim = ADFIT_DIM[position];
       )
     )}
 
-    {/* AdFit: PC 헤더 광고 (728×90) */}
+    {/* AdFit: 헤더 광고 (PC 728×90 / 모바일 320×50) */}
     {!hasAdsense && hasAdfit && position === 'header' && (
       <>
-        <ins class="kakao_ad_area adfit-pc" style="display:none;"
-          data-ad-unit={adfitId}
-          data-ad-width="728"
-          data-ad-height="90">
-        </ins>
+        {adfitId && (
+          <ins class="kakao_ad_area adfit-pc" style="display:none;"
+            data-ad-unit={adfitId}
+            data-ad-width="728"
+            data-ad-height="90">
+          </ins>
+        )}
         {ADFIT_HEADER_M && (
           <ins class="kakao_ad_area adfit-mobile" style="display:none;"
             data-ad-unit={ADFIT_HEADER_M}
