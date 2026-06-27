@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-27T06:00:00+09:00
+updatedDate: 2026-06-27T11:30:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -70,7 +70,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 27일 오전 6시 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 27일 오전 11시 30분 (KST)</span>
 
 경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -86,7 +86,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
 <tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
 <tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
-<tr><td>현재 단계</td><td><b>조별리그 최종전 진행 중 (6/24~28)</b> — A~F조에 이어 I조까지 7개 조 마감. I조는 프랑스가 노르웨이를 4-1로 꺾고 1위, 노르웨이가 2위로 진출했다(세네갈은 이라크를 5-0으로 이겼지만 탈락). 오늘(6/27) G·H조, 내일(6/28) J·K·L조 최종전이 남았다. 대한민국은 A조 3위(승점 3)로, 각 조 3위 8팀 비교에서 잠정 32강권에 들어 있으나 남은 조 결과에 따라 확정된다. 32강 토너먼트는 6/28 시작</td></tr>
+<tr><td>현재 단계</td><td><b>조별리그 최종전 진행 중 (6/24~28)</b> — A~F·H·I조까지 8개 조 마감. H조는 스페인이 우루과이를 1-0으로 꺾고 1위, 카보베르데가 사우디와 0-0으로 비기며 2위로 진출했다(우루과이·사우디 탈락). 오늘(6/27) 낮 12시 G조, 내일(6/28) J·K·L조 최종전이 남았다. 대한민국은 A조 3위(승점 3)로, 각 조 3위 8팀 비교에서 잠정 32강권에 들어 있으나 남은 4개 조 결과에 따라 확정된다. 32강 토너먼트는 현지 6/28(한국시간 6/29) 시작</td></tr>
 <tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
 </table>
 
@@ -156,10 +156,10 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-group"><h3>H조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇪🇸 스페인</td><td>2</td><td>4</td><td>+4</td></tr>
-<tr class="adv"><td>🇺🇾 우루과이</td><td>2</td><td>2</td><td>0</td></tr>
-<tr><td>🇨🇻 카보베르데</td><td>2</td><td>2</td><td>0</td></tr>
-<tr><td>🇸🇦 사우디</td><td>2</td><td>1</td><td>-4</td></tr>
+<tr class="adv"><td>🇪🇸 스페인</td><td>3</td><td>7</td><td>+5</td></tr>
+<tr class="adv"><td>🇨🇻 카보베르데</td><td>3</td><td>3</td><td>0</td></tr>
+<tr><td>🇺🇾 우루과이</td><td>3</td><td>2</td><td>-1</td></tr>
+<tr><td>🇸🇦 사우디</td><td>3</td><td>1</td><td>-4</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>I조</h3><table>
@@ -196,11 +196,11 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~F조에 이어 I조까지 7개 조가 마감됐습니다. I조는 프랑스가 노르웨이를 4-1로 꺾고 전승으로 1위, 노르웨이가 2위로 진출했습니다(세네갈은 이라크를 5-0으로 이겼으나 탈락). 대한민국은 A조 3위(승점 3, 득실 -1)로, 각 조 3위 8팀 비교에서 잠정 32강권에 들어 있습니다(남은 조 최종전 결과에 따라 확정). G·H조는 6월 27일, J·K·L조는 6월 28일 최종전이 남았으며, 결과가 나오는 대로 매일 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~F·H·I조까지 8개 조가 마감됐습니다. H조는 스페인이 우루과이를 1-0으로 꺾고 1위, 카보베르데가 사우디와 0-0으로 비기며 2위로 진출했습니다(2회 우승국 우루과이와 사우디는 탈락). 대한민국은 A조 3위(승점 3, 득실 -1)로, 각 조 3위 8팀 비교에서 잠정 32강권에 들어 있습니다(남은 조 최종전 결과에 따라 확정). G조는 6월 27일 낮 12시, J·K·L조는 6월 28일 최종전이 남았으며, 결과가 나오는 대로 매일 갱신됩니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-A~F조와 I조가 마감되며 일부 32강 대진이 확정됐습니다. 나머지 칸은 G·H·J·K·L조 최종전 결과가 나오는 대로 채워집니다. 32강은 6월 28일 시작합니다. (모바일에서는 세로로 표시)
+A~F·H·I조가 마감되며 일부 32강 대진이 확정됐습니다. 카보베르데(H조 2위)가 진출을 확정해 아르헨티나 측 대진에 들어갔습니다. 나머지 칸은 G·J·K·L조 최종전 결과가 나오는 대로 채워집니다. 32강은 현지 6월 28일(한국시간 6월 29일) 시작합니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
@@ -219,7 +219,7 @@ A~F조와 I조가 마감되며 일부 32강 대진이 확정됐습니다. 나머
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇨🇭 스위스</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇦🇺 호주</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>🇦🇷 아르헨티나</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇦🇷 아르헨티나</span><span class="sc">vs</span></div><div class="t"><span>🇨🇻 카보베르데</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 </div>
 
@@ -258,8 +258,6 @@ A~F조와 I조가 마감되며 일부 32강 대진이 확정됐습니다. 나머
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/27(토) 09:00</td><td>🇺🇾 우루과이 vs 🇪🇸 스페인</td><td>H</td></tr>
-<tr><td class="kst">6/27(토) 09:00</td><td>🇨🇻 카보베르데 vs 🇸🇦 사우디</td><td>H</td></tr>
 <tr><td class="kst">6/27(토) 12:00</td><td>🇪🇬 이집트 vs 🇮🇷 이란</td><td>G</td></tr>
 <tr><td class="kst">6/27(토) 12:00</td><td>🇳🇿 뉴질랜드 vs 🇧🇪 벨기에</td><td>G</td></tr>
 <tr><td class="kst">6/28(일) 06:00</td><td>🇵🇦 파나마 vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</td><td>L</td></tr>
@@ -268,10 +266,11 @@ A~F조와 I조가 마감되며 일부 32강 대진이 확정됐습니다. 나머
 <tr><td class="kst">6/28(일) 08:30</td><td>🇨🇩 콩고DR vs 🇺🇿 우즈베키스탄</td><td>K</td></tr>
 <tr><td class="kst">6/28(일) 11:00</td><td>🇯🇴 요르단 vs 🇦🇷 아르헨티나</td><td>J</td></tr>
 <tr><td class="kst">6/28(일) 11:00</td><td>🇩🇿 알제리 vs 🇦🇹 오스트리아</td><td>J</td></tr>
+<tr><td class="kst">6/29(월) 12:00</td><td>🇿🇦 남아공 vs 🇨🇦 캐나다</td><td>32강</td></tr>
 </table>
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-27 06시 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-27 11시 30분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
