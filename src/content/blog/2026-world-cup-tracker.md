@@ -23,6 +23,16 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 .wc-group tr.adv td:first-child { color:#15803d; }
 .wc-legend { font-size:0.8rem; color:#6b7280; margin:-0.5em 0 1.5em; }
 .wc-legend b { color:#15803d; }
+.wc-third { width:100%; border-collapse:collapse; font-size:0.86rem; margin:.2em 0 1em; }
+.wc-third th { text-align:right; color:#9ca3af; font-weight:600; font-size:0.72rem; padding:4px 6px; border-bottom:2px solid #eef2ff; }
+.wc-third th:nth-child(-n+3){ text-align:left; }
+.wc-third td { padding:5px 6px; border-top:1px solid #f3f4f6; text-align:right; font-variant-numeric:tabular-nums; }
+.wc-third td:nth-child(-n+3){ text-align:left; }
+.wc-third td:nth-child(3){ white-space:nowrap; }
+.wc-third tr.adv td { font-weight:700; }
+.wc-third tr.adv td:nth-child(3){ color:#15803d; }
+.wc-third tr.kr td { background:#e7f6ef; }
+.wc-third tr.kr td:first-child{ border-left:3px solid #15803d; }
 .wc-bracket-scroll { overflow-x:auto; padding-bottom:8px; -webkit-overflow-scrolling:touch; }
 .wc-bracket { display:flex; gap:10px; min-width:780px; }
 .wc-round { display:flex; flex-direction:column; justify-content:space-around; flex:1; gap:8px; min-width:130px; }
@@ -197,6 +207,28 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 </div>
 
 <p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~I조 9개 조가 마감됐습니다. G조는 벨기에가 뉴질랜드를 5-1로 완파하고 골득실로 이집트를 제치며 1위, 이집트가 이란과 1-1로 비겨 2위로 진출했습니다(이란·뉴질랜드 탈락). 대한민국은 A조 3위(승점 3, 득실 -1)로, 각 조 3위 8팀 비교에서 잠정 32강권에 들어 있습니다(남은 J·K·L조 결과에 따라 확정). J·K·L조 최종전은 한국시간 6월 28일 새벽~오전에 열리며, 결과가 나오는 대로 매일 갱신됩니다.</p>
+
+## 조 3위 팀 순위 (상위 8팀 32강 진출)
+
+48개국 체제에선 각 조 1·2위(24팀)에 더해 **각 조 3위 12팀 중 상위 8팀**이 32강에 추가 진출합니다. 아래는 승점 → 득실 순 잠정 순위로, <b style="color:#15803d">초록색(1~8위)</b>이 현재 진출권입니다. (J·K·L조는 경기가 남아 변동될 수 있습니다.)
+
+<table class="wc-third">
+<tr><th>순위</th><th>조</th><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
+<tr class="adv"><td>1</td><td>E조</td><td>🇪🇨 에콰도르</td><td>3</td><td>4</td><td>0</td></tr>
+<tr class="adv"><td>2</td><td>F조</td><td>🇸🇪 스웨덴</td><td>3</td><td>4</td><td>0</td></tr>
+<tr class="adv"><td>3</td><td>B조</td><td>🇧🇦 보스니아</td><td>3</td><td>4</td><td>-1</td></tr>
+<tr class="adv"><td>4</td><td>D조</td><td>🇵🇾 파라과이</td><td>3</td><td>4</td><td>-2</td></tr>
+<tr class="adv"><td>5</td><td>I조</td><td>🇸🇳 세네갈</td><td>3</td><td>3</td><td>+2</td></tr>
+<tr class="adv"><td>6</td><td>G조</td><td>🇮🇷 이란</td><td>3</td><td>3</td><td>0</td></tr>
+<tr class="adv kr"><td>7</td><td>A조</td><td>🇰🇷 대한민국</td><td>3</td><td>3</td><td>-1</td></tr>
+<tr class="adv"><td>8</td><td>L조</td><td>🇭🇷 크로아티아</td><td>2</td><td>3</td><td>-1</td></tr>
+<tr><td>9</td><td>J조</td><td>🇩🇿 알제리</td><td>2</td><td>3</td><td>-2</td></tr>
+<tr><td>10</td><td>C조</td><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>3</td><td>3</td><td>-3</td></tr>
+<tr><td>11</td><td>H조</td><td>🇺🇾 우루과이</td><td>3</td><td>2</td><td>-1</td></tr>
+<tr><td>12</td><td>K조</td><td>🇨🇩 콩고DR</td><td>2</td><td>1</td><td>-1</td></tr>
+</table>
+
+<p class="wc-note">※ 동순위는 승점→득실→다득점 순으로 가르며, 여기서는 승점·득실까지 반영한 잠정 순위입니다. 경기수(경기 열)가 3 미만인 조는 최종전이 남았습니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
