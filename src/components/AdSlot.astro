@@ -48,9 +48,14 @@ const adfitId = ADFIT_UNITS[position];
 const hasAdsense = !!(PUB_ID && slotId);
 // 헤더 위치는 PC 단위(adfitId) 또는 모바일 단위(ADFIT_HEADER_M) 중 하나만 있어도 렌더
 const hasAdfit   = position === 'header' ? !!(adfitId || ADFIT_HEADER_M) : !!adfitId;
-const showAd     = hasAdsense || hasAdfit;
+const showAd     = hasAdfit || hasAdsense;
 const isInArticle = position === 'in-article';
 const isDev      = import.meta.env.DEV;
+
+// AdFit이 있는 위치는 AdFit 우선; AdSense는 AdFit 단위가 없을 때만 노출
+// (AdSense 미승인 기간 동안 빈 칸 대신 AdFit 표시)
+const showAdfit   = hasAdfit;
+const showAdsense = !hasAdfit && hasAdsense;
 
 // AdFit dimensions per position (PC / mobile handled via CSS)
 const ADFIT_DIM: Record<AdPosition, { w: number; h: number }> = {
@@ -66,7 +71,7 @@ const adfitDim = ADFIT_DIM[position];
   <div class:list={['ad-slot', `ad-${position}`, className]}>
     <span class="ad-label">광고</span>
 
-    {hasAdsense && (
+    {showAdsense && (
       isInArticle ? (
         <ins class="adsbygoogle"
           style="display:block; text-align:center;"
@@ -89,7 +94,7 @@ const adfitDim = ADFIT_DIM[position];
     )}
 
     {/* AdFit: 헤더 광고 (PC 728×90 / 모바일 320×50) */}
-    {!hasAdsense && hasAdfit && position === 'header' && (
+    {showAdfit && position === 'header' && (
       <>
         {adfitId && (
           <ins class="kakao_ad_area adfit-pc" style="display:none;"
@@ -107,7 +112,7 @@ const adfitDim = ADFIT_DIM[position];
         )}
       </>
     )}
-    {!hasAdsense && hasAdfit && position !== 'header' && (
+    {showAdfit && position !== 'header' && (
       <ins class="kakao_ad_area" style="display:none;"
         data-ad-unit={adfitId}
         data-ad-width={adfitDim.w}
