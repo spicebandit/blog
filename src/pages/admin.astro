@@ -70,12 +70,12 @@
     .stack i{display:block;height:100%;}
 
     /* 일별 막대 */
-    .bars{display:flex;flex-direction:column;gap:7px;}
-    .brow{display:grid;grid-template-columns:46px 1fr 90px;align-items:center;gap:10px;font-size:.82rem;}
-    .brow .d{color:var(--muted);font-variant-numeric:tabular-nums;}
-    .brow .track{height:9px;background:#f1f5f9;border-radius:5px;overflow:hidden;}
-    .brow .fill{height:100%;background:var(--accent);border-radius:5px;}
-    .brow .v{text-align:right;color:var(--muted);font-size:.76rem;font-variant-numeric:tabular-nums;}
+    .bars{display:flex;flex-direction:column;gap:9px;}
+    .brow{display:flex;align-items:center;gap:10px;font-size:.82rem;}
+    .brow .d{flex:none;width:44px;color:var(--muted);font-variant-numeric:tabular-nums;}
+    .brow .track{flex:1;min-width:40px;height:10px;background:#e9edf3;border-radius:5px;overflow:hidden;}
+    .brow .fill{display:block;height:100%;background:#2563eb;border-radius:5px;min-width:2px;}
+    .brow .v{flex:none;width:96px;text-align:right;color:var(--muted);font-size:.76rem;font-variant-numeric:tabular-nums;}
 
     .rt{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;}
     .rtnum{font-size:1.35rem;font-weight:800;color:var(--green);margin-bottom:6px;}
@@ -154,7 +154,7 @@
 
       const mx=Math.max(1,...d.daily.map(x=>x.users));
       $('daily').innerHTML=d.daily.map(x=>
-        `<div class="brow"><span class="d">${ymd(x.date)}</span><span class="track"><span class="fill" style="width:${Math.round(x.users/mx*100)}%"></span></span><span class="v">${nf(x.users)}명 · ${nf(x.views)}</span></div>`).join('');
+        `<div class="brow"><span class="d">${ymd(x.date)}</span><span class="track"><span class="fill" style="width:${Math.max(3,Math.round(x.users/mx*100))}%"></span></span><span class="v">${nf(x.users)}명 · ${nf(x.views)}</span></div>`).join('');
 
       $('cities').innerHTML=tbl(
         [{h:'도시'},{h:'국가'},{h:'사용자',num:true},{h:'조회',num:true}],
