@@ -1,13 +1,15 @@
 ---
-title: "클로드 AI 서버 상태 실시간 확인하는 법"
-description: "클로드(Claude)가 갑자기 접속 안 될 때, 공식 상태페이지부터 알림 구독·RSS·API·다운디텍터까지 클로드 AI 서버 상태를 실시간으로 확인하는 모든 방법을 정리했습니다."
+title: "클로드 서버 상태 확인하는 법 (실시간 장애 체크)"
+description: "클로드(Claude)가 지금 안 되나요? 클로드 서버 상태를 1분 만에 확인하는 법 — 공식 상태페이지부터 장애 알림·RSS·API·다운디텍터까지. 내 문제인지 서버 장애인지 바로 가립니다."
 pubDate: 2026-06-18T16:20:00+09:00
 category: ai
-tags: ["클로드", "Claude", "서버 상태", "장애 확인"]
+tags: ["클로드 서버 상태", "클로드", "Claude", "장애 확인"]
 draft: false
 ---
 
-클로드(Claude)로 한창 작업하다 갑자기 화면이 멈추거나 접속이 안 되면 가장 먼저 드는 생각은 하나입니다. **"내 인터넷 문제야, 아니면 클로드가 죽은 거야?"** 이걸 1분 안에 가려내면 괜히 라우터를 재부팅하거나 캐시를 지우는 헛수고를 안 해도 됩니다. 이 글에서는 클로드 AI 서버 상태를 실시간으로 확인하는 방법을, 가장 쉬운 것부터 개발자용까지 순서대로 정리합니다.
+**지금 바로 클로드 서버 상태를 확인하려면 → 공식 상태페이지 [status.claude.com](https://status.claude.com) 한 곳이면 됩니다.** 아래에서 그 외 방법(장애 알림·RSS·API·다운디텍터)까지 정리합니다.
+
+클로드(Claude)로 한창 작업하다 갑자기 화면이 멈추거나 접속이 안 되면 가장 먼저 드는 생각은 하나입니다. **"내 인터넷 문제야, 아니면 클로드 서버가 죽은 거야?"** 이걸 1분 안에 가려내면 괜히 라우터를 재부팅하거나 캐시를 지우는 헛수고를 안 해도 됩니다. 이 글에서는 **클로드 서버 상태**(장애 여부)를 실시간으로 확인하는 방법을, 가장 쉬운 것부터 개발자용까지 순서대로 정리합니다.
 
 ![graphs of performance analytics on a laptop screen](https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBzdGF0dXMlMjBtb25pdG9yaW5nJTIwZGFzaGJvYXJkJTIwdXB0aW1lfGVufDF8MHx8fDE3ODE3NjY4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00?utm_source=spice-bandit-blog&utm_medium=referral)*
