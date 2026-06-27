@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
+import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   site: 'https://www.baseload.co.kr',
+  // 정적 사이트 유지 + 일부 라우트(/api/admin-stats)만 서버 실행. 글 페이지는 그대로 정적.
+  adapter: vercel(),
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko', 'en'],

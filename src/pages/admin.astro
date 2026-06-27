@@ -1,0 +1,143 @@
+---
+// 관리자 분석 대시보드 (정적 페이지) — 비밀번호 입력 → /api/admin-stats 호출 → 렌더.
+// 데이터/인증은 전부 서버(/api/admin-stats)에서 처리. 이 페이지엔 비밀이 없다.
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>BASELOAD · 관리자 분석</title>
+  <style>
+    :root { --ink:#1e2761; --muted:#6b7280; --line:#e5e7eb; --accent:#2563eb; --soft:#eef2ff; --green:#15803d; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, "Apple SD Gothic Neo", Pretendard, sans-serif; margin:0; background:#f7f8fa; color:#111; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+    h1 { font-size: 1.15rem; margin: 8px 0 4px; }
+    .sub { color: var(--muted); font-size: .82rem; margin-bottom: 16px; }
+    .gate { max-width: 360px; margin: 12vh auto 0; background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; }
+    .gate h1 { text-align:center; }
+    input[type=password] { width:100%; padding:11px 12px; border:1px solid var(--line); border-radius:10px; font-size:1rem; margin:10px 0; }
+    button { width:100%; padding:11px; border:0; border-radius:10px; background:var(--accent); color:#fff; font-weight:700; font-size:1rem; cursor:pointer; }
+    button:disabled { opacity:.6; }
+    .err { color:#dc2626; font-size:.85rem; margin-top:8px; min-height:1.1em; text-align:center; }
+    .hide { display:none; }
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:10px 0 18px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px; text-align:center; }
+    .card .lbl { color:var(--muted); font-size:.72rem; }
+    .card .big { font-size:1.4rem; font-weight:800; color:var(--ink); }
+    .card .sm { font-size:.72rem; color:var(--muted); }
+    @media (max-width:600px){ .cards{ grid-template-columns:repeat(2,1fr);} }
+    section { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:12px 0; }
+    section h2 { font-size:.95rem; margin:0 0 10px; color:var(--ink); }
+    table { width:100%; border-collapse:collapse; font-size:.85rem; display:block; overflow-x:auto; }
+    th,td { padding:6px 8px; border-bottom:1px solid #f1f3f5; text-align:right; white-space:nowrap; }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align:left; }
+    th { color:var(--muted); font-size:.72rem; font-weight:600; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:.74rem; font-weight:700; }
+    .ext { background:#e7f6ef; color:var(--green); } .own { background:#eef2ff; color:#3730a3; } .bot { background:#f3f4f6; color:#6b7280; }
+    .bar { height:8px; border-radius:4px; background:var(--accent); }
+    .barwrap { background:#f1f3f5; border-radius:4px; flex:1; }
+    .rt { display:inline-block; width:8px;height:8px;border-radius:50%;background:#22c55e; margin-right:6px; vertical-align:middle; }
+    .muted { color:var(--muted); font-size:.78rem; }
+    .reload { width:auto; padding:7px 14px; font-size:.82rem; background:#111; }
+  </style>
+</head>
+<body>
+  <!-- 비밀번호 게이트 -->
+  <div id="gate" class="gate">
+    <h1>🔒 관리자 분석</h1>
+    <input id="pw" type="password" placeholder="비밀번호" autocomplete="current-password" />
+    <button id="login">들어가기</button>
+    <div id="gerr" class="err"></div>
+  </div>
+
+  <!-- 대시보드 -->
+  <div id="dash" class="wrap hide">
+    <h1>📊 BASELOAD 접속 분석</h1>
+    <div class="sub" id="meta"></div>
+    <button class="reload" id="reload">↻ 새로고침</button>
+
+    <div class="cards" id="cards"></div>
+
+    <section><h2>🙋 방문자 분류 (최근 7일)</h2><div id="classify"></div>
+      <div class="muted" style="margin-top:8px">외부=한국 신규 · 본인=한국 재방문 · 봇=해외 데이터센터 등. (상한 추정치)</div></section>
+
+    <section><h2>📈 일별 추이 (14일, 사용자)</h2><div id="daily"></div></section>
+
+    <section><h2>🌍 지역별 (최근 7일)</h2><div id="cities"></div></section>
+
+    <section><h2>📄 글별 조회 · 평균 체류시간 (최근 7일)</h2><div id="pages"></div></section>
+
+    <section><h2>🔗 유입경로 (최근 7일)</h2><div id="sources"></div></section>
+
+    <section><h2>💻 기기 (최근 7일)</h2><div id="devices"></div></section>
+
+    <section><h2><span class="rt"></span>실시간 (최근 30분)</h2><div id="realtime"></div></section>
+  </div>
+
+  <script is:inline>
+    const $ = (id) => document.getElementById(id);
+    const esc = (s) => String(s ?? '').replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+    const dur = (sec) => { sec = Math.round(sec||0); const m=Math.floor(sec/60), s=sec%60; return m? `${m}분 ${s}초` : `${s}초`; };
+    const ymd = (d) => d ? `${d.slice(4,6)}/${d.slice(6)}` : '';
+
+    async function load(pw) {
+      $('login').disabled = true; $('gerr').textContent = '불러오는 중…';
+      let res;
+      try {
+        res = await fetch('/api/admin-stats', { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({ password: pw }) });
+      } catch(e){ $('gerr').textContent = '네트워크 오류'; $('login').disabled=false; return; }
+      const data = await res.json().catch(()=>({error:'응답 오류'}));
+      $('login').disabled = false;
+      if (!res.ok) { $('gerr').textContent = data.error || ('오류 '+res.status); sessionStorage.removeItem('adminpw'); return; }
+      sessionStorage.setItem('adminpw', pw);
+      $('gate').classList.add('hide'); $('dash').classList.remove('hide');
+      render(data);
+    }
+
+    function render(d){
+      $('meta').textContent = '갱신: ' + new Date(d.generatedAt).toLocaleString('ko-KR');
+      // 요약 카드
+      const c = (lbl,t)=>`<div class="card"><div class="lbl">${lbl}</div><div class="big">${t.users}</div><div class="sm">세션 ${t.sessions} · 조회 ${t.views}</div></div>`;
+      $('cards').innerHTML = c('오늘',d.summary.today)+c('어제',d.summary.yesterday)+c('최근 7일',d.summary.last7)+c('최근 30일',d.summary.last30);
+      // 분류
+      const cl=d.classify, tot=cl.external+cl.owner+cl.bot||1;
+      $('classify').innerHTML =
+        `<div style="display:flex;gap:8px;flex-wrap:wrap">
+          <span class="pill ext">외부 ${cl.external}명</span>
+          <span class="pill own">본인 ${cl.owner}명</span>
+          <span class="pill bot">봇/해외 ${cl.bot}명</span>
+        </div>`;
+      // 일별
+      const mx = Math.max(1, ...d.daily.map(x=>x.users));
+      $('daily').innerHTML = '<table><tr><th>날짜</th><th>사용자</th><th style="width:50%">　</th><th>조회</th></tr>' +
+        d.daily.map(x=>`<tr><td>${ymd(x.date)}</td><td>${x.users}</td><td style="text-align:left"><div class="barwrap"><div class="bar" style="width:${Math.round(x.users/mx*100)}%"></div></div></td><td>${x.views}</td></tr>`).join('')+'</table>';
+      // 도시
+      $('cities').innerHTML = '<table><tr><th>도시</th><th>국가</th><th>사용자</th><th>조회</th></tr>' +
+        d.cities.map(x=>`<tr><td>${esc(x.city)}</td><td>${esc(x.country)}</td><td>${x.users}</td><td>${x.views}</td></tr>`).join('')+'</table>';
+      // 글별
+      $('pages').innerHTML = '<table><tr><th>글</th><th>조회</th><th>사용자</th><th>평균 체류</th></tr>' +
+        d.pages.map(x=>`<tr><td style="white-space:normal">${esc(x.title)}</td><td>${x.views}</td><td>${x.users}</td><td>${dur(x.avgSec)}</td></tr>`).join('')+'</table>';
+      // 유입
+      $('sources').innerHTML = '<table><tr><th>소스</th><th>매체</th><th>세션</th></tr>' +
+        d.sources.map(x=>`<tr><td>${esc(x.source)}</td><td>${esc(x.medium)}</td><td>${x.sessions}</td></tr>`).join('')+'</table>';
+      // 기기
+      $('devices').innerHTML = '<table><tr><th>기기</th><th>사용자</th></tr>' +
+        d.devices.map(x=>`<tr><td>${esc(x.device)}</td><td>${x.users}</td></tr>`).join('')+'</table>';
+      // 실시간
+      const rt=d.realtime;
+      $('realtime').innerHTML = `<div style="font-size:1.2rem;font-weight:800;color:var(--green)">${rt.active}명 활성</div>` +
+        (rt.pages.length? '<table><tr><th>보는 화면</th><th>인원</th></tr>'+rt.pages.map(x=>`<tr><td style="white-space:normal">${esc(x.page)}</td><td>${x.n}</td></tr>`).join('')+'</table>' : '<div class="muted">지금 활성 사용자 없음</div>');
+    }
+
+    $('login').onclick = () => { const pw=$('pw').value.trim(); if(pw) load(pw); };
+    $('pw').addEventListener('keydown', e=>{ if(e.key==='Enter') $('login').click(); });
+    $('reload').onclick = () => { const pw=sessionStorage.getItem('adminpw'); if(pw) load(pw); };
+    // 세션에 비번 있으면 자동 로드
+    const saved = sessionStorage.getItem('adminpw');
+    if (saved) load(saved);
+  </script>
+</body>
+</html>
