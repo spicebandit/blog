@@ -1,10 +1,9 @@
 ---
 title: "Claude Code 경쟁 도구 비교 2026: 어떤 AI 코딩 도구를 써야 할까"
 description: "Cursor, GitHub Copilot, Windsurf(Devin Desktop), Kiro, Antigravity CLI 등 2026년 주요 AI 코딩 도구를 Claude Code 사용자 관점에서 비교합니다. 시나리오별 추천과 보완 전략까지 정리했습니다."
-pubDate: 2026-06-27T09:00:00+09:00
+pubDate: 2026-06-28T07:44:00+09:00
 category: ai
 tags: ["claude-code", "ai-coding", "cursor", "copilot"]
-draft: true
 ---
 
 2026년 AI 코딩 도구 시장이 폭발했다. Cursor는 3.5 버전에 클라우드 에이전트를 얹었고, Google은 Gemini CLI를 Antigravity CLI로 전면 교체했으며, AWS는 Kiro를 선보이며 Amazon Q Developer를 단계적으로 종료하겠다고 발표했다. Claude Code를 이미 쓰고 있는 사람이라면 한 가지 질문이 생긴다: "나는 지금 최선의 도구를 쓰고 있나? 다른 건 뭘 보완재로 쓰면 좋을까?"
