@@ -29,7 +29,11 @@ esac
 
 changed=0; files=()
 for it in "${ITEMS[@]}"; do
-  f="${it%%|*}"; nd="${it##*|}"
+  f="${it%%|*}"; spec="${it##*|}"
+  # 발행일 = 스크립트가 실제로 도는 날(작성일·예정일 아님). 시각(HH:MM:SS)만 스펙에서 가져와 같은 날 정렬 순서를 유지.
+  timepart="${spec#*T}"                       # 예: 08:30:00+09:00
+  [ "$timepart" = "$spec" ] && timepart="09:00:00+09:00"
+  nd="$(date +%Y-%m-%d)T${timepart}"
   [ -f "$f" ] || fail "파일 없음: $f"
   files+=("$f")
   if grep -q "^draft: true" "$f"; then
