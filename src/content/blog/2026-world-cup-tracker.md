@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-28T08:30:00+09:00
+updatedDate: 2026-06-28T11:00:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -80,7 +80,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 28일 오전 8시 30분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 28일 오전 11시 (KST)</span>
 
 경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -96,7 +96,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
 <tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
 <tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
-<tr><td>현재 단계</td><td><b>조별리그 최종일 — A~I조·L조 10개 조 마감, K·J조 최종전만 남음 (한국시간 6/28)</b> — L조는 잉글랜드가 파나마를 2-0(벨링엄·케인)으로 꺾고 1위, 크로아티아가 가나를 2-1로 잡아 2위로 진출했다(가나는 3위로 잔류, 파나마 탈락). 남은 최종전은 한국시간 6/28 08:30 K조(콜롬비아-포르투갈, 콩고DR-우즈베키스탄), 11:00 J조(요르단-아르헨티나, 알제리-오스트리아)로, 이 결과에 따라 각 조 3위 8팀과 32강 대진이 최종 확정된다. 대한민국은 A조 3위(승점 3, 득실 -1)로 각 조 3위 비교에서 잠정 8위, 32강권을 지키고 있다. 32강 토너먼트는 현지 6/28(한국시간 6/29 새벽 4시) 남아공-캐나다전으로 개막한다</td></tr>
+<tr><td>현재 단계</td><td><b>조별리그 사실상 종료 — A~I조·K조·L조 11개 조 마감, J조 최종전(한국시간 6/28 11:00)만 남음</b> — K조는 콜롬비아가 포르투갈과 0-0으로 비겨 1위(승점 7), 포르투갈 2위(승점 5), 콩고DR이 우즈베키스탄을 3-1로 꺾고 3위(승점 4·득실 +1)에 올라 각 조 3위 경쟁 선두로 뛰어올랐다. 이 콩고DR의 승리로 <b>대한민국(A조 3위·승점 3·득실 -1)은 각 조 3위 비교에서 9위로 밀려 32강 진출이 좌절됐다</b>(각 조 3위 중 상위 8팀만 진출). 남은 J조 최종전(요르단-아르헨티나, 알제리-오스트리아) 결과로 J조 순위와 일부 32강 대진이 최종 확정된다. 32강 토너먼트는 현지 6/28(한국시간 6/29 새벽 4시) 남아공-캐나다전으로 개막한다</td></tr>
 <tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
 </table>
 
@@ -190,10 +190,10 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-group"><h3>K조</h3><table>
 <tr><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>🇨🇴 콜롬비아</td><td>2</td><td>6</td><td>+3</td></tr>
-<tr class="adv"><td>🇵🇹 포르투갈</td><td>2</td><td>4</td><td>+5</td></tr>
-<tr><td>🇨🇩 콩고DR</td><td>2</td><td>1</td><td>-1</td></tr>
-<tr><td>🇺🇿 우즈베키스탄</td><td>2</td><td>0</td><td>-7</td></tr>
+<tr class="adv"><td>🇨🇴 콜롬비아</td><td>3</td><td>7</td><td>+3</td></tr>
+<tr class="adv"><td>🇵🇹 포르투갈</td><td>3</td><td>5</td><td>+5</td></tr>
+<tr><td>🇨🇩 콩고DR</td><td>3</td><td>4</td><td>+1</td></tr>
+<tr><td>🇺🇿 우즈베키스탄</td><td>3</td><td>0</td><td>-9</td></tr>
 </table></div>
 
 <div class="wc-group"><h3>L조</h3><table>
@@ -206,53 +206,53 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 </div>
 
-<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~I조에 이어 L조까지 10개 조가 마감됐습니다. L조는 잉글랜드가 파나마를 2-0으로 꺾고 1위, 크로아티아가 가나를 2-1로 잡아 2위로 진출했습니다(가나 3위 잔류, 파나마 탈락). 대한민국은 A조 3위(승점 3, 득실 -1)로, 각 조 3위 8팀 비교에서 잠정 8위, 32강권에 들어 있습니다(남은 K·J조 결과에 따라 확정). K·J조 최종전은 한국시간 6월 28일 08:30·11:00에 열리며, 결과가 나오는 대로 갱신됩니다.</p>
+<p class="wc-legend">※ 순위는 승점 → 득실 순으로 정렬되며, <b>초록색 = 현재 32강 진출권</b>입니다. A~I조·K조·L조까지 11개 조가 마감됐고, J조 최종전만 남았습니다. K조는 콜롬비아가 포르투갈과 0-0으로 비겨 1위, 포르투갈 2위로 진출했고, 콩고DR이 우즈베키스탄을 3-1로 꺾고 3위(승점 4·득실 +1)에 올랐습니다. <b>이 콩고DR의 승리로 대한민국(A조 3위·승점 3·득실 -1)은 각 조 3위 비교에서 9위로 밀려 32강 진출이 무산됐습니다</b>(상위 8팀만 진출). J조 최종전은 한국시간 6월 28일 11:00에 열리며, 결과가 나오는 대로 갱신됩니다.</p>
 
 ## 조 3위 팀 순위 (상위 8팀 32강 진출)
 
-48개국 체제에선 각 조 1·2위(24팀)에 더해 **각 조 3위 12팀 중 상위 8팀**이 32강에 추가 진출합니다. 아래는 승점 → 득실(동률 시 다득점) 순 잠정 순위로, <b style="color:#15803d">초록색(1~8위)</b>이 현재 진출권입니다. (K·J조는 최종전이 남아 변동될 수 있습니다.)
+48개국 체제에선 각 조 1·2위(24팀)에 더해 **각 조 3위 12팀 중 상위 8팀**이 32강에 추가 진출합니다. 아래는 승점 → 득실(동률 시 다득점) 순 잠정 순위로, <b style="color:#15803d">초록색(1~8위)</b>이 현재 진출권입니다. K조 콩고DR(승점 4)이 3위 경쟁 선두로 올라서며 <b>대한민국은 9위로 밀려 진출이 무산됐습니다.</b> (J조는 최종전이 남아 9위 이하 순위가 변동될 수 있습니다.)
 
 <table class="wc-third">
 <tr><th>순위</th><th>조</th><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
-<tr class="adv"><td>1</td><td>F조</td><td>🇸🇪 스웨덴</td><td>3</td><td>4</td><td>0</td></tr>
-<tr class="adv"><td>2</td><td>E조</td><td>🇪🇨 에콰도르</td><td>3</td><td>4</td><td>0</td></tr>
-<tr class="adv"><td>3</td><td>L조</td><td>🇬🇭 가나</td><td>3</td><td>4</td><td>0</td></tr>
-<tr class="adv"><td>4</td><td>B조</td><td>🇧🇦 보스니아</td><td>3</td><td>4</td><td>-1</td></tr>
-<tr class="adv"><td>5</td><td>D조</td><td>🇵🇾 파라과이</td><td>3</td><td>4</td><td>-2</td></tr>
-<tr class="adv"><td>6</td><td>I조</td><td>🇸🇳 세네갈</td><td>3</td><td>3</td><td>+2</td></tr>
-<tr class="adv"><td>7</td><td>G조</td><td>🇮🇷 이란</td><td>3</td><td>3</td><td>0</td></tr>
-<tr class="adv kr"><td>8</td><td>A조</td><td>🇰🇷 대한민국</td><td>3</td><td>3</td><td>-1</td></tr>
-<tr><td>9</td><td>J조</td><td>🇩🇿 알제리</td><td>2</td><td>3</td><td>-2</td></tr>
-<tr><td>10</td><td>C조</td><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>3</td><td>3</td><td>-3</td></tr>
-<tr><td>11</td><td>H조</td><td>🇺🇾 우루과이</td><td>3</td><td>2</td><td>-1</td></tr>
-<tr><td>12</td><td>K조</td><td>🇨🇩 콩고DR</td><td>2</td><td>1</td><td>-1</td></tr>
+<tr class="adv"><td>1</td><td>K조</td><td>🇨🇩 콩고DR</td><td>3</td><td>4</td><td>+1</td></tr>
+<tr class="adv"><td>2</td><td>F조</td><td>🇸🇪 스웨덴</td><td>3</td><td>4</td><td>0</td></tr>
+<tr class="adv"><td>3</td><td>E조</td><td>🇪🇨 에콰도르</td><td>3</td><td>4</td><td>0</td></tr>
+<tr class="adv"><td>4</td><td>L조</td><td>🇬🇭 가나</td><td>3</td><td>4</td><td>0</td></tr>
+<tr class="adv"><td>5</td><td>B조</td><td>🇧🇦 보스니아</td><td>3</td><td>4</td><td>-1</td></tr>
+<tr class="adv"><td>6</td><td>D조</td><td>🇵🇾 파라과이</td><td>3</td><td>4</td><td>-2</td></tr>
+<tr class="adv"><td>7</td><td>I조</td><td>🇸🇳 세네갈</td><td>3</td><td>3</td><td>+2</td></tr>
+<tr class="adv"><td>8</td><td>G조</td><td>🇮🇷 이란</td><td>3</td><td>3</td><td>0</td></tr>
+<tr class="kr"><td>9</td><td>A조</td><td>🇰🇷 대한민국</td><td>3</td><td>3</td><td>-1</td></tr>
+<tr><td>10</td><td>J조</td><td>🇩🇿 알제리</td><td>2</td><td>3</td><td>-2</td></tr>
+<tr><td>11</td><td>C조</td><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 스코틀랜드</td><td>3</td><td>3</td><td>-3</td></tr>
+<tr><td>12</td><td>H조</td><td>🇺🇾 우루과이</td><td>3</td><td>2</td><td>-1</td></tr>
 </table>
 
-<p class="wc-note">※ 동순위는 승점→득실→다득점 순으로 가르며, 여기서는 승점·득실까지 반영한 잠정 순위입니다. 경기수(경기 열)가 3 미만인 조는 최종전이 남았습니다.</p>
+<p class="wc-note">※ 동순위는 승점→득실→다득점 순으로 가르며, 여기서는 승점·득실까지 반영한 잠정 순위입니다. 경기수(경기 열)가 3 미만인 J조는 최종전(한국시간 6/28 11:00)이 남았으나, 상위 8팀이 모두 확정돼 대한민국의 9위(진출 무산)는 바뀌지 않습니다.</p>
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-A~I조·L조가 마감되며 32강 대진이 속속 확정되고 있습니다. L조는 잉글랜드(1위)·크로아티아(2위)·가나(3위)가 진출했습니다. 나머지 칸은 K·J조 최종전과 각 조 3위 순위가 확정되는 대로 채워집니다. 32강은 현지 6월 28일(한국시간 6월 29일 새벽) 남아공-캐나다전으로 시작합니다. (모바일에서는 세로로 표시)
+조별리그가 사실상 마무리되며 32강 대진이 대부분 확정됐습니다. 남은 두 칸(스페인·스위스의 상대)은 J조 최종전(요르단-아르헨티나, 알제리-오스트리아)과 각 조 3위 배정이 끝나는 대로 채워집니다. 32강은 현지 6월 28일(한국시간 6월 29일 새벽 4시) 남아공-캐나다전으로 시작합니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
 <div class="wc-round"><h4>32강</h4>
 <div class="wc-m"><div class="t"><span>🇿🇦 남아공</span><span class="sc">vs</span></div><div class="t"><span>🇨🇦 캐나다</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇧🇷 브라질</span><span class="sc">vs</span></div><div class="t"><span>🇯🇵 일본</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>🇩🇪 독일</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇩🇪 독일</span><span class="sc">vs</span></div><div class="t"><span>🇵🇾 파라과이</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇳🇱 네덜란드</span><span class="sc">vs</span></div><div class="t"><span>🇲🇦 모로코</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇨🇮 코트디부아르</span><span class="sc">vs</span></div><div class="t"><span>🇳🇴 노르웨이</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>🇫🇷 프랑스</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇫🇷 프랑스</span><span class="sc">vs</span></div><div class="t"><span>🇸🇪 스웨덴</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">vs</span></div><div class="t"><span>🇪🇨 에콰도르</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</span><span class="sc">vs</span></div><div class="t"><span>🇨🇩 콩고DR</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇧🇪 벨기에</span><span class="sc">vs</span></div><div class="t"><span>🇸🇳 세네갈</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇺🇸 미국</span><span class="sc">vs</span></div><div class="t"><span>🇧🇦 보스니아</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇪🇸 스페인</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇨🇭 스위스</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇵🇹 포르투갈</span><span class="sc">vs</span></div><div class="t"><span>🇭🇷 크로아티아</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇦🇺 호주</span><span class="sc">vs</span></div><div class="t"><span>🇪🇬 이집트</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇦🇷 아르헨티나</span><span class="sc">vs</span></div><div class="t"><span>🇨🇻 카보베르데</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇨🇴 콜롬비아</span><span class="sc">vs</span></div><div class="t"><span>🇬🇭 가나</span><span class="sc">-</span></div></div>
 </div>
 
 <div class="wc-round"><h4>16강</h4>
@@ -290,18 +290,16 @@ A~I조·L조가 마감되며 32강 대진이 속속 확정되고 있습니다. L
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/28(일) 08:30</td><td>🇨🇴 콜롬비아 vs 🇵🇹 포르투갈</td><td>K</td></tr>
-<tr><td class="kst">6/28(일) 08:30</td><td>🇨🇩 콩고DR vs 🇺🇿 우즈베키스탄</td><td>K</td></tr>
 <tr><td class="kst">6/28(일) 11:00</td><td>🇯🇴 요르단 vs 🇦🇷 아르헨티나</td><td>J</td></tr>
 <tr><td class="kst">6/28(일) 11:00</td><td>🇩🇿 알제리 vs 🇦🇹 오스트리아</td><td>J</td></tr>
 <tr><td class="kst">6/29(월) 04:00</td><td>🇿🇦 남아공 vs 🇨🇦 캐나다</td><td>32강</td></tr>
 <tr><td class="kst">6/30(화) 02:00</td><td>🇧🇷 브라질 vs 🇯🇵 일본</td><td>32강</td></tr>
-<tr><td class="kst">6/30(화) 05:30</td><td>🇩🇪 독일 vs 미정</td><td>32강</td></tr>
+<tr><td class="kst">6/30(화) 07:30</td><td>🇩🇪 독일 vs 🇵🇾 파라과이</td><td>32강</td></tr>
 <tr><td class="kst">6/30(화) 10:00</td><td>🇳🇱 네덜란드 vs 🇲🇦 모로코</td><td>32강</td></tr>
 </table>
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-28 08시 30분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports 등 공개 자료(2026-06-28 11시 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
