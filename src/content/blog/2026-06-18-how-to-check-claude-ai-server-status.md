@@ -2,13 +2,74 @@
 title: "클로드 서버 상태 확인 — 지금 장애인지 1분 체크"
 description: "클로드(Claude)가 지금 안 되나요? 내 문제인지 서버 장애인지 1분 만에 가리는 법. 공식 상태페이지 한 곳부터 실시간 장애 알림·RSS·API·다운디텍터까지 한눈에 정리했습니다."
 pubDate: 2026-06-18T16:20:00+09:00
-updatedDate: 2026-06-29T09:50:00+09:00
+updatedDate: 2026-06-29T18:10:00+09:00
 category: ai
 tags: ["클로드 서버 상태", "클로드", "Claude", "장애 확인"]
 draft: false
 ---
 
-**지금 바로 클로드 서버 상태를 확인하려면 → 공식 상태페이지 [status.claude.com](https://status.claude.com) 한 곳이면 됩니다.** 아래에서 그 외 방법(장애 알림·RSS·API·다운디텍터)까지 정리합니다.
+<div id="cc-status" class="cc-status" data-loading>
+  <div class="cc-row">
+    <span class="cc-dot cc-load"></span>
+    <div class="cc-main">
+      <div class="cc-title">🚦 클로드(Claude) 실시간 상태</div>
+      <div class="cc-desc" id="cc-desc">상태 확인 중…</div>
+    </div>
+    <a class="cc-link" href="https://status.claude.com" target="_blank" rel="noopener">공식 페이지 ↗</a>
+  </div>
+  <div class="cc-grid" id="cc-grid"></div>
+  <div class="cc-meta" id="cc-meta">출처: status.claude.com · 60초마다 자동 새로고침</div>
+</div>
+
+<script>
+(function(){
+  var EL=document.getElementById('cc-status'); if(!EL) return;
+  var MAP={none:['#10b981','모든 시스템 정상'],minor:['#f59e0b','일부 경미한 문제'],major:['#f97316','일부 장애 발생'],critical:['#dc2626','심각한 장애'],maintenance:['#3b82f6','점검 중']};
+  var CMAP={operational:['#10b981','정상'],degraded_performance:['#f59e0b','지연'],partial_outage:['#f97316','부분 장애'],major_outage:['#dc2626','전면 장애'],under_maintenance:['#3b82f6','점검']};
+  function fmt(){return new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});}
+  function render(data){
+    var ind=(data.status&&data.status.indicator)||'none';
+    var m=MAP[ind]||MAP.none;
+    var dot=EL.querySelector('.cc-dot'); dot.className='cc-dot'; dot.style.background=m[0];
+    document.getElementById('cc-desc').textContent=m[1];
+    var order=['Claude Code','claude.ai','Claude API (api.anthropic.com)','Claude Console (platform.claude.com)','Claude Cowork','Claude for Government'];
+    var byName={}; (data.components||[]).forEach(function(c){byName[c.name]=c;});
+    var g=document.getElementById('cc-grid'); g.innerHTML='';
+    order.forEach(function(n){var c=byName[n]; if(!c) return; var cm=CMAP[c.status]||['#9ca3af','—'];
+      var el=document.createElement('div'); el.className='cc-cell'+(n==='Claude Code'?' cc-hi':'');
+      el.innerHTML='<span class="cc-d" style="background:'+cm[0]+'"></span>'+n.replace(/ \(.*\)/,'')+' <b>'+cm[1]+'</b>';
+      g.appendChild(el);});
+    document.getElementById('cc-meta').textContent='출처: status.claude.com · '+fmt()+' 기준 · 60초마다 자동 새로고침';
+    EL.removeAttribute('data-loading');
+  }
+  function load(){fetch('https://status.claude.com/api/v2/summary.json',{cache:'no-store'}).then(function(r){return r.json();}).then(render).catch(function(){
+    document.getElementById('cc-desc').textContent='상태를 불러오지 못했습니다 — 공식 페이지에서 확인하세요';
+    EL.querySelector('.cc-dot').style.background='#9ca3af'; EL.querySelector('.cc-dot').className='cc-dot';
+  });}
+  load(); setInterval(load,60000);
+})();
+</script>
+
+<style>
+.cc-status{border:1px solid #e5e7eb;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:linear-gradient(180deg,#fff,#fafafa);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.cc-status .cc-row{display:flex;align-items:center;gap:12px}
+.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#d1d5db;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
+.cc-status .cc-dot.cc-load{animation:ccpulse 1s infinite}
+@keyframes ccpulse{0%,100%{opacity:.35}50%{opacity:1}}
+.cc-status .cc-main{flex:1;min-width:0}
+.cc-status .cc-title{font-weight:800;font-size:.92rem}
+.cc-status .cc-desc{font-size:1.05rem;font-weight:700}
+.cc-status .cc-link{font-size:.8rem;white-space:nowrap;text-decoration:none;color:#2563eb}
+.cc-status .cc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}
+.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #eee;border-radius:8px;padding:5px 8px}
+.cc-status .cc-cell.cc-hi{border-color:#c7d2fe;background:#eef2ff}
+.cc-status .cc-cell .cc-d{width:9px;height:9px;border-radius:50%;flex:none}
+.cc-status .cc-cell b{margin-left:auto;font-weight:700}
+.cc-status .cc-meta{font-size:.72rem;color:#9ca3af;margin-top:8px}
+@media(max-width:480px){.cc-status .cc-grid{grid-template-columns:1fr}}
+</style>
+
+**지금 바로 클로드 서버 상태를 확인하려면 → 공식 상태페이지 [status.claude.com](https://status.claude.com) 한 곳이면 됩니다.** 아래에서 그 외 방법(장애 알림·RSS·API·다운디텍터)까지 정리합니다. 위 신호등은 공식 상태 API를 실시간으로 불러와 표시합니다.
 
 클로드(Claude)로 한창 작업하다 갑자기 화면이 멈추거나 접속이 안 되면 가장 먼저 드는 생각은 하나입니다. **"내 인터넷 문제야, 아니면 클로드 서버가 죽은 거야?"** 이걸 1분 안에 가려내면 괜히 라우터를 재부팅하거나 캐시를 지우는 헛수고를 안 해도 됩니다. 이 글에서는 **클로드 서버 상태**(장애 여부)를 실시간으로 확인하는 방법을, 가장 쉬운 것부터 개발자용까지 순서대로 정리합니다.
 
