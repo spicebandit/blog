@@ -78,6 +78,7 @@ const showNotice = new Date() < NOTICE.until;
     <meta name="naver-site-verification" content="2304962573c68823df2550048d161b1d87227173" />
 
     <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'ko_KR'} />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -300,6 +301,7 @@ const showNotice = new Date() < NOTICE.until;
       .nav-btn .icon-sun { display: none; }
       [data-theme="dark"] .nav-btn .icon-moon { display: none; }
       [data-theme="dark"] .nav-btn .icon-sun { display: inline-flex; }
+      .nav-btn.lang-btn { width: auto; padding: 0 10px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; }
 
       /* ── NOTICE WIRE (below nav) ───────────── */
       a.notice-wire {
@@ -547,6 +549,11 @@ const showNotice = new Date() < NOTICE.until;
         </nav>
 
         <div class="nav-actions">
+          {lang === 'en' ? (
+            <a class="nav-btn lang-btn" href="/" aria-label="한국어로 전환">한국어</a>
+          ) : (
+            <a class="nav-btn lang-btn" href="/en/" aria-label="Switch to English">EN</a>
+          )}
           <button class="nav-btn theme-toggle" type="button" aria-label="다크 모드 전환">
             <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>

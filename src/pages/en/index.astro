@@ -5,8 +5,9 @@ import { formatDateEN } from '../../lib/format';
 
 const SITE = Astro.site!;
 
-const posts = (await getCollection('blog-en', ({ data }) => !data.draft || import.meta.env.DEV))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection('blog-en', ({ data }) =>
+  (data.category === 'ai') && (!data.draft || import.meta.env.DEV)
+)).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const hrefLangAlts = [
   { lang: 'ko', href: new URL('/', SITE).toString() },
@@ -15,8 +16,8 @@ const hrefLangAlts = [
 ];
 ---
 <Base
-  title="BASELOAD — Energy · Economy · AI"
-  description="English articles on energy, economy, and AI from BASELOAD, South Korea's specialist media."
+  title="BASELOAD — AI &amp; Agentic Intelligence"
+  description="English articles on AI and agentic intelligence from BASELOAD, South Korea's specialist media on energy, economy, and technology."
   lang="en"
   hrefLangAlts={hrefLangAlts}
   wide={true}
@@ -27,7 +28,7 @@ const hrefLangAlts = [
         <a href="/">한국어 홈으로 →</a>
       </p>
       <h1>BASELOAD <span class="en-badge">English</span></h1>
-      <p class="subtitle">Selected articles in English — Energy · Economy · AI</p>
+      <p class="subtitle">AI &amp; Agentic Intelligence — English Edition</p>
     </header>
 
     {posts.length === 0 ? (
