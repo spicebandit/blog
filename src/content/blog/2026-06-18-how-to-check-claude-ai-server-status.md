@@ -76,7 +76,7 @@ draft: false
 ![graphs of performance analytics on a laptop screen](https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBzdGF0dXMlMjBtb25pdG9yaW5nJTIwZGFzaGJvYXJkJTIwdXB0aW1lfGVufDF8MHx8fDE3ODE3NjY4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-## 1. 가장 확실한 곳: 공식 상태페이지
+## 가장 확실한 곳: 공식 상태페이지
 
 제일 먼저 봐야 할 곳은 앤트로픽(Anthropic)의 **공식 상태페이지**입니다.
 
@@ -103,7 +103,7 @@ draft: false
 
 페이지 맨 위에 **"All Systems Operational"**이라고 떠 있으면 클로드 쪽은 멀쩡하다는 뜻 — 문제가 내 환경에 있다는 신호입니다.
 
-## 2. 매번 확인하기 싫다면: 알림 구독
+## 매번 확인하기 싫다면: 알림 구독
 
 상태페이지를 띄울 필요도 없이, **장애가 나면 먼저 알려주게** 만들 수 있습니다. status.claude.com 우측 상단의 **Subscribe(구독)** 버튼을 누르면 다음 채널로 인시던트 알림을 받을 수 있습니다.
 
@@ -114,7 +114,7 @@ draft: false
 
 업무에 클로드를 깊게 쓰는 1인 기업가·개발자라면 **Slack이나 이메일 구독을 한 번 걸어두는 것**을 추천합니다. 장애 발생·복구 시점을 자동으로 통지받으니, "왜 안 되지?" 하고 시간을 허비할 일이 사라집니다.
 
-## 3. 과거 이력과 RSS로 추적하기
+## 과거 이력과 RSS로 추적하기
 
 "지난주에도 이러더니 또?" 싶을 때는 **인시던트 히스토리**를 봅니다.
 
@@ -126,7 +126,7 @@ draft: false
 ![turned on monitoring screen](https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzZXJ2ZXIlMjBzdGF0dXMlMjBtb25pdG9yaW5nJTIwZGFzaGJvYXJkJTIwdXB0aW1lfGVufDF8MHx8fDE3ODE3NjY4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Stephen Dawson](https://unsplash.com/@dawson2406?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-## 4. 개발자라면: 상태를 코드로 확인하기
+## 개발자라면: 상태를 코드로 확인하기
 
 상태페이지는 Atlassian Statuspage 기반이라, **JSON API로 상태를 직접 조회**할 수 있습니다. 모니터링 스크립트나 대시보드에 붙이기 좋습니다.
 
@@ -147,7 +147,7 @@ curl -s https://status.claude.com/api/v2/status.json
 
 컴포넌트별 상세나 진행 중인 인시던트가 필요하면 `/api/v2/summary.json`, `/api/v2/incidents/unresolved.json`을 쓰면 됩니다. 더 자동화하고 싶다면 **웹훅(webhook)**을 등록해, 인시던트 생성·갱신·복구 이벤트를 서버로 직접 받을 수도 있습니다.
 
-## 5. 보조 수단: 다운디텍터와 X
+## 보조 수단: 다운디텍터와 X
 
 공식 페이지가 아직 장애를 반영하지 못한 '초기 몇 분'에는 **사용자 체감 제보**가 더 빠를 때가 있습니다.
 
@@ -156,7 +156,7 @@ curl -s https://status.claude.com/api/v2/status.json
 
 단, 이들은 어디까지나 '체감' 지표입니다. **최종 판단은 공식 상태페이지로** 확인하는 습관을 들이세요.
 
-## 6. 그래도 안 될 때: 30초 자가진단
+## 그래도 안 될 때: 30초 자가진단
 
 상태페이지가 "정상"인데 나만 안 된다면, 문제는 내 쪽일 가능성이 큽니다. 아래만 빠르게 점검해보세요.
 
