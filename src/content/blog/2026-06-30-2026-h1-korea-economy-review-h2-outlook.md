@@ -1,13 +1,15 @@
 ---
 title: "2026 상반기 경제 결산과 하반기 전망"
 description: "2026년 상반기 한국 경제를 인플레이션·기준금리·코스피·환율 네 축으로 결산하고, 하반기 핵심 변수와 투자자·소비자 관점의 시사점을 정리했습니다."
-pubDate: 2026-06-30T07:30:00+09:00
+pubDate: 2026-06-30T07:03:00+09:00
 category: economy
 tags: ["한국경제", "코스피", "기준금리", "환율"]
-draft: true
 ---
 
 2026년 상반기 한국 경제는 '반도체가 끌고, 물가가 누르고, 환율이 흔드는' 한 해의 절반이었습니다. 반도체 수출 호조로 성장률은 버텼지만, 국제 유가발 인플레이션과 원화 약세가 가계와 기업의 체감 경기를 갈랐습니다. 오늘 상반기 마지막 거래일을 맞아, 인플레이션·기준금리·코스피·환율 네 가지 축으로 상반기를 결산하고 하반기를 전망합니다. 이 글의 핵심 메시지는 하나입니다. **"지표는 안정적으로 보이지만, 그 안정은 소수 변수(반도체·유가)에 크게 의존하고 있다"**는 점입니다.
+
+![screen showing bitcoin trading chart](https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGVjb25vbXklMjBmaW5hbmNlJTIwbWFya2V0fGVufDF8MHx8fDE3ODI3NzA0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Nick Chong](https://unsplash.com/@nick604?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/screen-showing-bitcoin-trading-chart-N__BnvQ_w18?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 상반기 결산: 물가·금리·증시·환율 네 갈래
 
@@ -24,6 +26,9 @@ draft: true
 핵심은 이 네 지표가 서로 연결돼 있다는 점입니다. 유가 상승 → 물가 상승 → 금리 동결 장기화 → 한·미 금리차 → 환율 → 다시 수입 물가로 돌아오는 **순환 고리**가 상반기 경제를 지배했습니다. 따라서 어느 하나의 숫자만 보고 "경기가 좋다/나쁘다"를 판단하기 어렵습니다.
 
 투자자 관점에서는 '지수 상승'이라는 표면보다 **종목 쏠림과 환율 변동성**이라는 위험 요인을 함께 봐야 합니다. 소비자 관점에서는 금리가 당장 내리지 않는 한 대출 이자 부담이 유지되고, 유가·환율발 물가가 장바구니에 직접 영향을 준다는 점이 중요합니다. 같은 뉴스라도 내가 투자자인지 소비자인지에 따라 챙겨야 할 핵심이 달라집니다.
+
+![a person holding a cell phone in front of a stock chart](https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMGVjb25vbXklMjBmaW5hbmNlJTIwbWFya2V0fGVufDF8MHx8fDE3ODI3NzA0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Adam Śmigielski](https://unsplash.com/@smigielski?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-stock-chart-K5mPtONmpHM?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 하반기 전망: 세 가지 분기점
 
