@@ -1,13 +1,25 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { formatDateEN } from '../../lib/format';
+import { formatDateEN, firstBodyImage } from '../../lib/format';
 
 const SITE = Astro.site!;
 
-const posts = (await getCollection('blog-en', ({ data }) =>
+const raw = (await getCollection('blog-en', ({ data }) =>
   (data.category === 'ai') && (!data.draft || import.meta.env.DEV)
 )).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const posts = raw.map((p) => ({
+  id: p.id,
+  title: p.data.title,
+  description: p.data.description,
+  pubDate: p.data.pubDate,
+  koSlug: p.data.koSlug,
+  heroImage: p.data.heroImage || firstBodyImage(p.body),
+}));
+
+const featured = posts[0];
+const rest = posts.slice(1);
 
 const hrefLangAlts = [
   { lang: 'ko', href: new URL('/', SITE).toString() },
@@ -24,9 +36,7 @@ const hrefLangAlts = [
 >
   <div class="en-home wrap wide">
     <header class="en-header">
-      <p class="lang-notice">
-        <a href="/">한국어 홈으로 →</a>
-      </p>
+      <p class="lang-notice"><a href="/">← 한국어 홈으로</a></p>
       <h1>BASELOAD <span class="en-badge">English</span></h1>
       <p class="subtitle">AI &amp; Agentic Intelligence — English Edition</p>
     </header>
@@ -37,61 +47,133 @@ const hrefLangAlts = [
         <p><a href="/">Read our Korean articles →</a></p>
       </div>
     ) : (
-      <ul class="post-list">
-        {posts.map((post) => (
-          <li class="post-item">
-            <a href={`/en/blog/${post.id}/`} class="post-link">
-              <h2 class="post-title">{post.data.title}</h2>
-              <p class="post-desc">{post.data.description}</p>
-              <span class="post-meta">
-                <time datetime={post.data.pubDate.toISOString()}>
-                  {formatDateEN(post.data.pubDate)}
-                </time>
-                {post.data.koSlug && (
-                  <a href={`/blog/${post.data.koSlug}/`} class="ko-link">한국어 원문</a>
-                )}
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <>
+        {/* Featured (latest) */}
+        <a href={`/en/blog/${featured.id}/`} class="feat">
+          <div class:list={['feat-thumb', !featured.heroImage && 'thumb-ai']}>
+            {featured.heroImage
+              ? <img src={featured.heroImage} alt="" loading="eager" />
+              : <div class="thumb-placeholder" aria-hidden="true"></div>}
+          </div>
+          <div class="feat-body">
+            <span class="cat-badge ai">AI · AX</span>
+            <h2 class="feat-title">{featured.title}</h2>
+            <p class="feat-desc">{featured.description}</p>
+            <span class="meta">
+              <time datetime={featured.pubDate.toISOString()}>{formatDateEN(featured.pubDate)}</time>
+              {featured.koSlug && <a href={`/blog/${featured.koSlug}/`} class="ko-link">한국어 원문</a>}
+            </span>
+          </div>
+        </a>
+
+        {rest.length > 0 && (
+          <>
+            <div class="sec-head"><h2>Latest in AI</h2><a href="/" class="sec-more">한국어 전체 →</a></div>
+            <ul class="card-grid" role="list">
+              {rest.map((post) => (
+                <li class="card">
+                  <a href={`/en/blog/${post.id}/`} class="card-link">
+                    <div class:list={['card-thumb', !post.heroImage && 'thumb-ai']}>
+                      {post.heroImage
+                        ? <img src={post.heroImage} alt="" loading="lazy" />
+                        : <div class="thumb-placeholder" aria-hidden="true"></div>}
+                    </div>
+                    <div class="card-body">
+                      <span class="cat-badge ai">AI · AX</span>
+                      <h3 class="card-title">{post.title}</h3>
+                      <p class="card-desc">{post.description}</p>
+                      <span class="meta">
+                        <time datetime={post.pubDate.toISOString()}>{formatDateEN(post.pubDate)}</time>
+                        {post.koSlug && <a href={`/blog/${post.koSlug}/`} class="ko-link">한국어 원문</a>}
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </>
     )}
   </div>
 </Base>
 
 <style>
-  .en-home { padding-top: 2rem; }
-  .en-header { margin-bottom: 2.5rem; }
-  .lang-notice { margin: 0 0 1rem; font-size: 0.85rem; }
+  .en-home { padding-top: 1.5rem; }
+  .en-header { margin-bottom: 2rem; }
+  .lang-notice { margin: 0 0 0.8rem; font-size: 0.85rem; }
   .lang-notice a { color: var(--muted); text-decoration: none; }
   .lang-notice a:hover { color: var(--accent); }
+  .en-header h1 { margin: 0; font-size: 1.9rem; letter-spacing: -0.04em; }
   .en-badge {
-    display: inline-block;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    background: var(--accent);
-    color: #fff;
-    padding: 3px 8px;
-    border-radius: 4px;
-    vertical-align: middle;
-    margin-left: 6px;
+    display: inline-block; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em;
+    text-transform: uppercase; background: var(--accent); color: #fff; padding: 3px 8px;
+    border-radius: 4px; vertical-align: middle; margin-left: 6px;
   }
-  .subtitle { color: var(--muted); margin: 0.25rem 0 0; }
-  .empty-state {
-    padding: 3rem 0;
-    color: var(--muted);
-    line-height: 2;
-  }
+  .subtitle { color: var(--muted); margin: 0.3rem 0 0; }
+
+  .empty-state { padding: 3rem 0; color: var(--muted); line-height: 2; }
   .empty-state a { color: var(--accent); }
-  .post-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1.5rem; }
-  .post-item { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; }
-  .post-link { text-decoration: none; color: inherit; display: block; }
-  .post-link:hover .post-title { color: var(--accent); }
-  .post-title { margin: 0 0 0.4rem; font-size: 1.2rem; }
-  .post-desc { margin: 0 0 0.5rem; color: var(--ink-2); font-size: 0.95rem; line-height: 1.6; }
-  .post-meta { font-size: 0.82rem; color: var(--muted); display: flex; gap: 1rem; align-items: center; }
-  .ko-link { color: var(--accent); font-size: 0.78rem; text-decoration: none; border: 1px solid var(--accent); padding: 2px 7px; border-radius: 4px; }
+
+  /* shared bits */
+  .cat-badge {
+    display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.05em;
+    text-transform: uppercase; padding: 2px 8px; border-radius: 999px; align-self: flex-start;
+    background: var(--cat-ai-soft, #ede9fe); color: var(--cat-ai, #7a3ff2);
+  }
+  .meta { font-size: 0.8rem; color: var(--muted); display: flex; gap: 0.8rem; align-items: center; }
+  .ko-link {
+    color: var(--accent); font-size: 0.72rem; text-decoration: none;
+    border: 1px solid var(--accent); padding: 1px 7px; border-radius: 4px;
+  }
   .ko-link:hover { background: var(--accent-soft); }
+  .thumb-placeholder { width: 100%; height: 100%; }
+  .thumb-ai .thumb-placeholder { background: linear-gradient(135deg, #1e1b4b, #4c1d95, #7a3ff2); }
+
+  /* Featured */
+  .feat {
+    display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.5rem; align-items: stretch;
+    text-decoration: none; color: inherit; margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line); padding-bottom: 2.5rem;
+  }
+  .feat-thumb { border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 10; background: #f3f4f6; }
+  .feat-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+  .feat:hover .feat-thumb img { transform: scale(1.03); }
+  .feat-body { display: flex; flex-direction: column; gap: 0.7rem; justify-content: center; }
+  .feat-title { margin: 0; font-size: 1.7rem; line-height: 1.25; letter-spacing: -0.04em; }
+  .feat:hover .feat-title { color: var(--accent); }
+  .feat-desc { margin: 0; color: var(--ink-2); font-size: 1rem; line-height: 1.6; }
+
+  /* Section head */
+  .sec-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin: 0 0 1.2rem; padding-bottom: 0.7rem; border-bottom: 2px solid var(--line); position: relative;
+  }
+  .sec-head::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 48px; height: 2px; background: var(--accent); border-radius: 1px; }
+  .sec-head h2 { margin: 0; font-size: 1.25rem; font-weight: 800; letter-spacing: -0.04em; }
+  .sec-more { font-size: 0.8rem; color: var(--accent); font-weight: 600; text-decoration: none; }
+  .sec-more:hover { text-decoration: underline; }
+
+  /* Card grid */
+  .card-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+  .card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 0.7rem; }
+  .card-thumb { border-radius: 12px; overflow: hidden; aspect-ratio: 16 / 9; background: #f3f4f6; }
+  .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+  .card-link:hover .card-thumb img { transform: scale(1.04); }
+  .card-body { display: flex; flex-direction: column; gap: 0.5rem; }
+  .card-title { margin: 0; font-size: 1.05rem; line-height: 1.35; letter-spacing: -0.035em; }
+  .card-link:hover .card-title { color: var(--accent); }
+  .card-desc {
+    margin: 0; color: var(--ink-2); font-size: 0.9rem; line-height: 1.55;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+  }
+
+  @media (max-width: 860px) {
+    .feat { grid-template-columns: 1fr; gap: 1rem; }
+    .feat-title { font-size: 1.4rem; }
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 540px) {
+    .card-grid { grid-template-columns: 1fr; }
+  }
 </style>
