@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
 import { formatDateEN, firstBodyImage } from '../../lib/format';
 
 const SITE = Astro.site!;
@@ -95,6 +96,9 @@ const hrefLangAlts = [
         )}
       </>
     )}
+
+    <AdSlot position="sidebar" network="adsense" class="ad-en-list" />
+    <AdSlot position="bottom" network="adfit" class="ad-en-list" />
   </div>
 </Base>
 

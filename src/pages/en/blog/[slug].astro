@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import Comments from '../../../components/Comments.astro';
+import AdSlot from '../../../components/AdSlot.astro';
 import { formatDateEN } from '../../../lib/format';
 
 export async function getStaticPaths() {
@@ -75,6 +76,8 @@ const hrefLangAlts = [
         ))}
       </div>
     )}
+    <AdSlot position="bottom" network="adsense" class="ad-en-bottom" />
+    <AdSlot position="bottom" network="adfit" class="ad-en-bottom" />
   </article>
   <Comments pageId={`en-${post.id}`} pageTitle={post.data.title} />
 </Base>
