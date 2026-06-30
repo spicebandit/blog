@@ -1,52 +1,52 @@
 ---
-title: "The Hidden Factor That Makes or Breaks AI Agents: Harness Engineering"
-description: "Up to 88% of AI agent projects never reach production. The culprit isn't the model — it's the harness. What harness engineering is and why it's the core AI competency of 2026."
+title: "Harness Engineering Makes or Breaks Your AI Agents"
+description: "The success of an AI agent is decided not by the model but by the 'harness.' What harness engineering — the scaffold that actually makes an LLM work — is, and why it became the core competency of 2026."
 pubDate: 2026-06-17T09:30:00+09:00
 category: ai
-tags: ["harness engineering", "AI agents", "LLM", "agent design", "production AI"]
+tags: ["harness engineering", "AI agents", "LLM", "agent design"]
 lang: en
-sourceSlug: ai-agent-harness-engineering
+koSlug: ai-agent-harness-engineering
 ---
 
-Anyone who has built AI agents has hit the same wall: the demo is impressive, but once it goes into actual production, it fails two or three times out of ten. Interestingly, the fix is rarely "get a smarter model." The real variable is the **harness** — the scaffold that surrounds the model. Harness engineering refers to designing that scaffold, and after Anthropic popularized the term "agent harness," it has emerged by 2026 as an independent engineering discipline. This article explains exactly what a harness is, and why the center of gravity in AI competition is shifting from models to harnesses.
+Anyone who has built AI agents has hit the same wall: the demo runs beautifully, but once it goes into actual production it does something wrong two or three times out of ten. Interestingly, the fix for this problem is, in most cases, not "a smarter model." The real variable is the **harness** — the scaffold that surrounds the model. Harness engineering is the term for designing that scaffold, and after Anthropic popularized the phrase "agent harness," it established itself in 2026 as an independent engineering discipline. This article lays out exactly what a harness is, and why the center of gravity of AI competitiveness is shifting from the model to the harness.
 
 ![a rack of servers in a server room](https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2VudGVyJTIwY29udHJvbCUyMHJvb20lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgxNjQ5NDg1fDA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Kevin Ache](https://unsplash.com/@kevinache?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## What Is Harness Engineering?
 
-A harness, in the physical world, means straps or a safety belt fitted to a horse or a person. In AI, an agent harness is the scaffold fitted to an LLM brain that actually makes it move. Everything except the model weights — the execution loop, tool calls, context and memory management, human approval checkpoints, tracing and observability — all of this is the harness.
+A harness originally means the "tack or safety belt" strapped onto a horse or a person. In AI, an agent harness refers to the scaffold strapped onto the brain that is the LLM, the thing that actually makes it move. Almost everything except the model weights — the execution loop, tool calls, context and memory management, human approval checkpoints, tracing and observability — is the harness.
 
-The simplest harness is a **call → observe → decide → repeat** loop. When the model says "run a search" and calls a tool, the harness actually executes the search, returns the result to the model, the model decides its next action, and this repeats until the goal is reached or a stop condition is hit. The more robust this loop, the more reliably any model placed on top of it will work.
+The simplest harness is the **call, observe, decide, repeat** loop. When the model calls a tool saying "search this," the harness actually runs the search, returns the results to the model, the model decides on its next action, and this repeats until the goal is achieved or a stop condition is reached. The more robust this loop is, the more stably it runs no matter which model you put on top of it.
 
-A concrete example: building a central bank rate analysis report meant fanning out multiple sub-agents for parallel research, running adversarial verification on each claim, cycling through a scheduled loop up to a publication deadline, and routing the final "publish" step through a human approval gate. One model. But it was the scaffold that created reliability. That is what a harness actually looks like in the wild.
+Here is an example from my own experience. Yesterday, when producing a report on Bank of Japan interest rates, I had to fan out research in parallel across several subagents, run adversarial verification on each claim, wait on a scheduled loop cycling until the announcement time, and pass the final "publish" step through a human approval gate. There was only one model, but what produced the reliability of the result was this scaffold. This is what a harness actually looks like.
 
-## Why It's Now Harness, Not Model
+## Why It's the Harness, Not the Model, Right Now
 
-The market data is striking. Analysis suggests that up to **88% of enterprise AI agent projects never reach production**. Looking at the causes, the culprit in the majority of cases is not model performance — it is the absence of a scaffold that turns the model into an operable system. One practitioner put it bluntly: "The production harness accounts for 98% of agent reliability."
+The market data is fairly striking. One analysis finds that **as many as 88% of the AI agent projects companies undertake never reach production**. Look into the causes of failure and, in most cases, it is not model performance but the absence of the scaffold that binds the model into an operable system. One practitioner goes so far as to say that "the production harness accounts for 98% of agent reliability."
 
 ![server infrastructure room](https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwY2VudGVyJTIwY29udHJvbCUyMHJvb20lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgxNjQ5NDg1fDA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [imgix](https://unsplash.com/@imgix?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/img-ix-mining-rig-inside-white-and-gray-room-klWUhr-wPJ8?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-Three trends are driving this shift. First, the capability gap between frontier models has narrowed — the marginal return of "which model" is diminishing. Second, the gap between demo and production has become undeniable: doing something once and doing it 99 out of 100 times are entirely different engineering problems, and the latter is solved with scaffold. Third, harness logic that used to be scattered across controller code, framework defaults, tool adapters, and validation scripts is now being treated as a single, explicit, portable asset. The emergence of the term "AI control plane" is a signal that harnesses are no longer peripheral plumbing — they are recognized as the central control layer of the system.
+Three trends lie behind this. First, as the capability gap between frontier models narrows, the marginal utility of "which model" has shrunk. Second, the gap between demo and production has become obvious. Working once and working 99 times out of 100 are completely different engineering problems, and the latter is solved by the scaffold. Third, harness logic that used to be scattered across controller code, framework defaults, tool adapters, and validation scripts is now, in earnest, being treated as a single explicit, portable asset. The emergence of the phrase "AI control plane" is a signal that the harness is starting to be recognized not as incidental plumbing but as the central control layer of the system.
 
-The conclusion: models are now something you rent. Differentiation has moved to *what scaffold you put that model on*. Before spending money on expensive fine-tuning, building a proper harness — verification, guardrails, budget management — returns far greater reliability for the same cost.
+Here is how I see this shift. Models have become something you rent, and differentiation has moved to which scaffold you put that model on. Before spending money on expensive fine-tuning, building the harness properly first — validation, guardrails, budget management — returns far greater reliability for the same cost.
 
 ## Design Principles for a Good Harness
 
-The core principles proven in practice are surprisingly simple and consistent.
+The core principles that hold up in practice are surprisingly simple and consistent.
 
-- **Separate model from harness.** The LLM handles intent parsing and reasoning; deterministic code in the harness handles precision tasks like calculations or database writes. Asking an LLM to do arithmetic will eventually produce an error. That is a guarantee problem, not a performance problem.
-- **Expose the minimum set of tools.** More tools paradoxically degrade agent performance. If an agent has more than eight tools registered at once, question the design. Show only the tools needed for each specific step.
-- **Build verification into the loop.** Verify at every step, not after the fact. Deterministic checks (tests, linters) go first; LLM-based semantic verification supplements where needed, but use it sparingly since it adds latency.
-- **Declare a budget and stop conditions explicitly.** Set upper limits on step count, time, tokens, and tool call frequency. When exceeded, stop and hand off to a human rather than running indefinitely. The majority of runaway agent incidents are eliminated by this one rule.
+- **Separate the model from the harness.** The LLM handles intent recognition and reasoning, while accuracy-critical tasks like computation or writing to a database are handled deterministically by harness code. If you make the LLM do arithmetic directly, it will eventually get it wrong. This is a question of guarantees, not performance.
+- **Expose the minimum number of tools.** The more tools there are, the worse the agent performs. If more than eight tools are registered to a single agent all at once, you should suspect the design. It is better to show only the tools needed at that moment, step by step.
+- **Put validation inside the loop.** This means validating at every step, not evaluating after the fact. Use deterministic checks like tests or linters as the first line, with semantic validation judged by an LLM as a backup. The latter increases latency, so don't overuse it.
+- **Make budgets and stop conditions explicit.** Set caps on the number of steps, time, tokens, and tool-call counts, and when exceeded, stop and hand off to a human instead of running forever. Most runaway-agent incidents disappear with this single rule.
 
-The last principle is especially important for small teams and solo operators. Any action that is hard to reverse — a payment, a deletion, a public post — must have a human approval checkpoint. Stopping to check can feel like friction, but that friction is a safety asset.
+The last principle is especially important for solo entrepreneurs and small teams. For hard-to-undo actions like payments, deletions, and external publishing, you must always place a human approval checkpoint. When my automatic approval was blocked yesterday as I tried to publish a blog post, that was actually an example of a well-designed harness guardrail working as intended. It feels like a hassle, but that hassle is itself a safety asset.
 
-## The Center of Gravity Shifts to the Scaffold
+## In the End, the Center of Gravity Moves to the Scaffold
 
-Recently, approaches have emerged where the harness code itself is inspected and refined by agents — a kind of "meta-harness." We are at the very beginning of a phase where, instead of humans manually building scaffolds, scaffolds improve scaffolds. Wherever that leads, one thing is clear: in 2026, AI competitive advantage does not come from getting access to a larger model. It comes from designing a scaffold that makes that model work reliably. Rent the model — engineer the harness. That is the winning edge.
+Recently, approaches like a "meta-harness," in which the agent itself inspects and refines the harness code, have even appeared. We are at the threshold of moving from a stage where humans hand-build the scaffold to a stage where the scaffold improves the scaffold. Wherever the direction leads, one thing is clear. The core of AI competitiveness in 2026 lies not in getting your hands on a bigger model, but in designing well the scaffold that makes that model work reliably. Rent the model, but build the harness yourself and build it well — that side wins. For anyone who wants to take AI agents seriously, it is right to make the harness, not the model, the top priority for your next investment.
 
 ---
 
-*References: Anthropic's agent harness concept, LangChain "The Anatomy of an Agent Harness," awesome-harness-engineering (GitHub), harness engineering review papers on arXiv, MLflow tool-use best practices. Figures are as of publication and may change rapidly in this fast-moving field.*
+*References: Anthropic's concept of the agent harness, LangChain's "The Anatomy of an Agent Harness," awesome-harness-engineering (GitHub), the harness-engineering review paper on arXiv, MLflow's tool-use best practices, and more. The figures are as of the time of writing; since this is a fast-moving field, I recommend checking the latest sources as well.*
