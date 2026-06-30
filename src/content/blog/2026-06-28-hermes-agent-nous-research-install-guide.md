@@ -6,7 +6,7 @@ category: "ai"
 tags: ["hermes-agent", "nous-research", "ai-agent", "자율에이전트"]
 ---
 
-**헤르메스 에이전트(Hermes Agent)**는 ChatGPT 창을 여는 AI가 아니다. 터미널·메신저·서버에서 상시 실행되며, 스스로 배우고, 대화가 끝나도 기억을 유지하는 **자율 에이전트**다. Nous Research가 2026년 2월 공개한 이 오픈소스 도구는 출시 4개월 만에 GitHub 스타 20만 4천 개를 넘겼다. 이 글에서는 헤르메스 에이전트가 무엇인지, 왜 지금 써볼 만한지, 그리고 어떻게 5분 안에 설치·셋팅하는지를 공식 문서 기반으로 단계별로 안내한다. *(2편: 실전 사용법·자동화 사례는 다음 편에서 이어진다.)*
+**헤르메스 에이전트(Hermes Agent)**는 ChatGPT 창을 여는 AI가 아니다. 터미널·메신저·서버에서 상시 실행되며, 스스로 배우고, 대화가 끝나도 기억을 유지하는 **자율 에이전트**다. Nous Research가 2026년 2월 공개한 이 오픈소스 도구는 출시 4개월 만에 GitHub 스타 20만 4천 개를 넘겼다. 이 글에서는 헤르메스 에이전트가 무엇인지, 왜 지금 써볼 만한지, 그리고 어떻게 5분 안에 설치·셋팅하는지를 공식 문서 기반으로 단계별로 안내한다. *(2편: [실전 사용법·자동화 사례](/blog/2026-06-29-hermes-agent-practical-use-cases/)는 다음 편에서 이어진다.)*
 
 ![a computer chip with the letter a on top of it](https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwcm9ib3QlMjB0ZXJtaW5hbHxlbnwxfDB8fHwxNzgyNTY2Mjc2fDA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_source=spice-bandit-blog&utm_medium=referral)*
@@ -242,7 +242,7 @@ hermes --continue
 
 ---
 
-**[2편 예고]** 다음 편에서는 헤르메스를 실제로 어떻게 활용하는지 — 텔레그램 봇 연동, cron 자동화, 스킬 작성·공유, MCP 서버 연결 등 **실전 사용법과 사례**를 다룬다.
+**[2편 보기]** 헤르메스를 실제로 어떻게 활용하는지 — 텔레그램 봇 연동, cron 자동화, 스킬 작성·공유, MCP 서버 연결 등 실전 사용법과 사례는 [헤르메스 AI 실전 사용법·자동화 사례 완전 가이드 [2편]](/blog/2026-06-29-hermes-agent-practical-use-cases/)에서 이어진다.
 
 ---
 
