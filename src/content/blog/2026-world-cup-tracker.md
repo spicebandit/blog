@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-06-30T08:45:00+09:00
+updatedDate: 2026-06-30T13:30:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -80,7 +80,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 30일 오전 8시 45분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 6월 30일 오후 1시 30분 (KST)</span>
 
 경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -96,7 +96,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
 <tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
 <tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
-<tr><td>현재 단계</td><td><b>32강 토너먼트 진행 중.</b> 개막전에서 캐나다가 남아공을 1-0으로 꺾고(에우스타키오 후반 추가시간 결승골) 사상 처음 16강에 올랐다. 이어 브라질이 일본을 2-1로 눌렀다 — 사노에게 선제골을 내줬으나 카세미루가 후반 동점골, 마르티넬리가 후반 추가시간 역전 결승골을 터뜨렸다. 그리고 <b>파라과이가 독일을 승부차기(1-1, PK 4-3)로 꺾는 대이변</b>을 연출하며 16강에 올랐다. 한국시간 6월 30일 오전 네덜란드-모로코전을 시작으로 남은 32강 경기가 이어진다. <b>대한민국은 조별리그 A조 3위(각 조 3위 10위)로 32강 진출이 무산돼 대회를 마쳤다.</b></td></tr>
+<tr><td>현재 단계</td><td><b>32강 토너먼트 진행 중.</b> 개막전에서 캐나다가 남아공을 1-0으로 꺾고(에우스타키오 후반 추가시간 결승골) 사상 처음 16강에 올랐다. 이어 브라질이 일본을 2-1로 눌렀다 — 사노에게 선제골을 내줬으나 카세미루가 후반 동점골, 마르티넬리가 후반 추가시간 역전 결승골을 터뜨렸다. 그리고 <b>파라과이가 독일을 승부차기(1-1, PK 4-3)로 꺾는 대이변</b>을 연출하며 16강에 올랐다. 한국시간 6월 30일 오전에는 <b>모로코가 네덜란드를 승부차기(1-1, PK 3-2)로 꺾고</b> 16강에 합류했다(가크포 선제골 → 디오프 후반 추가시간 동점골 → 승부차기 사이바리 결승킥). 이후 코트디부아르-노르웨이, 프랑스-스웨덴, 멕시코-에콰도르(한국시간 7월 1일 새벽~오전)로 남은 32강 경기가 이어진다. <b>대한민국은 조별리그 A조 3위(각 조 3위 10위)로 32강 진출이 무산돼 대회를 마쳤다.</b></td></tr>
 <tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
 </table>
 
@@ -232,7 +232,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-32강 토너먼트가 진행 중입니다. 캐나다(1-0 남아공)·브라질(2-1 일본)에 이어 파라과이가 독일을 승부차기(1-1, PK 4-3)로 꺾고 16강에 올랐습니다. 나머지 대진은 경기 종료 후 채워집니다. 16강 이후 칸은 양 팀이 모두 확정되면 표시합니다. (모바일에서는 세로로 표시)
+32강 토너먼트가 진행 중입니다. 캐나다(1-0 남아공)·브라질(2-1 일본)·파라과이(독일 PK 4-3)에 이어 모로코가 네덜란드를 승부차기(1-1, PK 3-2)로 꺾고 16강에 올랐습니다. 나머지 대진은 경기 종료 후 채워집니다. 16강 이후 칸은 양 팀이 모두 확정되면 표시합니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
@@ -240,7 +240,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-m"><div class="t"><span>🇿🇦 남아공</span><span class="sc">0</span></div><div class="t"><span>🇨🇦 캐나다</span><span class="sc">1</span></div></div>
 <div class="wc-m"><div class="t"><span>🇧🇷 브라질</span><span class="sc">2</span></div><div class="t"><span>🇯🇵 일본</span><span class="sc">1</span></div></div>
 <div class="wc-m"><div class="t"><span>🇩🇪 독일</span><span class="sc">1 (3)</span></div><div class="t"><span>🇵🇾 파라과이</span><span class="sc">1 (4)</span></div></div>
-<div class="wc-m"><div class="t"><span>🇳🇱 네덜란드</span><span class="sc">vs</span></div><div class="t"><span>🇲🇦 모로코</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇳🇱 네덜란드</span><span class="sc">1 (2)</span></div><div class="t"><span>🇲🇦 모로코</span><span class="sc">1 (3)</span></div></div>
 <div class="wc-m"><div class="t"><span>🇨🇮 코트디부아르</span><span class="sc">vs</span></div><div class="t"><span>🇳🇴 노르웨이</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇫🇷 프랑스</span><span class="sc">vs</span></div><div class="t"><span>🇸🇪 스웨덴</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">vs</span></div><div class="t"><span>🇪🇨 에콰도르</span><span class="sc">-</span></div></div>
@@ -290,14 +290,16 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">6/30(화) 10:00</td><td>🇳🇱 네덜란드 vs 🇲🇦 모로코</td><td>32강</td></tr>
 <tr><td class="kst">7/1(수) 02:00</td><td>🇨🇮 코트디부아르 vs 🇳🇴 노르웨이</td><td>32강</td></tr>
 <tr><td class="kst">7/1(수) 06:00</td><td>🇫🇷 프랑스 vs 🇸🇪 스웨덴</td><td>32강</td></tr>
 <tr><td class="kst">7/1(수) 10:00</td><td>🇲🇽 멕시코 vs 🇪🇨 에콰도르</td><td>32강</td></tr>
+<tr><td class="kst">7/2(목) 01:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드 vs 🇨🇩 콩고DR</td><td>32강</td></tr>
+<tr><td class="kst">7/2(목) 05:00</td><td>🇧🇪 벨기에 vs 🇸🇳 세네갈</td><td>32강</td></tr>
+<tr><td class="kst">7/2(목) 09:00</td><td>🇺🇸 미국 vs 🇧🇦 보스니아</td><td>32강</td></tr>
 </table>
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports·CBS Sports 등 공개 자료(2026-06-30 08시 45분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports·CBS Sports 등 공개 자료(2026-06-30 13시 30분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
