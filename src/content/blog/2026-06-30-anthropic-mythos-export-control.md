@@ -7,6 +7,9 @@ tags: ["앤트로픽", "미토스", "AI 수출 통제", "Claude"]
 draft: false
 ---
 
+![red padlock on black computer keyboard](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxBSSUyMGV4cG9ydCUyMGNvbnRyb2wlMjBjeWJlcnNlY3VyaXR5JTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgyNzgwNjE0fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [FlyD](https://unsplash.com/@flyd2069?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/red-padlock-on-black-computer-keyboard-mT7lXZPjk7U?utm_source=spice-bandit-blog&utm_medium=referral)*
+
 미국 상무부가 앤트로픽(Anthropic)의 최첨단 AI 모델 **미토스5(Mythos 5)** 에 수출 통제를 발동하면서, 전 세계 기업 중 미국 정부가 사전 승인한 100여 개사만 이 모델을 사용할 수 있게 됐습니다. 이번 조치는 프론티어 AI 모델에 대한 실제 수출 규제가 처음으로 집행된 사례로, AI 거버넌스의 새 분기점으로 평가받고 있습니다. 한국에서는 삼성전자·SK하이닉스·SK텔레콤·한국인터넷진흥원(KISA) 등이 접근권을 박탈당했으며, 일각에서는 SKT의 '중국 연루 의혹'이 제재의 도화선이 됐다는 보도도 나왔습니다.
 
 ## 미토스가 뭐길래 — NSA 기밀 시스템을 '몇 시간 만에' 뚫은 AI
@@ -16,6 +19,9 @@ draft: false
 미 정보 당국과 앤트로픽이 공동으로 실시한 내부 실험에서 미토스5는 충격적인 결과를 냈습니다. 미 국가안보국(NSA)·사이버사령부 수장인 조슈아 러드 장군은 상원 청문회에서 "미토스가 우리 기밀 시스템 대부분에 '몇 주가 아니라 몇 시간 만에' 침투했다"고 증언했습니다([Federal News Network](https://federalnewsnetwork.com/artificial-intelligence/2026/06/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/), [Security Affairs](https://securityaffairs.com/194016/ai/anthropics-mythos-ai-broke-into-almost-all-nsa-classified-systems-in-hours.html)).
 
 세부 실험 기록에 따르면 미토스는 시험 도중 27년 된 OpenBSD TCP 스택 취약점을 독자적으로 발굴했고, 파이어폭스 브라우저 익스플로잇을 이전 세대 모델 대비 90배 빠른 속도로 생성했습니다([TechSpot](https://www.techspot.com/news/112854-anthropic-mythos-ai-reportedly-cracked-nsa-classified-systems.html)). '쌍칼'과도 같은 이 능력은 방어에도, 공격에도 활용될 수 있어 미 행정부가 즉각 수출 통제를 발동하게 된 직접적인 이유가 됐습니다.
+
+![black iphone 5 beside brown framed eyeglasses and black iphone 5 c](https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxBSSUyMGV4cG9ydCUyMGNvbnRyb2wlMjBjeWJlcnNlY3VyaXR5JTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgyNzgwNjE0fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Dan Nelson](https://unsplash.com/@danny144?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-iphone-5-beside-brown-framed-eyeglasses-and-black-iphone-5-c-ah-HeguOe9k?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 수출 통제 전개 과정 — 6월 12일 전면 차단, 6월 26일 부분 해제
 
@@ -40,6 +46,9 @@ draft: false
 한국 정부·기업 입장에서 더 큰 우려는 **선례 효과**입니다. AI 업계에서는 이번 조치가 "초고성능 AI 모델 접근도 반도체 수출 통제처럼 미국 정부의 사전 인가제로 전환될 수 있다"는 신호로 해석됩니다([뉴스스페이스](https://www.newsspace.kr/news/article.html?no=14395)). 향후 GPT-5 계열이나 구글 제미나이 최신 버전에도 유사한 제한이 적용된다면, 한국 기업들의 글로벌 AI 경쟁력에 중대한 위협이 될 수 있습니다.
 
 전문가들은 이에 대응해 한국이 ①소버린 AI 개발 투자 강화, ②미·한 AI 협력 협정 체결 추진, ③KISA 등을 통한 독립적 AI 안보 역량 확보를 서둘러야 한다고 지적합니다([씽크노트](https://www.thinknote.co.kr/anthropic-mythos-ai-strategic-asset-korea/)).
+
+![red and black love lock](https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxBSSUyMGV4cG9ydCUyMGNvbnRyb2wlMjBjeWJlcnNlY3VyaXR5JTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgyNzgwNjE0fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [FlyD](https://unsplash.com/@flyd2069?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/red-and-black-love-lock-zAhAUSdRLJ8?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 앤트로픽 IPO에는 어떤 영향을 미치나
 
