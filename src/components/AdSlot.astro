@@ -17,13 +17,15 @@
  */
 
 type AdPosition = 'header' | 'in-article' | 'bottom' | 'sidebar';
+type AdNetwork = 'auto' | 'adfit' | 'adsense';
 
 interface Props {
   position: AdPosition;
+  network?: AdNetwork;
   class?: string;
 }
 
-const { position, class: className } = Astro.props;
+const { position, network = 'auto', class: className } = Astro.props;
 
 const PUB_ID = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
 
@@ -48,14 +50,22 @@ const adfitId = ADFIT_UNITS[position];
 const hasAdsense = !!(PUB_ID && slotId);
 // 헤더 위치는 PC 단위(adfitId) 또는 모바일 단위(ADFIT_HEADER_M) 중 하나만 있어도 렌더
 const hasAdfit   = position === 'header' ? !!(adfitId || ADFIT_HEADER_M) : !!adfitId;
-const showAd     = hasAdfit || hasAdsense;
 const isInArticle = position === 'in-article';
 const isDev      = import.meta.env.DEV;
 
-// AdFit이 있는 위치는 AdFit 우선; AdSense는 AdFit 단위가 없을 때만 노출
-// (AdSense 미승인 기간 동안 빈 칸 대신 AdFit 표시)
-const showAdfit   = hasAdfit;
-const showAdsense = !hasAdfit && hasAdsense;
+// network prop으로 위치별 광고망 강제 지정 가능 (기본 'auto' = AdFit 우선)
+//  - 'adfit'   : AdFit만 노출
+//  - 'adsense' : AdSense만 노출
+//  - 'auto'    : AdFit 단위가 있으면 AdFit, 없으면 AdSense (AdSense 미승인 기간 빈 칸 방지)
+const showAdfit =
+  network === 'adsense' ? false :
+  network === 'adfit'   ? hasAdfit :
+  hasAdfit;
+const showAdsense =
+  network === 'adfit'   ? false :
+  network === 'adsense' ? hasAdsense :
+  (!hasAdfit && hasAdsense);
+const showAd = showAdfit || showAdsense;
 
 // AdFit dimensions per position (PC / mobile handled via CSS)
 const ADFIT_DIM: Record<AdPosition, { w: number; h: number }> = {
@@ -180,9 +190,10 @@ const adfitDim = ADFIT_DIM[position];
     .adfit-mobile { display: block !important; }
   }
 
-  /* 사이드바 sticky (상위 컨테이너에서 grid 구성 시 활성) */
+  /* 사이드바 하단 광고: 위 목록과 간격만 주고 정적 배치 (aside가 이미 sticky) */
   .ad-sidebar {
-    position: sticky;
-    top: calc(var(--nav-h, 56px) + 16px);
+    margin-top: 8px;
+    padding-top: 20px;
+    border-top: 2px solid var(--line);
   }
 </style>

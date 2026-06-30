@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import HeroSection from '../components/HeroSection.astro';
 import BriefList from '../components/BriefList.astro';
 import CategorySection from '../components/CategorySection.astro';
+import AdSlot from '../components/AdSlot.astro';
 import type { CategorySlug } from '../lib/categories';
 import { CATEGORY_SLUGS } from '../lib/categories';
 import { firstBodyImage, kstDateStr } from '../lib/format';
@@ -93,7 +94,17 @@ const byCat = (cat: CategorySlug) =>
     <CategorySection category={cat} posts={byCat(cat)} />
   ))}
 
+  {/* 홈 최하단 광고 (AdFit 가로 배너, PC 728×90 / 모바일 320×50) */}
+  <div class="home-ad-bottom">
+    <AdSlot position="bottom" network="adfit" />
+  </div>
+
 </Base>
 
 <style>
+  .home-ad-bottom {
+    max-width: 1200px;
+    margin: 8px auto 0;
+    padding: 0 16px;
+  }
 </style>
