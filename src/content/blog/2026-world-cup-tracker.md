@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-07-01T13:15:00+09:00
+updatedDate: 2026-07-02T06:00:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -80,7 +80,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 7월 1일 오후 1시 15분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 7월 2일 오전 6시 (KST)</span>
 
 경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -96,7 +96,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
 <tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
 <tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
-<tr><td>현재 단계</td><td><b>32강 토너먼트 진행 중.</b> 개막전에서 캐나다가 남아공을 1-0으로 꺾고(에우스타키오 후반 추가시간 결승골) 사상 처음 16강에 올랐다. 이어 브라질이 일본을 2-1로 눌렀다 — 사노에게 선제골을 내줬으나 카세미루가 후반 동점골, 마르티넬리가 후반 추가시간 역전 결승골을 터뜨렸다. 그리고 <b>파라과이가 독일을 승부차기(1-1, PK 4-3)로 꺾는 대이변</b>을 연출하며 16강에 올랐다. 한국시간 6월 30일 오전에는 <b>모로코가 네덜란드를 승부차기(1-1, PK 3-2)로 꺾고</b> 16강에 합류했다(가크포 선제골 → 디오프 후반 추가시간 동점골 → 승부차기 사이바리 결승킥). 한국시간 7월 1일 새벽에는 <b>노르웨이가 코트디부아르를 2-1로 꺾었고</b>(홀란드 후반 결승골), 이어 <b>프랑스가 스웨덴을 3-0으로 완파했다</b>(음바페 멀티골 + 바르콜라 추가골). 이로써 16강 대진 일부가 확정됐다 — <b>캐나다-모로코, 파라과이-프랑스, 브라질-노르웨이</b> 3경기 대진이 확정됐다. 한국시간 7월 1일 낮에는 <b>멕시코가 에콰도르를 2-0으로 꺾고</b>(키뇨네스 전반 22분, 히메네스 31분) 16강에 올라 잉글랜드-콩고DR 승자와 만난다. 남은 32강은 잉글랜드-콩고DR(7월 2일 새벽 1시)·벨기에-세네갈·미국-보스니아(7월 2일)에 이어 스페인-오스트리아·포르투갈-크로아티아·스위스-알제리(7월 3일) 등으로 계속된다. <b>대한민국은 조별리그 A조 3위(각 조 3위 10위)로 32강 진출이 무산돼 대회를 마쳤다.</b></td></tr>
+<tr><td>현재 단계</td><td><b>32강 토너먼트 진행 중.</b> 개막전에서 캐나다가 남아공을 1-0으로 꺾고(에우스타키오 후반 추가시간 결승골) 사상 처음 16강에 올랐다. 이어 브라질이 일본을 2-1로 눌렀다 — 사노에게 선제골을 내줬으나 카세미루가 후반 동점골, 마르티넬리가 후반 추가시간 역전 결승골을 터뜨렸다. 그리고 <b>파라과이가 독일을 승부차기(1-1, PK 4-3)로 꺾는 대이변</b>을 연출하며 16강에 올랐다. 한국시간 6월 30일 오전에는 <b>모로코가 네덜란드를 승부차기(1-1, PK 3-2)로 꺾고</b> 16강에 합류했다(가크포 선제골 → 디오프 후반 추가시간 동점골 → 승부차기 사이바리 결승킥). 한국시간 7월 1일 새벽에는 <b>노르웨이가 코트디부아르를 2-1로 꺾었고</b>(홀란드 후반 결승골), 이어 <b>프랑스가 스웨덴을 3-0으로 완파했다</b>(음바페 멀티골 + 바르콜라 추가골). 이로써 16강 대진 일부가 확정됐다 — <b>캐나다-모로코, 파라과이-프랑스, 브라질-노르웨이</b> 3경기 대진이 확정됐다. 한국시간 7월 1일 낮에는 <b>멕시코가 에콰도르를 2-0으로 꺾고</b>(키뇨네스 전반 22분, 히메네스 31분) 16강에 올랐다. 한국시간 7월 2일 새벽에는 <b>잉글랜드가 콩고DR을 2-1로 뒤집었다</b> — 전반 7분 시펭가에게 선제골을 내줬으나 해리 케인이 후반 75분·86분 연속골로 역전했다. 이로써 <b>16강 멕시코-잉글랜드 대진이 확정</b>됐다(아즈텍 스타디움). 이어 <b>벨기에-세네갈</b>이 진행 중이고(전반 종료 시점 세네갈 1-0 리드), <b>미국-보스니아</b>(7월 2일 오전 9시)가 남았다. 남은 32강은 스페인-오스트리아·포르투갈-크로아티아·스위스-알제리(7월 3일), 호주-이집트·아르헨티나-카보베르데·콜롬비아-가나(7월 4일) 등으로 계속된다. <b>대한민국은 조별리그 A조 3위(각 조 3위 10위)로 32강 진출이 무산돼 대회를 마쳤다.</b></td></tr>
 <tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
 </table>
 
@@ -232,7 +232,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-32강 토너먼트가 진행 중입니다. 캐나다(1-0 남아공)·브라질(2-1 일본)·파라과이(독일 PK 4-3)·모로코(네덜란드 PK 3-2)·노르웨이(2-1 코트디부아르)·프랑스(3-0 스웨덴)에 이어 멕시코가 에콰도르를 2-0으로 꺾으며 16강에 올랐습니다. 이로써 16강 대진 3경기(캐나다-모로코, 파라과이-프랑스, 브라질-노르웨이)가 확정됐고, 멕시코는 잉글랜드-콩고DR 승자를 기다립니다. 나머지 대진은 경기 종료 후 채워집니다. 16강 이후 칸은 양 팀이 모두 확정되면 표시합니다. (모바일에서는 세로로 표시)
+32강 토너먼트가 진행 중입니다. 캐나다(1-0 남아공)·브라질(2-1 일본)·파라과이(독일 PK 4-3)·모로코(네덜란드 PK 3-2)·노르웨이(2-1 코트디부아르)·프랑스(3-0 스웨덴)·멕시코(2-0 에콰도르)에 이어 잉글랜드가 콩고DR을 2-1로 뒤집으며(케인 후반 멀티골) 16강에 올랐습니다. 이로써 16강 대진 4경기(캐나다-모로코, 파라과이-프랑스, 브라질-노르웨이, 멕시코-잉글랜드)가 확정됐습니다. 벨기에-세네갈·미국-보스니아 등 나머지 32강은 경기 종료 후 채워집니다. 16강 이후 칸은 양 팀이 모두 확정되면 표시합니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
@@ -244,7 +244,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-m"><div class="t"><span>🇨🇮 코트디부아르</span><span class="sc">1</span></div><div class="t"><span>🇳🇴 노르웨이</span><span class="sc">2</span></div></div>
 <div class="wc-m"><div class="t"><span>🇫🇷 프랑스</span><span class="sc">3</span></div><div class="t"><span>🇸🇪 스웨덴</span><span class="sc">0</span></div></div>
 <div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">2</span></div><div class="t"><span>🇪🇨 에콰도르</span><span class="sc">0</span></div></div>
-<div class="wc-m"><div class="t"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</span><span class="sc">vs</span></div><div class="t"><span>🇨🇩 콩고DR</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</span><span class="sc">2</span></div><div class="t"><span>🇨🇩 콩고DR</span><span class="sc">1</span></div></div>
 <div class="wc-m"><div class="t"><span>🇧🇪 벨기에</span><span class="sc">vs</span></div><div class="t"><span>🇸🇳 세네갈</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇺🇸 미국</span><span class="sc">vs</span></div><div class="t"><span>🇧🇦 보스니아</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇪🇸 스페인</span><span class="sc">vs</span></div><div class="t"><span>🇦🇹 오스트리아</span><span class="sc">-</span></div></div>
@@ -259,7 +259,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-m"><div class="t"><span>🇨🇦 캐나다</span><span class="sc">vs</span></div><div class="t"><span>🇲🇦 모로코</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇵🇾 파라과이</span><span class="sc">vs</span></div><div class="t"><span>🇫🇷 프랑스</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇧🇷 브라질</span><span class="sc">vs</span></div><div class="t"><span>🇳🇴 노르웨이</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">vs</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">vs</span></div><div class="t"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
@@ -289,16 +289,18 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">7/2(목) 01:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드 vs 🇨🇩 콩고DR</td><td>32강</td></tr>
-<tr><td class="kst">7/2(목) 05:00</td><td>🇧🇪 벨기에 vs 🇸🇳 세네갈</td><td>32강</td></tr>
+<tr><td class="kst">7/2(목) 05:00</td><td>🇧🇪 벨기에 vs 🇸🇳 세네갈 <span style="color:#dc2626;font-size:0.8em">● 진행 중</span></td><td>32강</td></tr>
 <tr><td class="kst">7/2(목) 09:00</td><td>🇺🇸 미국 vs 🇧🇦 보스니아</td><td>32강</td></tr>
 <tr><td class="kst">7/3(금) 04:00</td><td>🇪🇸 스페인 vs 🇦🇹 오스트리아</td><td>32강</td></tr>
 <tr><td class="kst">7/3(금) 08:00</td><td>🇵🇹 포르투갈 vs 🇭🇷 크로아티아</td><td>32강</td></tr>
 <tr><td class="kst">7/3(금) 12:00</td><td>🇨🇭 스위스 vs 🇩🇿 알제리</td><td>32강</td></tr>
+<tr><td class="kst">7/4(토) 03:00</td><td>🇦🇺 호주 vs 🇪🇬 이집트</td><td>32강</td></tr>
+<tr><td class="kst">7/4(토) 07:00</td><td>🇦🇷 아르헨티나 vs 🇨🇻 카보베르데</td><td>32강</td></tr>
+<tr><td class="kst">7/4(토) 10:30</td><td>🇨🇴 콜롬비아 vs 🇬🇭 가나</td><td>32강</td></tr>
 </table>
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports·CBS Sports 등 공개 자료(2026-07-01 13시 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports·CBS Sports 등 공개 자료(2026-07-02 06시 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
