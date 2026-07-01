@@ -13,7 +13,15 @@ set targets to {¬
   {"/blog/2026-06-28-hermes-agent-nous-research-install-guide/", "hermes-agent-nous-research-install-guide"}, ¬
   {"/blog/2026-06-27-claude-code-alternatives-comparison-2026/", "claude-code-alternatives-comparison-2026"}, ¬
   {"/blog/2026-06-29-summer-electricity-bill-2026-progressive-rate/", "summer-electricity-bill-2026-progressive-rate"}, ¬
-  {"/blog/2026-06-28-gpt-56-europa-ai-sovereignty-war/", "gpt-56-europa-ai-sovereignty-war"}}
+  {"/blog/2026-06-28-gpt-56-europa-ai-sovereignty-war/", "gpt-56-europa-ai-sovereignty-war"}, ¬
+  {"/blog/2026-06-30-bernie-sanders-ai-arguments/", "bernie-sanders-ai-arguments"}, ¬
+  {"/blog/2026-07-01-ess-auction-market-rps-transition/", "ess-auction-market-rps-transition"}, ¬
+  {"/blog/2026-07-01-krx-aftermarket-extended-trading-hours/", "krx-aftermarket-extended-trading-hours"}, ¬
+  {"/blog/2026-06-30-ai-agent-enterprise-adoption-gap/", "ai-agent-enterprise-adoption-gap"}, ¬
+  {"/blog/2026-06-30-korea-summer-power-supply-2026/", "korea-summer-power-supply-2026"}, ¬
+  {"/blog/2026-06-30-2026-h1-korea-economy-review-h2-outlook/", "2026-h1-korea-economy-review-h2-outlook"}, ¬
+  {"/blog/2026-06-30-anthropic-mythos-export-control/", "anthropic-mythos-export-control"}, ¬
+  {"/blog/2026-07-02-ess-battery-lfp-solid-state-trend/", "ess-battery-lfp-solid-state-trend"}}
 
 set readRows to "(function(){return [].slice.call(document.querySelectorAll('table tbody tr')).map(function(r){return (r.textContent||'')}).join(' ');})();"
 
