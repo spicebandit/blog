@@ -1,0 +1,146 @@
+---
+import type { CategorySlug } from '../lib/categories';
+
+interface PostData {
+  id: string;
+  title: string;
+  description: string;
+  category: CategorySlug;
+  pubDate: Date;
+  heroImage?: string;
+  author?: string;
+  readingTime?: number;
+}
+
+interface Props {
+  recent: PostData[];
+}
+
+const { recent } = Astro.props;
+
+// 월드컵 트래커 공지 — 사이드바 하단 (7/21 자동 종료)
+const NOTICE = {
+  href: '/blog/2026-world-cup-tracker/',
+  emoji: '⚽',
+  label: '2026 북중미 월드컵 한눈에 보기',
+  badge: '매일 갱신',
+  until: new Date('2026-07-21T00:00:00+09:00'),
+};
+const showNotice = new Date() < NOTICE.until;
+---
+
+<aside class="home-sidebar">
+  {recent.length > 0 && (
+    <div class="rank-section">
+      <h3 class="rank-title">가장 많이 읽은 글</h3>
+      <ol class="rank-list" role="list">
+        {recent.slice(0, 5).map((post, i) => (
+          <li class="rank-item">
+            <a href={`/blog/${post.id}/`}>
+              <span class="rank-num" aria-hidden="true">{i + 1}</span>
+              <span class="rank-headline">{post.title}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )}
+
+  {showNotice && (
+    <a class="notice-box" href={NOTICE.href}>
+      <span class="notice-box-label">{NOTICE.emoji} {NOTICE.label}</span>
+      <span class="notice-box-badge">{NOTICE.badge}</span>
+    </a>
+  )}
+</aside>
+
+<style>
+/* 히어로와 분리된 독립 사이드바 — 자체 높이로만 움직인다 */
+.home-sidebar {
+  padding: 26px 24px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-self: start; /* 왼쪽 컬럼 높이에 늘어나지 않음 */
+}
+
+.rank-title {
+  margin: 0 0 16px;
+  font-family: var(--font-ui);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 8px;
+}
+.rank-list { list-style: none; margin: 0; padding: 0; }
+.rank-item + .rank-item {
+  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+.rank-item a {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+}
+.rank-item a:hover { text-decoration: none; }
+.rank-item a:hover .rank-headline { color: var(--accent-dark); }
+.rank-num {
+  flex: none;
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+.rank-headline {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.32;
+  color: var(--ink);
+  word-break: keep-all;
+  transition: color .15s;
+}
+
+/* 월드컵 트래커 공지 */
+.notice-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  text-decoration: none;
+}
+.notice-box:hover { text-decoration: none; border-color: var(--accent); }
+.notice-box:hover .notice-box-label { color: var(--accent-dark); }
+.notice-box-label {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  word-break: keep-all;
+  transition: color .15s;
+}
+.notice-box-badge {
+  flex: none;
+  font-family: var(--font-ui);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+</style>

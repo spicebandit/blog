@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import HeroSection from '../components/HeroSection.astro';
+import HomeSidebar from '../components/HomeSidebar.astro';
 import BriefList from '../components/BriefList.astro';
 import CategorySection from '../components/CategorySection.astro';
 import AdSlot from '../components/AdSlot.astro';
@@ -30,18 +31,15 @@ const buildDate = new Date();
 const todayStr = kstDateStr(buildDate);
 const yesterdayStr = kstDateStr(new Date(buildDate.getTime() - 86400000));
 
-// Today Pick: 오늘 발행 → 없으면 어제 발행 → 없으면 최신 폴백.
-// 신문형 히어로는 리드 1 + 서브 2가 필요하므로 부족하면 최신글로 채운다.
+// 히어로: 그날 올린 기사 전부 노출 (리드 1 + 나머지 서브).
+// 오늘 발행분이 없으면 어제 발행분, 그것도 없으면 최신 1건(리드만).
 let todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === todayStr);
 if (todayPickSource.length === 0)
   todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === yesterdayStr);
-if (todayPickSource.length < 3) {
-  const ids = new Set(todayPickSource.map(p => p.id));
-  todayPickSource = [...todayPickSource, ...allPosts.filter(p => !ids.has(p.id))];
-}
+if (todayPickSource.length === 0)
+  todayPickSource = allPosts.slice(0, 1);
 
-// 신문형 히어로: 리드 1건 + 서브 2건
-const todayPickSlides = todayPickSource.slice(0, 3).map(postToSlide);
+const todayPickSlides = todayPickSource.map(postToSlide);
 const todayPickIds = new Set(todayPickSlides.map(p => p.id));
 
 // 많이 본 기사 (사이드바): GA4 7일 조회수 순위
@@ -56,7 +54,7 @@ const sidebarPosts = [...allPosts]
     if (rankA !== rankB) return rankA - rankB;
     return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
   })
-  .slice(0, 3) // 사이드바 '가장 많이 읽은 글' 3개
+  .slice(0, 5) // 사이드바 '가장 많이 읽은 글' 5개
   .map(postToSlide);
 
 // Latest Brief: 최신 6개, todayPick·사이드바와 겹치지 않도록 제외
@@ -82,16 +80,14 @@ const byCat = (cat: CategorySlug) =>
 ---
 <Base title="BASELOAD" description="에너지·경제·AI·일상을 다루는 뉴스 블로그" wide={true}>
 
-  <!-- Hero: Today Pick carousel + 많이 본 기사 sidebar -->
-  {todayPickSlides.length > 0 && (
-    <HeroSection
-      slides={todayPickSlides}
-      recent={sidebarPosts}
-    />
-  )}
-
-  <!-- Latest Brief: horizontal card list (6 articles) -->
-  {briefPosts.length > 0 && <BriefList posts={briefPosts} />}
+  <!-- 좌: 히어로(그날 기사) + Latest Brief가 빈틈없이 이어짐 / 우: 독립 사이드바 -->
+  <div class="home-grid">
+    <div class="home-main">
+      {todayPickSlides.length > 0 && <HeroSection slides={todayPickSlides} />}
+      {briefPosts.length > 0 && <BriefList posts={briefPosts} />}
+    </div>
+    <HomeSidebar recent={sidebarPosts} />
+  </div>
 
   <!-- Category sections × 4 -->
   {CATEGORY_SLUGS.map((cat) => (
@@ -106,6 +102,19 @@ const byCat = (cat: CategorySlug) =>
 </Base>
 
 <style>
+  /* 좌(히어로+브리프) / 우(사이드바) 독립 2단 — 사이드바는 자체 높이로만 */
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 44px;
+  }
+  .home-main { min-width: 0; }
+  @media (max-width: 1023px) {
+    .home-grid { grid-template-columns: 1fr; }
+  }
+
   .home-ad-bottom {
     max-width: 1200px;
     margin: 8px auto 0;
