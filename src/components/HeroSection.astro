@@ -96,13 +96,13 @@ const subs = slides.slice(1);
 .lead-story:hover { text-decoration: none; }
 .lead-story:hover .lead-headline { color: var(--accent-dark); }
 
-/* 키커 아래 제목·이미지 그리드 — 이미지 상단이 제목 상단과 정렬 */
+/* 키커 아래 제목·이미지 그리드 — 이미지가 제목 상단~기사내용 끝단에 꽉 차게 */
 .lead-grid {
   margin-top: 12px;
   display: grid;
-  grid-template-columns: 1fr 200px; /* 이미지 오른쪽, 폭 축소 — 제목 공간 확대 */
+  grid-template-columns: 1fr 240px;
   gap: 30px;
-  align-items: start;
+  align-items: stretch; /* 이미지 하단 = 텍스트(메타) 끝단 정렬 */
 }
 
 .lead-headline {
@@ -142,7 +142,8 @@ const subs = slides.slice(1);
 .lead-meta .sep { color: var(--line); }
 
 .lead-image {
-  aspect-ratio: 4/3;
+  height: 100%;
+  min-height: 160px;
   border: 1px solid var(--line);
   overflow: hidden;
 }
@@ -203,7 +204,7 @@ const subs = slides.slice(1);
 @media (max-width: 767px) {
   .hero-main { padding: 20px 18px 24px; }
   .lead-grid { grid-template-columns: 1fr; gap: 16px; }
-  .lead-image { order: -1; }
+  .lead-image { order: -1; height: auto; aspect-ratio: 16/9; }
   .sub-stories { grid-template-columns: 1fr; gap: 18px; }
 }
 </style>
