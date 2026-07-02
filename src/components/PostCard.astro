@@ -109,4 +109,9 @@ const thumbUrl = heroImage ? toThumbUrl(heroImage) : null;
     align-items: center;
   }
   .meta-row time { color: var(--muted); font-size: 0.85rem; }
+
+  /* 모바일: 목록이 복잡해 보이지 않게 썸네일 숨김 */
+  @media (max-width: 767px) {
+    .thumb-wrap { display: none; }
+  }
 </style>
