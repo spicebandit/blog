@@ -65,7 +65,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
             </ol>
           </nav>
         )}
-        <Content />
+        <div class="article-body"><Content /></div>
 
         {post.data.tags.length > 0 && (
           <div class="tag-list" aria-label="태그">
@@ -87,12 +87,23 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
   .article-layout {
     display: grid;
     grid-template-columns: 1fr 300px;
-    gap: 24px;
+    gap: 32px;
     align-items: start;
   }
   .article-main { min-width: 0; }
   .article-main article {
-    max-width: 680px;
+    max-width: 780px; /* 본문 폭 확대 — 사이드바와의 빈공간 축소 */
+  }
+
+  /* 신문 디테일: 첫 문단 드롭캡 */
+  .article-body > :global(p:first-of-type)::first-letter {
+    font-family: var(--font-serif);
+    float: left;
+    font-size: 3.1em;
+    line-height: 0.85;
+    font-weight: 700;
+    padding: 4px 10px 0 0;
+    color: var(--ink);
   }
   @media (max-width: 959px) {
     .article-layout {
