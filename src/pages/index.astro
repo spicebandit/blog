@@ -56,7 +56,7 @@ const sidebarPosts = [...allPosts]
     if (rankA !== rankB) return rankA - rankB;
     return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
   })
-  .slice(0, 4)
+  .slice(0, 3) // 사이드바 '가장 많이 읽은 글' 3개
   .map(postToSlide);
 
 // Latest Brief: 최신 6개, todayPick·사이드바와 겹치지 않도록 제외

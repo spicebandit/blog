@@ -23,6 +23,16 @@ const { slides, recent } = Astro.props;
 // 신문형: 캐러셀 대신 리드 기사 1건 + 서브 기사 2건
 const lead = slides[0];
 const subs = slides.slice(1, 3);
+
+// 월드컵 트래커 공지 — 상단 공지바에서 사이드바 하단으로 이동 (7/21 자동 종료)
+const NOTICE = {
+  href: '/blog/2026-world-cup-tracker/',
+  emoji: '⚽',
+  label: '2026 북중미 월드컵 한눈에 보기',
+  badge: '매일 갱신',
+  until: new Date('2026-07-21T00:00:00+09:00'),
+};
+const showNotice = new Date() < NOTICE.until;
 ---
 
 <div class="hero-zone">
@@ -69,7 +79,7 @@ const subs = slides.slice(1, 3);
       <div class="rank-section">
         <h3 class="rank-title">가장 많이 읽은 글</h3>
         <ol class="rank-list" role="list">
-          {recent.slice(0, 4).map((post, i) => (
+          {recent.slice(0, 3).map((post, i) => (
             <li class="rank-item">
               <a href={`/blog/${post.id}/`}>
                 <span class="rank-num" aria-hidden="true">{i + 1}</span>
@@ -81,11 +91,12 @@ const subs = slides.slice(1, 3);
       </div>
     )}
 
-    <a class="brief-box" href="/rss.xml">
-      <span class="brief-box-title">주간 브리핑</span>
-      <span class="brief-box-desc">에너지·경제·AI 심층 기사를 RSS로 받아보세요.</span>
-      <span class="brief-box-cta">무료 구독 →</span>
-    </a>
+    {showNotice && (
+      <a class="notice-box" href={NOTICE.href}>
+        <span class="notice-box-label">{NOTICE.emoji} {NOTICE.label}</span>
+        <span class="notice-box-badge">{NOTICE.badge}</span>
+      </a>
+    )}
   </aside>
 </div>
 
@@ -118,7 +129,7 @@ const subs = slides.slice(1, 3);
 /* 리드 기사: 제목 좌 + 이미지 우 */
 .lead-story {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 200px; /* 확정: 이미지 오른쪽, 폭 축소 — 제목 공간 확대 */
   gap: 30px;
   align-items: start;
   text-decoration: none;
@@ -230,6 +241,8 @@ const subs = slides.slice(1, 3);
   gap: 24px;
 }
 
+.rank-section { flex: 1; } /* 공지 박스를 사이드바 맨 아래로 밀착 */
+
 .rank-title {
   margin: 0 0 16px;
   font-family: var(--font-ui);
@@ -272,48 +285,41 @@ const subs = slides.slice(1, 3);
   transition: color .15s;
 }
 
-/* 주간 브리핑 박스 → RSS */
-.brief-box {
-  display: block;
-  padding: 16px;
-  background: var(--ink);
+/* 월드컵 트래커 공지 (사이드바 맨 아래) */
+.notice-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
   border-radius: var(--radius-md);
+  background: var(--bg);
   text-decoration: none;
 }
-.brief-box:hover { text-decoration: none; }
-.brief-box:hover .brief-box-cta { text-decoration: underline; text-underline-offset: 3px; }
-.brief-box-title {
-  display: block;
+.notice-box:hover { text-decoration: none; border-color: var(--accent); }
+.notice-box:hover .notice-box-label { color: var(--accent-dark); }
+.notice-box-label {
   font-family: var(--font-ui);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--bg);
-  margin-bottom: 6px;
-}
-.brief-box-desc {
-  display: block;
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  line-height: 1.5;
-  color: color-mix(in srgb, var(--bg) 70%, transparent);
-  margin-bottom: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
   word-break: keep-all;
+  transition: color .15s;
 }
-.brief-box-cta {
-  display: block;
+.notice-box-badge {
+  flex: none;
   font-family: var(--font-ui);
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
 }
-[data-theme="dark"] .brief-box {
-  background: var(--bg-2);
-  border: 1px solid var(--line);
-}
-[data-theme="dark"] .brief-box-title { color: var(--ink); }
-[data-theme="dark"] .brief-box-desc { color: var(--muted); }
 
 /* ─── Responsive ─── */
 @media (max-width: 1023px) {
