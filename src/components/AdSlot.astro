@@ -140,19 +140,24 @@ const adfitDim = ADFIT_DIM[position];
 ) : null}
 
 <style>
+  /* 신문 광고란 스타일: 지면색 박스+괘선으로 감싸 흰 광고 소재가 튀지 않게 */
   .ad-slot {
     margin: 2em 0;
     text-align: center;
     overflow: hidden;
+    background: var(--bg-2);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 12px 14px;
   }
   .ad-label {
     display: block;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: .08em;
+    letter-spacing: .12em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
   /* AdSense가 광고를 채우지 않으면(unfilled) 슬롯 전체 숨김 */
   .ad-slot:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
