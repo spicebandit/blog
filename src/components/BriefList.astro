@@ -1,6 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
-import { formatDateKRCompact } from '../lib/format';
+import { formatDateKRCompact, formatDateEN } from '../lib/format';
 
 interface PostData {
   id: string;
@@ -13,21 +13,26 @@ interface PostData {
 
 interface Props {
   posts: PostData[];
+  lang?: 'ko' | 'en';
+  /** 글 상세 링크 prefix (기본 /blog/, 영문은 /en/blog/) */
+  baseHref?: string;
 }
 
-const { posts } = Astro.props;
+const { posts, lang = 'ko', baseHref = '/blog/' } = Astro.props;
+const isEN = lang === 'en';
+const fmtDate = isEN ? formatDateEN : formatDateKRCompact;
 ---
 <section class="brief-section">
   <div class="brief-header">
     <h2 class="brief-title">Latest Brief</h2>
-    <a href="/blog/" class="brief-more">전체 보기 →</a>
+    {!isEN && <a href="/blog/" class="brief-more">전체 보기 →</a>}
   </div>
   <ul class="brief-list" role="list">
     {posts.map((post) => {
-      const dateLabel = formatDateKRCompact(post.pubDate);
+      const dateLabel = fmtDate(post.pubDate);
       return (
         <li class="brief-item">
-          <a href={`/blog/${post.id}/`} class="brief-link">
+          <a href={`${baseHref}${post.id}/`} class="brief-link">
             <div class:list={['brief-thumb', !post.heroImage && `thumb-${post.category}`]}>
               {post.heroImage
                 ? <img src={post.heroImage} alt="" loading="lazy" />

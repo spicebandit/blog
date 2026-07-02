@@ -1,6 +1,6 @@
 ---
 import { categoryName, type CategorySlug } from '../lib/categories';
-import { formatDateKRShort } from '../lib/format';
+import { formatDateKRShort, formatDateEN } from '../lib/format';
 
 interface PostData {
   id: string;
@@ -15,9 +15,15 @@ interface PostData {
 
 interface Props {
   slides: PostData[];
+  lang?: 'ko' | 'en';
+  /** 글 상세 링크 prefix (기본 /blog/, 영문은 /en/blog/) */
+  baseHref?: string;
 }
 
-const { slides } = Astro.props;
+const { slides, lang = 'ko', baseHref = '/blog/' } = Astro.props;
+const isEN = lang === 'en';
+const fmtDate = isEN ? formatDateEN : formatDateKRShort;
+const kickerSuffix = isEN ? 'In Depth' : '심층분석';
 
 // 신문형: 리드 1건 + 나머지는 전부 서브(2단 그리드로 줄바꿈).
 // 그날 올린 기사 수에 따라 서브 칸이 늘어나거나(4~5건) 사라진다(1건).
@@ -28,8 +34,8 @@ const subs = slides.slice(1);
 <div class="hero-zone">
   <div class="hero-main">
     {lead && (
-      <a class="lead-story" href={`/blog/${lead.id}/`}>
-        <div class="kicker">{categoryName(lead.category)} · 심층분석</div>
+      <a class="lead-story" href={`${baseHref}${lead.id}/`}>
+        <div class="kicker">{categoryName(lead.category)} · {kickerSuffix}</div>
         <div class="lead-grid">
           <div class="lead-body">
             <h2 class="lead-headline">{lead.title}</h2>
@@ -37,8 +43,8 @@ const subs = slides.slice(1);
             <div class="lead-meta">
               {lead.author && <span>{lead.author}</span>}
               {lead.author && <span class="sep">·</span>}
-              <time datetime={lead.pubDate.toISOString()}>{formatDateKRShort(lead.pubDate)}</time>
-              {lead.readingTime && <><span class="sep">·</span><span>{lead.readingTime}분 읽기</span></>}
+              <time datetime={lead.pubDate.toISOString()}>{fmtDate(lead.pubDate)}</time>
+              {lead.readingTime && <><span class="sep">·</span><span>{isEN ? `${lead.readingTime} min read` : `${lead.readingTime}분 읽기`}</span></>}
             </div>
           </div>
           <div class="lead-image">
@@ -54,7 +60,7 @@ const subs = slides.slice(1);
     {subs.length > 0 && (
       <div class="sub-stories">
         {subs.map((post) => (
-          <a class="sub-story" href={`/blog/${post.id}/`}>
+          <a class="sub-story" href={`${baseHref}${post.id}/`}>
             <div class="kicker">{categoryName(post.category)}</div>
             <h3 class="sub-headline">{post.title}</h3>
             <p class="sub-deck">{post.description}</p>

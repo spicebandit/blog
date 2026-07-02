@@ -14,9 +14,13 @@ interface PostData {
 
 interface Props {
   recent: PostData[];
+  lang?: 'ko' | 'en';
+  /** 글 상세 링크 prefix (기본 /blog/, 영문은 /en/blog/) */
+  baseHref?: string;
 }
 
-const { recent } = Astro.props;
+const { recent, lang = 'ko', baseHref = '/blog/' } = Astro.props;
+const isEN = lang === 'en';
 
 // 월드컵 트래커 공지 — 사이드바 하단 (7/21 자동 종료)
 const NOTICE = {
@@ -26,17 +30,18 @@ const NOTICE = {
   badge: '매일 갱신',
   until: new Date('2026-07-21T00:00:00+09:00'),
 };
-const showNotice = new Date() < NOTICE.until;
+// 월드컵 트래커는 한국어 글이므로 영문 페이지에서는 숨긴다
+const showNotice = !isEN && new Date() < NOTICE.until;
 ---
 
 <aside class="home-sidebar">
   {recent.length > 0 && (
     <div class="rank-section">
-      <h3 class="rank-title">가장 많이 읽은 글</h3>
+      <h3 class="rank-title">{isEN ? 'Most Read' : '가장 많이 읽은 글'}</h3>
       <ol class="rank-list" role="list">
         {recent.slice(0, 5).map((post, i) => (
           <li class="rank-item">
-            <a href={`/blog/${post.id}/`}>
+            <a href={`${baseHref}${post.id}/`}>
               <span class="rank-num" aria-hidden="true">{i + 1}</span>
               <span class="rank-headline">{post.title}</span>
             </a>
