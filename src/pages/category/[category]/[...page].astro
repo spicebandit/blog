@@ -1,0 +1,201 @@
+---
+import { getCollection } from 'astro:content';
+import type { Page } from 'astro';
+import Base from '../../../layouts/Base.astro';
+import PostCard from '../../../components/PostCard.astro';
+import HomeSidebar from '../../../components/HomeSidebar.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import { CATEGORY_SLUGS, categoryName, categoryDescription, type CategorySlug } from '../../../lib/categories';
+import { firstBodyImage } from '../../../lib/format';
+import popularData from '../../../data/popular-posts.json';
+
+const PAGE_SIZE = 10;
+
+// /category/energy/ (1페이지), /category/energy/2/ ... 형태로 10편씩 페이지네이션
+export async function getStaticPaths({ paginate }: { paginate: any }) {
+  const PAGE_SIZE = 10;
+  const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  return CATEGORY_SLUGS.flatMap((category) => {
+    const posts = allPosts
+      .filter((p) => p.data.category === category)
+      .map((p) => ({
+        id: p.id,
+        title: p.data.title,
+        description: p.data.description,
+        category: p.data.category,
+        pubDate: p.data.pubDate,
+        heroImage: p.data.heroImage ?? firstBodyImage(p.body),
+      }));
+    return paginate(posts, { params: { category }, pageSize: PAGE_SIZE });
+  });
+}
+
+interface PostItem {
+  id: string;
+  title: string;
+  description: string;
+  category: CategorySlug;
+  pubDate: Date;
+  heroImage?: string;
+}
+
+const { page } = Astro.props as { page: Page<PostItem> };
+const category = Astro.params.category as CategorySlug;
+const name = categoryName(category);
+const desc = categoryDescription(category);
+
+// 사이드바: 전체 글 기준 GA4 인기글 순위 (홈과 동일 로직)
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const popularRankMap = new Map<string, number>(
+  (popularData.posts as { slug: string; views: number }[]).map((p, i) => [p.slug, i])
+);
+const sidebarPosts = [...allPosts]
+  .sort((a, b) => {
+    const rankA = popularRankMap.has(a.id) ? popularRankMap.get(a.id)! : Infinity;
+    const rankB = popularRankMap.has(b.id) ? popularRankMap.get(b.id)! : Infinity;
+    if (rankA !== rankB) return rankA - rankB;
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+  })
+  .slice(0, 5)
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    description: p.data.description,
+    category: p.data.category,
+    pubDate: p.data.pubDate,
+  }));
+
+const pageTitle = page.currentPage > 1 ? `${name} — ${page.currentPage}페이지 | 카테고리` : `${name} | 카테고리`;
+---
+<Base title={pageTitle} description={`${name} — ${desc}`} wide={true}>
+  <!-- 신문 섹션면 헤더: 섹션명 + 한 줄 소개 + 이중괘선 -->
+  <header class="section-head">
+    <div class="section-head-row">
+      <h1 class="section-name">{name}</h1>
+      <span class="section-count">{page.total}편</span>
+    </div>
+    <p class="section-desc">{desc}</p>
+  </header>
+
+  <div class="section-grid">
+    <div class="section-main">
+      {page.data.length === 0 ? (
+        <p style="color: var(--muted); padding: 24px 0;">아직 이 카테고리에 글이 없습니다.</p>
+      ) : (
+        <ul class="section-list">
+          {page.data.map((post) => (
+            <PostCard
+              id={post.id}
+              title={post.title}
+              description={post.description}
+              category={post.category}
+              pubDate={post.pubDate}
+              showCategory={false}
+              heroImage={post.heroImage}
+            />
+          ))}
+        </ul>
+      )}
+
+      {page.lastPage > 1 && (
+        <nav class="pagination" aria-label="페이지 탐색">
+          {page.url.prev ? (
+            <a href={page.url.prev} class="page-btn">← 이전</a>
+          ) : (
+            <span class="page-btn disabled" aria-hidden="true">← 이전</span>
+          )}
+          <span class="page-current" aria-current="page">{page.currentPage}</span>
+          <span class="page-sep">/ {page.lastPage}</span>
+          {page.url.next ? (
+            <a href={page.url.next} class="page-btn">다음 →</a>
+          ) : (
+            <span class="page-btn disabled" aria-hidden="true">다음 →</span>
+          )}
+        </nav>
+      )}
+
+      {/* 각 페이지 최하단 광고 */}
+      <AdSlot position="bottom" network="adfit" />
+    </div>
+    <HomeSidebar recent={sidebarPosts} />
+  </div>
+</Base>
+
+<style>
+  .section-head {
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 14px;
+    margin-bottom: 0;
+  }
+  .section-head-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .section-name {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .section-count {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+  .section-desc {
+    margin: 8px 0 0;
+    font-family: var(--font-serif);
+    font-size: 0.9375rem;
+    color: var(--muted);
+    word-break: keep-all;
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 32px;
+    align-items: start;
+    margin-top: 24px;
+  }
+  .section-main { min-width: 0; }
+  .section-list { list-style: none; padding: 0; margin: 0; }
+
+  .pagination {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin: 36px 0 8px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.875rem;
+    font-family: var(--font-ui);
+  }
+  .page-current {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+    background: var(--accent); color: #fff;
+    border-radius: 50%; font-weight: 700;
+  }
+  .page-sep { color: var(--muted); }
+  .page-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 7px 16px;
+    background: var(--bg-2); color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 999px; font-weight: 600;
+    text-decoration: none; transition: border-color .15s, color .15s;
+  }
+  .page-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+  .page-btn.disabled { opacity: 0.35; pointer-events: none; }
+
+  @media (max-width: 1023px) {
+    .section-grid { grid-template-columns: 1fr; }
+  }
+</style>

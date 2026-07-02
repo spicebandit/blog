@@ -40,7 +40,9 @@ const ADFIT_UNITS: Record<AdPosition, string> = {
   'header':     import.meta.env.PUBLIC_ADFIT_UNIT_HEADER     ?? '',
   'in-article': import.meta.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ?? '',
   'bottom':     import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM     ?? '',
-  'sidebar':    import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM     ?? '',
+  // 사이드바: 미사용 중인 모바일 헤더 유닛(320×50)을 재활용 — bottom 유닛과 한 페이지 중복 방지
+  'sidebar':    import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M
+             ?? import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM ?? '',
 };
 const ADFIT_HEADER_M = import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M ?? '';
 
@@ -72,7 +74,7 @@ const ADFIT_DIM: Record<AdPosition, { w: number; h: number }> = {
   'header':     { w: 728, h: 90 },
   'in-article': { w: 320, h: 100 },
   'bottom':     { w: 320, h: 50 },
-  'sidebar':    { w: 160, h: 600 },
+  'sidebar':    { w: 320, h: 50 }, /* HEADER_M 유닛 크기와 일치해야 함 */
 };
 const adfitDim = ADFIT_DIM[position];
 ---

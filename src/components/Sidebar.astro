@@ -59,7 +59,8 @@ const { recentPosts, catPosts, category } = Astro.props;
     </section>
   )}
 
-  {/* 사이드바 하단 광고 (AdSense, 반응형 소형) */}
+  {/* 사이드바 하단 광고: 애드핏(320×50) + 애드센스(승인 시 노출) */}
+  <AdSlot position="sidebar" network="adfit" />
   <AdSlot position="sidebar" network="adsense" />
 </aside>
 
