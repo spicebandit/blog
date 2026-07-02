@@ -71,12 +71,14 @@ const briefPosts = allPosts
     author: p.data.author,
   }));
 
-// Category sections: 카테고리별 최신 3개
+// Category sections: 카테고리별 최신 4개 (헤더의 편수는 카테고리 전체 글 수)
 const byCat = (cat: CategorySlug) =>
   allPosts
     .filter(p => p.data.category === cat)
-    .slice(0, 3)
+    .slice(0, 4)
     .map(postToSlide);
+const catTotal = (cat: CategorySlug) =>
+  allPosts.filter(p => p.data.category === cat).length;
 ---
 <Base title="BASELOAD" description="에너지·경제·AI·일상을 다루는 뉴스 블로그" wide={true}>
 
@@ -91,7 +93,7 @@ const byCat = (cat: CategorySlug) =>
 
   <!-- Category sections × 4 -->
   {CATEGORY_SLUGS.map((cat) => (
-    <CategorySection category={cat} posts={byCat(cat)} />
+    <CategorySection category={cat} posts={byCat(cat)} total={catTotal(cat)} />
   ))}
 
   {/* 홈 최하단 광고 (AdFit 가로 배너, PC 728×90 / 모바일 320×50) */}

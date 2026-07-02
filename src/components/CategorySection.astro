@@ -16,9 +16,11 @@ interface PostData {
 interface Props {
   category: CategorySlug;
   posts: PostData[];
+  /** 카테고리 전체 글 수 (노출 수와 다르므로 별도 전달) */
+  total?: number;
 }
 
-const { category, posts } = Astro.props;
+const { category, posts, total } = Astro.props;
 ---
 {posts.length > 0 && (
   <section class="cat-section" aria-label={categoryName(category)}>
@@ -26,7 +28,7 @@ const { category, posts } = Astro.props;
       <h2 class:list={['cat-section-title', category]}>
         <span class="cat-dot" aria-hidden="true"></span>
         {categoryName(category)}
-        <span class="cat-count">{posts.length}편</span>
+        {total != null && <span class="cat-count">{total}편</span>}
       </h2>
       <a class="cat-more" href={`/category/${category}/`}>
         더 보기
@@ -116,8 +118,8 @@ const { category, posts } = Astro.props;
 
 .cat-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 같은 폭에 4개 노출 */
+  gap: 16px;
 }
 @media (max-width: 1023px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 767px)  { .cat-grid { grid-template-columns: 1fr; } }
