@@ -24,6 +24,10 @@ case "$TAG" in
   0629) ITEMS=(
     "$D/2026-06-26-power-settlement-manual-4-coefficient-outlook.md|2026-06-29T08:00:00+09:00"
   );;
+  0703) ITEMS=(
+    "$D/2026-07-02-local-llm-beginner-guide.md|2026-07-03T08:00:00+09:00"
+    "$D/2026-07-02-sodium-ion-battery-outlook.md|2026-07-03T08:30:00+09:00"
+  );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
 
