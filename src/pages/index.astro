@@ -30,14 +30,18 @@ const buildDate = new Date();
 const todayStr = kstDateStr(buildDate);
 const yesterdayStr = kstDateStr(new Date(buildDate.getTime() - 86400000));
 
-// Today Pick 캐러셀: 오늘 발행 → 없으면 어제 발행 → 없으면 최신 3개 폴백
+// Today Pick: 오늘 발행 → 없으면 어제 발행 → 없으면 최신 폴백.
+// 신문형 히어로는 리드 1 + 서브 2가 필요하므로 부족하면 최신글로 채운다.
 let todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === todayStr);
 if (todayPickSource.length === 0)
   todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === yesterdayStr);
-if (todayPickSource.length === 0)
-  todayPickSource = allPosts.slice(0, 3);
+if (todayPickSource.length < 3) {
+  const ids = new Set(todayPickSource.map(p => p.id));
+  todayPickSource = [...todayPickSource, ...allPosts.filter(p => !ids.has(p.id))];
+}
 
-const todayPickSlides = todayPickSource.slice(0, 5).map(postToSlide);
+// 신문형 히어로: 리드 1건 + 서브 2건
+const todayPickSlides = todayPickSource.slice(0, 3).map(postToSlide);
 const todayPickIds = new Set(todayPickSlides.map(p => p.id));
 
 // 많이 본 기사 (사이드바): GA4 7일 조회수 순위

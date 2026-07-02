@@ -19,490 +19,312 @@ interface Props {
 }
 
 const { slides, recent } = Astro.props;
-const hasCarousel = slides.length > 1;
+
+// 신문형: 캐러셀 대신 리드 기사 1건 + 서브 기사 2건
+const lead = slides[0];
+const subs = slides.slice(1, 3);
 ---
 
-<div class="section-label-row">
-  <span class="section-editorial-label">
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-    Today Pick
-  </span>
-</div>
-
 <div class="hero-zone">
-  <!-- Carousel (left) -->
-  <div class="hero-carousel" role="region" aria-label="오늘의 픽">
-    <!-- Slides viewport -->
-    <div class="carousel-viewport">
-      <div class="carousel-track" id="hero-track">
-        {slides.map((post, i) => {
-          const dateLabel = formatDateKRShort(post.pubDate);
-          return (
-            <a
-              class="carousel-slide"
-              href={`/blog/${post.id}/`}
-              aria-hidden={i !== 0 ? 'true' : undefined}
-              tabindex={i !== 0 ? -1 : 0}
-            >
-              <!-- Left: text -->
-              <div class="slide-body">
-                <div class="slide-meta-top">
-                  <span class:list={['cat-badge', post.category]}>{categoryName(post.category)}</span>
-                  {i === 0 && <span class="top-badge">1면 톱</span>}
-                </div>
-                <h2 class="hero-headline">{post.title}</h2>
-                <p class="hero-deck">{post.description}</p>
-                <div class="hero-meta-bottom">
-                  {post.author && <span class="author">{post.author}</span>}
-                  {post.author && <span class="sep">·</span>}
-                  <time datetime={post.pubDate.toISOString()}>{dateLabel}</time>
-                  {post.readingTime && <><span class="sep">·</span><span>{post.readingTime}분</span></>}
-                </div>
-                <span class="read-btn">
-                  전문 읽기
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </div>
-              <!-- Right: image -->
-              <div class:list={['slide-image', `slide-image-${post.category}`]}>
-                {post.heroImage
-                  ? <img src={post.heroImage} alt="" loading={i === 0 ? 'eager' : 'lazy'} />
-                  : <div class="slide-image-placeholder" aria-hidden="true">{post.category.toUpperCase()}</div>
-                }
-              </div>
-            </a>
-          );
-        })}
-      </div>
-    </div>
-
-    <!-- Bottom navigation footer -->
-    {hasCarousel && (
-      <div class="carousel-footer">
-        <button class="carousel-btn" id="hero-prev" aria-label="이전 기사">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <div class="carousel-dots" role="tablist" aria-label="슬라이드 탐색">
-          {slides.map((_, i) => (
-            <button
-              class:list={['dot', i === 0 && 'active']}
-              role="tab"
-              aria-selected={i === 0 ? 'true' : 'false'}
-              aria-label={`슬라이드 ${i + 1}`}
-              data-index={String(i)}
-            />
-          ))}
+  <!-- 본판 (좌): 리드 기사 + 서브 기사 2단 -->
+  <div class="hero-main">
+    {lead && (
+      <a class="lead-story" href={`/blog/${lead.id}/`}>
+        <div class="lead-body">
+          <div class="kicker">{categoryName(lead.category)} · 심층분석</div>
+          <h2 class="lead-headline">{lead.title}</h2>
+          <p class="lead-deck">{lead.description}</p>
+          <div class="lead-meta">
+            {lead.author && <span>{lead.author}</span>}
+            {lead.author && <span class="sep">·</span>}
+            <time datetime={lead.pubDate.toISOString()}>{formatDateKRShort(lead.pubDate)}</time>
+            {lead.readingTime && <><span class="sep">·</span><span>{lead.readingTime}분 읽기</span></>}
+          </div>
         </div>
-        <button class="carousel-btn" id="hero-next" aria-label="다음 기사">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
-        <span class="carousel-counter" id="hero-counter">1 / {slides.length}</span>
+        <div class="lead-image">
+          {lead.heroImage
+            ? <img src={lead.heroImage} alt="" loading="eager" />
+            : <div class="lead-image-placeholder" aria-hidden="true"><span>BASELOAD</span></div>
+          }
+        </div>
+      </a>
+    )}
+
+    {subs.length > 0 && (
+      <div class="sub-stories">
+        {subs.map((post) => (
+          <a class="sub-story" href={`/blog/${post.id}/`}>
+            <div class="kicker">{categoryName(post.category)}</div>
+            <h3 class="sub-headline">{post.title}</h3>
+            <p class="sub-deck">{post.description}</p>
+          </a>
+        ))}
       </div>
     )}
   </div>
 
-  <!-- Sidebar: 많이 본 기사 -->
-  <div class="hero-sidebar">
+  <!-- 사이드바 (우): 가장 많이 읽은 글 + 주간 브리핑 -->
+  <aside class="hero-sidebar">
     {recent.length > 0 && (
-      <div class="sidebar-section">
-        <div class="sidebar-header">
-          <h3>많이 본 기사</h3>
-          <a href="/">전체 보기</a>
-        </div>
-        <ul class="latest-list" role="list">
-          {recent.slice(0, 4).map((post, i) => {
-            const t = formatDateKRCompact(post.pubDate);
-            return (
-              <li class="latest-item">
-                <a href={`/blog/${post.id}/`}>
-                  <span class:list={['item-rank', i < 3 ? 'rank-top' : 'rank-rest']}>{i + 1}</span>
-                  {post.heroImage
-                    ? <img class="item-thumb" src={post.heroImage} alt="" loading="lazy" width="52" height="52" />
-                    : <div class:list={['item-thumb-placeholder', post.category]} aria-hidden="true"></div>
-                  }
-                  <div class="item-content">
-                    <span class:list={['item-badge', post.category]}>{categoryName(post.category)}</span>
-                    <p class="item-title">{post.title}</p>
-                    <time class="item-time" datetime={post.pubDate.toISOString()}>{t}</time>
-                  </div>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+      <div class="rank-section">
+        <h3 class="rank-title">가장 많이 읽은 글</h3>
+        <ol class="rank-list" role="list">
+          {recent.slice(0, 4).map((post, i) => (
+            <li class="rank-item">
+              <a href={`/blog/${post.id}/`}>
+                <span class="rank-num" aria-hidden="true">{i + 1}</span>
+                <span class="rank-headline">{post.title}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
       </div>
     )}
-  </div>
+
+    <a class="brief-box" href="/rss.xml">
+      <span class="brief-box-title">주간 브리핑</span>
+      <span class="brief-box-desc">에너지·경제·AI 심층 기사를 RSS로 받아보세요.</span>
+      <span class="brief-box-cta">무료 구독 →</span>
+    </a>
+  </aside>
 </div>
-
-{hasCarousel && (
-  <script>
-    (() => {
-      const track = document.getElementById('hero-track');
-      if (!track) return;
-      const slides = Array.from(track.querySelectorAll('.carousel-slide'));
-      if (slides.length <= 1) return;
-
-      const dots = Array.from(document.querySelectorAll('.dot'));
-      const prevBtn = document.getElementById('hero-prev');
-      const nextBtn = document.getElementById('hero-next');
-      const counter = document.getElementById('hero-counter');
-      const carousel = track.closest('.hero-carousel');
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-      let cur = 0;
-      let timer = 0;
-
-      function goTo(idx) {
-        slides[cur].setAttribute('aria-hidden', 'true');
-        slides[cur].tabIndex = -1;
-        cur = ((idx % slides.length) + slides.length) % slides.length;
-        track.style.transform = `translateX(-${cur * 100}%)`;
-        slides[cur].removeAttribute('aria-hidden');
-        slides[cur].tabIndex = 0;
-        dots.forEach((d, i) => {
-          d.classList.toggle('active', i === cur);
-          d.setAttribute('aria-selected', i === cur ? 'true' : 'false');
-        });
-        if (counter) counter.textContent = `${cur + 1} / ${slides.length}`;
-      }
-
-      function start() {
-        if (prefersReduced) return;
-        timer = window.setInterval(() => goTo(cur + 1), 5000);
-      }
-      function reset() { clearInterval(timer); start(); }
-
-      prevBtn?.addEventListener('click', () => { goTo(cur - 1); reset(); });
-      nextBtn?.addEventListener('click', () => { goTo(cur + 1); reset(); });
-      dots.forEach(d => d.addEventListener('click', () => { goTo(Number(d.dataset.index)); reset(); }));
-      carousel?.addEventListener('mouseenter', () => clearInterval(timer));
-      carousel?.addEventListener('mouseleave', start);
-      carousel?.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') { goTo(cur - 1); reset(); e.preventDefault(); }
-        if (e.key === 'ArrowRight') { goTo(cur + 1); reset(); e.preventDefault(); }
-      });
-
-      start();
-    })();
-  </script>
-)}
 
 <style>
 .hero-zone {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 24px;
-  margin-bottom: 40px;
-}
-
-/* ─── Section label ─── */
-.section-label-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-.section-editorial-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.6875rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-soft);
-  padding: 4px 12px;
-  border-radius: 999px;
-}
-
-/* ─── Carousel container ─── */
-.hero-carousel {
-  border-radius: var(--radius-xl, 18px);
+  grid-template-columns: 1fr 320px;
+  gap: 0;
+  margin-bottom: 44px;
   border: 1px solid var(--line);
-  background: var(--accent-soft);
-  overflow: hidden;
+  background: var(--bg);
 }
 
-/* ─── Viewport clips sliding track ─── */
-.carousel-viewport {
-  overflow: hidden;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  will-change: transform;
-}
-
-/* ─── Each slide: text left + image right ─── */
-.carousel-slide {
-  flex: 0 0 100%;
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  padding: 32px 32px 28px;
-  text-decoration: none;
-  color: var(--ink);
-}
-.carousel-slide:hover { text-decoration: none; }
-
-/* Left: text body */
-.slide-body {
-  flex: 1;
+/* ─── 본판 (좌) ─── */
+.hero-main {
+  padding: 30px 30px 32px;
+  border-right: 1px solid var(--line);
   min-width: 0;
 }
 
-.slide-meta-top {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 14px;
+.kicker {
+  font-family: var(--font-ui);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
-/* Category badges */
-.cat-badge {
-  display: inline-block;
-  font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
-  padding: 3px 9px; border-radius: 999px;
-}
-.cat-badge.energy  { background: var(--cat-energy-soft, #fef3c7);  color: var(--cat-energy, #d97706); }
-.cat-badge.economy { background: var(--cat-economy-soft, #d1fae5); color: var(--cat-economy, #059669); }
-.cat-badge.ai      { background: var(--cat-ai-soft, #ede9fe);      color: var(--cat-ai, #7a3ff2); }
-.cat-badge.life    { background: var(--cat-life-soft, #fce7f3);    color: var(--cat-life, #db2777); }
-
-.top-badge {
-  font-size: 11px; font-weight: 800; letter-spacing: 0.05em;
-  color: var(--accent); background: var(--accent-soft);
-  padding: 3px 9px; border-radius: 999px;
-}
-
-.hero-headline {
-  margin: 0 0 12px;
-  font-size: clamp(1.15rem, 2.4vw, 2.0rem);
-  font-weight: 900;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
+/* 리드 기사: 제목 좌 + 이미지 우 */
+.lead-story {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+  align-items: start;
+  text-decoration: none;
   color: var(--ink);
+}
+.lead-story:hover { text-decoration: none; }
+.lead-story:hover .lead-headline { color: var(--accent-dark); }
+
+.lead-headline {
+  margin: 12px 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2.375rem);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  word-break: keep-all;
+  text-wrap: balance;
+  transition: color .15s;
+}
+.lead-deck {
+  margin: 14px 0 0;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--muted);
   word-break: keep-all;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
-.hero-deck {
-  margin: 0 0 16px;
-  font-size: 0.9375rem;
-  color: var(--ink-2, var(--muted));
-  line-height: 1.65;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  word-break: keep-all;
+.lead-meta {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--muted);
 }
-.hero-meta-bottom {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 0.8125rem; color: var(--muted);
-  flex-wrap: wrap; margin-bottom: 20px;
-}
-.hero-meta-bottom .author { font-weight: 600; color: var(--ink-2); }
-.hero-meta-bottom .sep { color: var(--line); }
+.lead-meta .sep { color: var(--line); }
 
-.read-btn {
-  display: inline-flex; align-items: center; gap: 7px;
-  padding: 9px 18px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 0.8125rem; font-weight: 700;
-  transition: background .15s, transform .15s;
-}
-.carousel-slide:hover .read-btn {
-  background: var(--accent-dark, #5a2ec0);
-  transform: translateX(2px);
-}
-
-/* Right: image */
-.slide-image {
-  flex-shrink: 0;
-  width: clamp(160px, 26%, 280px);
-  aspect-ratio: 3/4;
-  border-radius: 12px;
+.lead-image {
+  aspect-ratio: 4/3;
+  border: 1px solid var(--line);
   overflow: hidden;
 }
-.slide-image img {
+.lead-image img {
   width: 100%; height: 100%;
   object-fit: cover; display: block;
 }
-.slide-image-placeholder {
+.lead-image-placeholder {
   width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 28px; font-weight: 900; color: rgba(255,255,255,0.2);
-  letter-spacing: -1px;
+  background: linear-gradient(120deg, var(--accent-soft), var(--bg-2));
+  display: flex; align-items: flex-end; padding: 12px;
 }
-.slide-image-energy  { background: linear-gradient(160deg, #451a03, #92400e, #d97706); }
-.slide-image-economy { background: linear-gradient(160deg, #022c22, #065f46, #059669); }
-.slide-image-ai      { background: linear-gradient(160deg, #1e1b4b, #4c1d95, #7a3ff2); }
-.slide-image-life    { background: linear-gradient(160deg, #500724, #9d174d, #db2777); }
+.lead-image-placeholder span {
+  font-family: var(--font-serif);
+  font-size: 0.6875rem; font-weight: 700; color: var(--muted);
+}
 
-/* ─── Bottom navigation footer ─── */
-.carousel-footer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 11px 20px;
-  background: var(--bg);
+/* 서브 기사 2단 */
+.sub-stories {
+  margin-top: 26px;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
-
-.carousel-btn {
-  flex-shrink: 0;
-  width: 28px; height: 28px;
-  border-radius: 50%;
-  border: 1.5px solid var(--line);
-  background: var(--bg);
-  color: var(--ink-2);
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: border-color .15s, color .15s, background .15s;
-  padding: 0;
-}
-.carousel-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-soft);
-}
-
-.carousel-dots {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  border: none;
-  background: var(--line);
-  cursor: pointer;
-  padding: 0;
-  transition: background .2s, transform .2s;
-}
-.dot.active {
-  background: var(--accent);
-  transform: scale(1.3);
-}
-
-.carousel-counter {
-  margin-left: auto;
-  font-size: 11px;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-/* ─── Sidebar ─── */
-.hero-sidebar { display: flex; flex-direction: column; gap: 16px; }
-
-.sidebar-section {
-  background: var(--bg-2, #f9fafb);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg, 14px);
-  overflow: hidden;
-  flex: 1;
-}
-.sidebar-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--line);
-}
-.sidebar-header h3 {
-  margin: 0;
-  font-size: 0.6875rem; font-weight: 900; letter-spacing: 0.10em;
-  text-transform: uppercase; color: var(--ink-2);
-}
-.sidebar-header a {
-  font-size: 0.75rem; color: var(--accent); font-weight: 600;
+.sub-story {
   text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
 }
-.sidebar-header a:hover { text-decoration: underline; }
-
-.latest-list { list-style: none; padding: 0; margin: 0; }
-.latest-item { border-bottom: 1px solid var(--line-2, #f3f4f6); }
-.latest-item:last-child { border-bottom: none; }
-.latest-item a {
-  display: flex; align-items: center; gap: 7px; padding: 6px 12px;
-  transition: background .15s; text-decoration: none;
+.sub-story:hover { text-decoration: none; }
+.sub-story:hover .sub-headline { color: var(--accent-dark); }
+.sub-headline {
+  margin: 6px 0 4px;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.24;
+  color: var(--ink);
+  word-break: keep-all;
+  transition: color .15s;
 }
-.latest-item a:hover { background: var(--accent-soft); text-decoration: none; }
-
-.item-rank {
-  flex-shrink: 0;
-  width: 18px;
-  font-size: 0.9375rem; font-weight: 900;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
-  text-align: right;
-}
-.item-rank.rank-top  { color: var(--accent); }
-.item-rank.rank-rest { color: var(--muted); }
-
-.item-thumb {
-  flex-shrink: 0;
-  width: 42px; height: 42px;
-  border-radius: 5px;
-  object-fit: cover;
-}
-.item-thumb-placeholder {
-  flex-shrink: 0;
-  width: 42px; height: 42px;
-  border-radius: 5px;
-}
-.item-thumb-placeholder.energy  { background: linear-gradient(135deg, #92400e, #d97706); }
-.item-thumb-placeholder.economy { background: linear-gradient(135deg, #065f46, #059669); }
-.item-thumb-placeholder.ai      { background: linear-gradient(135deg, #4c1d95, #7a3ff2); }
-.item-thumb-placeholder.life    { background: linear-gradient(135deg, #9d174d, #db2777); }
-
-.item-content { flex: 1; min-width: 0; }
-
-.item-badge {
-  display: block; font-size: 9px; font-weight: 800;
-  letter-spacing: .04em; text-transform: uppercase; margin-bottom: 1px;
-}
-.item-badge.energy  { color: var(--cat-energy, #d97706); }
-.item-badge.economy { color: var(--cat-economy, #059669); }
-.item-badge.ai      { color: var(--cat-ai, #7a3ff2); }
-.item-badge.life    { color: var(--cat-life, #db2777); }
-
-.item-title {
-  margin: 0 0 2px;
-  font-size: 0.75rem; font-weight: 700; line-height: 1.3;
-  color: var(--ink); word-break: keep-all;
+.sub-deck {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--muted);
+  word-break: keep-all;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.latest-item a:hover .item-title { color: var(--accent); }
-.item-time { font-size: 11px; color: var(--muted); }
+
+/* ─── 사이드바 (우) ─── */
+.hero-sidebar {
+  padding: 30px 26px;
+  background: var(--bg-2);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rank-title {
+  margin: 0 0 16px;
+  font-family: var(--font-ui);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 8px;
+}
+.rank-list { list-style: none; margin: 0; padding: 0; }
+.rank-item + .rank-item {
+  border-top: 1px solid var(--line);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+.rank-item a {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+}
+.rank-item a:hover { text-decoration: none; }
+.rank-item a:hover .rank-headline { color: var(--accent-dark); }
+.rank-num {
+  flex: none;
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+.rank-headline {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.32;
+  color: var(--ink);
+  word-break: keep-all;
+  transition: color .15s;
+}
+
+/* 주간 브리핑 박스 → RSS */
+.brief-box {
+  display: block;
+  padding: 16px;
+  background: var(--ink);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+}
+.brief-box:hover { text-decoration: none; }
+.brief-box:hover .brief-box-cta { text-decoration: underline; text-underline-offset: 3px; }
+.brief-box-title {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--bg);
+  margin-bottom: 6px;
+}
+.brief-box-desc {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--bg) 70%, transparent);
+  margin-bottom: 10px;
+  word-break: keep-all;
+}
+.brief-box-cta {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+[data-theme="dark"] .brief-box {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+}
+[data-theme="dark"] .brief-box-title { color: var(--ink); }
+[data-theme="dark"] .brief-box-desc { color: var(--muted); }
 
 /* ─── Responsive ─── */
 @media (max-width: 1023px) {
   .hero-zone { grid-template-columns: 1fr; }
-  .hero-sidebar { display: none; }
+  .hero-main { border-right: none; border-bottom: 1px solid var(--line); }
 }
 @media (max-width: 767px) {
-  .carousel-slide { padding: 20px 20px 16px; gap: 16px; }
-  .hero-headline { font-size: 1.35rem; }
-  .hero-deck { font-size: 0.9rem; }
-  .slide-image { width: 120px; }
-  .carousel-footer { padding: 9px 16px; }
-}
-@media (max-width: 480px) {
-  .slide-image { display: none; }
+  .hero-main { padding: 20px 18px 24px; }
+  .hero-sidebar { padding: 20px 18px; }
+  .lead-story { grid-template-columns: 1fr; gap: 16px; }
+  .lead-image { order: -1; }
+  .sub-stories { grid-template-columns: 1fr; gap: 18px; }
 }
 </style>

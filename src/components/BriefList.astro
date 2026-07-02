@@ -73,9 +73,10 @@ const { posts } = Astro.props;
   border-radius: 1px;
 }
 .brief-title {
+  font-family: var(--font-serif);
   font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   color: var(--ink);
   margin: 0;
 }
@@ -123,10 +124,7 @@ const { posts } = Astro.props;
   display: block;
 }
 .thumb-placeholder { width: 100%; height: 100%; }
-.brief-thumb.thumb-energy  .thumb-placeholder { background: linear-gradient(135deg, #451a03, #92400e, #d97706); }
-.brief-thumb.thumb-economy .thumb-placeholder { background: linear-gradient(135deg, #022c22, #065f46, #059669); }
-.brief-thumb.thumb-ai      .thumb-placeholder { background: linear-gradient(135deg, #1e1b4b, #4c1d95, #7a3ff2); }
-.brief-thumb.thumb-life    .thumb-placeholder { background: linear-gradient(135deg, #500724, #9d174d, #db2777); }
+.brief-thumb .thumb-placeholder { background: linear-gradient(135deg, var(--accent-soft), var(--bg-2)); border: 1px solid var(--line); }
 
 .brief-body {
   flex: 1;
@@ -136,27 +134,24 @@ const { posts } = Astro.props;
   gap: 5px;
 }
 
+/* 신문형: 배경 없는 레드 캡스 라벨 */
 .cat-badge {
   display: inline-block;
   font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 2px 7px;
-  border-radius: 999px;
+  color: var(--accent);
   align-self: flex-start;
 }
-.cat-badge.energy  { background: var(--cat-energy-soft, #fef3c7);  color: var(--cat-energy, #d97706); }
-.cat-badge.economy { background: var(--cat-economy-soft, #d1fae5); color: var(--cat-economy, #059669); }
-.cat-badge.ai      { background: var(--cat-ai-soft, #ede9fe);      color: var(--cat-ai, #7a3ff2); }
-.cat-badge.life    { background: var(--cat-life-soft, #fce7f3);    color: var(--cat-life, #db2777); }
 
 .brief-headline {
   margin: 0;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: -0.035em;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: -0.015em;
   color: var(--ink);
   word-break: keep-all;
   display: -webkit-box;

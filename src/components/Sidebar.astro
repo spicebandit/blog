@@ -66,8 +66,8 @@ const { recentPosts, catPosts, category } = Astro.props;
 <style>
   .article-sidebar {
     position: sticky;
-    top: calc(var(--nav-h) + 24px);
-    max-height: calc(100vh - var(--nav-h) - 48px);
+    top: 24px; /* 헤더가 비고정이므로 화면 상단 기준 */
+    max-height: calc(100vh - 48px);
     overflow-y: auto;
     scrollbar-width: none;
   }
@@ -142,17 +142,15 @@ const { recentPosts, catPosts, category } = Astro.props;
     color: var(--muted);
   }
 
+  /* 신문형: 배경 없는 레드 캡스 라벨 */
   .sb-cat {
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 0.66rem;
     font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 999px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
   }
-  .sb-cat.cat-energy  { background: var(--cat-energy-soft);  color: var(--cat-energy); }
-  .sb-cat.cat-economy { background: var(--cat-economy-soft); color: var(--cat-economy); }
-  .sb-cat.cat-ai      { background: var(--cat-ai-soft);      color: var(--cat-ai); }
-  .sb-cat.cat-life    { background: var(--cat-life-soft);    color: var(--cat-life); }
 
   @media (max-width: 959px) {
     .article-sidebar { display: none; }

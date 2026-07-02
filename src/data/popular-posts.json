@@ -1,81 +1,73 @@
 {
-  "updatedAt": "2026-06-24T07:10:52.325Z",
+  "updatedAt": "2026-07-02T06:57:23.948Z",
   "period": "7d",
   "posts": [
     {
       "slug": "2026-world-cup-tracker",
-      "views": 28
-    },
-    {
-      "slug": "claude-code-stock-agent-2-kis-api",
-      "views": 11
+      "views": 12
     },
     {
       "slug": "claude-code-stock-agent-1-design",
-      "views": 7
-    },
-    {
-      "slug": "claude-code-stock-agent-4-trade-safety",
-      "views": 7
-    },
-    {
-      "slug": "2026-06-22-energy-storage-ess-basics",
       "views": 6
     },
     {
-      "slug": "claude-code-stock-agent-5-operations",
+      "slug": "2026-06-18-how-to-check-claude-ai-server-status",
       "views": 5
     },
     {
-      "slug": "2026-06-21-korea-power-generation-merger",
+      "slug": "2026-06-23-korea-ai-datacenter-outlook",
+      "views": 5
+    },
+    {
+      "slug": "2026-06-25-korea-clean-hydrogen-chps-2026-status",
+      "views": 5
+    },
+    {
+      "slug": "claude-code-stock-agent-2-kis-api",
       "views": 4
     },
     {
-      "slug": "2026-06-22-won-dollar-exchange-rate-1500-impact",
-      "views": 4
+      "slug": "2026-06-26-electricity-market-settlement-smp-cp",
+      "views": 3
     },
     {
-      "slug": "korea-power-industry-2026-h2-outlook",
-      "views": 4
+      "slug": "2026-06-26-reading-recession-signals",
+      "views": 3
+    },
+    {
+      "slug": "2026-06-12-solo-business-model-design",
+      "views": 2
     },
     {
       "slug": "2026-06-21-byd-self-driving-accident-compensation",
-      "views": 3
+      "views": 2
     },
     {
-      "slug": "2026-06-22-smr-mmr-nuclear-market-spectrum",
-      "views": 3
+      "slug": "2026-06-21-korea-power-generation-merger",
+      "views": 2
     },
     {
       "slug": "2026-06-23-exchange-rate-and-daily-life",
-      "views": 3
-    },
-    {
-      "slug": "2026-06-20-dart-api-claude-code",
       "views": 2
     },
     {
-      "slug": "2026-06-22-chatgpt-1-billion-users-ai-market-shift",
+      "slug": "2026-06-24-kospi-won-divergence-2026",
       "views": 2
     },
     {
-      "slug": "2026-06-22-korea-power-market-realtime-ess",
+      "slug": "2026-06-25-us-quantum-computing-white-house-policy",
       "views": 2
     },
     {
-      "slug": "2026-06-23-claude-fable5-us-government-suspension",
+      "slug": "2026-06-27-free-developer-apis-guide",
       "views": 2
     },
     {
-      "slug": "2026-06-23-korea-ai-datacenter-outlook",
+      "slug": "2026-06-27-korea-stock-broker-api-comparison",
       "views": 2
     },
     {
-      "slug": "korea-lmp-regional-electricity-pricing-2026",
-      "views": 2
-    },
-    {
-      "slug": "2026-06-14-us-ai-model-export-control-fable5",
+      "slug": "2026-06-21-energy-storage-ess-basics",
       "views": 1
     },
     {
@@ -83,31 +75,39 @@
       "views": 1
     },
     {
-      "slug": "2026-06-22-agentic-ai-enterprise-productivity-2026",
+      "slug": "2026-06-24-obsidian-ai-knowledge-management-automation",
       "views": 1
     },
     {
-      "slug": "2026-06-24-kospi-crash-june-23-cause-outlook",
+      "slug": "2026-06-25-micron-fy26-q3-earnings-ai-memory",
       "views": 1
     },
     {
-      "slug": "2026-06-24-kospi-won-divergence-2026",
+      "slug": "2026-06-25-oil-price-ceasefire-monetary-policy",
       "views": 1
     },
     {
-      "slug": "ai-agent-harness-engineering",
+      "slug": "2026-06-26-eu-europa-ai-sovereign-model",
       "views": 1
     },
     {
-      "slug": "claude-code-blog-automation-guide",
+      "slug": "2026-06-26-ot-security-resurgence-risk-cases",
       "views": 1
     },
     {
-      "slug": "claude-code-stock-agent-3-analysts",
+      "slug": "2026-06-26-power-settlement-manual-2-capacity-payment",
       "views": 1
     },
     {
-      "slug": "oil-gas-price-outlook-iran-war-end",
+      "slug": "2026-06-26-power-settlement-manual-3-settlement-coefficient",
+      "views": 1
+    },
+    {
+      "slug": "2026-06-27-korea-public-data-api-guide",
+      "views": 1
+    },
+    {
+      "slug": "vscode-claude-code-usage-guide",
       "views": 1
     }
   ]
