@@ -171,6 +171,8 @@ curl -s https://status.claude.com/api/v2/status.json
 
 정리하면, **1순위는 언제나 공식 상태페이지([status.claude.com](https://status.claude.com))**입니다. 여기에 **알림 구독**을 한 번 걸어두면, 앞으로는 "왜 안 되지?" 하고 헤매는 대신 자동으로 통지를 받게 됩니다. 개발자라면 JSON API로 모니터링에 붙이고, 공식 반영이 느릴 땐 다운디텍터로 교차 확인하면 됩니다. 클로드를 업무 도구로 쓰는 사람일수록, 이 확인 루틴 하나가 멈춰 선 시간을 분 단위로 줄여줍니다.
 
+> 💡 클로드 같은 클라우드 AI가 자주 멈춰 답답하다면, 장애·인터넷과 무관하게 내 컴퓨터에서 돌아가는 대안도 있습니다 — [로컬 LLM 시작 가이드: 내 컴퓨터에서 AI 돌리기](/blog/2026-07-02-local-llm-beginner-guide/)를 참고하세요.
+
 <style>
 .status-legend{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
 .status-legend .st{flex:1;min-width:96px;border:1px solid #e5e7eb;border-radius:10px;padding:.6rem .5rem;background:#fafafa;font-size:.8rem;line-height:1.45;text-align:center}
