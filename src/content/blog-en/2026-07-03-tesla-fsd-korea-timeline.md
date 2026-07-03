@@ -1,7 +1,7 @@
 ---
 title: "Tesla FSD in Korea: Why Only 2.4% of Teslas Can Use It"
 description: "Tesla FSD launched in Korea, but only 4,292 cars — 2.4% of the fleet — can legally use it. How trade agreements and safety rules split Korean Teslas into four fates, and when China-built Model 3/Y might finally get access."
-pubDate: 2026-07-04T09:00:00+09:00
+pubDate: 2026-07-04T00:24:00+09:00
 category: ai
 tags: ["Tesla FSD", "Autonomous Driving", "DCAS", "Vehicle Regulation"]
 lang: en

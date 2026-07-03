@@ -13,6 +13,7 @@ set base to "https://www.baseload.co.kr"
 
 -- (path, 매칭용 슬러그) 목표 목록
 set targets to {¬
+  {"/blog/2026-07-03-tesla-fsd-korea-timeline/", "tesla-fsd-korea-timeline"}, ¬
   {"/blog/2026-07-03-hyman-minsky-model-korea-2026/", "hyman-minsky-model-korea-2026"}, ¬
   {"/blog/2026-07-03-local-llm-iphone-guide/", "local-llm-iphone-guide"}, ¬
   {"/blog/2026-07-02-local-llm-beginner-guide/", "local-llm-beginner-guide"}, ¬
