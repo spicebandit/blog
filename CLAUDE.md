@@ -35,6 +35,11 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
    git add . && git commit -m "post: <글 제목>" && git push
    ```
 7. 발행 후 사용자에게 글 URL 예상 경로(`/blog/<슬러그>/`)를 알려줄 것
+8. **영문판 동시 발행 (AI 카테고리 필수)**: `category: ai` 글은 발행(draft 제거) 시 **반드시 영문판을 함께 만든다**.
+   - 파일: `src/content/blog-en/<같은 슬러그>.md`, frontmatter에 `lang: en`, `koSlug: <한글 글 슬러그>`, pubDate는 한글 글과 동일, draft 없이 바로 발행
+   - 자연스러운 네이티브 영어로 의역(직역 금지), SVG 라벨·figcaption·FAQ 스키마까지 번역, Unsplash 출처는 영문 원형 유지
+   - 내부링크는 영문판이 존재하는 글만 `/en/blog/...`로 변환
+   - 예약발행(scheduled-publish.sh) 배치에 ai 글이 있으면, **배치를 걸기 전에 영문판을 미리 만들어 함께 커밋**해 둔다 (영문판은 draft 필드가 없으므로 한글 글이 발행되는 시점에 함께 노출된다 — 단, pubDate가 미래면 그 시각 이후 빌드에서 노출)
 
 ## 이미지·그래프 삽입 규칙
 
