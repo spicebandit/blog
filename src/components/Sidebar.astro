@@ -5,37 +5,16 @@ import type { CategorySlug } from '../lib/categories';
 import { formatDateKRCompact } from '../lib/format';
 import AdSlot from './AdSlot.astro';
 
-interface TocItem {
-  slug: string;
-  text: string;
-}
-
 interface Props {
   recentPosts: CollectionEntry<'blog'>[];
   catPosts:    CollectionEntry<'blog'>[];
   category:    CategorySlug;
-  /** ③ 스티키 목차 (h2). 빈 배열이면 미노출 */
-  toc?: TocItem[];
 }
 
-const { recentPosts, catPosts, category, toc = [] } = Astro.props;
+const { recentPosts, catPosts, category } = Astro.props;
 ---
 
 <aside class="article-sidebar" aria-label="관련 기사">
-  {toc.length > 0 && (
-    <section class="sb-section sb-toc" aria-label="목차">
-      <h2 class="sb-heading">목차</h2>
-      <ol class="sb-toc-list">
-        {toc.map((h) => (
-          <li>
-            <a href={`#${h.slug}`} class="sb-toc-link" data-target={h.slug}>
-              {h.text.replace(/^\s*\d+[.)]\s*/, '')}
-            </a>
-          </li>
-        ))}
-      </ol>
-    </section>
-  )}
   <section class="sb-section">
     <h2 class="sb-heading">최근 기사</h2>
     <ul class="sb-list">
@@ -85,36 +64,6 @@ const { recentPosts, catPosts, category, toc = [] } = Astro.props;
   <AdSlot position="sidebar" network="adsense" />
 </aside>
 
-<script>
-  // ③ 스크롤스파이: 현재 읽는 h2에 해당하는 목차 링크 하이라이트
-  const links = document.querySelectorAll<HTMLAnchorElement>('.sb-toc-link');
-  if (links.length > 0) {
-    const map = new Map<string, HTMLAnchorElement>();
-    links.forEach((a) => map.set(a.dataset.target!, a));
-
-    const setActive = (slug: string) => {
-      links.forEach((a) => a.classList.toggle('active', a.dataset.target === slug));
-    };
-
-    const headings = [...map.keys()]
-      .map((slug) => document.getElementById(slug))
-      .filter((el): el is HTMLElement => !!el);
-
-    const onScroll = () => {
-      // 화면 상단 1/3 지점을 지난 마지막 h2를 현재 위치로 판단
-      const line = window.innerHeight / 3;
-      let current = headings[0]?.id ?? '';
-      for (const h of headings) {
-        if (h.getBoundingClientRect().top <= line) current = h.id;
-        else break;
-      }
-      if (current) setActive(current);
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
-</script>
-
 <style>
   .article-sidebar {
     position: sticky;
@@ -126,33 +75,6 @@ const { recentPosts, catPosts, category, toc = [] } = Astro.props;
   .article-sidebar::-webkit-scrollbar { display: none; }
 
   .sb-section { margin-bottom: 28px; }
-
-  /* ③ 스티키 목차 */
-  .sb-toc-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .sb-toc-link {
-    display: block;
-    padding: 6px 0 6px 12px;
-    border-left: 2px solid var(--line);
-    font-size: 0.84rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: var(--muted);
-    text-decoration: none;
-    word-break: keep-all;
-    transition: color 0.15s, border-color 0.15s;
-  }
-  .sb-toc-link:hover { color: var(--accent); text-decoration: none; }
-  .sb-toc-link.active {
-    color: var(--accent);
-    border-left-color: var(--accent);
-    font-weight: 700;
-  }
 
   .sb-heading {
     font-size: 0.78rem;

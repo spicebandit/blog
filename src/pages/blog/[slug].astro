@@ -82,7 +82,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
       <AdSlot position="bottom" class="ad-article-bottom" />
       <Comments pageId={post.id} pageTitle={post.data.title} />
     </div>
-    <Sidebar recentPosts={recentPosts} catPosts={catPosts} category={post.data.category} toc={showToc ? toc : []} />
+    <Sidebar recentPosts={recentPosts} catPosts={catPosts} category={post.data.category} />
   </div>
 </Base>
 
@@ -148,10 +148,6 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
     border: 1px solid var(--line);
     border-radius: 12px;
     background: var(--accent-soft);
-  }
-  /* ③ 데스크톱에서는 사이드바 스티키 목차로 대체 — 본문 상단 목차는 모바일 전용 */
-  @media (min-width: 960px) {
-    .toc { display: none; }
   }
   .toc-title {
     margin: 0 0 8px;
