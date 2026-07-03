@@ -7,6 +7,7 @@ set siteParam to "https://searchadvisor.naver.com/console/site/request/crawl?sit
 
 -- (path, 매칭용 슬러그) 목표 목록
 set targets to {¬
+  {"/blog/2026-07-03-local-llm-iphone-guide/", "local-llm-iphone-guide"}, ¬
   {"/blog/2026-07-02-local-llm-beginner-guide/", "local-llm-beginner-guide"}, ¬
   {"/blog/2026-07-02-sodium-ion-battery-outlook/", "sodium-ion-battery-outlook"}, ¬
   {"/blog/2026-06-27-korea-stock-broker-api-comparison/", "korea-stock-broker-api-comparison"}, ¬
