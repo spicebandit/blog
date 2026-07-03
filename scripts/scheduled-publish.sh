@@ -32,6 +32,8 @@ case "$TAG" in
     "$D/2026-07-03-local-llm-iphone-guide.md|2026-07-04T08:00:00+09:00"
     "src/content/blog-en/2026-07-03-local-llm-iphone-guide.md|2026-07-04T08:00:00+09:00"
     "$D/2026-07-03-hyman-minsky-model-korea-2026.md|2026-07-04T08:30:00+09:00"
+    "$D/2026-07-03-tesla-fsd-korea-timeline.md|2026-07-04T09:00:00+09:00"
+    "src/content/blog-en/2026-07-03-tesla-fsd-korea-timeline.md|2026-07-04T09:00:00+09:00"
   );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
