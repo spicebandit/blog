@@ -61,7 +61,7 @@ tell application "Safari"
   -- 로그인 확인 (이후 모두 front document 사용)
   set pageTitle to do JavaScript "document.title" in front document
   set pageURL to (URL of front document)
-  if pageURL contains "nid.naver.com" or pageTitle does not contain "서치어드바이저" then
+  if pageURL contains "nid.naver.com" or pageTitle contains "로그인" then
     return "LOGIN_EXPIRED"
   end if
 end tell

@@ -16,7 +16,7 @@ tell application "Safari"
   make new document with properties {URL:siteParam}
   delay 6
   set pageURL to (URL of front document)
-  if pageURL contains "nid.naver.com" then
+  if pageURL contains "nid.naver.com" or (do JavaScript "document.title" in front document) contains "로그인" then
     close front document
     return "LOGIN_EXPIRED"
   end if
