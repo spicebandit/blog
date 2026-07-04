@@ -8,8 +8,8 @@ tags: ["정산조정계수", "전력시장개편", "정산실무", "실시간시
 
 정산조정계수가 무엇이고 어떻게 계산되는지는 [③ 정산조정계수와 정산서 읽기](/blog/2026-06-26-power-settlement-manual-3-settlement-coefficient/)에서 다뤘다. 이번 4편은 그 다음 질문, **"그래서 이 계수가 앞으로 어디로 가나"**를 다룬다. 정산조정계수는 발전사 손익과 한전 재무, 전기요금이 만나는 가장 예민한 지점이라 매년 협상거리가 되고, 전력시장 개편의 방향을 가늠하는 시금석이기도 하다. 실무자라면 계산법만큼이나 이 '동향'을 읽을 줄 알아야 한다.
 
-![photo of truss towers](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2l0eSUyMHBvd2VyJTIwZ3JpZCUyMHRyYW5zbWlzc2lvbnxlbnwxfDB8fHwxNzgyNDIzMTEwfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Matthew Henry](https://unsplash.com/@matthewhenry?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/photo-of-truss-towers-yETqkLnhsUI?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a building with a sign that reads control room](https://images.unsplash.com/photo-1689352419606-40e27704dfa7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxwb3dlciUyMHBsYW50JTIwY29udHJvbCUyMHJvb218ZW58MXwwfHx8MTc4MzEzNDgyNXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Tom Delanoue](https://unsplash.com/@tom2185?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-building-with-a-sign-that-reads-control-room-udhQ1lwmMp8?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 > **시리즈 내비게이션**
 > ① [에너지정산금과 SMP](/blog/2026-06-26-power-settlement-manual-1-energy-smp/) → ② [용량요금(CP)](/blog/2026-06-26-power-settlement-manual-2-capacity-payment/) → ③ [정산조정계수와 정산서](/blog/2026-06-26-power-settlement-manual-3-settlement-coefficient/) → ④ 정산조정계수, 어디로 가나 (이 글)
@@ -29,8 +29,8 @@ tags: ["정산조정계수", "전력시장개편", "정산실무", "실시간시
 
 시장이 이렇게 다원화되면 '단일 SMP를 정산조정계수로 사후 보정'하는 현재 방식의 역할도 재설계가 불가피하다. 가격 결정이 정교해질수록, 굵직한 규제계수 하나로 손익을 일괄 조정하던 관행은 설 자리가 좁아진다. 학계에서는 정산조정계수 체계를 단순화하고, 원전·양수처럼 성격이 뚜렷한 자원은 별도 계약(예: 차액계약 등) 방식으로 떼어내 적용 대상을 정리하자는 제안도 나온다.
 
-![black transmission towers under green sky](https://images.unsplash.com/photo-1413882353314-73389f63b6fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxlbGVjdHJpY2l0eSUyMHBvd2VyJTIwZ3JpZCUyMHRyYW5zbWlzc2lvbnxlbnwxfDB8fHwxNzgyNDIzMTEwfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Fré Sonneveld](https://unsplash.com/@fresonneveld?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-transmission-towers-under-green-sky-q6n8nIrDQHE?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Three artworks displayed on a wall](https://images.unsplash.com/photo-1770586134070-92a53eba8c14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHw0fHxwb3dlciUyMHBsYW50JTIwY29udHJvbCUyMHJvb218ZW58MXwwfHx8MTc4MzEzNDgyNXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Bernd 📷 Dittrich](https://unsplash.com/@hdbernd?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/three-artworks-displayed-on-a-wall-DGnCe8KTTCo?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 재생에너지·ESS 시대에 '사후 보정'은 한계
 

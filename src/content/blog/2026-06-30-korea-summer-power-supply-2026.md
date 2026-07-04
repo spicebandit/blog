@@ -8,8 +8,8 @@ tags: ["전력수급", "최대전력수요", "예비력", "수요반응"]
 
 올여름 한국의 **최대 전력수요가 역대 최고인 98.8GW까지 치솟을 수 있다**는 정부 전망이 나왔다. 기후에너지환경부는 2026년 6월 25일 '여름철 전력수급 전망 및 대책'을 발표하고, 8월 셋째 주를 전후로 최대수요가 통상 94.1GW, 폭염이 길어지면 최대 98.8GW에 이를 것으로 내다봤다. 이는 2024년 8월 20일의 종전 최고치 97.1GW를 넘어서는 수준이다. 이 글은 그 숫자가 정확히 무엇을 의미하는지, 그리고 '공급능력 107GW·예비력 8.2GW'라는 정부 대책이 안심해도 되는 수준인지를 짚는다.
 
-![black transmission towers under green sky](https://images.unsplash.com/photo-1413882353314-73389f63b6fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2l0eSUyMHBvd2VyJTIwZ3JpZCUyMHN1bW1lcnxlbnwxfDB8fHwxNzgyNzY4Njg2fDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Fré Sonneveld](https://unsplash.com/@fresonneveld?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-transmission-towers-under-green-sky-q6n8nIrDQHE?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Power line tower over a green field and clear sky.](https://images.unsplash.com/photo-1782655478692-38a5f440e76d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwdm9sdGFnZSUyMHRyYW5zbWlzc2lvbiUyMHRvd2VyJTIwc3VtbWVyfGVufDF8MHx8fDE3ODMxMzQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Natalia Grela](https://unsplash.com/@natgrela?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/power-line-tower-over-a-green-field-and-clear-sky-JU-TD6Ml_Co?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 숫자 읽기: 98.8GW와 예비력 8.2GW
 

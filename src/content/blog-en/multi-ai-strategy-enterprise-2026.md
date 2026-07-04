@@ -12,8 +12,8 @@ June 2026 will go down in history as the single busiest month for frontier AI mo
 
 And yet, in the middle of this avalanche, the most common question people still ask is: "Which AI is the best right now?" That question has the wrong frame. In 2026, picking a single model and routing every task through it is like performing surgery with a Swiss Army knife. You can make it work, but you are leaving performance on the table at every step.
 
-![a computer chip with the letter a on top of it](https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY29tcGV0aXRpb258ZW58MXwwfHx8MTc4MjM2NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_source=spice-bandit-blog&utm_medium=referral)*
+![people sitting on chair in front of computer monitor](https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxtdWx0aXBsZSUyMG1vbml0b3JzJTIwdGVjaG5vbG9neSUyMG9mZmljZXxlbnwxfDB8fHwxNzgzMTM0ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Compagnons](https://unsplash.com/@sigmund?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/people-sitting-on-chair-in-front-of-computer-monitor-Fa9b57hffnM?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## Why AI Competition Is Converging on Specialization
 
@@ -34,8 +34,8 @@ The gap between first and second place is not cosmetic. Claude Opus 4.8, which l
 
 The structural reason is straightforward: each lab has made deliberate training choices that deepen their model's strengths. Grok optimized for real-time social data access. Claude focused on handling long, complex codebases with high accuracy. Gemini went deep on scientific and logical reasoning datasets. Chasing a single "general-purpose champion" has become a losing strategy — for the labs and for the users who bet everything on one provider.
 
-![an abstract image of a sphere with dots and lines](https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY29tcGV0aXRpb258ZW58MXwwfHx8MTc4MjM2NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Growtika](https://unsplash.com/@growtika?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/an-abstract-image-of-a-sphere-with-dots-and-lines-nGoCBxiaRO0?utm_source=spice-bandit-blog&utm_medium=referral)*
+![two black flat screen computer monitors](https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxtdWx0aXBsZSUyMG1vbml0b3JzJTIwdGVjaG5vbG9neSUyMG9mZmljZXxlbnwxfDB8fHwxNzgzMTM0ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Fotis Fotopoulos](https://unsplash.com/@ffstop?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/two-black-flat-screen-computer-monitors-LJ9KY8pIH3E?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## The Real Costs of Single-Model Dependency
 
@@ -71,8 +71,8 @@ Grok 4.3 is currently the only frontier model with native integration to the rea
 
 For large-scale repetitive tasks where maximum quality is less critical than throughput and cost, cost efficiency becomes the primary variable. DeepSeek V4 handles more requests per dollar at competitive quality levels. Gemini 3.5 Flash strikes a balance between speed and cost that makes it well-suited for batch pipelines where latency and budget both matter.
 
-![a computer circuit board with a brain on it](https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY29tcGV0aXRpb258ZW58MXwwfHx8MTc4MjM2NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Steve A Johnson](https://unsplash.com/@steve_j?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-circuit-board-with-a-brain-on-it-_0iV9LmPDn0?utm_source=spice-bandit-blog&utm_medium=referral)*
+![turned on laptop computer](https://images.unsplash.com/photo-1545665277-5937489579f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxtdWx0aXBsZSUyMG1vbml0b3JzJTIwdGVjaG5vbG9neSUyMG9mZmljZXxlbnwxfDB8fHwxNzgzMTM0ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Joshua Aragon](https://unsplash.com/@goshua13?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/turned-on-laptop-computer-BMnhuwFYr7w?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## Why the Switch to Multi-AI Strategy Cannot Wait
 

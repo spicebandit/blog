@@ -8,8 +8,8 @@ tags: ["애프터마켓", "거래시간 연장", "한국거래소", "NXT"]
 
 한국거래소(KRX)가 **9월 14일부터 '애프터마켓(After-Market)'을 공식 시행**한다. 핵심은 단순히 거래 시간이 늘어나는 게 아니라, **장 마감 이후에도 정규장처럼 '실시간'으로 사고팔 수 있게 된다**는 점이다. 지금까지의 시간외거래가 일정 시간마다 한 번씩 가격을 모아 체결하는 '단일가' 방식이었다면, 애프터마켓은 정규장과 똑같이 호가가 맞으면 바로바로 체결되는 **접속매매**다. 직장인 투자자라면 '퇴근 후 저녁 8시까지' 실시간 매매가 가능해지는 셈이다.
 
-![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzdG9jayUyMG1hcmtldCUyMHRyYWRpbmclMjBzY3JlZW4lMjBmaW5hbmNlfGVufDF8MHx8fDE3ODI4MTI0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![lighted city skyline at night](https://images.unsplash.com/photo-1546874177-9e664107314e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzZW91bCUyMG5pZ2h0JTIwc2t5bGluZSUyMGxpZ2h0c3xlbnwxfDB8fHwxNzgzMTM0ODE4fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Yohan Cho](https://unsplash.com/@yohoney?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/lighted-city-skyline-at-night-Mwvhyd22Lyw?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 한눈에 보기 — 9월 14일부터 무엇이 바뀌나
 
@@ -81,8 +81,8 @@ tags: ["애프터마켓", "거래시간 연장", "한국거래소", "NXT"]
 
 예를 들어 전날 1만 원에 마감한 종목이라면, 애프터마켓에서도 상·하한(전일 종가 ±30%) 범위 안에서 매수·매도 호가가 맞으면 그대로 실시간 체결된다.
 
-![screen showing trading chart](https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMHRyYWRpbmclMjBzY3JlZW4lMjBmaW5hbmNlfGVufDF8MHx8fDE3ODI4MTI0NTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Nick Chong](https://unsplash.com/@nick604?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/screen-showing-bitcoin-trading-chart-N__BnvQ_w18?utm_source=spice-bandit-blog&utm_medium=referral)*
+![mickey mouse and donald duck](https://images.unsplash.com/photo-1597552661064-af143a5f3bee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzZW91bCUyMG5pZ2h0JTIwc2t5bGluZSUyMGxpZ2h0c3xlbnwxfDB8fHwxNzgzMTM0ODE4fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Yu Kato](https://unsplash.com/@yukato?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/mickey-mouse-and-donald-duck-q9rSwpv5mFk?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 투자자가 알아둘 점
 

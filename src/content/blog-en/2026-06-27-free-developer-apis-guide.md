@@ -12,8 +12,8 @@ Running a single side project takes more data than you might expect. You drop a 
 
 This post has a single core message: **for a personal project, you can start almost every key feature "within the free tier."** That said, you need to split the word "free" into three buckets. The first is **completely free** (cases like the Frankfurter exchange-rate API or OpenStreetMap that don't even require signup); the second is **the free tier** (sign up and get a set monthly quota for free, with charges only on the overage); and the third is **the rate-limited type** (only N calls per minute or per day are allowed, and you're blocked once you exceed it). Even among "free" services, some require a credit card and others don't, and some prohibit commercial use altogether. Start without knowing this distinction and you'll get hit with a surprise bill or a sudden block right after launch. The table and checkpoints below are meant to help you sidestep those traps.
 
-![a computer screen with a bunch of code on it](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcGklMjBjb2RlJTIwZGV2ZWxvcGVyJTIwc2NyZWVufGVufDF8MHx8fDE3ODI0OTE0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Chris Ried](https://unsplash.com/@cdr6934?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-code-on-it-ieic5Tq8YMk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![black laptop computer turned on on table](https://images.unsplash.com/photo-1587620962725-abab7fe55159?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxkZXZlbG9wZXIlMjBsYXB0b3AlMjBjb2RlJTIwYXBpfGVufDF8MHx8fDE3ODMxMzQ4Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [James Harrison](https://unsplash.com/@jstrippa?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-laptop-computer-turned-on-on-table-vpOeXr5wmR4?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## Free Public APIs by Category at a Glance
 

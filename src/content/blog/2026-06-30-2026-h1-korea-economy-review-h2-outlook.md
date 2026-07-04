@@ -8,8 +8,8 @@ tags: ["한국경제", "코스피", "기준금리", "환율"]
 
 2026년 상반기 한국 경제는 '반도체가 끌고, 물가가 누르고, 환율이 흔드는' 한 해의 절반이었습니다. 반도체 수출 호조로 성장률은 버텼지만, 국제 유가발 인플레이션과 원화 약세가 가계와 기업의 체감 경기를 갈랐습니다. 오늘 상반기 마지막 거래일을 맞아, 인플레이션·기준금리·코스피·환율 네 가지 축으로 상반기를 결산하고 하반기를 전망합니다. 이 글의 핵심 메시지는 하나입니다. **"지표는 안정적으로 보이지만, 그 안정은 소수 변수(반도체·유가)에 크게 의존하고 있다"**는 점입니다.
 
-![screen showing bitcoin trading chart](https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGVjb25vbXklMjBmaW5hbmNlJTIwbWFya2V0fGVufDF8MHx8fDE3ODI3NzA0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Nick Chong](https://unsplash.com/@nick604?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/screen-showing-bitcoin-trading-chart-N__BnvQ_w18?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a city skyline with a bridge](https://images.unsplash.com/photo-1662300835077-73c417630ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzZW91bCUyMGJ1c2luZXNzJTIwZGlzdHJpY3QlMjBza3lzY3JhcGVyc3xlbnwxfDB8fHwxNzgzMTM0ODIwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Minku Kang](https://unsplash.com/@minkus?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-city-skyline-with-a-bridge-YqgOH-ewy6Q?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 상반기 결산: 물가·금리·증시·환율 네 갈래
 
@@ -27,8 +27,8 @@ tags: ["한국경제", "코스피", "기준금리", "환율"]
 
 투자자 관점에서는 '지수 상승'이라는 표면보다 **종목 쏠림과 환율 변동성**이라는 위험 요인을 함께 봐야 합니다. 소비자 관점에서는 금리가 당장 내리지 않는 한 대출 이자 부담이 유지되고, 유가·환율발 물가가 장바구니에 직접 영향을 준다는 점이 중요합니다. 같은 뉴스라도 내가 투자자인지 소비자인지에 따라 챙겨야 할 핵심이 달라집니다.
 
-![a person holding a cell phone in front of a stock chart](https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMGVjb25vbXklMjBmaW5hbmNlJTIwbWFya2V0fGVufDF8MHx8fDE3ODI3NzA0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Adam Śmigielski](https://unsplash.com/@smigielski?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-stock-chart-K5mPtONmpHM?utm_source=spice-bandit-blog&utm_medium=referral)*
+![city buildings under cloudy sky](https://images.unsplash.com/photo-1472387040940-3ae0cdbf127d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzZW91bCUyMGJ1c2luZXNzJTIwZGlzdHJpY3QlMjBza3lzY3JhcGVyc3xlbnwxfDB8fHwxNzgzMTM0ODIwfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Janis Rozenfelds](https://unsplash.com/@janisrozenfelds?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/city-buildings-under-cloudy-sky-GJcpM6qNU0c?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 하반기 전망: 세 가지 분기점
 

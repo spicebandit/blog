@@ -10,8 +10,8 @@ tags: ["무료API", "공개API", "개발자도구", "API활용"]
 
 이 글의 핵심 메시지는 하나다. **개인 프로젝트라면 거의 모든 핵심 기능을 "무료 범위 안에서" 시작할 수 있다.** 다만 '무료'라는 단어를 셋으로 나눠서 봐야 한다. 첫째는 **완전 무료**(Frankfurter 환율, OpenStreetMap처럼 가입조차 필요 없는 경우), 둘째는 **프리티어**(가입하면 매달 일정량까지 공짜, 초과분만 과금), 셋째는 **호출 한도형**(분당·일당 N회까지만 허용, 넘으면 차단). 같은 "무료"라도 신용카드를 요구하는 곳과 그렇지 않은 곳이 갈리고, 상업적 사용을 막아 둔 곳도 있다. 이 구분을 모르고 시작하면 배포 직후 요금 폭탄이나 갑작스러운 차단을 맞는다. 아래 표와 체크포인트는 그 함정을 피하기 위한 것이다.
 
-![a computer screen with a bunch of code on it](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcGklMjBjb2RlJTIwZGV2ZWxvcGVyJTIwc2NyZWVufGVufDF8MHx8fDE3ODI0OTE0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Chris Ried](https://unsplash.com/@cdr6934?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-code-on-it-ieic5Tq8YMk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![black laptop computer turned on on table](https://images.unsplash.com/photo-1587620962725-abab7fe55159?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxkZXZlbG9wZXIlMjBsYXB0b3AlMjBjb2RlJTIwYXBpfGVufDF8MHx8fDE3ODMxMzQ4Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [James Harrison](https://unsplash.com/@jstrippa?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-laptop-computer-turned-on-on-table-vpOeXr5wmR4?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 분야별 무료 공개 API 한눈에 보기
 

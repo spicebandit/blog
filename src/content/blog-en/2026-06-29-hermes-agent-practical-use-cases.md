@@ -10,8 +10,8 @@ koSlug: 2026-06-29-hermes-agent-practical-use-cases
 
 You've installed it. Now how do you use it? Practical use of **Hermes Agent** comes down to three things. First, getting comfortable with the terminal UI and slash commands. Second, deliberately building up the memory and skill systems. Third, connecting Telegram bots, cron automation, and MCP servers to hand repetitive work over to the agent. In this article, I'll lay out — based on the official docs and step by step — everything from Hermes's basic usage flow to three real-world automation cases. For installation and initial setup, check [Part 1](/blog/2026-06-28-hermes-agent-nous-research-install-guide/) first.
 
-![two hands touching each other in front of a pink background](https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhdXRvbWF0aW9uJTIwdGVsZWdyYW0lMjBib3R8ZW58MXwwfHx8MTc4MjcyMTQzMnww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/two-hands-touching-each-other-in-front-of-a-pink-background-gVQLAbGVB6Q?utm_source=spice-bandit-blog&utm_medium=referral)*
+![black and white industrial machine](https://images.unsplash.com/photo-1563968743333-044cef800494?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjByb2JvdCUyMGRlc2t8ZW58MXwwfHx8MTc4MzEzNDgyMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Franck V.](https://unsplash.com/@possessedphotography?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-and-white-industrial-machine-dRMQiAubdws?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## Hermes Basic Usage Flow: From the Terminal UI to Slash Commands
 
@@ -71,8 +71,8 @@ e.g., First request to "extract data from the Notion API" →
 
 Skills are compatible with the **[agentskills.io](https://agentskills.io)** open standard. You can share skills you've written with the community, or pull in skills others have shared. For example, if you install a "morning news summary" skill from the community, you can use it right away with no extra configuration.
 
-![blue plastic robot toy](https://images.unsplash.com/photo-1527430253228-e93688616381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhdXRvbWF0aW9uJTIwdGVsZWdyYW0lMjBib3R8ZW58MXwwfHx8MTc4MjcyMTQzMnww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Emilipothèse](https://unsplash.com/@emilipothese?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/blue-plastic-robot-toy-R4WCbazrD1g?utm_source=spice-bandit-blog&utm_medium=referral)*
+![white robotic arm in display showroom](https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjByb2JvdCUyMGRlc2t8ZW58MXwwfHx8MTc4MzEzNDgyMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [ZHENYU LUO](https://unsplash.com/@mrnuclear?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/white-robotic-arm-in-display-showroom-kE0JmtbvXxM?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ---
 
@@ -162,8 +162,8 @@ Add the MCP server address to the config file (`~/.hermes/config.yaml`, or see t
 
 **Result**: A morning briefing on GitHub issue status, automatically. No need to open a separate dashboard.
 
-![a group of white robots sitting on top of laptops](https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0aW9uJTIwdGVsZWdyYW0lMjBib3R8ZW58MXwwfHx8MTc4MjcyMTQzMnww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Mohamed Nohassi](https://unsplash.com/@coopery?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-group-of-white-robots-sitting-on-top-of-laptops-2iUrK025cec?utm_source=spice-bandit-blog&utm_medium=referral)*
+![closeup photo of white robot arm](https://images.unsplash.com/photo-1531746790731-6c087fecd65a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjByb2JvdCUyMGRlc2t8ZW58MXwwfHx8MTc4MzEzNDgyMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Franck V.](https://unsplash.com/@possessedphotography?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/closeup-photo-of-white-robot-arm-jIBMSMs4_kA?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ---
 

@@ -10,8 +10,8 @@ tags: ["주식API", "자동매매", "한국투자증권", "오픈API"]
 
 먼저 분명히 해 둘 점. 이 글은 **API라는 개발 도구를 비교**하는 글이지 투자 권유가 아닙니다. 특정 종목의 매수·매도를 추천하지 않으며, 모든 투자 판단과 자동매매 운용의 책임은 본인에게 있습니다. **투자 조언이 아닙니다.**
 
-![graphical user interface, application](https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMHRyYWRpbmclMjBzY3JlZW58ZW58MXwwfHx8MTc4MjQ5MTQyOXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Anne Nygård](https://unsplash.com/@polarmermaid?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphical-user-interface-application-x07ELaNFt34?utm_source=spice-bandit-blog&utm_medium=referral)*
+![person holding black android smartphone](https://images.unsplash.com/photo-1609921141835-710b7fa6e438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxzdG9jayUyMHRyYWRpbmclMjBhcHAlMjBzbWFydHBob25lfGVufDF8MHx8fDE3ODMxMzQ4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Tran Mau Tri Tam ✪](https://unsplash.com/@tranmautritam?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/person-holding-black-android-smartphone-QwAL909kTiY?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 핵심 축: 1세대 OCX vs 2세대 REST
 
@@ -48,8 +48,8 @@ tags: ["주식API", "자동매매", "한국투자증권", "오픈API"]
 
 **LS증권(구 이베스트)·대신증권.** LS는 1세대 XingAPI(OCX)와 신형 LS OpenAPI(REST)를 함께 제공해 과도기 선택지가 넓습니다. 대신증권 Creon은 윈도우 COM 기반의 전형적 1세대로, 기존 Creon 사용자층이 탄탄합니다. **둘 다 이미 해당 증권사 자산이 있는 경우**에 자연스러운 선택입니다.
 
-![a computer screen with a bunch of code on it](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZyUyMGNvZGUlMjBsYXB0b3B8ZW58MXwwfHx8MTc4MjQ5MTQzNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Chris Ried](https://unsplash.com/@cdr6934?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-code-on-it-ieic5Tq8YMk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a close up of a computer screen with candles in the background](https://images.unsplash.com/photo-1672617195300-a7158db4ab91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHw0fHxzdG9jayUyMHRyYWRpbmclMjBhcHAlMjBzbWFydHBob25lfGVufDF8MHx8fDE3ODMxMzQ4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Dimitri Karastelev](https://unsplash.com/@dkfra19?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-candles-in-the-background-bJb75YQRl98?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 인증 흐름은 어떻게 생겼나
 

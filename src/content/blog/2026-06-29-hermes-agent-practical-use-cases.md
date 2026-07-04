@@ -8,8 +8,8 @@ tags: ["hermes-agent", "nous-research", "ai-자동화", "텔레그램봇"]
 
 설치는 됐다. 이제 어떻게 써야 하는가? **헤르메스 에이전트(Hermes Agent)** 실전 활용의 핵심은 세 가지다. 첫째, 터미널 UI와 슬래시 명령에 익숙해지는 것. 둘째, 메모리와 스킬 시스템을 의도적으로 쌓는 것. 셋째, 텔레그램 봇·cron 자동화·MCP 서버를 연결해 반복 업무를 에이전트에게 넘기는 것. 이 글에서는 공식 문서 기반으로 헤르메스의 기본 사용 흐름부터 실전 자동화 사례 3가지까지 단계별로 정리한다. 설치 및 초기 셋팅은 [1편](/blog/2026-06-28-hermes-agent-nous-research-install-guide/)을 먼저 확인하자.
 
-![two hands touching each other in front of a pink background](https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhdXRvbWF0aW9uJTIwdGVsZWdyYW0lMjBib3R8ZW58MXwwfHx8MTc4MjcyMTQzMnww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/two-hands-touching-each-other-in-front-of-a-pink-background-gVQLAbGVB6Q?utm_source=spice-bandit-blog&utm_medium=referral)*
+![black and white industrial machine](https://images.unsplash.com/photo-1563968743333-044cef800494?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjByb2JvdCUyMGRlc2t8ZW58MXwwfHx8MTc4MzEzNDgyMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Franck V.](https://unsplash.com/@possessedphotography?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-and-white-industrial-machine-dRMQiAubdws?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 헤르메스 기본 사용 흐름: 터미널 UI부터 슬래시 명령까지
 
@@ -69,8 +69,8 @@ hermes --continue   # 마지막 세션 재개
 
 스킬은 **[agentskills.io](https://agentskills.io)** 공개 표준과 호환된다. 직접 작성한 스킬을 커뮤니티에 공유하거나, 다른 사람이 공유한 스킬을 가져다 쓸 수 있다. 예를 들어 "매일 아침 뉴스 요약" 스킬을 커뮤니티에서 설치하면 별도 설정 없이 바로 사용 가능하다.
 
-![blue plastic robot toy](https://images.unsplash.com/photo-1527430253228-e93688616381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhdXRvbWF0aW9uJTIwdGVsZWdyYW0lMjBib3R8ZW58MXwwfHx8MTc4MjcyMTQzMnww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Emilipothèse](https://unsplash.com/@emilipothese?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/blue-plastic-robot-toy-R4WCbazrD1g?utm_source=spice-bandit-blog&utm_medium=referral)*
+![white robotic arm in display showroom](https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjByb2JvdCUyMGRlc2t8ZW58MXwwfHx8MTc4MzEzNDgyMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [ZHENYU LUO](https://unsplash.com/@mrnuclear?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/white-robotic-arm-in-display-showroom-kE0JmtbvXxM?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ---
 
@@ -160,8 +160,8 @@ hermes mcp     # 현재 연결된 MCP 서버 목록 확인
 
 **결과**: 아침마다 깃허브 이슈 현황 자동 브리핑. 별도 대시보드를 열지 않아도 된다.
 
-![a group of white robots sitting on top of laptops](https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0aW9uJTIwdGVsZWdyYW0lMjBib3R8ZW58MXwwfHx8MTc4MjcyMTQzMnww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Mohamed Nohassi](https://unsplash.com/@coopery?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-group-of-white-robots-sitting-on-top-of-laptops-2iUrK025cec?utm_source=spice-bandit-blog&utm_medium=referral)*
+![closeup photo of white robot arm](https://images.unsplash.com/photo-1531746790731-6c087fecd65a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3clMjByb2JvdCUyMGRlc2t8ZW58MXwwfHx8MTc4MzEzNDgyMXww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Franck V.](https://unsplash.com/@possessedphotography?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/closeup-photo-of-white-robot-arm-jIBMSMs4_kA?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ---
 

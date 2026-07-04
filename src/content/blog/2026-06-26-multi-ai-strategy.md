@@ -10,8 +10,8 @@ tags: ["AI모델", "멀티AI전략", "ChatGPT", "Claude"]
 
 이 속에서 많은 개인과 기업이 여전히 묻는다. "그래서 어떤 AI가 가장 좋은가요?" 이 질문 자체가 이미 틀렸다. 2026년 AI 시장에서 하나의 모델을 골라 모든 업무에 쓰는 것은 맥가이버 칼 하나로 외과 수술을 하겠다는 것과 같다.
 
-![a computer chip with the letter a on top of it](https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY29tcGV0aXRpb258ZW58MXwwfHx8MTc4MjM2NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_source=spice-bandit-blog&utm_medium=referral)*
+![people sitting on chair in front of computer monitor](https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxtdWx0aXBsZSUyMG1vbml0b3JzJTIwdGVjaG5vbG9neSUyMG9mZmljZXxlbnwxfDB8fHwxNzgzMTM0ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Compagnons](https://unsplash.com/@sigmund?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/people-sitting-on-chair-in-front-of-computer-monitor-Fa9b57hffnM?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## AI 모델 경쟁이 결국 '전문화'로 수렴하는 이유
 
@@ -32,8 +32,8 @@ LM Council의 2026년 6월 기준 비교를 보면 차이가 선명하다:
 
 이 현상이 나타나는 이유는 구조적이다. 모델들이 각자의 강점을 살린 학습 방향을 택하면서 특화가 심화됐다. Grok은 실시간 소셜 데이터 접근성을 강화했고, Claude는 긴 코드베이스를 다루는 능력에 집중했으며, Gemini는 과학·논리 추론 데이터를 대거 학습시켰다. 이제 "범용 최강"을 노리는 것은 비효율적인 전략이 됐다.
 
-![an abstract image of a sphere with dots and lines](https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY29tcGV0aXRpb258ZW58MXwwfHx8MTc4MjM2NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Growtika](https://unsplash.com/@growtika?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/an-abstract-image-of-a-sphere-with-dots-and-lines-nGoCBxiaRO0?utm_source=spice-bandit-blog&utm_medium=referral)*
+![two black flat screen computer monitors](https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxtdWx0aXBsZSUyMG1vbml0b3JzJTIwdGVjaG5vbG9neSUyMG9mZmljZXxlbnwxfDB8fHwxNzgzMTM0ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Fotis Fotopoulos](https://unsplash.com/@ffstop?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/two-black-flat-screen-computer-monitors-LJ9KY8pIH3E?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 단일 AI 집착이 만들어내는 실질적 손해
 
@@ -69,8 +69,8 @@ X(트위터) 실시간 피드와 통합된 유일한 프런티어 모델이다. 
 
 고품질을 요구하지 않는 대량 배치 작업에서 비용 효율이 가장 중요하다. DeepSeek는 같은 예산으로 더 많은 요청을 처리할 수 있고, Gemini 3.5 Flash는 속도와 비용의 균형이 좋다.
 
-![a computer circuit board with a brain on it](https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY29tcGV0aXRpb258ZW58MXwwfHx8MTc4MjM2NjMwNXww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Steve A Johnson](https://unsplash.com/@steve_j?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-circuit-board-with-a-brain-on-it-_0iV9LmPDn0?utm_source=spice-bandit-blog&utm_medium=referral)*
+![turned on laptop computer](https://images.unsplash.com/photo-1545665277-5937489579f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxtdWx0aXBsZSUyMG1vbml0b3JzJTIwdGVjaG5vbG9neSUyMG9mZmljZXxlbnwxfDB8fHwxNzgzMTM0ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Joshua Aragon](https://unsplash.com/@goshua13?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/turned-on-laptop-computer-BMnhuwFYr7w?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 지금 당장 멀티AI 전략으로 전환해야 하는 이유
 

@@ -10,8 +10,8 @@ koSlug: 2026-06-28-hermes-agent-nous-research-install-guide
 
 **Hermes Agent** isn't an AI you open in a ChatGPT window. It runs continuously in your terminal, messengers, and servers; it learns on its own; and it keeps its memory even after a conversation ends — a true **autonomous agent**. This open-source tool, released by Nous Research in February 2026, surpassed 204,000 GitHub stars just four months after launch. In this article I'll walk through, step by step and based on the official documentation, what Hermes Agent is, why it's worth trying now, and how to install and set it up in under five minutes. *(Part 2: [Practical Use & Automation Cases](/blog/2026-06-29-hermes-agent-practical-use-cases/) continues in the next installment.)*
 
-![a computer chip with the letter a on top of it](https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwcm9ib3QlMjB0ZXJtaW5hbHxlbnwxfDB8fHwxNzgyNTY2Mjc2fDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_source=spice-bandit-blog&utm_medium=referral)*
+![black flat screen computer monitor](https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHx0ZXJtaW5hbCUyMGNvbW1hbmQlMjBsaW5lJTIwZGFyayUyMHNjcmVlbnxlbnwxfDB8fHwxNzgzMTM0ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Jake Walker](https://unsplash.com/@jakewalker?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-flat-screen-computer-monitor-MPKQiDpMyqU?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## Hermes vs Claude Code, CrewAI, and Paperclip — How It Differs from the Competition
 
@@ -223,8 +223,8 @@ hermes --continue
 | `hermes doctor` | Auto-diagnose installation issues |
 | `hermes update` | Update to the latest version |
 
-![A white robot is standing in front of a black background](https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwcm9ib3QlMjB0ZXJtaW5hbHxlbnwxfDB8fHwxNzgyNTY2Mjc2fDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Gabriele Malaspina](https://unsplash.com/@gabrielemalaspina?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-white-robot-is-standing-in-front-of-a-black-background-CjWsslYVnPI?utm_source=spice-bandit-blog&utm_medium=referral)*
+![turned on monitor displaying programming language](https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHx0ZXJtaW5hbCUyMGNvbW1hbmQlMjBsaW5lJTIwZGFyayUyMHNjcmVlbnxlbnwxfDB8fHwxNzgzMTM0ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Pankaj Patel](https://unsplash.com/@pankajpatel?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/turned-on-monitor-displaying-programming-language-u2Ru4QBXA5Q?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ---
 

@@ -10,8 +10,8 @@ tags: ["환율", "원화", "수출", "한국경제"]
 
 > 이 글은 특정 종목·상품에 대한 매매 권유가 아니며, 공개된 시장·정책 정보를 바탕으로 한 일반적인 경제 해설입니다. 투자 판단의 책임은 본인에게 있습니다.
 
-![assorted banknotes](https://images.unsplash.com/photo-1571952924075-5f11bad74738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxrb3JlYW4lMjB3b24lMjBjdXJyZW5jeSUyMGV4Y2hhbmdlfGVufDF8MHx8fDE3ODI2ODg0NjV8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Eric Prouzet](https://unsplash.com/@eprouzet?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/assorted-banknotes-TZB-1vfImhY?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a large cargo ship in the middle of a body of water](https://images.unsplash.com/photo-1700114339471-9e90a155d4b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxjb250YWluZXIlMjBzaGlwJTIwZXhwb3J0JTIwaGFyYm9yfGVufDF8MHx8fDE3ODMxMzQ4MjR8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Howei Wang](https://unsplash.com/@howei?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-large-cargo-ship-in-the-middle-of-a-body-of-water-ecvpiAz-oyA?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 환율은 무엇으로 움직이나 — 교과서와 현실
 

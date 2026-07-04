@@ -149,8 +149,8 @@ tags: ["전력시장", "정산실무", "SMP", "에너지정산금"]
 > **실무 팁 ③ — "SMP가 높으면 무조건 좋다"는 함정**
 > SMP가 오르면 에너지정산금(매출)은 늘어납니다. 하지만 SMP가 높다는 건 보통 비싼 연료(가스 등)가 한계발전기로 들어왔다는 뜻이고, 우리 발전기가 가스복합이라면 그 비싼 연료비를 함께 부담하고 있을 수 있습니다. 매출(에너지정산금)과 마진((SMP−변동비)×전력량)을 **항상 분리해서** 보는 습관을 들이세요.
 
-![gray and red factory building under a calm blue sky](https://images.unsplash.com/photo-1578776349090-de61da00ff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHBsYW50JTIwdHVyYmluZXxlbnwxfDB8fHwxNzgyNDQ4OTEwfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Alex Simpson](https://unsplash.com/@m_simpsan?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/gray-and-red-factory-building-under-a-calm-blue-sky-9GwMIek9jnY?utm_source=spice-bandit-blog&utm_medium=referral)*
+![white electric power generator](https://images.unsplash.com/photo-1509390144018-eeaf65052242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwc3Vic3RhdGlvbiUyMHBvd2VyJTIwZ3JpZHxlbnwxfDB8fHwxNzgzMTM0ODM0fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [American Public Power Association](https://unsplash.com/@publicpowerorg?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/white-electric-power-generator-VuR4oHZ3ucc?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 5. 정리 — 1편에서 가져갈 것
 

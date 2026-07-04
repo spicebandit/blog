@@ -33,8 +33,8 @@ tags: ["공공데이터", "공개API", "OpenAPI", "데이터분석"]
 | 지도/주소 | **도로명주소 API (행안부)** | 주소 검색, 좌표 변환, 우편번호 | 도로명주소 개발자센터 승인키 |
 | 공간정보 | **브이월드(V-World, 국토부)** | 지도·위성영상·3D, 지적·토지 공간정보 | V-World에서 인증키 발급 |
 
-![graphs of performance analytics on a laptop screen](https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwZGFzaGJvYXJkJTIwYW5hbHl0aWNzfGVufDF8MHx8fDE3ODI0OTE0NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00?utm_source=spice-bandit-blog&utm_medium=referral)*
+![monitor screengrab](https://images.unsplash.com/photo-1560472354-b33ff0c44a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxvcGVuJTIwZGF0YSUyMHN0YXRpc3RpY3MlMjBkYXNoYm9hcmR8ZW58MXwwfHx8MTc4MzEzNDgzMHww&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Stephen Phillips - Hostreviews.co.uk](https://unsplash.com/@hostreviews?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/monitor-screengrab-shr_Xn8S8QU?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 표만 봐도 감이 오겠지만, **금융·날씨·교통·법령**은 거의 모든 도메인 서비스의 기본 재료다. 예컨대 부동산 앱이라면 V-World(지도)+도로명주소(주소)+KOSIS(인구) 세 개만 조합해도 핵심 기능이 나온다. 데이터를 "사는" 대신 "조합하는" 사고방식이 공공 API 활용의 본질이다.
 

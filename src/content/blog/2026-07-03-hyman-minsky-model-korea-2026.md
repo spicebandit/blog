@@ -10,8 +10,8 @@ tags: ["민스키모멘트", "버블", "금융위기", "한국경제"]
 
 > 이 글은 경제 이론과 공개된 시장 지표를 해설하는 콘텐츠다. 특정 종목이나 자산의 매수·매도를 권하는 투자 조언이 아니며, 모든 수치는 작성 시점 기준이다.
 
-![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMGNyYXNoJTIwY2hhcnR8ZW58MXwwfHx8MTc4MzA1ODU3M3ww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Business newspaper article](https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBjcmlzaXMlMjBuZXdzcGFwZXIlMjBlY29ub215fGVufDF8MHx8fDE3ODMxMzQ4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [AbsolutVision](https://unsplash.com/@codzilla_swiss?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/business-newspaper-article-WYd_PkCa1BY?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 하이먼 민스키는 누구인가 — 생전 비주류, 사후 예언자
 
@@ -121,8 +121,8 @@ tags: ["민스키모멘트", "버블", "금융위기", "한국경제"]
 
 비트코인은 이 프레임에서 특히 흥미로운 사례다. 2013년, 2017년, 2021년 사이클마다 광기와 70~80%대 급락(붕괴 국면)을 반복하고도 다시 살아나, "한 자산이 로드리게 차트를 여러 번 왕복할 수 있다"는 것을 보여줬다. 각 사례에서 공통 패턴은 세 가지다. 진짜 혁신 또는 변화에서 출발한다는 것(대체), 신용 팽창이 반드시 동반된다는 것(호황~도취), 그리고 정점 부근에서 "이번엔 다르다"는 새 시대론이 등장한다는 것이다. 민스키식으로 말하면, 이 새 시대론이야말로 경제가 폰지 단계에 진입했다는 신호다.
 
-![close-up photo of monitor displaying graph](https://images.unsplash.com/photo-1560221328-12fe60f83ab8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzdG9jayUyMG1hcmtldCUyMGNyYXNoJTIwY2hhcnR8ZW58MXwwfHx8MTc4MzA1ODU3M3ww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Nicholas Cappello](https://unsplash.com/@bash__profile?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/close-up-photo-of-monitor-displaying-graph-Wb63zqJ5gnE?utm_source=spice-bandit-blog&utm_medium=referral)*
+![person wearing suit reading business newspaper](https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBjcmlzaXMlMjBuZXdzcGFwZXIlMjBlY29ub215fGVufDF8MHx8fDE3ODMxMzQ4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Adeolu Eletu](https://unsplash.com/@adeolueletu?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/person-wearing-suit-reading-business-newspaper-E7RLgUjjazc?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 2026년, 세계는 왜 다시 민스키를 소환하는가
 
@@ -150,8 +150,8 @@ tags: ["민스키모멘트", "버블", "금융위기", "한국경제"]
 
 종합하면 이렇다. 2026년 한국은 **주식(신용융자)은 도취의 문턱, 가계 전체는 강제 다이어트 중, 자영업자·PF는 이미 폰지의 값을 치르는 중, 부동산은 규제가 누르는 압력솥** — 네 개의 시계가 서로 다른 시각을 가리키는 경제다. "곧 터진다"는 단정도, "괜찮다"는 낙관도 모두 이 비대칭을 무시한 이야기다. 민스키가 우리에게 주는 진짜 교훈은 시점 예측이 아니라 점검 습관이다. 내 부채가, 내가 투자한 자산의 상승 논리가 헤지·투기·폰지 중 어디에 서 있는지 스스로 물어보는 것. 그것이 이 이론의 실용적 결론이다.
 
-![graphical user interface, application](https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxzdG9jayUyMG1hcmtldCUyMGNyYXNoJTIwY2hhcnR8ZW58MXwwfHx8MTc4MzA1ODU3M3ww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Anne Nygård](https://unsplash.com/@polarmermaid?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphical-user-interface-application-x07ELaNFt34?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a stack of newspapers sitting on top of a wooden table](https://images.unsplash.com/photo-1579532536935-619928decd08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBjcmlzaXMlMjBuZXdzcGFwZXIlMjBlY29ub215fGVufDF8MHx8fDE3ODMxMzQ4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-stack-of-newspapers-sitting-on-top-of-a-wooden-table-hWJsOnaWTqs?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 마지막으로 다시 한번 분명히 한다. 이 글은 하이먼 민스키의 이론과 공개 지표를 해설한 것으로, **특정 자산의 매수·매도를 권하는 투자 조언이 아니다.** 민스키 모멘트의 시점은 누구도 예측할 수 없으며, 모든 투자 판단과 책임은 각자에게 있다.
 

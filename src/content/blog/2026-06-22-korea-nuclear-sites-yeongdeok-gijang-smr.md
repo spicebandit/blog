@@ -10,8 +10,8 @@ tags: ["원전", "SMR", "에너지정책", "신재생에너지"]
 
 왜 하필 2026년인가. 그리고 왜 SMR은 기장인가. 이 두 질문에 답하면 한국 에너지의 다음 30년이 보인다.
 
-![Cooling towers emitting steam against a clear blue sky.](https://images.unsplash.com/photo-1772376920750-dac1470b1bad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxudWNsZWFyJTIwcG93ZXIlMjBwbGFudCUyMHJlYWN0b3J8ZW58MXwwfHx8MTc4MjExNDQyMHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Energie-portal.sk](https://unsplash.com/@energie_portal_sk?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/cooling-towers-emitting-steam-against-a-clear-blue-sky-6FRprYb2zuM?utm_source=spice-bandit-blog&utm_medium=referral)*
+![gray asphalt road between green grass field under blue sky during daytime](https://images.unsplash.com/photo-1630142896898-428afa17ee36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxudWNsZWFyJTIwcG93ZXIlMjBwbGFudCUyMGNvYXN0bGluZXxlbnwxfDB8fHwxNzgzMTM0ODI5fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Lukáš Lehotský](https://unsplash.com/@llehotsky?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/gray-asphalt-road-between-green-grass-field-under-blue-sky-during-daytime-Xhle0cfnKrg?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ## 왜 2026년인가 — 14년 공백을 깬 세 가지 압력
 

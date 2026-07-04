@@ -6,8 +6,8 @@ category: energy
 tags: ["ESS", "LFP", "전고체 배터리", "배터리 트렌드"]
 ---
 
-![battery cells](https://images.unsplash.com/photo-1619641805634-b867f535071c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxsaXRoaXVtJTIwYmF0dGVyeSUyMGNlbGxzJTIwbWFudWZhY3R1cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4Mjg2NTkwM3ww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Roberto Sorin](https://unsplash.com/@roberto_sorin?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/brown-green-and-blue-round-buttons-ZZ3qxWFZNRg?utm_source=spice-bandit-blog&utm_medium=referral)*
+![a large group of tires](https://images.unsplash.com/photo-1670322196746-e8c6ea72ab90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxsaXRoaXVtJTIwYmF0dGVyeSUyMGNlbGwlMjBtYW51ZmFjdHVyaW5nfGVufDF8MHx8fDE3ODMxMzQ4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Vardan Papikyan](https://unsplash.com/@varpap?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-large-group-of-tires-r8e0PHAfXvg?utm_source=spice-bandit-blog&utm_medium=referral)*
 
 ESS(에너지저장장치) 배터리를 이해하려면 먼저 **"ESS는 전기차(EV)와 우선순위가 다르다"**는 점부터 알아야 한다. EV는 한정된 공간·무게에 최대한 많이 담아야 하므로 **에너지밀도**가 왕이다. 반면 ESS는 땅에 고정 설치하니 무게·부피가 덜 중요하고, 대신 **안전(화재)·수명·원가(kWh당)**가 승부를 가른다. 이 우선순위 차이가 ESS 배터리 지형을 만든다. 이 글은 LFP·삼원계(NCM)·전고체를 숫자와 표로 비교한다.
 
