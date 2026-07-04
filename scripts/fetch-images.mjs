@@ -19,12 +19,32 @@
  * 출력: JSON(파싱용) + 바로 붙여넣을 수 있는 마크다운 스니펫(이미지 + 출처)
  */
 
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
+
+/**
+ * 이미 발행 글에 쓰인 Unsplash 사진 ID 수집 — 같은 사진이 여러 글에 반복되는 것 방지.
+ * (2026-07-04 사용자 지시: "똑같은 이미지가 여러 글에 지속 나타나는 건 적절하지 않아")
+ */
+function collectUsedPhotoIds() {
+  const used = new Set();
+  for (const dir of ['src/content/blog', 'src/content/blog-en']) {
+    try {
+      for (const f of readdirSync(join(PROJECT_ROOT, dir))) {
+        if (!f.endsWith('.md')) continue;
+        const body = readFileSync(join(PROJECT_ROOT, dir, f), 'utf8');
+        for (const m of body.matchAll(/images\.unsplash\.com\/(photo-[0-9a-f-]+)/g)) {
+          used.add(m[1]);
+        }
+      }
+    } catch { /* 디렉터리 없으면 무시 */ }
+  }
+  return used;
+}
 
 // Unsplash 약관: referral UTM을 모든 attribution 링크에 붙여야 함
 const UTM = 'utm_source=spice-bandit-blog&utm_medium=referral';
@@ -77,7 +97,8 @@ async function fetchUnsplash(keyword, count) {
 
   const url = new URL('https://api.unsplash.com/search/photos');
   url.searchParams.set('query', keyword);
-  url.searchParams.set('per_page', String(Math.min(Math.max(count, 1), 10)));
+  // 기존 글에서 쓴 사진을 걸러야 하므로 여유 있게 받아온다
+  url.searchParams.set('per_page', String(Math.min(Math.max(count * 3, 9), 30)));
   url.searchParams.set('orientation', 'landscape');
   url.searchParams.set('content_filter', 'high');
 
@@ -91,7 +112,14 @@ async function fetchUnsplash(keyword, count) {
   }
 
   const data = await res.json();
-  const results = (data.results || []).slice(0, count);
+  // 이미 다른 글에 쓰인 사진은 제외 (중복 노출 방지)
+  const used = collectUsedPhotoIds();
+  const results = (data.results || [])
+    .filter((p) => {
+      const m = /photo-[0-9a-f-]+/.exec(p.urls?.regular || '');
+      return !m || !used.has(m[0]);
+    })
+    .slice(0, count);
 
   // Unsplash 가이드라인: 이미지를 실제 "사용(다운로드)"할 때 download_location 트리거
   await Promise.all(
