@@ -2,7 +2,7 @@
 title: "When Will Tesla FSD Open Up in Korea? Model 3/Y Scenarios"
 description: "Tesla FSD launched in Korea, but only 4,292 cars — 2.4% of the fleet — can legally use it. How trade agreements and safety rules split Korean Teslas into four fates, and when China-built Model 3/Y might finally get access."
 pubDate: 2026-07-04T00:24:00+09:00
-category: ai
+category: economy
 tags: ["Tesla FSD", "Autonomous Driving", "DCAS", "Vehicle Regulation"]
 lang: en
 koSlug: 2026-07-03-tesla-fsd-korea-timeline

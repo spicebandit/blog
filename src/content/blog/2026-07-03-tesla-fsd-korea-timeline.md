@@ -2,7 +2,7 @@
 title: "테슬라 FSD, 한국은 언제 개방되나 — 모델3·Y 시나리오"
 description: "테슬라 FSD가 한국에 왔지만 쓸 수 있는 차는 4,292대, 전체의 2.4%뿐. 미국산·중국산, HW3·AI4로 갈리는 네 그룹의 운명과 UN R171 DCAS 규제 일정, 중국산 모델3·Y 개방 시점을 시나리오로 전망한다."
 pubDate: 2026-07-04T00:24:00+09:00
-category: ai
+category: economy
 tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 ---
 
