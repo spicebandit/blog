@@ -15,24 +15,7 @@ set base to "https://www.baseload.co.kr"
 set targets to {¬
   {"/blog/2026-07-03-tesla-fsd-korea-timeline/", "tesla-fsd-korea-timeline"}, ¬
   {"/blog/2026-07-03-hyman-minsky-model-korea-2026/", "hyman-minsky-model-korea-2026"}, ¬
-  {"/blog/2026-07-03-local-llm-iphone-guide/", "local-llm-iphone-guide"}, ¬
-  {"/blog/2026-07-02-local-llm-beginner-guide/", "local-llm-beginner-guide"}, ¬
-  {"/blog/2026-07-02-sodium-ion-battery-outlook/", "sodium-ion-battery-outlook"}, ¬
-  {"/blog/2026-06-27-korea-stock-broker-api-comparison/", "korea-stock-broker-api-comparison"}, ¬
-  {"/blog/2026-06-27-korea-public-data-api-guide/", "korea-public-data-api-guide"}, ¬
-  {"/blog/claude-code-stock-agent-2-kis-api/", "claude-code-stock-agent-2-kis-api"}, ¬
-  {"/blog/2026-06-28-hermes-agent-nous-research-install-guide/", "hermes-agent-nous-research-install-guide"}, ¬
-  {"/blog/2026-06-27-claude-code-alternatives-comparison-2026/", "claude-code-alternatives-comparison-2026"}, ¬
-  {"/blog/2026-06-29-summer-electricity-bill-2026-progressive-rate/", "summer-electricity-bill-2026-progressive-rate"}, ¬
-  {"/blog/2026-06-28-gpt-56-europa-ai-sovereignty-war/", "gpt-56-europa-ai-sovereignty-war"}, ¬
-  {"/blog/2026-06-30-bernie-sanders-ai-arguments/", "bernie-sanders-ai-arguments"}, ¬
-  {"/blog/2026-07-01-ess-auction-market-rps-transition/", "ess-auction-market-rps-transition"}, ¬
-  {"/blog/2026-07-01-krx-aftermarket-extended-trading-hours/", "krx-aftermarket-extended-trading-hours"}, ¬
-  {"/blog/2026-06-30-ai-agent-enterprise-adoption-gap/", "ai-agent-enterprise-adoption-gap"}, ¬
-  {"/blog/2026-06-30-korea-summer-power-supply-2026/", "korea-summer-power-supply-2026"}, ¬
-  {"/blog/2026-06-30-2026-h1-korea-economy-review-h2-outlook/", "2026-h1-korea-economy-review-h2-outlook"}, ¬
-  {"/blog/2026-06-30-anthropic-mythos-export-control/", "anthropic-mythos-export-control"}, ¬
-  {"/blog/2026-07-02-ess-battery-lfp-solid-state-trend/", "ess-battery-lfp-solid-state-trend"}}
+  {"/blog/2026-07-03-local-llm-iphone-guide/", "local-llm-iphone-guide"}}
 
 set readRows to "(function(){return [].slice.call(document.querySelectorAll('table tbody tr')).map(function(r){return (r.textContent||'')}).join(' ');})();"
 
