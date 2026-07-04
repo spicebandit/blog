@@ -8,12 +8,15 @@ import { categoryName } from '../../lib/categories';
 import { formatDateKR } from '../../lib/format';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV);
+  // draft 글도 URL은 생성한다 (검수용 프리뷰 링크).
+  // 목록·RSS·사이트맵은 draft를 걸러내고 noindex 처리되므로, 링크를 아는 사람만 접근 가능.
+  const posts = await getCollection('blog');
   return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 
 const { post } = Astro.props;
 const { Content, headings } = await render(post);
+const isPreview = post.data.draft === true;
 
 // hreflang 상호선언: 영문판(blog-en)이 있으면 ko↔en 쌍으로 알린다 (구글은 단방향 선언 무시)
 const SITE = Astro.site!;
@@ -56,9 +59,16 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
   updatedDate={post.data.updatedDate}
   wide={true}
   hrefLangAlts={hrefLangAlts}
+  noindex={isPreview}
 >
   <!-- ② 읽기 진행바: 스크롤 진행도를 상단 레드 라인으로 표시 -->
   <div class="read-progress" aria-hidden="true"></div>
+
+  {isPreview && (
+    <div class="preview-banner" role="status">
+      검수용 미리보기 — 아직 발행 전 초안입니다. 목록·검색에 노출되지 않습니다.
+    </div>
+  )}
 
   <div class="article-layout">
     <div class="article-main">
@@ -143,6 +153,18 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
   }
 
   .reading-time { color: var(--muted); font-size: 0.85rem; }
+
+  /* 검수용 프리뷰 배너 */
+  .preview-banner {
+    background: var(--accent-soft);
+    border: 1px dashed var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+  }
 
   /* ② 읽기 진행바 */
   .read-progress {

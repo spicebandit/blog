@@ -26,9 +26,10 @@ interface Props {
   wide?: boolean;
   lang?: string; // page language, defaults to 'ko'
   hrefLangAlts?: HrefLangAlt[]; // hreflang alternate links
+  noindex?: boolean; // 검수용 프리뷰 등 검색엔진 비노출 페이지
 }
 
-const { title, description, type = 'website', pubDate, updatedDate, wide = false, lang = 'ko', hrefLangAlts } = Astro.props;
+const { title, description, type = 'website', pubDate, updatedDate, wide = false, lang = 'ko', hrefLangAlts, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const SITE_NAME = 'BASELOAD';
 
@@ -64,6 +65,7 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     </script>
     <title>{title === SITE_NAME ? title : `${title} | ${SITE_NAME}`}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
     {hrefLangAlts && hrefLangAlts.map((alt) => (
       <link rel="alternate" hreflang={alt.lang} href={alt.href} />
