@@ -11,24 +11,24 @@ koSlug: 2026-07-03-tesla-fsd-korea-timeline
 **Same Tesla, different fate — why can your neighbor use FSD while you can't?** In November 2025, Tesla's FSD (Supervised) arrived in South Korea — nine years after the company's October 2016 promise that "every car ships with full self-driving hardware," and the seventh country in the world to get it ([Hankyung Business](https://magazine.hankyung.com/business/article/202512031549b)). Yet the overwhelming majority of Korean Tesla owners are stuck watching from the sidelines. The cars legally cleared for FSD are the US-built Model S, Model X, and Cybertruck — **exactly 4,292 vehicles, or 2.4% of Korea's 180,684 registered Teslas** ([Kyunghyang Shinmun, May 4, 2026](https://www.khan.co.kr/article/202605041128001)). The other 97.6% — more than 176,000 China-built Model 3s and Ys — are locked out at the software level, even the ones carrying Tesla's latest AI4 (HW4) computer. The punchline up front: this gap is a product of **trade agreements and safety regulations, not technology**, and the realistic center of gravity for China-built cars getting FSD is **Q4 2027**. Here's why, and what could change it.
 
 <figure>
-<svg viewBox="0 0 800 320" role="img" aria-label="Proportional bar showing that only 4,292 of Korea's 180,684 registered Teslas (2.4%) can legally use FSD, plus a breakdown of the eligible fleet: Model X 2,708, Model S 1,193, Cybertruck 391" style="width:100%;height:auto;background:#fafafa;border:1px solid #eee;border-radius:8px;font-family:system-ui">
-  <text x="20" y="32" font-size="16" font-weight="700" fill="#111">Of 180,684 Teslas in Korea, only 4,292 (2.4%) can legally run FSD</text>
-  <rect x="50" y="60" width="17" height="40" fill="#2563eb"/>
-  <rect x="67" y="60" width="683" height="40" fill="#d1d5db"/>
-  <line x1="58" y1="104" x2="58" y2="122" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="50" y="138" font-size="13" font-weight="700" fill="#2563eb">FSD eligible: 4,292 (2.4%)</text>
-  <text x="750" y="138" font-size="13" fill="#6b7280" text-anchor="end">Not eligible (China-built Model 3/Y etc.): 176,392 (97.6%)</text>
-  <text x="20" y="180" font-size="14" font-weight="700" fill="#374151">The 4,292 eligible cars (all US-built)</text>
-  <g font-size="13" fill="#374151">
+<svg viewBox="0 0 800 320" role="img" aria-label="Proportional bar showing that only 4,292 of Korea's 180,684 registered Teslas (2.4%) can legally use FSD, plus a breakdown of the eligible fleet: Model X 2,708, Model S 1,193, Cybertruck 391" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">Of 180,684 Teslas in Korea, only 4,292 (2.4%) can legally run FSD</text>
+  <rect x="50" y="60" width="17" height="40" fill="#C8102E"/>
+  <rect x="67" y="60" width="683" height="40" fill="#E5DECF"/>
+  <line x1="58" y1="104" x2="58" y2="122" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="50" y="138" font-size="13" font-weight="700" fill="#C8102E">FSD eligible: 4,292 (2.4%)</text>
+  <text x="750" y="138" font-size="13" fill="#8A8378" text-anchor="end">Not eligible (China-built Model 3/Y etc.): 176,392 (97.6%)</text>
+  <text x="20" y="180" font-size="14" font-weight="700" fill="#23201D">The 4,292 eligible cars (all US-built)</text>
+  <g font-size="13" fill="#23201D">
     <text x="160" y="212" text-anchor="end">Model X</text>
-    <rect x="170" y="196" width="400" height="22" rx="4" fill="#2563eb"/>
-    <text x="578" y="212" font-weight="700" fill="#111">2,708</text>
+    <rect x="170" y="196" width="400" height="22" rx="4" fill="#C8102E"/>
+    <text x="578" y="212" font-weight="700" fill="#23201D">2,708</text>
     <text x="160" y="248" text-anchor="end">Model S</text>
-    <rect x="170" y="232" width="176" height="22" rx="4" fill="#60a5fa"/>
-    <text x="354" y="248" fill="#374151">1,193</text>
+    <rect x="170" y="232" width="176" height="22" rx="4" fill="#23201D"/>
+    <text x="354" y="248" fill="#23201D">1,193</text>
     <text x="160" y="284" text-anchor="end">Cybertruck</text>
-    <rect x="170" y="268" width="58" height="22" rx="4" fill="#93c5fd"/>
-    <text x="236" y="284" fill="#374151">391</text>
+    <rect x="170" y="268" width="58" height="22" rx="4" fill="#8A8378"/>
+    <text x="236" y="284" fill="#23201D">391</text>
   </g>
 </svg>
 <figcaption>Korea's Tesla fleet and FSD-eligible vehicles (as of April 28, 2026). Sources: Ministry of Land data via Rep. Park Yong-gap's office, <a href="https://www.khan.co.kr/article/202605041128001">Kyunghyang Shinmun</a> · <a href="https://www.etnews.com/20260504000169">ET News</a></figcaption>
@@ -83,33 +83,33 @@ There's an encouraging precedent. On **April 10, 2026, the Dutch vehicle authori
 Lay the ministry's procedural blocks on a calendar and three paths emerge.
 
 <figure>
-<svg viewBox="0 0 800 300" role="img" aria-label="Timeline of expected FSD availability by group in Korea: US-built AI4 in use since November 2025, US-built HW3 in the second half of 2026, China-built AI4 between H1 2027 (optimistic) and Q4 2027 (base case), with a pessimistic scenario extending into 2028" style="width:100%;height:auto;background:#fafafa;border:1px solid #eee;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="16" font-weight="700" fill="#111">Expected FSD unlock timing by group (as of July 2026)</text>
-  <g stroke="#e5e7eb" stroke-width="1">
+<svg viewBox="0 0 800 300" role="img" aria-label="Timeline of expected FSD availability by group in Korea: US-built AI4 in use since November 2025, US-built HW3 in the second half of 2026, China-built AI4 between H1 2027 (optimistic) and Q4 2027 (base case), with a pessimistic scenario extending into 2028" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">Expected FSD unlock timing by group (as of July 2026)</text>
+  <g stroke="#E5DECF" stroke-width="1">
     <line x1="197" y1="50" x2="197" y2="240"/>
     <line x1="385" y1="50" x2="385" y2="240"/>
     <line x1="572" y1="50" x2="572" y2="240"/>
     <line x1="760" y1="50" x2="760" y2="240"/>
   </g>
-  <g font-size="12" fill="#6b7280">
+  <g font-size="12" fill="#8A8378">
     <text x="197" y="258" text-anchor="middle">2026</text>
     <text x="385" y="258" text-anchor="middle">2027</text>
     <text x="572" y="258" text-anchor="middle">2028</text>
     <text x="760" y="258" text-anchor="middle">2029</text>
   </g>
-  <text x="188" y="78" font-size="13" fill="#374151" text-anchor="end">① US-built AI4</text>
-  <rect x="166" y="62" width="594" height="20" rx="4" fill="#2563eb"/>
+  <text x="188" y="78" font-size="13" fill="#23201D" text-anchor="end">① US-built AI4</text>
+  <rect x="166" y="62" width="594" height="20" rx="4" fill="#C8102E"/>
   <text x="180" y="77" font-size="12" font-weight="700" fill="#fff">In use since Nov 2025</text>
-  <text x="188" y="123" font-size="13" fill="#374151" text-anchor="end">② US-built HW3</text>
-  <rect x="291" y="107" width="94" height="20" rx="4" fill="#60a5fa"/>
-  <text x="391" y="122" font-size="12" fill="#374151">H2 2026 (V14 Lite staged rollout)</text>
-  <text x="188" y="168" font-size="13" fill="#374151" text-anchor="end">③ China-built AI4</text>
-  <rect x="385" y="152" width="140" height="20" rx="4" fill="#93c5fd"/>
-  <rect x="525" y="152" width="94" height="20" rx="4" fill="#2563eb"/>
-  <text x="625" y="167" font-size="12" fill="#374151">Optimistic H1 2027 ~ Base Q4 2027</text>
-  <text x="188" y="213" font-size="13" fill="#374151" text-anchor="end">④ Pessimistic case</text>
-  <rect x="572" y="197" width="188" height="20" rx="4" fill="#d1d5db"/>
-  <text x="580" y="212" font-size="12" fill="#6b7280">Could slip into 2028</text>
+  <text x="188" y="123" font-size="13" fill="#23201D" text-anchor="end">② US-built HW3</text>
+  <rect x="291" y="107" width="94" height="20" rx="4" fill="#23201D"/>
+  <text x="391" y="122" font-size="12" fill="#23201D">H2 2026 (V14 Lite staged rollout)</text>
+  <text x="188" y="168" font-size="13" fill="#23201D" text-anchor="end">③ China-built AI4</text>
+  <rect x="385" y="152" width="140" height="20" rx="4" fill="#8A8378"/>
+  <rect x="525" y="152" width="94" height="20" rx="4" fill="#C8102E"/>
+  <text x="625" y="167" font-size="12" fill="#23201D">Optimistic H1 2027 ~ Base Q4 2027</text>
+  <text x="188" y="213" font-size="13" fill="#23201D" text-anchor="end">④ Pessimistic case</text>
+  <rect x="572" y="197" width="188" height="20" rx="4" fill="#E5DECF"/>
+  <text x="580" y="212" font-size="12" fill="#8A8378">Could slip into 2028</text>
 </svg>
 <figcaption>Author's estimate based on the ministry's disclosed procedural durations (6 months consultation + 6 months drafting + 3–4 months notice-to-review). Dark blue marks the center of gravity. Source: <a href="https://www.bloter.net/news/articleView.html?idxno=647466">Bloter (quoting MOLIT)</a></figcaption>
 </figure>

@@ -9,24 +9,24 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 **같은 테슬라인데 왜 누구는 되고 누구는 안 되나.** 2025년 11월, 테슬라 FSD(감독형, Supervised)가 한국에 상륙했다. 2016년 10월 "모든 차에 완전자율주행 하드웨어를 넣겠다"는 발표 이후 9년 만이자, 세계 7번째 출시국이었다([한경 비즈니스](https://magazine.hankyung.com/business/article/202512031549b)). 그런데 정작 국내 테슬라 오너의 절대다수는 구경만 하는 처지다. 현재 FSD가 합법적으로 열린 차량은 미국에서 생산된 모델 S·X와 사이버트럭, **정확히 4,292대 — 국내 전체 테슬라 18만 684대의 2.4%**다([경향신문, 2026-05-04](https://www.khan.co.kr/article/202605041128001)). 나머지 97.6%, 17만 6천여 대의 중국산 모델 3·Y는 최신 AI4(HW4) 하드웨어를 달고도 소프트웨어 차원에서 원천 차단돼 있다. 결론부터 말하면 — 이 격차는 기술이 아니라 **통상 협정과 안전기준이 만든 제도의 산물**이고, 중국산 차량이 실제로 FSD 버튼을 누르는 시점의 무게중심은 **2027년 4분기**다. 왜 그런지, 무엇이 변수인지 순서대로 뜯어본다.
 
 <figure>
-<svg viewBox="0 0 800 320" role="img" aria-label="국내 테슬라 등록 18만684대 중 FSD 합법 차량은 4,292대로 2.4%에 불과함을 보여주는 비율 막대와, 합법 차량의 모델별 구성(모델X 2,708대, 모델S 1,193대, 사이버트럭 391대) 바차트" style="width:100%;height:auto;background:#fafafa;border:1px solid #eee;border-radius:8px;font-family:system-ui">
-  <text x="20" y="32" font-size="16" font-weight="700" fill="#111">국내 테슬라 18만 684대 중 FSD 합법은 4,292대 (2.4%)</text>
-  <rect x="50" y="60" width="17" height="40" fill="#2563eb"/>
-  <rect x="67" y="60" width="683" height="40" fill="#d1d5db"/>
-  <line x1="58" y1="104" x2="58" y2="122" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="50" y="138" font-size="13" font-weight="700" fill="#2563eb">FSD 가능 4,292대 (2.4%)</text>
-  <text x="750" y="138" font-size="13" fill="#6b7280" text-anchor="end">FSD 불가(중국산 모델 3·Y 등) 17만 6,392대 (97.6%)</text>
-  <text x="20" y="180" font-size="14" font-weight="700" fill="#374151">합법 4,292대의 구성 (전부 미국산)</text>
-  <g font-size="13" fill="#374151">
+<svg viewBox="0 0 800 320" role="img" aria-label="국내 테슬라 등록 18만684대 중 FSD 합법 차량은 4,292대로 2.4%에 불과함을 보여주는 비율 막대와, 합법 차량의 모델별 구성(모델X 2,708대, 모델S 1,193대, 사이버트럭 391대) 바차트" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">국내 테슬라 18만 684대 중 FSD 합법은 4,292대 (2.4%)</text>
+  <rect x="50" y="60" width="17" height="40" fill="#C8102E"/>
+  <rect x="67" y="60" width="683" height="40" fill="#E5DECF"/>
+  <line x1="58" y1="104" x2="58" y2="122" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="50" y="138" font-size="13" font-weight="700" fill="#C8102E">FSD 가능 4,292대 (2.4%)</text>
+  <text x="750" y="138" font-size="13" fill="#8A8378" text-anchor="end">FSD 불가(중국산 모델 3·Y 등) 17만 6,392대 (97.6%)</text>
+  <text x="20" y="180" font-size="14" font-weight="700" fill="#23201D">합법 4,292대의 구성 (전부 미국산)</text>
+  <g font-size="13" fill="#23201D">
     <text x="160" y="212" text-anchor="end">모델 X</text>
-    <rect x="170" y="196" width="400" height="22" rx="4" fill="#2563eb"/>
-    <text x="578" y="212" font-weight="700" fill="#111">2,708대</text>
+    <rect x="170" y="196" width="400" height="22" rx="4" fill="#C8102E"/>
+    <text x="578" y="212" font-weight="700" fill="#23201D">2,708대</text>
     <text x="160" y="248" text-anchor="end">모델 S</text>
-    <rect x="170" y="232" width="176" height="22" rx="4" fill="#60a5fa"/>
-    <text x="354" y="248" fill="#374151">1,193대</text>
+    <rect x="170" y="232" width="176" height="22" rx="4" fill="#23201D"/>
+    <text x="354" y="248" fill="#23201D">1,193대</text>
     <text x="160" y="284" text-anchor="end">사이버트럭</text>
-    <rect x="170" y="268" width="58" height="22" rx="4" fill="#93c5fd"/>
-    <text x="236" y="284" fill="#374151">391대</text>
+    <rect x="170" y="268" width="58" height="22" rx="4" fill="#8A8378"/>
+    <text x="236" y="284" fill="#23201D">391대</text>
   </g>
 </svg>
 <figcaption>국내 테슬라 등록 현황과 FSD 합법 차량 구성 (2026-04-28 기준). 출처: 국토교통부 자료·박용갑 의원실, <a href="https://www.khan.co.kr/article/202605041128001">경향신문</a>·<a href="https://www.etnews.com/20260504000169">전자신문</a></figcaption>
@@ -81,33 +81,33 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 국토부의 절차 블록을 캘린더에 얹어보면 세 갈래다.
 
 <figure>
-<svg viewBox="0 0 800 300" role="img" aria-label="국내 테슬라 그룹별 FSD 개방 예상 시점 타임라인. 미국산 AI4는 2025년 11월 사용 시작, 미국산 HW3는 2026년 하반기, 중국산 AI4는 낙관 시 2027년 상반기에서 기본 2027년 4분기, 비관 시 2028년까지" style="width:100%;height:auto;background:#fafafa;border:1px solid #eee;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="16" font-weight="700" fill="#111">그룹별 FSD 개방 예상 시점 (2026-07 현재)</text>
-  <g stroke="#e5e7eb" stroke-width="1">
+<svg viewBox="0 0 800 300" role="img" aria-label="국내 테슬라 그룹별 FSD 개방 예상 시점 타임라인. 미국산 AI4는 2025년 11월 사용 시작, 미국산 HW3는 2026년 하반기, 중국산 AI4는 낙관 시 2027년 상반기에서 기본 2027년 4분기, 비관 시 2028년까지" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">그룹별 FSD 개방 예상 시점 (2026-07 현재)</text>
+  <g stroke="#E5DECF" stroke-width="1">
     <line x1="197" y1="50" x2="197" y2="240"/>
     <line x1="385" y1="50" x2="385" y2="240"/>
     <line x1="572" y1="50" x2="572" y2="240"/>
     <line x1="760" y1="50" x2="760" y2="240"/>
   </g>
-  <g font-size="12" fill="#6b7280">
+  <g font-size="12" fill="#8A8378">
     <text x="197" y="258" text-anchor="middle">2026</text>
     <text x="385" y="258" text-anchor="middle">2027</text>
     <text x="572" y="258" text-anchor="middle">2028</text>
     <text x="760" y="258" text-anchor="middle">2029</text>
   </g>
-  <text x="188" y="78" font-size="13" fill="#374151" text-anchor="end">① 미국산 AI4</text>
-  <rect x="166" y="62" width="594" height="20" rx="4" fill="#2563eb"/>
+  <text x="188" y="78" font-size="13" fill="#23201D" text-anchor="end">① 미국산 AI4</text>
+  <rect x="166" y="62" width="594" height="20" rx="4" fill="#C8102E"/>
   <text x="180" y="77" font-size="12" font-weight="700" fill="#fff">2025-11 사용 중</text>
-  <text x="188" y="123" font-size="13" fill="#374151" text-anchor="end">② 미국산 HW3</text>
-  <rect x="291" y="107" width="94" height="20" rx="4" fill="#60a5fa"/>
-  <text x="391" y="122" font-size="12" fill="#374151">2026 하반기 (V14 Lite 순차 배포)</text>
-  <text x="188" y="168" font-size="13" fill="#374151" text-anchor="end">③ 중국산 AI4</text>
-  <rect x="385" y="152" width="140" height="20" rx="4" fill="#93c5fd"/>
-  <rect x="525" y="152" width="94" height="20" rx="4" fill="#2563eb"/>
-  <text x="625" y="167" font-size="12" fill="#374151">낙관 2027 상반기 ~ 기본 2027 4분기</text>
-  <text x="188" y="213" font-size="13" fill="#374151" text-anchor="end">④ 비관 시나리오</text>
-  <rect x="572" y="197" width="188" height="20" rx="4" fill="#d1d5db"/>
-  <text x="580" y="212" font-size="12" fill="#6b7280">2028년으로 밀릴 가능성</text>
+  <text x="188" y="123" font-size="13" fill="#23201D" text-anchor="end">② 미국산 HW3</text>
+  <rect x="291" y="107" width="94" height="20" rx="4" fill="#23201D"/>
+  <text x="391" y="122" font-size="12" fill="#23201D">2026 하반기 (V14 Lite 순차 배포)</text>
+  <text x="188" y="168" font-size="13" fill="#23201D" text-anchor="end">③ 중국산 AI4</text>
+  <rect x="385" y="152" width="140" height="20" rx="4" fill="#8A8378"/>
+  <rect x="525" y="152" width="94" height="20" rx="4" fill="#C8102E"/>
+  <text x="625" y="167" font-size="12" fill="#23201D">낙관 2027 상반기 ~ 기본 2027 4분기</text>
+  <text x="188" y="213" font-size="13" fill="#23201D" text-anchor="end">④ 비관 시나리오</text>
+  <rect x="572" y="197" width="188" height="20" rx="4" fill="#E5DECF"/>
+  <text x="580" y="212" font-size="12" fill="#8A8378">2028년으로 밀릴 가능성</text>
 </svg>
 <figcaption>국토부 공개 절차 소요기간(의견수렴 6개월 + 입안 6개월 + 입법예고~법제처 3~4개월)을 기반으로 한 추정. 진한 파랑이 무게중심. 출처: <a href="https://www.bloter.net/news/articleView.html?idxno=647466">블로터(국토부 인용)</a> 기반 필자 추정</figcaption>
 </figure>
