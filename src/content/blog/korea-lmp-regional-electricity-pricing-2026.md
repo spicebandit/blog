@@ -1,12 +1,13 @@
 ---
 title: "LMP 지역별 한계가격제, 2026 전기요금 대전환"
-description: "2026년 하반기 도입을 앞둔 지역별 한계가격제(LMP)란 무엇인지, 도입 일정과 수도권·비수도권 요금 격차, 한전·발전사·소비자에게 미칠 영향까지 한 번에 정리했습니다."
+description: "2026년 하반기 방안 확정을 앞둔 지역별 한계가격제(LMP)란 무엇인지, 도입 일정과 수도권·비수도권 요금 격차, 한전·발전사·소비자에게 미칠 영향까지 한 번에 정리했습니다."
 pubDate: 2026-06-20T18:30:00+09:00
+updatedDate: 2026-07-04T13:30:00+09:00
 category: energy
 tags: ["LMP", "지역별 차등 전기요금", "전력시장", "분산에너지법"]
 ---
 
-수십 년간 한국은 어디서 살든 전기요금이 똑같았습니다. 서울이든 충남이든 같은 단가. 그런데 2026년 하반기를 분수령으로 이 원칙이 깨집니다. 바로 **지역별 한계가격제(LMP, Locational Marginal Price)** 때문입니다. 이 글은 LMP가 정확히 무엇이고, 언제·어떻게 도입되며, 내 전기요금과 한전·발전사에 어떤 영향을 주는지를 정리합니다.
+수십 년간 한국은 어디서 살든 전기요금이 똑같았습니다. 서울이든 충남이든 같은 단가. 그런데 2026년 하반기 정부의 방안 확정을 분수령으로 이 원칙이 깨질 전망입니다. 바로 **지역별 한계가격제(LMP, Locational Marginal Price)** 때문입니다. 이 글은 LMP가 정확히 무엇이고, 언제·어떻게 도입되며, 내 전기요금과 한전·발전사에 어떤 영향을 주는지를 정리합니다.
 
 ![Dramatic sunset with silhouetted electricity pylon and clouds, creating a striking contrast.](https://images.pexels.com/photos/19222421/pexels-photo-19222421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *Photo by [Nikola Tomašić](https://www.pexels.com/@nikola-tomasic-58494762) on [Pexels](https://www.pexels.com/photo/electricity-pylon-in-evening-19222421/)*
@@ -29,7 +30,7 @@ LMP는 같은 시각이라도 **전기를 생산·소비하는 위치에 따라 
 - **권역 구분(1단계)**: **수도권 / 비수도권 / 제주** 3개 권역으로 단순하게 시작해 점차 세분화. 중장기(2단계)로는 **발전기·변전소별 LMP**(목표 2030년경)까지 갑니다.
 - **도매 먼저, 소매 확대**: 우선 발전사의 도매가격을 지역별로 차등(초기엔 실제 정산 없는 '모의운영')하고, 정착되면 소비자 소매요금까지 단계적으로 차등. 최근에는 **도·소매 동시 도입**으로 가닥을 잡고 산업부가 전력시장 운영규칙 개정을 추진 중입니다.
 
-다만 지역 간 이해관계와 정치 일정이 얽히면서 시행 시점은 계획보다 다소 늦춰졌고, **2026년 하반기가 실질적인 분수령**으로 꼽힙니다.
+다만 지역 간 이해관계와 정치 일정이 얽히면서 시행 시점은 계획보다 다소 늦춰졌고, **2026년 하반기가 구체 방안이 확정되는 실질적인 분수령**으로 꼽힙니다(실제 요금 반영은 이르면 2027년이라는 관측이 우세합니다 — [도입 경과 추적편](/blog/2026-07-04-lmp-rollout-progress-2026h2/) 참고).
 
 ![Vast green field with high-voltage power lines silhouetted against a dusk sky, capturing serene rural landscapes.](https://images.pexels.com/photos/37204615/pexels-photo-37204615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *Photo by [ÇİĞDEM EYCE](https://www.pexels.com/@cigdemeyce) on [Pexels](https://www.pexels.com/photo/serene-green-field-with-power-lines-at-dusk-37204615/)*
