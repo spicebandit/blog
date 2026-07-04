@@ -9,3 +9,4 @@ dist/
 !.env.example
 logs/
 scripts/.bernie/
+.naver-index-last
