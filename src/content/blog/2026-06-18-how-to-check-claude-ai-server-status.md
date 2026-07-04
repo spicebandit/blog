@@ -24,8 +24,8 @@ draft: false
 <script>
 (function(){
   var EL=document.getElementById('cc-status'); if(!EL) return;
-  var MAP={none:['#10b981','모든 시스템 정상'],minor:['#f59e0b','일부 경미한 문제'],major:['#f97316','일부 장애 발생'],critical:['#dc2626','심각한 장애'],maintenance:['#3b82f6','점검 중']};
-  var CMAP={operational:['#10b981','정상'],degraded_performance:['#f59e0b','지연'],partial_outage:['#f97316','부분 장애'],major_outage:['#dc2626','전면 장애'],under_maintenance:['#3b82f6','점검']};
+  var MAP={none:['#4A6741','모든 시스템 정상'],minor:['#C89B3C','일부 경미한 문제'],major:['#B85C1E','일부 장애 발생'],critical:['#C8102E','심각한 장애'],maintenance:['#23201D','점검 중']};
+  var CMAP={operational:['#4A6741','정상'],degraded_performance:['#C89B3C','지연'],partial_outage:['#B85C1E','부분 장애'],major_outage:['#C8102E','전면 장애'],under_maintenance:['#23201D','점검']};
   function fmt(){return new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});}
   function render(data){
     var ind=(data.status&&data.status.indicator)||'none';
@@ -35,7 +35,7 @@ draft: false
     var order=['Claude Code','claude.ai','Claude API (api.anthropic.com)','Claude Console (platform.claude.com)','Claude Cowork','Claude for Government'];
     var byName={}; (data.components||[]).forEach(function(c){byName[c.name]=c;});
     var g=document.getElementById('cc-grid'); g.innerHTML='';
-    order.forEach(function(n){var c=byName[n]; if(!c) return; var cm=CMAP[c.status]||['#9ca3af','—'];
+    order.forEach(function(n){var c=byName[n]; if(!c) return; var cm=CMAP[c.status]||['#8A8378','—'];
       var el=document.createElement('div'); el.className='cc-cell'+(n==='Claude Code'?' cc-hi':'');
       el.innerHTML='<span class="cc-d" style="background:'+cm[0]+'"></span>'+n.replace(/ \(.*\)/,'')+' <b>'+cm[1]+'</b>';
       g.appendChild(el);});
@@ -44,28 +44,28 @@ draft: false
   }
   function load(){fetch('https://status.claude.com/api/v2/summary.json',{cache:'no-store'}).then(function(r){return r.json();}).then(render).catch(function(){
     document.getElementById('cc-desc').textContent='상태를 불러오지 못했습니다 — 공식 페이지에서 확인하세요';
-    EL.querySelector('.cc-dot').style.background='#9ca3af'; EL.querySelector('.cc-dot').className='cc-dot';
+    EL.querySelector('.cc-dot').style.background='#8A8378'; EL.querySelector('.cc-dot').className='cc-dot';
   });}
   load(); setInterval(load,60000);
 })();
 </script>
 
 <style>
-.cc-status{border:1px solid #e5e7eb;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:linear-gradient(180deg,#fff,#fafafa);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.cc-status{border:1px solid #E5DECF;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:#FAF6EE;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .cc-status .cc-row{display:flex;align-items:center;gap:12px}
-.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#d1d5db;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
+.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#E5DECF;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
 .cc-status .cc-dot.cc-load{animation:ccpulse 1s infinite}
 @keyframes ccpulse{0%,100%{opacity:.35}50%{opacity:1}}
 .cc-status .cc-main{flex:1;min-width:0}
 .cc-status .cc-title{font-weight:800;font-size:.92rem}
 .cc-status .cc-desc{font-size:1.05rem;font-weight:700}
-.cc-status .cc-link{font-size:.8rem;white-space:nowrap;text-decoration:none;color:#2563eb}
+.cc-status .cc-link{font-size:.8rem;white-space:nowrap;text-decoration:none;color:#C8102E}
 .cc-status .cc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}
-.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #eee;border-radius:8px;padding:5px 8px}
-.cc-status .cc-cell.cc-hi{border-color:#c7d2fe;background:#eef2ff}
+.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:5px 8px}
+.cc-status .cc-cell.cc-hi{border-color:#C8102E;background:#F1EADD}
 .cc-status .cc-cell .cc-d{width:9px;height:9px;border-radius:50%;flex:none}
 .cc-status .cc-cell b{margin-left:auto;font-weight:700}
-.cc-status .cc-meta{font-size:.72rem;color:#9ca3af;margin-top:8px}
+.cc-status .cc-meta{font-size:.72rem;color:#8A8378;margin-top:8px}
 @media(max-width:480px){.cc-status .cc-grid{grid-template-columns:1fr}}
 </style>
 
@@ -175,8 +175,8 @@ curl -s https://status.claude.com/api/v2/status.json
 
 <style>
 .status-legend{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
-.status-legend .st{flex:1;min-width:96px;border:1px solid #e5e7eb;border-radius:10px;padding:.6rem .5rem;background:#fafafa;font-size:.8rem;line-height:1.45;text-align:center}
+.status-legend .st{flex:1;min-width:96px;border:1px solid #E5DECF;border-radius:10px;padding:.6rem .5rem;background:#FAF6EE;font-size:.8rem;line-height:1.45;text-align:center}
 .status-legend .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-bottom:.35rem}
-.dot.op{background:#10b981}.dot.deg{background:#f59e0b}.dot.part{background:#f97316}.dot.major{background:#dc2626}.dot.maint{background:#3b82f6}
+.dot.op{background:#4A6741}.dot.deg{background:#C89B3C}.dot.part{background:#B85C1E}.dot.major{background:#C8102E}.dot.maint{background:#23201D}
 @media(max-width:640px){.status-legend .st{min-width:44%}}
 </style>

@@ -125,36 +125,36 @@ draft: false
 > ※ 본 글은 공개된 시장·정책 동향에 대한 해설이며, 특정 종목이나 상품에 대한 투자 조언이 아닙니다. 투자 판단과 책임은 본인에게 있습니다.
 
 <style>
-.chart-card{border:1px solid #e5e7eb;border-radius:14px;padding:1.1rem 1.2rem;margin:1.6rem 0;background:#fafafa}
-.chart-title{font-weight:700;font-size:.98rem;margin-bottom:1rem;color:#111827}
-.chart-note{margin-top:.9rem;font-size:.82rem;color:#6b7280;line-height:1.5}
+.chart-card{border:1px solid #E5DECF;border-radius:14px;padding:1.1rem 1.2rem;margin:1.6rem 0;background:#FAF6EE}
+.chart-title{font-weight:700;font-size:.98rem;margin-bottom:1rem;color:#23201D}
+.chart-note{margin-top:.9rem;font-size:.82rem;color:#8A8378;line-height:1.5}
 /* 가로 막대 (국가 비교) */
 .hbars{display:flex;flex-direction:column;gap:.6rem}
 .hbar{display:flex;align-items:center;gap:.6rem}
 .hbar .c{flex:0 0 76px;font-size:.86rem;font-weight:600}
-.hbar .track{flex:1;background:#eef2f7;border-radius:8px;overflow:hidden;height:30px}
-.hbar .fill{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-weight:700;font-size:.85rem;border-radius:8px}
-.fill.us{background:#1d4ed8}.fill.kr{background:#0d9488}.fill.jp{background:#9333ea}
+.hbar .track{flex:1;background:#E5DECF;border-radius:8px;overflow:hidden;height:30px}
+.hbar .fill{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#FAF6EE;font-weight:700;font-size:.85rem;border-radius:8px}
+.fill.us{background:#C8102E}.fill.kr{background:#23201D}.fill.jp{background:#8A8378}
 /* 점도표 막대 */
 .dotbar{display:flex;flex-direction:column;gap:.55rem}
 .dotrow{display:flex;align-items:center;gap:.6rem}
 .dotrow.sub{opacity:.85;padding-left:.4rem}
 .dotlabel{flex:0 0 84px;font-size:.84rem;font-weight:600}
-.dotrow .track{flex:1;background:#eef2f7;border-radius:8px;overflow:hidden;height:24px}
+.dotrow .track{flex:1;background:#E5DECF;border-radius:8px;overflow:hidden;height:24px}
 .dotrow .fill{height:100%;border-radius:8px}
-.fill.up{background:#dc2626}.fill.flat{background:#9ca3af}.fill.up2{background:#f59e0b}
+.fill.up{background:#C8102E}.fill.flat{background:#8A8378}.fill.up2{background:#23201D}
 .dotval{flex:0 0 36px;text-align:right;font-weight:700;font-size:.85rem}
 /* 세로 막대 (물가) */
 .vbars{display:flex;align-items:flex-end;gap:1rem;height:160px;padding:0 .3rem}
 .vbar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
-.vbar .col{width:64%;background:#3b82f6;border-radius:6px 6px 0 0;min-height:8px}
-.vbar .col.hot{background:#dc2626}.vbar .col.goal{background:#10b981}
+.vbar .col{width:64%;background:#8A8378;border-radius:6px 6px 0 0;min-height:8px}
+.vbar .col.hot{background:#C8102E}.vbar .col.goal{background:#4A6741}
 .vbar .v{font-weight:700;font-size:.82rem;margin-top:.35rem}
-.vbar .x{font-size:.72rem;color:#6b7280;text-align:center;margin-top:.1rem}
+.vbar .x{font-size:.72rem;color:#8A8378;text-align:center;margin-top:.1rem}
 /* 플로우 */
 .flow{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
-.flow .node{flex:1;min-width:90px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:.6rem .4rem;text-align:center;font-size:.8rem;line-height:1.35}
-.flow .node.warn{background:#fef2f2;border-color:#fecaca;color:#b91c1c;font-weight:600}
-.flow .arrow{color:#9ca3af;font-weight:700;flex:0 0 auto}
+.flow .node{flex:1;min-width:90px;background:#FAF6EE;border:1px solid #E5DECF;border-radius:10px;padding:.6rem .4rem;text-align:center;font-size:.8rem;line-height:1.35}
+.flow .node.warn{background:#F1EADD;border-color:#C8102E;color:#C8102E;font-weight:600}
+.flow .arrow{color:#8A8378;font-weight:700;flex:0 0 auto}
 @media(max-width:640px){.flow .arrow{display:none}.flow .node{min-width:46%}}
 </style>

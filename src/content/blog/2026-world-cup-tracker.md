@@ -9,49 +9,49 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <style>
 .wc-wrap { font-size: 0.95rem; }
-.wc-note { color:#6b7280; font-size:0.85rem; margin:.3em 0 1.2em; }
-.wc-updated { display:inline-block; background:#eef2ff; color:#3730a3; border-radius:6px; padding:4px 10px; font-size:0.85rem; font-weight:600; }
+.wc-note { color:#8A8378; font-size:0.85rem; margin:.3em 0 1.2em; }
+.wc-updated { display:inline-block; background:#F1EADD; color:#C8102E; border-radius:6px; padding:4px 10px; font-size:0.85rem; font-weight:600; }
 .wc-groups { display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:14px; margin:1em 0 1.5em; }
-.wc-group { border:1px solid #e5e7eb; border-radius:10px; padding:10px 12px; background:#fff; }
-.wc-group h3 { margin:.1em 0 .5em; font-size:1rem; color:#1e2761; border-bottom:2px solid #eef2ff; padding-bottom:4px; }
+.wc-group { border:1px solid #E5DECF; border-radius:10px; padding:10px 12px; background:#FAF6EE; }
+.wc-group h3 { margin:.1em 0 .5em; font-size:1rem; color:#23201D; border-bottom:2px solid #F1EADD; padding-bottom:4px; }
 .wc-group table { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0; }
-.wc-group th { text-align:right; color:#9ca3af; font-weight:600; font-size:0.72rem; padding:2px 3px; }
+.wc-group th { text-align:right; color:#8A8378; font-weight:600; font-size:0.72rem; padding:2px 3px; }
 .wc-group th:first-child { text-align:left; }
-.wc-group td { padding:3px 3px; border-top:1px solid #f3f4f6; text-align:right; }
+.wc-group td { padding:3px 3px; border-top:1px solid #E5DECF; text-align:right; }
 .wc-group td:first-child { text-align:left; white-space:nowrap; }
 .wc-group tr.adv td { font-weight:700; }
-.wc-group tr.adv td:first-child { color:#15803d; }
-.wc-legend { font-size:0.8rem; color:#6b7280; margin:-0.5em 0 1.5em; }
-.wc-legend b { color:#15803d; }
+.wc-group tr.adv td:first-child { color:#4A6741; }
+.wc-legend { font-size:0.8rem; color:#8A8378; margin:-0.5em 0 1.5em; }
+.wc-legend b { color:#4A6741; }
 .wc-third { width:100%; border-collapse:collapse; font-size:0.86rem; margin:.2em 0 1em; }
-.wc-third th { text-align:right; color:#9ca3af; font-weight:600; font-size:0.72rem; padding:4px 6px; border-bottom:2px solid #eef2ff; }
+.wc-third th { text-align:right; color:#8A8378; font-weight:600; font-size:0.72rem; padding:4px 6px; border-bottom:2px solid #F1EADD; }
 .wc-third th:nth-child(-n+3){ text-align:left; }
-.wc-third td { padding:5px 6px; border-top:1px solid #f3f4f6; text-align:right; font-variant-numeric:tabular-nums; }
+.wc-third td { padding:5px 6px; border-top:1px solid #E5DECF; text-align:right; font-variant-numeric:tabular-nums; }
 .wc-third td:nth-child(-n+3){ text-align:left; }
 .wc-third td:nth-child(3){ white-space:nowrap; }
 .wc-third tr.adv td { font-weight:700; }
-.wc-third tr.adv td:nth-child(3){ color:#15803d; }
-.wc-third tr.kr td { background:#e7f6ef; }
-.wc-third tr.kr td:first-child{ border-left:3px solid #15803d; }
+.wc-third tr.adv td:nth-child(3){ color:#4A6741; }
+.wc-third tr.kr td { background:#E6EBDC; }
+.wc-third tr.kr td:first-child{ border-left:3px solid #4A6741; }
 .wc-bracket-scroll { overflow-x:auto; padding-bottom:8px; -webkit-overflow-scrolling:touch; }
 .wc-bracket { display:flex; gap:10px; min-width:780px; }
 .wc-round { display:flex; flex-direction:column; justify-content:space-around; flex:1; gap:8px; min-width:130px; }
-.wc-round > h4 { text-align:center; font-size:0.8rem; color:#1e2761; margin:0 0 4px; padding:3px; background:#eef2ff; border-radius:6px; }
-.wc-m { border:1px solid #e5e7eb; border-radius:8px; padding:6px 8px; background:#fff; font-size:0.8rem; }
+.wc-round > h4 { text-align:center; font-size:0.8rem; color:#23201D; margin:0 0 4px; padding:3px; background:#F1EADD; border-radius:6px; }
+.wc-m { border:1px solid #E5DECF; border-radius:8px; padding:6px 8px; background:#FAF6EE; font-size:0.8rem; }
 .wc-m .t { display:flex; justify-content:space-between; gap:6px; }
 .wc-m .t span:first-child { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.wc-m .t .sc { color:#6b7280; font-variant-numeric:tabular-nums; }
-.wc-m.final { border-color:#f59e0b; background:#fffbeb; }
+.wc-m .t .sc { color:#8A8378; font-variant-numeric:tabular-nums; }
+.wc-m.final { border-color:#C89B3C; background:#F5EEDC; }
 .wc-sched { width:100%; border-collapse:collapse; font-size:0.9rem; }
-.wc-sched th, .wc-sched td { border-bottom:1px solid #f3f4f6; padding:7px 6px; text-align:left; }
-.wc-sched th { color:#6b7280; font-size:0.8rem; }
-.wc-sched .kst { color:#1e2761; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
-.wc-sched tr.kr td { background:#e7f6ef; font-weight:700; }
-.wc-sched tr.kr td:first-child { border-left:3px solid #15803d; }
+.wc-sched th, .wc-sched td { border-bottom:1px solid #E5DECF; padding:7px 6px; text-align:left; }
+.wc-sched th { color:#8A8378; font-size:0.8rem; }
+.wc-sched .kst { color:#23201D; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.wc-sched tr.kr td { background:#E6EBDC; font-weight:700; }
+.wc-sched tr.kr td:first-child { border-left:3px solid #4A6741; }
 .wc-overview { width:100%; border-collapse:collapse; margin:0 0 1em; }
-.wc-overview th { text-align:left; color:#6b7280; font-size:0.85rem; border-bottom:2px solid #eef2ff; padding:6px 8px; }
-.wc-overview td { border-bottom:1px solid #f3f4f6; padding:7px 8px; vertical-align:top; line-height:1.5; }
-.wc-overview td:first-child, .wc-overview th:first-child { white-space:nowrap; width:78px; color:#1e2761; font-weight:600; }
+.wc-overview th { text-align:left; color:#8A8378; font-size:0.85rem; border-bottom:2px solid #F1EADD; padding:6px 8px; }
+.wc-overview td { border-bottom:1px solid #E5DECF; padding:7px 8px; vertical-align:top; line-height:1.5; }
+.wc-overview td:first-child, .wc-overview th:first-child { white-space:nowrap; width:78px; color:#23201D; font-weight:600; }
 /* ── 모바일 최적화 (가로 넘침 방지 · 촘촘하게) ── */
 @media (max-width:600px) {
   .wc-wrap { font-size:0.9rem; }
@@ -104,7 +104,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 조편성 & 조별 순위
 
-상위 2팀(<b style="color:#15803d">초록색</b>)은 32강 직행, 각 조 3위는 12개 조 중 상위 8팀이 추가 진출합니다.
+상위 2팀(<b style="color:#4A6741">초록색</b>)은 32강 직행, 각 조 3위는 12개 조 중 상위 8팀이 추가 진출합니다.
 
 <div class="wc-groups">
 
@@ -210,7 +210,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 조 3위 팀 순위 (상위 8팀 32강 진출)
 
-48개국 체제에선 각 조 1·2위(24팀)에 더해 **각 조 3위 12팀 중 상위 8팀**이 32강에 추가 진출합니다. 아래는 승점 → 득실(동률 시 다득점) 순 최종 순위로, <b style="color:#15803d">초록색(1~8위)</b>이 진출 확정입니다. J조 알제리(승점 4)가 8위 안에 들면서 <b>대한민국은 10위로 밀려 진출이 무산됐습니다.</b>
+48개국 체제에선 각 조 1·2위(24팀)에 더해 **각 조 3위 12팀 중 상위 8팀**이 32강에 추가 진출합니다. 아래는 승점 → 득실(동률 시 다득점) 순 최종 순위로, <b style="color:#4A6741">초록색(1~8위)</b>이 진출 확정입니다. J조 알제리(승점 4)가 8위 안에 들면서 <b>대한민국은 10위로 밀려 진출이 무산됐습니다.</b>
 
 <table class="wc-third">
 <tr><th>순위</th><th>조</th><th>팀</th><th>경기</th><th>승점</th><th>득실</th></tr>
@@ -286,7 +286,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 다가오는 경기 (한국시간)
 
-모든 시각은 **한국시간(KST)** 기준입니다. <b style="color:#15803d">🇰🇷 대한민국 경기</b>는 초록색으로 표시했습니다. 결과는 경기 종료 후 자동 갱신됩니다.
+모든 시각은 **한국시간(KST)** 기준입니다. <b style="color:#4A6741">🇰🇷 대한민국 경기</b>는 초록색으로 표시했습니다. 결과는 경기 종료 후 자동 갱신됩니다.
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>

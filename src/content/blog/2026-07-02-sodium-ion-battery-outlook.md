@@ -35,28 +35,28 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
 *출처: Wood Mackenzie(2025-11), CATL 발표(2025-04), electrive·carnewschina 보도. 수치는 셀 사양·제조사·시점에 따라 달라지는 범위값.*
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="나트륨이온·LFP·NCM 에너지밀도 범위 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#fafafa;border:1px solid #eee;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#111">에너지밀도 비교 — 높을수록 유리 (Wh/kg, 셀 기준)</text>
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="나트륨이온·LFP·NCM 에너지밀도 범위 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">에너지밀도 비교 — 높을수록 유리 (Wh/kg, 셀 기준)</text>
   <!-- 차트영역 x:170~690 (520px), 0~260Wh/kg → 2px/Wh -->
-  <line x1="170" y1="60" x2="170" y2="210" stroke="#ccc" stroke-width="1"/>
-  <line x1="170" y1="210" x2="690" y2="210" stroke="#ccc" stroke-width="1"/>
-  <g font-size="11" fill="#999" text-anchor="middle">
+  <line x1="170" y1="60" x2="170" y2="210" stroke="#8A8378" stroke-width="1"/>
+  <line x1="170" y1="210" x2="690" y2="210" stroke="#8A8378" stroke-width="1"/>
+  <g font-size="11" fill="#8A8378" text-anchor="middle">
     <text x="170" y="228">0</text><text x="300" y="228">65</text><text x="430" y="228">130</text><text x="560" y="228">195</text><text x="690" y="228">260</text>
   </g>
   <!-- Na-ion 120~175 → x 410~520 -->
-  <text x="160" y="84" font-size="13" fill="#333" text-anchor="end" font-weight="700">나트륨이온</text>
-  <rect x="410" y="70" width="110" height="24" rx="3" fill="#2563eb"/>
-  <text x="528" y="87" font-size="12" fill="#2563eb" font-weight="700">120~175</text>
+  <text x="160" y="84" font-size="13" fill="#23201D" text-anchor="end" font-weight="700">나트륨이온</text>
+  <rect x="410" y="70" width="110" height="24" rx="3" fill="#C8102E"/>
+  <text x="528" y="87" font-size="12" fill="#C8102E" font-weight="700">120~175</text>
   <!-- LFP 90~160 → x 350~490 -->
-  <text x="160" y="134" font-size="13" fill="#333" text-anchor="end">LFP</text>
-  <rect x="350" y="120" width="140" height="24" rx="3" fill="#9ca3af"/>
-  <text x="498" y="137" font-size="12" fill="#6b7280">90~160</text>
+  <text x="160" y="134" font-size="13" fill="#23201D" text-anchor="end">LFP</text>
+  <rect x="350" y="120" width="140" height="24" rx="3" fill="#8A8378"/>
+  <text x="498" y="137" font-size="12" fill="#8A8378">90~160</text>
   <!-- NCM 150~250 → x 470~670 -->
-  <text x="160" y="184" font-size="13" fill="#333" text-anchor="end">NCM(삼원계)</text>
-  <rect x="470" y="170" width="200" height="24" rx="3" fill="#d1d5db"/>
-  <text x="560" y="187" font-size="12" fill="#6b7280" font-weight="700">150~250</text>
+  <text x="160" y="184" font-size="13" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
+  <rect x="470" y="170" width="200" height="24" rx="3" fill="#E5DECF"/>
+  <text x="560" y="187" font-size="12" fill="#8A8378" font-weight="700">150~250</text>
 </svg>
-<figcaption style="font-size:12px;color:#888;text-align:center;margin-top:4px;">나트륨이온 최상급(CATL Naxtra 175Wh/kg)은 이미 LFP 상단을 넘본다. 다만 범용 셀은 아직 120~160Wh/kg대다.</figcaption>
+<figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">나트륨이온 최상급(CATL Naxtra 175Wh/kg)은 이미 LFP 상단을 넘본다. 다만 범용 셀은 아직 120~160Wh/kg대다.</figcaption>
 </figure>
 
 주목할 부분은 에너지밀도의 '역전 조짐'이다. 몇 년 전까지 나트륨이온은 100~120Wh/kg대로 LFP에 한참 못 미쳤지만, CATL Naxtra가 **175Wh/kg**을 달성하면서 **범용 LFP와 겹치는 구간**까지 올라왔다. "밀도가 낮아서 못 쓴다"는 반론이 절대적이지 않게 된 것 — 이것이 2026년 나트륨이온을 다시 봐야 하는 첫 번째 이유다.
@@ -72,24 +72,24 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
 **셋째, 가격이 실제로 수렴하고 있다.** 우드매켄지는 2025년 11월 분석에서 평균 셀 원가를 **LFP $52/kWh, 나트륨이온 $59/kWh**로 추정했다. 아직 나트륨이 13%가량 비싸지만, 하락 기울기는 나트륨 쪽이 더 가파르며 **2035년경 파리티(가격 동등)**에 도달할 것으로 봤다. 학계는 더 낙관적이다. 핀란드 LUT대·독일 카를스루에공대(KIT) 공동 연구(에너지저장저널 게재)는 나트륨이온 셀이 "이미 리튬이온과 원가 파리티에 근접했다"며, 학습곡선이 유지되면 2050년 저장 균등화비용(LCOS)에서 나트륨이온(11~14유로/MWh)이 리튬이온(16~22유로/MWh)을 앞선다고 전망했다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2025년 나트륨이온과 LFP 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#fafafa;border:1px solid #eee;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#111">셀 원가 비교 — 낮을수록 유리 ($/kWh, 2025년 평균 추정)</text>
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2025년 나트륨이온과 LFP 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh, 2025년 평균 추정)</text>
   <!-- 차트영역 x:170~690 (520px), 0~80$/kWh → 6.5px/$ -->
-  <line x1="170" y1="60" x2="170" y2="170" stroke="#ccc" stroke-width="1"/>
-  <line x1="170" y1="170" x2="690" y2="170" stroke="#ccc" stroke-width="1"/>
-  <g font-size="11" fill="#999" text-anchor="middle">
+  <line x1="170" y1="60" x2="170" y2="170" stroke="#8A8378" stroke-width="1"/>
+  <line x1="170" y1="170" x2="690" y2="170" stroke="#8A8378" stroke-width="1"/>
+  <g font-size="11" fill="#8A8378" text-anchor="middle">
     <text x="170" y="188">0</text><text x="300" y="188">20</text><text x="430" y="188">40</text><text x="560" y="188">60</text><text x="690" y="188">80</text>
   </g>
   <!-- LFP 52 → width 338 -->
-  <text x="160" y="84" font-size="13" fill="#333" text-anchor="end">LFP</text>
-  <rect x="170" y="70" width="338" height="26" rx="3" fill="#9ca3af"/>
-  <text x="516" y="88" font-size="12" fill="#6b7280" font-weight="700">$52</text>
+  <text x="160" y="84" font-size="13" fill="#23201D" text-anchor="end">LFP</text>
+  <rect x="170" y="70" width="338" height="26" rx="3" fill="#8A8378"/>
+  <text x="516" y="88" font-size="12" fill="#8A8378" font-weight="700">$52</text>
   <!-- Na-ion 59 → width 383.5 -->
-  <text x="160" y="134" font-size="13" fill="#333" text-anchor="end" font-weight="700">나트륨이온</text>
-  <rect x="170" y="120" width="384" height="26" rx="3" fill="#2563eb"/>
-  <text x="562" y="138" font-size="12" fill="#2563eb" font-weight="700">$59 (격차 13%)</text>
+  <text x="160" y="134" font-size="13" fill="#23201D" text-anchor="end" font-weight="700">나트륨이온</text>
+  <rect x="170" y="120" width="384" height="26" rx="3" fill="#C8102E"/>
+  <text x="562" y="138" font-size="12" fill="#C8102E" font-weight="700">$59 (격차 13%)</text>
 </svg>
-<figcaption style="font-size:12px;color:#888;text-align:center;margin-top:4px;">우드매켄지 2025년 평균 추정. 아직 나트륨이 비싸지만 하락 기울기가 더 가팔라 2035년경 파리티 전망이다.</figcaption>
+<figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">우드매켄지 2025년 평균 추정. 아직 나트륨이 비싸지만 하락 기울기가 더 가팔라 2035년경 파리티 전망이다.</figcaption>
 </figure>
 
 여기서 So What을 하나 짚자. **나트륨이온의 경제성은 '나트륨이 싸다'가 아니라 '리튬이 언제 다시 비싸지느냐'에 달려 있다.** 원료(소금)는 셀 원가의 극히 일부라, 규모의 경제가 붙기 전까지는 리튬이온보다 비싸다. 반대로 리튬 가격이 재차 급등하는 순간 나트륨의 원가 우위는 즉시 벌어진다. 즉 나트륨이온 투자는 배터리 업계가 **리튬 가격 변동성에 거는 헤지(hedge)**로 읽는 것이 정확하다.

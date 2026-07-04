@@ -25,8 +25,8 @@ koSlug: 2026-06-18-how-to-check-claude-ai-server-status
 <script>
 (function(){
   var EL=document.getElementById('cc-status'); if(!EL) return;
-  var MAP={none:['#10b981','All systems operational'],minor:['#f59e0b','Minor issues'],major:['#f97316','Some outages'],critical:['#dc2626','Critical outage'],maintenance:['#3b82f6','Under maintenance']};
-  var CMAP={operational:['#10b981','Operational'],degraded_performance:['#f59e0b','Degraded'],partial_outage:['#f97316','Partial outage'],major_outage:['#dc2626','Major outage'],under_maintenance:['#3b82f6','Maintenance']};
+  var MAP={none:['#4A6741','All systems operational'],minor:['#C89B3C','Minor issues'],major:['#B85C1E','Some outages'],critical:['#C8102E','Critical outage'],maintenance:['#23201D','Under maintenance']};
+  var CMAP={operational:['#4A6741','Operational'],degraded_performance:['#C89B3C','Degraded'],partial_outage:['#B85C1E','Partial outage'],major_outage:['#C8102E','Major outage'],under_maintenance:['#23201D','Maintenance']};
   function fmt(){return new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});}
   function render(data){
     var ind=(data.status&&data.status.indicator)||'none';
@@ -36,7 +36,7 @@ koSlug: 2026-06-18-how-to-check-claude-ai-server-status
     var order=['Claude Code','claude.ai','Claude API (api.anthropic.com)','Claude Console (platform.claude.com)','Claude Cowork','Claude for Government'];
     var byName={}; (data.components||[]).forEach(function(c){byName[c.name]=c;});
     var g=document.getElementById('cc-grid'); g.innerHTML='';
-    order.forEach(function(n){var c=byName[n]; if(!c) return; var cm=CMAP[c.status]||['#9ca3af','—'];
+    order.forEach(function(n){var c=byName[n]; if(!c) return; var cm=CMAP[c.status]||['#8A8378','—'];
       var el=document.createElement('div'); el.className='cc-cell'+(n==='Claude Code'?' cc-hi':'');
       el.innerHTML='<span class="cc-d" style="background:'+cm[0]+'"></span>'+n.replace(/ \(.*\)/,'')+' <b>'+cm[1]+'</b>';
       g.appendChild(el);});
@@ -45,28 +45,28 @@ koSlug: 2026-06-18-how-to-check-claude-ai-server-status
   }
   function load(){fetch('https://status.claude.com/api/v2/summary.json',{cache:'no-store'}).then(function(r){return r.json();}).then(render).catch(function(){
     document.getElementById('cc-desc').textContent='Could not load status — please check the official page';
-    EL.querySelector('.cc-dot').style.background='#9ca3af'; EL.querySelector('.cc-dot').className='cc-dot';
+    EL.querySelector('.cc-dot').style.background='#8A8378'; EL.querySelector('.cc-dot').className='cc-dot';
   });}
   load(); setInterval(load,60000);
 })();
 </script>
 
 <style>
-.cc-status{border:1px solid #e5e7eb;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:linear-gradient(180deg,#fff,#fafafa);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.cc-status{border:1px solid #E5DECF;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:#FAF6EE;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .cc-status .cc-row{display:flex;align-items:center;gap:12px}
-.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#d1d5db;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
+.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#E5DECF;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
 .cc-status .cc-dot.cc-load{animation:ccpulse 1s infinite}
 @keyframes ccpulse{0%,100%{opacity:.35}50%{opacity:1}}
 .cc-status .cc-main{flex:1;min-width:0}
 .cc-status .cc-title{font-weight:800;font-size:.92rem}
 .cc-status .cc-desc{font-size:1.05rem;font-weight:700}
-.cc-status .cc-link{font-size:.8rem;white-space:nowrap;text-decoration:none;color:#2563eb}
+.cc-status .cc-link{font-size:.8rem;white-space:nowrap;text-decoration:none;color:#C8102E}
 .cc-status .cc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}
-.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #eee;border-radius:8px;padding:5px 8px}
-.cc-status .cc-cell.cc-hi{border-color:#c7d2fe;background:#eef2ff}
+.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:5px 8px}
+.cc-status .cc-cell.cc-hi{border-color:#C8102E;background:#F1EADD}
 .cc-status .cc-cell .cc-d{width:9px;height:9px;border-radius:50%;flex:none}
 .cc-status .cc-cell b{margin-left:auto;font-weight:700}
-.cc-status .cc-meta{font-size:.72rem;color:#9ca3af;margin-top:8px}
+.cc-status .cc-meta{font-size:.72rem;color:#8A8378;margin-top:8px}
 @media(max-width:480px){.cc-status .cc-grid{grid-template-columns:1fr}}
 </style>
 
@@ -174,8 +174,8 @@ To sum up, **the No. 1 source is always the official status page ([status.claude
 
 <style>
 .status-legend{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
-.status-legend .st{flex:1;min-width:96px;border:1px solid #e5e7eb;border-radius:10px;padding:.6rem .5rem;background:#fafafa;font-size:.8rem;line-height:1.45;text-align:center}
+.status-legend .st{flex:1;min-width:96px;border:1px solid #E5DECF;border-radius:10px;padding:.6rem .5rem;background:#FAF6EE;font-size:.8rem;line-height:1.45;text-align:center}
 .status-legend .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-bottom:.35rem}
-.dot.op{background:#10b981}.dot.deg{background:#f59e0b}.dot.part{background:#f97316}.dot.major{background:#dc2626}.dot.maint{background:#3b82f6}
+.dot.op{background:#4A6741}.dot.deg{background:#C89B3C}.dot.part{background:#B85C1E}.dot.major{background:#C8102E}.dot.maint{background:#23201D}
 @media(max-width:640px){.status-legend .st{min-width:44%}}
 </style>

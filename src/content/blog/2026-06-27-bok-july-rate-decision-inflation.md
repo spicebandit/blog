@@ -23,37 +23,37 @@ tags: ["금통위", "기준금리", "소비자물가", "한국은행"]
 *출처: 통계청 「2026년 5월 소비자물가동향」(정책브리핑), 한국은행 통화정책방향 결정회의 공개자료*
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="소비자물가 상승률 비교 막대 그래프: 3월 2.2%, 4월 2.6%, 5월 3.1%, 5월 근원물가 2.5%, 한은 물가목표 2.0%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#fafafa;border:1px solid #eee;border-radius:8px;">
-<text x="24" y="34" font-size="17" font-weight="700" fill="#111">소비자물가 상승률 — 전년 동월 대비, %</text>
-<line x1="150" y1="60" x2="150" y2="262" stroke="#ccc"/>
-<line x1="150" y1="262" x2="690" y2="262" stroke="#ccc"/>
-<text x="140" y="84" text-anchor="end" font-size="13" fill="#333">3월 CPI(추정)</text>
-<rect x="150" y="68" width="297" height="24" rx="3" fill="#d1d5db"/>
-<text x="453" y="84" font-size="12" fill="#6b7280">~2.2%</text>
-<text x="140" y="124" text-anchor="end" font-size="13" fill="#333">4월 CPI</text>
-<rect x="150" y="108" width="351" height="24" rx="3" fill="#9ca3af"/>
-<text x="507" y="124" font-size="12" fill="#6b7280">2.6%</text>
-<text x="140" y="164" text-anchor="end" font-size="13" fill="#333">5월 CPI</text>
-<rect x="150" y="148" width="418.5" height="24" rx="3" fill="#2563eb"/>
-<text x="574.5" y="164" font-size="12" font-weight="700" fill="#2563eb">3.1%</text>
-<text x="140" y="204" text-anchor="end" font-size="13" fill="#333">5월 근원물가</text>
-<rect x="150" y="188" width="337.5" height="24" rx="3" fill="#9ca3af"/>
-<text x="493.5" y="204" font-size="12" fill="#6b7280">2.5%</text>
-<text x="140" y="244" text-anchor="end" font-size="13" fill="#333">한은 물가목표</text>
-<rect x="150" y="228" width="270" height="24" rx="3" fill="#d1d5db"/>
-<text x="426" y="244" font-size="12" fill="#6b7280">2.0%</text>
-<line x1="150" y1="262" x2="150" y2="266" stroke="#ccc"/>
-<line x1="285" y1="262" x2="285" y2="266" stroke="#ccc"/>
-<line x1="420" y1="262" x2="420" y2="266" stroke="#ccc"/>
-<line x1="555" y1="262" x2="555" y2="266" stroke="#ccc"/>
-<line x1="690" y1="262" x2="690" y2="266" stroke="#ccc"/>
-<text x="150" y="278" text-anchor="middle" font-size="11" fill="#999">0</text>
-<text x="285" y="278" text-anchor="middle" font-size="11" fill="#999">1</text>
-<text x="420" y="278" text-anchor="middle" font-size="11" fill="#999">2</text>
-<text x="555" y="278" text-anchor="middle" font-size="11" fill="#999">3</text>
-<text x="686" y="278" text-anchor="middle" font-size="11" fill="#999">4</text>
+<svg viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="소비자물가 상승률 비교 막대 그래프: 3월 2.2%, 4월 2.6%, 5월 3.1%, 5월 근원물가 2.5%, 한은 물가목표 2.0%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">소비자물가 상승률 — 전년 동월 대비, %</text>
+<line x1="150" y1="60" x2="150" y2="262" stroke="#8A8378"/>
+<line x1="150" y1="262" x2="690" y2="262" stroke="#8A8378"/>
+<text x="140" y="84" text-anchor="end" font-size="13" fill="#23201D">3월 CPI(추정)</text>
+<rect x="150" y="68" width="297" height="24" rx="3" fill="#E5DECF"/>
+<text x="453" y="84" font-size="12" fill="#8A8378">~2.2%</text>
+<text x="140" y="124" text-anchor="end" font-size="13" fill="#23201D">4월 CPI</text>
+<rect x="150" y="108" width="351" height="24" rx="3" fill="#8A8378"/>
+<text x="507" y="124" font-size="12" fill="#8A8378">2.6%</text>
+<text x="140" y="164" text-anchor="end" font-size="13" fill="#23201D">5월 CPI</text>
+<rect x="150" y="148" width="418.5" height="24" rx="3" fill="#C8102E"/>
+<text x="574.5" y="164" font-size="12" font-weight="700" fill="#C8102E">3.1%</text>
+<text x="140" y="204" text-anchor="end" font-size="13" fill="#23201D">5월 근원물가</text>
+<rect x="150" y="188" width="337.5" height="24" rx="3" fill="#8A8378"/>
+<text x="493.5" y="204" font-size="12" fill="#8A8378">2.5%</text>
+<text x="140" y="244" text-anchor="end" font-size="13" fill="#23201D">한은 물가목표</text>
+<rect x="150" y="228" width="270" height="24" rx="3" fill="#E5DECF"/>
+<text x="426" y="244" font-size="12" fill="#8A8378">2.0%</text>
+<line x1="150" y1="262" x2="150" y2="266" stroke="#8A8378"/>
+<line x1="285" y1="262" x2="285" y2="266" stroke="#8A8378"/>
+<line x1="420" y1="262" x2="420" y2="266" stroke="#8A8378"/>
+<line x1="555" y1="262" x2="555" y2="266" stroke="#8A8378"/>
+<line x1="690" y1="262" x2="690" y2="266" stroke="#8A8378"/>
+<text x="150" y="278" text-anchor="middle" font-size="11" fill="#8A8378">0</text>
+<text x="285" y="278" text-anchor="middle" font-size="11" fill="#8A8378">1</text>
+<text x="420" y="278" text-anchor="middle" font-size="11" fill="#8A8378">2</text>
+<text x="555" y="278" text-anchor="middle" font-size="11" fill="#8A8378">3</text>
+<text x="686" y="278" text-anchor="middle" font-size="11" fill="#8A8378">4</text>
 </svg>
-<figcaption style="font-size:12px;color:#888;text-align:center;margin-top:4px;">5월 CPI 3.1%는 물가목표(2%)를 크게 웃돌지만, 근원물가는 2.5%로 상승분의 상당 부분이 공급 요인임을 시사한다.</figcaption>
+<figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">5월 CPI 3.1%는 물가목표(2%)를 크게 웃돌지만, 근원물가는 2.5%로 상승분의 상당 부분이 공급 요인임을 시사한다.</figcaption>
 </figure>
 
 ![a group of people holding up signs in front of a building](https://images.unsplash.com/photo-1652696848707-8d3b5afbed72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxrb3JlYSUyMGNlbnRyYWwlMjBiYW5rJTIwaW50ZXJlc3QlMjByYXRlJTIwbW9uZXRhcnklMjBwb2xpY3l8ZW58MXwwfHx8MTc4MjUwNzkzOHww&ixlib=rb-4.1.0&q=80&w=1080)
@@ -83,26 +83,26 @@ tags: ["금통위", "기준금리", "소비자물가", "한국은행"]
 3. **인하**: 물가가 다시 빠르게 꺾이고 내수 지표가 급랭하지 않는 한, 당장 7월 인하는 가능성이 낮다는 평가가 우세하다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7월 금통위 기준금리 시나리오 막대 그래프: 동결 시 연 2.5%, 25bp 인상 시 연 2.75%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#fafafa;border:1px solid #eee;border-radius:8px;">
-<text x="24" y="34" font-size="17" font-weight="700" fill="#111">7월 금통위 기준금리 시나리오 — 연 %</text>
-<line x1="150" y1="60" x2="150" y2="142" stroke="#ccc"/>
-<line x1="150" y1="142" x2="690" y2="142" stroke="#ccc"/>
-<text x="140" y="84" text-anchor="end" font-size="13" fill="#333">동결(현행 유지)</text>
-<rect x="150" y="68" width="450" height="24" rx="3" fill="#2563eb"/>
-<text x="606" y="84" font-size="12" font-weight="700" fill="#2563eb">2.50%</text>
-<text x="140" y="124" text-anchor="end" font-size="13" fill="#333">25bp 인상 시</text>
-<rect x="150" y="108" width="495" height="24" rx="3" fill="#9ca3af"/>
-<text x="651" y="124" font-size="12" fill="#6b7280">2.75%</text>
-<line x1="150" y1="142" x2="150" y2="146" stroke="#ccc"/>
-<line x1="330" y1="142" x2="330" y2="146" stroke="#ccc"/>
-<line x1="510" y1="142" x2="510" y2="146" stroke="#ccc"/>
-<line x1="690" y1="142" x2="690" y2="146" stroke="#ccc"/>
-<text x="150" y="158" text-anchor="middle" font-size="11" fill="#999">0</text>
-<text x="330" y="158" text-anchor="middle" font-size="11" fill="#999">1</text>
-<text x="510" y="158" text-anchor="middle" font-size="11" fill="#999">2</text>
-<text x="686" y="158" text-anchor="middle" font-size="11" fill="#999">3</text>
+<svg viewBox="0 0 720 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7월 금통위 기준금리 시나리오 막대 그래프: 동결 시 연 2.5%, 25bp 인상 시 연 2.75%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">7월 금통위 기준금리 시나리오 — 연 %</text>
+<line x1="150" y1="60" x2="150" y2="142" stroke="#8A8378"/>
+<line x1="150" y1="142" x2="690" y2="142" stroke="#8A8378"/>
+<text x="140" y="84" text-anchor="end" font-size="13" fill="#23201D">동결(현행 유지)</text>
+<rect x="150" y="68" width="450" height="24" rx="3" fill="#C8102E"/>
+<text x="606" y="84" font-size="12" font-weight="700" fill="#C8102E">2.50%</text>
+<text x="140" y="124" text-anchor="end" font-size="13" fill="#23201D">25bp 인상 시</text>
+<rect x="150" y="108" width="495" height="24" rx="3" fill="#8A8378"/>
+<text x="651" y="124" font-size="12" fill="#8A8378">2.75%</text>
+<line x1="150" y1="142" x2="150" y2="146" stroke="#8A8378"/>
+<line x1="330" y1="142" x2="330" y2="146" stroke="#8A8378"/>
+<line x1="510" y1="142" x2="510" y2="146" stroke="#8A8378"/>
+<line x1="690" y1="142" x2="690" y2="146" stroke="#8A8378"/>
+<text x="150" y="158" text-anchor="middle" font-size="11" fill="#8A8378">0</text>
+<text x="330" y="158" text-anchor="middle" font-size="11" fill="#8A8378">1</text>
+<text x="510" y="158" text-anchor="middle" font-size="11" fill="#8A8378">2</text>
+<text x="686" y="158" text-anchor="middle" font-size="11" fill="#8A8378">3</text>
 </svg>
-<figcaption style="font-size:12px;color:#888;text-align:center;margin-top:4px;">시장이 보는 7월 무게중심은 동결(2.50%)이며, 인상 시나리오는 25bp 올린 2.75%가 거론된다.</figcaption>
+<figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">시장이 보는 7월 무게중심은 동결(2.50%)이며, 인상 시나리오는 25bp 올린 2.75%가 거론된다.</figcaption>
 </figure>
 
 핵심은 7월 한 번의 결정 그 자체보다, **한은이 어느 쪽으로 '문턱'을 옮기고 있는지**다. 불과 두 달 전 인하를 준비하던 기관이 인상까지 테이블에 올렸다는 사실 자체가, 물가의 무게중심이 얼마나 빠르게 바뀌었는지를 보여준다.

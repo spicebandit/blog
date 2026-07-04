@@ -93,17 +93,17 @@ The two dominant open-model families of early 2026 are **Google's Gemma 4 family
 Models tagged "A4B" or "A3B" use the **MoE (Mixture of Experts)** architecture: for each token, only a fraction of the total parameters (3–4B) activate, making computation light and fast. "Dense," by contrast, means the conventional architecture that uses every parameter all the time. One crucial caveat — **memory requirements follow the total parameter count.** A 35B-A3B computes like a 3B model, but all 35B must sit in memory. MoE saves compute, not memory — the single point beginners trip over most.
 
 <figure>
-<svg viewBox="0 0 800 400" role="img" aria-label="Bar chart comparing required memory for recommended beginner local LLM models. Gemma 4 E2B about 4GB, Gemma 4 E4B about 6GB, Gemma 4 26B A4B 16 to 24GB, Qwen3.6-35B-A3B about 20GB, Gemma 4 31B 17 to 20GB" style="width:100%;height:auto;background:#fafafa;border:1px solid #eee;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="16" font-weight="700" fill="#111">Required memory by recommended model (Q4 quantization, GB — lower means lower barrier to entry)</text>
+<svg viewBox="0 0 800 400" role="img" aria-label="Bar chart comparing required memory for recommended beginner local LLM models. Gemma 4 E2B about 4GB, Gemma 4 E4B about 6GB, Gemma 4 26B A4B 16 to 24GB, Qwen3.6-35B-A3B about 20GB, Gemma 4 31B 17 to 20GB" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">Required memory by recommended model (Q4 quantization, GB — lower means lower barrier to entry)</text>
   <!-- gridlines: 0,8,16,24,32 GB -->
-  <g stroke="#e5e7eb" stroke-width="1">
+  <g stroke="#E5DECF" stroke-width="1">
     <line x1="200" y1="52" x2="200" y2="330"/>
     <line x1="344" y1="52" x2="344" y2="330"/>
     <line x1="488" y1="52" x2="488" y2="330"/>
     <line x1="632" y1="52" x2="632" y2="330"/>
     <line x1="776" y1="52" x2="776" y2="330"/>
   </g>
-  <g font-size="12" fill="#6b7280">
+  <g font-size="12" fill="#8A8378">
     <text x="200" y="348" text-anchor="middle">0</text>
     <text x="344" y="348" text-anchor="middle">8GB</text>
     <text x="488" y="348" text-anchor="middle">16GB</text>
@@ -111,27 +111,27 @@ Models tagged "A4B" or "A3B" use the **MoE (Mixture of Experts)** architecture: 
     <text x="776" y="348" text-anchor="middle">32GB</text>
   </g>
   <!-- Gemma 4 E2B: ~4GB -->
-  <text x="192" y="80" font-size="13" fill="#374151" text-anchor="end">Gemma 4 E2B</text>
-  <rect x="200" y="62" width="72" height="28" rx="4" fill="#9ca3af"/>
-  <text x="280" y="82" font-size="13" fill="#374151">~4GB</text>
+  <text x="192" y="80" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 E2B</text>
+  <rect x="200" y="62" width="72" height="28" rx="4" fill="#8A8378"/>
+  <text x="280" y="82" font-size="13" fill="#23201D">~4GB</text>
   <!-- Gemma 4 E4B: ~6GB (hero) -->
-  <text x="192" y="135" font-size="13" fill="#374151" text-anchor="end">Gemma 4 E4B ★best starter</text>
-  <rect x="200" y="117" width="108" height="28" rx="4" fill="#2563eb"/>
-  <text x="316" y="137" font-size="13" font-weight="700" fill="#2563eb">~6GB</text>
+  <text x="192" y="135" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 E4B ★best starter</text>
+  <rect x="200" y="117" width="108" height="28" rx="4" fill="#C8102E"/>
+  <text x="316" y="137" font-size="13" font-weight="700" fill="#C8102E">~6GB</text>
   <!-- Gemma 4 26B A4B: 16~24GB range -->
-  <text x="192" y="190" font-size="13" fill="#374151" text-anchor="end">Gemma 4 26B A4B</text>
-  <rect x="200" y="172" width="288" height="28" rx="4" fill="#9ca3af"/>
-  <rect x="488" y="172" width="144" height="28" rx="4" fill="#d1d5db"/>
-  <text x="640" y="192" font-size="13" fill="#374151">16–24GB</text>
+  <text x="192" y="190" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 26B A4B</text>
+  <rect x="200" y="172" width="288" height="28" rx="4" fill="#8A8378"/>
+  <rect x="488" y="172" width="144" height="28" rx="4" fill="#E5DECF"/>
+  <text x="640" y="192" font-size="13" fill="#23201D">16–24GB</text>
   <!-- Qwen3.6-35B-A3B: ~20GB -->
-  <text x="192" y="245" font-size="13" fill="#374151" text-anchor="end">Qwen3.6-35B-A3B</text>
-  <rect x="200" y="227" width="360" height="28" rx="4" fill="#9ca3af"/>
-  <text x="568" y="247" font-size="13" fill="#374151">~20GB</text>
+  <text x="192" y="245" font-size="13" fill="#23201D" text-anchor="end">Qwen3.6-35B-A3B</text>
+  <rect x="200" y="227" width="360" height="28" rx="4" fill="#8A8378"/>
+  <text x="568" y="247" font-size="13" fill="#23201D">~20GB</text>
   <!-- Gemma 4 31B: 17~20GB range -->
-  <text x="192" y="300" font-size="13" fill="#374151" text-anchor="end">Gemma 4 31B</text>
-  <rect x="200" y="282" width="306" height="28" rx="4" fill="#9ca3af"/>
-  <rect x="506" y="282" width="54" height="28" rx="4" fill="#d1d5db"/>
-  <text x="568" y="302" font-size="13" fill="#374151">17–20GB</text>
+  <text x="192" y="300" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 31B</text>
+  <rect x="200" y="282" width="306" height="28" rx="4" fill="#8A8378"/>
+  <rect x="506" y="282" width="54" height="28" rx="4" fill="#E5DECF"/>
+  <text x="568" y="302" font-size="13" fill="#23201D">17–20GB</text>
 </svg>
 <figcaption>Required memory at Q4 quantization (model weights only; context memory is extra). Light gray shows the range depending on quantization level and context settings. Sources: Google AI for Developers, Unsloth, APXML</figcaption>
 </figure>
