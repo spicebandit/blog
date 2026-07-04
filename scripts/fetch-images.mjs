@@ -15,6 +15,8 @@
  * 소스(--source):
  *   unsplash  (기본) — 분위기용 고화질 스톡. UNSPLASH_ACCESS_KEY 필요.
  *   wikimedia        — 실제 인물·기업·시설·지도 등 시사 이미지. API 키 불필요(CC/PD 라이선스).
+ *   pexels           — 무료 스톡(Unsplash 대안·rate limit 분산). PEXELS_API_KEY 필요.
+ *   openverse        — CC 라이선스 통합검색(플리커 등). API 키 불필요.
  *
  * 출력: JSON(파싱용) + 바로 붙여넣을 수 있는 마크다운 스니펫(이미지 + 출처)
  */
@@ -38,6 +40,14 @@ function collectUsedPhotoIds() {
         if (!f.endsWith('.md')) continue;
         const body = readFileSync(join(PROJECT_ROOT, dir, f), 'utf8');
         for (const m of body.matchAll(/images\.unsplash\.com\/(photo-[0-9a-f-]+)/g)) {
+          used.add(m[1]);
+        }
+        // Pexels: URL 경로의 사진 ID (images.pexels.com/photos/<id>/...)
+        for (const m of body.matchAll(/images\.pexels\.com\/photos\/(\d+)\//g)) {
+          used.add(`pexels-${m[1]}`);
+        }
+        // 기타 소스(openverse 등): 쿼리스트링 뺀 이미지 URL 자체를 키로
+        for (const m of body.matchAll(/!\[[^\]]*\]\((https?:\/\/[^)?\s]+)/g)) {
           used.add(m[1]);
         }
       }
@@ -218,9 +228,101 @@ async function fetchWikimedia(keyword, count) {
   return items;
 }
 
+/** ── 소스 3: Pexels ──────────────────────────────────────── */
+async function fetchPexels(keyword, count) {
+  const apiKey = process.env.PEXELS_API_KEY;
+  if (!apiKey) {
+    throw new Error('PEXELS_API_KEY가 없습니다. .env에 설정하세요.');
+  }
+
+  const url = new URL('https://api.pexels.com/v1/search');
+  url.searchParams.set('query', keyword);
+  url.searchParams.set('per_page', String(Math.min(Math.max(count * 3, 9), 30)));
+  url.searchParams.set('orientation', 'landscape');
+
+  const res = await fetch(url, { headers: { Authorization: apiKey } });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`Pexels API 오류 ${res.status}: ${body.slice(0, 200)}`);
+  }
+
+  const data = await res.json();
+  const used = collectUsedPhotoIds();
+  const results = (data.photos || [])
+    .filter((p) => !used.has(`pexels-${p.id}`))
+    .slice(0, count);
+
+  return results.map((p) => {
+    const photographer = p.photographer || 'Unknown';
+    const profileLink = p.photographer_url || 'https://www.pexels.com';
+    const photoLink = p.url || 'https://www.pexels.com';
+    const imageUrl = p.src?.large2x || p.src?.large || p.src?.original;
+    const alt = p.alt || keyword;
+    // Pexels 가이드라인: 사진작가+Pexels 크레딧 권장
+    const attribution = `Photo by [${photographer}](${profileLink}) on [Pexels](${photoLink})`;
+    return {
+      source: 'pexels',
+      imageUrl,
+      photographer,
+      profileLink,
+      photoLink,
+      alt,
+      attribution,
+      markdown: `![${alt}](${imageUrl})\n*${attribution}*`,
+    };
+  });
+}
+
+/** ── 소스 4: Openverse (CC 라이선스 통합검색) ─────────────── */
+async function fetchOpenverse(keyword, count) {
+  const url = new URL('https://api.openverse.org/v1/images/');
+  url.searchParams.set('q', keyword);
+  url.searchParams.set('license_type', 'commercial'); // 상업적 이용 가능 라이선스만
+  url.searchParams.set('page_size', String(Math.min(Math.max(count * 3, 9), 30)));
+
+  const res = await fetch(url, { headers: { 'User-Agent': WIKI_UA, Accept: 'application/json' } });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`Openverse API 오류 ${res.status}: ${body.slice(0, 200)}`);
+  }
+
+  const data = await res.json();
+  const used = collectUsedPhotoIds();
+  const items = [];
+  for (const p of data.results || []) {
+    const imageUrl = p.url;
+    if (!imageUrl || used.has(imageUrl.split('?')[0])) continue;
+    if ((p.width || 0) < 600) continue; // 너무 작은 이미지 제외
+    const creator = p.creator || 'Unknown';
+    const landing = p.foreign_landing_url || imageUrl;
+    const license = `CC ${String(p.license || '').toUpperCase()}${p.license_version ? ' ' + p.license_version : ''}`.trim();
+    const licenseUrl = p.license_url || '';
+    const alt = p.title || keyword;
+    const licenseMd = licenseUrl ? `[${license}](${licenseUrl})` : license;
+    // CC 라이선스 준수: 작가 + 원본 페이지 + 라이선스 표기
+    const attribution = `이미지: ${creator} · [${p.source || 'Openverse'}](${landing}) · ${licenseMd}`;
+    items.push({
+      source: 'openverse',
+      imageUrl,
+      photographer: creator,
+      profileLink: p.creator_url || landing,
+      photoLink: landing,
+      license,
+      licenseUrl,
+      alt,
+      attribution,
+      markdown: `![${alt}](${imageUrl})\n*${attribution}*`,
+    });
+    if (items.length >= count) break;
+  }
+  return items;
+}
+
 const SOURCES = {
   unsplash: fetchUnsplash,
   wikimedia: fetchWikimedia,
+  pexels: fetchPexels,
+  openverse: fetchOpenverse,
 };
 
 /** 소스를 지정해 이미지를 가져온다 (기본: unsplash) */
@@ -257,7 +359,7 @@ async function main() {
   const { keyword, count, source } = parseArgs(process.argv.slice(2));
 
   if (!keyword) {
-    console.error('사용법: node scripts/fetch-images.mjs "<영문 키워드>" [개수=3] [--source=unsplash|wikimedia]');
+    console.error('사용법: node scripts/fetch-images.mjs "<영문 키워드>" [개수=3] [--source=unsplash|wikimedia|pexels|openverse]');
     process.exit(1);
   }
 

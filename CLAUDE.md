@@ -64,9 +64,12 @@ main 브랜치에 push하면 Vercel이 자동 배포한다.
    ```bash
    node scripts/fetch-images.mjs "<영문 키워드>" 3                      # 기본 소스: unsplash
    node scripts/fetch-images.mjs "<영문 키워드>" 3 --source=wikimedia   # 위키미디어 커먼스
+   node scripts/fetch-images.mjs "<영문 키워드>" 3 --source=pexels      # 무료 스톡 (unsplash rate limit 시 대안)
+   node scripts/fetch-images.mjs "<영문 키워드>" 3 --source=openverse   # CC 통합검색 (플리커 등, 키 불필요)
    ```
    출력된 마크다운 스니펫(이미지 + 출처)을 본문에 그대로 붙여 쓴다.
-   - **소스 선택 기준**: 분위기·개념용 스톡사진은 `unsplash`(기본), 실제 인물·기업·시설·지도·차트 등 *주제 직결* 이미지는 `--source=wikimedia`. 시사성 강한 글은 둘을 섞어 써도 된다.
+   - **소스 선택 기준**: 분위기·개념용 스톡사진은 `unsplash`(기본), 실제 인물·기업·시설·지도·차트 등 *주제 직결* 이미지는 `--source=wikimedia`. unsplash가 rate limit(시간당 50회)에 걸리면 `pexels`로. 시사성 강한 글은 섞어 써도 된다.
+   - **이미지 중복 금지 (2026-07-04 사용자 지시)**: 같은 사진이 서로 다른 글에 반복되면 안 된다. unsplash·pexels·openverse는 스크립트가 기존 글에 쓰인 사진을 자동 제외하지만, 삽입 전 육안으로도 확인한다.
 2. 배치: 이미지는 소제목(h2) 근처에 자연스럽게 배치한다. 한 곳에 몰지 말고 글 전체에 분산한다.
 3. 출처 표기(필수): 각 이미지 바로 아래에 스크립트가 만들어 준 출처 문구를 **그대로** 넣는다(소스별 라이선스 약관에 맞춰 자동 생성되므로 임의로 바꾸지 않는다).
    - Unsplash: `*Photo by [작가명](프로필링크) on [Unsplash](사진링크)*`
