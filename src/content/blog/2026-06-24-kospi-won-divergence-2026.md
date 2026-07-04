@@ -11,8 +11,8 @@ draft: false
 
 > 이 글은 공개된 시장 지표와 기관·외신 분석을 해설하는 것으로, 특정 종목의 매수·매도를 권하는 투자 조언이 아닙니다. 수치는 작성 시점 기준이며 실제 시세는 변동합니다.
 
-![a person holding a cell phone in front of a stock chart](https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMGNoYXJ0JTIwdHJhZGluZ3xlbnwxfDB8fHwxNzgyMjYyOTA0fDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Adam Śmigielski](https://unsplash.com/@smigielski?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-stock-chart-K5mPtONmpHM?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A close-up image of hands holding a one dollar bill, symbolizing finance and economy.](https://images.pexels.com/photos/3943728/pexels-photo-3943728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [cottonbro studio](https://www.pexels.com/@cottonbro) on [Pexels](https://www.pexels.com/photo/one-dollar-bill-3943728/)*
 
 ## 숫자로 본 '엇갈림': 주가는 두 배, 통화는 위기급
 

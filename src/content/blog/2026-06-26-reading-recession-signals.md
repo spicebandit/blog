@@ -8,8 +8,8 @@ tags: ["경기침체", "경제지표", "장단기금리차", "샴의법칙"]
 
 "경기 침체가 온다"는 말은 매년 들리지만, 정작 **어떤 지표를 봐야 침체 신호를 제대로 읽을 수 있는지** 아는 사람은 많지 않다. 경기 침체는 발표가 나온 뒤에야 "이미 시작됐었다"고 확인되는 후행적 사건이다. 그래서 중요한 건 결과가 아니라 **선행·동행 지표를 통해 방향을 미리 가늠하는 법**이다. 이 글은 침체를 예고하는 대표 지표 5가지를 정리하고, 2026년 6월 현재 수치가 어디를 가리키는지 점검한다. 결론부터 말하면, 지금은 '경고등'이 아니라 '주의등'에 가깝다.
 
-![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxyZWNlc3Npb24lMjBlY29ub21pYyUyMGluZGljYXRvcnN8ZW58MXwwfHx8MTc4MjQyMTUwM3ww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Tablet and clipboard with charts illustrating the 2020 stock market crash.](https://images.pexels.com/photos/5561912/pexels-photo-5561912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Leeloo The First](https://www.pexels.com/@leeloothefirst) on [Pexels](https://www.pexels.com/photo/clipboard-with-statistical-data-and-digital-tablet-with-stock-market-display-on-screen-5561912/)*
 
 ## 침체를 예고하는 핵심 지표 5가지
 

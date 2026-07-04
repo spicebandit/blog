@@ -33,8 +33,8 @@ The two biggest beneficiaries illustrate two very different strategies for gaini
 
 **Anthropic's Claude** posted the most dramatic percentage growth of the three. In December 2025 it had around 60 million monthly active users and a 3% market share. By May 2026 — just five months later — those figures had risen to 245 million users and 10.3% share, roughly a fourfold increase. That trajectory is hard to explain through consumer advertising or viral moments. The driver is enterprise adoption.
 
-![a group of white robots sitting on top of laptops](https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2hhdGJvdCUyMGNvbXBldGl0aW9ufGVufDF8MHx8fDE3ODIxMTQzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Mohamed Nohassi](https://unsplash.com/@coopery?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-group-of-white-robots-sitting-on-top-of-laptops-2iUrK025cec?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of a smartphone with ChatGPT interface on a speckled surface, highlighting technology and AI.](https://images.pexels.com/photos/15940011/pexels-photo-15940011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Airam Dato-on](https://www.pexels.com/@airamdphoto) on [Pexels](https://www.pexels.com/photo/close-up-of-a-smartphone-displaying-a-conversation-with-chatgpt-15940011/)*
 
 ## Three Platforms, Three Distinct Strategies
 

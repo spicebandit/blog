@@ -8,8 +8,8 @@ tags: ["발전공기업", "전력산업", "에너지전환", "전기요금"]
 
 발전공기업 통합은 한국전력의 발전 자회사 5곳(남동·남부·동서·서부·중부발전)을 하나의 법인으로 합치려는 전력산업 구조개편 논의를 말한다. 2001년 김대중 정부가 전력산업을 경쟁 체제로 바꾸겠다며 한전에서 발전 부문을 5개사로 쪼갠 지 25년 만에, 이번에는 반대로 "다시 하나로 합치자"는 방향이 공식 테이블에 올랐다. 다만 아직 확정된 사안은 아니다. 2026년 6월 18일 기후에너지환경부(기후부)가 연 중간보고회에서 연구용역 결과가 공개됐을 뿐, 정부의 최종 구조조정안은 7월에 나올 예정이다. 지금은 "통합이 유력하다"는 단계로 이해하는 것이 정확하다.
 
-![photo of truss towers](https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHBsYW50JTIwZWxlY3RyaWNpdHklMjB0cmFuc21pc3Npb258ZW58MXwwfHx8MTc4MTk1ODQwNHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Matthew Henry](https://unsplash.com/@matthewhenry?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/photo-of-truss-towers-yETqkLnhsUI?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Distant view of a power plant with cooling towers amidst a vast landscape, illustrating energy production.](https://images.pexels.com/photos/13385063/pexels-photo-13385063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Tanhauser Vázquez R.](https://www.pexels.com/@tanhauser) on [Pexels](https://www.pexels.com/photo/a-power-plant-in-the-valley-13385063/)*
 
 ## 발전공기업 통합 배경: 25년 만에 다시 합치려는 이유
 

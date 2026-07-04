@@ -27,8 +27,8 @@ ChatGPT의 전 세계 AI 챗봇 시장점유율은 2024년 12월 65.3%에서 202
 
 **Anthropic의 Claude**는 더 놀라운 속도로 성장했다. 2025년 12월 MAU 6,000만 명에서 2026년 5월 2억 4,500만 명으로 5개월 만에 약 4배 성장했다. 시장점유율도 3%에서 10.3%로 껑충 뛰었다.
 
-![a group of white robots sitting on top of laptops](https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2hhdGJvdCUyMGNvbXBldGl0aW9ufGVufDF8MHx8fDE3ODIxMTQzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Mohamed Nohassi](https://unsplash.com/@coopery?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-group-of-white-robots-sitting-on-top-of-laptops-2iUrK025cec?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of a smartphone with ChatGPT interface on a speckled surface, highlighting technology and AI.](https://images.pexels.com/photos/15940011/pexels-photo-15940011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Airam Dato-on](https://www.pexels.com/@airamdphoto) on [Pexels](https://www.pexels.com/photo/close-up-of-a-smartphone-displaying-a-conversation-with-chatgpt-15940011/)*
 
 ## 세 가지 전략, 세 가지 AI의 길
 

@@ -10,8 +10,8 @@ koSlug: 2026-06-20-dart-api-claude-code
 
 The most frustrating moment when researching a company is when the executive roster or performance figures differ subtly between Wikipedia and each news article. To check who's right, you ultimately have to go to the **original DART electronic disclosure**. But the DART site is labor-intensive — you have to click into reports one by one and dig through PDFs. So I **connected the DART Open API to Claude Code**, so that a single line like "show me Samsung Electronics' financials" surfaces the source numbers right away. This article lays out that process exactly as it went, from issuing the key to the actual execution screens.
 
-![graphs of performance analytics on a laptop screen](https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkYXRhJTIwYW5hbHlzaXMlMjBkYXNoYm9hcmR8ZW58MXwwfHx8MTc4MTk2MTI0MHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of hands reviewing business report with colorful charts and graphs on a wooden desk.](https://images.pexels.com/photos/9034223/pexels-photo-9034223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [RDNE Stock project](https://www.pexels.com/@rdne) on [Pexels](https://www.pexels.com/photo/a-person-wearing-white-long-sleeves-holding-a-piece-of-paper-on-a-wooden-table-9034223/)*
 
 ## Why Bother Connecting via API?
 

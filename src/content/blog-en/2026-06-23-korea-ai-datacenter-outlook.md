@@ -36,8 +36,8 @@ Leaving things to investment inflows alone proved far too slow. The government m
 
 **Second, securing GPUs and building national AI computing.** The national AI budget for 2026 stands at KRW 9.9 trillion, with nearly half allocated to infrastructure. As a near-term plan, the goal is to secure 10,000 GPUs within this year and to build the country's sixth national supercomputer, with 8,500 GPUs, in the first half of 2026. Over the longer term, the blueprint calls for securing 50,000 GPUs by 2030 and completing a KRW 2.5 trillion National AI Computing Center.
 
-![cable network](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwY2VudGVyfGVufDF8MHx8fDE3ODIxODczMjB8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Taylor Vick](https://unsplash.com/@tvick?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of server racks in a data center highlighting modern technology infrastructure.](https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [panumas nikhomkhai](https://www.pexels.com/@cookiecutter) on [Pexels](https://www.pexels.com/photo/data-center-server-racks-with-active-equipment-37730212/)*
 
 ## Three Structural Challenges: Power, Concentration, and Talent
 

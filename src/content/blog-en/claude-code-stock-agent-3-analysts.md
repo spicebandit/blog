@@ -23,8 +23,8 @@ Now it's time to build the heart of the bot: the analysts. I built three, but de
 
 Two that look for good stocks, and one that prevents accidents. The three are set up to keep each other in check.
 
-![an abstract image of a sphere with dots and lines](https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGF0YSUyMGFuYWx5c2lzfGVufDF8MHx8fDE3ODE4NTEzNDB8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Growtika](https://unsplash.com/@growtika?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/an-abstract-image-of-a-sphere-with-dots-and-lines-nGoCBxiaRO0?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Business professionals discussing financial graphs on a flipchart during a daylight meeting.](https://images.pexels.com/photos/7876668/pexels-photo-7876668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [www.kaboompics.com](https://www.pexels.com/@karola-g) on [Pexels](https://www.pexels.com/photo/a-man-in-eyeglasses-studying-the-graph-on-the-board-7876668/)*
 
 ## Pinning the Output to a JSON Schema
 

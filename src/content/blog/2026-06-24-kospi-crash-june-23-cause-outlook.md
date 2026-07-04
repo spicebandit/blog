@@ -8,8 +8,8 @@ tags: ["코스피", "주식시장", "반도체", "AI"]
 
 2026년 6월 23일, 코스피는 하루 만에 910포인트 넘게 폭락하며 8,200선까지 밀렸다. 서킷브레이커가 단 하루에 두 차례 발동된 것은 극히 이례적인 사건이다. 외국인 투자자들은 이날 하루에만 5조 7,900억 원(약 38억 달러) 규모의 주식을 던졌고, 삼성전자와 SK하이닉스는 각각 12% 이상씩 폭락했다. 연초 대비 80%에 가까운 상승률을 자랑하며 글로벌 상위권 증시였던 코스피가 왜 이렇게 무너졌는지, 그리고 향후 2주 안에 어떤 흐름이 예상되는지를 짚어본다. 이 글은 시장 동향 분석이며 특정 종목 매수·매도를 권유하지 않는다.
 
-![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldCUyMGNyYXNofGVufDF8MHx8fDE3ODIyNzgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of a digital stock market data display showing colorful financial numbers and trends.](https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Pixabay](https://www.pexels.com/@pixabay) on [Pexels](https://www.pexels.com/photo/stock-exchange-board-210607/)*
 
 ## 폭락의 규모: '검은 화요일'이 된 6월 23일
 
@@ -29,8 +29,8 @@ tags: ["코스피", "주식시장", "반도체", "AI"]
 
 **셋째, SK하이닉스의 HBM4 감산 보도다.** SK하이닉스가 HBM4(고대역폭메모리 4세대) 생산 확장 속도를 늦추고 기존 일반 DRAM 생산으로 자원을 재배분하고 있다는 보도가 나왔다. HBM은 AI 가속기(특히 엔비디아 GPU)에 필수적인 메모리 반도체로, SK하이닉스가 글로벌 공급의 절반 이상을 담당하고 있다. HBM4 확장 속도 조정 소식은 "AI 수요가 기대만큼 탄탄하지 않을 수 있다"는 공포를 키웠고, 이미 레버리지(대출)를 통해 반도체주에 베팅해 있던 투자자들의 강제 청산(마진콜)으로 이어졌다.
 
-![graphical user interface, application](https://images.unsplash.com/photo-1651341050677-24dba59ce0fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzdG9jayUyMG1hcmtldCUyMGNyYXNofGVufDF8MHx8fDE3ODIyNzgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Anne Nygård](https://unsplash.com/@polarmermaid?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphical-user-interface-application-x07ELaNFt34?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of stock market chart showing trends and data on a digital screen.](https://images.pexels.com/photos/10653886/pexels-photo-10653886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Aedrian Salazar](https://www.pexels.com/@aedrian) on [Pexels](https://www.pexels.com/photo/business-data-graph-on-monitor-10653886/)*
 
 세 악재가 동시에 터지자, 외국인 투자자들은 이날 현물 시장에서 5조 7,900억 원어치를 순매도했다. 국내 개인 투자자들이 "저가 매수" 기회로 인식하며 일부 매수에 나섰지만, 외국인의 매도 물량을 받아내기엔 역부족이었다.
 

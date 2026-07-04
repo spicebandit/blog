@@ -15,8 +15,8 @@ koSlug: claude-code-stock-agent-4-trade-safety
 
 Up through the last installment, the bot could pick stocks, analyze them, and decide "hold/buy." But a decision alone is only half the job. In this installment we build the part that **actually buys and sells** based on that decision. This is the stage where money moves, so I took it as carefully as possible.
 
-![black and silver laptop computer](https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjByaXNrJTIwbWFuYWdlbWVudCUyMGRhc2hib2FyZHxlbnwxfDB8fHwxNzgxODUxMzYyfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [path digital](https://unsplash.com/@pathdigital?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-and-silver-laptop-computer-tR0jvlsmCuQ?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A close-up view of a rusty padlock securing a weathered metal door, highlighting decay and security.](https://images.pexels.com/photos/16563043/pexels-photo-16563043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [K](https://www.pexels.com/@kelly) on [Pexels](https://www.pexels.com/photo/padlock-in-rusty-lock-16563043/)*
 
 ## The Risk Manager — Staying Within the Balance
 
@@ -40,8 +40,8 @@ The hard rules the gate checks:
 
 Only after passing all five does a real KIS order go out. Even if the risk manager somehow misjudges, the gate filters it one final time. Since money is leaving the account, I doubled up the safety mechanisms.
 
-![turned on monitoring screen](https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjByaXNrJTIwbWFuYWdlbWVudCUyMGRhc2hib2FyZHxlbnwxfDB8fHwxNzgxODUxMzYyfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Stephen Dawson](https://unsplash.com/@dawson2406?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of wooden Scrabble tiles spelling SECURITY, symbolizing cybersecurity and protection.](https://images.pexels.com/photos/30965500/pexels-photo-30965500.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Markus Winkler](https://www.pexels.com/@markus-winkler-1430818) on [Pexels](https://www.pexels.com/photo/scrabble-tiles-spelling-the-word-security-30965500/)*
 
 ## The First Trade — The Bot Buys Its First Stock
 

@@ -9,8 +9,8 @@ draft: false
 
 메모리 반도체 기업 마이크론(Micron)이 2026년 6월 24일(현지시간) 발표한 2026 회계연도 3분기 실적은 한마디로 '슈퍼사이클의 증거'였다. 매출 414억 6,000만 달러로 시장 추정치(약 352억 달러)를 60억 달러 가까이 웃돌며 사상 최대를 기록했고, 다섯 분기 연속 매출 신기록을 갈아치웠다. 1년 전 37.7%였던 매출총이익률(GAAP)이 84.6%까지 치솟았다는 한 줄이, AI가 메모리 산업을 어떻게 바꿔놨는지를 압축해 보여준다. 이 글은 실적의 핵심 숫자를 정리하고, 환호 뒤에 남은 점검 포인트까지 함께 본다. *(본 글은 정보 제공용 해설이며 특정 종목의 매수·매도 권유가 아니다.)*
 
-![semiconductor memory chip](https://images.unsplash.com/photo-1562408590-e32931084e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzZW1pY29uZHVjdG9yJTIwbWVtb3J5JTIwY2hpcHxlbnwxfDB8fHwxNzgyMzUyODIyfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Umberto](https://unsplash.com/@umby?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/blue-circuit-board-jXd2FSvcRr8?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Detailed view of a motherboard with visible microchips and circuits.](https://images.pexels.com/photos/6755078/pexels-photo-6755078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Tima Miroshnichenko](https://www.pexels.com/@tima-miroshnichenko) on [Pexels](https://www.pexels.com/photo/gold-motherboard-in-close-up-photography-6755078/)*
 
 ## 사상 최대 실적, 숫자로 보는 마이크론 3분기
 
@@ -30,8 +30,8 @@ draft: false
 
 여기에 더해 마이크론은 전략적 고객계약(SCA)을 통해 약 1,000억 달러 규모의 장기 계약 잔고를 확보했고, 관련해 약 220억 달러의 고객 예치금·재무 약정을 받기로 했다고 밝혔다. 이 계약들은 취소가 불가능한 '테이크-오어-페이(take-or-pay)' 구조다. 한 분기 실적이 좋았다는 사실보다, 향후 수년치 매출의 가시성을 계약으로 묶어뒀다는 점이 본질적으로 더 중요하다.
 
-![data center](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2VudGVyJTIwc2VydmVyc3xlbnwxfDB8fHwxNzgyMzUyODIzfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Taylor Vick](https://unsplash.com/@tvick?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Detailed close-up photo of a circuit board highlighting microchip components and electronic circuits.](https://images.pexels.com/photos/163170/board-printed-circuit-board-computer-electronics-163170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Pixabay](https://www.pexels.com/@pixabay) on [Pexels](https://www.pexels.com/photo/green-black-and-white-computer-chip-circuit-163170/)*
 
 ## 4분기 가이던스와 점검해야 할 리스크
 

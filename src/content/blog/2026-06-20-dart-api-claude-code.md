@@ -8,8 +8,8 @@ tags: ["ClaudeCode", "DART", "전자공시", "OpenAPI", "Python"]
 
 기업을 조사할 때 가장 답답한 순간은, 위키백과와 뉴스 기사마다 임원 명단이나 실적 숫자가 미묘하게 다를 때다. 누가 맞는지 확인하려면 결국 **DART 전자공시 원문**으로 가야 한다. 그런데 DART 사이트는 보고서를 일일이 클릭해 PDF를 뒤져야 해서 손이 많이 간다. 그래서 **DART 오픈API를 클로드코드(Claude Code)에 붙여**, "삼성전자 재무 보여줘" 한마디면 원문 숫자가 바로 나오게 만들었다. 이 글은 그 과정을 키 발급부터 실제 실행 화면까지 그대로 정리한 것이다.
 
-![graphs of performance analytics on a laptop screen](https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkYXRhJTIwYW5hbHlzaXMlMjBkYXNoYm9hcmR8ZW58MXwwfHx8MTc4MTk2MTI0MHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/graphs-of-performance-analytics-on-a-laptop-screen-JKUTrJ4vK00?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of hands reviewing business report with colorful charts and graphs on a wooden desk.](https://images.pexels.com/photos/9034223/pexels-photo-9034223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [RDNE Stock project](https://www.pexels.com/@rdne) on [Pexels](https://www.pexels.com/photo/a-person-wearing-white-long-sleeves-holding-a-piece-of-paper-on-a-wooden-table-9034223/)*
 
 ## 왜 굳이 API로 붙이나
 

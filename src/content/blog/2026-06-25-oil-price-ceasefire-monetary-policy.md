@@ -9,8 +9,8 @@ draft: false
 
 2026년 들어 글로벌 금융시장을 흔든 가장 큰 변수는 단연 '유가'였다. 미국과 이란의 무력 충돌로 호르무즈 해협이 막히자 국제유가가 급등했고, 이는 곧장 전 세계 물가에 불을 붙였다. 그런데 6월 들어 종전 분위기가 잡히며 유가가 빠르게 내려오자, 이번엔 정반대의 질문이 생겼다. 유가는 내리는데 왜 물가는 아직 높고, 중앙은행은 왜 쉽게 긴축을 거두지 못할까. 이 글은 종전·유가·인플레이션·금리로 이어지는 연쇄 고리를 차분히 따라가 본다. *(본 글은 거시 동향 해설이며, 특정 자산의 매매 권유나 투자 조언이 아니다.)*
 
-![oil tanker at sea](https://images.unsplash.com/photo-1598408745613-178751e2ccde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxvaWwlMjB0YW5rZXIlMjBzZWF8ZW58MXwwfHx8MTc4MjM1MjgyNHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Fredrick F.](https://unsplash.com/@blackspeaker93?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/red-and-white-ship-on-sea-under-cloudy-sky-during-daytime-U9_pRASawlc?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Oil pumpjack in scenic agricultural landscape with lush fields and distant trees.](https://images.pexels.com/photos/255552/pexels-photo-255552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Ivan](https://www.pexels.com/@ywanphoto) on [Pexels](https://www.pexels.com/photo/gray-oil-mine-255552/)*
 
 ## 종전 양해각서가 연 국제유가 하락
 

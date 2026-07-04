@@ -20,8 +20,8 @@ featured: true
 
 이 시리즈는 그 과정을 기록한 것이다. 완성된 코드를 정리해서 보여주는 글이 아니라, 실제로 막히고 고치면서 간 과정을 그대로 담았다. 그래야 따라 하는 사람도 같은 함정을 피할 수 있으니까.
 
-![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMHRyYWRpbmclMjBhdXRvbWF0aW9ufGVufDF8MHx8fDE3ODE4NTEzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Man standing at a whiteboard planning UX design concepts in a modern office setting.](https://images.pexels.com/photos/1181343/pexels-photo-1181343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Christina Morillo](https://www.pexels.com/@divinetechygirl) on [Pexels](https://www.pexels.com/photo/man-wearing-blue-dress-shirt-facing-whiteboard-1181343/)*
 
 ## 왜 멀티에이전트인가
 

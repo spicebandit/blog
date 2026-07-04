@@ -13,8 +13,8 @@ tags: ["ClaudeCode", "주식자동매매", "리스크관리", "KIS API", "LLM"]
 
 지난 편까지 봇은 종목을 고르고 분석해 "보류/매수"를 판단할 수 있게 됐다. 하지만 판단만으로는 반쪽이다. 이번 편에서는 그 판단으로 **실제로 사고파는** 부분을 만든다. 돈이 움직이는 단계라 가장 신중하게 갔다.
 
-![black and silver laptop computer](https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjByaXNrJTIwbWFuYWdlbWVudCUyMGRhc2hib2FyZHxlbnwxfDB8fHwxNzgxODUxMzYyfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [path digital](https://unsplash.com/@pathdigital?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-and-silver-laptop-computer-tR0jvlsmCuQ?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A close-up view of a rusty padlock securing a weathered metal door, highlighting decay and security.](https://images.pexels.com/photos/16563043/pexels-photo-16563043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [K](https://www.pexels.com/@kelly) on [Pexels](https://www.pexels.com/photo/padlock-in-rusty-lock-16563043/)*
 
 ## 리스크 매니저 — 잔고 안에서
 
@@ -38,8 +38,8 @@ tags: ["ClaudeCode", "주식자동매매", "리스크관리", "KIS API", "LLM"]
 
 이 다섯 가지를 모두 통과해야만 실제 KIS 주문이 나간다. 리스크 매니저가 혹시 잘못 판단해도 게이트가 최종적으로 한 번 더 거른다. 돈이 나가는 일이라 안전장치를 이중으로 둔 것이다.
 
-![turned on monitoring screen](https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjByaXNrJTIwbWFuYWdlbWVudCUyMGRhc2hib2FyZHxlbnwxfDB8fHwxNzgxODUxMzYyfDA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Stephen Dawson](https://unsplash.com/@dawson2406?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Close-up of wooden Scrabble tiles spelling SECURITY, symbolizing cybersecurity and protection.](https://images.pexels.com/photos/30965500/pexels-photo-30965500.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Markus Winkler](https://www.pexels.com/@markus-winkler-1430818) on [Pexels](https://www.pexels.com/photo/scrabble-tiles-spelling-the-word-security-30965500/)*
 
 ## 첫 거래 — 봇이 처음 주식을 사다
 

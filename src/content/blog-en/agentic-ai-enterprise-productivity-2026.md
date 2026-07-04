@@ -20,8 +20,8 @@ Agentic AI takes things a step further. Give it a high-level goal and it decompo
 
 Anthropic has publicly stated that as of May 2026, more than 80% of the code merged into their own codebase was written by Claude. Per-engineer code output grew eightfold compared to 2024. Software development turns out to be one of the clearest early proving grounds for agentic AI's advantages.
 
-![A white robot is standing in front of a black background](https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwYWdlbnQlMjByb2JvdCUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MjA4Nzc5OHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Gabriele Malaspina](https://unsplash.com/@gabrielemalaspina?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-white-robot-is-standing-in-front-of-a-black-background-CjWsslYVnPI?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A professional team collaborating in a modern office setting, focusing on documents and technology.](https://images.pexels.com/photos/8102000/pexels-photo-8102000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov) on [Pexels](https://www.pexels.com/photo/woman-and-men-working-at-office-8102000/)*
 
 ## Where the Real Impact Is Showing Up
 
@@ -35,8 +35,8 @@ Three domains are seeing the fastest penetration of agentic AI in the enterprise
 
 An OECD report from 2024 found that companies integrating AI-driven automation saw productivity gains averaging 15 to 40%. That said, the report is careful to note that these figures reflect organizations that deployed AI well. Simply buying access to AI tools and making them available does not, on its own, move the needle.
 
-![white robot near brown wall](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwYWdlbnQlMjByb2JvdCUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MjA4Nzc5OHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Alex Knight](https://unsplash.com/@agk42?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/white-robot-near-brown-wall-2EJCSULRwC8?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Contemporary open office space with people collaborating and working together.](https://images.pexels.com/photos/7065/space-desk-office-hero-7065.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Startup Stock Photos](https://www.pexels.com/@startup-stock-photos) on [Pexels](https://www.pexels.com/photo/man-wearing-red-while-sitting-inside-concrete-bulding-7065/)*
 
 ## The Gap Between Hype and Reality
 
@@ -52,8 +52,8 @@ In practice, the three biggest barriers to successful agentic AI adoption come d
 
 In 2026, the companies getting the most out of agentic AI aren't the ones with access to the best models. They're the ones that have invested in these three organizational capabilities.
 
-![blue plastic robot toy](https://images.unsplash.com/photo-1527430253228-e93688616381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwYWdlbnQlMjByb2JvdCUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MjA4Nzc5OHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Emilipothèse](https://unsplash.com/@emilipothese?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/blue-plastic-robot-toy-R4WCbazrD1g?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A diverse group of coworkers meeting in a contemporary office, working together on projects with technology and documents.](https://images.pexels.com/photos/7654411/pexels-photo-7654411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Pavel Danilyuk](https://www.pexels.com/@pavel-danilyuk) on [Pexels](https://www.pexels.com/photo/people-working-at-an-office-7654411/)*
 
 The most consequential shift agentic AI brings isn't captured in productivity percentages. It's a change in the nature of work itself. Repetitive, procedural tasks that humans have always handled are moving to agents. People are shifting into roles centered on setting objectives, establishing judgment criteria, and overseeing the agents doing the execution. How quickly that transition happens — and in which industries it hits hardest and first — will be one of the defining variables of the next several years.
 

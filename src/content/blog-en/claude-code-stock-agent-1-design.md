@@ -21,8 +21,8 @@ So I decided to build it. The goal is simple.
 
 This series is a record of that process. It isn't an article that tidies up finished code and shows it off — it captures the actual journey of getting stuck and fixing things as I went. That's the only way someone following along can avoid the same traps.
 
-![stock market candlestick chart on dark screen](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMHRyYWRpbmclMjBhdXRvbWF0aW9ufGVufDF8MHx8fDE3ODE4NTEzMzd8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Maxim Hopman](https://unsplash.com/@nampoh?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/stock-market-candlestick-chart-on-dark-screen-fiXLQXAhCfk?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Man standing at a whiteboard planning UX design concepts in a modern office setting.](https://images.pexels.com/photos/1181343/pexels-photo-1181343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Christina Morillo](https://www.pexels.com/@divinetechygirl) on [Pexels](https://www.pexels.com/photo/man-wearing-blue-dress-shirt-facing-whiteboard-1181343/)*
 
 ## Why Multi-Agent?
 

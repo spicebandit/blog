@@ -18,8 +18,8 @@ tags: ["에이전틱AI", "AI에이전트", "기업AI", "생산성"]
 
 앤트로픽은 2026년 5월 기준 자사 코드베이스에 병합된 코드의 80% 이상을 클로드가 작성하고 있다고 밝혔다. 엔지니어 1인당 코드 산출량이 2024년 대비 8배 증가한 수치다. 코드 생성이 특히 에이전틱 AI의 효과가 두드러지는 영역임을 보여준다.
 
-![A white robot is standing in front of a black background](https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwYWdlbnQlMjByb2JvdCUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MjA4Nzc5OHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Gabriele Malaspina](https://unsplash.com/@gabrielemalaspina?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-white-robot-is-standing-in-front-of-a-black-background-CjWsslYVnPI?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A professional team collaborating in a modern office setting, focusing on documents and technology.](https://images.pexels.com/photos/8102000/pexels-photo-8102000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Mikhail Nilov](https://www.pexels.com/@mikhail-nilov) on [Pexels](https://www.pexels.com/photo/woman-and-men-working-at-office-8102000/)*
 
 ## 기업 현장의 실제 변화: 어디서 가장 효과가 나타나는가
 
@@ -33,8 +33,8 @@ tags: ["에이전틱AI", "AI에이전트", "기업AI", "생산성"]
 
 OECD 보고서(2024)는 AI 자동화를 도입한 기업의 생산성이 평균 15~40% 향상됐다고 분석했다. 단, 이 수치는 잘 도입한 기업의 평균이다. 단순히 AI 툴을 사줬다고 생산성이 오르지 않는다는 사실도 함께 보고됐다.
 
-![white robot near brown wall](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwYWdlbnQlMjByb2JvdCUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MjA4Nzc5OHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Alex Knight](https://unsplash.com/@agk42?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/white-robot-near-brown-wall-2EJCSULRwC8?utm_source=spice-bandit-blog&utm_medium=referral)*
+![Contemporary open office space with people collaborating and working together.](https://images.pexels.com/photos/7065/space-desk-office-hero-7065.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Startup Stock Photos](https://www.pexels.com/@startup-stock-photos) on [Pexels](https://www.pexels.com/photo/man-wearing-red-while-sitting-inside-concrete-bulding-7065/)*
 
 ## 기대와 현실 사이: 2026년 에이전틱 AI의 한계
 
@@ -50,8 +50,8 @@ CIO.com의 2026년 기업 AI 현황 분석은 솔직하다. "에이전틱 AI는 
 
 2026년 에이전틱 AI를 잘 쓰는 기업과 못 쓰는 기업의 차이는 모델 선택이 아니라 이 세 가지 조직 역량에서 갈린다.
 
-![blue plastic robot toy](https://images.unsplash.com/photo-1527430253228-e93688616381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwYWdlbnQlMjByb2JvdCUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MjA4Nzc5OHww&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Emilipothèse](https://unsplash.com/@emilipothese?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/blue-plastic-robot-toy-R4WCbazrD1g?utm_source=spice-bandit-blog&utm_medium=referral)*
+![A diverse group of coworkers meeting in a contemporary office, working together on projects with technology and documents.](https://images.pexels.com/photos/7654411/pexels-photo-7654411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*Photo by [Pavel Danilyuk](https://www.pexels.com/@pavel-danilyuk) on [Pexels](https://www.pexels.com/photo/people-working-at-an-office-7654411/)*
 
 에이전틱 AI가 가져올 변화의 핵심은 생산성 수치가 아니다. 일의 본질이 바뀐다는 것이다. 사람이 해왔던 반복적·절차적 업무는 에이전트에게 위임되고, 사람은 목표 설정, 판단 기준 수립, 에이전트 감독이라는 역할로 이동한다. 이 변화가 어떤 산업에서, 얼마나 빠르게 일어나느냐가 향후 몇 년을 가르는 변수다.
 
