@@ -1,5 +1,5 @@
 ---
-title: "KIS API (Korea Investment & Securities Open API) Python Guide — Real Traps and Fixes"
+title: "KIS API (Korea Investment & Securities Open API) Python Guide — Real Traps and Fixes [Part 2]"
 description: "A hands-on guide to connecting the Korea Investment & Securities KIS Open API in Python. Real traps and fixes — the 1-minute token limit, paper server, SSL errors — from building a Claude Code stock bot."
 pubDate: 2026-06-20T09:00:00+09:00
 category: ai
