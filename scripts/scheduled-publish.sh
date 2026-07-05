@@ -50,6 +50,8 @@ case "$TAG" in
   0707) ITEMS=(
     "$D/2026-07-05-paperclip-ai-newsroom-operations.md|2026-07-07T08:00:00+09:00"
     "src/content/blog-en/2026-07-05-paperclip-ai-newsroom-operations.md|2026-07-07T08:00:00+09:00"
+    "$D/2026-07-06-stock-agent-trading-strategies-benchmark.md|2026-07-07T08:30:00+09:00"
+    "src/content/blog-en/2026-07-06-stock-agent-trading-strategies-benchmark.md|2026-07-07T08:30:00+09:00"
   );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
