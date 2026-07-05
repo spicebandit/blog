@@ -41,6 +41,9 @@ case "$TAG" in
   0706) ITEMS=(
     "$D/2026-07-05-paperclip-ai-agent-company-guide.md|2026-07-06T08:00:00+09:00"
     "src/content/blog-en/2026-07-05-paperclip-ai-agent-company-guide.md|2026-07-06T08:00:00+09:00"
+    "$D/2026-07-05-claude-sonnet5-ai-agent-era.md|2026-07-06T08:30:00+09:00"
+    "src/content/blog-en/2026-07-05-claude-sonnet5-ai-agent-era.md|2026-07-06T08:30:00+09:00"
+    "$D/2026-07-05-samsung-q2-earnings-preview-july-7.md|2026-07-06T09:00:00+09:00"
   );;
   0707) ITEMS=(
     "$D/2026-07-05-paperclip-ai-newsroom-operations.md|2026-07-07T08:00:00+09:00"
