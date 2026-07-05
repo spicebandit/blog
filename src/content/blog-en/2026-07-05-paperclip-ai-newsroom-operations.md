@@ -1,14 +1,14 @@
 ---
-title: "Running an AI Newsroom on Paperclip: Ten Days, 313M Tokens of Lessons [Part 2]"
-description: "Ten days running an AI agent newsroom on Paperclip: 313M tokens gone in three days, a triple-notification bug, and hard lessons on heartbeats and budgets."
+title: "A Company Run by AI Employees: 10 Days on Paperclip [Part 2]"
+description: "Ten days running a company staffed by AI employees on Paperclip: 313M tokens gone in three days, a triple-notification bug, and hard lessons on heartbeats and budgets."
 pubDate: "2026-07-07T08:00:00+09:00"
 category: ai
-tags: ["paperclip", "multi-agent", "ai-agent", "operations"]
+tags: ["ai employees", "ai agent company", "paperclip", "multi-agent"]
 lang: en
 koSlug: 2026-07-05-paperclip-ai-newsroom-operations
 ---
 
-I set up an AI agent newsroom on Paperclip and ran my blog with it for ten days. Conclusion first: **it works. But if you don't manage it, tokens will eat the company alive.** The high point was that the pipeline actually ran — an editor-in-chief agent assigning stories to reporter agents while I did nothing but approve publication. The low point was watching **313 million tokens evaporate in three days** — and discovering that the culprit who burned more than half of them was a CEO agent that never wrote a single line of copy. [Part 1](/en/blog/2026-07-05-paperclip-ai-agent-company-guide/) covered what Paperclip is and how to set it up; this part is about what actually happened on top of it. If you're considering multi-agent systems, consider my tuition already paid on your behalf.
+A company running entirely on AI employees — I set up an AI agent newsroom on Paperclip and ran my blog with it for ten days. Conclusion first: **it works. But if you don't manage it, tokens will eat the company alive.** The high point was that the pipeline actually ran — an editor-in-chief agent assigning stories to reporter agents while I did nothing but approve publication. The low point was watching **313 million tokens evaporate in three days** — and discovering that the culprit who burned more than half of them was a CEO agent that never wrote a single line of copy. [Part 1](/en/blog/2026-07-05-paperclip-ai-agent-company-guide/) covered what Paperclip is and how to set it up; this part is about what actually happened on top of it. If you're considering multi-agent systems, consider my tuition already paid on your behalf.
 
 ## The Org Chart — A Seven-Agent Company Modeled on a Real Newsroom
 

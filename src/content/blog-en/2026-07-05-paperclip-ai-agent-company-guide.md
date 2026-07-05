@@ -1,14 +1,14 @@
 ---
-title: "Paperclip: Turn Your AI Agents into a Company [Part 1]"
-description: "How to organize a team of AI agents like a company with open-source Paperclip: one-line npx install, org charts, budgets, governance, and Claude Code integration."
+title: "Run a Company Staffed by AI Employees — Paperclip Guide [Part 1]"
+description: "Can you actually run a company staffed by AI employees? With open-source Paperclip you give AI agents titles, reporting lines, and budgets — from a one-line npx install to your first org chart."
 pubDate: "2026-07-06T08:00:00+09:00"
 category: ai
-tags: ["paperclip", "ai-agent", "multi-agent", "agent-orchestration"]
+tags: ["ai employees", "ai agent company", "paperclip", "multi-agent"]
 lang: en
 koSlug: 2026-07-05-paperclip-ai-agent-company-guide
 ---
 
-Using one AI agent well and running several of them **as an organization** are two entirely different problems. The open-source tool **Paperclip** tackles the second one head-on — it gives your agents job titles and reporting lines, puts them on monthly budgets, and blocks them from changing strategy without sign-off. It is, quite literally, a platform for building an "AI company." Installation is a single line, `npx paperclipai onboard --yes`, and since it's MIT-licensed open source, there's no account and no cost. If the [Hermes series](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) was about hiring a single agent, this two-part series is about founding a company with them. Part 1 (this article) covers the concepts, installation, and first setup; [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/) covers the (expensive) lessons from actually running an AI newspaper on it for ten days.
+A company that runs on AI employees — it sounds like science fiction, but you can actually build one today with open-source tools. Using one AI agent well and running several of them **as an organization** are two entirely different problems. The open-source tool **Paperclip** tackles the second one head-on — it treats your agents as "AI employees," gives them job titles and reporting lines, puts them on monthly budgets, and blocks them from changing strategy without sign-off. It is, quite literally, a platform for building **a company staffed by AI employees.** Installation is a single line, `npx paperclipai onboard --yes`, and since it's MIT-licensed open source, there's no account and no cost. If the [Hermes series](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) was about hiring a single agent, this two-part series is about founding a company with them. Part 1 (this article) covers the concepts, installation, and first setup; [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/) covers the (expensive) lessons from actually running an AI newspaper on it for ten days.
 
 ## What Is Paperclip? "If Agents Are Employees, Paperclip Is the Company"
 
