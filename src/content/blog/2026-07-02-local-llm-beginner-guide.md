@@ -1,5 +1,5 @@
 ---
-title: "로컬 LLM 시작 가이드: 내 컴퓨터에서 AI 돌리기"
+title: "로컬 LLM 시작 가이드: 내 컴퓨터에서 AI 돌리기 [1편]"
 description: "로컬 LLM 완전 초보 가이드. LM Studio·Ollama 설치부터 Gemma 4·Qwen 모델 선택, 필요 메모리 계산, 양자화(GGUF) 기초까지 — 2026년 7월 기준으로 30분 만에 첫 대화를 시작하는 법."
 pubDate: 2026-07-03T08:00:00+09:00
 category: ai

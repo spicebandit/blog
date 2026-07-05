@@ -1,5 +1,5 @@
 ---
-title: "아이폰 로컬 LLM 돌리기: 스마트폰 AI 가이드 2편"
+title: "아이폰 로컬 LLM 돌리기: 스마트폰 AI 가이드 [2편]"
 description: "아이폰에서 인터넷 없이 AI를 돌리는 법. PocketPal·Locally(LM Studio)·fullmoon 등 앱 비교, 기종별 가능 모델 표, 10분 시작 가이드까지 — 2026년 7월 기준 스마트폰 로컬 LLM 입문."
 pubDate: 2026-07-04T00:20:00+09:00
 category: ai
