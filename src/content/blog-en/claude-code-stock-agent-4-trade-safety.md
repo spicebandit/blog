@@ -2,6 +2,7 @@
 title: "Stock Bot Risk Management & Automated Trade Execution — Safety Gates, KIS API Orders, Manual Approval [Part 4]"
 description: "Designing the risk manager and trade execution for a Claude Code stock bot: a deterministic execution gate, KIS API buy/sell, and a manual approval flow — with the code."
 pubDate: 2026-06-22T09:00:00+09:00
+updatedDate: "2026-07-06T20:30:00+09:00"
 category: ai
 tags: ["ClaudeCode", "AutoTrading", "RiskManagement", "KIS API"]
 lang: en
@@ -125,6 +126,19 @@ Third, **making safety the default.** Paper trading, manual mode, a deterministi
 Automated trading is not magic that "guarantees making money." What this system really does is *execute rules consistently, without emotion, within set risk limits*. Validating actual performance on top of that is ultimately the job of backtesting and time.
 
 Thank you for reading this long series. I hope this record serves as a map that helps anyone trying to build something similar avoid the pitfalls in advance.
+
+## Safety Checklist Before Going Live
+
+Do not turn on live-account automated trading until you've confirmed all of the following. When it goes wrong, automated trading automates your losses quickly and precisely.
+
+- [ ] Start with `mode` in `config.yaml` set to **manual (order after approval)**. Switch to `auto` (automatic ordering) only after thorough validation.
+- [ ] Test that the emergency stop switch (`kill_switch`) works — flipping it to `true` should halt all order placement.
+- [ ] Check the risk limits: `max_position_pct` (max weight in a single stock), `daily_loss_limit_pct` (daily loss limit), `max_orders_per_day` (daily cap on the number of orders).
+- [ ] Set a hard stop-loss line (`stop_loss_pct`) — regardless of the analysis, it auto-sells below this return.
+- [ ] Run it **for several days on a paper-trading account** to confirm that orders, balances, and stop-losses behave as intended.
+- [ ] Even after switching to a live account, always start with a small amount at first.
+
+**Absolute rule**: Every real order passes only through the **deterministic execution gate (execution_gate)** — not a human, not an LLM. No matter how positive the "review" result is, it must go through the gate's hard rules (limits, duplicates, kill switch), which structurally prevents a single misjudgment from emptying the account.
 
 ---
 

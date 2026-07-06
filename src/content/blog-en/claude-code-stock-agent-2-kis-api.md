@@ -2,6 +2,7 @@
 title: "KIS API (Korea Investment & Securities Open API) Python Guide — Real Traps and Fixes [Part 2]"
 description: "A hands-on guide to connecting the Korea Investment & Securities KIS Open API in Python. Real traps and fixes — the 1-minute token limit, paper server, SSL errors — from building a Claude Code stock bot."
 pubDate: 2026-06-20T09:00:00+09:00
+updatedDate: "2026-07-06T20:30:00+09:00"
 category: ai
 tags: ["ClaudeCode", "KIS API", "AlgoTrading", "Python"]
 lang: en
@@ -148,6 +149,29 @@ Once I added current-price and valuation (PER/PBR/EPS) queries plus daily-candle
 The biggest lesson at this stage wasn't about analysis logic — it was the importance of defensive code. **You have to assume external APIs will, at any time, slow down, return the wrong format, and temporarily die.** Retries, caching, fallbacks, timeouts — not flashy, but in the end these basics are what determine whether an unattended system survives.
 
 [In the next part, we finally build the bot's "brain."](/blog/claude-code-stock-agent-3-analysts/) That's the process of designing the prompts for the three analysts, actually calling the LLM, and getting back the first analysis results.
+
+## Follow Along — Issuing KIS API Keys in 5 Steps
+
+To connect the Korea Investment & Securities (KIS) Open API yourself, prepare in this order.
+
+1. **Open an account**: Create a Korea Investment & Securities account (via their non-face-to-face app). **Also apply for a paper-trading account** to validate your automated trading.
+2. **Register as a developer**: Register as a developer on KIS Developers (apiportal.koreainvestment.com).
+3. **Get your App Key and App Secret**: Once you register an app, you'll receive an **APP KEY** and an **APP SECRET**. These two values are the core of authentication.
+4. **Check your account details**: Confirm the first 8 digits of your account number (CANO) and the product code (ACNT_PRDT_CD, usually `01`).
+5. **Store them in environment variables (.env)**: Don't put the issued values directly in your code — manage them in `.env`.
+
+```
+KIS_ENV=vps          # paper trading (vps) / live (prod)
+KIS_APP_KEY=...
+KIS_APP_SECRET=...
+KIS_CANO=00000000
+KIS_ACNT_PRDT_CD=01
+```
+
+**Common traps (know them up front)**
+- After issuing an access token, there's **roughly a 1-minute limit before you can reissue** → you have to cache and reuse the token so you don't get blocked.
+- The paper-trading server intermittently throws 500s and timeouts → **retry logic is essential**.
+- Live and paper trading use different domains and TR_IDs → branch on the `KIS_ENV` value so you don't accidentally send an order to a live account.
 
 ---
 

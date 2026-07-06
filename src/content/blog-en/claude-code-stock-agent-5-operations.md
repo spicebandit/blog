@@ -2,6 +2,7 @@
 title: "Stock Bot Automation Ops — Telegram Approvals & launchd Scheduling for Hands-Off Trading [Part 5]"
 description: "Operations for a Claude Code stock bot: approve trades from your phone with Telegram inline buttons, and run morning/intraday/close automatically with launchd."
 pubDate: 2026-06-23T09:00:00+09:00
+updatedDate: "2026-07-06T20:30:00+09:00"
 category: ai
 tags: ["ClaudeCode", "AutoTrading", "TelegramBot", "launchd"]
 lang: en
@@ -88,6 +89,25 @@ What I confirmed again while building it is exactly the lesson repeated througho
 Automated trading doesn't guarantee profit. What this system really does is only *execute set rules without emotion, within set risk limits, the same way every day*. Validating performance comes after that — the job of time and data.
 
 Thank you for staying with this long series to the end. To anyone trying to build something similar, I hope this record serves as a map that helps you steer clear of the same pitfalls.
+
+## Try It Yourself — Setting Up Auto-Execution and Telegram
+
+To run the bot unattended every day, you set up two things: the Telegram connection and automatic execution.
+
+**1) Create a Telegram bot**
+- In the Telegram app, create a new bot with `@BotFather` and get your **bot token**.
+- Find your `chat_id` (send any message to the bot, then check via getUpdates).
+- Put `TELEGRAM_BOT_TOKEN=...` and `TELEGRAM_CHAT_ID=...` in your `.env`.
+
+**2) Automatic execution (macOS launchd)**
+- Register launchd jobs so the cycles run in step with the weekday market flow. For example: open prep (08:30), intraday cycle (09:30), close report (15:40).
+- Use a launcher wrapper script (`run.sh`) to pin the Python interpreter and working directory, so it runs reliably no matter where the scheduler invokes it from.
+
+**3) Verification**
+- First run it manually once to confirm the report arrives via Telegram.
+- Check the logs in `state/logs/` (cycle logs and send logs).
+
+**Tip**: So that a momentary network drop at a specific time doesn't wipe out an entire report, add **retries plus save-on-failure with automatic resend on the next send** to the delivery path — that prevents dropped messages.
 
 ---
 

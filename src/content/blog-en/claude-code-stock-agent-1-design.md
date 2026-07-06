@@ -2,6 +2,7 @@
 title: "Building a Stock Trading Bot with Claude Code — The Full Architecture, From Design to Operation [Part 1]"
 description: "A 5-part series on building a Korean stock trading bot with Claude Code and a multi-agent design. Part 1 covers the why and the architecture — KIS API, LLM analysts, and safety guards."
 pubDate: 2026-06-19T09:00:00+09:00
+updatedDate: "2026-07-06T20:30:00+09:00"
 category: ai
 tags: ["ClaudeCode", "AlgoTrading", "MultiAgent", "LLM"]
 lang: en
@@ -70,6 +71,27 @@ Since this is a system where real money moves, I put safety first from start to 
 - **Start with a paper account**: Only after thoroughly validating with fake money do I even consider going live.
 - **Manual mode by default**: The bot only proposes — "should I buy this?" — and it actually buys only after I approve. Once trust is built, I switch it to auto.
 - **Swappable LLM design**: The analysts' brains are abstracted so I can swap in Claude or Gemini at will. If you pin the output to a JSON schema, whatever model you use looks the same from the parent's point of view.
+
+## Want to Follow Along? — Prerequisites and Roadmap
+
+For those who want to build it themselves, let me first lay out the prerequisites and the order needed for the whole series.
+
+**Things worth preparing in advance**
+- A brokerage account + open API application: based on Korea Investment & Securities (KIS). Along with your live account, apply for a **paper-trading account** too (for validation).
+- Python 3.x installed
+- An LLM API key: for the analyst's brain (e.g., a free Gemini key from Google AI Studio)
+- A Telegram bot: for receiving reports and approving on your phone (details in Part 5)
+
+**Difficulty and time**: If you can read a bit of code, that's enough. Roughly 30 minutes to an hour per part, and about one weekend day for the whole thing to get a first version running.
+
+**Series roadmap**
+- Part 1 (this article): Why and with what architecture — the design
+- Part 2: Connecting the brokerage API (KIS) — the foundation for quotes, balances, and orders
+- Part 3: Designing the three LLM analysts — the brain behind the judgment
+- Part 4: Risk and safety guards — safe even if you buy the wrong thing
+- Part 5: Automated execution and Telegram — unattended operation
+
+**The most important principle**: Don't go straight to a live account. Always validate thoroughly with paper trading first, then move on to small-scale live trading.
 
 ## Coming Up Next
 

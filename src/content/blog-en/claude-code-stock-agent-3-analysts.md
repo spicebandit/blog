@@ -2,6 +2,7 @@
 title: "Stock Bot LLM Analyst Design — Fundamental, Technical & News Agent Prompts and JSON Schema [Part 3]"
 description: "Designing the brain of a Claude Code stock trading bot. Prompt design for three analysts (fundamental, technical, news), enforcing a JSON schema, LLM retries and fallback, and a stock screener — real implementation."
 pubDate: 2026-06-21T09:00:00+09:00
+updatedDate: "2026-07-06T20:30:00+09:00"
 category: ai
 tags: ["ClaudeCode", "LLM", "Gemini", "PromptEngineering"]
 lang: en
@@ -118,6 +119,17 @@ I called the three analysts in parallel and had the parent synthesize via a weig
 Technically tempting, but the fundamental burden held it back, so it held. The bot didn't buy impulsively; it judged calmly. With the three opinions properly checking one another, a reasonable conclusion came out.
 
 I made the synthesis method switchable via config between weighted average and "unanimous consent" (buy only when all three are bullish). I started with the weighted average, leaving room to change it after backtesting.
+
+## Follow Along — Connecting the LLM (Gemini) Analysts
+
+Here's the order for attaching the LLM that will serve as the "brains" of your three analysts.
+
+1. **Get an API key**: Grab a free **Gemini API key** from Google AI Studio.
+2. **Add an environment variable**: Put `GEMINI_API_KEY=...` into your `.env`.
+3. **Place the prompts**: Keep the analyst prompts (fundamental, technical, news) as originals in the `prompts/` folder, and have the code load and pass them to the LLM. The prompt is effectively each analyst's "job description."
+4. **Test with one analyst first**: Don't run all three from the start. Call just **one analyst (e.g., fundamental)** on a single ticker, confirm the response comes back matching the schema, then expand to three.
+
+**Key tip**: Force the LLM response to come back only in a fixed JSON schema (e.g., `schemas/analyst_output.schema.json`). And for factual values like the date and ticker code, **have the code overwrite them again** to block hallucination — this is the real-world application of the principle stressed in Part 1: "interpretation by the LLM, facts and rules by the code."
 
 ## Next Up
 
