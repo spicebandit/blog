@@ -16,7 +16,14 @@ const DRY = process.argv.includes('--dry');
 function kstDate(d = new Date()) {
   return new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
 }
-function ymd(d) { return d.toISOString().slice(0, 10); }
+// kstDate()가 돌려주는 Date는 '로컬 필드'에 KST 벽시계가 담겨 있다.
+// toISOString()은 UTC로 재변환해 날짜가 하루 밀릴 수 있으므로, 로컬 필드로 직접 포맷한다.
+function ymd(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
 
 const now = kstDate();
 const yesterday = new Date(now); yesterday.setDate(now.getDate() - 1);
