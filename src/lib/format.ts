@@ -48,9 +48,11 @@ export function kstDateStr(date: Date): string {
   return date.toLocaleDateString('sv-SE', { timeZone: KST });
 }
 
-/** 마크다운 본문에서 첫 번째 http(s) 이미지 URL을 뽑는다(heroImage 폴백용). */
+/** 마크다운 본문에서 첫 번째 이미지 URL을 뽑는다(heroImage 폴백용).
+ *  외부 URL(http/https)뿐 아니라 사이트 내부 경로(/images/… 등 '/'로 시작)도 인식한다.
+ *  (내부 경로 이미지만 있는 글이 목록 썸네일이 비던 문제 수정 2026-07-06) */
 export function firstBodyImage(body: string | undefined): string | undefined {
   if (!body) return undefined;
-  const m = body.match(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/);
+  const m = body.match(/!\[[^\]]*\]\(((?:https?:\/\/|\/)[^)\s]+)\)/);
   return m?.[1];
 }
