@@ -2,13 +2,14 @@
 title: "Run a Company Staffed by AI Employees — Paperclip Guide [Part 1]"
 description: "Can you actually run a company staffed by AI employees? With open-source Paperclip you give AI agents titles, reporting lines, and budgets — from a one-line npx install to your first org chart."
 pubDate: "2026-07-06T08:00:00+09:00"
+updatedDate: "2026-07-06T18:30:00+09:00"
 category: ai
 tags: ["ai employees", "ai agent company", "paperclip", "multi-agent"]
 lang: en
 koSlug: 2026-07-05-paperclip-ai-agent-company-guide
 ---
 
-A company that runs on AI employees — it sounds like science fiction, but you can actually build one today with open-source tools. Using one AI agent well and running several of them **as an organization** are two entirely different problems. The open-source tool **Paperclip** tackles the second one head-on — it treats your agents as "AI employees," gives them job titles and reporting lines, puts them on monthly budgets, and blocks them from changing strategy without sign-off. It is, quite literally, a platform for building **a company staffed by AI employees.** Installation is a single line, `npx paperclipai onboard --yes`, and since it's MIT-licensed open source, there's no account and no cost. If the [Hermes series](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) was about hiring a single agent, this two-part series is about founding a company with them. Part 1 (this article) covers the concepts, installation, and first setup; [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/) covers the (expensive) lessons from actually running an AI newspaper on it for ten days.
+A company that runs on AI employees — it sounds like science fiction, but you can actually build one today with open-source tools. Using one AI agent well and running several of them **as an organization** are two entirely different problems. The open-source tool **Paperclip** tackles the second one head-on — it treats your agents as "AI employees," gives them job titles and reporting lines, puts them on monthly budgets, and blocks them from changing strategy without sign-off. It is, quite literally, a platform for building **a company staffed by AI employees.** Installation is a single line, `npx paperclipai onboard --yes`, and since it's MIT-licensed open source, there's no account and no cost. If the [Hermes series](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) was about hiring a single agent, this two-part series is about founding a company with them. Part 1 (this article) covers the concepts, the installation, and — new in this update — **how day-to-day operations actually run, which agents and LLMs you can plug in, a full feature rundown, and the honest pros and cons.** [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/) covers the (expensive) lessons from actually running an AI newspaper on it for ten days.
 
 ## What Is Paperclip? "If Agents Are Employees, Paperclip Is the Company"
 
@@ -99,6 +100,65 @@ Two things I'll flag up front (full evidence in Part 2):
 
 - **Ration your heartbeats.** A heartbeat is the clock-in schedule that wakes agents periodically, and the shorter you set it, the more exponentially tokens leak. Start with everything on wake-on-demand, and only enable heartbeats for agents that genuinely need round-the-clock monitoring.
 - **Set budgets first.** Per-agent monthly budgets aren't an after-the-fact safeguard; they're a seatbelt you fasten in advance. Starting small and raising later is far cheaper than the other direction.
+
+## How the Day Actually Runs — From Goal to Approval
+
+Once the org is set up, what does an actual day look like? Operations in Paperclip revolve around a **loop centered on issues (work tickets)** — the exact same way people file Jira or Asana tickets at a real company.
+
+1. **Set a Goal.** You give the company a top-level goal like "double blog traffic this quarter." What sets Paperclip apart is that **every issue carries the goal's ancestry (goal ancestry) with it.** When an agent picks up a task, it doesn't just see the "title" — it also sees the context of *why*: which company goal this work descends from. This is the decisive difference from simply throwing a prompt at an individual agent.
+2. **Create and assign issues.** You (or the editor-in-chief agent) create an issue like "write an article on topic X" and assign it to the responsible agent.
+3. **The agent picks it up and executes.** This is where "waking" comes in, and there are two mechanisms.
+   - **Heartbeat**: the agent wakes on a fixed cadence, checks its queue, and clears any backlog (regular clock-in).
+   - **Wake-on-demand**: the agent wakes the moment an issue is assigned or it's called via `@mention`. Cross-team requests are automatically delegated to whichever agent is the best fit.
+4. **Delegation and collaboration.** The editor hands off to a reporter, the reporter hands off again to a research agent — the issue flows through the org this way. Every comment and decision is logged on that issue.
+5. **Governance.** Important decisions like publishing or hiring halt in a pending-approval state with the board (you). Nothing moves forward until I approve it on the dashboard.
+6. **Cost tracking.** Throughout, the dashboard tallies token consumption per agent and per model in real time. "Who is spending how much" is always visible.
+
+In other words, the operator only has to do three things: **create issues, hit the approval button, and watch the costs.** The agents handle the rest of the execution from their own seats.
+
+![Team collaboration workflow](https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwbWFuYWdlbWVudCUyMHdvcmtmbG93JTIwb2ZmaWNlJTIwY29sbGFib3JhdGlvbnxlbnwxfDB8fHwxNzgzMjk1OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080)
+*Photo by [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/group-of-people-using-laptop-computer-QckxruozjRg?utm_source=spice-bandit-blog&utm_medium=referral)*
+
+## Which Agents and LLMs Can You Plug In?
+
+Paperclip's real power is that it's **agnostic about the agent executor (runner)**. In the official docs' own words: "Your agents could be OpenClaw bots, Python scripts, Node scripts, Claude Code sessions, Codex instances — we don't care." It's unopinionated about the kind of runner — if it can be invoked through an adapter, it's hired.
+
+The runners you can attach fall into four broad categories:
+
+- **Local CLI/session adapters**: Claude Code, Codex, Gemini, OpenCode, Pi, Cursor, and the like — register a coding/task AI CLI directly as an employee
+- **Command execution**: processes like a shell command or a Python script (rule-based automation employees)
+- **Webhook/API calls**: send requests to an agent hosted elsewhere
+- **External adapter plugins**: wire up a self-hosted runtime directly
+
+**What about the model (LLM)?** Paperclip is **model-agnostic** by design — it isn't tied to any particular model. Which model you use is decided in each runner's (adapter's) config — a Claude Code session pulls in a Claude-family model, a Gemini CLI pulls in Gemini, Codex pulls in an OpenAI-family model, and so on. That means **you can mix different models across agents within a single company.** You can build a "model portfolio" — a top-tier model for seats that require expensive judgment, a cheaper model for repetitive seats (the hands-on lessons of this optimization are the heart of [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/)). In the docs' phrasing, each employee is defined by an "Adapter type + config — how this agent runs and what defines its identity/behavior." In other words, **the adapter configuration *is* that employee's identity and behavioral definition.**
+
+## The Full Feature Rundown — Budget, Governance, Routines, Audit Log
+
+Here are the features we skimmed in the concept table earlier, re-framed around "what do they actually do for you."
+
+| Feature | What it actually does | Why it matters |
+|------|----------|------------|
+| **Budget** | A monthly token budget per agent. Warning at 80%, **automatic stop at 100% (hard stop)**, plus a built-in circuit breaker that detects abnormal spending. The board can raise the limit | A "prepaid debit card" model — structurally blocks runaway costs |
+| **Governance** | An approval gate for important decisions like hiring or strategy changes. Execution policies (review/approval steps), and pausing, resuming, or firing an agent | Control always stays with the human |
+| **Routines** | Repetitive tasks run automatically via cron, webhook, or API triggers | Unattended regular reporting and regular checks |
+| **Audit Log** | A complete record of every action and decision | Trace "how did we get here?" after the fact |
+| **Multi-company** | Run multiple fully isolated companies from a single install | Separate organizations per project |
+
+The one to watch especially is the **budget "hard stop."** The scariest scenario when first running autonomous agents is "it loops all night and racks up a bill bomb" — and Paperclip blocks this with a triple safeguard: 80% warning → 100% automatic stop → an abnormal-spend circuit breaker. It's the feature where the design philosophy of catching autonomy and safety at the same time is most visible.
+
+## Pros and Cons — When to Use It, When It's Overkill
+
+Before you decide to adopt it, look at the honest ledger.
+
+| Pros | Cons |
+|------|------|
+| Open source (MIT), free, runs locally, no account needed | With few agents, the "company simulation" overhead is excessive |
+| Budget hard stops and circuit breakers block runaway costs | Running the org itself eats tokens (heartbeats, reporting, retries) |
+| Human approval on every decision plus a complete audit trail = you keep control | Good results ultimately hinge on good "instructions" (job description) design |
+| Model- and runner-agnostic = mix different AIs per agent | A learning curve in the initial org, permission, and budget design |
+| Goal ancestry and issue tracking mean the "why" is always visible | For one or two simple tasks, a single script is more efficient |
+
+To sum up: the moment **three or more agents are collaborating and you need human control, auditability, and cost management** is where Paperclip earns its keep. Conversely, for a linear task like "auto-write one article," founding a whole company is overkill — and the real case study of that trade-off (the experience of a 5-to-7-person AI company being too much for a one-person blog) is exactly the story of [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/).
 
 ## How Is This Different from Hermes? It's a Different Layer
 
