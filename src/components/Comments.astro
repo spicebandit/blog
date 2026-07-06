@@ -34,9 +34,33 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
     {/* Cusdis 위젯은 iframe 안에서 [입력폼 → 댓글목록] 순서로 그려져, 폼 높이만큼
         스크롤해야 기존 댓글이 보인다. iframe이 same-origin(srcdoc)인 점을 이용해
         댓글 목록을 폼 위로 올려, 도착하자마자 기존 댓글이 보이게 한다.
-        접근 불가/구조 변경 시에는 조용히 기본 순서로 폴백한다. */}
+        동시에 사이트 팔레트(크림·잉크·레드)를 iframe 폼에 주입해 신문 디자인과 맞춘다.
+        접근 불가/구조 변경 시에는 조용히 기본 순서·기본 스타일로 폴백한다. */}
     <script is:inline>
       (function () {
+        function injectTheme(doc) {
+          try {
+            if (doc.getElementById('cusdis-site-theme')) return;
+            var cs = getComputedStyle(document.documentElement);
+            var v = function (n, d) { return (cs.getPropertyValue(n) || d).trim(); };
+            var bg = v('--bg-2', '#FAF6EC'), ink = v('--ink', '#23201D'),
+                line = v('--line', '#E7D8C8'), accent = v('--accent', '#C8102E'),
+                muted = v('--muted', '#6B635B');
+            var css = ''
+              + 'body{background:transparent!important;color:' + ink + '!important;font-family:inherit!important;}'
+              + 'input,textarea{background:' + bg + '!important;border:1px solid ' + line + '!important;border-radius:8px!important;color:' + ink + '!important;padding:10px 12px!important;box-shadow:none!important;}'
+              + 'input::placeholder,textarea::placeholder{color:' + muted + '!important;}'
+              + 'input:focus,textarea:focus{border-color:' + accent + '!important;outline:none!important;box-shadow:0 0 0 2px ' + accent + '22!important;}'
+              + 'button{background:' + accent + '!important;color:#fff!important;border:none!important;border-radius:8px!important;font-weight:600!important;padding:9px 16px!important;cursor:pointer!important;}'
+              + 'button:hover{filter:brightness(.94)!important;}'
+              + 'a{color:' + accent + '!important;}'
+              + '.text-gray-500,.text-gray-400,.text-sm{color:' + muted + '!important;}';
+            var st = doc.createElement('style');
+            st.id = 'cusdis-site-theme';
+            st.textContent = css;
+            (doc.head || doc.body).appendChild(st);
+          } catch (e) { /* cross-origin → 기본 스타일 유지 */ }
+        }
         function reorder(doc) {
           try {
             var form = doc.querySelector('.grid.grid-cols-1.gap-4');
@@ -58,11 +82,12 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
           var doc;
           try { doc = host.contentDocument; } catch (e) { clearInterval(timer); return; }
           if (!doc || !doc.body) return;
+          injectTheme(doc);
           reorder(doc);
           if (!attached) {
             attached = true;
             try {
-              new MutationObserver(function () { reorder(doc); })
+              new MutationObserver(function () { injectTheme(doc); reorder(doc); })
                 .observe(doc.body, { childList: true, subtree: true });
             } catch (e) {}
             clearInterval(timer);
@@ -77,11 +102,26 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
 <style>
   .comments {
     margin-top: 64px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
+    padding-top: 28px;
+    border-top: 2px solid var(--ink);
   }
   .comments h2 {
-    font-size: 1.1rem;
-    margin: 0 0 16px;
+    font-family: var(--font-serif, Georgia, serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0 0 18px;
+  }
+  /* Cusdis iframe을 감싸는 지면 카드 — 신문 톤과 통일 */
+  #cusdis_thread {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 18px 6px;
+  }
+  #cusdis_thread iframe {
+    background: transparent !important;
+    color-scheme: light;
   }
 </style>
