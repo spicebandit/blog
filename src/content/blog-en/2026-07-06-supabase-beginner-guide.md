@@ -3,7 +3,8 @@ title: "Supabase for Beginners — Setup, Pricing, Pitfalls & the Company's Rise
 description: "A complete Supabase beginner's guide: build a backend in 30 minutes, understand auth and the database, dodge the free-plan auto-pause trap, and see how the company reached a $10.5B valuation."
 pubDate: "2026-07-06T09:30:00+09:00"
 category: ai
-tags: ["supabase", "backend", "database", "no-code"]
+tags: ["supabase", "backend", "firebase", "database"]
+updatedDate: "2026-07-06T19:30:00+09:00"
 lang: en
 koSlug: 2026-07-06-supabase-beginner-guide
 ---
@@ -107,6 +108,22 @@ What stands out is the explosive growth of the past two years. The funding traje
 In just 14 months, the valuation leaped **more than fivefold, from $2B to $10.5B.** Cumulative funding has passed $1 billion, and the developer user base is approaching 10 million (double what it was just eight months earlier, at the prior round). The number of databases they've created is up 600% in a single year.
 
 There's a clear reason behind this growth: **the AI coding boom (so-called "vibe coding").** As AI tools like Cursor, Claude, and Lovable ushered in an era where even non-developers whip up apps in no time, the need for "a backend for those apps to store their data" exploded. Supabase established itself as the backend that's easiest for AI to write and bolt on, catching that demand head-on. It's a case of a tool's growth lining up exactly with the tides of the times.
+
+## Supabase vs Firebase — And the Korean Market
+
+Most people weighing Supabase are also sizing it up against the original heavyweight, **Google's Firebase.** The decisive difference between the two comes down to **the nature of the database.**
+
+| Category | Supabase | Firebase |
+|---|---|---|
+| DB type | PostgreSQL (relational SQL) | Firestore (NoSQL document store) |
+| Nature | Open-source, standard SQL | Google-proprietary platform |
+| Strengths | Complex queries, joins, freedom to migrate data | Mobile offline sync, Google-ecosystem integration |
+| Cost (at scale) | Relatively cheap (fixed tiers) | Per-operation billing — pricier the more you succeed |
+| Lock-in | Recoverable (weeks) | Structural (months) |
+
+In a sentence: **if relational data (things like orders, users, and inventory that are tangled together) and migration freedom matter most, pick Supabase; if a mobile app's real-time offline sync and Google-stack integration matter most, pick Firebase.** On cost, Supabase tends to win as you scale up, because Firebase bills per read/write *operation* — which means charges climb steeply the more successful your app becomes. Interestingly, a convergence is underway: as of 2026, Firebase is absorbing PostgreSQL through its Data Connect offering, so **the two are starting to resemble each other.**
+
+So is there no **Korean (domestic) service** to speak of? Honestly, there's still no clear front-runner among home-grown BaaS offerings that go head-to-head with Supabase or Firebase — Korean developers, too, mostly just use these two global services as-is. If you're looking for an alternative, there are two directions. ① **Open-source self-hosting** — running something like Appwrite or PocketBase on your own server (or a domestic cloud) so your data stays within the country. ② **Managed databases from domestic clouds** — NHN Cloud, Naver Cloud, and Kakao Cloud offer managed PostgreSQL, authentication, and the like, but this is closer to assembling components piecemeal than a turnkey "set-it-all-up-at-once" BaaS like Supabase. Unless you face a data-residency regulation that requires keeping data in-country (public sector, finance, and so on), Supabase's sheer convenience still comes out ahead for a beginner.
 
 ## So What — Why It's the Best Starting Point for Beginners
 
