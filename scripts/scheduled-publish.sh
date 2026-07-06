@@ -54,6 +54,7 @@ case "$TAG" in
     "src/content/blog-en/2026-07-07-toss-securities-open-api-guide.md|2026-07-07T09:00:00+09:00"
     "$D/2026-07-07-rtx5090-ollama-local-llm-parameters.md|2026-07-07T09:30:00+09:00"
     "src/content/blog-en/2026-07-07-rtx5090-ollama-local-llm-parameters.md|2026-07-07T09:30:00+09:00"
+    "$D/2026-07-07-korea-corporate-bond-issuance-timing-2026h2.md|2026-07-07T10:00:00+09:00"
   );;
   0708) ITEMS=(
     "$D/2026-07-05-paperclip-ai-newsroom-operations.md|2026-07-08T08:00:00+09:00"
