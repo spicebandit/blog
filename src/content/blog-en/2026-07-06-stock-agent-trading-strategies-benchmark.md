@@ -1,7 +1,7 @@
 ---
 title: "Stock Trading Strategies for AI Agents — 6 Approaches and How to Benchmark Them"
 description: "The success of a stock agent is decided by strategy, not code. A map of 6 strategy families — momentum, mean reversion, pairs, factor, news sentiment — and how to compare them with backtests. Not investment advice."
-pubDate: "2026-07-07T08:30:00+09:00"
+pubDate: 2026-07-07T06:55:34+09:00
 category: ai
 tags: ["trading-strategy", "algorithmic-trading", "ai-agent", "backtesting"]
 lang: en
