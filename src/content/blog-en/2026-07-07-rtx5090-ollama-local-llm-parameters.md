@@ -1,7 +1,7 @@
 ---
 title: "RTX 5090 Local LLM — How Many Billion Parameters Can It Run? VRAM Guide"
 description: "How many billion-parameter models can an RTX 5090 (32GB) run in Ollama? A full breakdown of the VRAM math, feasibility and speed (tok/s) by model size, and the practical 32B vs 70B verdict."
-pubDate: "2026-07-07T09:30:00+09:00"
+pubDate: 2026-07-08T07:12:02+09:00
 category: ai
 tags: ["rtx-5090", "local-llm", "ollama", "vram"]
 lang: en
