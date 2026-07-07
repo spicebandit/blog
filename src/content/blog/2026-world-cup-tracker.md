@@ -2,7 +2,7 @@
 title: "2026 북중미 월드컵 한눈에 보기 — 조편성·결과·대진표"
 description: "2026 FIFA 월드컵(미국·캐나다·멕시코) 진행 현황을 한 페이지에. 48개국 조편성과 조별 순위, 토너먼트 대진표를 매일 오전 갱신합니다. 대한민국은 A조에서 멕시코와 격돌."
 pubDate: 2026-06-17T08:00:00+09:00
-updatedDate: 2026-07-07T06:05:00+09:00
+updatedDate: 2026-07-07T12:20:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 ---
@@ -80,7 +80,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <div class="wc-wrap">
 
-<span class="wc-updated">🔄 마지막 업데이트: 2026년 7월 7일 오전 6시 5분 (KST)</span>
+<span class="wc-updated">🔄 마지막 업데이트: 2026년 7월 7일 낮 12시 20분 (KST)</span>
 
 경기가 끝날 때마다 자동 갱신되는 **2026 북중미 월드컵 한 페이지 대시보드**입니다. 개요 → 조별 순위 → 토너먼트 대진표 → 다가오는 경기 순서로 정리했습니다.
 
@@ -96,7 +96,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <tr><td>기간</td><td>2026년 6월 11일 ~ 7월 19일</td></tr>
 <tr><td>참가국</td><td>48개국 (사상 최다)</td></tr>
 <tr><td>방식</td><td>12개 조 × 4개국 → 각 조 1·2위 + 3위 상위 8개국, 총 32개국 32강 토너먼트 진출</td></tr>
-<tr><td>현재 단계</td><td><b>16강 진행 중 (5/8 경기 종료).</b> 16강에서 <b>모로코가 개최국 캐나다를 3-0으로 완파</b>(캐나다 탈락)한 데 이어 <b>프랑스가 파라과이를 1-0으로</b> 꺾어 <b>8강 대진 '모로코 vs 프랑스'(7월 9일, 보스턴)가 확정</b>됐고, <b>노르웨이가 브라질을 2-1로 잡는 이변</b>(엘링 홀란 후반 두 골, 브라질 36년 만의 첫 16강 탈락)에 이어 <b>잉글랜드가 개최국 멕시코를 3-2로 꺾어</b>(주드 벨링엄 전반 멀티골) <b>8강 대진 '노르웨이 vs 잉글랜드'도 확정</b>됐다. 다섯 번째 경기(댈러스, 이베리아 더비)에서는 <b>스페인이 포르투갈을 1-0으로 제압</b>했다 — 미켈 메리노가 후반 추가시간(90+1분) 결승골을 터뜨려 스페인이 8강에 올랐고, 크리스티아누 호날두의 포르투갈은 종료 직전 베르나르두 실바의 헤더가 빗나가며 짐을 쌌다. 남은 16강 일정(KST): <b>미국-벨기에(7/7 09:00, 시애틀)</b>, 아르헨티나-이집트(7/8 01:00, 애틀랜타), 스위스-콜롬비아(7/8 05:00, 밴쿠버). <b>대한민국은 조별리그 A조 3위(각 조 3위 10위)로 32강 진출이 무산돼 대회를 마쳤다.</b></td></tr>
+<tr><td>현재 단계</td><td><b>16강 진행 중 (6/8 경기 종료).</b> 16강에서 <b>모로코가 개최국 캐나다를 3-0으로 완파</b>(캐나다 탈락)한 데 이어 <b>프랑스가 파라과이를 1-0으로</b> 꺾어 <b>8강 대진 '모로코 vs 프랑스'(7/10 05:00 KST, 보스턴)가 확정</b>됐고, <b>노르웨이가 브라질을 2-1로 잡는 이변</b>(엘링 홀란 후반 두 골, 브라질 36년 만의 첫 16강 탈락)에 이어 <b>잉글랜드가 개최국 멕시코를 3-2로 꺾어</b>(주드 벨링엄 전반 멀티골) <b>8강 대진 '노르웨이 vs 잉글랜드'도 확정</b>됐다. <b>스페인은 이베리아 더비에서 포르투갈을 1-0으로 제압</b>(미켈 메리노 90+1분 결승골, 호날두의 포르투갈 탈락)했고, 이어 <b>벨기에가 개최국 미국을 4-1로 대파</b>(샤를 더케텔라러 멀티골)해 <b>미국을 탈락시키며 8강 대진 '스페인 vs 벨기에'(7/11 04:00 KST, LA)까지 확정</b>됐다. 남은 16강 일정(KST): <b>아르헨티나-이집트(7/8 01:00, 애틀랜타)</b>, <b>스위스-콜롬비아(7/8 05:00, 밴쿠버)</b>. <b>대한민국은 조별리그 A조 3위(각 조 3위 10위)로 32강 진출이 무산돼 대회를 마쳤다.</b></td></tr>
 <tr><td>대한민국</td><td><b>A조</b> (멕시코·체코·남아공과 한 조)</td></tr>
 </table>
 
@@ -232,7 +232,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 ## 토너먼트 대진표 (32강 → 결승)
 
-16강 8경기 중 5경기가 끝났습니다. <b>모로코가 캐나다를 3-0으로, 프랑스가 파라과이를 1-0으로, 노르웨이가 브라질을 2-1로, 잉글랜드가 멕시코를 3-2로 꺾었고, 스페인이 이베리아 더비에서 포르투갈을 1-0으로 눌렀습니다.</b> 8강 대진은 '모로코 vs 프랑스'(7/9 보스턴)와 '노르웨이 vs 잉글랜드'가 확정됐고, 스페인이 세 번째 8강 티켓을 확보했습니다. 남은 16강 대진: 미국-벨기에, 아르헨티나-이집트, 스위스-콜롬비아. 8강 이후 칸은 양 팀이 모두 확정되면 표시합니다. (모바일에서는 세로로 표시)
+16강 8경기 중 6경기가 끝났습니다. <b>모로코가 캐나다를 3-0으로, 프랑스가 파라과이를 1-0으로, 노르웨이가 브라질을 2-1로, 잉글랜드가 멕시코를 3-2로 꺾었고, 스페인이 포르투갈을 1-0, 벨기에가 미국을 4-1로 눌렀습니다.</b> 8강 대진은 '모로코 vs 프랑스', '노르웨이 vs 잉글랜드', '스페인 vs 벨기에' 세 자리가 확정됐습니다. 남은 16강 대진: 아르헨티나-이집트, 스위스-콜롬비아. 8강 이후 칸은 양 팀이 모두 확정되면 표시합니다. (모바일에서는 세로로 표시)
 
 <div class="wc-bracket-scroll"><div class="wc-bracket">
 
@@ -260,7 +260,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-m"><div class="t"><span>🇵🇾 파라과이</span><span class="sc">0</span></div><div class="t"><span>🇫🇷 프랑스</span><span class="sc">1</span></div></div>
 <div class="wc-m"><div class="t"><span>🇧🇷 브라질</span><span class="sc">1</span></div><div class="t"><span>🇳🇴 노르웨이</span><span class="sc">2</span></div></div>
 <div class="wc-m"><div class="t"><span>🇲🇽 멕시코</span><span class="sc">2</span></div><div class="t"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</span><span class="sc">3</span></div></div>
-<div class="wc-m"><div class="t"><span>🇧🇪 벨기에</span><span class="sc">vs</span></div><div class="t"><span>🇺🇸 미국</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇧🇪 벨기에</span><span class="sc">4</span></div><div class="t"><span>🇺🇸 미국</span><span class="sc">1</span></div></div>
 <div class="wc-m"><div class="t"><span>🇪🇸 스페인</span><span class="sc">1</span></div><div class="t"><span>🇵🇹 포르투갈</span><span class="sc">0</span></div></div>
 <div class="wc-m"><div class="t"><span>🇨🇭 스위스</span><span class="sc">vs</span></div><div class="t"><span>🇨🇴 콜롬비아</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇦🇷 아르헨티나</span><span class="sc">vs</span></div><div class="t"><span>🇪🇬 이집트</span><span class="sc">-</span></div></div>
@@ -269,7 +269,7 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 <div class="wc-round"><h4>8강</h4>
 <div class="wc-m"><div class="t"><span>🇲🇦 모로코</span><span class="sc">-</span></div><div class="t"><span>🇫🇷 프랑스</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>🇳🇴 노르웨이</span><span class="sc">-</span></div><div class="t"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿 잉글랜드</span><span class="sc">-</span></div></div>
-<div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>🇪🇸 스페인</span><span class="sc">-</span></div></div>
+<div class="wc-m"><div class="t"><span>🇧🇪 벨기에</span><span class="sc">-</span></div><div class="t"><span>🇪🇸 스페인</span><span class="sc">-</span></div></div>
 <div class="wc-m"><div class="t"><span>미정</span><span class="sc">-</span></div><div class="t"><span>미정</span><span class="sc">-</span></div></div>
 </div>
 
@@ -290,13 +290,13 @@ tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
 
 <table class="wc-sched">
 <tr><th>한국시간(KST)</th><th>경기</th><th>조</th></tr>
-<tr><td class="kst">7/7(화) 09:00</td><td>🇺🇸 미국 vs 🇧🇪 벨기에</td><td>16강</td></tr>
 <tr><td class="kst">7/8(수) 01:00</td><td>🇦🇷 아르헨티나 vs 🇪🇬 이집트</td><td>16강</td></tr>
 <tr><td class="kst">7/8(수) 05:00</td><td>🇨🇭 스위스 vs 🇨🇴 콜롬비아</td><td>16강</td></tr>
+<tr><td class="kst">7/10(금) 05:00</td><td>🇲🇦 모로코 vs 🇫🇷 프랑스</td><td>8강</td></tr>
 </table>
 
 <p class="wc-note">킥오프 시각은 미국 동부시간(ET) 기준 일정을 한국시간(KST = ET+13시간)으로 환산했습니다. 경기장 사정에 따라 변동될 수 있습니다.</p>
 
-<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports·CBS Sports 등 공개 자료(2026-07-07 오전 6시 5분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
+<p class="wc-note">데이터 출처: FIFA·ESPN·NBC Sports·Yahoo Sports·CBS Sports 등 공개 자료(2026-07-07 낮 12시 20분 기준). 본 페이지는 경기 종료 후 자동 갱신됩니다. 결과가 불확실한 항목은 확정 후 반영됩니다.</p>
 
 </div>
