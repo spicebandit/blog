@@ -20,7 +20,7 @@ const { tag, posts: rawTagPosts } = Astro.props;
 
 const posts = rawTagPosts.map((p: any) => ({ post: p, heroImage: p.data.heroImage ?? firstBodyImage(p.body) }));
 ---
-<Base title={`#${tag} | 태그`} description={`'${tag}' 태그가 달린 글 모음입니다.`}>
+<Base title={`#${tag} | 태그`} description={`'${tag}' 태그가 달린 글 모음입니다.`} noindex>
   <p class="meta" style="margin: 0 0 4px;">태그</p>
   <h1 style="margin: 0 0 4px;">#{tag}</h1>
   <p class="meta" style="margin-top: 0;">{posts.length}개의 글</p>
