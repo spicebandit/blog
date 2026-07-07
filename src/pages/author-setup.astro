@@ -1,0 +1,66 @@
+---
+// 편집자(소유자) 셋업 페이지.
+// 사용법: /author-setup?k=<비밀키> 로 접속하면 그 브라우저에 키를 저장한다.
+// 이후 이 기기에서 쓰는 댓글은 자동으로 '편집자(비공개)'로 처리된다.
+// 공개 목록/사이트맵에 노출되지 않게 noindex. 키는 서버가 아니라 브라우저에만 저장된다.
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>편집자 설정 · Baseload</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #FAF6EE; color: #23201D; display: flex; min-height: 100vh; margin: 0; align-items: center; justify-content: center; }
+    .card { background: #fff; border: 1px solid #E5DECF; border-radius: 14px; padding: 28px 32px; max-width: 440px; box-shadow: 0 6px 24px rgba(0,0,0,.06); }
+    h1 { font-size: 1.15rem; margin: 0 0 12px; }
+    p { line-height: 1.6; font-size: 0.95rem; color: #4a453e; }
+    .ok { color: #1a7f37; font-weight: 700; }
+    .err { color: #C8102E; font-weight: 700; }
+    button { margin-top: 14px; background: #C8102E; color: #fff; border: none; border-radius: 8px; padding: 9px 16px; font-weight: 600; cursor: pointer; }
+    code { background: #F1EADD; padding: 1px 6px; border-radius: 4px; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>편집자(소유자) 설정</h1>
+    <p id="status">확인 중…</p>
+    <button id="clearBtn" hidden>이 기기에서 편집자 해제</button>
+  </div>
+  <script is:inline>
+    (function () {
+      var st = document.getElementById('status');
+      var clearBtn = document.getElementById('clearBtn');
+      var params = new URLSearchParams(location.search);
+      var k = params.get('k');
+      var KEY = 'baseload_author_key';
+      var saved = '';
+      try { saved = localStorage.getItem(KEY) || ''; } catch (e) {}
+
+      if (k) {
+        try {
+          localStorage.setItem(KEY, k);
+          st.innerHTML = '<span class="ok">✔ 이 기기가 편집자로 설정되었습니다.</span><br>이제 아무 글 하단 댓글창에 남기는 글은 공개되지 않고 편집자(비공개)로 전달됩니다. 이 페이지 주소(키 포함)는 본인만 보관하세요.';
+          // 주소창에서 키 흔적 제거
+          history.replaceState({}, '', '/author-setup');
+          clearBtn.hidden = false;
+        } catch (e) {
+          st.innerHTML = '<span class="err">저장 실패 — 브라우저가 localStorage를 막고 있습니다.</span>';
+        }
+      } else if (saved) {
+        st.innerHTML = '<span class="ok">이 기기는 이미 편집자로 설정되어 있습니다.</span>';
+        clearBtn.hidden = false;
+      } else {
+        st.innerHTML = '키가 없습니다. <code>/author-setup?k=비밀키</code> 형태의 링크로 접속하세요.';
+      }
+
+      clearBtn.addEventListener('click', function () {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        st.innerHTML = '편집자 설정이 <b>해제</b>되었습니다. 이 기기의 댓글은 이제 일반 공개댓글로 등록됩니다.';
+        clearBtn.hidden = true;
+      });
+    })();
+  </script>
+</body>
+</html>

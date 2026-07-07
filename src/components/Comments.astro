@@ -1,109 +1,152 @@
 ---
 /**
- * Cusdis 댓글 위젯 (정적 사이트용, 독자 로그인 불필요)
+ * 자체 댓글 위젯 (Cusdis 대체, 정적 사이트 + Vercel 서버함수).
  *
- * App ID는 비밀값이 아니라 페이지 HTML에 그대로 노출되는 공개 식별자다.
- * 따라서 기본값을 코드에 두어 별도 설정 없이 배포에서 바로 동작하게 하고,
- * 환경변수(PUBLIC_CUSDIS_APP_ID)가 있으면 그 값이 우선하도록 한다.
- * 값이 전혀 없으면 아무것도 렌더하지 않아 빌드/사이트가 깨지지 않는다.
+ * - 공개 댓글: 누구나 작성 즉시 노출. (스팸 대응은 추후)
+ * - 편집자(소유자) 댓글: 브라우저 localStorage('baseload_author_key')에 비밀키가 있으면
+ *   그 키를 함께 보내 서버가 소유자로 판정 → 비공개 편집 메모로 저장(화면에 안 뜸).
+ * - 편집자 답글(author_reply)은 목록에 '편집자' 배지로 노출된다.
+ *
+ * slug = pageId (글 식별자). 영문판은 en- 접두가 붙어 자연히 분리된다.
  */
-const CUSDIS_APP_ID = '71e4c2f8-54af-4d19-824d-aba38787c7e9';
-
 interface Props {
   pageId: string;
   pageTitle: string;
 }
-const { pageId, pageTitle } = Astro.props;
-const appId = import.meta.env.PUBLIC_CUSDIS_APP_ID || CUSDIS_APP_ID;
-const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const { pageId } = Astro.props;
 ---
-{appId && (
-  <section class="comments">
-    <h2>댓글</h2>
-    <div
-      id="cusdis_thread"
-      data-host="https://cusdis.com"
-      data-app-id={appId}
-      data-page-id={pageId}
-      data-page-url={pageUrl}
-      data-page-title={pageTitle}
-      data-theme="auto"
-    >
-    </div>
-    <script is:inline async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-    {/* Cusdis 위젯은 iframe 안에서 [입력폼 → 댓글목록] 순서로 그려져, 폼 높이만큼
-        스크롤해야 기존 댓글이 보인다. iframe이 same-origin(srcdoc)인 점을 이용해
-        댓글 목록을 폼 위로 올려, 도착하자마자 기존 댓글이 보이게 한다.
-        동시에 사이트 팔레트(크림·잉크·레드)를 iframe 폼에 주입해 신문 디자인과 맞춘다.
-        접근 불가/구조 변경 시에는 조용히 기본 순서·기본 스타일로 폴백한다. */}
-    <script is:inline>
-      (function () {
-        function injectTheme(doc) {
-          try {
-            if (doc.getElementById('cusdis-site-theme')) return;
-            var cs = getComputedStyle(document.documentElement);
-            var v = function (n, d) { return (cs.getPropertyValue(n) || d).trim(); };
-            var bg = v('--bg-2', '#FAF6EC'), ink = v('--ink', '#23201D'),
-                line = v('--line', '#E7D8C8'), accent = v('--accent', '#C8102E'),
-                muted = v('--muted', '#6B635B');
-            var css = ''
-              + 'body{background:transparent!important;color:' + ink + '!important;font-family:inherit!important;margin:0!important;padding:0!important;}'
-              + 'input,textarea{background:' + bg + '!important;border:1px solid ' + line + '!important;border-radius:8px!important;color:' + ink + '!important;padding:8px 10px!important;box-shadow:none!important;}'
-              + 'input::placeholder,textarea::placeholder{color:' + muted + '!important;}'
-              + 'input:focus,textarea:focus{border-color:' + accent + '!important;outline:none!important;box-shadow:0 0 0 2px ' + accent + '22!important;}'
-              + 'textarea{min-height:60px!important;}'
-              + 'button{background:' + accent + '!important;color:#fff!important;border:none!important;border-radius:8px!important;font-weight:600!important;padding:8px 14px!important;cursor:pointer!important;}'
-              + 'button:hover{filter:brightness(.94)!important;}'
-              + 'a{color:' + accent + '!important;}'
-              + '.text-gray-500,.text-gray-400,.text-sm{color:' + muted + '!important;}'
-              /* 세로 여백 압축 — 폼이 한눈에 들어오게 */
-              + '.my-4{margin-top:8px!important;margin-bottom:8px!important;}'
-              + '.gap-4{gap:8px!important;}'
-              + '.mt-4,.mb-4{margin-top:8px!important;margin-bottom:8px!important;}'
-              + '.py-4{padding-top:8px!important;padding-bottom:8px!important;}';
-            var st = doc.createElement('style');
-            st.id = 'cusdis-site-theme';
-            st.textContent = css;
-            (doc.head || doc.body).appendChild(st);
-          } catch (e) { /* cross-origin → 기본 스타일 유지 */ }
-        }
-        function reorder(doc) {
-          try {
-            var form = doc.querySelector('.grid.grid-cols-1.gap-4');
-            if (!form || !form.parentElement) return;
-            var wrapper = form.parentElement;
-            var list = Array.prototype.find.call(wrapper.children, function (c) {
-              return c !== form && c.querySelector && c.querySelector('.my-4');
-            });
-            if (!list) return; // 댓글이 없으면 폼을 그대로 위에 둔다
-            // 이미 목록이 폼 앞에 있으면 통과 (무한 이동 방지)
-            if (list.compareDocumentPosition(form) & Node.DOCUMENT_POSITION_FOLLOWING) return;
-            wrapper.insertBefore(list, form);
-          } catch (e) { /* cross-origin/구조변경 → 기본 순서 유지 */ }
-        }
-        var attached = false;
-        var timer = setInterval(function () {
-          var host = document.querySelector('#cusdis_thread iframe');
-          if (!host) return;
-          var doc;
-          try { doc = host.contentDocument; } catch (e) { clearInterval(timer); return; }
-          if (!doc || !doc.body) return;
-          injectTheme(doc);
-          reorder(doc);
-          if (!attached) {
-            attached = true;
-            try {
-              new MutationObserver(function () { injectTheme(doc); reorder(doc); })
-                .observe(doc.body, { childList: true, subtree: true });
-            } catch (e) {}
-            clearInterval(timer);
-          }
-        }, 400);
-        setTimeout(function () { clearInterval(timer); }, 20000);
-      })();
-    </script>
-  </section>
-)}
+<section class="comments">
+  <h2>댓글</h2>
+  <div class="cbox" data-slug={pageId}>
+    <p class="cnote" data-role="owner-indicator" hidden>✍️ 편집자 모드 — 이 댓글은 공개되지 않고 편집자에게만 전달됩니다.</p>
+    <ul class="clist" data-role="list"><li class="cempty" data-role="empty">불러오는 중…</li></ul>
+    <form class="cform" data-role="form" autocomplete="off">
+      <div class="crow">
+        <input type="text" name="author" maxlength="40" placeholder="이름(선택)" data-role="author" />
+      </div>
+      <textarea name="body" maxlength="4000" rows="3" placeholder="댓글을 남겨주세요" required data-role="body"></textarea>
+      <!-- 스팸 봇 유인용 허니팟(사람에겐 안 보임) -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" class="choney" aria-hidden="true" />
+      <div class="cactions">
+        <span class="cmsg" data-role="msg" role="status"></span>
+        <button type="submit" data-role="submit">등록</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    var box = document.querySelector('.cbox');
+    if (!box) return;
+    var slug = box.getAttribute('data-slug');
+    var listEl = box.querySelector('[data-role="list"]');
+    var form = box.querySelector('[data-role="form"]');
+    var authorEl = box.querySelector('[data-role="author"]');
+    var bodyEl = box.querySelector('[data-role="body"]');
+    var honey = box.querySelector('.choney');
+    var msgEl = box.querySelector('[data-role="msg"]');
+    var submitEl = box.querySelector('[data-role="submit"]');
+    var ownerInd = box.querySelector('[data-role="owner-indicator"]');
+    var ownerKey = '';
+    try { ownerKey = localStorage.getItem('baseload_author_key') || ''; } catch (e) {}
+    if (ownerKey && ownerInd) ownerInd.hidden = false;
+
+    function fmt(ts) {
+      try {
+        var d = new Date(ts);
+        return d.toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', year: '2-digit', month: '2-digit', day: '2-digit' }).replace(/\.$/, '')
+          + ' ' + d.toLocaleTimeString('ko-KR', { timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false });
+      } catch (e) { return ''; }
+    }
+    // XSS 안전: 텍스트는 textContent로만 넣는다
+    function node(comment) {
+      var li = document.createElement('li');
+      li.className = 'citem' + (comment.role === 'author_reply' ? ' creply' : '');
+      var head = document.createElement('div');
+      head.className = 'chead';
+      var name = document.createElement('span');
+      name.className = 'cauthor';
+      name.textContent = comment.author || '익명';
+      head.appendChild(name);
+      if (comment.role === 'author_reply') {
+        var badge = document.createElement('span');
+        badge.className = 'cbadge';
+        badge.textContent = '편집자';
+        head.appendChild(badge);
+      }
+      var time = document.createElement('span');
+      time.className = 'ctime';
+      time.textContent = fmt(comment.created_at);
+      head.appendChild(time);
+      var body = document.createElement('div');
+      body.className = 'cbody';
+      body.textContent = comment.body || '';
+      li.appendChild(head);
+      li.appendChild(body);
+      return li;
+    }
+    function render(comments) {
+      listEl.innerHTML = '';
+      if (!comments || !comments.length) {
+        var e = document.createElement('li');
+        e.className = 'cempty';
+        e.textContent = '첫 댓글을 남겨보세요.';
+        listEl.appendChild(e);
+        return;
+      }
+      // 부모→답글(author_reply) 순으로 그룹핑
+      var byId = {}, tops = [];
+      comments.forEach(function (c) { byId[c.id] = c; c._children = []; });
+      comments.forEach(function (c) {
+        if (c.parent_id && byId[c.parent_id]) byId[c.parent_id]._children.push(c);
+        else tops.push(c);
+      });
+      tops.forEach(function (c) {
+        listEl.appendChild(node(c));
+        (c._children || []).forEach(function (ch) {
+          var n = node(ch); n.classList.add('cchild'); listEl.appendChild(n);
+        });
+      });
+    }
+    function load() {
+      fetch('/api/comments?slug=' + encodeURIComponent(slug))
+        .then(function (r) { return r.json(); })
+        .then(function (d) { render(d.comments || []); })
+        .catch(function () {
+          listEl.innerHTML = '';
+          var e = document.createElement('li'); e.className = 'cempty';
+          e.textContent = '댓글을 불러오지 못했습니다.'; listEl.appendChild(e);
+        });
+    }
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      if (honey && honey.value) return; // 봇
+      var body = (bodyEl.value || '').trim();
+      if (body.length < 2) { msg('내용을 입력해주세요.', true); return; }
+      submitEl.disabled = true; msg('등록 중…', false);
+      fetch('/api/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug: slug, author: (authorEl.value || '').trim(), body: body, ownerKey: ownerKey }),
+      })
+        .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (res) {
+          submitEl.disabled = false;
+          if (!res.ok || res.d.error) { msg(res.d.error || '등록 실패', true); return; }
+          bodyEl.value = '';
+          if (res.d.owner) { msg('편집자에게 전달되었습니다(비공개).', false); }
+          else { msg('등록되었습니다.', false); load(); }
+          setTimeout(function () { msg('', false); }, 4000);
+        })
+        .catch(function () { submitEl.disabled = false; msg('네트워크 오류', true); });
+    });
+    function msg(t, isErr) { msgEl.textContent = t; msgEl.style.color = isErr ? 'var(--accent)' : 'var(--muted)'; }
+
+    load();
+  })();
+</script>
 
 <style>
   .comments {
@@ -119,18 +162,59 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
     color: var(--ink);
     margin: 0 0 18px;
   }
-  /* Cusdis iframe을 감싸는 지면 카드 — 신문 톤과 통일 */
-  #cusdis_thread {
+  .cbox {
     background: var(--bg-2);
     border: 1px solid var(--line);
     border-radius: 12px;
-    padding: 18px 18px 6px;
+    padding: 18px;
   }
-  #cusdis_thread iframe {
-    background: transparent !important;
-    color-scheme: light;
-    /* 콤팩트: 별도 스크롤 없이 한 화면에 들어오게 높이 제한.
-       댓글이 늘면 이 안에서만 스크롤(페이지 흐름은 안 밀림). */
-    max-height: 420px !important;
+  .cnote {
+    margin: 0 0 12px;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 600;
   }
+  .clist { list-style: none; margin: 0 0 16px; padding: 0; }
+  .cempty { color: var(--muted); font-size: 0.9rem; padding: 4px 0; }
+  .citem {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .citem:last-child { border-bottom: none; }
+  .cchild { margin-left: 20px; border-left: 2px solid var(--line); padding-left: 12px; }
+  .chead { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .cauthor { font-weight: 700; color: var(--ink); font-size: 0.9rem; }
+  .cbadge {
+    background: var(--accent); color: #fff;
+    font-size: 0.68rem; font-weight: 700;
+    padding: 1px 6px; border-radius: 4px;
+  }
+  .ctime { color: var(--muted); font-size: 0.78rem; margin-left: auto; }
+  .cbody { color: var(--ink); font-size: 0.95rem; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
+  .cform { display: flex; flex-direction: column; gap: 8px; }
+  .crow { display: flex; gap: 8px; }
+  .cform input[type="text"]:not(.choney), .cform textarea {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    padding: 8px 10px;
+    font: inherit;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .cform input:focus, .cform textarea:focus {
+    border-color: var(--accent); outline: none;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+  .cform textarea { resize: vertical; min-height: 60px; }
+  .choney { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .cactions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+  .cmsg { font-size: 0.82rem; color: var(--muted); margin-right: auto; }
+  .cform button {
+    background: var(--accent); color: #fff; border: none;
+    border-radius: 8px; font-weight: 600; padding: 8px 18px; cursor: pointer;
+  }
+  .cform button:hover { filter: brightness(0.94); }
+  .cform button:disabled { opacity: 0.6; cursor: default; }
 </style>
