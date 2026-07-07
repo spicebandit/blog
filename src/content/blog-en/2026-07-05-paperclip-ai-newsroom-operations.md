@@ -1,7 +1,7 @@
 ---
 title: "A Company Run by AI Employees: 10 Days on Paperclip [Part 2]"
 description: "Ten days running a company staffed by AI employees on Paperclip: 313M tokens gone in three days, a triple-notification bug, and hard lessons on heartbeats and budgets."
-pubDate: "2026-07-07T08:00:00+09:00"
+pubDate: 2026-07-08T07:08:47+09:00
 category: ai
 tags: ["ai employees", "ai agent company", "paperclip", "multi-agent"]
 lang: en
