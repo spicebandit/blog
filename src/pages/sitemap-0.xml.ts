@@ -56,19 +56,13 @@ export const GET: APIRoute = async ({ site }) => {
     entries.push(entry(`${base}/category/${cat}/`, buildDate, 'daily', '0.6'));
   }
 
-  // Tag pages — use the most recent post date for that tag
-  const tagLatest = new Map<string, string>();
-  for (const post of koPosts) {
-    const postDate = toDate(post.data.updatedDate ?? post.data.pubDate);
-    for (const tag of post.data.tags) {
-      const cur = tagLatest.get(tag);
-      if (!cur || postDate > cur) tagLatest.set(tag, postDate);
-    }
+  // 정적 정보·정책 페이지 (신뢰 페이지 — 소개·연락처·개인정보처리방침·이용약관)
+  for (const p of ['about', 'contact', 'privacy', 'terms']) {
+    entries.push(entry(`${base}/${p}/`, buildDate, 'monthly', '0.5'));
   }
-  for (const [tag, lastmod] of tagLatest) {
-    // 태그 페이지의 실제 URL은 encodeURIComponent(tag)로 생성되므로 sitemap도 동일하게 인코딩한다.
-    entries.push(entry(`${base}/tag/${encodeURIComponent(tag)}/`, lastmod, 'weekly', '0.5'));
-  }
+
+  // 태그 페이지·페이지네이션은 noindex 처리했으므로 sitemap에서 제외한다.
+  // (태그 263개 같은 얇은 자동생성 페이지가 sitemap을 뒤덮으면 '가치 낮은 콘텐츠' 판정에 불리)
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
