@@ -1,0 +1,14 @@
+{
+  "name": "BASELOAD",
+  "short_name": "BASELOAD",
+  "description": "에너지·경제·AI 심층 리포트",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1EADD",
+  "theme_color": "#C8102E",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

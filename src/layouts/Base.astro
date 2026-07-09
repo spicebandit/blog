@@ -17,6 +17,11 @@ interface HrefLangAlt {
   href: string; // absolute URL
 }
 
+interface Crumb {
+  name: string;
+  url: string; // 절대 또는 경로. 상대경로면 site 기준으로 절대화한다.
+}
+
 interface Props {
   title: string;
   description: string;
@@ -27,11 +32,56 @@ interface Props {
   lang?: string; // page language, defaults to 'ko'
   hrefLangAlts?: HrefLangAlt[]; // hreflang alternate links
   noindex?: boolean; // 검수용 프리뷰 등 검색엔진 비노출 페이지
+  ogImage?: string;  // 소셜 공유 이미지(절대 URL 권장). 없으면 사이트 기본 OG.
+  breadcrumbs?: Crumb[]; // BreadcrumbList 구조화데이터용 (예: 홈>카테고리>글)
+  author?: string;   // 글 작성자 (BlogPosting.author)
 }
 
-const { title, description, type = 'website', pubDate, updatedDate, wide = false, lang = 'ko', hrefLangAlts, noindex = false } = Astro.props;
+const { title, description, type = 'website', pubDate, updatedDate, wide = false, lang = 'ko', hrefLangAlts, noindex = false, ogImage, breadcrumbs, author } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const SITE_NAME = 'BASELOAD';
+const SITE_DESC = lang === 'en' ? 'In-depth reports on Energy, Economy, and AI' : '에너지·경제·AI 심층 리포트';
+
+// 소셜 공유 이미지: 지정값(상대경로면 절대화) → 없으면 사이트 기본 OG 카드
+// 기본 카드는 1200×630로 크기가 확정돼 있어 치수 메타를 함께 알린다.
+// 글 본문 이미지는 크기가 제각각이라 치수를 단정하지 않는다(스크래퍼가 실제 크기를 읽음).
+const usingDefaultOg = !ogImage;
+const ogImageUrl = ogImage
+  ? new URL(ogImage, Astro.site).toString()
+  : new URL('/og-default.png', Astro.site).toString();
+const logoUrl = new URL('/logo.png', Astro.site).toString();
+const AUTHOR = author ?? SITE_NAME;
+
+// 사이트 전역 구조화데이터 — Organization(퍼블리셔) + WebSite. 모든 페이지에 1회.
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: Astro.site!.toString(),
+  logo: logoUrl,
+};
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: Astro.site!.toString(),
+  description: SITE_DESC,
+  inLanguage: lang === 'en' ? 'en' : 'ko',
+};
+
+// BreadcrumbList — 글/카테고리 페이지에서 넘겨받으면 출력
+const breadcrumbLd = breadcrumbs && breadcrumbs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((c, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: c.name,
+        item: new URL(c.url, Astro.site).toString(),
+      })),
+    }
+  : null;
 
 const pathname = Astro.url.pathname;
 const navItems = [
@@ -73,6 +123,13 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href="/rss.xml" />
 
+    {/* 파비콘 · 앱 아이콘 · PWA 매니페스트 (브라우저 탭·구글 SERP 아이콘·홈화면 추가) */}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#C8102E" />
+
     <meta name="google-site-verification" content="9CN_w6tkNr_y8h6bhS5zyXZtWi9HnmRwhUNbk3_4foA" />
     <meta name="naver-site-verification" content="2304962573c68823df2550048d161b1d87227173" />
 
@@ -82,7 +139,21 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={ogImageUrl} />
+    {usingDefaultOg && <meta property="og:image:width" content="1200" />}
+    {usingDefaultOg && <meta property="og:image:height" content="630" />}
+    <meta property="og:image:alt" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {/* 사이트 전역 구조화데이터 (모든 페이지 1회) */}
+    <script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteLd)} />
+    {breadcrumbLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    )}
 
     {pubDate && (
       <script type="application/ld+json" set:html={JSON.stringify({
@@ -90,9 +161,18 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         '@type': 'BlogPosting',
         headline: title,
         description,
+        image: ogImageUrl,
+        inLanguage: lang === 'en' ? 'en' : 'ko',
         datePublished: pubDate.toISOString(),
         dateModified: (updatedDate ?? pubDate).toISOString(),
         url: canonical.toString(),
+        mainEntityOfPage: { '@type': 'WebPage', '@id': canonical.toString() },
+        author: { '@type': 'Organization', name: AUTHOR, url: Astro.site!.toString() },
+        publisher: {
+          '@type': 'Organization',
+          name: SITE_NAME,
+          logo: { '@type': 'ImageObject', url: logoUrl, width: 512, height: 512 },
+        },
       })} />
     )}
 

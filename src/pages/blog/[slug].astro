@@ -18,6 +18,17 @@ const { post } = Astro.props;
 const { Content, headings } = await render(post);
 const isPreview = post.data.draft === true;
 
+// OG 이미지: heroImage → 본문 첫 이미지 → (Base에서) 사이트 기본 카드
+const firstImg = post.body?.match(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/);
+const ogImage = post.data.heroImage ?? firstImg?.[1];
+
+// 브레드크럼: 홈 > 카테고리 > 글제목
+const breadcrumbs = [
+  { name: '홈', url: '/' },
+  { name: categoryName(post.data.category), url: `/category/${post.data.category}/` },
+  { name: post.data.title, url: `/blog/${post.id}/` },
+];
+
 // hreflang 상호선언: 영문판(blog-en)이 있으면 ko↔en 쌍으로 알린다 (구글은 단방향 선언 무시)
 const SITE = Astro.site!;
 const enPosts = await getCollection('blog-en');
@@ -60,6 +71,9 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
   wide={true}
   hrefLangAlts={hrefLangAlts}
   noindex={isPreview}
+  ogImage={ogImage}
+  breadcrumbs={breadcrumbs}
+  author={post.data.author}
 >
   <!-- ② 읽기 진행바: 스크롤 진행도를 상단 레드 라인으로 표시 -->
   <div class="read-progress" aria-hidden="true"></div>

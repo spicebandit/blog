@@ -69,8 +69,12 @@ const sidebarPosts = [...allPosts]
   }));
 
 const pageTitle = page.currentPage > 1 ? `${name} — ${page.currentPage}페이지 | 카테고리` : `${name} | 카테고리`;
+const breadcrumbs = [
+  { name: '홈', url: '/' },
+  { name, url: `/category/${category}/` },
+];
 ---
-<Base title={pageTitle} description={`${name} — ${desc}`} wide={true}>
+<Base title={pageTitle} description={`${name} — ${desc}`} wide={true} breadcrumbs={breadcrumbs}>
   <!-- 신문 섹션면 헤더: 섹션명 + 한 줄 소개 + 이중괘선 -->
   <header class="section-head">
     <div class="section-head-row">

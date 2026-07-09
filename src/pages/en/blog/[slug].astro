@@ -27,6 +27,16 @@ const plain = post.body
   : '';
 const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 200)); // English ~200 wpm
 
+// OG 이미지: heroImage → 본문 첫 이미지 → 사이트 기본
+const firstImg = post.body?.match(/!\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/);
+const ogImage = post.data.heroImage ?? firstImg?.[1];
+
+// 브레드크럼 (영문): Home > 글제목
+const breadcrumbs = [
+  { name: 'Home', url: '/en/' },
+  { name: post.data.title, url: `/en/blog/${post.id}/` },
+];
+
 const koSlug = post.data.koSlug ?? post.data.sourceSlug;
 const hrefLangAlts = [
   { lang: 'en', href: new URL(`/en/blog/${post.id}/`, SITE).toString() },
@@ -42,6 +52,9 @@ const hrefLangAlts = [
   updatedDate={post.data.updatedDate}
   lang="en"
   hrefLangAlts={hrefLangAlts}
+  ogImage={ogImage}
+  breadcrumbs={breadcrumbs}
+  author={post.data.author}
 >
   <article>
     <p class="breadcrumb"><a href="/en/">← BASELOAD English</a></p>
