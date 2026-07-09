@@ -11,6 +11,9 @@ draft: true
 
 결론부터 말하면, Paperclip 운영의 90%는 세 가지다. **① 에이전트를 `AGENTS.md`로 정의하고 ② 이슈(issue)로 일을 시키고 ③ 하트비트·예산으로 토큰을 통제한다.** 나머지는 전부 이 세 가지의 변주다. 특히 세 번째를 처음부터 잡지 않으면, [3편](/blog/2026-07-05-paperclip-ai-newsroom-operations/)에서 다룰 '사흘 만에 3억 토큰이 증발한 사건'을 그대로 재현하게 된다.
 
+![Paperclip 대시보드 — 에이전트 카드·진행 중 작업·비용·통계가 한 화면에](/images/paperclip/dashboard.png)
+*실제 Paperclip 대시보드. 왼쪽에 직원(에이전트) 목록, 가운데에 '지금 일하는' 에이전트 카드, 아래에 활성 에이전트 수·진행 작업·이번 달 비용·승인 대기 건수와 활동 그래프가 뜬다. (내부 작업 내용은 가림 처리)*
+
 ![a computer screen with a phone and a tablet](https://images.unsplash.com/photo-1648134859187-71dadc9f815a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxBSSUyMGFnZW50cyUyMHRlYW0lMjB3b3JrZmxvdyUyMGF1dG9tYXRpb258ZW58MXwwfHx8MTc4MzU2NDAyN3ww&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Team Nocoloco](https://unsplash.com/@teamnocoloco?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-computer-screen-with-a-phone-and-a-tablet-z41dNJVqSxo?utm_source=spice-bandit-blog&utm_medium=referral)*
 
