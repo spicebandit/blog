@@ -1,5 +1,5 @@
 ---
-title: "Claude Code 경쟁 도구 비교 2026: 어떤 AI 코딩 도구를 써야 할까"
+title: "Claude Code 경쟁 도구 비교 2026 — 어떤 AI 코딩 도구를?"
 description: "Cursor, GitHub Copilot, Windsurf(Devin Desktop), Kiro, Antigravity CLI 등 2026년 주요 AI 코딩 도구를 Claude Code 사용자 관점에서 비교합니다. 시나리오별 추천과 보완 전략까지 정리했습니다."
 pubDate: 2026-06-28T07:44:00+09:00
 category: ai

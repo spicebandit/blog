@@ -1,5 +1,5 @@
 ---
-title: "전자공시 OpenDART API 완전정복 — 인증키 발급부터 활용사례까지"
+title: "전자공시 OpenDART API 완전정복 — 발급부터 활용까지"
 description: "상장사 공시·재무데이터를 무료로 끌어오는 전자공시 OpenDART API. 인증키 발급 방법(실제 화면), API 구조와 호출 예제, 재무 스크리너·공시 알림봇 같은 활용사례까지 실습으로 정리했다."
 pubDate: 2026-07-06T09:10:00+09:00
 category: ai

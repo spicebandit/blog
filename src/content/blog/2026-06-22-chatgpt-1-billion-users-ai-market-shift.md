@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT 사용자 10억 명 돌파했지만 점유율은 50% 아래로: AI 3강 시대 열렸다"
+title: "ChatGPT 10억 명 돌파, 점유율은 50% 아래로 — AI 3강 시대"
 description: "ChatGPT가 역사상 가장 빠르게 월간 활성 사용자 10억 명을 넘어섰다. 그러나 동시에 시장점유율은 처음으로 50% 아래로 떨어졌다. Google Gemini와 Anthropic Claude의 급부상이 AI 시장의 판을 바꾸고 있다."
 pubDate: 2026-06-22T09:00:00+09:00
 category: ai

@@ -1,5 +1,5 @@
 ---
-title: "미국 정부가 AI 모델을 '정지'시킨 날: Claude Fable 5 수출통제 사태"
+title: "미국 정부가 AI 모델을 '정지'시킨 날 — Claude Fable 5 사태"
 description: "2026년 6월 12일, 미국 정부가 Anthropic의 Claude Fable 5와 Mythos 5에 수출통제를 발동해 전 세계 접근을 차단했다. 역사상 처음으로 배포된 상업용 AI 서비스에 수출통제가 적용된 이 사건이 AI 거버넌스의 지형을 어떻게 바꾸고 있는지 정리한다."
 pubDate: 2026-06-23T09:00:00+09:00
 category: ai

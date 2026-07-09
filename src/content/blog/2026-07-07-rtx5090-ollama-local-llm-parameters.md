@@ -1,5 +1,5 @@
 ---
-title: "RTX 5090으로 로컬 LLM 몇 B까지? — VRAM별 돌릴 수 있는 모델 총정리"
+title: "RTX 5090으로 로컬 LLM 몇 B까지? — VRAM별 모델 총정리"
 description: "RTX 5090(32GB)으로 Ollama에서 몇 B 파라미터 모델까지 돌릴 수 있나. VRAM 계산법, 모델 크기별 가능 여부와 속도(tok/s), 32B·70B 실전 기준까지 정리했다."
 pubDate: 2026-07-08T07:12:02+09:00
 category: ai

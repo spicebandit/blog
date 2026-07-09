@@ -1,5 +1,5 @@
 ---
-title: "Paperclip 실전 사용법 — AI 직원 회사 세팅부터 운영까지 [2편]"
+title: "Paperclip 실전 사용법 — AI 직원 회사 세팅·운영 [2편]"
 description: "Paperclip으로 AI 직원 회사를 실제로 세팅하고 굴리는 법. npx 설치, 에이전트(AGENTS.md) 정의, 이슈로 일 시키기, 하트비트·예산 관리로 토큰 폭주를 막는 실전 명령·설정까지 단계별로 정리했다."
 pubDate: 2026-07-09T13:40:00+09:00
 category: ai

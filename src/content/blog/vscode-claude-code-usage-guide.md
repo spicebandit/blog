@@ -1,5 +1,5 @@
 ---
-title: "VS Code + Claude Code 사용법 완전 가이드 — 개발환경 세팅부터 AI 코딩까지"
+title: "VS Code + Claude Code 사용법 완전 가이드 — 세팅부터 AI 코딩"
 description: "VS Code와 Claude Code를 함께 쓰는 방법을 초보자도 따라 할 수 있게 정리했습니다. 폴더 열기·파일 편집·터미널·AI 대화를 한 화면에서 끝내는 작업환경 세팅 가이드."
 pubDate: 2026-06-12T10:23:26+09:00
 category: ai
