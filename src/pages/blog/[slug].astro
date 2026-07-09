@@ -147,7 +147,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
   }
   .article-main { min-width: 0; }
   .article-main article {
-    max-width: 780px; /* 본문 폭 확대 — 사이드바와의 빈공간 축소 */
+    max-width: 700px; /* 읽기 가독폭 ≈ 신문 한 단(줄이 너무 길지 않게) */
   }
 
   /* 신문 디테일: 첫 문단 드롭캡 */
@@ -203,7 +203,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
     font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 0.02em;
-    color: var(--accent);
+    color: var(--accent-text);
   }
   .toc ol {
     margin: 0;

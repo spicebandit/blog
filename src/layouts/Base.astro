@@ -183,6 +183,8 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         --accent:       #C8102E;
         --accent-soft:  #F6E3DC;
         --accent-dark:  #9C0C24;
+        /* 작은 글씨 전용 한 스톱 진한 레드(크림 배경 명암비 6.5:1 — 칩·라벨 또렷하게) */
+        --accent-text:  #A50E26;
 
         /* Semantic — 크림 지면 + 잉크 */
         --ink:     #23201D;
@@ -228,6 +230,8 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         --accent:      #E6485F;
         --accent-soft: #3A2226;
         --accent-dark: #F27187;
+        /* 다크 배경에선 기존 밝은 레드가 이미 또렷 → 동일 값 사용 */
+        --accent-text: #E6485F;
 
         --ink:    #EFE9DE;
         --ink-2:  #CFC7B9;
@@ -392,7 +396,8 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
       /* ── MAIN CONTENT ──────────────────────── */
       main.wrap,
       main.wrap.wide {
-        padding-top: 28px;
+        /* 화면 폭에 따라 상단 여백을 유동적으로 (모바일 좁게 ~ 데스크톱 넉넉히) */
+        padding-top: clamp(20px, 3.5vw, 32px);
       }
 
       /* ── CATEGORY CHIP — 신문형 레드 캡스 라벨 ── */
@@ -401,7 +406,7 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         font-family: var(--font-ui);
         font-size: 0.72rem; font-weight: 700; line-height: 1;
         letter-spacing: 0.12em; text-transform: uppercase;
-        color: var(--accent);
+        color: var(--accent-text);
         text-decoration: none;
       }
       .cat-chip:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -420,7 +425,8 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         font-family: var(--font-serif);
       }
       article h2 {
-        margin-top: 2.2em;
+        /* 섹션 간 리듬을 화면 폭에 따라 유동적으로 */
+        margin-top: clamp(1.8em, 4vw, 2.6em);
         padding-bottom: 8px;
         border-bottom: 2px solid var(--ink);
       }
