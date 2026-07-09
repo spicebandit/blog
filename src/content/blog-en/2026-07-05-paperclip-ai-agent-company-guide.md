@@ -9,7 +9,7 @@ lang: en
 koSlug: 2026-07-05-paperclip-ai-agent-company-guide
 ---
 
-A company that runs on AI employees — it sounds like science fiction, but you can actually build one today with open-source tools. Using one AI agent well and running several of them **as an organization** are two entirely different problems. The open-source tool **Paperclip** tackles the second one head-on — it treats your agents as "AI employees," gives them job titles and reporting lines, puts them on monthly budgets, and blocks them from changing strategy without sign-off. It is, quite literally, a platform for building **a company staffed by AI employees.** Installation is a single line, `npx paperclipai onboard --yes`, and since it's MIT-licensed open source, there's no account and no cost. If the [Hermes series](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) was about hiring a single agent, this two-part series is about founding a company with them. Part 1 (this article) covers the concepts, the installation, and — new in this update — **how day-to-day operations actually run, which agents and LLMs you can plug in, a full feature rundown, and the honest pros and cons.** [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/) covers the (expensive) lessons from actually running an AI newspaper on it for ten days.
+A company that runs on AI employees — it sounds like science fiction, but you can actually build one today with open-source tools. Using one AI agent well and running several of them **as an organization** are two entirely different problems. The open-source tool **Paperclip** tackles the second one head-on — it treats your agents as "AI employees," gives them job titles and reporting lines, puts them on monthly budgets, and blocks them from changing strategy without sign-off. It is, quite literally, a platform for building **a company staffed by AI employees.** Installation is a single line, `npx paperclipai onboard --yes`, and since it's MIT-licensed open source, there's no account and no cost. If the [Hermes series](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) was about hiring a single agent, this three-part series is about founding a company with them. Part 1 (this article) covers the concepts, the installation, and — new in this update — **how day-to-day operations actually run, which agents and LLMs you can plug in, a full feature rundown, and the honest pros and cons.** [Part 2](/en/blog/2026-07-09-paperclip-ai-agent-company-how-to/) covers the actual setup and how to run it, and [Part 3](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/) covers the (expensive) lessons from actually running an AI newspaper on it for ten days.
 
 ## What Is Paperclip? "If Agents Are Employees, Paperclip Is the Company"
 
@@ -70,10 +70,10 @@ You register agents from the Agents menu in the dashboard. There are four main t
 
 1. **Type** — which executor to attach: Claude Code, Codex, Cursor, OpenClaw, etc.
 2. **Working directory** — the project folder this agent can read and write (e.g., your blog repo)
-3. **Model** — assignable per agent. A manager role does not automatically deserve your top-tier model — a lesson I learned the expensive way (see Part 2)
+3. **Model** — assignable per agent. A manager role does not automatically deserve your top-tier model — a lesson I learned the expensive way (see Part 3)
 4. **Instructions** — the agent's job description. Role, quality bar, how to report, and what not to do all go here
 
-Once registration is done, governance kicks in. Say the editor-in-chief agent proposes "let's hire another reporter" — that hire halts in pending-approval status with the board (you) and shows up as an approval item on the dashboard. Externally visible actions like publishing or deploying can be gated behind the same approval checkpoint. Every ticket (issue) records which agent commented what and which decisions were made, so you can later trace "how did we end up here?" — exactly as the official line puts it: "Every conversation traced. Every decision explained." How you structure the org is, in practice, all there is to using Paperclip — and the one principle I took away from real operations (detailed in Part 2) is this: **don't imitate a human company; design backward from the work.**
+Once registration is done, governance kicks in. Say the editor-in-chief agent proposes "let's hire another reporter" — that hire halts in pending-approval status with the board (you) and shows up as an approval item on the dashboard. Externally visible actions like publishing or deploying can be gated behind the same approval checkpoint. Every ticket (issue) records which agent commented what and which decisions were made, so you can later trace "how did we end up here?" — exactly as the official line puts it: "Every conversation traced. Every decision explained." How you structure the org is, in practice, all there is to using Paperclip — and the one principle I took away from real operations (detailed in Part 3) is this: **don't imitate a human company; design backward from the work.**
 
 Taking blog operations as an example, a minimal configuration looks like this:
 
@@ -96,7 +96,7 @@ Taking blog operations as an example, a minimal configuration looks like this:
 <figcaption style="color:#8A8378;font-size:0.85em;margin-top:6px;">Permission boundaries matter more than titles — who can publish, and who can touch code.</figcaption>
 </figure>
 
-Two things I'll flag up front (full evidence in Part 2):
+Two things I'll flag up front (full evidence in Part 3):
 
 - **Ration your heartbeats.** A heartbeat is the clock-in schedule that wakes agents periodically, and the shorter you set it, the more exponentially tokens leak. Start with everything on wake-on-demand, and only enable heartbeats for agents that genuinely need round-the-clock monitoring.
 - **Set budgets first.** Per-agent monthly budgets aren't an after-the-fact safeguard; they're a seatbelt you fasten in advance. Starting small and raising later is far cheaper than the other direction.
@@ -130,7 +130,7 @@ The runners you can attach fall into four broad categories:
 - **Webhook/API calls**: send requests to an agent hosted elsewhere
 - **External adapter plugins**: wire up a self-hosted runtime directly
 
-**What about the model (LLM)?** Paperclip is **model-agnostic** by design — it isn't tied to any particular model. Which model you use is decided in each runner's (adapter's) config — a Claude Code session pulls in a Claude-family model, a Gemini CLI pulls in Gemini, Codex pulls in an OpenAI-family model, and so on. That means **you can mix different models across agents within a single company.** You can build a "model portfolio" — a top-tier model for seats that require expensive judgment, a cheaper model for repetitive seats (the hands-on lessons of this optimization are the heart of [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/)). In the docs' phrasing, each employee is defined by an "Adapter type + config — how this agent runs and what defines its identity/behavior." In other words, **the adapter configuration *is* that employee's identity and behavioral definition.**
+**What about the model (LLM)?** Paperclip is **model-agnostic** by design — it isn't tied to any particular model. Which model you use is decided in each runner's (adapter's) config — a Claude Code session pulls in a Claude-family model, a Gemini CLI pulls in Gemini, Codex pulls in an OpenAI-family model, and so on. That means **you can mix different models across agents within a single company.** You can build a "model portfolio" — a top-tier model for seats that require expensive judgment, a cheaper model for repetitive seats (the hands-on lessons of this optimization are the heart of [Part 3](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/)). In the docs' phrasing, each employee is defined by an "Adapter type + config — how this agent runs and what defines its identity/behavior." In other words, **the adapter configuration *is* that employee's identity and behavioral definition.**
 
 ## The Full Feature Rundown — Budget, Governance, Routines, Audit Log
 
@@ -158,7 +158,7 @@ Before you decide to adopt it, look at the honest ledger.
 | Model- and runner-agnostic = mix different AIs per agent | A learning curve in the initial org, permission, and budget design |
 | Goal ancestry and issue tracking mean the "why" is always visible | For one or two simple tasks, a single script is more efficient |
 
-To sum up: the moment **three or more agents are collaborating and you need human control, auditability, and cost management** is where Paperclip earns its keep. Conversely, for a linear task like "auto-write one article," founding a whole company is overkill — and the real case study of that trade-off (the experience of a 5-to-7-person AI company being too much for a one-person blog) is exactly the story of [Part 2](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/).
+To sum up: the moment **three or more agents are collaborating and you need human control, auditability, and cost management** is where Paperclip earns its keep. Conversely, for a linear task like "auto-write one article," founding a whole company is overkill — and the real case study of that trade-off (the experience of a 5-to-7-person AI company being too much for a one-person blog) is exactly the story of [Part 3](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/).
 
 ## How Is This Different from Hermes? It's a Different Layer
 
@@ -183,7 +183,8 @@ One caveat before you go — organizations aren't free. Just as human companies 
 
 **AI Agent Organization series**
 - Part 1 — Paperclip intro: concepts, installation, first org design (this article)
-- Part 2 — Paperclip in production: lessons from a month of running an AI newsroom (publishing tomorrow)
+- [Part 2 — Paperclip hands-on: from setup to operation](/en/blog/2026-07-09-paperclip-ai-agent-company-how-to/)
+- [Part 3 — Paperclip in production: lessons from a month of running an AI newsroom](/en/blog/2026-07-05-paperclip-ai-newsroom-operations/)
 
 **Hermes AI series**: [Part 1: Installation](/en/blog/2026-06-28-hermes-agent-nous-research-install-guide/) · [Part 2: Practical Use](/en/blog/2026-06-29-hermes-agent-practical-use-cases/) · [Part 3: LM Studio Integration](/en/blog/2026-07-05-hermes-agent-lm-studio-local-llm/)
 
