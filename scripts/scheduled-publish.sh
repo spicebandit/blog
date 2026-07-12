@@ -66,8 +66,8 @@ case "$TAG" in
     "$D/2026-07-08-doosan-enerbility-gas-turbine.md|2026-07-08T09:30:00+09:00"
   );;
   0713) ITEMS=(
-    "$D/2026-07-13-agent-harness-engineering-everything.md|2026-07-13T00:05:00+09:00"
-    "src/content/blog-en/2026-07-13-agent-harness-engineering-everything.md|2026-07-13T00:05:00+09:00"
+    "$D/ai-agent-harness-engineering.md|2026-07-13T00:05:00+09:00"
+    "src/content/blog-en/ai-agent-harness-engineering.md|2026-07-13T00:05:00+09:00"
   );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
