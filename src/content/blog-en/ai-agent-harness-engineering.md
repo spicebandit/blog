@@ -6,7 +6,6 @@ category: ai
 tags: ["harness engineering", "AI agents", "agent harness", "context engineering"]
 lang: en
 koSlug: ai-agent-harness-engineering
-draft: true
 ---
 
 **The teams building good AI agents today aren't trying to make the model smarter. They're engineering the harness.** In 2026 the center of gravity in AI development is moving from the model itself to the **skeleton that wraps it**, and designing that skeleton is what people now call "harness engineering." In one line: **Agent = Model + Harness.** If the model is the "intelligence," the harness is the "nervous system and skeleton" that lets that intelligence actually read files, use tools, and carry out multi-step tasks on its own ([LangChain](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness)). Why does this matter now? Industry observers keep pointing out that a large share of enterprise AI agent projects never make it past the demo into real production. The reason converges on one thing: we built a powerful "brain" (the model) but neglected the "skeleton" (the harness) that lets that brain interact safely with the real world. This piece lays out exactly what a harness is, how it differs from prompt and context engineering, and everything a good harness needs.
