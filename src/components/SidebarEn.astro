@@ -1,0 +1,122 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatDateEN } from '../lib/format';
+import AdSlot from './AdSlot.astro';
+
+interface Props {
+  recentPosts: CollectionEntry<'blog-en'>[];
+}
+
+const { recentPosts } = Astro.props;
+---
+
+<aside class="article-sidebar" aria-label="Related articles">
+  {recentPosts.length > 0 && (
+    <section class="sb-section">
+      <h2 class="sb-heading">
+        Recent in English
+        <a href="/en/" class="sb-more-link">More →</a>
+      </h2>
+      <ul class="sb-list">
+        {recentPosts.map(p => (
+          <li class="sb-item">
+            <a href={`/en/blog/${p.id}/`} class="sb-link">
+              <span class="sb-title">{p.data.title}</span>
+              <span class="sb-meta">
+                <time datetime={p.data.pubDate.toISOString()}>
+                  {formatDateEN(p.data.pubDate)}
+                </time>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {/* English pages target overseas readers → AdSense only (AdFit is Korea-only) */}
+  <AdSlot position="sidebar" network="adsense" />
+</aside>
+
+<style>
+  .article-sidebar {
+    position: sticky;
+    top: 24px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .article-sidebar::-webkit-scrollbar { display: none; }
+
+  .sb-section { margin-bottom: 28px; }
+
+  .sb-heading {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sb-more-link {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0;
+    text-transform: none;
+    transition: opacity 0.15s;
+  }
+  .sb-more-link:hover { opacity: 0.75; text-decoration: none; }
+
+  .sb-list { list-style: none; margin: 0; padding: 0; }
+
+  .sb-item { border-bottom: 1px solid var(--line-2); }
+  .sb-item:last-child { border-bottom: none; }
+
+  .sb-link {
+    display: block;
+    padding: 10px 8px;
+    margin: 0 -8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s, color 0.15s;
+  }
+  .sb-link:hover {
+    background: var(--accent-soft);
+    text-decoration: none;
+  }
+  .sb-link:hover .sb-title { color: var(--accent); }
+
+  .sb-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    transition: color 0.15s;
+  }
+
+  .sb-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 959px) {
+    .article-sidebar { display: none; }
+  }
+</style>
