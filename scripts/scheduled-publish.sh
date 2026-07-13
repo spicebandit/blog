@@ -102,6 +102,24 @@ Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>" || fail "�
 git push origin main >/tmp/publish-${TAG}-push.log 2>&1 || fail "push 실패. 로그 /tmp/publish-${TAG}-push.log"
 node "$REPO/scripts/sync-to-obsidian.mjs" >/dev/null 2>&1 || true
 
+# IndexNow: 발행 URL(한/영)을 Bing·Yandex·네이버(참여 검색엔진)에 즉시 색인 통보.
+indexnow_urls=()
+for f in "${files[@]}"; do
+  slug="$(basename "$f" .md)"
+  case "$f" in
+    *src/content/blog-en/*) indexnow_urls+=("https://www.baseload.co.kr/en/blog/${slug}/") ;;
+    *src/content/blog/*)    indexnow_urls+=("https://www.baseload.co.kr/blog/${slug}/") ;;
+  esac
+done
+indexnow_msg=""
+if [ "${#indexnow_urls[@]}" -gt 0 ]; then
+  if node "$REPO/scripts/indexnow-ping.mjs" "${indexnow_urls[@]}" >/tmp/indexnow-${TAG}.log 2>&1; then
+    indexnow_msg="IndexNow(Bing 등) ${#indexnow_urls[@]}건 통보."
+  else
+    indexnow_msg="⚠️ IndexNow 통보 확인 필요(로그 /tmp/indexnow-${TAG}.log)."
+  fi
+fi
+
 # 네이버 자동 수집요청: 방금 발행한 한글 글(blog-en 제외)의 라이브 URL을 서치어드바이저에 등록.
 # 사파리 로그인 세션에 의존하므로 실패해도 비치명(발행 자체는 이미 완료). 결과는 아래 알림에 합산.
 naver_urls=()
@@ -123,6 +141,7 @@ fi
 list=$(printf '• %s\n' "${files[@]##*/}")
 notify "✅ 예약발행 완료(${TAG}) — ${changed}건
 ${list}빌드 통과 → push(Vercel 배포). 옵시디언 동기화 완료.
+${indexnow_msg}
 ${naver_msg}"
 cleanup
 exit 0
