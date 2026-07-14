@@ -69,6 +69,10 @@ case "$TAG" in
     "$D/ai-agent-harness-engineering.md|2026-07-13T00:05:00+09:00"
     "src/content/blog-en/ai-agent-harness-engineering.md|2026-07-13T00:05:00+09:00"
   );;
+  0715) ITEMS=(
+    "$D/2026-07-15-mirofish-ai-prediction-engine-1-concept.md|2026-07-15T08:00:00+09:00"
+    "src/content/blog-en/2026-07-15-mirofish-ai-prediction-engine-1-concept.md|2026-07-15T08:00:00+09:00"
+  );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
 

@@ -4,7 +4,7 @@
 # 4편이 모두 발행되면 스스로 launchd 등록을 해제한다(1회성 종료).
 set -u
 
-PROJECT="/Users/yuntaekim/Projects/blog"
+PROJECT="$HOME/projects/blog"
 NODE="/opt/homebrew/bin/node"
 LABEL="com.gogumi.blog.stockseries"
 PLIST="$HOME/Library/LaunchAgents/${LABEL}.plist"
