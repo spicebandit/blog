@@ -12,8 +12,8 @@ draft: true
 
 **미래를 예측하는 데, 통계 모델 대신 '가상 사회'를 통째로 지어서 관찰하면 어떨까.** 2026년 3월 등장한 오픈소스 AI 엔진 **미로피시(MiroFish)**가 정확히 그 발상이다. 뉴스·정책 문서·시장 신호 같은 '씨앗' 정보를 넣으면, 수백~수천 명의 가상 인격(에이전트)이 사는 디지털 평행세계를 만들고, 그들이 서로 글을 쓰고 토론하고 영향을 주고받게 한 뒤, 그 집단행동의 결과로 미래를 내다본다. 놀라운 건 만든 방식이다 — 베이징우편전신대학 학부생 한 명이 AI 코딩 도구를 써서 **단 10일 만에** 구현했고, 출시 후 깃허브 스타 6만 개를 넘기며 트렌딩 1위에 올랐고, 24시간 만에 약 400만 달러 투자를 받았다([MiroFish GitHub](https://github.com/666ghj/MiroFish)). 이 글(1편)에서는 미로피시가 정확히 무엇이고, 어디서 왔으며, 어떻게 쓰이는지를 정리한다. 결론부터 말하면 — 미로피시는 '질문에 답하는 AI'에서 '사회를 시뮬레이션해 문제를 푸는 AI'로 넘어가는 흐름을 상징하는 도구다.
 
-![a blue abstract background with lines and dots](https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzd2FybSUyMHBhcnRpY2xlcyUyMG5ldHdvcmslMjBzaW11bGF0aW9ufGVufDF8MHx8fDE3ODQwMTAwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Conny Schneider](https://unsplash.com/@choys_?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-blue-abstract-background-with-lines-and-dots-pREq0ns_p_E?utm_source=spice-bandit-blog&utm_medium=referral)*
+![MiroFish 로고](/mirofish/mirofish-logo.jpeg)
+*이미지: MiroFish 공식 저장소 · [GitHub](https://github.com/666ghj/MiroFish) (AGPL-3.0)*
 
 ## 미로피시란 무엇인가 — '미니어처 사회'로 예측하기
 
@@ -31,8 +31,8 @@ draft: true
 4. **리포트 생성** — 전담 ReportAgent가 시뮬레이션의 흐름을 구조화된 예측 보고서로 정리한다.
 5. **인터랙티브 탐색** — 사용자가 '신의 시점'에서 개별 에이전트에게 질문하고, "만약 이랬다면?"(반사실적 시나리오)을 바꿔가며 다시 돌려본다.
 
-![A diverse crowd of people using smartphones, highlighting modern social connections.](https://images.pexels.com/photos/8088495/pexels-photo-8088495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*Photo by [cottonbro studio](https://www.pexels.com/@cottonbro) on [Pexels](https://www.pexels.com/photo/photo-of-people-engaged-on-their-phones-8088495/)*
+![MiroFish 실행 화면 — 가상 에이전트들이 두 플랫폼에서 상호작용하며 시뮬레이션되는 모습](/mirofish/mirofish-screenshot.png)
+*이미지: MiroFish 실행 화면 · [GitHub](https://github.com/666ghj/MiroFish)*
 
 ## 전통 예측과 무엇이 다른가
 
@@ -61,14 +61,14 @@ draft: true
 
 미로피시의 탄생 자체가 하나의 사건이다. 베이징우편전신대학 학부생 **궈항장(Guo Hangjiang)**이 AI 코딩 보조 도구만으로 **단 10일 만에** 만들었다. 2026년 3월 공개되자마자 깃허브 글로벌 트렌딩 1위에 올랐고, 스타가 초기 3만여 개에서 6만 8천여 개(2026년 7월 기준)로 불었다([MiroFish GitHub](https://github.com/666ghj/MiroFish)). 곧이어 샨다그룹(Shanda Group) 창업자 천톈차오(Chen Tianqiao)가 데모를 본 지 24시간 만에 약 400만 달러(3,000만 위안)를 투자했다.
 
-기술적 계보도 있다. 미로피시는 CAMEL-AI의 오픈소스 소셜 시뮬레이터 **OASIS**를 토대로 삼았고, 여론 보고서를 만드는 선행 도구 **베타피시(BettaFish)**와 짝을 이룬다. 라이선스는 AGPL-3.0, 공식 홈페이지는 mirofish.ai다. 요컨대 미로피시는 무(無)에서 나온 게 아니라, 이미 있던 에이전트 시뮬레이션 연구를 한 사람이 '쓸 수 있는 제품'으로 빠르게 조립해낸 결과다. 그리고 그 '빠르게'가 이 이야기의 핵심이다.
+기술적 계보도 있다. 미로피시는 CAMEL-AI의 오픈소스 소셜 시뮬레이터 **OASIS**를 토대로 삼았고, 여론 보고서를 만드는 선행 도구 **베타피시(BettaFish)**와 짝을 이룬다. 라이선스는 AGPL-3.0, 공식 홈페이지는 mirofish.ai다. 공개 직후 한국 개발자가 만든 비공식 한국어 버전 포크(MiroFish-Ko)까지 등장할 만큼 관심이 빠르게 번졌다. 요컨대 미로피시는 무(無)에서 나온 게 아니라, 이미 있던 에이전트 시뮬레이션 연구를 한 사람이 '쓸 수 있는 제품'으로 빠르게 조립해낸 결과다. 그리고 그 '빠르게'가 이 이야기의 핵심이다.
 
 ## 실제로 어디에 쓰였나 — 여론부터 소설 결말까지
 
 추상적으로 들린다면 실제 사례를 보자.
 
-- **캠퍼스 여론 시뮬레이션(우한대)**: 선행 도구 베타피시가 만든 의견 보고서를 씨앗으로 넣어, 향후 수 주간 여론이 어떻게 움직이는지를 시뮬레이션했다. 단순 결과값이 아니라 '파벌의 형성·이동·상호영향' 과정을 추적했다.
-- **《홍루몽》 잃어버린 결말 예측**: 80회까지의 내용을 넣고 소설이 어떻게 끝날지 시뮬레이션했다. 언어모델 하나가 이어 쓰는 게 아니라, '등장인물 집단의 사회 역학'으로 뒷이야기를 생성한 셈이다.
+- **캠퍼스 여론 시뮬레이션(우한대)**: 선행 도구 베타피시가 만든 '우한대 여론 보고서'를 씨앗으로 넣고, 캠퍼스에서 벌어진 한 논란 이후 향후 수 주간 여론이 어떻게 움직일지를 시뮬레이션했다. 결과는 '최종 여론이 어디로 가느냐'는 한 점이 아니라, **시간 순서대로 어떤 파벌이 형성되고 이동하며 서로 영향을 주는지의 '궤적'**이었다. '여론조사에 사람이 필요 없다'는 말이 나온 이유다.
+- **《홍루몽》 잃어버린 결말 예측**: 청나라 조설근(曹雪芹)이 끝맺지 못한 채 결말이 소실된 고전 소설 《홍루몽》의 전체 80회(수십만 자)를 통째로 넣었다. 미로피시는 등장인물 각각의 성격·관계·기억을 가진 에이전트를 만들어 뒷이야기를 굴렸고, 하나의 정답이 아니라 **여러 갈래의 결말 분기**를 내놨다. 언어모델 하나가 문장을 이어 쓰는 게 아니라, '등장인물 집단의 사회 역학'이 스토리를 밀고 나간 셈이다. 이 홍루몽 시연은 중국 소셜미디어에서 특히 화제가 됐다.
 - **넓어지는 응용**: 거래 신호 생성, 시장 심리 분석, 정책 영향 분석, 선거 예측, 신제품 출시 반응, 경쟁사 대응 시뮬레이션, 제재 효과 예측 등이 가능 영역으로 거론된다.
 
 투자·경영 관점에서 흥미로운 건 '시장 심리'와 '정책 영향'이다. 숫자로만 보던 시장 반응을 '가상 참여자들의 대화'로 미리 굴려볼 수 있다면, 시나리오 플래닝의 도구가 하나 늘어나는 셈이다. (다만 이는 어디까지나 시뮬레이션이며, 실제 투자 판단의 근거로 쓰기엔 아래의 한계를 반드시 함께 봐야 한다.)

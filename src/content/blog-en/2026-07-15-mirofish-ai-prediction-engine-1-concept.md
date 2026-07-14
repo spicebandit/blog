@@ -14,8 +14,8 @@ draft: true
 
 **What if, to predict the future, you built an entire virtual society and simply watched what happened?** That's exactly the idea behind **MiroFish**, the open-source AI engine that appeared in March 2026. Feed it "seed" material — news, policy drafts, market signals — and it builds a parallel digital world populated by hundreds to thousands of virtual personas (agents), lets them post, debate, and influence one another, and reads the future out of that collective behavior. The startling part is how it was made: a single undergraduate at Beijing University of Posts and Telecommunications built it in **just 10 days** using AI coding tools. After launch it blew past 68,000 GitHub stars to top the trending list, and drew roughly $4 million in funding within 24 hours ([MiroFish GitHub](https://github.com/666ghj/MiroFish)). This first article covers what MiroFish is, where it came from, and how it's used. In short — MiroFish is the emblem of a shift from "AI that answers questions" to "AI that simulates a society to solve problems."
 
-![a blue abstract background with lines and dots](https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxzd2FybSUyMHBhcnRpY2xlcyUyMG5ldHdvcmslMjBzaW11bGF0aW9ufGVufDF8MHx8fDE3ODQwMTAwMzh8MA&ixlib=rb-4.1.0&q=80&w=1080)
-*Photo by [Conny Schneider](https://unsplash.com/@choys_?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-blue-abstract-background-with-lines-and-dots-pREq0ns_p_E?utm_source=spice-bandit-blog&utm_medium=referral)*
+![MiroFish logo](/mirofish/mirofish-logo.jpeg)
+*Image: MiroFish official repository · [GitHub](https://github.com/666ghj/MiroFish) (AGPL-3.0)*
 
 ## What MiroFish Is — Predicting With a Miniature Society
 
@@ -33,8 +33,8 @@ MiroFish's pipeline runs through roughly five stages.
 4. **Report generation** — A dedicated ReportAgent turns the simulation's dynamics into a structured forecast report.
 5. **Interactive exploration** — From a god's-eye view, the user queries individual agents and re-runs "what if?" (counterfactual) scenarios.
 
-![A diverse crowd of people using smartphones, highlighting modern social connections.](https://images.pexels.com/photos/8088495/pexels-photo-8088495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*Photo by [cottonbro studio](https://www.pexels.com/@cottonbro) on [Pexels](https://www.pexels.com/photo/photo-of-people-engaged-on-their-phones-8088495/)*
+![MiroFish running — virtual agents interacting across two platforms in a simulation](/mirofish/mirofish-screenshot.png)
+*Image: MiroFish running screen · [GitHub](https://github.com/666ghj/MiroFish)*
 
 ## How It Differs From Traditional Forecasting
 
@@ -63,14 +63,14 @@ The idea grew into "complexity and emergence" research centered on the Santa Fe 
 
 MiroFish's birth is itself an event. An undergraduate at Beijing University of Posts and Telecommunications, **Guo Hangjiang**, built it in **just 10 days** using nothing but AI coding assistants. On release in March 2026 it hit #1 on GitHub's global trending list, and its stars swelled from an early ~30,000 to over 68,000 (as of July 2026) ([MiroFish GitHub](https://github.com/666ghj/MiroFish)). Shortly after, Shanda Group founder Chen Tianqiao invested about $4 million (30 million yuan) within 24 hours of seeing the demo.
 
-There's a technical lineage, too. MiroFish is built on **OASIS**, CAMEL-AI's open-source social simulator, and pairs with a predecessor tool, **BettaFish**, that produces opinion reports. It's licensed AGPL-3.0, with an official homepage at mirofish.ai. In short, MiroFish didn't come from nowhere — it's what happens when one person rapidly assembles existing agent-simulation research into a *usable product*. And that "rapidly" is the crux of the story.
+There's a technical lineage, too. MiroFish is built on **OASIS**, CAMEL-AI's open-source social simulator, and pairs with a predecessor tool, **BettaFish**, that produces opinion reports. It's licensed AGPL-3.0, with an official homepage at mirofish.ai. Interest spread so fast that an unofficial Korean-localized fork (MiroFish-Ko) appeared within days of release. In short, MiroFish didn't come from nowhere — it's what happens when one person rapidly assembles existing agent-simulation research into a *usable product*. And that "rapidly" is the crux of the story.
 
 ## Where It's Been Used — From Public Opinion to a Novel's Ending
 
 If this sounds abstract, look at real cases.
 
-- **Campus opinion simulation (Wuhan University)**: Using opinion reports from the predecessor BettaFish as a seed, it simulated how sentiment would move over the coming weeks — tracking not just an outcome but the process of factions forming, shifting, and influencing one another.
-- **Predicting the lost ending of *Dream of the Red Chamber***: Fed the first 80 chapters, it simulated how the novel might end — not one language model continuing the text, but the "social dynamics of a simulated cast of characters" generating the rest of the story.
+- **Campus opinion simulation (Wuhan University)**: Feeding a "Wuhan University opinion report" produced by the predecessor BettaFish as a seed, it simulated how sentiment would move over the coming weeks following a campus controversy. The result wasn't a single point of "where opinion lands," but a **time-sequenced trajectory of which factions form, shift, and influence one another** — which is why some said "you no longer need people for opinion polling."
+- **Predicting the lost ending of *Dream of the Red Chamber***: It ingested all 80 surviving chapters (hundreds of thousands of characters) of the classic novel that Qing-dynasty author Cao Xueqin left unfinished, its ending lost. MiroFish spawned agents each carrying a character's personality, relationships, and memory, ran the remaining arc, and produced **multiple branching endings** rather than a single answer — not one language model continuing the prose, but the "social dynamics of a simulated cast" driving the story. This *Dream of the Red Chamber* demo drew particular buzz on Chinese social media.
 - **Widening applications**: trading-signal generation, market-sentiment analysis, policy-impact analysis, election forecasting, product-launch reactions, competitor-response simulation, sanctions-effect prediction, and more.
 
 From an investing and management angle, "market sentiment" and "policy impact" are the intriguing ones. Being able to pre-run market reactions — once seen only as numbers — as "conversations among virtual participants" adds a tool to scenario planning. (That said, this is only a simulation, and the limitations below must always be read alongside it before using it as a basis for actual investment decisions.)
