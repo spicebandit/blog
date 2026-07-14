@@ -74,6 +74,18 @@ if (pendingDrafts.length) for (const p of pendingDrafts)
   lines.push(`• ${p.title} [${CAT[p.category] || p.category}] — ${p.f}`);
 else lines.push('• 없음');
 
+// 애드센스 승인 상태 (승인되면 Claude 클러스터 착수 트리거) — 사파리 세션으로 확인
+let adsense = '';
+try {
+  const r = execSync('osascript scripts/adsense-status.applescript', { cwd: ROOT, encoding: 'utf8', timeout: 45000 }).trim();
+  const head = r.split('|')[0];
+  if (head === 'APPROVED') adsense = '🎉 <b>승인됨!</b> → Claude 클러스터 착수 가능 (설계 완료, "시작하자"만 주세요)';
+  else if (head === 'REVIEWING') adsense = '🟡 심사 중 (승인 대기 — 승인되면 이 줄이 🎉로 바뀝니다)';
+  else if (head === 'LOGIN_EXPIRED') adsense = '⚠️ 확인 실패 (사파리 애드센스 로그인 만료) — 재로그인 필요';
+  else adsense = '❔ 상태 불명 — adsense.google.com 수동 확인 권장';
+} catch (e) { adsense = '⚠️ 자동 확인 오류 — adsense.google.com 수동 확인 권장'; }
+lines.push('', `💰 <b>애드센스</b>`, adsense);
+
 lines.push('', traffic);
 
 const msg = lines.join('\n');
