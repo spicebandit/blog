@@ -1,12 +1,11 @@
 ---
 title: "What Is MiroFish? AI That Predicts the Future by Simulating a Virtual Society [Part 1]"
 description: "MiroFish, the open-source AI prediction engine one undergraduate built in 10 days and that passed 68k GitHub stars. Instead of statistics, it simulates a 'digital society' of thousands of virtual agents to forecast the future. Here's its concept, history, and use cases."
-pubDate: 2026-07-15T08:00:00+09:00
+pubDate: 2026-07-15T00:05:00+09:00
 category: ai
 tags: ["MiroFish", "AI prediction", "multi-agent", "agent-based simulation"]
 lang: en
 koSlug: 2026-07-15-mirofish-ai-prediction-engine-1-concept
-draft: true
 ---
 
 > 📚 **Series — The Complete Guide to MiroFish**
