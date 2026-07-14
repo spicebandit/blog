@@ -86,7 +86,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
 
   <div class="article-layout">
     <div class="article-main">
-      <article>
+      <article data-pagefind-body={isPreview ? undefined : true}>
         <h1>{post.data.title}</h1>
         <p style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 0 0 1.5em;">
           <a href={`/category/${post.data.category}/`} class="cat-chip">{categoryName(post.data.category)}</a>

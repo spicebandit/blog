@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="검색"
+  description="baseload 블로그 글 검색 — 에너지·경제·AI 심층 리포트에서 원하는 주제를 찾아보세요."
+  noindex={true}
+>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+
+  <div class="search-page">
+    <h1>검색</h1>
+    <p class="search-sub">에너지 · 경제 · AI 글 중에서 찾아보세요.</p>
+    <div id="search"></div>
+    <noscript><p class="search-note">검색을 사용하려면 자바스크립트를 켜 주세요.</p></noscript>
+  </div>
+
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof PagefindUI === 'undefined') {
+        document.querySelector('#search').innerHTML =
+          '<p class="search-note">검색 색인이 아직 준비 중입니다. 배포 후 다시 시도해 주세요.</p>';
+        return;
+      }
+      new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+        pageSize: 8,
+        translations: {
+          placeholder: '검색어를 입력하세요 (예: 테슬라, 클로드 코드, 회사채)',
+          zero_results: '"[SEARCH_TERM]"에 대한 결과가 없습니다',
+          many_results: '"[SEARCH_TERM]" 검색 결과 [COUNT]건',
+          one_result: '"[SEARCH_TERM]" 검색 결과 1건',
+          searching: '"[SEARCH_TERM]" 검색 중…',
+        },
+      });
+    });
+  </script>
+</Base>
+
+<style is:global>
+  /* Pagefind UI를 신문 톤 팔레트에 맞춤 */
+  .search-page {
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--bg);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-tag: var(--accent-soft);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 10px;
+    --pagefind-ui-font: inherit;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .search-page h1 { margin: 0 0 6px; }
+  .search-sub { color: var(--muted); margin: 0 0 24px; }
+  .search-note { color: var(--muted); font-size: 0.92rem; padding: 16px 0; }
+  .search-page .pagefind-ui__search-input { background: #fff; }
+  .search-page .pagefind-ui__result {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+  .search-page .pagefind-ui__result-title a { color: var(--ink); }
+  .search-page .pagefind-ui__result-title a:hover { color: var(--accent); }
+</style>
