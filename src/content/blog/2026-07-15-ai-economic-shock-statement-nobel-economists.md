@@ -15,6 +15,9 @@ tags: ["AI충격", "AI실업", "노벨경제학상", "기술실업"]
 
 성명 자체는 짧다. 「We Must Act Now: A Statement on AI's Transformation of the Economy(지금 행동해야 한다: AI의 경제 변혁에 관한 성명)」라는 제목의 세 문장짜리 공개서한이다([wemustactnow.ai](https://www.wemustactnow.ai/)). 요지는 이렇다 — 향후 10년간 AI가 비약적으로 강력해질 수 있고, 그 결과가 산업혁명을 넘어서는 경제 변혁을 그보다 훨씬 짧은 기간에 몰고 올 수 있으며, 따라서 지금 제도와 안전장치(가드레일)를 세워야 한다는 것이다.
 
+![We Must Act Now — AI의 경제 변혁에 관한 성명 원문 세 문장](/wemustactnow/wemustactnow-statement.png)
+*성명 원문 갈무리. 「We Must Act Now」 세 문장이 그대로 실려 있다. 출처: [wemustactnow.ai](https://www.wemustactnow.ai/)*
+
 성명을 조직한 앤턴 코리넥(버지니아대, 앤스로픽 협력)은 이 논리를 발표 보도자료에서 이렇게 압축했다.
 
 > "증기기관, 전기, 컴퓨터는 각각 사회가 적응할 수십 년을 줬지만, AI는 우리에게 단 몇 년만 줄지도 모른다. 우리는 변혁이 한창인 와중에 전략과 제도를 즉흥적으로 만들 수 없다. 확실성을 기다리는 것은 곧 너무 늦게 도착하는 것이다."

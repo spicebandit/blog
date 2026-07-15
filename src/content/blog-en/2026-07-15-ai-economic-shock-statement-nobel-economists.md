@@ -17,6 +17,9 @@ koSlug: 2026-07-15-ai-economic-shock-statement-nobel-economists
 
 The statement itself is short — a three-sentence open letter titled "We Must Act Now: A Statement on AI's Transformation of the Economy" ([wemustactnow.ai](https://www.wemustactnow.ai/)). Its gist: AI may become radically more powerful over the next decade; the result could be an economic transformation larger than the Industrial Revolution but arriving far faster; and so we must act now to build institutions and guardrails.
 
+![We Must Act Now — the three sentences of the statement on AI's transformation of the economy](/wemustactnow/wemustactnow-statement.png)
+*Screenshot of the statement. All three sentences of "We Must Act Now" appear verbatim. Source: [wemustactnow.ai](https://www.wemustactnow.ai/)*
+
 Anton Korinek (University of Virginia, affiliated with Anthropic), one of the organizers, distilled the logic in the launch press release:
 
 > "Steam, electricity, and computers each gave societies decades to adapt; AI may give us only a few years. We cannot improvise our strategy and institutions in the middle of the transformation. Waiting for certainty means arriving too late."
