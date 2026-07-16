@@ -73,6 +73,14 @@ case "$TAG" in
     "$D/2026-07-15-mirofish-ai-prediction-engine-1-concept.md|2026-07-15T00:05:00+09:00"
     "src/content/blog-en/2026-07-15-mirofish-ai-prediction-engine-1-concept.md|2026-07-15T00:05:00+09:00"
   );;
+  0717) ITEMS=(
+    "$D/2026-07-17-mirofish-ai-prediction-engine-3-beginner.md|2026-07-17T00:05:00+09:00"
+    "src/content/blog-en/2026-07-17-mirofish-ai-prediction-engine-3-beginner.md|2026-07-17T00:05:00+09:00"
+  );;
+  0718) ITEMS=(
+    "$D/2026-07-18-mirofish-ai-prediction-engine-4-scaling.md|2026-07-18T00:05:00+09:00"
+    "src/content/blog-en/2026-07-18-mirofish-ai-prediction-engine-4-scaling.md|2026-07-18T00:05:00+09:00"
+  );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
 
