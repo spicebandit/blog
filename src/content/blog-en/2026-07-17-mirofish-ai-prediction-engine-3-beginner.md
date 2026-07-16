@@ -6,7 +6,6 @@ category: ai
 tags: ["MiroFish", "AI prediction", "how-to", "multi-agent"]
 lang: en
 koSlug: 2026-07-17-mirofish-ai-prediction-engine-3-beginner
-draft: true
 ---
 
 > 📚 **Series — The Complete Guide to MiroFish**
