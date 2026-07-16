@@ -1,10 +1,13 @@
 ---
 title: "테슬라 FSD, 한국은 언제 개방되나 — 모델3·Y 시나리오"
-description: "테슬라 FSD가 한국에 왔지만 쓸 수 있는 차는 4,292대, 전체의 2.4%뿐. 미국산·중국산, HW3·AI4로 갈리는 네 그룹의 운명과 UN R171 DCAS 규제 일정, 중국산 모델3·Y 개방 시점을 시나리오로 전망한다."
-pubDate: 2026-07-04T00:24:00+09:00
+description: "2026년 7월 10일 테슬라가 한국에 FSD v14 Lite를 출시했다(세계 2번째). 단 미국산 HW3 모델3·Y만 대상, 중국산은 여전히 제외. 생산지·하드웨어로 갈리는 네 그룹의 운명, UN R171 DCAS 규제 일정, 그리고 전세계 FSD 확산 지도를 담았다."
+pubDate: 2026-07-16T16:27:00+09:00
+updatedDate: 2026-07-16T16:27:00+09:00
 category: economy
 tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 ---
+
+> **📌 2026-07-16 업데이트 — 예측이 현실이 됐다.** 이 글이 짚은 '생산지 × 하드웨어' 매트릭스대로, **2026년 7월 10일 테슬라가 한국에 감독형 FSD v14 Lite를 공식 출시**했다. 대상은 예측 그대로 **미국 프리몬트산 HW3 모델 3·Y로 한정**됐고, 국내 판매의 대부분인 **중국 상하이산은 여전히 제외**됐다. 한국은 북미에 이어 v14 Lite를 받은 **세계 두 번째 시장**이다([뉴스핌](https://www.newspim.com/news/view/20260710001295)). 본문의 시나리오(그룹 ② 미국산 → 그룹 ③ 중국산 순서)가 그대로 진행 중이며, 이번 업데이트에서 아래에 **전세계 FSD 확산 지도**를 새로 추가했다.
 
 **같은 테슬라인데 왜 누구는 되고 누구는 안 되나.** 2025년 11월, 테슬라 FSD(감독형, Supervised)가 한국에 상륙했다. 2016년 10월 "모든 차에 완전자율주행 하드웨어를 넣겠다"는 발표 이후 9년 만이자, 세계 7번째 출시국이었다([한경 비즈니스](https://magazine.hankyung.com/business/article/202512031549b)). 그런데 정작 국내 테슬라 오너의 절대다수는 구경만 하는 처지다. 현재 FSD가 합법적으로 열린 차량은 미국에서 생산된 모델 S·X와 사이버트럭, **정확히 4,292대 — 국내 전체 테슬라 18만 684대의 2.4%**다([경향신문, 2026-05-04](https://www.khan.co.kr/article/202605041128001)). 나머지 97.6%, 17만 6천여 대의 중국산 모델 3·Y는 최신 AI4(HW4) 하드웨어를 달고도 소프트웨어 차원에서 원천 차단돼 있다. 결론부터 말하면 — 이 격차는 기술이 아니라 **통상 협정과 안전기준이 만든 제도의 산물**이고, 중국산 차량이 실제로 FSD 버튼을 누르는 시점의 무게중심은 **2027년 4분기**다. 왜 그런지, 무엇이 변수인지 순서대로 뜯어본다.
 
@@ -76,6 +79,75 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 
 긍정적 선례도 이미 나왔다. 같은 유럽 사양이 적용된 테슬라가 **2026년 4월 10일 네덜란드 차량교통국(RDW)으로부터 유럽 최초의 FSD(감독형) 형식승인을 받았다**([Electrek](https://electrek.co/2026/04/10/tesla-fsd-supervised-approved-netherlands-rdw-europe/), [RDW 공식 발표](https://www.rdw.nl/en/news/2026/rdw-explanation-of-european-type-approval-tesla-with-provisional-validity-in-the-netherlands)). 승인 근거가 바로 UN R171이었다. 18개월의 검증, EU 도로 160만 km 주행, 1만 3천 회의 고객 동승 테스트, 400개 이상의 적합성 요건 심사를 거쳤고, 승인 다음 날부터 네덜란드의 AI4 탑재 모델 3·Y에 배포가 시작됐다. 테슬라는 상호인정 절차를 통해 2026년 여름 중 독일·프랑스 등 EU 전역 확산을 기대한다고 밝혔다. 한국이 UNECE 기준을 준용하는 만큼, "유럽 사양 모델 3·Y가 R171 심사를 통과했다"는 사실 자체가 국내 논의의 강력한 참조 사례가 된다.
 
+## 전세계로 번지는 FSD — 확산 지도와 한국의 좌표
+
+한국의 개방 시점을 가늠하려면 시야를 지구본으로 넓혀야 한다. 감독형 FSD는 지금 대륙을 건너뛰며 파도처럼 번지고 있고, 한국은 그 파도의 두 번째 마루에 올라탄 참이다. 2026년 7월 현재 FSD(감독형)가 실제 배포됐거나 승인된 시장은 **미국·캐나다·멕시코·푸에르토리코·호주·네덜란드·한국·중국**으로 넓어졌다. 특히 유럽은 2026년 4월 네덜란드 RDW의 첫 형식승인을 신호탄으로 **리투아니아·에스토니아가 뒤따랐고, 스웨덴은 공공도로 시험을 확대, 벨기에는 승인 절차를 패스트트랙**에 올렸다. 중국은 5월 21일 테슬라가 FSD 지원을 공식화했으나 전국 단위 규제 승인은 아직 진행 중이다([CnEVPost](https://cnevpost.com/2026/05/21/tesla-says-fsd-supervised-available-in-china/), [fsdtracker.eu](https://fsdtracker.eu/)).
+
+<figure>
+<svg viewBox="0 0 1000 540" role="img" aria-label="테슬라 FSD 감독형 전세계 확산 현황 개념도. 미국·캐나다·멕시코·푸에르토리코·호주·네덜란드·한국은 배포 완료, 중국·발트3국·스웨덴은 승인 또는 확산 진행 중, 독일·프랑스 등 그 밖 EU는 심사 대기." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">테슬라 FSD(감독형) 전세계 확산 개념도 (2026-07)</text>
+  <text x="24" y="54" font-size="12" fill="#8A8378">북미에서 출발한 확산 파도가 호주·유럽·아시아로. 한국은 v14 Lite를 받은 세계 2번째 시장.</text>
+  <!-- 대륙 실루엣 (개념도) -->
+  <g fill="#E5DECF" stroke="#D8CFBB" stroke-width="1">
+    <path d="M150,95 L250,88 L300,110 L300,140 L262,150 L240,168 L225,205 L208,195 L214,160 L188,150 L162,128 Z"/>
+    <path d="M262,220 L305,214 L332,244 L326,300 L300,360 L286,395 L276,345 L292,292 L262,258 Z"/>
+    <path d="M486,92 L556,84 L566,108 L540,124 L512,138 L494,120 Z"/>
+    <path d="M508,150 L578,146 L618,178 L610,238 L582,298 L560,322 L540,292 L524,238 L510,196 Z"/>
+    <path d="M566,84 L720,72 L830,84 L888,116 L862,150 L800,160 L742,150 L688,140 L628,138 L586,120 Z"/>
+    <path d="M690,150 L744,150 L726,200 L708,176 Z"/>
+    <path d="M826,290 L906,286 L920,320 L878,346 L836,330 L820,308 Z"/>
+  </g>
+  <!-- 확산 파도 (미국 기점 → 각 시장) -->
+  <g fill="none" stroke="#C8102E" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.55">
+    <path d="M205,152 Q430,60 515,108"><animate attributeName="stroke-dashoffset" from="40" to="0" dur="2.4s" repeatCount="indefinite"/></path>
+    <path d="M205,152 Q560,40 800,150"><animate attributeName="stroke-dashoffset" from="60" to="0" dur="3s" repeatCount="indefinite"/></path>
+    <path d="M205,152 Q560,470 862,312"><animate attributeName="stroke-dashoffset" from="60" to="0" dur="3.4s" repeatCount="indefinite"/></path>
+  </g>
+  <!-- 배포 완료 마커 (레드, 맥동) -->
+  <g fill="#C8102E">
+    <circle cx="205" cy="152" r="7"><animate attributeName="r" values="7;12;7" dur="2s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="218" cy="108" r="6"/>
+    <circle cx="212" cy="188" r="6"/>
+    <circle cx="300" cy="198" r="5"/>
+    <circle cx="515" cy="108" r="6"/>
+    <circle cx="862" cy="312" r="6"/>
+    <circle cx="835" cy="150" r="7"><animate attributeName="r" values="7;12;7" dur="2s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- 승인·확산중 (잉크) -->
+  <g fill="#23201D">
+    <circle cx="792" cy="150" r="6"/>
+    <circle cx="548" cy="86" r="5"/>
+  </g>
+  <!-- 심사 대기 (웜그레이 외곽) -->
+  <g fill="#FAF6EE" stroke="#8A8378" stroke-width="2">
+    <circle cx="524" cy="120" r="5"/>
+    <circle cx="500" cy="126" r="5"/>
+  </g>
+  <!-- 라벨 -->
+  <g font-size="12" fill="#23201D" font-weight="700">
+    <text x="205" y="140" text-anchor="middle">미국</text>
+    <text x="835" y="138" text-anchor="middle">한국</text>
+    <text x="862" y="336" text-anchor="middle">호주</text>
+    <text x="515" y="98" text-anchor="middle">네덜란드</text>
+  </g>
+  <g font-size="11" fill="#8A8378">
+    <text x="792" y="172" text-anchor="middle">중국</text>
+    <text x="548" y="76" text-anchor="middle">발트·북유럽</text>
+    <text x="490" y="146" text-anchor="middle">독·프 등 대기</text>
+  </g>
+  <!-- 범례 -->
+  <g font-size="12" fill="#23201D">
+    <circle cx="40" cy="500" r="6" fill="#C8102E"/><text x="54" y="504">배포 완료</text>
+    <circle cx="190" cy="500" r="6" fill="#23201D"/><text x="204" y="504">승인·확산중</text>
+    <circle cx="360" cy="500" r="6" fill="#FAF6EE" stroke="#8A8378" stroke-width="2"/><text x="374" y="504">심사 대기</text>
+    <line x1="510" y1="500" x2="540" y2="500" stroke="#C8102E" stroke-width="1.6" stroke-dasharray="5 5"/><text x="548" y="504">확산 경로</text>
+  </g>
+</svg>
+<figcaption>테슬라 FSD(감독형) 전세계 확산 개념도(2026-07 기준, 지리는 도식화). 마커 위치·상태는 <a href="https://fsdtracker.eu/">fsdtracker.eu</a>·<a href="https://cnevpost.com/2026/05/21/tesla-says-fsd-supervised-available-in-china/">CnEVPost</a>·<a href="https://www.newspim.com/news/view/20260710001295">뉴스핌</a> 종합. 배포=실사용, 승인·확산중=규제승인·부분배포, 심사 대기=승인 절차 진행.</figcaption>
+</figure>
+
+이 지도에서 한국의 좌표가 흥미롭다. 한국은 유럽 대부분보다 먼저 **v14 Lite(HW3)를 받은 두 번째 시장**이 됐지만, 정작 국내 주력인 중국산 AI4 모델은 아직 지도 위에서 '심사 대기'에 가깝다. 같은 나라 안에서도 생산지에 따라 이 지구본의 서로 다른 색으로 칠해지는 셈이다. 확산의 축이 '하드웨어 성능'이 아니라 '생산지와 규제 관할'이라는 이 글의 뼈대가, 세계 지도 위에서도 똑같이 반복된다.
+
 ## 시나리오: 2027년 4분기가 무게중심
 
 국토부의 절차 블록을 캘린더에 얹어보면 세 갈래다.
@@ -141,7 +213,7 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 
 1. **연내 국토부의 DCAS 관련 입법예고가 나오는가** — 나오면 낙관 시나리오가 살아난다.
 2. **테슬라코리아와 국토부의 협의 개시가 보도되는가** — 네덜란드 승인 때 테슬라는 RDW와 18개월을 함께 달렸다. 한국에서 같은 움직임이 시작되는지가 속도의 열쇠다.
-3. **미국산 HW3용 V14 Lite가 연내 한국에 도착하는가** — 규제와 무관한 이 배포가 늦어진다면, 테슬라 글로벌 소프트웨어 조직에서 한국의 우선순위 자체를 가늠할 수 있다.
+3. **미국산 HW3용 V14 Lite가 한국에 도착하는가** — ✅ **해결됐다.** 2026년 7월 10일 배포가 시작돼, 한국은 북미 다음 세계 두 번째 시장이 됐다. 규제와 무관한 이 경로가 예상 시점(하반기)보다 오히려 빨리 열렸다는 점은, 테슬라 글로벌 조직에서 한국의 우선순위가 낮지 않음을 보여준다. 이제 관전 포인트는 규제가 열쇠인 **중국산 AI4(그룹 ③)**로 옮겨간다.
 
 자율주행 규제는 결국 '기술의 속도'와 '제도의 속도' 사이의 협상이다. 이 협상은 자동차의 역사만큼 오래됐다. 영국은 1865년 '적기조례(Red Flag Act)'로 자동차의 시조인 증기차에 시속 3km(시내)·6km(교외) 제한을 걸고 붉은 깃발을 든 사람이 앞서 걷게 했는데, 이 마차 시대의 조문이 걷힌 것은 31년 뒤인 1896년 — 초기 자동차 산업과 이용자들이 조직적으로 개정을 밀어붙인 결과였다([Locomotive Acts](https://en.wikipedia.org/wiki/Locomotive_Acts)). 국내 '탈옥' 85건이 역설적으로 규제 당국을 움직이는 압력이 되는 지금의 풍경은, 신기술 규제가 기술의 성숙이 아니라 **수요의 가시화와 이해관계자의 결집으로 풀려온** 이 오래된 패턴의 반복이다. 중국 BYD가 [자율주행 사고 전액 보상 카드](/blog/2026-06-21-byd-self-driving-accident-compensation/)로 신뢰 문제를 정면 돌파하려 했듯, 테슬라도 한국에서 신뢰의 근거를 쌓는 중이다. 먼저 달리기 시작한 미국산 4,292대가 쌓는 국내 주행 데이터와 사고 통계가, 나머지 17만 6천 대의 운명을 결정할 협상 테이블의 기초 자료가 될 것이다. 같은 차, 같은 하드웨어인데 생산지가 운명을 가르는 지금의 풍경은 — 자율주행 시대의 국경이 도로가 아니라 **법령의 조문 위에 그어져 있다**는 사실을 보여주는 가장 선명한 사례다.
 

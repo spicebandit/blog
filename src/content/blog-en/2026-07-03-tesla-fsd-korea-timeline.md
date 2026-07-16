@@ -1,12 +1,15 @@
 ---
 title: "When Will Tesla FSD Open Up in Korea? Model 3/Y Scenarios"
-description: "Tesla FSD launched in Korea, but only 4,292 cars — 2.4% of the fleet — can legally use it. How trade agreements and safety rules split Korean Teslas into four fates, and when China-built Model 3/Y might finally get access."
-pubDate: 2026-07-04T00:24:00+09:00
+description: "On July 10, 2026 Tesla launched FSD v14 Lite in Korea (2nd market worldwide) — but only for US-built HW3 Model 3/Y; China-built cars stay excluded. Inside the origin×hardware split, the UN R171 DCAS timeline, and a global FSD spread map."
+pubDate: 2026-07-16T16:27:00+09:00
+updatedDate: 2026-07-16T16:27:00+09:00
 category: economy
 tags: ["Tesla FSD", "Autonomous Driving", "DCAS", "Vehicle Regulation"]
 lang: en
 koSlug: 2026-07-03-tesla-fsd-korea-timeline
 ---
+
+> **📌 Update, July 16, 2026 — the prediction came true.** Exactly as this article's "origin × hardware" matrix laid out, **on July 10, 2026 Tesla officially launched FSD (Supervised) v14 Lite in Korea.** The rollout was limited, just as predicted, to **US-built (Fremont) HW3 Model 3/Y**, while the **China-built Shanghai cars that make up most local sales remain excluded.** Korea became the **second market in the world** to receive v14 Lite, after North America ([Newspim](https://www.newspim.com/news/view/20260710001295)). The scenario below (Group ② US-built → Group ③ China-built) is playing out as written, and this update adds a **global FSD spread map** further down.
 
 **Same Tesla, different fate — why can your neighbor use FSD while you can't?** In November 2025, Tesla's FSD (Supervised) arrived in South Korea — nine years after the company's October 2016 promise that "every car ships with full self-driving hardware," and the seventh country in the world to get it ([Hankyung Business](https://magazine.hankyung.com/business/article/202512031549b)). Yet the overwhelming majority of Korean Tesla owners are stuck watching from the sidelines. The cars legally cleared for FSD are the US-built Model S, Model X, and Cybertruck — **exactly 4,292 vehicles, or 2.4% of Korea's 180,684 registered Teslas** ([Kyunghyang Shinmun, May 4, 2026](https://www.khan.co.kr/article/202605041128001)). The other 97.6% — more than 176,000 China-built Model 3s and Ys — are locked out at the software level, even the ones carrying Tesla's latest AI4 (HW4) computer. The punchline up front: this gap is a product of **trade agreements and safety regulations, not technology**, and the realistic center of gravity for China-built cars getting FSD is **Q4 2027**. Here's why, and what could change it.
 
@@ -78,6 +81,68 @@ Once this standard is folded into Korea's vehicle safety rules, China-built Tesl
 
 There's an encouraging precedent. On **April 10, 2026, the Dutch vehicle authority RDW granted Tesla Europe's first type approval for FSD (Supervised)** — for the same European-spec vehicles sold in Korea ([Electrek](https://electrek.co/2026/04/10/tesla-fsd-supervised-approved-netherlands-rdw-europe/), [RDW official statement](https://www.rdw.nl/en/news/2026/rdw-explanation-of-european-type-approval-tesla-with-provisional-validity-in-the-netherlands)). The legal basis was precisely UN R171. The approval followed 18 months of verification, 1.6 million km driven on EU roads, 13,000 customer ride-alongs, and review against more than 400 compliance requirements; the rollout to AI4-equipped Model 3/Y in the Netherlands began the very next day. Tesla expects EU-wide extension through mutual recognition over the summer of 2026. Since Korea adapts UNECE standards into its own rules, the fact that a European-spec Model 3/Y has now cleared an R171 review is a powerful reference point for the Korean debate.
 
+## FSD Spreads Across the World — the Map and Korea's Coordinates
+
+To gauge Korea's timing, zoom out to the globe. FSD (Supervised) is now leaping across continents like a wave, and Korea just rode its second crest. As of July 2026, markets where FSD is deployed or approved have widened to **the US, Canada, Mexico, Puerto Rico, Australia, the Netherlands, Korea, and China.** Europe in particular, after the Netherlands' RDW granted the first type approval in April 2026, saw **Lithuania and Estonia follow, Sweden expand public-road testing, and Belgium fast-track its approval.** China saw Tesla confirm FSD support on May 21, though nationwide regulatory clearance is still in progress ([CnEVPost](https://cnevpost.com/2026/05/21/tesla-says-fsd-supervised-available-in-china/), [fsdtracker.eu](https://fsdtracker.eu/)).
+
+<figure>
+<svg viewBox="0 0 1000 540" role="img" aria-label="Schematic map of Tesla FSD (Supervised) global spread. The US, Canada, Mexico, Puerto Rico, Australia, the Netherlands, and Korea are deployed; China, the Baltics, and Sweden are approved or expanding; Germany, France, and other EU states are pending review." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">Tesla FSD (Supervised) global spread — schematic (July 2026)</text>
+  <text x="24" y="54" font-size="12" fill="#8A8378">A wave that started in North America now reaches Australia, Europe, and Asia. Korea is the 2nd market to get v14 Lite.</text>
+  <g fill="#E5DECF" stroke="#D8CFBB" stroke-width="1">
+    <path d="M150,95 L250,88 L300,110 L300,140 L262,150 L240,168 L225,205 L208,195 L214,160 L188,150 L162,128 Z"/>
+    <path d="M262,220 L305,214 L332,244 L326,300 L300,360 L286,395 L276,345 L292,292 L262,258 Z"/>
+    <path d="M486,92 L556,84 L566,108 L540,124 L512,138 L494,120 Z"/>
+    <path d="M508,150 L578,146 L618,178 L610,238 L582,298 L560,322 L540,292 L524,238 L510,196 Z"/>
+    <path d="M566,84 L720,72 L830,84 L888,116 L862,150 L800,160 L742,150 L688,140 L628,138 L586,120 Z"/>
+    <path d="M690,150 L744,150 L726,200 L708,176 Z"/>
+    <path d="M826,290 L906,286 L920,320 L878,346 L836,330 L820,308 Z"/>
+  </g>
+  <g fill="none" stroke="#C8102E" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.55">
+    <path d="M205,152 Q430,60 515,108"><animate attributeName="stroke-dashoffset" from="40" to="0" dur="2.4s" repeatCount="indefinite"/></path>
+    <path d="M205,152 Q560,40 800,150"><animate attributeName="stroke-dashoffset" from="60" to="0" dur="3s" repeatCount="indefinite"/></path>
+    <path d="M205,152 Q560,470 862,312"><animate attributeName="stroke-dashoffset" from="60" to="0" dur="3.4s" repeatCount="indefinite"/></path>
+  </g>
+  <g fill="#C8102E">
+    <circle cx="205" cy="152" r="7"><animate attributeName="r" values="7;12;7" dur="2s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="218" cy="108" r="6"/>
+    <circle cx="212" cy="188" r="6"/>
+    <circle cx="300" cy="198" r="5"/>
+    <circle cx="515" cy="108" r="6"/>
+    <circle cx="862" cy="312" r="6"/>
+    <circle cx="835" cy="150" r="7"><animate attributeName="r" values="7;12;7" dur="2s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#23201D">
+    <circle cx="792" cy="150" r="6"/>
+    <circle cx="548" cy="86" r="5"/>
+  </g>
+  <g fill="#FAF6EE" stroke="#8A8378" stroke-width="2">
+    <circle cx="524" cy="120" r="5"/>
+    <circle cx="500" cy="126" r="5"/>
+  </g>
+  <g font-size="12" fill="#23201D" font-weight="700">
+    <text x="205" y="140" text-anchor="middle">US</text>
+    <text x="835" y="138" text-anchor="middle">Korea</text>
+    <text x="862" y="336" text-anchor="middle">Australia</text>
+    <text x="515" y="98" text-anchor="middle">Netherlands</text>
+  </g>
+  <g font-size="11" fill="#8A8378">
+    <text x="792" y="172" text-anchor="middle">China</text>
+    <text x="548" y="76" text-anchor="middle">Baltics/Nordics</text>
+    <text x="490" y="146" text-anchor="middle">DE/FR pending</text>
+  </g>
+  <g font-size="12" fill="#23201D">
+    <circle cx="40" cy="500" r="6" fill="#C8102E"/><text x="54" y="504">Deployed</text>
+    <circle cx="180" cy="500" r="6" fill="#23201D"/><text x="194" y="504">Approved/expanding</text>
+    <circle cx="400" cy="500" r="6" fill="#FAF6EE" stroke="#8A8378" stroke-width="2"/><text x="414" y="504">Pending review</text>
+    <line x1="560" y1="500" x2="590" y2="500" stroke="#C8102E" stroke-width="1.6" stroke-dasharray="5 5"/><text x="598" y="504">Spread path</text>
+  </g>
+</svg>
+<figcaption>Tesla FSD (Supervised) global spread — schematic (as of July 2026; geography stylized). Marker positions and status compiled from <a href="https://fsdtracker.eu/">fsdtracker.eu</a>, <a href="https://cnevpost.com/2026/05/21/tesla-says-fsd-supervised-available-in-china/">CnEVPost</a>, and <a href="https://www.newspim.com/news/view/20260710001295">Newspim</a>. Deployed = in real-world use; Approved/expanding = regulatory approval or partial rollout; Pending review = approval in progress.</figcaption>
+</figure>
+
+Korea's coordinates on this map are telling. Korea became the **second market to receive v14 Lite (HW3)** — ahead of most of Europe — yet its own best-selling China-built AI4 cars still sit closer to "pending review" on the globe. Within a single country, cars are painted in different colors of this map depending on where they were built. The article's backbone — that the axis of the spread is not "hardware performance" but "origin and regulatory jurisdiction" — repeats itself on the world map.
+
 ## Scenarios: Q4 2027 Is the Center of Gravity
 
 Lay the ministry's procedural blocks on a calendar and three paths emerge.
@@ -145,7 +210,7 @@ The forks in the road are clear. Three signals to watch:
 
 1. **Does the ministry publish a DCAS-related legislative notice this year?** If so, the optimistic scenario is alive.
 2. **Do reports emerge of Tesla Korea formally engaging the ministry?** In the Netherlands, Tesla ran an 18-month process alongside the RDW. Whether the same motion starts in Korea is the key to speed.
-3. **Does V14 Lite reach Korea's US-built HW3 cars this year?** This rollout has nothing to do with regulation — if it lags, it says something about where Korea sits in Tesla's global software queue.
+3. **Does V14 Lite reach Korea's US-built HW3 cars this year?** ✅ **Resolved.** The rollout began on July 10, 2026, making Korea the world's second market after North America. That this regulation-independent path opened even earlier than expected (H2) shows Korea is no low priority in Tesla's global queue. The spotlight now shifts to the regulation-gated **China-built AI4 cars (Group ③)**.
 
 Autonomous-driving regulation is ultimately a negotiation between the speed of technology and the speed of institutions — and that negotiation is as old as the automobile itself. Britain's 1865 Red Flag Act limited steam carriages to 2 mph in town and required a person carrying a red flag to walk ahead; that horse-era clause fell only 31 years later, in 1896, when the nascent motor industry and its users organized to push it off the books ([Locomotive Acts](https://en.wikipedia.org/wiki/Locomotive_Acts)). Korea's 85 jailbreak cases paradoxically pressuring regulators today is the same old pattern: new-technology rules yield not to technical maturity but to **visible demand and organized stakeholders**. The driving data and safety record now being accumulated by 4,292 US-built cars will become the baseline evidence on the negotiating table that decides the fate of the other 176,000. Same car, same hardware, different fate by country of assembly — the clearest proof yet that in the autonomous-driving era, borders are drawn not on roads but **in the text of regulations**.
 
