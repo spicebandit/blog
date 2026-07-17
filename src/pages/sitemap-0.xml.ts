@@ -30,7 +30,7 @@ export const GET: APIRoute = async ({ site }) => {
   const buildDate = toDate(new Date());
 
   const [koPosts, enPosts] = await Promise.all([
-    getCollection('blog', ({ data }) => !data.draft),
+    getCollection('blog', ({ data }) => !data.draft && !data.noindex),
     getCollection('blog-en', ({ data }) => !data.draft),
   ]);
 

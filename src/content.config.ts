@@ -13,6 +13,7 @@ const blog = defineCollection({
     category: z.enum(CATEGORY_SLUGS),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    noindex: z.boolean().default(false), // 검색엔진 비노출(색인 제외) — 자동갱신·얇은 데이터 페이지 등
     featured: z.boolean().default(false), // 1면 톱기사 — 편집국장이 홈에 노출할 기사에 설정
     heroImage: z.string().optional(),
     author: z.string().optional(),

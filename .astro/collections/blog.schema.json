@@ -36,6 +36,10 @@
       "default": false,
       "type": "boolean"
     },
+    "noindex": {
+      "default": false,
+      "type": "boolean"
+    },
     "featured": {
       "default": false,
       "type": "boolean"

@@ -5,6 +5,7 @@ pubDate: 2026-06-17T08:00:00+09:00
 updatedDate: 2026-07-17T06:00:00+09:00
 category: life
 tags: ["월드컵", "2026월드컵", "축구", "대한민국축구"]
+noindex: true
 ---
 
 <style>
