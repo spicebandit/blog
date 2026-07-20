@@ -1,7 +1,8 @@
 ---
 title: "How Far Has China's AI Come? DeepSeek, Qwen & GLM Compared [2026]"
 description: "In 2026 China holds four of the top five open-weight AI models, closing in on the US. We compare DeepSeek, Qwen, Kimi, and GLM against GPT, Claude, and Gemini on performance and price — plus the chip-control leash, the open-source strategy, and the historical backdrop."
-pubDate: 2026-07-19T08:24:00+09:00
+pubDate: 2026-07-20T09:45:00+09:00
+updatedDate: 2026-07-20T09:45:00+09:00
 category: ai
 tags: ["China AI", "DeepSeek", "Qwen", "AI model comparison"]
 lang: en
@@ -19,7 +20,7 @@ Where US AI converges on a few deep-pocketed giants — OpenAI, Anthropic, Googl
 
 - **DeepSeek** — the protagonist of the January 2025 "DeepSeek shock" that rattled global markets. Its strength is extreme cost efficiency. R1 was reportedly trained for about $6 million — roughly 6% of the ~$100 million estimated for GPT-4 ([CSIS](https://www.csis.org/analysis/deepseek-huawei-export-controls-and-future-us-china-ai-race)). With a mixture-of-experts (MoE) architecture and innovations below Nvidia's CUDA layer, it proved "more with less."
 - **Qwen (Alibaba)** — the king of versatility and ecosystem. It spans the widest lineup, from 9B to ~397B parameters, with strong multilingual ability. Above all, it **overtook Meta's Llama in Hugging Face downloads** to become the world's most-used open model family.
-- **Kimi (Moonshot AI)** — specialized in agents. The K2 line uses an "agent swarm" that coordinates multiple agents in parallel, excelling on agentic benchmarks like web browsing and tool use.
+- **Kimi (Moonshot AI)** — specialized in agents. The K2 line uses an "agent swarm" that coordinates multiple agents in parallel, excelling on agentic benchmarks like web browsing and tool use. On July 16, 2026 Moonshot unveiled **Kimi K3, a flagship of roughly 2.8 trillion parameters**, claiming the title of "China's largest open-weight model" (detailed below).
 - **GLM (Zhipu AI, aka Z.ai)** — top-tier open-weight for coding and agents. The GLM line is credited with beating Gemini and approaching top Claude on metrics like SWE-bench (real code-fixing). It drew attention for **training a large model on Huawei chips** ([winbuzzer](https://winbuzzer.com/2026/02/10/chinese-ai-firm-zhipu-trains-major-model-huawei-chips-xcxwbn/)).
 - **The rest** — Baidu's Ernie, ByteDance's Doubao, Tencent's Hunyuan, and MiniMax are each expanding in search, content, and enterprise.
 
@@ -56,11 +57,23 @@ In detail, Chinese models are said to already surpass the US top in specific are
 |----------|----------------|-------|:----:|-------------------|
 | Cost efficiency | DeepSeek | DeepSeek | ✅ | Ultra-low-cost train/inference, MoE |
 | General/ecosystem | Qwen | Alibaba | ✅ | Widest lineup, multilingual, #1 downloads |
-| Agents | Kimi K2 | Moonshot | ✅ | Parallel agents, web browsing |
+| Agents/general | Kimi K3 | Moonshot | ✅ | No. 3 leaderboard debut, front-end & agents |
 | Coding/agents | GLM | Zhipu (Z.ai) | ✅ | Top SWE-bench, trained on Huawei chips |
 | (Compare) top proprietary | GPT · Claude · Gemini | US 3 | ❌ | Best overall performance |
 
 *Source: [Turing Post](https://www.turingpost.com/p/chinesemodels), [CSIS](https://www.csis.org/analysis/deepseek-huawei-export-controls-and-future-us-china-ai-race), and other 2026 public materials. Model versions and scores update over time.*
+
+## Breaking Update — Moonshot Unveils Kimi K3 (July 2026)
+
+Nothing dramatizes this trend more than **Kimi K3, the flagship Moonshot AI released on July 16, 2026.** At roughly **2.8 trillion parameters (2–3 trillion, per reports)**, it instantly became **the largest open-weight model ever to come out of China** ([TechCrunch](https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/)). The company had already shipped K2.6 (April) and K2.7 Code (June), building a presence in open coding models; K3 is the culmination.
+
+Three things stand out.
+
+- **Performance — into the top tier**: K3 debuted at **No. 3** on the Artificial Analysis composite leaderboard on release. The two spots ahead were held by US proprietary models like Anthropic's Claude Fable 5 and OpenAI's GPT-5.6 Sol — but K3 is cited as **beating them on a web front-end development benchmark (Arena)**. An open-weight model reaching No. 3 overall is, in itself, a real-time proof of this article's thesis that the gap has narrowed.
+- **Openness — full weights due July 27**: Moonshot said it would **fully open K3's weights by July 27, 2026.** Releasing top-tier performance rather than locking it away is the latest edition of the "open-source strategic weapon" discussed below.
+- **Meaning — from agents to the general frontier**: Where earlier Kimi was tagged "agent-specialized," K3 broadens into a general frontier spanning long-horizon coding and end-to-end knowledge work — a sign that Chinese models are moving from "strength on specific tasks" to "competing for the overall top."
+
+Leaderboard rank swings with method and version, of course, and a "No. 3 debut" doesn't mean "best in real use." But the fact that a Chinese open model — trailing the overall top by around 9 points just half a year ago — now sits right behind the US proprietary leaders shows the "catch-up by a hair" this piece describes is still moving fast.
 
 ## Price Disruption — API Costs 5–30x Cheaper
 
@@ -118,7 +131,7 @@ Second, **dependence and sovereignty.** Cheap open models are attractive, but de
 ## Frequently Asked Questions (China AI)
 
 **Q1. Has China's AI caught up to the US in 2026?**
-The overall top is still the US (GPT, Claude, Gemini). But the gap has narrowed to about 9 composite points, and on specific areas like coding and agents, Chinese models (GLM, Kimi) match or lead on some leaderboards. A realistic summary: "the very top is the US; for most practical work, China is good enough too."
+The overall top is still the US (GPT, Claude, Gemini). But the gap is closing fast: Moonshot's Kimi K3, released in July 2026, debuted at No. 3 on the Artificial Analysis composite leaderboard — right behind the US proprietary leaders (and ahead of them on a front-end development benchmark). On specific areas like coding and agents, Chinese models (GLM, Kimi) match or lead on some leaderboards. A realistic summary: "the very top is the US; for most practical work, China is good enough too."
 
 **Q2. Why is China's AI so cheap?**
 Because of architectural innovations that train with fewer resources (MoE, as with DeepSeek) and a strategy of growing an ecosystem through open source. API prices run 5–30x cheaper than the US, with DeepSeek at times ~35x cheaper than the GPT family.
@@ -143,7 +156,7 @@ It depends on the use case. For lowest cost, DeepSeek; for general-purpose, mult
       "name": "Has China's AI caught up to the US in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The overall top is still the US (GPT, Claude, Gemini). But the gap has narrowed to about 9 composite points, and on specific areas like coding and agents, Chinese models (GLM, Kimi) match or lead on some leaderboards. A realistic summary: the very top is the US; for most practical work, China is good enough too."
+        "text": "The overall top is still the US (GPT, Claude, Gemini). But the gap is closing fast: Moonshot's Kimi K3, released in July 2026, debuted at No. 3 on the Artificial Analysis composite leaderboard. On specific areas like coding and agents, Chinese models (GLM, Kimi) match or lead on some leaderboards. A realistic summary: the very top is the US; for most practical work, China is good enough too."
       }
     },
     {
