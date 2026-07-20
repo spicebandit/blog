@@ -2,9 +2,9 @@
 title: "클로드 상태 실시간 확인 — 지금 안 되면 장애? 1분 체크"
 description: "클로드(Claude)가 갑자기 안 될 때 내 문제인지 서버 장애인지 1분 만에 가리는 법. 이 페이지에서 바로 보는 실시간 상태 위젯부터 공식 상태페이지·RSS·다운디텍터까지 한눈에 정리."
 pubDate: 2026-06-18T16:20:00+09:00
-updatedDate: 2026-07-05T09:30:00+09:00
+updatedDate: 2026-07-20T18:10:00+09:00
 category: ai
-tags: ["클로드 상태", "클로드 서버 상태", "Claude", "장애 확인"]
+tags: ["클로드 상태", "클로드 서버 상태", "statusline", "Claude Code"]
 draft: false
 ---
 
@@ -146,6 +146,65 @@ curl -s https://status.claude.com/api/v2/status.json
 - `critical` → 심각한 전면 장애
 
 컴포넌트별 상세나 진행 중인 인시던트가 필요하면 `/api/v2/summary.json`, `/api/v2/incidents/unresolved.json`을 쓰면 됩니다. 더 자동화하고 싶다면 **웹훅(webhook)**을 등록해, 인시던트 생성·갱신·복구 이벤트를 서버로 직접 받을 수도 있습니다.
+
+## 클로드 코드 statusline에 상태 표시등 달기
+
+**클로드 코드(Claude Code)로 개발한다면, 위 JSON API를 statusline(상태줄)에 물려 코딩하는 내내 서버 상태를 🟢/🔴로 상시 볼 수 있습니다.** 상태페이지를 따로 열지 않아도, 터미널 하단에 "클로드 서버 🟢 정상"이 항상 떠 있게 만드는 방법입니다.
+
+statusline은 클로드 코드 터미널 맨 아래에 현재 모델·디렉터리·컨텍스트 잔량·비용 같은 정보를 한 줄로 보여주는 커스텀 상태줄입니다. 여기에 앞서 본 상태 API를 끼워 넣는 겁니다.
+
+**가장 쉬운 방법 — `/statusline` 명령어.** 클로드 코드에서 아래처럼 원하는 내용을 자연어로 말하면, 클로드가 스크립트를 만들어 `~/.claude/`에 넣고 설정까지 자동으로 잡아줍니다(파일 편집 승인만 눌러주면 끝).
+
+```
+/statusline 현재 모델과 함께 status.claude.com API로 클로드 서버 상태를 초록/빨강 표시등으로 보여줘
+```
+
+**직접 설정하려면.** `~/.claude/settings.json`에 statusLine을 추가하고,
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/claude-status-line.sh",
+    "padding": 2,
+    "refreshInterval": 30
+  }
+}
+```
+
+아래 스크립트를 `~/.claude/claude-status-line.sh`로 저장(실행권한 `chmod +x`)하면 됩니다. statusline은 상호작용마다 실행되므로, 매번 네트워크를 때리지 않도록 **상태값을 30초간 캐시**하는 게 핵심입니다.
+
+```bash
+#!/bin/bash
+input=$(cat)                                        # 클로드 코드가 JSON을 stdin으로 넘겨준다
+MODEL=$(echo "$input" | jq -r '.model.display_name // "Claude"')
+SID=$(echo "$input"   | jq -r '.session_id // "default"')
+CACHE="/tmp/cc-status-$SID"; MAXAGE=30              # 30초마다만 갱신
+
+stale(){ [ ! -f "$CACHE" ] || [ $(( $(date +%s) - $(stat -f %m "$CACHE" 2>/dev/null || stat -c %Y "$CACHE") )) -gt $MAXAGE ]; }
+
+if stale; then
+  curl -s --max-time 2 https://status.claude.com/api/v2/status.json \
+    | jq -r '.status.indicator // "unknown"' > "$CACHE" 2>/dev/null || echo "unknown" > "$CACHE"
+fi
+
+case "$(cat "$CACHE" 2>/dev/null)" in
+  none)           LED="🟢 정상" ;;
+  minor)          LED="🟡 경미한 문제" ;;
+  major|critical) LED="🔴 장애" ;;
+  *)              LED="⚪ 확인 불가" ;;
+esac
+
+echo "[$MODEL] 클로드 서버 $LED"
+```
+
+이러면 코딩하는 내내 터미널 아래에 이렇게 뜹니다.
+
+```
+[Opus] 클로드 서버 🟢 정상
+```
+
+statusline 스크립트가 stdin으로 받는 JSON에는 `model.display_name`(모델명)·`workspace.current_dir`(현재 폴더)·`context_window.used_percentage`(컨텍스트 사용률)·`cost.total_cost_usd`(세션 비용) 등이 들어오니, 서버 상태 옆에 모델·비용·git 브랜치까지 붙여 나만의 상태줄을 꾸밀 수 있습니다. (자세한 필드는 클로드 코드 [공식 statusline 문서](https://code.claude.com/docs/en/statusline)를 참고하세요.) 갑자기 응답이 멈췄을 때, 시선을 화면 아래로 내리기만 하면 "내 문제인지 서버 장애인지"가 바로 보이는 셈입니다.
 
 ## 보조 수단: 다운디텍터와 X
 

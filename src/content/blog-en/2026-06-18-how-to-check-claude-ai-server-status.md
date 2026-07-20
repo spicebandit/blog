@@ -2,9 +2,9 @@
 title: "Check Claude Server Status — Is It Down? A 1-Minute Check"
 description: "Is Claude not working right now? How to tell in 1 minute whether it's your problem or a server outage. From the official status page to live alerts, RSS, API, and Downdetector — all in one place."
 pubDate: 2026-06-18T16:20:00+09:00
-updatedDate: 2026-06-29T18:10:00+09:00
+updatedDate: 2026-07-20T18:10:00+09:00
 category: ai
-tags: ["Claude server status", "Claude", "outage check", "status page"]
+tags: ["Claude server status", "statusline", "Claude Code", "outage check"]
 lang: en
 koSlug: 2026-06-18-how-to-check-claude-ai-server-status
 ---
@@ -147,6 +147,65 @@ The meanings of the `indicator` values are as follows:
 - `critical` → Critical full outage
 
 If you need per-component details or ongoing incidents, use `/api/v2/summary.json` and `/api/v2/incidents/unresolved.json`. If you want to automate further, you can register a **webhook** to receive incident create/update/resolve events directly on your server.
+
+## Put a Status Light in the Claude Code Statusline
+
+**If you build with Claude Code, you can wire the JSON API above into the statusline and see the server status as a 🟢/🔴 light the whole time you're coding.** No need to open the status page separately — just keep "Claude server 🟢 Operational" pinned to the bottom of your terminal.
+
+The statusline is a custom status bar at the very bottom of the Claude Code terminal that shows things like the current model, directory, remaining context, and cost in a single line. Here we slot the status API into it.
+
+**The easiest way — the `/statusline` command.** In Claude Code, describe what you want in plain language and Claude writes the script into `~/.claude/` and wires up the config for you (just approve the file edit):
+
+```
+/statusline show the current model plus a green/red light for Claude server status from the status.claude.com API
+```
+
+**To set it up manually,** add a statusLine block to `~/.claude/settings.json`:
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/claude-status-line.sh",
+    "padding": 2,
+    "refreshInterval": 30
+  }
+}
+```
+
+Then save the script below as `~/.claude/claude-status-line.sh` (make it executable with `chmod +x`). Since the statusline runs on every interaction, the key is to **cache the status for 30 seconds** so you don't hit the network each time:
+
+```bash
+#!/bin/bash
+input=$(cat)                                        # Claude Code passes JSON on stdin
+MODEL=$(echo "$input" | jq -r '.model.display_name // "Claude"')
+SID=$(echo "$input"   | jq -r '.session_id // "default"')
+CACHE="/tmp/cc-status-$SID"; MAXAGE=30              # refresh only every 30s
+
+stale(){ [ ! -f "$CACHE" ] || [ $(( $(date +%s) - $(stat -f %m "$CACHE" 2>/dev/null || stat -c %Y "$CACHE") )) -gt $MAXAGE ]; }
+
+if stale; then
+  curl -s --max-time 2 https://status.claude.com/api/v2/status.json \
+    | jq -r '.status.indicator // "unknown"' > "$CACHE" 2>/dev/null || echo "unknown" > "$CACHE"
+fi
+
+case "$(cat "$CACHE" 2>/dev/null)" in
+  none)           LED="🟢 Operational" ;;
+  minor)          LED="🟡 Minor issue" ;;
+  major|critical) LED="🔴 Outage" ;;
+  *)              LED="⚪ Unknown" ;;
+esac
+
+echo "[$MODEL] Claude server $LED"
+```
+
+Now, the whole time you code, the bottom of your terminal shows:
+
+```
+[Opus] Claude server 🟢 Operational
+```
+
+The JSON the statusline script receives on stdin includes `model.display_name` (model), `workspace.current_dir` (current folder), `context_window.used_percentage` (context usage), `cost.total_cost_usd` (session cost), and more — so you can add the model, cost, or git branch next to the status light and build your own bar. (For the full field list, see the official Claude Code [statusline docs](https://code.claude.com/docs/en/statusline).) When responses suddenly stall, just glance to the bottom of the screen and you'll instantly see whether it's your problem or a server outage.
 
 ## Backup Options: Downdetector and X
 
