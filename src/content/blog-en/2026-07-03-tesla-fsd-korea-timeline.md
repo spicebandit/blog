@@ -2,13 +2,15 @@
 title: "Tesla FSD in Korea (2026) — Which Cars Get It, Which Don't"
 description: "Tesla made Korea its 2nd FSD market worldwide on July 10, 2026 — but only US-built HW3 Model 3/Y qualify, and China-built cars are still shut out. See exactly which cars are in or out, the UN R171 DCAS timeline, and when the rest follow."
 pubDate: 2026-07-16T16:27:00+09:00
-updatedDate: 2026-07-20T17:20:00+09:00
+updatedDate: 2026-07-24T09:30:00+09:00
 category: economy
 tags: ["Tesla FSD", "Autonomous Driving", "DCAS", "Vehicle Regulation"]
 lang: en
 koSlug: 2026-07-03-tesla-fsd-korea-timeline
 ---
 
+> **📌 Update, July 24, 2026 — US-built HW3 enters "wide release."** The Supervised FSD v14 Lite that began as a sequential (early-access) rollout on July 10 has now moved to a full **"wide release"** with a more polished build, **2026.20.6.10**. This build distills features that were previously HW4-only (the dedicated FSD self-driving app, the option to skip the brake-confirm when starting from park) plus HW4 V14's reinforcement-learning and offline models down to the older HW3 chip, pushing HW3's driving polish much closer to full V14. Tesla's VP of AI Software, Ashok Elluswamy, confirmed it is "the version that's likely going to wide release" ([Not a Tesla App](https://www.notateslaapp.com/news/4468/tesla-fsd-v14-lite-starts-rolling-out-publicly), [Tesla Oracle](https://www.teslaoracle.com/2026/07/20/tesla-hints-at-fsd-v14-lite-2026-20-6-10-going-wide-release-official-release-notes-early-review/)). **But it still applies only to US-built HW3 Model 3/Y (Group ② below)**; the China-built cars that dominate local sales (Groups ③–④) remain unchanged by this expansion.
+>
 > **📌 Update, July 16, 2026 — the prediction came true.** Exactly as this article's "origin × hardware" matrix laid out, **on July 10, 2026 Tesla officially launched FSD (Supervised) v14 Lite in Korea.** The rollout was limited, just as predicted, to **US-built (Fremont) HW3 Model 3/Y**, while the **China-built Shanghai cars that make up most local sales remain excluded.** Korea became the **second market in the world** to receive v14 Lite, after North America ([Newspim](https://www.newspim.com/news/view/20260710001295)). The scenario below (Group ② US-built → Group ③ China-built) is playing out as written, and this update adds a **global FSD spread map** further down.
 
 **Same Tesla, different fate — why can your neighbor use FSD while you can't?** In November 2025, Tesla's FSD (Supervised) arrived in South Korea — nine years after the company's October 2016 promise that "every car ships with full self-driving hardware," and the seventh country in the world to get it ([Hankyung Business](https://magazine.hankyung.com/business/article/202512031549b)). Yet the overwhelming majority of Korean Tesla owners are stuck watching from the sidelines. The cars legally cleared for FSD are the US-built Model S, Model X, and Cybertruck — **exactly 4,292 vehicles, or 2.4% of Korea's 180,684 registered Teslas** ([Kyunghyang Shinmun, May 4, 2026](https://www.khan.co.kr/article/202605041128001)). The other 97.6% — more than 176,000 China-built Model 3s and Ys — are locked out at the software level, even the ones carrying Tesla's latest AI4 (HW4) computer. The punchline up front: this gap is a product of **trade agreements and safety regulations, not technology**, and the realistic center of gravity for China-built cars getting FSD is **Q4 2027**. Here's why, and what could change it.
@@ -56,13 +58,13 @@ Cross the country-of-origin axis with the hardware axis and Korea's Teslas split
 | Group | Built in | Hardware | Status | Unlock condition | Expected timing |
 |-------|----------|----------|--------|------------------|-----------------|
 | ① Model S/X/Cybertruck | US | AI4 | **In use** (OTA, Nov 2025) | — | Done |
-| ② Older Model S/X | US | HW3 | Waiting | V14 Lite global rollout | H2 2026 |
+| ② US-built HW3 (Model 3/Y, older S/X) | US | HW3 | **Rolling out** (Jul 10, 2026–, now wide) | — | In progress |
 | ③ Model 3/Y (volume) | China | AI4 | **Blocked by regulation** | DCAS adoption in Korea | Q4 2027 (base case) |
 | ④ Older Model 3/Y | China | HW3 | Double-blocked | DCAS + V14 Lite | Last in line |
 
 **① US-built AI4** — already driving. Tesla Korea announced the launch on November 12, 2025, and supervised FSD went out via OTA later that month.
 
-**② US-built HW3** — no regulatory barrier; same FTA umbrella. The delay is purely software. FSD stopped supporting HW3 after V13, so Tesla had to build a slimmed-down V14 for the older chip. The result — **FSD V14 Lite (firmware 2026.20.5.1) — began rolling out in North America on June 29, 2026** ([Electrek](https://electrek.co/2026/06/29/tesla-fsd-v14-lite-hw3-rollout/)). It distills the AI4 version's driving behavior to run on HW3, whose effective memory bandwidth is only about 15% of AI4's, and Tesla AI chief Ashok Elluswamy personally confirmed the rollout ([Not a Tesla App](https://www.notateslaapp.com/news/4370/tesla-releases-fsd-v14-lite-for-hw3-cars-everything-you-need-to-know)). With a global staged rollout promised, Korea's US-built HW3 cars are likely in the second half of 2026.
+**② US-built HW3** — no regulatory barrier; same FTA umbrella. The delay is purely software. FSD stopped supporting HW3 after V13, so Tesla had to build a slimmed-down V14 for the older chip. The result — **FSD V14 Lite (firmware 2026.20.5.1) — began rolling out in North America on June 29, 2026** ([Electrek](https://electrek.co/2026/06/29/tesla-fsd-v14-lite-hw3-rollout/)). It distills the AI4 version's driving behavior to run on HW3, whose effective memory bandwidth is only about 15% of AI4's, and Tesla AI chief Ashok Elluswamy personally confirmed the rollout ([Not a Tesla App](https://www.notateslaapp.com/news/4370/tesla-releases-fsd-v14-lite-for-hw3-cars-everything-you-need-to-know)). Two weeks later, **on July 10, 2026 Korea became the first market outside the US to start the sequential rollout.** Then in late July, a more polished build, **2026.20.6.10, moved from early access to a full "wide release"** — distilling even the HW4-only FSD app and reinforcement-learning/offline models down to HW3, closer to full V14 ([Not a Tesla App](https://www.notateslaapp.com/news/4468/tesla-fsd-v14-lite-starts-rolling-out-publicly)). In short, Korea's US-built HW3 cars have moved from "waiting" to "rolling out."
 
 **③ China-built AI4** — newest hardware, blocked by regulation. The key is Korea's adoption of the DCAS standard, covered below.
 
