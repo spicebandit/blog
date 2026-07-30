@@ -71,6 +71,31 @@ tags: ["지멘스에너지", "옴테라", "에너지기업", "리브랜딩"]
 
 바로 이 반전이 리브랜딩의 진짜 배경이다. 위기에 빠진 회사라면 모기업의 이름이라는 안전판을 놓기 어렵다. 반대로 **홀로 서도 흔들리지 않을 만큼 실적과 신뢰를 회복했기에**, 지멘스라는 후광 없이 제 이름으로 서겠다고 선언할 수 있는 것이다. 옴테라라는 이름은 그 자체가 '우리는 이제 혼자서도 된다'는 자기 선언이다.
 
+## 누가 소유하고, 얼마의 가치인가 — 주주현황과 기업가치
+
+이름을 떼는 결정은 소유구조의 변화와도 맞물린다. 흥미롭게도 **모기업 지멘스AG는 이미 지멘스에너지의 주인 자리에서 물러나는 중**이다. 2020년 분사 때 상당 지분을 들고 있던 지멘스AG는 2026년 초 기준 약 10%까지 지분을 낮췄고, 계속 줄이고 있다. '지멘스'라는 이름을 떼는 것과, 지멘스AG가 지분을 파는 것은 같은 방향의 두 사건 — 자본에서도, 간판에서도 탯줄을 끊는 과정인 셈이다.
+
+| 주요 주주(2026년 초 기준) | 지분(개략) | 비고 |
+|------|-----------|------|
+| 지멘스 연금신탁(Siemens Pension-Trust) | 약 14.8% | 최대 단일 주주 |
+| 지멘스AG(Siemens AG) | 약 10% | 지속 축소(엑시트 진행) |
+| 기관투자자 | 약 40~50% | 글로벌 분산 |
+| 개인·기타 유통주식 | 나머지 | 지배주주 없음 |
+
+*출처: Siemens Energy IR·MarketScreener 등 공시 기반 개략치(2026). 지배주주가 없는 분산 구조.*
+
+기업가치는 위기 이전과 비교하기 민망할 만큼 커졌다. 2026년 6월 기준 지멘스에너지의 시가총액은 **약 1,600억 달러(약 220조 원)** 규모로, 프랑크푸르트 증시와 독일 대표지수 DAX에 편입된 대형주다. 2023년 파산설이 돌 때와는 완전히 다른 위상이다.
+
+| 지표 | 값(2026년 중반) | 비고 |
+|------|-----------------|------|
+| 시가총액 | 약 1,600억 달러 | 프랑크푸르트 상장·DAX 편입 |
+| 12개월 목표주가(애널리스트 평균) | 약 €190~198 | 범위 €100~260으로 편차 큼 |
+| 컨센서스 | 다수 '매수' 우위(25명 중 매수 19·중립 3·매도 3) | 아래 유의 참조 |
+
+*출처: MarketScreener·Investing.com 애널리스트 컨센서스(2026-06). **이는 시장의 평가를 정리한 것으로 투자 권유가 아니다.** 목표주가 범위가 €100~260으로 크게 벌어져 있다는 점 자체가, 전망에 상당한 불확실성이 있음을 뜻한다.*
+
+애널리스트들이 대체로 긍정적인 이유는 앞서 짚은 것과 같다 — 전력망 현대화, 에너지 전환, 그리고 AI 데이터센터發 전력 수요라는 구조적 순풍이다. 다만 목표가가 €100에서 €260까지 벌어져 있다는 사실은, 이 회사의 미래가 아직 '정해진 성공'이 아니라 **실행에 달린 전망**임을 보여준다. 리브랜딩 비용, 풍력 부문의 수익성 회복 지속 여부, 관세·공급망 변수가 모두 남아 있다.
+
 ## 이름을 바꾼다는 것 — 기업 리브랜딩의 역사
 
 간판을 바꾸는 일은 늘 도박이다. 수십 년 쌓은 브랜드 인지도를 버리고 낯선 이름으로 갈아타는 것이기 때문이다. 산업사에서 기업의 이름은 단순한 호칭이 아니라 신용의 담보였다 — 전신·전기 시대엔 '지멘스'나 '에디슨' 같은 이름 자체가 품질 보증서 역할을 했다. 그럼에도 성공적으로 이름을 바꾼 사례는 적지 않다. 컨설팅 회사 **액센츄어(Accenture)**는 2000년 회계법인 아서앤더슨과 한 지붕(앤더슨월드와이드) 아래에서 갈라선 뒤 2001년 '앤더슨컨설팅'이라는 이름을 버렸는데, 이듬해 터진 엔론 사태로 아서앤더슨이 몰락하면서 결과적으로 '신의 한 수'가 됐다. 구글의 지주회사 **알파벳(Alphabet)**, 페이스북에서 바꾼 **메타(Meta)**처럼, 사업 확장이나 정체성 재정의를 위해 간판을 바꾼 사례도 많다.
@@ -98,3 +123,4 @@ tags: ["지멘스에너지", "옴테라", "에너지기업", "리브랜딩"]
 - "Siemens Energy, Siemens Gamesa to Become Omterra", Offshore Wind, [offshorewind.biz](https://www.offshorewind.biz/2026/07/22/siemens-energy-siemens-gamesa-to-become-omterra/)
 - "Siemens Energy Rebrands as Omterra, Uniting with Siemens Gamesa", Global Banking & Finance (로열티 절감 등), [globalbankingandfinance.com](https://www.globalbankingandfinance.com/siemens-energy-become-omterra-rebrand-launch/)
 - "Omterra: Why Are Siemens Energy & Siemens Gamesa Rebranding?", Energy Digital, [energydigital.com](https://energydigital.com/news/omterra-why-are-siemens-energy-siemens-gamesa-rebranding)
+- Siemens Energy 주주구성·의결권 공시, [siemens-energy.com IR](https://www.siemens-energy.com/global/en/home/investor-relations/share/shareholder-structure-voting-rights-announcements.html) / 시총·컨센서스: [MarketScreener](https://www.marketscreener.com/quote/stock/SIEMENS-ENERGY-AG-113080700/consensus/)·[companiesmarketcap.com](https://companiesmarketcap.com/siemens-energy/marketcap/)
