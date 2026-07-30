@@ -25,6 +25,11 @@ const PROJECT_ROOT = join(__dirname, '..');
 const DRY = process.argv.includes('--dry');
 const OUTPUT_FILE = join(PROJECT_ROOT, 'src/data/popular-posts.json');
 
+// 인기 글 목록에서 제외할 slug (라이브 데이터 페이지·종료된 이벤트 등)
+const SKIP_SLUGS = new Set([
+  '2026-world-cup-tracker', // 월드컵 트래커: 이벤트 종료(2026-07), 인기글 목록에서 제외
+]);
+
 function loadEnv() {
   try {
     const raw = readFileSync(join(PROJECT_ROOT, '.env'), 'utf8');
@@ -147,7 +152,8 @@ async function main() {
       const views = Number(row.metricValues?.[0]?.value ?? 0);
       return slug ? { slug, views } : null;
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter((p) => !SKIP_SLUGS.has(p.slug));
 
   const output = {
     updatedAt: new Date().toISOString(),
