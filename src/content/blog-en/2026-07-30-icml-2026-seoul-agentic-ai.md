@@ -1,12 +1,11 @@
 ---
 title: "ICML 2026 Seoul: AI Rewrote How We Work With It"
 description: "ICML 2026, one of the world's top-3 AI conferences, came to Seoul's COEX for the first time ever. 10,000+ attendees, 24,000+ papers, and one dominant theme: agentic AI. Here's the overview, the substance, and what it means."
-pubDate: 2026-07-30T11:00:00+09:00
+pubDate: 2026-07-31T00:05:00+09:00
 category: ai
 tags: ["ICML2026", "Agentic AI", "Machine Learning", "AI Conference"]
 lang: en
 koSlug: 2026-07-30-icml-2026-seoul-agentic-ai
-draft: true
 ---
 
 **ICML — the International Conference on Machine Learning, one of the world's three premier AI conferences — came to Korea for the first time in 2026, in its official 43rd edition.** Held at Seoul's COEX from July 6 to 11, ICML 2026 drew more than 10,000 researchers and a record-shattering 24,000-plus paper submissions. And the message this vast gathering sent could be summed up in a single line: **AI is moving beyond "smarter models" toward "systems that work on their own" — agentic AI.**
