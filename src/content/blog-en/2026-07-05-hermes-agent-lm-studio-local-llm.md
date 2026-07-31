@@ -2,7 +2,7 @@
 title: "Hermes Agent + LM Studio: Run Your AI Agent Locally at Zero API Cost [Part 3]"
 description: "How to run Hermes Agent on LM Studio local models: server startup, hermes model setup, custom config.yaml endpoints, the 64K context requirement, and troubleshooting."
 pubDate: "2026-07-05T10:57:00+09:00"
-category: ai
+category: ax
 tags: ["hermes-agent", "lm-studio", "local-llm", "ai-agent"]
 lang: en
 koSlug: 2026-07-05-hermes-agent-lm-studio-local-llm

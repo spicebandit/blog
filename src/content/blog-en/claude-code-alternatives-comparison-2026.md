@@ -2,7 +2,7 @@
 title: "Claude Code Alternatives in 2026: Which AI Coding Tool Should You Use?"
 description: "Compare Claude Code, Cursor, GitHub Copilot, Devin Desktop, AWS Kiro, and Aider by workflow scenario — with a practical stack strategy for 2026."
 pubDate: 2026-06-27T09:00:00+09:00
-category: ai
+category: ax
 tags: ["claude-code", "ai-coding", "cursor", "copilot"]
 lang: en
 koSlug: 2026-06-27-claude-code-alternatives-comparison-2026

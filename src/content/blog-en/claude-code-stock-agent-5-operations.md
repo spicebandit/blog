@@ -3,7 +3,7 @@ title: "Stock Bot Automation Ops — Telegram Approvals & launchd Scheduling for
 description: "Operations for a Claude Code stock bot: approve trades from your phone with Telegram inline buttons, and run morning/intraday/close automatically with launchd."
 pubDate: 2026-06-23T09:00:00+09:00
 updatedDate: "2026-07-06T20:30:00+09:00"
-category: ai
+category: ax
 tags: ["ClaudeCode", "AutoTrading", "TelegramBot", "launchd"]
 lang: en
 koSlug: claude-code-stock-agent-5-operations

@@ -2,7 +2,7 @@
 title: "개발자를 위한 정부 공개 API 총정리"
 description: "공공데이터포털부터 OpenDART·기상청·한국은행 ECOS·교통·법령까지, 무료로 쓰는 정부 공개 API를 분야별로 정리하고 신청·인증·활용법을 가이드합니다."
 pubDate: 2026-06-27T09:30:00+09:00
-category: ai
+category: ax
 tags: ["공공데이터", "공개API", "OpenAPI", "데이터분석"]
 ---
 

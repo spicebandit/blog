@@ -2,7 +2,7 @@
 title: "Auto-Querying the DART Disclosure API with Claude Code"
 description: "How to connect Korea's DART electronic disclosure Open API to Claude Code to pull listed companies' financials, filings, and executives in one command — plus delivering results via Telegram as text, PPT, or Excel."
 pubDate: 2026-06-20T18:00:00+09:00
-category: ai
+category: ax
 tags: ["ClaudeCode", "DART", "disclosure", "OpenAPI", "Python"]
 lang: en
 koSlug: 2026-06-20-dart-api-claude-code

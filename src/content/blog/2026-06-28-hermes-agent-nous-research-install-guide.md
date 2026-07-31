@@ -2,7 +2,7 @@
 title: "헤르메스 AI 설치·셋팅 완전 가이드 [1편]"
 description: "Nous Research의 자율 AI 에이전트 Hermes Agent를 터미널에서 5분 만에 설치하는 방법, 초기 설정, 핵심 특징을 단계별로 설명합니다. 2편(실전 사용법)으로 연결되는 시리즈 1편."
 pubDate: "2026-06-28T07:35:00+09:00"
-category: "ai"
+category: ax
 tags: ["hermes-agent", "nous-research", "ai-agent", "자율에이전트"]
 updatedDate: "2026-07-02T23:10:00+09:00"
 ---

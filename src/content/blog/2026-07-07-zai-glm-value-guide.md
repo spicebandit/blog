@@ -2,7 +2,7 @@
 title: "z.ai GLM 사용법과 가성비 — Claude Code 반값으로 쓰기"
 description: "중국 z.ai(Zhipu GLM)가 가성비 최강으로 꼽히는 이유와 실제 사용법을 정리했다. 웹 챗부터 API, Claude Code 연결로 코딩 비용을 절반 이하로 줄이는 법과 요금제·활용 사례, 그리고 주의점까지 담았다."
 pubDate: 2026-07-08T07:15:16+09:00
-category: ai
+category: ax
 tags: ["z.ai", "GLM", "가성비AI", "ClaudeCode"]
 ---
 

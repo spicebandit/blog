@@ -2,7 +2,7 @@
 title: "LM Studio로 Qwen 로컬 LLM API·AI 에이전트 연동하기"
 description: "맥북에어 M5에 LM Studio로 Qwen3.5 9B를 띄우면 OpenAI 호환 API가 생긴다. base_url 한 줄만 바꿔 에이전트 프레임워크를 붙이는 법과 로컬 LLM의 진짜 한계까지 실전 정리."
 pubDate: 2026-07-09T13:45:00+09:00
-category: ai
+category: ax
 tags: ["LM Studio", "Qwen", "로컬LLM", "AI에이전트"]
 ---
 

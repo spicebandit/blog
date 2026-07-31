@@ -2,7 +2,7 @@
 title: "Local LLMs on a MacBook — What Runs on 8, 16, 32, 64GB Unified Memory"
 description: "Can a MacBook or MacBook Air run local LLMs? A buyer's guide to the model sizes each unified-memory tier (8/16/32/64GB) handles, the Air vs Pro difference, and how it compares to an RTX 5090."
 pubDate: 2026-07-08T07:21:45+09:00
-category: ai
+category: ax
 tags: ["macbook", "local-llm", "apple-silicon", "ollama"]
 lang: en
 koSlug: 2026-07-08-macbook-local-llm-by-model

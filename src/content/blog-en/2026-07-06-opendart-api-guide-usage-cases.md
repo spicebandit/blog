@@ -2,7 +2,7 @@
 title: "OpenDART API Guide — Korea's Corporate Disclosure Data, From API Key to Real Use Cases"
 description: "Pull Korean listed-company disclosures and financials for free with the OpenDART API: how to get an API key (real screenshots), the API structure with call examples, and real-world uses like a financial screener or a disclosure alert bot."
 pubDate: "2026-07-06T09:10:00+09:00"
-category: ai
+category: ax
 tags: ["opendart", "korea-disclosure", "public-api", "financial-data"]
 lang: en
 koSlug: 2026-07-06-opendart-api-guide-usage-cases

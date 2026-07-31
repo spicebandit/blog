@@ -2,7 +2,7 @@
 title: "z.ai GLM Guide — Run Claude Code at Half the Cost"
 description: "Why China's z.ai (Zhipu GLM) is called the best value-for-money AI, and how to actually use it — from the web chat to the API, wiring it into Claude Code to cut coding costs by more than half, plus pricing, use cases, and the caveats."
 pubDate: 2026-07-08T07:15:16+09:00
-category: ai
+category: ax
 lang: en
 koSlug: 2026-07-07-zai-glm-value-guide
 tags: ["z.ai", "GLM", "value AI", "Claude Code"]

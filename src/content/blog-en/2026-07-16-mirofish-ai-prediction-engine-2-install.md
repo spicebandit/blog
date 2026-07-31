@@ -2,7 +2,7 @@
 title: "MiroFish Install & System Guide — Build a 'Virtual Society' on Your Machine [Part 2]"
 description: "Let's actually run MiroFish, the open-source AI prediction engine. A step-by-step guide to its system architecture, requirements (Python, Node, LLM API), the web UI / API / Docker channels, and source vs. Docker installation — with cost-saving tips."
 pubDate: 2026-07-16T09:10:00+09:00
-category: ai
+category: ax
 tags: ["MiroFish", "install", "multi-agent", "setup"]
 lang: en
 koSlug: 2026-07-16-mirofish-ai-prediction-engine-2-install

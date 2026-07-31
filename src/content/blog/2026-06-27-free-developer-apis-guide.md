@@ -2,7 +2,7 @@
 title: "무료로 쓰는 민간 공개 API 모음"
 description: "카카오·네이버 지도/검색부터 날씨·환율·AI(Claude·OpenAI)·깃허브까지, 개인 프로젝트에 바로 쓰는 무료/프리티어 민간 API를 분야별로 정리한 개발자 가이드."
 pubDate: 2026-06-27T10:00:00+09:00
-category: ai
+category: ax
 tags: ["무료API", "공개API", "개발자도구", "API활용"]
 ---
 

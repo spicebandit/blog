@@ -2,7 +2,7 @@
 title: "Korea Government Open APIs: A Developer's Guide"
 description: "From the Public Data Portal to OpenDART, KMA weather, Bank of Korea ECOS, transit, and law — a guide to free Korean government open APIs, with how to apply, authenticate, and use them."
 pubDate: 2026-06-27T09:30:00+09:00
-category: ai
+category: ax
 tags: ["public data", "open API", "OpenAPI", "data analysis"]
 lang: en
 koSlug: 2026-06-27-korea-public-data-api-guide

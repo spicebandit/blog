@@ -2,7 +2,7 @@
 title: "Toss Securities Open API — Setup, Usage, and How It Compares to Korea Investment (KIS)"
 description: "A developer's guide to Toss Securities' Open API: what it offers, how to register and get tokens, OAuth/price/order scope, and where it beats or falls short of Korea Investment (KIS)."
 pubDate: 2026-07-07T07:05:49+09:00
-category: ai
+category: ax
 tags: ["toss-securities-api", "open-api", "trading-api", "korea-stock-api"]
 lang: en
 koSlug: 2026-07-07-toss-securities-open-api-guide

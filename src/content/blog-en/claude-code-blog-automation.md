@@ -2,7 +2,7 @@
 title: "Claude Code Blog Automation: Build a Git-Push-to-Publish Pipeline"
 description: "Learn how to automate blog writing and publishing with Claude Code, Astro, and Vercel — from drafting to deployment in one git push."
 pubDate: 2026-06-15T09:00:00+09:00
-category: ai
+category: ax
 tags: ["Claude Code", "blog automation", "Astro", "Vercel"]
 lang: en
 koSlug: claude-code-blog-automation-guide

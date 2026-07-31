@@ -3,7 +3,7 @@ title: "Stock Bot Risk Management & Automated Trade Execution — Safety Gates, 
 description: "Designing the risk manager and trade execution for a Claude Code stock bot: a deterministic execution gate, KIS API buy/sell, and a manual approval flow — with the code."
 pubDate: 2026-06-22T09:00:00+09:00
 updatedDate: "2026-07-06T20:30:00+09:00"
-category: ai
+category: ax
 tags: ["ClaudeCode", "AutoTrading", "RiskManagement", "KIS API"]
 lang: en
 koSlug: claude-code-stock-agent-4-trade-safety

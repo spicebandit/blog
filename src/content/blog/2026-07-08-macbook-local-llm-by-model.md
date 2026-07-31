@@ -2,7 +2,7 @@
 title: "맥북으로 로컬 LLM 돌리기 — 모델·메모리별 가능 여부 총정리"
 description: "맥북/맥북에어에서 로컬 LLM이 되나? 통합 메모리(8·16·32·64GB)별로 돌릴 수 있는 모델 크기와 Air·Pro 차이, RTX 5090과의 비교까지 구매 전 알아야 할 기준을 정리했다."
 pubDate: 2026-07-08T07:21:45+09:00
-category: ai
+category: ax
 tags: ["맥북", "로컬LLM", "애플실리콘", "Ollama"]
 ---
 

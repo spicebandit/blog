@@ -2,7 +2,7 @@
 title: "Harness Engineering, Explained — The Skeleton of an AI Agent"
 description: "In 2026 the center of gravity in AI development is shifting from the model to the harness. What harness engineering is, how it differs from prompt and context engineering, and everything a good harness needs — the agent loop, tools, context management, and guardrails."
 pubDate: 2026-07-13T00:05:00+09:00
-category: ai
+category: ax
 tags: ["harness engineering", "AI agents", "agent harness", "context engineering"]
 lang: en
 koSlug: ai-agent-harness-engineering

@@ -3,7 +3,7 @@ title: "KIS API (Korea Investment & Securities Open API) Python Guide — Real T
 description: "A hands-on guide to connecting the Korea Investment & Securities KIS Open API in Python. Real traps and fixes — the 1-minute token limit, paper server, SSL errors — from building a Claude Code stock bot."
 pubDate: 2026-06-20T09:00:00+09:00
 updatedDate: "2026-07-06T20:30:00+09:00"
-category: ai
+category: ax
 tags: ["ClaudeCode", "KIS API", "AlgoTrading", "Python"]
 lang: en
 koSlug: claude-code-stock-agent-2-kis-api

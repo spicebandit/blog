@@ -3,14 +3,15 @@
 // 카테고리를 추가·변경하려면 여기만 수정하면 된다.
 
 // 슬러그 순서 = 네비게이션 노출 순서. content.config.ts의 z.enum도 이 배열에서 파생된다.
-export const CATEGORY_SLUGS = ['energy', 'economy', 'ai', 'life'] as const;
+export const CATEGORY_SLUGS = ['energy', 'economy', 'ai', 'ax', 'life'] as const;
 
 export type CategorySlug = (typeof CATEGORY_SLUGS)[number];
 
 export const CATEGORY_NAMES: Record<CategorySlug, string> = {
   energy: '에너지',
   economy: '경제·경영',
-  ai: 'AI·AX',
+  ai: 'AI Trend',
+  ax: 'AX',
   life: 'Editor',
 };
 
@@ -18,7 +19,8 @@ export const CATEGORY_NAMES: Record<CategorySlug, string> = {
 export const CATEGORY_DESCRIPTIONS: Record<CategorySlug, string> = {
   energy: '전력시장 · 재생에너지 · 전력망 — 에너지 전환을 데이터로 읽습니다',
   economy: '거시경제 · 산업 · 경영 전략 — 숫자 뒤의 흐름을 해설합니다',
-  ai: 'AI 기술과 AX(AI 전환) — 도입 현장의 실전과 쟁점을 다룹니다',
+  ai: 'AI 기술·정책·시장 동향 — AI 세계에서 지금 일어나는 일',
+  ax: 'AI 전환(AX) 실전 — 도구·API·로컬LLM·에이전트로 직접 만들고 돌린다',
   life: '일과 삶, 그리고 기록 — 에디터의 시선',
 };
 

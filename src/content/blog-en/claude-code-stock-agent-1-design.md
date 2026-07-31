@@ -3,7 +3,7 @@ title: "Building a Stock Trading Bot with Claude Code — The Full Architecture,
 description: "A 5-part series on building a Korean stock trading bot with Claude Code and a multi-agent design. Part 1 covers the why and the architecture — KIS API, LLM analysts, and safety guards."
 pubDate: 2026-06-19T09:00:00+09:00
 updatedDate: "2026-07-06T20:30:00+09:00"
-category: ai
+category: ax
 tags: ["ClaudeCode", "AlgoTrading", "MultiAgent", "LLM"]
 lang: en
 koSlug: claude-code-stock-agent-1-design

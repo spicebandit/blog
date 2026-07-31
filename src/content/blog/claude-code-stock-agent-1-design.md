@@ -3,7 +3,7 @@ title: "Claude Code로 주식 자동매매 봇 만들기 — 설계와 아키텍
 description: "Claude Code와 멀티에이전트 구조로 한국 주식 자동매매 봇을 만드는 5편 연재. 1편은 왜 만드는지, 어떤 구조를 선택했는지 — KIS API·LLM 분석가·안전장치까지 전체 설계를 공개합니다."
 pubDate: 2026-06-19T09:00:00+09:00
 updatedDate: 2026-07-06T20:30:00+09:00
-category: "ai"
+category: ax
 tags: ["ClaudeCode", "주식자동매매", "멀티에이전트", "KIS API", "LLM"]
 featured: true
 ---

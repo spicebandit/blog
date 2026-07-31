@@ -2,7 +2,7 @@
 title: "Hermes AI: Complete Install & Setup Guide [Part 1]"
 description: "A step-by-step guide to installing Nous Research's autonomous AI agent, Hermes Agent, in your terminal in 5 minutes — plus initial setup and key features. Part 1 of a series leading into Part 2 (practical use)."
 pubDate: "2026-06-28T07:35:00+09:00"
-category: ai
+category: ax
 tags: ["hermes-agent", "nous-research", "ai-agent", "autonomous agent"]
 lang: en
 koSlug: 2026-06-28-hermes-agent-nous-research-install-guide
