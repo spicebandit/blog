@@ -211,7 +211,9 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         --cat-life-soft:     var(--accent-soft);
 
         /* Typography */
-        --font-serif: 'Source Serif 4', 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+        /* 모던 고딕 통일 — 제목·본문도 세리프 대신 깔끔한 산세리프. 영문 Aptos 우선, 한글 Pretendard */
+        --font-serif: 'Aptos', 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+          'Noto Sans KR', system-ui, sans-serif;
         /* 영문은 Aptos 우선(설치 시), 한글은 Pretendard 등으로 폴백 */
         --font-ui: 'Aptos', 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
           'Noto Sans KR', system-ui, sans-serif;
@@ -569,10 +571,6 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         .masthead-tagline { display: none; }
       }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Noto+Serif+KR:wght@400;600;700&display=swap" />
     <link rel="stylesheet" as="style" crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
