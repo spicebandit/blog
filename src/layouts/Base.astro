@@ -211,11 +211,10 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         --cat-life-soft:     var(--accent-soft);
 
         /* Typography */
-        /* 모던 고딕 통일 — 제목·본문도 세리프 대신 깔끔한 산세리프. 영문 Aptos 우선, 한글 Pretendard */
-        --font-serif: 'Aptos', 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+        /* 모던 고딕 통일 — Pretendard로 완전 고정(한/영 모든 기기 동일). 세리프 폐지 */
+        --font-serif: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
           'Noto Sans KR', system-ui, sans-serif;
-        /* 영문은 Aptos 우선(설치 시), 한글은 Pretendard 등으로 폴백 */
-        --font-ui: 'Aptos', 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+        --font-ui: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
           'Noto Sans KR', system-ui, sans-serif;
 
         /* Layout — 신문형: 모서리 각지게, 그림자 절제 */
