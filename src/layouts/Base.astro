@@ -128,7 +128,7 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#C8102E" />
+    <meta name="theme-color" content="#1E3A6E" />
 
     <meta name="google-site-verification" content="9CN_w6tkNr_y8h6bhS5zyXZtWi9HnmRwhUNbk3_4foA" />
     <meta name="naver-site-verification" content="2304962573c68823df2550048d161b1d87227173" />
@@ -179,25 +179,26 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     <style is:global>
       /* ── DESIGN TOKENS (C안: 프리미엄 신문형) ── */
       :root {
-        /* Brand — 레드 단일 액센트 */
-        --accent:       #C8102E;
-        --accent-soft:  #F6E3DC;
-        --accent-dark:  #9C0C24;
-        /* 작은 글씨 전용 한 스톱 진한 레드(크림 배경 명암비 6.5:1 — 칩·라벨 또렷하게) */
-        --accent-text:  #A50E26;
+        /* Brand — 남색(네이비) 단일 액센트 */
+        --accent:       #1E3A6E;
+        --accent-soft:  #E7EDF6;
+        --accent-dark:  #152A54;
+        /* 작은 글씨 전용 진한 네이비(화이트 배경 명암비 확보 — 칩·라벨 또렷하게) */
+        --accent-text:  #1B3565;
 
-        /* Semantic — 크림 지면 + 잉크 */
-        --ink:     #23201D;
-        --ink-2:   #45403A;
-        --muted:   #6B635B;
-        --line:    #E7D8C8;
-        --line-2:  #EFE5D6;
-        --bg:      #F1EADD;
-        --bg-2:    #FAF6EC;
-        --ad-bg:   #EFE5D6;
+        /* Semantic — 화이트 지면 + 잉크 */
+        --ink:     #1C2430;
+        --ink-2:   #3A424E;
+        --muted:   #697586;
+        --line:    #E4E7EC;
+        --line-2:  #EEF1F4;
+        --bg:      #FFFFFF;
+        --bg-2:    #F6F7F9;
+        --ad-bg:   #F0F2F5;
+        --footer-bg: #F4F5F7;
 
         /* Notice gradient */
-        --notice-grad-end: #FAF6EC;
+        --notice-grad-end: #F6F7F9;
 
         /* Category colors — 단일 레드로 통일 (기존 4색 폐지) */
         --cat-energy:        var(--accent);
@@ -211,7 +212,8 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
 
         /* Typography */
         --font-serif: 'Source Serif 4', 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
-        --font-ui: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
+        /* 영문은 Aptos 우선(설치 시), 한글은 Pretendard 등으로 폴백 */
+        --font-ui: 'Aptos', 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo',
           'Noto Sans KR', system-ui, sans-serif;
 
         /* Layout — 신문형: 모서리 각지게, 그림자 절제 */
@@ -227,11 +229,11 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
       }
 
       [data-theme="dark"] {
-        --accent:      #E6485F;
-        --accent-soft: #3A2226;
-        --accent-dark: #F27187;
-        /* 다크 배경에선 기존 밝은 레드가 이미 또렷 → 동일 값 사용 */
-        --accent-text: #E6485F;
+        --accent:      #6EA8E6;
+        --accent-soft: #1B2A44;
+        --accent-dark: #8FBEF0;
+        /* 다크 배경에선 밝은 블루가 또렷 → 액센트와 동일 */
+        --accent-text: #7FB0EA;
 
         --ink:    #EFE9DE;
         --ink-2:  #CFC7B9;
@@ -388,11 +390,11 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
       }
       .nav-search:hover { color: var(--accent); background: var(--accent-soft); }
       .nav-cats a.active {
-        color: #F1EADD;
+        color: #FFFFFF;
         background: var(--accent);
         font-weight: 600;
       }
-      .nav-cats a.active:hover { color: #F1EADD; }
+      .nav-cats a.active:hover { color: #FFFFFF; }
 
       .masthead-tagline {
         flex: 1;
@@ -480,7 +482,7 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
 
       /* ── FOOTER (Apple-inspired) ───────────── */
       footer.site {
-        background: var(--bg-2);          /* Apple canvas-parchment */
+        background: var(--footer-bg);     /* 은은한 회색 */
         border-top: 1px solid var(--line);
         margin-top: 0;
         padding: 48px 0 56px;             /* Apple footer: 64px — 실용 버전 */
