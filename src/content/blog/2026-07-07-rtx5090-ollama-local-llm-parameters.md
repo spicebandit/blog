@@ -41,16 +41,16 @@ RTX 5090은 **32GB GDDR7 VRAM**을 탑재했다. 로컬 LLM에서 가장 중요�
 
 위 계산을 5090의 32GB에 대입하면 이런 표가 나온다. Q4 기준이며, 속도는 대략치다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 280" width="100%" height="auto" role="img" aria-label="RTX 5090 32GB VRAM에서 모델 크기별 Q4 필요 메모리 막대그래프. 8B 약 5기가, 14B 약 9기가, 32B 약 20기가는 32기가 안에 들어감. 70B 약 40기가는 초과.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">RTX 5090(32GB)에서 Q4 모델별 필요 VRAM</text>
   <line x1="200" y1="40" x2="200" y2="230" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="4 3"/>
   <text x="205" y="52" fill="#C8102E" font-size="11" font-weight="bold">← 32GB 한계선</text>
   <text x="150" y="76" fill="#23201D" font-size="13">8B</text>
-  <rect x="70" y="62" width="20" height="20" fill="#E5DECF"/>
+  <rect x="70" y="62" width="20" height="20" fill="#E4E7EC"/>
   <text x="95" y="76" fill="#8A8378" font-size="11">약 5GB · 매우 빠름</text>
   <text x="140" y="116" fill="#23201D" font-size="13">14B</text>
-  <rect x="70" y="102" width="36" height="20" fill="#E5DECF"/>
+  <rect x="70" y="102" width="36" height="20" fill="#E4E7EC"/>
   <text x="112" y="116" fill="#8A8378" font-size="11">약 9GB · 빠름</text>
   <text x="140" y="156" fill="#23201D" font-size="13">32B</text>
   <rect x="70" y="142" width="80" height="20" fill="#C8102E"/>

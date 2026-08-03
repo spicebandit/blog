@@ -44,17 +44,17 @@ This evolution has clear technical roots. The idea of a "self-running loop" was 
 A good harness reduces to roughly four essential elements: **the agent loop, the tool interface, context management, and control mechanisms.** Production harnesses add a filesystem, memory, and a verification loop on top. Let's take them one at a time.
 
 <figure>
-<svg viewBox="0 0 800 340" role="img" aria-label="Diagram of an agent harness. A model (LLM) sits at the center, wrapped by four layers: the agent loop, tool interface, context management, and control and guardrails." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 340" role="img" aria-label="Diagram of an agent harness. A model (LLM) sits at the center, wrapped by four layers: the agent loop, tool interface, context management, and control and guardrails." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">Agent = Model + Harness</text>
   <text x="20" y="50" font-size="12" fill="#8A8378">Four layers of skeleton that turn intelligence into a working agent</text>
-  <rect x="250" y="120" width="300" height="150" rx="10" fill="none" stroke="#E5DECF" stroke-width="2"/>
+  <rect x="250" y="120" width="300" height="150" rx="10" fill="none" stroke="#E4E7EC" stroke-width="2"/>
   <text x="400" y="95" font-size="13" fill="#8A8378" text-anchor="middle">4. Control &amp; guardrails (permissions, budget, stop)</text>
   <rect x="290" y="150" width="220" height="95" rx="8" fill="none" stroke="#8A8378" stroke-width="2"/>
   <text x="400" y="142" font-size="13" fill="#8A8378" text-anchor="middle">3. Context management (compaction, offload)</text>
   <rect x="330" y="178" width="140" height="45" rx="6" fill="none" stroke="#23201D" stroke-width="2"/>
   <text x="400" y="170" font-size="13" fill="#23201D" text-anchor="middle">2. Tool interface</text>
   <rect x="360" y="192" width="80" height="20" rx="4" fill="#C8102E"/>
-  <text x="400" y="206" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="middle">Model (LLM)</text>
+  <text x="400" y="206" font-size="12" font-weight="700" fill="#F6F7F9" text-anchor="middle">Model (LLM)</text>
   <text x="400" y="300" font-size="13" fill="#C8102E" text-anchor="middle" font-weight="700">1. Agent loop (read → plan → call tool → observe → repeat)</text>
 </svg>
 <figcaption>Tools, context, and control wrap the model in concentric layers, and the agent loop drives the whole thing.</figcaption>

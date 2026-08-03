@@ -42,17 +42,17 @@ tags: ["하네스엔지니어링", "AI에이전트", "harness", "에이전트하
 좋은 하네스는 대략 네 개의 필수 요소로 환원된다: **에이전트 루프, 도구 인터페이스, 컨텍스트 관리, 제어 메커니즘.** 여기에 실전 하네스는 파일시스템·메모리·검증 루프를 더한다. 하나씩 보자.
 
 <figure>
-<svg viewBox="0 0 800 340" role="img" aria-label="에이전트 하네스 구조도. 중앙에 모델(LLM)이 있고, 이를 에이전트 루프, 도구 인터페이스, 컨텍스트 관리, 제어·가드레일 네 겹이 감싸고 있는 형태." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 340" role="img" aria-label="에이전트 하네스 구조도. 중앙에 모델(LLM)이 있고, 이를 에이전트 루프, 도구 인터페이스, 컨텍스트 관리, 제어·가드레일 네 겹이 감싸고 있는 형태." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">에이전트 = 모델 + 하네스</text>
   <text x="20" y="50" font-size="12" fill="#8A8378">모델(지능)을 감싸 실용 에이전트로 만드는 네 겹의 뼈대</text>
-  <rect x="250" y="120" width="300" height="150" rx="10" fill="none" stroke="#E5DECF" stroke-width="2"/>
+  <rect x="250" y="120" width="300" height="150" rx="10" fill="none" stroke="#E4E7EC" stroke-width="2"/>
   <text x="400" y="95" font-size="13" fill="#8A8378" text-anchor="middle">④ 제어·가드레일 (권한·예산·중단조건)</text>
   <rect x="290" y="150" width="220" height="95" rx="8" fill="none" stroke="#8A8378" stroke-width="2"/>
   <text x="400" y="142" font-size="13" fill="#8A8378" text-anchor="middle">③ 컨텍스트 관리 (압축·오프로드)</text>
   <rect x="330" y="178" width="140" height="45" rx="6" fill="none" stroke="#23201D" stroke-width="2"/>
   <text x="400" y="170" font-size="13" fill="#23201D" text-anchor="middle">② 도구 인터페이스</text>
   <rect x="360" y="192" width="80" height="20" rx="4" fill="#C8102E"/>
-  <text x="400" y="206" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="middle">모델(LLM)</text>
+  <text x="400" y="206" font-size="12" font-weight="700" fill="#F6F7F9" text-anchor="middle">모델(LLM)</text>
   <text x="400" y="300" font-size="13" fill="#C8102E" text-anchor="middle" font-weight="700">① 에이전트 루프 (읽기→계획→도구실행→관찰→반복)</text>
 </svg>
 <figcaption>모델을 중심으로 도구·컨텍스트·제어가 겹겹이 감싸고, 그 전체를 에이전트 루프가 돌린다.</figcaption>

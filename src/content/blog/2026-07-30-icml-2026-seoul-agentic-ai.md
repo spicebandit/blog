@@ -34,11 +34,11 @@ ICML은 뉴립스(NeurIPS)·ICLR과 함께 세계 3대 AI 학회로 불리며, �
 
 제출 논문 수의 증가 곡선이 AI 연구의 폭발을 그대로 보여준다. 2015년 1,037편, 2025년 1만 2,107편이던 것이 2026년 2만 4,000여 편으로 뛰었다. 10년 만에 20배가 넘는다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 200" width="100%" height="auto" role="img" aria-label="ICML 논문 제출 수: 2015년 1037편, 2025년 12107편, 2026년 약 24371편으로 급증">
   <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">ICML 논문 제출 수 (편, 높을수록 연구활발)</text>
   <line x1="50" y1="165" x2="400" y2="165" stroke="#8A8378" stroke-width="1"/>
-  <rect x="80" y="158" width="55" height="7" fill="#E5DECF"/>
+  <rect x="80" y="158" width="55" height="7" fill="#E4E7EC"/>
   <text x="82" y="152" fill="#8A8378" font-size="11">1,037</text>
   <text x="88" y="182" fill="#8A8378" font-size="11">2015</text>
   <rect x="190" y="88" width="55" height="77" fill="#8A8378"/>

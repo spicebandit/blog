@@ -31,14 +31,14 @@ tags: ["회사채", "JTBC", "채권투자", "신용등급"]
 주식만 폭락하는 게 아니다. 채권도 시장에서 거래되는 한 가격이 움직이고, 발행사가 위태로워지면 반토막·반의반토막이 난다. 핵심은 **액면가와 시장가격의 차이**다. 채권은 만기에 액면(예: 1만 원)과 약속된 이자를 돌려주기로 한 '차용증'이다. 발행사가 멀쩡하면 시장가격은 액면 근처에서 움직이지만, "이 회사가 만기에 돈을 못 갚을 것 같다"는 공포가 퍼지면 아무도 액면가에 사려 하지 않는다. 그래서 가격이 급락한다.
 
 <figure>
-<svg viewBox="0 0 800 280" role="img" aria-label="JTBC 회사채 제이티비씨36-2 가격이 6월 12일 10,030원에서 15일 7,021원, 16일 4,914원, 17일 3,440원, 18일 2,555원으로 6거래일 만에 76% 하락한 계단식 붕괴를 보여주는 막대그래프." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 280" role="img" aria-label="JTBC 회사채 제이티비씨36-2 가격이 6월 12일 10,030원에서 15일 7,021원, 16일 4,914원, 17일 3,440원, 18일 2,555원으로 6거래일 만에 76% 하락한 계단식 붕괴를 보여주는 막대그래프." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">JTBC '제이티비씨36-2' 6거래일 만에 76% 붕괴 (단위 원)</text>
   <text x="20" y="50" font-size="12" fill="#8A8378">액면 1만 원 · 표면금리 8.1% · 만기 2026-07-31 · 6/15 법정관리 신청</text>
   <line x1="60" y1="230" x2="770" y2="230" stroke="#8A8378" stroke-width="1"/>
   <g font-size="12" fill="#23201D" text-anchor="middle">
     <rect x="90" y="80" width="90" height="150" fill="#8A8378"/><text x="135" y="72" font-weight="700">10,030</text><text x="135" y="250" fill="#8A8378">6/12</text>
-    <rect x="230" y="125" width="90" height="105" fill="#E5DECF"/><text x="275" y="117" fill="#23201D">7,021</text><text x="275" y="250" fill="#8A8378">6/15</text>
-    <rect x="370" y="156" width="90" height="74" fill="#E5DECF"/><text x="415" y="148" fill="#23201D">4,914</text><text x="415" y="250" fill="#8A8378">6/16</text>
+    <rect x="230" y="125" width="90" height="105" fill="#E4E7EC"/><text x="275" y="117" fill="#23201D">7,021</text><text x="275" y="250" fill="#8A8378">6/15</text>
+    <rect x="370" y="156" width="90" height="74" fill="#E4E7EC"/><text x="415" y="148" fill="#23201D">4,914</text><text x="415" y="250" fill="#8A8378">6/16</text>
     <rect x="510" y="178" width="90" height="52" fill="#C8102E" opacity="0.6"/><text x="555" y="170" fill="#23201D">3,440</text><text x="555" y="250" fill="#8A8378">6/17</text>
     <rect x="650" y="192" width="90" height="38" fill="#C8102E"/><text x="695" y="184" font-weight="700" fill="#C8102E">2,555</text><text x="695" y="250" fill="#8A8378">6/18</text>
   </g>

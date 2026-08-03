@@ -35,7 +35,7 @@ tags: ["전력산업", "전력수급기본계획", "AI데이터센터", "전력�
 기준선은 11차 계획상 2038년 발전 비중(원전 35.2%, 재생에너지 29.2%, LNG 10.6%, 석탄 10.1%)이다. 12차에서 재생에너지 목표를 이 선에서 얼마나 더 끌어올리느냐가 향후 15년 설비 투자의 방향을 사실상 결정한다. 개인적으로는 목표치 자체보다, 그 목표를 받쳐줄 송전망과 백업 설비 계획이 같이 담기는지가 더 중요한 관전 포인트라고 본다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="제11차 전력수급기본계획 기준 2038년 발전원별 비중 막대 그래프: 원전 35.2퍼센트, 재생에너지 29.2퍼센트, LNG 10.6퍼센트, 석탄 10.1퍼센트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="제11차 전력수급기본계획 기준 2038년 발전원별 비중 막대 그래프: 원전 35.2퍼센트, 재생에너지 29.2퍼센트, LNG 10.6퍼센트, 석탄 10.1퍼센트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">2038년 발전원별 비중 — 11차 전기본 기준 (%)</text>
 <line x1="150" y1="60" x2="150" y2="236" stroke="#8A8378" stroke-width="1"/>
 <line x1="150" y1="236" x2="690" y2="236" stroke="#8A8378" stroke-width="1"/>
@@ -51,10 +51,10 @@ tags: ["전력산업", "전력수급기본계획", "AI데이터센터", "전력�
 <rect x="150" y="120" width="394.2" height="24" rx="3" fill="#C8102E"/>
 <text x="550" y="137" font-size="12" font-weight="700" fill="#C8102E">29.2%</text>
 <text x="140" y="177" font-size="13" fill="#23201D" text-anchor="end">LNG</text>
-<rect x="150" y="160" width="143.1" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="160" width="143.1" height="24" rx="3" fill="#E4E7EC"/>
 <text x="299" y="177" font-size="12" fill="#8A8378">10.6%</text>
 <text x="140" y="217" font-size="13" fill="#23201D" text-anchor="end">석탄</text>
-<rect x="150" y="200" width="136.4" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="200" width="136.4" height="24" rx="3" fill="#E4E7EC"/>
 <text x="292" y="217" font-size="12" fill="#8A8378">10.1%</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">12차 전기본의 관건은 이 기준선에서 재생에너지(빨강) 몫을 얼마나 더 끌어올리느냐다.</figcaption>
@@ -76,7 +76,7 @@ tags: ["전력산업", "전력수급기본계획", "AI데이터센터", "전력�
 **[확정]** AI 데이터센터 산업진흥 특별법이 국회를 통과해 비수도권 데이터센터의 전력계통영향평가 면제, 인허가 간소화 등을 담았다. 그럴 만한 이유가 있다. 2024년 8월~2025년 6월 전력사용 신청 290건 중 195건(67%)이 수도권에 몰렸고, 수도권 신청 용량만 약 20GW에 달한다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="데이터센터 전력사용 신청 건수 막대 그래프: 전체 290건 중 수도권 195건으로 67퍼센트 집중" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="데이터센터 전력사용 신청 건수 막대 그래프: 전체 290건 중 수도권 195건으로 67퍼센트 집중" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">데이터센터 전력사용 신청 — 건수 (2024.8~2025.6)</text>
 <line x1="150" y1="60" x2="150" y2="156" stroke="#8A8378" stroke-width="1"/>
 <line x1="150" y1="156" x2="690" y2="156" stroke="#8A8378" stroke-width="1"/>
@@ -87,7 +87,7 @@ tags: ["전력산업", "전력수급기본계획", "AI데이터센터", "전력�
 <text x="690" y="174" font-size="11" fill="#8A8378" text-anchor="middle">300</text>
 <text x="140" y="97" font-size="13" fill="#23201D" text-anchor="end">전체 신청</text>
 <rect x="150" y="80" width="522" height="24" rx="3" fill="#8A8378"/>
-<text x="666" y="97" font-size="12" fill="#FAF6EE" text-anchor="end">290건</text>
+<text x="666" y="97" font-size="12" fill="#F6F7F9" text-anchor="end">290건</text>
 <text x="140" y="137" font-size="13" fill="#23201D" text-anchor="end">수도권</text>
 <rect x="150" y="120" width="351" height="24" rx="3" fill="#C8102E"/>
 <text x="507" y="137" font-size="12" font-weight="700" fill="#C8102E">195건 (67%)</text>

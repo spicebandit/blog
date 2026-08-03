@@ -59,14 +59,14 @@ Let's put the performance debate in numbers — with one caveat nailed down firs
 
 *Source: [Composio, "Claude Code vs OpenAI Codex" (June 2026)](https://composio.dev/content/claude-code-vs-openai-codex). Other comparisons put SWE-bench Verified at 88.7% for GPT-5.5, flipping the order.*
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:18px 16px;margin:1.6em 0;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:18px 16px;margin:1.6em 0;">
 <svg viewBox="0 0 720 360" width="100%" height="auto" role="img" aria-label="Bar chart comparing Claude Code (Opus 4.8) and Codex (GPT-5.5) scores on SWE-bench Verified, SWE-bench Pro, and Terminal-Bench">
   <line x1="70" y1="40" x2="70" y2="300" stroke="#8A8378" stroke-width="1"/>
   <line x1="70" y1="300" x2="690" y2="300" stroke="#23201D" stroke-width="1.5"/>
   <g font-family="sans-serif" font-size="11" fill="#8A8378">
-    <line x1="70" y1="235" x2="690" y2="235" stroke="#E5DECF" stroke-width="1"/><text x="40" y="239">25</text>
-    <line x1="70" y1="170" x2="690" y2="170" stroke="#E5DECF" stroke-width="1"/><text x="40" y="174">50</text>
-    <line x1="70" y1="105" x2="690" y2="105" stroke="#E5DECF" stroke-width="1"/><text x="40" y="109">75</text>
+    <line x1="70" y1="235" x2="690" y2="235" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="239">25</text>
+    <line x1="70" y1="170" x2="690" y2="170" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="174">50</text>
+    <line x1="70" y1="105" x2="690" y2="105" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="109">75</text>
     <text x="40" y="44">100</text>
   </g>
   <rect x="130" y="70" width="46" height="230" fill="#C8102E"/>

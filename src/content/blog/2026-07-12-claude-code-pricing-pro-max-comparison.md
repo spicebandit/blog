@@ -45,7 +45,7 @@ tags: ["클로드코드", "ClaudeCode", "AI요금제", "요금제비교"]
 주간 한도를 시간으로 환산한 참고치도 있다. 앤트로픽이 2025년 8월 주간 한도를 도입할 당시 알려진 대략적 배분은, Pro가 클로드 코드로 주당 Sonnet 40~80시간, Max 5x($100)가 Sonnet 140~280시간에 Opus 15~35시간을 얹는 수준이었다([TechCrunch](https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/)). 즉 프로도 '주당 며칠 분량의 코딩'은 감당한다. 다만 이 수치는 2025년 8월 도입 시점 기준이며, 이후 앤트로픽은 5시간 세션 한도를 상향하는 등 한도를 조정해왔으니 절대치보다 규모감으로 보는 게 맞다. 문제는 이 시간이 Opus 상시 사용이나 병렬 작업에서 훨씬 빨리 줄어든다는 점이다.
 
 <figure>
-<svg viewBox="0 0 800 240" role="img" aria-label="클로드 코드 요금제별 상대 사용량 비교. Pro를 1배 기준으로 Max 5x는 약 5배, Max 20x는 약 20배의 세션당 사용량을 제공한다." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 240" role="img" aria-label="클로드 코드 요금제별 상대 사용량 비교. Pro를 1배 기준으로 Max 5x는 약 5배, Max 20x는 약 20배의 세션당 사용량을 제공한다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">요금제별 상대 사용량 (Pro = 1배 기준)</text>
   <text x="20" y="52" font-size="12" fill="#8A8378">세션당 사용량 배수 · 월 요금</text>
   <g font-size="13" fill="#23201D">

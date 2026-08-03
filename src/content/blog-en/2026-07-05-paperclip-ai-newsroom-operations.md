@@ -36,14 +36,14 @@ Early in the run, my other AI workloads got noticeably sluggish and my subscript
 
 The result: **over three days, the company as a whole had consumed 313 million tokens — roughly 100 million per day on average.** The breakdown was even more startling. It wasn't the reporters writing the articles or the editor reviewing them. **The CEO agent alone had burned 177 million tokens — 57% of the total.**
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 240" width="100%" height="auto" role="img" aria-label="Bar chart of token consumption by agent over three days. The CEO agent used 177 million tokens, 57 percent of the total; all other agents combined used 136 million.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">Token consumption over 3 days (measured, 313M total)</text>
   <text x="12" y="70" fill="#23201D" font-size="13">1 CEO</text>
   <rect x="120" y="54" width="380" height="26" fill="#C8102E"/>
   <text x="508" y="72" fill="#23201D" font-size="13" font-weight="bold">177M (57%)</text>
   <text x="12" y="130" fill="#23201D" font-size="13">All other agents</text>
-  <rect x="120" y="114" width="292" height="26" fill="#E5DECF"/>
+  <rect x="120" y="114" width="292" height="26" fill="#E4E7EC"/>
   <text x="420" y="132" fill="#8A8378" font-size="13">136M (43%)</text>
   <text x="12" y="180" fill="#8A8378" font-size="12">The CEO never wrote a line of copy — most of the spend was "waking up and getting oriented"</text>
   <text x="12" y="222" fill="#8A8378" font-size="11">* Measured via the built-in cost accounting on the author's instance, June 2026.</text>

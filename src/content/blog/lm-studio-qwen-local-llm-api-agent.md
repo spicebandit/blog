@@ -21,11 +21,11 @@ tags: ["LM Studio", "Qwen", "로컬LLM", "AI에이전트"]
 
 이게 왜 중요한가. 클라우드 API는 편하지만 세 가지 비용을 청구한다 — **돈**(토큰당 과금), **지연**(네트워크 왕복), 그리고 **프라이버시**(입력이 외부 서버를 거친다). 로컬 LLM은 이 셋을 한꺼번에 제거한다. 특히 사내 문서·개인 메모·미공개 코드처럼 밖으로 내보내기 꺼려지는 데이터를 다루는 개인 개발자·1인 기업에게, "내 노트북 안에서 끝나는 AI"는 성능이 조금 부족해도 충분히 매력적인 트레이드오프다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="Qwen3.5 dense 모델 크기별 4비트 양자화 메모리 사용량과 맥북에어 M5 구성별 권장 모델">
 <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="700" fill="#23201D">Qwen3.5 크기별 메모리(4비트 양자화, 근사치) — 낮을수록 가벼움</text>
 <text x="20" y="48" font-family="sans-serif" font-size="12" fill="#8A8378">회색 점선 = 16GB 맥북에어 실질 상한(모델+컨텍스트 여유 감안)</text>
-<line x1="150" y1="80" x2="150" y2="250" stroke="#E5DECF" stroke-width="1"/>
+<line x1="150" y1="80" x2="150" y2="250" stroke="#E4E7EC" stroke-width="1"/>
 <!-- scale 1GB = 22px, start x=150 -->
 <!-- 0.8B ~0.7GB -->
 <rect x="150" y="90" width="16" height="24" fill="#8A8378"/>

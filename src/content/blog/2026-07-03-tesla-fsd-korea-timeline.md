@@ -14,10 +14,10 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 **같은 테슬라인데 왜 누구는 되고 누구는 안 되나.** 2025년 11월, 테슬라 FSD(감독형, Supervised)가 한국에 상륙했다. 2016년 10월 "모든 차에 완전자율주행 하드웨어를 넣겠다"는 발표 이후 9년 만이자, 세계 7번째 출시국이었다([한경 비즈니스](https://magazine.hankyung.com/business/article/202512031549b)). 그런데 정작 국내 테슬라 오너의 절대다수는 구경만 하는 처지다. 현재 FSD가 합법적으로 열린 차량은 미국에서 생산된 모델 S·X와 사이버트럭, **정확히 4,292대 — 국내 전체 테슬라 18만 684대의 2.4%**다([경향신문, 2026-05-04](https://www.khan.co.kr/article/202605041128001)). 나머지 97.6%, 17만 6천여 대의 중국산 모델 3·Y는 최신 AI4(HW4) 하드웨어를 달고도 소프트웨어 차원에서 원천 차단돼 있다. 결론부터 말하면 — 이 격차는 기술이 아니라 **통상 협정과 안전기준이 만든 제도의 산물**이고, 중국산 차량이 실제로 FSD 버튼을 누르는 시점의 무게중심은 **2027년 4분기**다. 왜 그런지, 무엇이 변수인지 순서대로 뜯어본다.
 
 <figure>
-<svg viewBox="0 0 800 320" role="img" aria-label="국내 테슬라 등록 18만684대 중 FSD 합법 차량은 4,292대로 2.4%에 불과함을 보여주는 비율 막대와, 합법 차량의 모델별 구성(모델X 2,708대, 모델S 1,193대, 사이버트럭 391대) 바차트" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 320" role="img" aria-label="국내 테슬라 등록 18만684대 중 FSD 합법 차량은 4,292대로 2.4%에 불과함을 보여주는 비율 막대와, 합법 차량의 모델별 구성(모델X 2,708대, 모델S 1,193대, 사이버트럭 391대) 바차트" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">국내 테슬라 18만 684대 중 FSD 합법은 4,292대 (2.4%)</text>
   <rect x="50" y="60" width="17" height="40" fill="#C8102E"/>
-  <rect x="67" y="60" width="683" height="40" fill="#E5DECF"/>
+  <rect x="67" y="60" width="683" height="40" fill="#E4E7EC"/>
   <line x1="58" y1="104" x2="58" y2="122" stroke="#C8102E" stroke-width="1.5"/>
   <text x="50" y="138" font-size="13" font-weight="700" fill="#C8102E">FSD 가능 4,292대 (2.4%)</text>
   <text x="750" y="138" font-size="13" fill="#8A8378" text-anchor="end">FSD 불가(중국산 모델 3·Y 등) 17만 6,392대 (97.6%)</text>
@@ -86,11 +86,11 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 한국의 개방 시점을 가늠하려면 시야를 지구본으로 넓혀야 한다. 감독형 FSD는 지금 대륙을 건너뛰며 파도처럼 번지고 있고, 한국은 그 파도의 두 번째 마루에 올라탄 참이다. 2026년 7월 현재 FSD(감독형)가 실제 배포됐거나 승인된 시장은 **미국·캐나다·멕시코·푸에르토리코·호주·네덜란드·한국·중국**으로 넓어졌다. 특히 유럽은 2026년 4월 네덜란드 RDW의 첫 형식승인을 신호탄으로 **리투아니아·에스토니아가 뒤따랐고, 스웨덴은 공공도로 시험을 확대, 벨기에는 승인 절차를 패스트트랙**에 올렸다. 중국은 5월 21일 테슬라가 FSD 지원을 공식화했으나 전국 단위 규제 승인은 아직 진행 중이다([CnEVPost](https://cnevpost.com/2026/05/21/tesla-says-fsd-supervised-available-in-china/), [fsdtracker.eu](https://fsdtracker.eu/)).
 
 <figure>
-<svg viewBox="0 0 1000 540" role="img" aria-label="테슬라 FSD 감독형 전세계 확산 현황 개념도. 미국·캐나다·멕시코·푸에르토리코·호주·네덜란드·한국은 배포 완료, 중국·발트3국·스웨덴은 승인 또는 확산 진행 중, 독일·프랑스 등 그 밖 EU는 심사 대기." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 1000 540" role="img" aria-label="테슬라 FSD 감독형 전세계 확산 현황 개념도. 미국·캐나다·멕시코·푸에르토리코·호주·네덜란드·한국은 배포 완료, 중국·발트3국·스웨덴은 승인 또는 확산 진행 중, 독일·프랑스 등 그 밖 EU는 심사 대기." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">테슬라 FSD(감독형) 전세계 확산 개념도 (2026-07)</text>
   <text x="24" y="54" font-size="12" fill="#8A8378">북미에서 출발한 확산 파도가 호주·유럽·아시아로. 한국은 v14 Lite를 받은 세계 2번째 시장.</text>
   <!-- 대륙 실루엣 (개념도) -->
-  <g fill="#E5DECF" stroke="#D8CFBB" stroke-width="1">
+  <g fill="#E4E7EC" stroke="#D8CFBB" stroke-width="1">
     <path d="M150,95 L250,88 L300,110 L300,140 L262,150 L240,168 L225,205 L208,195 L214,160 L188,150 L162,128 Z"/>
     <path d="M262,220 L305,214 L332,244 L326,300 L300,360 L286,395 L276,345 L292,292 L262,258 Z"/>
     <path d="M486,92 L556,84 L566,108 L540,124 L512,138 L494,120 Z"/>
@@ -121,7 +121,7 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
     <circle cx="548" cy="86" r="5"/>
   </g>
   <!-- 심사 대기 (웜그레이 외곽) -->
-  <g fill="#FAF6EE" stroke="#8A8378" stroke-width="2">
+  <g fill="#F6F7F9" stroke="#8A8378" stroke-width="2">
     <circle cx="524" cy="120" r="5"/>
     <circle cx="500" cy="126" r="5"/>
   </g>
@@ -141,7 +141,7 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
   <g font-size="12" fill="#23201D">
     <circle cx="40" cy="500" r="6" fill="#C8102E"/><text x="54" y="504">배포 완료</text>
     <circle cx="190" cy="500" r="6" fill="#23201D"/><text x="204" y="504">승인·확산중</text>
-    <circle cx="360" cy="500" r="6" fill="#FAF6EE" stroke="#8A8378" stroke-width="2"/><text x="374" y="504">심사 대기</text>
+    <circle cx="360" cy="500" r="6" fill="#F6F7F9" stroke="#8A8378" stroke-width="2"/><text x="374" y="504">심사 대기</text>
     <line x1="510" y1="500" x2="540" y2="500" stroke="#C8102E" stroke-width="1.6" stroke-dasharray="5 5"/><text x="548" y="504">확산 경로</text>
   </g>
 </svg>
@@ -155,9 +155,9 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 국토부의 절차 블록을 캘린더에 얹어보면 세 갈래다.
 
 <figure>
-<svg viewBox="0 0 800 300" role="img" aria-label="국내 테슬라 그룹별 FSD 개방 예상 시점 타임라인. 미국산 AI4는 2025년 11월 사용 시작, 미국산 HW3는 2026년 하반기, 중국산 AI4는 낙관 시 2027년 상반기에서 기본 2027년 4분기, 비관 시 2028년까지" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 300" role="img" aria-label="국내 테슬라 그룹별 FSD 개방 예상 시점 타임라인. 미국산 AI4는 2025년 11월 사용 시작, 미국산 HW3는 2026년 하반기, 중국산 AI4는 낙관 시 2027년 상반기에서 기본 2027년 4분기, 비관 시 2028년까지" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">그룹별 FSD 개방 예상 시점 (2026-07 현재)</text>
-  <g stroke="#E5DECF" stroke-width="1">
+  <g stroke="#E4E7EC" stroke-width="1">
     <line x1="197" y1="50" x2="197" y2="240"/>
     <line x1="385" y1="50" x2="385" y2="240"/>
     <line x1="572" y1="50" x2="572" y2="240"/>
@@ -180,7 +180,7 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
   <rect x="525" y="152" width="94" height="20" rx="4" fill="#C8102E"/>
   <text x="625" y="167" font-size="12" fill="#23201D">낙관 2027 상반기 ~ 기본 2027 4분기</text>
   <text x="188" y="213" font-size="13" fill="#23201D" text-anchor="end">④ 비관 시나리오</text>
-  <rect x="572" y="197" width="188" height="20" rx="4" fill="#E5DECF"/>
+  <rect x="572" y="197" width="188" height="20" rx="4" fill="#E4E7EC"/>
   <text x="580" y="212" font-size="12" fill="#8A8378">2028년으로 밀릴 가능성</text>
 </svg>
 <figcaption>국토부 공개 절차 소요기간(의견수렴 6개월 + 입안 6개월 + 입법예고~법제처 3~4개월)을 기반으로 한 추정. 진한 파랑이 무게중심. 출처: <a href="https://www.bloter.net/news/articleView.html?idxno=647466">블로터(국토부 인용)</a> 기반 필자 추정</figcaption>

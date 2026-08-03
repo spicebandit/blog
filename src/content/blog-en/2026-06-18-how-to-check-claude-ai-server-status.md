@@ -52,9 +52,9 @@ koSlug: 2026-06-18-how-to-check-claude-ai-server-status
 </script>
 
 <style>
-.cc-status{border:1px solid #E5DECF;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:#FAF6EE;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.cc-status{border:1px solid #E4E7EC;border-radius:14px;padding:14px 16px;margin:0 0 1.5rem;background:#F6F7F9;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .cc-status .cc-row{display:flex;align-items:center;gap:12px}
-.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#E5DECF;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
+.cc-status .cc-dot{width:18px;height:18px;border-radius:50%;flex:none;background:#E4E7EC;box-shadow:0 0 0 4px rgba(0,0,0,.04)}
 .cc-status .cc-dot.cc-load{animation:ccpulse 1s infinite}
 @keyframes ccpulse{0%,100%{opacity:.35}50%{opacity:1}}
 .cc-status .cc-main{flex:1;min-width:0}
@@ -62,8 +62,8 @@ koSlug: 2026-06-18-how-to-check-claude-ai-server-status
 .cc-status .cc-desc{font-size:1.05rem;font-weight:700}
 .cc-status .cc-link{font-size:.8rem;white-space:nowrap;text-decoration:none;color:#C8102E}
 .cc-status .cc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}
-.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:5px 8px}
-.cc-status .cc-cell.cc-hi{border-color:#C8102E;background:#F1EADD}
+.cc-status .cc-cell{font-size:.83rem;display:flex;align-items:center;gap:6px;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:5px 8px}
+.cc-status .cc-cell.cc-hi{border-color:#C8102E;background:#F6F7F9}
 .cc-status .cc-cell .cc-d{width:9px;height:9px;border-radius:50%;flex:none}
 .cc-status .cc-cell b{margin-left:auto;font-weight:700}
 .cc-status .cc-meta{font-size:.72rem;color:#8A8378;margin-top:8px}
@@ -233,7 +233,7 @@ To sum up, **the No. 1 source is always the official status page ([status.claude
 
 <style>
 .status-legend{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
-.status-legend .st{flex:1;min-width:96px;border:1px solid #E5DECF;border-radius:10px;padding:.6rem .5rem;background:#FAF6EE;font-size:.8rem;line-height:1.45;text-align:center}
+.status-legend .st{flex:1;min-width:96px;border:1px solid #E4E7EC;border-radius:10px;padding:.6rem .5rem;background:#F6F7F9;font-size:.8rem;line-height:1.45;text-align:center}
 .status-legend .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-bottom:.35rem}
 .dot.op{background:#4A6741}.dot.deg{background:#C89B3C}.dot.part{background:#B85C1E}.dot.major{background:#C8102E}.dot.maint{background:#23201D}
 @media(max-width:640px){.status-legend .st{min-width:44%}}

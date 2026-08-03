@@ -65,7 +65,7 @@ SK하이닉스의 선택을 이해하려면 대안을 봐야 한다. 미국 자�
 맥락은 분명하다. AI 반도체 수요 폭발로 HBM은 SK하이닉스의 최대 무기가 됐고, 엔비디아 등 AI 가속기 진영에 대한 공급 주도권을 쥔 상태다. 하지만 삼성전자·마이크론이 맹추격하는 시장에서 이 우위를 지키려면 세대가 바뀔 때마다 천문학적 규모의 선제 투자가 필요하다. 반도체 팹 하나를 짓는 데 수십조 원이 들고, 그 결정은 수요가 확정되기 몇 년 전에 내려야 한다. 국내 자본시장과 영업이익만으로 이 속도전을 감당하기엔 부담이 크다. 즉 ADR은 단순한 '상장 이벤트'가 아니라, **AI 메모리 패권 경쟁에 투입할 실탄을 글로벌 시장에서 미리 조달하는 전략적 행위**다. 40조 원이라는 숫자는 그 경쟁의 규모를 역으로 보여준다. 미국 투자자 입장에서도 AI 붐의 핵심 수혜주에 자국 통화로 직접 베팅할 통로가 열린 셈이어서, 수요예측에 7배가 몰린 흥행은 우연이 아니다.
 
 <figure>
-<svg viewBox="0 0 800 260" role="img" aria-label="외국 기업 미국 IPO 규모 비교. 2014년 알리바바 250억 달러, 2026년 SK하이닉스 265억 달러로 알리바바를 넘어 역대 최대." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 260" role="img" aria-label="외국 기업 미국 IPO 규모 비교. 2014년 알리바바 250억 달러, 2026년 SK하이닉스 265억 달러로 알리바바를 넘어 역대 최대." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">외국 기업 미국 IPO 규모 — SK하이닉스, 알리바바를 넘다</text>
   <text x="20" y="52" font-size="12" fill="#8A8378">단위: 억 달러 · 공모 조달액 기준</text>
   <g font-size="13" fill="#23201D">
@@ -76,7 +76,7 @@ SK하이닉스의 선택을 이해하려면 대안을 봐야 한다. 미국 자�
     <rect x="160" y="142" width="500" height="26" rx="4" fill="#C8102E"/>
     <text x="670" y="162" font-weight="700" fill="#C8102E">265</text>
   </g>
-  <line x1="160" y1="200" x2="720" y2="200" stroke="#E5DECF" stroke-width="1"/>
+  <line x1="160" y1="200" x2="720" y2="200" stroke="#E4E7EC" stroke-width="1"/>
   <text x="160" y="224" font-size="12" fill="#8A8378">미 IPO 전체로는 스페이스X에 이어 역대 2위 규모</text>
   <text x="160" y="244" font-size="12" fill="#8A8378">출처: 이투데이·MBC(2026-07)</text>
 </svg>

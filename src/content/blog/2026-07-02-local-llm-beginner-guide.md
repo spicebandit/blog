@@ -91,10 +91,10 @@ Ollama를 쓴다면 설치 후 터미널에 `ollama run gemma4` 한 줄이면 �
 여기서 "A4B", "A3B"가 붙은 모델은 **MoE(Mixture of Experts)** 구조다. 전체 파라미터 중 매 토큰마다 일부(3~4B)만 활성화돼 계산이 가볍고 빠르다. 반대로 표의 "dense"는 모든 파라미터를 항상 사용하는 일반 구조를 말한다. 단, 주의할 점 — **메모리는 전체 파라미터 기준으로 필요하다.** 35B-A3B는 계산은 3B처럼 하지만 35B 전체가 메모리에 올라가야 한다. MoE가 아끼는 건 연산이지 메모리가 아니라는 것, 초보자가 가장 많이 헷갈리는 지점이다.
 
 <figure>
-<svg viewBox="0 0 800 400" role="img" aria-label="초보자 추천 로컬 LLM 모델별 필요 메모리 비교 바차트. Gemma 4 E2B 약 4GB, Gemma 4 E4B 약 6GB, Gemma 4 26B A4B 16에서 24GB, Qwen3.6-35B-A3B 약 20GB, Gemma 4 31B 17에서 20GB" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 400" role="img" aria-label="초보자 추천 로컬 LLM 모델별 필요 메모리 비교 바차트. Gemma 4 E2B 약 4GB, Gemma 4 E4B 약 6GB, Gemma 4 26B A4B 16에서 24GB, Qwen3.6-35B-A3B 약 20GB, Gemma 4 31B 17에서 20GB" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">추천 모델별 필요 메모리 (Q4 양자화 기준, GB — 낮을수록 진입장벽 낮음)</text>
   <!-- gridlines: 0,8,16,24,32 GB -->
-  <g stroke="#E5DECF" stroke-width="1">
+  <g stroke="#E4E7EC" stroke-width="1">
     <line x1="200" y1="52" x2="200" y2="330"/>
     <line x1="344" y1="52" x2="344" y2="330"/>
     <line x1="488" y1="52" x2="488" y2="330"/>
@@ -119,7 +119,7 @@ Ollama를 쓴다면 설치 후 터미널에 `ollama run gemma4` 한 줄이면 �
   <!-- Gemma 4 26B A4B: 16~24GB range -->
   <text x="192" y="190" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 26B A4B</text>
   <rect x="200" y="172" width="288" height="28" rx="4" fill="#8A8378"/>
-  <rect x="488" y="172" width="144" height="28" rx="4" fill="#E5DECF"/>
+  <rect x="488" y="172" width="144" height="28" rx="4" fill="#E4E7EC"/>
   <text x="640" y="192" font-size="13" fill="#23201D">16~24GB</text>
   <!-- Qwen3.6-35B-A3B: ~20GB -->
   <text x="192" y="245" font-size="13" fill="#23201D" text-anchor="end">Qwen3.6-35B-A3B</text>
@@ -128,7 +128,7 @@ Ollama를 쓴다면 설치 후 터미널에 `ollama run gemma4` 한 줄이면 �
   <!-- Gemma 4 31B: 17~20GB range -->
   <text x="192" y="300" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 31B</text>
   <rect x="200" y="282" width="306" height="28" rx="4" fill="#8A8378"/>
-  <rect x="506" y="282" width="54" height="28" rx="4" fill="#E5DECF"/>
+  <rect x="506" y="282" width="54" height="28" rx="4" fill="#E4E7EC"/>
   <text x="568" y="302" font-size="13" fill="#23201D">17~20GB</text>
 </svg>
 <figcaption>Q4 양자화 기준 필요 메모리(모델 가중치 기준, 컨텍스트용 메모리 별도). 연한 회색은 양자화 수준·컨텍스트 설정에 따른 범위. 출처: Google AI for Developers, Unsloth, APXML</figcaption>

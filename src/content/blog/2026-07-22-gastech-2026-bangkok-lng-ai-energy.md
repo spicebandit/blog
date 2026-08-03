@@ -39,13 +39,13 @@ dmg events의 크리스토퍼 허드슨 회장은 "에너지 산업이 최근 �
 
 숫자가 위기감을 설명한다. 국제에너지기구(IEA) 집계로 전 세계 데이터센터 전력 소비는 2022년 약 460TWh였으나, 2026년 1,000TWh 안팎으로 두 배를 넘어설 전망이다. IEA는 2030년에도 약 945TWh(기준 시나리오) 수준으로 2022년 대비 두 배 이상을 예상하며, AI 확산이 더 빠른 고성장 시나리오에서는 증가폭이 이보다 커질 수 있다고 본다. 이를 뒷받침할 신규 인프라 투자는 수조 달러 단위로 추산된다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 220" width="100%" height="auto" role="img" aria-label="전 세계 데이터센터 전력수요: 2022년 460TWh에서 2026년 약 1000TWh로 두 배 초과, 2030년 약 945TWh(2022년 대비 두 배 이상)">
   <line x1="60" y1="180" x2="400" y2="180" stroke="#8A8378" stroke-width="1"/>
   <text x="72" y="196" fill="#8A8378" font-size="12">2022</text>
   <text x="200" y="196" fill="#23201D" font-size="12">2026(E)</text>
   <text x="325" y="196" fill="#23201D" font-size="12">2030(E)</text>
-  <rect x="70" y="115" width="60" height="65" fill="#E5DECF"/>
+  <rect x="70" y="115" width="60" height="65" fill="#E4E7EC"/>
   <text x="78" y="109" fill="#8A8378" font-size="12">460</text>
   <rect x="195" y="40" width="60" height="140" fill="#C8102E"/>
   <text x="197" y="34" fill="#C8102E" font-size="12" font-weight="bold">~1,000</text>
@@ -89,7 +89,7 @@ dmg events의 크리스토퍼 허드슨 회장은 "에너지 산업이 최근 �
 
 한국의 대응은 이 흐름을 압축적으로 보여준다. 가스공사(KOGAS)는 중동산 LNG 의존을 빠르게 낮춰 왔다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 200" width="100%" height="auto" role="img" aria-label="한국 중동산 LNG 수입 비중: 2024년 33%에서 2025년 말 20% 미만으로 하락">
   <line x1="60" y1="160" x2="400" y2="160" stroke="#8A8378" stroke-width="1"/>
   <rect x="110" y="50" width="70" height="110" fill="#8A8378"/>

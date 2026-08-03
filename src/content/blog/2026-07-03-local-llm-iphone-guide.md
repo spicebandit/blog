@@ -27,9 +27,9 @@ tags: ["로컬LLM", "아이폰AI", "온디바이스AI", "PocketPal"]
 속도는 어떨까. 2026년 6월 기준 실측을 정리한 [PromptQuorum 가이드](https://www.promptquorum.com/power-local-llm/best-local-llm-apps-iphone-2026)에 따르면 iPhone 16 Pro에서 Phi-4 Mini(3.8B, Q4) 기준 초당 10~15토큰(Metal 가속 앱은 14~20토큰) 수준이다. 1B급 소형 모델은 최신 기종에서 초당 25~40토큰까지 나온다는 집계도 있다([Local AI Master](https://localaimaster.com/blog/run-llm-on-phone)). 사람이 글을 읽는 속도가 대략 초당 5~7토큰 수준임을 감안하면, **채팅 용도로는 충분히 실용적인 속도**다. 다만 두 가지를 각오해야 한다. 장문 생성을 10~15분 이상 계속하면 발열로 속도가 30~50% 떨어지고, 연속 추론 중 배터리는 시간당 20~30%씩 닳는다는 실측 보고가 있다. 아이폰 로컬 LLM은 "짧고 빈번한 대화"용이지, 장편 보고서 생성기가 아니다.
 
 <figure>
-<svg viewBox="0 0 800 260" role="img" aria-label="아이폰 16 Pro급 기준 모델 크기별 생성 속도 비교 바차트. 1B급 모델 초당 25에서 40토큰, 3~4B급 모델 초당 10에서 20토큰, 사람이 읽는 속도 초당 약 5에서 7토큰" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 260" role="img" aria-label="아이폰 16 Pro급 기준 모델 크기별 생성 속도 비교 바차트. 1B급 모델 초당 25에서 40토큰, 3~4B급 모델 초당 10에서 20토큰, 사람이 읽는 속도 초당 약 5에서 7토큰" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">아이폰(16 Pro급)에서 모델 크기별 생성 속도 (토큰/초 — 높을수록 빠름)</text>
-  <g stroke="#E5DECF" stroke-width="1">
+  <g stroke="#E4E7EC" stroke-width="1">
     <line x1="220" y1="50" x2="220" y2="210"/>
     <line x1="355" y1="50" x2="355" y2="210"/>
     <line x1="490" y1="50" x2="490" y2="210"/>
@@ -46,13 +46,13 @@ tags: ["로컬LLM", "아이폰AI", "온디바이스AI", "PocketPal"]
   <text x="212" y="80" font-size="13" fill="#23201D" text-anchor="end">1B급 (Llama 3.2 1B 등)</text>
   <rect x="220" y="62" width="337" height="26" rx="4" fill="#C8102E"/>
   <rect x="557" y="62" width="203" height="26" rx="4" fill="#EBB1B4"/>
-  <text x="560" y="80" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="end">25~40</text>
+  <text x="560" y="80" font-size="13" font-weight="700" fill="#F6F7F9" text-anchor="end">25~40</text>
   <text x="212" y="130" font-size="13" fill="#23201D" text-anchor="end">3~4B급 (Phi-4 Mini 등)</text>
   <rect x="220" y="112" width="135" height="26" rx="4" fill="#8A8378"/>
-  <rect x="355" y="112" width="135" height="26" rx="4" fill="#E5DECF"/>
+  <rect x="355" y="112" width="135" height="26" rx="4" fill="#E4E7EC"/>
   <text x="498" y="130" font-size="13" fill="#23201D">10~20</text>
   <text x="212" y="180" font-size="13" fill="#23201D" text-anchor="end">사람이 읽는 속도 (참고)</text>
-  <rect x="220" y="162" width="81" height="26" rx="4" fill="#E5DECF"/>
+  <rect x="220" y="162" width="81" height="26" rx="4" fill="#E4E7EC"/>
   <text x="309" y="180" font-size="13" fill="#8A8378">약 5~7</text>
 </svg>
 <figcaption>모델 크기별 생성 속도 실측 범위(연한 색은 앱·양자화·발열 상태에 따른 변동 폭). 읽는 속도보다 빠르면 채팅용으로 실용적이다. 출처: PromptQuorum(2026-06), Local AI Master</figcaption>

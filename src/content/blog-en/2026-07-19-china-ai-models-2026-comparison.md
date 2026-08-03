@@ -30,7 +30,7 @@ In short, China's AI isn't a single champion but **a collective of domain specia
 
 The real question is "does it work as well as GPT or Claude?" The sober mid-2026 answer: **"the very top is still the US, but the gap has shrunk astonishingly."** Aggregating several leaderboards, the composite-score gap between the best US proprietary model and the best Chinese model is around 9 points — closing far faster than the industry forecast.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 240" width="100%" height="auto" role="img" aria-label="The composite performance gap between the top US proprietary model and the top Chinese open model narrowed from the low 20s in 2024 to about 9 points in 2026">
   <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">US–China top-AI performance gap (composite-score diff, smaller = catching up)</text>
   <line x1="60" y1="190" x2="700" y2="190" stroke="#8A8378" stroke-width="1"/>
@@ -79,7 +79,7 @@ Leaderboard rank swings with method and version, of course, and a "No. 3 debut" 
 
 As disruptive as performance, maybe more, is price. Chinese models charge API fees **5 to 30 times cheaper** than US rivals. In an extreme case, DeepSeek's V3.2 line is reported at about $0.28 per million input tokens — against roughly $10 for a top US model (GPT family; varies by tier and time), a **many-fold difference** ([TokenMix](https://tokenmix.ai/blog/best-chinese-ai-models-2026-comparison-guide)).
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="API input price per million tokens: DeepSeek about $0.28, top GPT family about $10">
   <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">API input price (per 1M tokens, lower = cheaper)</text>
   <g font-size="13" fill="#23201D">

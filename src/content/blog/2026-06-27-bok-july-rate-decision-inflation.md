@@ -23,12 +23,12 @@ tags: ["금통위", "기준금리", "소비자물가", "한국은행"]
 *출처: 통계청 「2026년 5월 소비자물가동향」(정책브리핑), 한국은행 통화정책방향 결정회의 공개자료*
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="소비자물가 상승률 비교 막대 그래프: 3월 2.2%, 4월 2.6%, 5월 3.1%, 5월 근원물가 2.5%, 한은 물가목표 2.0%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="소비자물가 상승률 비교 막대 그래프: 3월 2.2%, 4월 2.6%, 5월 3.1%, 5월 근원물가 2.5%, 한은 물가목표 2.0%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">소비자물가 상승률 — 전년 동월 대비, %</text>
 <line x1="150" y1="60" x2="150" y2="262" stroke="#8A8378"/>
 <line x1="150" y1="262" x2="690" y2="262" stroke="#8A8378"/>
 <text x="140" y="84" text-anchor="end" font-size="13" fill="#23201D">3월 CPI(추정)</text>
-<rect x="150" y="68" width="297" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="68" width="297" height="24" rx="3" fill="#E4E7EC"/>
 <text x="453" y="84" font-size="12" fill="#8A8378">~2.2%</text>
 <text x="140" y="124" text-anchor="end" font-size="13" fill="#23201D">4월 CPI</text>
 <rect x="150" y="108" width="351" height="24" rx="3" fill="#8A8378"/>
@@ -40,7 +40,7 @@ tags: ["금통위", "기준금리", "소비자물가", "한국은행"]
 <rect x="150" y="188" width="337.5" height="24" rx="3" fill="#8A8378"/>
 <text x="493.5" y="204" font-size="12" fill="#8A8378">2.5%</text>
 <text x="140" y="244" text-anchor="end" font-size="13" fill="#23201D">한은 물가목표</text>
-<rect x="150" y="228" width="270" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="228" width="270" height="24" rx="3" fill="#E4E7EC"/>
 <text x="426" y="244" font-size="12" fill="#8A8378">2.0%</text>
 <line x1="150" y1="262" x2="150" y2="266" stroke="#8A8378"/>
 <line x1="285" y1="262" x2="285" y2="266" stroke="#8A8378"/>
@@ -83,7 +83,7 @@ tags: ["금통위", "기준금리", "소비자물가", "한국은행"]
 3. **인하**: 물가가 다시 빠르게 꺾이고 내수 지표가 급랭하지 않는 한, 당장 7월 인하는 가능성이 낮다는 평가가 우세하다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7월 금통위 기준금리 시나리오 막대 그래프: 동결 시 연 2.5%, 25bp 인상 시 연 2.75%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="7월 금통위 기준금리 시나리오 막대 그래프: 동결 시 연 2.5%, 25bp 인상 시 연 2.75%" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">7월 금통위 기준금리 시나리오 — 연 %</text>
 <line x1="150" y1="60" x2="150" y2="142" stroke="#8A8378"/>
 <line x1="150" y1="142" x2="690" y2="142" stroke="#8A8378"/>

@@ -57,15 +57,15 @@ tags: ["Codex", "Claude Code", "AI 코딩", "개발도구"]
 
 *출처: [Composio, "Claude Code vs OpenAI Codex" (2026-06)](https://composio.dev/content/claude-code-vs-openai-codex). 다른 비교에서는 SWE-bench Verified가 GPT-5.5 88.7% 등으로 집계돼 순위가 뒤집히기도 한다.*
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:18px 16px;margin:1.6em 0;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:18px 16px;margin:1.6em 0;">
 <svg viewBox="0 0 720 360" width="100%" height="auto" role="img" aria-label="SWE-bench Verified, SWE-bench Pro, Terminal-Bench에서 Claude Code(Opus 4.8)와 Codex(GPT-5.5) 점수 비교 막대그래프">
   <line x1="70" y1="40" x2="70" y2="300" stroke="#8A8378" stroke-width="1"/>
   <line x1="70" y1="300" x2="690" y2="300" stroke="#23201D" stroke-width="1.5"/>
   <!-- y grid 25/50/75/100 -->
   <g font-family="sans-serif" font-size="11" fill="#8A8378">
-    <line x1="70" y1="235" x2="690" y2="235" stroke="#E5DECF" stroke-width="1"/><text x="40" y="239">25</text>
-    <line x1="70" y1="170" x2="690" y2="170" stroke="#E5DECF" stroke-width="1"/><text x="40" y="174">50</text>
-    <line x1="70" y1="105" x2="690" y2="105" stroke="#E5DECF" stroke-width="1"/><text x="40" y="109">75</text>
+    <line x1="70" y1="235" x2="690" y2="235" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="239">25</text>
+    <line x1="70" y1="170" x2="690" y2="170" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="174">50</text>
+    <line x1="70" y1="105" x2="690" y2="105" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="109">75</text>
     <text x="40" y="44">100</text>
   </g>
   <!-- Group 1: Verified (Claude 88.6->h230, Codex 87.6->h228) -->

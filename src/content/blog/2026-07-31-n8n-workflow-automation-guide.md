@@ -70,7 +70,7 @@ n8n을 쓰는 방법은 크게 세 가지다. 목적과 기술 수준에 따라 
 
 가장 중요한 차이는 **과금 방식**이다. 자피어는 워크플로 안의 '액션 하나하나'를 태스크로 센다. 10단계 자동화를 월 1,000번 돌리면 1만 태스크가 소모된다. 반면 n8n은 '워크플로 한 번 실행'을 1회로 센다. 단계가 10개든 2개든 같다. 그래서 **여러 단계짜리 워크플로를 월 1만 번 돌리는 경우, n8n이 자피어보다 비용을 80~90%까지 줄일 수 있다**([Cipher Projects](https://www.cipherprojects.com/blog/posts/n8n-vs-zapier-automation-tool-comparison/)). 복잡하고 대량인 자동화일수록 이 격차가 벌어진다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 180" width="100%" height="auto" role="img" aria-label="10단계 워크플로를 월 1만 번 실행할 때, 자피어는 태스크당 과금으로 비용이 크고 n8n은 실행당 과금으로 80~90% 저렴함을 나타낸 비교 막대">
   <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">여러 단계 × 월 1만 실행 시 비용 (낮을수록 이득↑)</text>
   <line x1="20" y1="150" x2="400" y2="150" stroke="#8A8378" stroke-width="1"/>

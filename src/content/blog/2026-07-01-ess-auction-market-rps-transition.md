@@ -44,7 +44,7 @@ ESS 중앙계약시장은 2025년 1차를 시작으로 이미 두 차례 진행�
 | 낙찰가(배터리) | kWh당 약 **30원대** | kWh당 **20원대 이하**로 추가 하락 |
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 중앙계약시장 차수별 선정 물량 막대 그래프: 1차 565메가와트, 2차 육지 525메가와트, 2차 제주 40메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 중앙계약시장 차수별 선정 물량 막대 그래프: 1차 565메가와트, 2차 육지 525메가와트, 2차 제주 40메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">ESS 중앙계약시장 차수별 선정 물량 — 단위: MW</text>
 <line x1="150" y1="64" x2="150" y2="196" stroke="#8A8378"/>
 <line x1="150" y1="196" x2="690" y2="196" stroke="#8A8378"/>
@@ -55,12 +55,12 @@ ESS 중앙계약시장은 2025년 1차를 시작으로 이미 두 차례 진행�
 <text x="690" y="212" font-size="11" fill="#8A8378" text-anchor="middle">600</text>
 <text x="140" y="97" font-size="13" fill="#23201D" text-anchor="end">1차(2025)</text>
 <rect x="150" y="80" width="508.5" height="24" rx="3" fill="#C8102E"/>
-<text x="650.5" y="97" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="end">565MW</text>
+<text x="650.5" y="97" font-size="12" font-weight="700" fill="#F6F7F9" text-anchor="end">565MW</text>
 <text x="140" y="137" font-size="13" fill="#23201D" text-anchor="end">2차 육지</text>
 <rect x="150" y="120" width="472.5" height="24" rx="3" fill="#8A8378"/>
 <text x="630.5" y="137" font-size="12" fill="#8A8378">525MW</text>
 <text x="140" y="177" font-size="13" fill="#23201D" text-anchor="end">2차 제주</text>
-<rect x="150" y="160" width="36" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="160" width="36" height="24" rx="3" fill="#E4E7EC"/>
 <text x="194" y="177" font-size="12" fill="#8A8378">40MW</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">두 차례 입찰로 약 1.1GW 확정 — 2차는 육지 525MW + 제주 40MW로 1차(565MW)와 비슷한 규모</figcaption>
@@ -74,7 +74,7 @@ ESS 중앙계약시장은 2025년 1차를 시작으로 이미 두 차례 진행�
 - 배터리 단가는 MWh당 **2억 원 이하**까지 하락(전년 제주 사업 약 3.5억 원 대비 대폭↓).
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="남부발전 1차 확보 물량 240메가와트의 사업지별 구성 막대 그래프: 광양 96, 고흥 96, 진도 48메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="남부발전 1차 확보 물량 240메가와트의 사업지별 구성 막대 그래프: 광양 96, 고흥 96, 진도 48메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">남부발전 1차 확보 물량 240MW — 사업지별, 단위: MW</text>
 <line x1="150" y1="64" x2="150" y2="196" stroke="#8A8378"/>
 <line x1="150" y1="196" x2="690" y2="196" stroke="#8A8378"/>
@@ -85,10 +85,10 @@ ESS 중앙계약시장은 2025년 1차를 시작으로 이미 두 차례 진행�
 <text x="690" y="212" font-size="11" fill="#8A8378" text-anchor="middle">100</text>
 <text x="140" y="97" font-size="13" fill="#23201D" text-anchor="end">광양</text>
 <rect x="150" y="80" width="518.4" height="24" rx="3" fill="#C8102E"/>
-<text x="660.4" y="97" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="end">96MW</text>
+<text x="660.4" y="97" font-size="12" font-weight="700" fill="#F6F7F9" text-anchor="end">96MW</text>
 <text x="140" y="137" font-size="13" fill="#23201D" text-anchor="end">고흥</text>
 <rect x="150" y="120" width="518.4" height="24" rx="3" fill="#C8102E"/>
-<text x="660.4" y="137" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="end">96MW</text>
+<text x="660.4" y="137" font-size="12" font-weight="700" fill="#F6F7F9" text-anchor="end">96MW</text>
 <text x="140" y="177" font-size="13" fill="#23201D" text-anchor="end">진도</text>
 <rect x="150" y="160" width="259.2" height="24" rx="3" fill="#8A8378"/>
 <text x="417.2" y="177" font-size="12" fill="#8A8378">48MW</text>
@@ -157,10 +157,10 @@ ESS의 진짜 변화는 '배터리가 싸졌다'가 아니라 **'돈 버는 규�
 .bar-wrap{margin:1rem 0}
 .bar-row{display:flex;align-items:center;gap:10px;margin:8px 0}
 .bar-lbl{width:70px;font-size:.85rem;color:#8A8378;flex:none;text-align:right}
-.bar{background:#E5DECF;border-radius:6px;height:34px;display:flex;align-items:center;min-width:60px}
+.bar{background:#E4E7EC;border-radius:6px;height:34px;display:flex;align-items:center;min-width:60px}
 .bar.big{background:linear-gradient(90deg,#C8102E,#9C0C24)}
 .bar span{color:#23201D;font-weight:700;font-size:.85rem;padding:0 10px;white-space:nowrap}
-.bar.big span{color:#FAF6EE}
+.bar.big span{color:#F6F7F9}
 .bar-cap{font-size:.8rem;color:#8A8378;margin:.3rem 0 0}
 </style>
 

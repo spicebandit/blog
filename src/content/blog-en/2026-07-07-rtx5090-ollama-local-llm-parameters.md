@@ -43,16 +43,16 @@ In other words, **the same model can need several times more or less memory depe
 
 Plug the math above into the 5090's 32GB and you get this table. Figures are for Q4, and speeds are approximate.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 280" width="100%" height="auto" role="img" aria-label="Bar chart of Q4 required memory by model size on an RTX 5090 with 32GB of VRAM. 8B about 5 gigabytes, 14B about 9 gigabytes, and 32B about 20 gigabytes all fit within 32 gigabytes. 70B about 40 gigabytes exceeds the limit.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">Required VRAM by Q4 model on an RTX 5090 (32GB)</text>
   <line x1="200" y1="40" x2="200" y2="230" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="4 3"/>
   <text x="205" y="52" fill="#C8102E" font-size="11" font-weight="bold">← 32GB limit line</text>
   <text x="150" y="76" fill="#23201D" font-size="13">8B</text>
-  <rect x="70" y="62" width="20" height="20" fill="#E5DECF"/>
+  <rect x="70" y="62" width="20" height="20" fill="#E4E7EC"/>
   <text x="95" y="76" fill="#8A8378" font-size="11">~5GB · very fast</text>
   <text x="140" y="116" fill="#23201D" font-size="13">14B</text>
-  <rect x="70" y="102" width="36" height="20" fill="#E5DECF"/>
+  <rect x="70" y="102" width="36" height="20" fill="#E4E7EC"/>
   <text x="112" y="116" fill="#8A8378" font-size="11">~9GB · fast</text>
   <text x="140" y="156" fill="#23201D" font-size="13">32B</text>
   <rect x="70" y="142" width="80" height="20" fill="#C8102E"/>

@@ -32,7 +32,7 @@ tags: ["테슬라FSD", "구독경제", "FSD구독", "재테크"]
 가장 단순한 계산부터. 일시불 904만 3,000원을 월 구독료 15만원으로 나누면 **약 60.3개월, 즉 5년**이 나온다. 딱 5년을 쓰면 두 방식의 누적 지출이 같아지고, **5년보다 오래 쓰면 옛 일시불이, 5년보다 짧게 쓰면 구독이 이득**이다.
 
 <figure>
-<svg viewBox="0 0 800 300" role="img" aria-label="테슬라 FSD 일시불 904만원과 월 15만원 구독의 누적 비용 비교. 3년 540만원, 5년 900만원에서 일시불과 교차하고, 7년이면 구독 누적이 1260만원으로 일시불을 넘어선다." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 300" role="img" aria-label="테슬라 FSD 일시불 904만원과 월 15만원 구독의 누적 비용 비교. 3년 540만원, 5년 900만원에서 일시불과 교차하고, 7년이면 구독 누적이 1260만원으로 일시불을 넘어선다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">FSD 누적 비용: 구독 vs 일시불 (손익분기 약 5년)</text>
   <text x="20" y="50" font-size="12" fill="#8A8378">단위 만원 · 구독 월 15만원 누적 vs 일시불 904만원(점선)</text>
   <line x1="60" y1="250" x2="770" y2="250" stroke="#8A8378" stroke-width="1"/>
@@ -40,8 +40,8 @@ tags: ["테슬라FSD", "구독경제", "FSD구독", "재테크"]
   <line x1="60" y1="128" x2="770" y2="128" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="6 4"/>
   <text x="765" y="122" font-size="12" font-weight="700" fill="#C8102E" text-anchor="end">일시불 904만</text>
   <g font-size="12" fill="#23201D" text-anchor="middle">
-    <rect x="110" y="214" width="70" height="36" fill="#E5DECF"/><text x="145" y="206">180</text><text x="145" y="268" fill="#8A8378">1년</text>
-    <rect x="270" y="178" width="70" height="72" fill="#E5DECF"/><text x="305" y="170">540</text><text x="305" y="268" fill="#8A8378">3년</text>
+    <rect x="110" y="214" width="70" height="36" fill="#E4E7EC"/><text x="145" y="206">180</text><text x="145" y="268" fill="#8A8378">1년</text>
+    <rect x="270" y="178" width="70" height="72" fill="#E4E7EC"/><text x="305" y="170">540</text><text x="305" y="268" fill="#8A8378">3년</text>
     <rect x="430" y="130" width="70" height="120" fill="#8A8378"/><text x="465" y="122">900</text><text x="465" y="268" fill="#8A8378">5년(본전)</text>
     <rect x="590" y="82" width="70" height="168" fill="#C8102E"/><text x="625" y="74" font-weight="700" fill="#C8102E">1,260</text><text x="625" y="268" fill="#8A8378">7년</text>
   </g>

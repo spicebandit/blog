@@ -35,7 +35,7 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
 *출처: Wood Mackenzie(2025-11), CATL 발표(2025-04), electrive·carnewschina 보도. 수치는 셀 사양·제조사·시점에 따라 달라지는 범위값.*
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="나트륨이온·LFP·NCM 에너지밀도 범위 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="나트륨이온·LFP·NCM 에너지밀도 범위 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">에너지밀도 비교 — 높을수록 유리 (Wh/kg, 셀 기준)</text>
   <!-- 차트영역 x:170~690 (520px), 0~260Wh/kg → 2px/Wh -->
   <line x1="170" y1="60" x2="170" y2="210" stroke="#8A8378" stroke-width="1"/>
@@ -53,7 +53,7 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
   <text x="498" y="137" font-size="12" fill="#8A8378">90~160</text>
   <!-- NCM 150~250 → x 470~670 -->
   <text x="160" y="184" font-size="13" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
-  <rect x="470" y="170" width="200" height="24" rx="3" fill="#E5DECF"/>
+  <rect x="470" y="170" width="200" height="24" rx="3" fill="#E4E7EC"/>
   <text x="560" y="187" font-size="12" fill="#8A8378" font-weight="700">150~250</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">나트륨이온 최상급(CATL Naxtra 175Wh/kg)은 이미 LFP 상단을 넘본다. 다만 범용 셀은 아직 120~160Wh/kg대다.</figcaption>
@@ -72,7 +72,7 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
 **셋째, 가격이 실제로 수렴하고 있다.** 우드매켄지는 2025년 11월 분석에서 평균 셀 원가를 **LFP $52/kWh, 나트륨이온 $59/kWh**로 추정했다. 아직 나트륨이 13%가량 비싸지만, 하락 기울기는 나트륨 쪽이 더 가파르며 **2035년경 파리티(가격 동등)**에 도달할 것으로 봤다. 학계는 더 낙관적이다. 핀란드 LUT대·독일 카를스루에공대(KIT) 공동 연구(에너지저장저널 게재)는 나트륨이온 셀이 "이미 리튬이온과 원가 파리티에 근접했다"며, 학습곡선이 유지되면 2050년 저장 균등화비용(LCOS)에서 나트륨이온(11~14유로/MWh)이 리튬이온(16~22유로/MWh)을 앞선다고 전망했다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2025년 나트륨이온과 LFP 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2025년 나트륨이온과 LFP 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh, 2025년 평균 추정)</text>
   <!-- 차트영역 x:170~690 (520px), 0~80$/kWh → 6.5px/$ -->
   <line x1="170" y1="60" x2="170" y2="170" stroke="#8A8378" stroke-width="1"/>

@@ -61,7 +61,7 @@ tags: ["키미K3", "문샷", "AI요금제", "중국AI"]
 
 먼저 포지셔닝을 보자. K3의 $3/$15(입력/출력)는 딥시크식 초저가가 아니다. 앤스로픽 클로드 소네트와 **똑같은 값**이고, GPT-5.6 Sol(약 $2.5/$15)·제미나이 3 Pro(약 $2/$12)보다 오히려 조금 비싸다. 대신 클로드 오푸스(약 $5/$25)보다는 싸다([eesel AI](https://www.eesel.ai/blog/kimi-k3-pricing)). 반대로 같은 중국 진영의 딥시크 V4와 비교하면, 출력 토큰 기준 **약 13~21배 비싸다**(저가형 V4 Flash 대비 약 21배, 상위 V4 Pro의 블렌디드 기준으로도 13배 안팎). 한마디로 K3는 '가격으로 싸움을 거는' 모델이 아니라 **'프런티어 성능을 프런티어보다 조금 싼 값에, 게다가 오픈으로' 파는** 모델이다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 250" width="100%" height="auto" role="img" aria-label="주요 AI 모델의 출력 토큰 100만개당 API 가격 비교. 딥시크 약 0.7달러, 제미나이3 프로 12달러, GPT-5.6 Sol과 클로드 소네트와 키미 K3 15달러, 클로드 오푸스 25달러">
   <text x="20" y="26" font-size="15" font-weight="700" fill="#23201D">출력 100만 토큰당 API 가격 비교 (낮을수록 저렴, 단위 $)</text>
   <g font-size="12.5" fill="#23201D">
@@ -69,16 +69,16 @@ tags: ["키미K3", "문샷", "AI요금제", "중국AI"]
     <rect x="160" y="48" width="18" height="20" rx="3" fill="#8A8378"/>
     <text x="186" y="63" fill="#23201D">~$0.7</text>
     <text x="150" y="92" text-anchor="end">제미나이 3 Pro</text>
-    <rect x="160" y="78" width="288" height="20" rx="3" fill="#E5DECF"/>
+    <rect x="160" y="78" width="288" height="20" rx="3" fill="#E4E7EC"/>
     <text x="456" y="93" fill="#23201D">~$12</text>
     <text x="150" y="122" text-anchor="end">GPT-5.6 Sol</text>
-    <rect x="160" y="108" width="360" height="20" rx="3" fill="#E5DECF"/>
+    <rect x="160" y="108" width="360" height="20" rx="3" fill="#E4E7EC"/>
     <text x="528" y="123" fill="#23201D">~$15</text>
     <text x="150" y="152" text-anchor="end">키미 K3</text>
     <rect x="160" y="138" width="360" height="20" rx="3" fill="#C8102E"/>
     <text x="528" y="153" font-weight="700" fill="#C8102E">$15</text>
     <text x="150" y="182" text-anchor="end">클로드 소네트</text>
-    <rect x="160" y="168" width="360" height="20" rx="3" fill="#E5DECF"/>
+    <rect x="160" y="168" width="360" height="20" rx="3" fill="#E4E7EC"/>
     <text x="528" y="183" fill="#23201D">$15</text>
     <text x="150" y="212" text-anchor="end">클로드 오푸스</text>
     <rect x="160" y="198" width="500" height="20" rx="3" fill="#23201D"/>
@@ -94,7 +94,7 @@ tags: ["키미K3", "문샷", "AI요금제", "중국AI"]
 
 **둘째, 성능당 비용.** K3는 코딩 특화 벤치마크에서 같은 오픈 진영을 큰 폭으로 앞선다. 문샷 자체 하니스 기준 DeepSWE 67.5(GLM-5.2 46.2), FrontierSWE 81.2(GLM-5.2 67.3)로 측정됐다([MarkTechPost](https://www.marktechpost.com/2026/07/18/kimi-k3-vs-deepseek-v4-pro-vs-glm-5-2-open-trillion-scale-moe-models-compared-on-benchmarks-license-and-serving-cost/)). 토큰 단가가 조금 비싸도, 한 번에 문제를 더 많이 풀어내면 '작업 하나를 끝내는 총비용'은 낮아질 수 있다. 경제성은 토큰 단가가 아니라 **작업 완수 비용**으로 봐야 한다는 얘기다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="코딩 벤치마크에서 키미 K3와 GLM-5.2 점수 비교. DeepSWE는 K3 67.5 대 GLM 46.2, FrontierSWE는 K3 81.2 대 GLM 67.3으로 K3가 앞선다">
   <text x="20" y="26" font-size="15" font-weight="700" fill="#23201D">코딩 벤치마크 비교 (높을수록 우수, 점)</text>
   <g font-size="12.5" fill="#23201D">
@@ -102,13 +102,13 @@ tags: ["키미K3", "문샷", "AI요금제", "중국AI"]
     <rect x="160" y="52" width="338" height="20" rx="3" fill="#C8102E"/>
     <text x="506" y="67" font-weight="700" fill="#C8102E">67.5</text>
     <text x="150" y="94" text-anchor="end">DeepSWE · GLM-5.2</text>
-    <rect x="160" y="80" width="231" height="20" rx="3" fill="#E5DECF"/>
+    <rect x="160" y="80" width="231" height="20" rx="3" fill="#E4E7EC"/>
     <text x="399" y="95" fill="#23201D">46.2</text>
     <text x="150" y="134" text-anchor="end">FrontierSWE · K3</text>
     <rect x="160" y="120" width="406" height="20" rx="3" fill="#C8102E"/>
     <text x="574" y="135" font-weight="700" fill="#C8102E">81.2</text>
     <text x="150" y="162" text-anchor="end">FrontierSWE · GLM-5.2</text>
-    <rect x="160" y="148" width="337" height="20" rx="3" fill="#E5DECF"/>
+    <rect x="160" y="148" width="337" height="20" rx="3" fill="#E4E7EC"/>
     <text x="505" y="163" fill="#23201D">67.3</text>
   </g>
 </svg>

@@ -72,7 +72,7 @@ Even for the same automation, the three tools aim at different things. The table
 
 The most important difference is **billing model**. Zapier counts each individual action in a workflow as a task. A 10-step automation run 1,000 times a month burns 10,000 tasks. n8n, by contrast, counts "one run of a workflow" as one execution — whether it's 10 steps or 2. So **for a multi-step workflow run 10,000 times a month, n8n can cut costs by up to 80–90% versus Zapier** ([Cipher Projects](https://www.cipherprojects.com/blog/posts/n8n-vs-zapier-automation-tool-comparison/)). The more complex and high-volume the automation, the wider this gap.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 180" width="100%" height="auto" role="img" aria-label="For a multi-step workflow run 10,000 times a month, Zapier's per-task billing is costly while n8n's per-execution billing is 80-90 percent cheaper">
   <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">Cost for multi-step × 10K runs/mo (lower = better)</text>
   <line x1="20" y1="150" x2="400" y2="150" stroke="#8A8378" stroke-width="1"/>

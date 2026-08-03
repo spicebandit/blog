@@ -72,15 +72,15 @@ tags: ["두산에너빌리티", "가스터빈", "AI전력난", "발전"]
 
 증권가가 보는 그림은 더 크다. **수주잔고**는 AI發 수요를 타고 빠르게 불어날 것으로 전망된다.
 
-<figure style="margin:1.5rem 0;padding:1rem;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<figure style="margin:1.5rem 0;padding:1rem;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <svg viewBox="0 0 640 280" width="100%" height="auto" role="img" aria-label="두산에너빌리티 수주잔고 전망 막대그래프. 2026년 약 30조 원, 2027년 약 42조 원.">
   <text x="320" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#23201D">두산에너빌리티 수주잔고 전망 (증권가 추정, 조 원)</text>
   <line x1="70" y1="240" x2="600" y2="240" stroke="#23201D" stroke-width="1.5"/>
   <text x="62" y="244" text-anchor="end" font-size="11" fill="#8A8378">0</text>
   <text x="62" y="170" text-anchor="end" font-size="11" fill="#8A8378">20</text>
   <text x="62" y="100" text-anchor="end" font-size="11" fill="#8A8378">40</text>
-  <line x1="70" y1="170" x2="600" y2="170" stroke="#E5DECF" stroke-width="0.5"/>
-  <line x1="70" y1="100" x2="600" y2="100" stroke="#E5DECF" stroke-width="0.5"/>
+  <line x1="70" y1="170" x2="600" y2="170" stroke="#E4E7EC" stroke-width="0.5"/>
+  <line x1="70" y1="100" x2="600" y2="100" stroke="#E4E7EC" stroke-width="0.5"/>
   <!-- 스케일 3.5px/조 (240 기준선 - 값*3.5) -->
   <!-- 2026: 30조 -> 높이 105 -->
   <rect x="180" y="135" width="120" height="105" fill="#8A8378"/>

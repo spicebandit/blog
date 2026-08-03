@@ -23,11 +23,11 @@ The other current is Apple Silicon's **unified memory** architecture. Because th
 
 Why does that matter? Cloud APIs are convenient, but they bill you three ways — **money** (per-token charges), **latency** (the network round trip), and **privacy** (your input passes through someone else's server). A local LLM removes all three at once. For solo developers and one-person companies handling internal documents, private notes, or unreleased code they'd rather not send out, "AI that ends inside my own laptop" is an appealing trade-off even at a slight performance cost.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="Approximate 4-bit quantized memory footprint by Qwen3.5 dense size, with the 16GB MacBook Air usable limit">
 <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="700" fill="#23201D">Memory by Qwen3.5 size (4-bit, approx.) — lower is lighter</text>
 <text x="20" y="48" font-family="sans-serif" font-size="12" fill="#8A8378">Gray dashed line = practical ceiling on a 16GB MacBook Air (model + context headroom)</text>
-<line x1="150" y1="80" x2="150" y2="250" stroke="#E5DECF" stroke-width="1"/>
+<line x1="150" y1="80" x2="150" y2="250" stroke="#E4E7EC" stroke-width="1"/>
 <rect x="150" y="90" width="16" height="24" fill="#8A8378"/>
 <text x="110" y="107" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">0.8B</text>
 <text x="174" y="107" font-family="sans-serif" font-size="12" fill="#23201D">~0.7GB</text>

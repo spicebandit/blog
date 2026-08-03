@@ -75,19 +75,19 @@ paperclipai company create --name "MyStartup" --goal "블로그를 성장시킨�
 
 블로그 운영을 예로 들면 이런 최소 구성이 가능하다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 260" width="100%" height="auto" role="img" aria-label="블로그 운영용 최소 AI 조직도. 사람(이사회) 아래 편집장 에이전트, 그 아래 기자 에이전트와 개발 에이전트가 있는 3단 구조.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">블로그 운영용 최소 조직도 예시 (사람 1 + 에이전트 3)</text>
   <rect x="240" y="40" width="160" height="40" fill="#C8102E" rx="6"/>
-  <text x="320" y="65" fill="#FAF6EE" font-size="14" font-weight="bold" text-anchor="middle">나 (이사회·승인)</text>
+  <text x="320" y="65" fill="#F6F7F9" font-size="14" font-weight="bold" text-anchor="middle">나 (이사회·승인)</text>
   <line x1="320" y1="80" x2="320" y2="110" stroke="#8A8378" stroke-width="2"/>
   <rect x="240" y="110" width="160" height="40" fill="#23201D" rx="6"/>
-  <text x="320" y="135" fill="#FAF6EE" font-size="13" text-anchor="middle">편집장 에이전트</text>
+  <text x="320" y="135" fill="#F6F7F9" font-size="13" text-anchor="middle">편집장 에이전트</text>
   <line x1="320" y1="150" x2="180" y2="185" stroke="#8A8378" stroke-width="2"/>
   <line x1="320" y1="150" x2="460" y2="185" stroke="#8A8378" stroke-width="2"/>
-  <rect x="100" y="185" width="160" height="40" fill="#E5DECF" rx="6"/>
+  <rect x="100" y="185" width="160" height="40" fill="#E4E7EC" rx="6"/>
   <text x="180" y="210" fill="#23201D" font-size="13" text-anchor="middle">기자 에이전트</text>
-  <rect x="380" y="185" width="160" height="40" fill="#E5DECF" rx="6"/>
+  <rect x="380" y="185" width="160" height="40" fill="#E4E7EC" rx="6"/>
   <text x="460" y="210" fill="#23201D" font-size="13" text-anchor="middle">개발(CTO) 에이전트</text>
   <text x="12" y="248" fill="#8A8378" font-size="11">* 콘텐츠 승인권은 사람이 보유. 편집장이 기자에게 위임, 개발 에이전트는 코드·배포만 담당.</text>
 </svg>

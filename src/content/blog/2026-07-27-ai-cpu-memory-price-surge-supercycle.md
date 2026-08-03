@@ -39,20 +39,20 @@ tags: ["메모리반도체", "AI반도체", "D램가격", "슈퍼사이클"]
 
 세 주장 중 가장 확실하게 '이미 벌어진 일'은 메모리다. 2026년 1분기, 일반 D램 계약가격은 전 분기 대비 **90~95%** 폭등했고 낸드플래시도 55~60% 뛰었다. 소비자가 체감하는 숫자는 더 극적이다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 440 220" width="100%" height="auto" role="img" aria-label="DDR5 32GB 키트 가격: 2025년 중반 80~120달러에서 2026년 375~470달러로 3~4배 상승, 정점 전망은 최대 550~600달러. 1TB 소비자 SSD는 약 45달러에서 90달러로 두 배.">
   <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">부품 가격 폭등 (USD, 높을수록 부담↑)</text>
   <text x="20" y="40" fill="#8A8378" font-size="11">DDR5 32GB 키트</text>
-  <line x1="20" y1="100" x2="420" y2="100" stroke="#E5DECF" stroke-width="1"/>
-  <rect x="40" y="88" width="55" height="12" fill="#E5DECF"/>
+  <line x1="20" y1="100" x2="420" y2="100" stroke="#E4E7EC" stroke-width="1"/>
+  <rect x="40" y="88" width="55" height="12" fill="#E4E7EC"/>
   <text x="40" y="82" fill="#8A8378" font-size="11">$80~120 (2025 중반)</text>
   <rect x="150" y="58" width="55" height="42" fill="#C8102E"/>
   <text x="150" y="52" fill="#C8102E" font-size="11" font-weight="bold">$375~470 (2026) ▲3~4배</text>
-  <rect x="255" y="46" width="20" height="54" fill="#E5DECF" stroke="#C8102E" stroke-dasharray="3 2"/>
+  <rect x="255" y="46" width="20" height="54" fill="#E4E7EC" stroke="#C8102E" stroke-dasharray="3 2"/>
   <text x="240" y="40" fill="#8A8378" font-size="10">정점전망 ~$600</text>
   <text x="20" y="140" fill="#8A8378" font-size="11">1TB 소비자 SSD</text>
-  <line x1="20" y1="195" x2="420" y2="195" stroke="#E5DECF" stroke-width="1"/>
-  <rect x="40" y="178" width="45" height="17" fill="#E5DECF"/>
+  <line x1="20" y1="195" x2="420" y2="195" stroke="#E4E7EC" stroke-width="1"/>
+  <rect x="40" y="178" width="45" height="17" fill="#E4E7EC"/>
   <text x="40" y="172" fill="#8A8378" font-size="11">약 $45 (2025 말)</text>
   <rect x="150" y="161" width="45" height="34" fill="#23201D"/>
   <text x="150" y="155" fill="#23201D" font-size="11" font-weight="bold">약 $90 (2026) ▲2배</text>

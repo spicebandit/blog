@@ -47,17 +47,17 @@ Saying "it's cheap" doesn't land, so let's use numbers. Comparing API token pric
 
 Run the same work on GLM-5.2 and input is about **2.1× cheaper, output about 3.4× cheaper**. Since output tokens usually dominate LLM cost, output being 3×+ cheaper shows up loudly on the actual bill. Here's the output price of representative models, visualized.
 
-<figure style="margin:1.5rem 0;padding:1rem;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<figure style="margin:1.5rem 0;padding:1rem;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="Bar chart of price per 1 million output tokens. GLM-5.2 $4.40, GLM-4.7-FlashX $0.40, Claude Sonnet 4.6 $15.">
   <text x="320" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#23201D">Price per 1M output tokens (USD · lower is cheaper)</text>
   <line x1="80" y1="250" x2="600" y2="250" stroke="#23201D" stroke-width="1.5"/>
-  <line x1="80" y1="60" x2="80" y2="250" stroke="#E5DECF" stroke-width="1"/>
+  <line x1="80" y1="60" x2="80" y2="250" stroke="#E4E7EC" stroke-width="1"/>
   <text x="72" y="254" text-anchor="end" font-size="11" fill="#8A8378">0</text>
   <text x="72" y="188" text-anchor="end" font-size="11" fill="#8A8378">5</text>
   <text x="72" y="125" text-anchor="end" font-size="11" fill="#8A8378">10</text>
   <text x="72" y="64" text-anchor="end" font-size="11" fill="#8A8378">15</text>
-  <line x1="80" y1="187" x2="600" y2="187" stroke="#E5DECF" stroke-width="0.5"/>
-  <line x1="80" y1="124" x2="600" y2="124" stroke="#E5DECF" stroke-width="0.5"/>
+  <line x1="80" y1="187" x2="600" y2="187" stroke="#E4E7EC" stroke-width="0.5"/>
+  <line x1="80" y1="124" x2="600" y2="124" stroke="#E4E7EC" stroke-width="0.5"/>
   <rect x="150" y="194" width="90" height="56" fill="#C8102E"/>
   <text x="195" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#C8102E">$4.40</text>
   <text x="195" y="270" text-anchor="middle" font-size="12" fill="#23201D">GLM-5.2</text>

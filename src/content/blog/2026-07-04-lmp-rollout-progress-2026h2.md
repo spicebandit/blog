@@ -18,13 +18,13 @@ LMP(지역별 한계가격)가 무엇인지, 왜 전기에 '입지 가격'이 �
 배경은 숫자 하나로 요약된다. 광역지자체별 전력자립도(그 지역에서 쓰는 전기를 그 지역에서 만드는 비율)가 **경북 215.6%, 충남 213.6%, 강원 212.8%인 반면 서울은 10.4%, 대전은 3.1%**다([뉴시스, 2026.6.28](https://www.newsis.com/view/NISX20260627_0003686002)). 충남은 연간 10만5,984GWh를 생산하는 국내 최대 발전 지역이고, 경기는 14만312GWh를 쓰는 최대 소비 지역이다. 전기는 지방에서 만들어 수도권으로 실어 나르는데, 요금은 전국이 같다. 송전망 건설 부담과 발전소 입지의 사회적 비용은 지방이 지고, 편익은 수도권이 누리는 구조가 수십 년 이어졌다.
 
 <figure>
-<svg viewBox="0 0 720 420" role="img" aria-label="광역지자체별 전력자립도 비교 막대 그래프. 경북 215.6%, 충남 213.6%, 강원 212.8%, 전남 197.9%, 인천 186.3% 순으로 높고, 대구 13.1%, 충북 10.8%, 서울 10.4%, 광주 9.3%, 대전 3.1% 순으로 낮다." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 420" role="img" aria-label="광역지자체별 전력자립도 비교 막대 그래프. 경북 215.6%, 충남 213.6%, 강원 212.8%, 전남 197.9%, 인천 186.3% 순으로 높고, 대구 13.1%, 충북 10.8%, 서울 10.4%, 광주 9.3%, 대전 3.1% 순으로 낮다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">전력자립도 격차 — 만드는 곳과 쓰는 곳이 다르다 (높을수록 전력 생산 초과)</text>
   <text x="24" y="54" font-size="12" fill="#8A8378">단위: %, 지역 생산 전력 ÷ 지역 소비 전력</text>
   <!-- grid -->
-  <line x1="120" y1="70" x2="120" y2="380" stroke="#E5DECF" stroke-width="1"/>
-  <line x1="345" y1="70" x2="345" y2="380" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
-  <line x1="570" y1="70" x2="570" y2="380" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="120" y1="70" x2="120" y2="380" stroke="#E4E7EC" stroke-width="1"/>
+  <line x1="345" y1="70" x2="345" y2="380" stroke="#E4E7EC" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="570" y1="70" x2="570" y2="380" stroke="#E4E7EC" stroke-width="1" stroke-dasharray="3 3"/>
   <text x="120" y="398" font-size="11" fill="#8A8378" text-anchor="middle">0%</text>
   <text x="345" y="398" font-size="11" fill="#8A8378" text-anchor="middle">100%</text>
   <text x="570" y="398" font-size="11" fill="#8A8378" text-anchor="middle">200%</text>
@@ -152,19 +152,19 @@ LMP(지역별 한계가격)가 무엇인지, 왜 전기에 '입지 가격'이 �
 하반기 확정안이 나오면 영향은 다섯 갈래로 퍼진다.
 
 <figure>
-<svg viewBox="0 0 720 300" role="img" aria-label="2029년까지 신규 데이터센터 수요의 지역 분포 막대 그래프. 전체 732건 중 수도권 601건(82%), 비수도권 131건(18%). 신규 전력수요는 약 49GW." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 300" role="img" aria-label="2029년까지 신규 데이터센터 수요의 지역 분포 막대 그래프. 전체 732건 중 수도권 601건(82%), 비수도권 131건(18%). 신규 전력수요는 약 49GW." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="24" y="36" font-size="17" font-weight="700" fill="#23201D">신규 데이터센터, 10건 중 8건이 수도권행 — 차등요금이 겨냥하는 지점</text>
   <text x="24" y="56" font-size="12" fill="#8A8378">~2029년 신규 수요 732건의 입지 신청 분포 · 신규 전력수요 약 49GW (산업통상자원부, 2023년 집계)</text>
   <!-- 수도권 bar -->
   <text x="150" y="122" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">수도권</text>
   <rect x="165" y="100" width="492" height="38" fill="#C8102E" rx="3"/>
-  <text x="405" y="125" font-size="15" fill="#FAF6EE" font-weight="700" text-anchor="middle">601건 (82%)</text>
+  <text x="405" y="125" font-size="15" fill="#F6F7F9" font-weight="700" text-anchor="middle">601건 (82%)</text>
   <!-- 비수도권 bar -->
   <text x="150" y="192" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">비수도권</text>
   <rect x="165" y="170" width="107" height="38" fill="#8A8378" rx="3"/>
   <text x="282" y="195" font-size="15" fill="#23201D" font-weight="700">131건 (18%)</text>
   <!-- axis -->
-  <line x1="165" y1="230" x2="657" y2="230" stroke="#E5DECF" stroke-width="1"/>
+  <line x1="165" y1="230" x2="657" y2="230" stroke="#E4E7EC" stroke-width="1"/>
   <text x="165" y="248" font-size="11" fill="#8A8378">0건</text>
   <text x="657" y="248" font-size="11" fill="#8A8378" text-anchor="end">732건</text>
   <text x="24" y="282" font-size="12" fill="#8A8378">차등요금·인센티브의 1차 과녁은 이 수도권 쏠림의 분산이다.</text>

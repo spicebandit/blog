@@ -12,7 +12,7 @@ tags: ["ESS", "LFP", "전고체 배터리", "배터리 트렌드"]
 ESS(에너지저장장치) 배터리를 이해하려면 먼저 **"ESS는 전기차(EV)와 우선순위가 다르다"**는 점부터 알아야 한다. EV는 한정된 공간·무게에 최대한 많이 담아야 하므로 **에너지밀도**가 왕이다. 반면 ESS는 땅에 고정 설치하니 무게·부피가 덜 중요하고, 대신 **안전(화재)·수명·원가(kWh당)**가 승부를 가른다. 이 우선순위 차이가 ESS 배터리 지형을 만든다. 이 글은 LFP·삼원계(NCM)·전고체를 숫자와 표로 비교한다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 배터리 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 배터리 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh)</text>
   <!-- x축 눈금 0~200, 차트영역 x:150~690 (540px) -->
   <line x1="150" y1="70" x2="150" y2="210" stroke="#8A8378" stroke-width="1"/>
@@ -30,7 +30,7 @@ ESS(에너지저장장치) 배터리를 이해하려면 먼저 **"ESS는 전기�
   <text x="536" y="137" font-size="12" fill="#8A8378">$100~140</text>
   <!-- 전고체 140~175 -->
   <text x="140" y="174" font-size="13" fill="#23201D" text-anchor="end">전고체(전망)</text>
-  <rect x="528" y="160" width="94" height="24" rx="3" fill="#E5DECF"/>
+  <rect x="528" y="160" width="94" height="24" rx="3" fill="#E4E7EC"/>
   <text x="630" y="177" font-size="12" fill="#8A8378">$140~175</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">막대는 셀 기준 원가 범위(보도·업계 전망). ESS는 kWh당 단가가 곧 사업성이라 LFP가 유리하다.</figcaption>
@@ -61,7 +61,7 @@ ESS(에너지저장장치) 배터리를 이해하려면 먼저 **"ESS는 전기�
 > 수치는 보도·업계 전망 기준 범위값으로, 셀 사양·제조사·시점에 따라 달라진다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 배터리 수명 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 배터리 수명 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">수명 비교 — 높을수록 유리 (충·방전 사이클)</text>
   <line x1="150" y1="60" x2="150" y2="180" stroke="#8A8378" stroke-width="1"/>
   <line x1="150" y1="180" x2="690" y2="180" stroke="#8A8378" stroke-width="1"/>

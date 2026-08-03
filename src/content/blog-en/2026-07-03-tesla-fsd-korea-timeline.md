@@ -16,10 +16,10 @@ koSlug: 2026-07-03-tesla-fsd-korea-timeline
 **Same Tesla, different fate — why can your neighbor use FSD while you can't?** In November 2025, Tesla's FSD (Supervised) arrived in South Korea — nine years after the company's October 2016 promise that "every car ships with full self-driving hardware," and the seventh country in the world to get it ([Hankyung Business](https://magazine.hankyung.com/business/article/202512031549b)). Yet the overwhelming majority of Korean Tesla owners are stuck watching from the sidelines. The cars legally cleared for FSD are the US-built Model S, Model X, and Cybertruck — **exactly 4,292 vehicles, or 2.4% of Korea's 180,684 registered Teslas** ([Kyunghyang Shinmun, May 4, 2026](https://www.khan.co.kr/article/202605041128001)). The other 97.6% — more than 176,000 China-built Model 3s and Ys — are locked out at the software level, even the ones carrying Tesla's latest AI4 (HW4) computer. The punchline up front: this gap is a product of **trade agreements and safety regulations, not technology**, and the realistic center of gravity for China-built cars getting FSD is **Q4 2027**. Here's why, and what could change it.
 
 <figure>
-<svg viewBox="0 0 800 320" role="img" aria-label="Proportional bar showing that only 4,292 of Korea's 180,684 registered Teslas (2.4%) can legally use FSD, plus a breakdown of the eligible fleet: Model X 2,708, Model S 1,193, Cybertruck 391" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 320" role="img" aria-label="Proportional bar showing that only 4,292 of Korea's 180,684 registered Teslas (2.4%) can legally use FSD, plus a breakdown of the eligible fleet: Model X 2,708, Model S 1,193, Cybertruck 391" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">Of 180,684 Teslas in Korea, only 4,292 (2.4%) can legally run FSD</text>
   <rect x="50" y="60" width="17" height="40" fill="#C8102E"/>
-  <rect x="67" y="60" width="683" height="40" fill="#E5DECF"/>
+  <rect x="67" y="60" width="683" height="40" fill="#E4E7EC"/>
   <line x1="58" y1="104" x2="58" y2="122" stroke="#C8102E" stroke-width="1.5"/>
   <text x="50" y="138" font-size="13" font-weight="700" fill="#C8102E">FSD eligible: 4,292 (2.4%)</text>
   <text x="750" y="138" font-size="13" fill="#8A8378" text-anchor="end">Not eligible (China-built Model 3/Y etc.): 176,392 (97.6%)</text>
@@ -88,10 +88,10 @@ There's an encouraging precedent. On **April 10, 2026, the Dutch vehicle authori
 To gauge Korea's timing, zoom out to the globe. FSD (Supervised) is now leaping across continents like a wave, and Korea just rode its second crest. As of July 2026, markets where FSD is deployed or approved have widened to **the US, Canada, Mexico, Puerto Rico, Australia, the Netherlands, Korea, and China.** Europe in particular, after the Netherlands' RDW granted the first type approval in April 2026, saw **Lithuania and Estonia follow, Sweden expand public-road testing, and Belgium fast-track its approval.** China saw Tesla confirm FSD support on May 21, though nationwide regulatory clearance is still in progress ([CnEVPost](https://cnevpost.com/2026/05/21/tesla-says-fsd-supervised-available-in-china/), [fsdtracker.eu](https://fsdtracker.eu/)).
 
 <figure>
-<svg viewBox="0 0 1000 540" role="img" aria-label="Schematic map of Tesla FSD (Supervised) global spread. The US, Canada, Mexico, Puerto Rico, Australia, the Netherlands, and Korea are deployed; China, the Baltics, and Sweden are approved or expanding; Germany, France, and other EU states are pending review." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 1000 540" role="img" aria-label="Schematic map of Tesla FSD (Supervised) global spread. The US, Canada, Mexico, Puerto Rico, Australia, the Netherlands, and Korea are deployed; China, the Baltics, and Sweden are approved or expanding; Germany, France, and other EU states are pending review." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">Tesla FSD (Supervised) global spread — schematic (July 2026)</text>
   <text x="24" y="54" font-size="12" fill="#8A8378">A wave that started in North America now reaches Australia, Europe, and Asia. Korea is the 2nd market to get v14 Lite.</text>
-  <g fill="#E5DECF" stroke="#D8CFBB" stroke-width="1">
+  <g fill="#E4E7EC" stroke="#D8CFBB" stroke-width="1">
     <path d="M150,95 L250,88 L300,110 L300,140 L262,150 L240,168 L225,205 L208,195 L214,160 L188,150 L162,128 Z"/>
     <path d="M262,220 L305,214 L332,244 L326,300 L300,360 L286,395 L276,345 L292,292 L262,258 Z"/>
     <path d="M486,92 L556,84 L566,108 L540,124 L512,138 L494,120 Z"/>
@@ -118,7 +118,7 @@ To gauge Korea's timing, zoom out to the globe. FSD (Supervised) is now leaping 
     <circle cx="792" cy="150" r="6"/>
     <circle cx="548" cy="86" r="5"/>
   </g>
-  <g fill="#FAF6EE" stroke="#8A8378" stroke-width="2">
+  <g fill="#F6F7F9" stroke="#8A8378" stroke-width="2">
     <circle cx="524" cy="120" r="5"/>
     <circle cx="500" cy="126" r="5"/>
   </g>
@@ -136,7 +136,7 @@ To gauge Korea's timing, zoom out to the globe. FSD (Supervised) is now leaping 
   <g font-size="12" fill="#23201D">
     <circle cx="40" cy="500" r="6" fill="#C8102E"/><text x="54" y="504">Deployed</text>
     <circle cx="180" cy="500" r="6" fill="#23201D"/><text x="194" y="504">Approved/expanding</text>
-    <circle cx="400" cy="500" r="6" fill="#FAF6EE" stroke="#8A8378" stroke-width="2"/><text x="414" y="504">Pending review</text>
+    <circle cx="400" cy="500" r="6" fill="#F6F7F9" stroke="#8A8378" stroke-width="2"/><text x="414" y="504">Pending review</text>
     <line x1="560" y1="500" x2="590" y2="500" stroke="#C8102E" stroke-width="1.6" stroke-dasharray="5 5"/><text x="598" y="504">Spread path</text>
   </g>
 </svg>
@@ -150,9 +150,9 @@ Korea's coordinates on this map are telling. Korea became the **second market to
 Lay the ministry's procedural blocks on a calendar and three paths emerge.
 
 <figure>
-<svg viewBox="0 0 800 300" role="img" aria-label="Timeline of expected FSD availability by group in Korea: US-built AI4 in use since November 2025, US-built HW3 in the second half of 2026, China-built AI4 between H1 2027 (optimistic) and Q4 2027 (base case), with a pessimistic scenario extending into 2028" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 300" role="img" aria-label="Timeline of expected FSD availability by group in Korea: US-built AI4 in use since November 2025, US-built HW3 in the second half of 2026, China-built AI4 between H1 2027 (optimistic) and Q4 2027 (base case), with a pessimistic scenario extending into 2028" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">Expected FSD unlock timing by group (as of July 2026)</text>
-  <g stroke="#E5DECF" stroke-width="1">
+  <g stroke="#E4E7EC" stroke-width="1">
     <line x1="197" y1="50" x2="197" y2="240"/>
     <line x1="385" y1="50" x2="385" y2="240"/>
     <line x1="572" y1="50" x2="572" y2="240"/>
@@ -175,7 +175,7 @@ Lay the ministry's procedural blocks on a calendar and three paths emerge.
   <rect x="525" y="152" width="94" height="20" rx="4" fill="#C8102E"/>
   <text x="625" y="167" font-size="12" fill="#23201D">Optimistic H1 2027 ~ Base Q4 2027</text>
   <text x="188" y="213" font-size="13" fill="#23201D" text-anchor="end">④ Pessimistic case</text>
-  <rect x="572" y="197" width="188" height="20" rx="4" fill="#E5DECF"/>
+  <rect x="572" y="197" width="188" height="20" rx="4" fill="#E4E7EC"/>
   <text x="580" y="212" font-size="12" fill="#8A8378">Could slip into 2028</text>
 </svg>
 <figcaption>Author's estimate based on the ministry's disclosed procedural durations (6 months consultation + 6 months drafting + 3–4 months notice-to-review). Dark blue marks the center of gravity. Source: <a href="https://www.bloter.net/news/articleView.html?idxno=647466">Bloter (quoting MOLIT)</a></figcaption>

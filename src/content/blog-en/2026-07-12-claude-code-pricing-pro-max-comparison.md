@@ -47,7 +47,7 @@ Anthropic doesn't officially publish exact token figures. Aggregating user measu
 There are also hour-equivalent figures for the weekly caps. When Anthropic introduced weekly limits in August 2025, the rough allocation reported was: Pro at 40–80 hours of Sonnet per week via Claude Code, and Max 5x ($100) at 140–280 hours of Sonnet plus 15–35 hours of Opus ([TechCrunch](https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/)). In other words, even Pro handles "a few days of coding a week." These figures are from the August 2025 launch, though — Anthropic has since adjusted limits, including raising the 5-hour session cap, so treat them as scale rather than precision. The catch is that those hours shrink much faster under constant Opus use or parallel work.
 
 <figure>
-<svg viewBox="0 0 800 240" role="img" aria-label="Relative usage by Claude Code plan. Using Pro as the 1x baseline, Max 5x offers about 5x and Max 20x about 20x the per-session usage." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 240" role="img" aria-label="Relative usage by Claude Code plan. Using Pro as the 1x baseline, Max 5x offers about 5x and Max 20x about 20x the per-session usage." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">Relative usage by plan (Pro = 1x baseline)</text>
   <text x="20" y="52" font-size="12" fill="#8A8378">Per-session usage multiple · monthly price</text>
   <g font-size="13" fill="#23201D">

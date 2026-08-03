@@ -21,17 +21,17 @@ tags: ["맥북", "로컬LLM", "애플실리콘", "Ollama"]
 
 통합 메모리별로 Q4 양자화 기준 어떤 모델이 실용적인지 정리하면 이렇다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="맥북 통합메모리별 로컬LLM 가능 모델. 8기가 3~4B, 16기가 14B까지, 24기가 20B급, 32기가 32B급, 64기가 70B, 128기가 70B 이상.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">맥북 통합메모리별 실용 모델 크기 (Q4 기준)</text>
   <text x="12" y="58" fill="#23201D" font-size="13" font-weight="bold">8GB</text>
-  <rect x="90" y="44" width="60" height="20" fill="#E5DECF"/>
+  <rect x="90" y="44" width="60" height="20" fill="#E4E7EC"/>
   <text x="158" y="58" fill="#8A8378" font-size="12">3~4B (7~8B는 빠듯) — 입문·경량</text>
   <text x="12" y="94" fill="#23201D" font-size="13" font-weight="bold">16GB</text>
-  <rect x="90" y="80" width="120" height="20" fill="#E5DECF"/>
+  <rect x="90" y="80" width="120" height="20" fill="#E4E7EC"/>
   <text x="218" y="94" fill="#8A8378" font-size="12">~14B 쾌적 — 지금 사는 최소 권장</text>
   <text x="12" y="130" fill="#23201D" font-size="13" font-weight="bold">24GB</text>
-  <rect x="90" y="116" width="180" height="20" fill="#E5DECF"/>
+  <rect x="90" y="116" width="180" height="20" fill="#E4E7EC"/>
   <text x="278" y="130" fill="#8A8378" font-size="12">~20B급</text>
   <text x="12" y="166" fill="#23201D" font-size="13" font-weight="bold">32GB</text>
   <rect x="90" y="152" width="250" height="20" fill="#C8102E"/>

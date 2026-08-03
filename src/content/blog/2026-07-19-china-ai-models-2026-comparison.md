@@ -28,7 +28,7 @@ tags: ["중국AI", "딥시크", "큐원", "AI모델비교"]
 
 가장 궁금한 건 결국 "그래서 GPT·클로드만큼 잘하냐"다. 2026년 중반의 냉정한 답은 — **"최상위는 아직 미국이지만, 그 차이가 놀랍게 줄었다"**이다. 여러 리더보드를 종합하면 최상위 미국 독점 모델과 최상위 중국 모델의 종합 점수 격차는 약 9점 수준으로, 업계 예측보다 훨씬 빠르게 좁혀졌다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 240" width="100%" height="auto" role="img" aria-label="미국 최상위 독점 모델과 중국 최상위 오픈모델의 종합 성능 격차가 2024년 약 20점대에서 2026년 약 9점으로 좁혀졌음을 보여주는 선형 추이">
   <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">미·중 최상위 AI 성능 격차 (종합점수 차, 작을수록 추격)</text>
   <line x1="60" y1="190" x2="700" y2="190" stroke="#8A8378" stroke-width="1"/>
@@ -77,7 +77,7 @@ tags: ["중국AI", "딥시크", "큐원", "AI모델비교"]
 
 성능만큼, 어쩌면 그보다 더 파괴적인 것이 가격이다. 중국 모델은 미국 대비 API 사용료를 **5배에서 30배까지 싸게** 매긴다. 극단적 사례로 딥시크 V3.2 계열은 입력 100만 토큰당 약 0.28달러 수준으로 알려졌는데, 이는 최상위 미국 모델(GPT 계열)의 약 10달러 수준(구간·시점에 따라 상이)과 비교하면 **수십 배 차이**다([TokenMix](https://tokenmix.ai/blog/best-chinese-ai-models-2026-comparison-guide)).
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="입력 100만 토큰당 API 가격 비교. 딥시크 약 0.28달러, GPT 계열 약 10달러 수준">
   <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">API 입력가격 비교 (100만 토큰당, 낮을수록 저렴)</text>
   <g font-size="13" fill="#23201D">

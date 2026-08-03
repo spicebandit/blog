@@ -102,10 +102,10 @@ open → assigned → in-progress → review → done
 우리가 겪은 숫자는 극적이었다. 사흘 동안 **3억 1,300만 토큰**이 소모됐고, 그중 **CEO 한 명이 57%(1억 7,700만 토큰)**를 썼다. 이유는 단순했다 — CEO만 하트비트가 켜져 있었고(하루 288회 기상), 게다가 가장 무거운 모델을 쓰고 있었다.
 
 <figure>
-<svg viewBox="0 0 640 150" role="img" aria-label="3일간 토큰 소모: CEO 57퍼센트, 나머지 에이전트 43퍼센트" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
+<svg viewBox="0 0 640 150" role="img" aria-label="3일간 토큰 소모: CEO 57퍼센트, 나머지 에이전트 43퍼센트" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px">
   <text x="20" y="30" font-size="15" font-weight="700" fill="#23201D">3일간 토큰 소모 3.13억 — 범인은 CEO 한 명</text>
   <rect x="20" y="55" width="340" height="34" fill="#C8102E"></rect>
-  <rect x="364" y="55" width="256" height="34" fill="#E5DECF"></rect>
+  <rect x="364" y="55" width="256" height="34" fill="#E4E7EC"></rect>
   <text x="30" y="77" font-size="13" font-weight="700" fill="#ffffff">CEO 57% · 1.77억</text>
   <text x="374" y="77" font-size="13" font-weight="700" fill="#23201D">나머지 6명 43% · 1.36억</text>
   <text x="20" y="118" font-size="12" fill="#8A8378">원인: CEO만 하트비트 ON(하루 288회 기상) + 최상위 모델. 나머지는 on-demand + 경량 모델.</text>

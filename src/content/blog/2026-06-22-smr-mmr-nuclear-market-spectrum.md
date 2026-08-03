@@ -21,15 +21,15 @@ SMR 논의가 가속화된 직접적 계기는 두 가지다. 하나는 **AI 데
 그러나 '소형 원전'이라는 단어 하나로 뭉뚱그리면 중요한 차이가 사라진다. 시장은 크게 세 계층으로 나뉜다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SMR 3계층 출력 규모 스펙트럼 범위 막대 차트, 단위 메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SMR 3계층 출력 규모 스펙트럼 범위 막대 차트, 단위 메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">SMR 3계층 출력 스펙트럼 — 단위: MWe</text>
 <text x="24" y="56" font-size="12" fill="#8A8378">참고: 기존 대형 원전은 1,000+ MWe (축 범위 밖)</text>
-<line x1="330" y1="68" x2="330" y2="194" stroke="#E5DECF"/>
-<line x1="510" y1="68" x2="510" y2="194" stroke="#E5DECF"/>
-<line x1="690" y1="68" x2="690" y2="194" stroke="#E5DECF"/>
+<line x1="330" y1="68" x2="330" y2="194" stroke="#E4E7EC"/>
+<line x1="510" y1="68" x2="510" y2="194" stroke="#E4E7EC"/>
+<line x1="690" y1="68" x2="690" y2="194" stroke="#E4E7EC"/>
 <text x="140" y="96" text-anchor="end" font-size="13" fill="#23201D">1계층 유틸리티</text>
 <rect x="330" y="80" width="360" height="24" rx="3" fill="#C8102E"/>
-<text x="682" y="96" text-anchor="end" font-size="12" font-weight="700" fill="#FAF6EE">100~300 MWe</text>
+<text x="682" y="96" text-anchor="end" font-size="12" font-weight="700" fill="#F6F7F9">100~300 MWe</text>
 <text x="140" y="136" text-anchor="end" font-size="13" fill="#23201D">2계층 데이터센터</text>
 <rect x="186" y="120" width="144" height="24" rx="3" fill="#C8102E"/>
 <text x="336" y="136" font-size="12" font-weight="700" fill="#C8102E">20~100 MWe</text>
@@ -157,13 +157,13 @@ Oklo는 아예 비즈니스 모델 자체가 다르다. 원자로를 팔지 않�
 - **3계층**은 수천 킬로미터 연료 수송 비용이 포함된 원격지 디젤($200~500/MWh)과 경쟁한다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SMR 계층별 LCOE와 경쟁 전원 비교 범위 막대 차트, 단위 달러 퍼 메가와트시" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SMR 계층별 LCOE와 경쟁 전원 비교 범위 막대 차트, 단위 달러 퍼 메가와트시" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">계층별 LCOE vs 경쟁 전원 — 단위: $/MWh (낮을수록 유리)</text>
-<line x1="258" y1="64" x2="258" y2="314" stroke="#E5DECF"/>
-<line x1="366" y1="64" x2="366" y2="314" stroke="#E5DECF"/>
-<line x1="474" y1="64" x2="474" y2="314" stroke="#E5DECF"/>
-<line x1="582" y1="64" x2="582" y2="314" stroke="#E5DECF"/>
-<line x1="690" y1="64" x2="690" y2="314" stroke="#E5DECF"/>
+<line x1="258" y1="64" x2="258" y2="314" stroke="#E4E7EC"/>
+<line x1="366" y1="64" x2="366" y2="314" stroke="#E4E7EC"/>
+<line x1="474" y1="64" x2="474" y2="314" stroke="#E4E7EC"/>
+<line x1="582" y1="64" x2="582" y2="314" stroke="#E4E7EC"/>
+<line x1="690" y1="64" x2="690" y2="314" stroke="#E4E7EC"/>
 <text x="140" y="96" text-anchor="end" font-size="13" fill="#23201D">1계층 SMR</text>
 <rect x="198" y="80" width="39" height="24" rx="3" fill="#C8102E"/>
 <text x="243" y="96" font-size="12" font-weight="700" fill="#C8102E">$44~80</text>
@@ -181,7 +181,7 @@ Oklo는 아예 비즈니스 모델 자체가 다르다. 원자로를 팔지 않�
 <text x="480" y="256" font-size="12" font-weight="700" fill="#C8102E">$100~300</text>
 <text x="140" y="296" text-anchor="end" font-size="13" fill="#23201D">원격지 디젤</text>
 <rect x="366" y="280" width="324" height="24" rx="3" fill="#8A8378"/>
-<text x="682" y="296" text-anchor="end" font-size="12" font-weight="700" fill="#FAF6EE">$200~500</text>
+<text x="682" y="296" text-anchor="end" font-size="12" font-weight="700" fill="#F6F7F9">$200~500</text>
 <line x1="150" y1="314" x2="690" y2="314" stroke="#8A8378"/>
 <line x1="150" y1="64" x2="150" y2="314" stroke="#8A8378"/>
 <text x="150" y="332" text-anchor="middle" font-size="11" fill="#8A8378">0</text>

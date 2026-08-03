@@ -34,14 +34,14 @@ AI 직원들로만 굴러가는 회사 — Paperclip으로 AI 에이전트 신�
 
 결과: **사흘간 회사 전체가 3억 1,300만 토큰, 하루 평균 약 1억 토큰**을 소비하고 있었다. 더 놀라운 건 내역이었다. 기사를 쓰는 기자도, 검수하는 편집장도 아니고 **CEO 에이전트 혼자 1억 7,700만 토큰(57%)**을 태우고 있었다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 240" width="100%" height="auto" role="img" aria-label="사흘간 에이전트별 토큰 소비 막대 그래프. CEO 에이전트 1억 7,700만 토큰으로 전체의 57퍼센트, 나머지 에이전트 합계 1억 3,600만 토큰.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">사흘간 토큰 소비 (실측 · 총 3.13억)</text>
   <text x="12" y="70" fill="#23201D" font-size="13">CEO 1명</text>
   <rect x="120" y="54" width="380" height="26" fill="#C8102E"/>
   <text x="508" y="72" fill="#23201D" font-size="13" font-weight="bold">1.77억 (57%)</text>
   <text x="12" y="130" fill="#23201D" font-size="13">나머지 에이전트 합계</text>
-  <rect x="120" y="114" width="292" height="26" fill="#E5DECF"/>
+  <rect x="120" y="114" width="292" height="26" fill="#E4E7EC"/>
   <text x="420" y="132" fill="#8A8378" font-size="13">1.36억 (43%)</text>
   <text x="12" y="180" fill="#8A8378" font-size="12">CEO는 기사를 한 줄도 쓰지 않는 관리직 — 소비의 대부분은 "깨어나서 상황 파악"</text>
   <text x="12" y="222" fill="#8A8378" font-size="11">* 2026년 6월, 필자 운영 인스턴스의 비용 집계 기능으로 실측한 값.</text>

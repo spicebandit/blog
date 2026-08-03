@@ -77,19 +77,19 @@ Once registration is done, governance kicks in. Say the editor-in-chief agent pr
 
 Taking blog operations as an example, a minimal configuration looks like this:
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px 8px;">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 260" width="100%" height="auto" role="img" aria-label="Minimal AI org chart for running a blog. A three-tier structure: the human (board) on top, an editor-in-chief agent below, and a reporter agent and a dev agent under that.">
   <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">Minimal org chart for a blog (1 human + 3 agents)</text>
   <rect x="240" y="40" width="160" height="40" fill="#C8102E" rx="6"/>
-  <text x="320" y="65" fill="#FAF6EE" font-size="14" font-weight="bold" text-anchor="middle">Me (Board / Approvals)</text>
+  <text x="320" y="65" fill="#F6F7F9" font-size="14" font-weight="bold" text-anchor="middle">Me (Board / Approvals)</text>
   <line x1="320" y1="80" x2="320" y2="110" stroke="#8A8378" stroke-width="2"/>
   <rect x="240" y="110" width="160" height="40" fill="#23201D" rx="6"/>
-  <text x="320" y="135" fill="#FAF6EE" font-size="13" text-anchor="middle">Editor-in-Chief Agent</text>
+  <text x="320" y="135" fill="#F6F7F9" font-size="13" text-anchor="middle">Editor-in-Chief Agent</text>
   <line x1="320" y1="150" x2="180" y2="185" stroke="#8A8378" stroke-width="2"/>
   <line x1="320" y1="150" x2="460" y2="185" stroke="#8A8378" stroke-width="2"/>
-  <rect x="100" y="185" width="160" height="40" fill="#E5DECF" rx="6"/>
+  <rect x="100" y="185" width="160" height="40" fill="#E4E7EC" rx="6"/>
   <text x="180" y="210" fill="#23201D" font-size="13" text-anchor="middle">Reporter Agent</text>
-  <rect x="380" y="185" width="160" height="40" fill="#E5DECF" rx="6"/>
+  <rect x="380" y="185" width="160" height="40" fill="#E4E7EC" rx="6"/>
   <text x="460" y="210" fill="#23201D" font-size="13" text-anchor="middle">Dev (CTO) Agent</text>
   <text x="12" y="248" fill="#8A8378" font-size="11">* Content approval stays with the human. Editor delegates to the reporter; the dev agent only touches code and deploys.</text>
 </svg>

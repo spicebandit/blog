@@ -46,7 +46,7 @@ FSD v14 라이트는 테슬라가 구형 하드웨어(HW3, 이른바 AI3)에서�
 셋째, 통상 변수도 얽혀 있다. EU는 2024년 10월부터 중국산 전기차에 상계관세를 부과 중인데, 테슬라 상하이는 개별 심사를 통해 **7.8%**로 가장 낮은 세율을 받았다. 기본 승용차 관세 10%에 얹어지는 구조다([EU Access2Markets](https://trade.ec.europa.eu/access-to-markets/en/news/eu-commission-imposes-countervailing-duties-imports-battery-electric-vehicles-bevs-china)). 여기에 2026년 2월 EU가 폭스바겐 쿠프라의 중국산 SUV를 '최저가격+수량 쿼터'를 조건으로 관세에서 처음 풀어주면서, 관세 대신 가격약속으로 가는 새 협상 국면이 열렸다.
 
 <figure>
-<svg viewBox="0 0 800 300" role="img" aria-label="EU가 중국산 전기차에 부과한 상계관세 비교. 테슬라 상하이 7.8퍼센트로 가장 낮고, BYD 17.0퍼센트, 지리 18.8퍼센트, SAIC 35.3퍼센트. 모두 기본 승용차 관세 10퍼센트에 추가된다." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 300" role="img" aria-label="EU가 중국산 전기차에 부과한 상계관세 비교. 테슬라 상하이 7.8퍼센트로 가장 낮고, BYD 17.0퍼센트, 지리 18.8퍼센트, SAIC 35.3퍼센트. 모두 기본 승용차 관세 10퍼센트에 추가된다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">EU 상계관세: 테슬라 상하이가 가장 낮다 (낮을수록 유리)</text>
   <text x="20" y="50" font-size="12" fill="#8A8378">단위 %, 기본 승용차 관세 10%에 추가 부과 · 2024-10-30 발효</text>
   <g font-size="13" fill="#23201D">
@@ -63,7 +63,7 @@ FSD v14 라이트는 테슬라가 구형 하드웨어(HW3, 이른바 AI3)에서�
     <rect x="160" y="192" width="353" height="24" rx="4" fill="#8A8378"/>
     <text x="521" y="210" font-weight="700" fill="#8A8378">35.3%</text>
   </g>
-  <line x1="160" y1="240" x2="700" y2="240" stroke="#E5DECF" stroke-width="1"/>
+  <line x1="160" y1="240" x2="700" y2="240" stroke="#E4E7EC" stroke-width="1"/>
   <text x="160" y="262" font-size="12" fill="#8A8378">출처: EU 집행위 Access2Markets, 규정 (EU) 2024/2754</text>
 </svg>
 <figcaption>테슬라 상하이는 7.8%로 중국 제조사 중 최저 세율을 받았지만, 규정 자체는 5년마다 재검토되는 유동적 장치다.</figcaption>

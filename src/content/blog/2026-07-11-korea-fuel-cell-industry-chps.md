@@ -22,16 +22,16 @@ tags: ["연료전지", "CHPS", "청정수소", "수소경제"]
 한국이 유독 연료전지에 집중한 데는 이유가 있다. 에너지의 90% 이상을 수입에 의존하고, 국토는 좁아 태양광·풍력을 대규모로 깔 땅이 부족하다. 24시간 균일하게 돌고 도심 인근에 세울 수 있는 연료전지는, 재생에너지 자원이 빈약한 한국이 '분산전원'과 '수소경제'라는 두 목표를 한 번에 잡을 카드로 여겨졌다. 세계가 파리협정(2015) 이후 수소경제 로드맵 경쟁에 뛰어들던 흐름 속에서, 한국은 2019년 1월 '수소경제 활성화 로드맵'을 내놓으며 그 판에 이름을 올렸다. 세계 1위 보급량은 이 전략적 선택의 산물이자, 지금 딜레마의 뿌리이기도 하다.
 
 <figure>
-<svg viewBox="0 0 800 320" role="img" aria-label="국내 발전용 연료전지 누적 설치량 추이. 2018년 약 300MW, 2019년 464MW, 2020년 605MW, 2021년 737MW, 2022년 879MW, 2023년 1036MW로 증가해 세계 최초 1GW를 돌파했다." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 320" role="img" aria-label="국내 발전용 연료전지 누적 설치량 추이. 2018년 약 300MW, 2019년 464MW, 2020년 605MW, 2021년 737MW, 2022년 879MW, 2023년 1036MW로 증가해 세계 최초 1GW를 돌파했다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">국내 발전용 연료전지 누적 설치량 (MW) — 5년 만에 3배</text>
   <text x="20" y="50" font-size="12" fill="#8A8378">2023년 세계 최초 1GW 돌파 · 전 세계 보급량의 약 절반</text>
   <line x1="60" y1="270" x2="770" y2="270" stroke="#8A8378" stroke-width="1"/>
   <line x1="60" y1="80" x2="60" y2="270" stroke="#8A8378" stroke-width="1"/>
   <g font-size="12" fill="#23201D" text-anchor="middle">
-    <rect x="80" y="215" width="70" height="55" fill="#E5DECF"/><text x="115" y="205">300</text><text x="115" y="288" fill="#8A8378">2018</text>
-    <rect x="190" y="185" width="70" height="85" fill="#E5DECF"/><text x="225" y="175">464</text><text x="225" y="288" fill="#8A8378">2019</text>
-    <rect x="300" y="159" width="70" height="111" fill="#E5DECF"/><text x="335" y="149">605</text><text x="335" y="288" fill="#8A8378">2020</text>
-    <rect x="410" y="135" width="70" height="135" fill="#E5DECF"/><text x="445" y="125">737</text><text x="445" y="288" fill="#8A8378">2021</text>
+    <rect x="80" y="215" width="70" height="55" fill="#E4E7EC"/><text x="115" y="205">300</text><text x="115" y="288" fill="#8A8378">2018</text>
+    <rect x="190" y="185" width="70" height="85" fill="#E4E7EC"/><text x="225" y="175">464</text><text x="225" y="288" fill="#8A8378">2019</text>
+    <rect x="300" y="159" width="70" height="111" fill="#E4E7EC"/><text x="335" y="149">605</text><text x="335" y="288" fill="#8A8378">2020</text>
+    <rect x="410" y="135" width="70" height="135" fill="#E4E7EC"/><text x="445" y="125">737</text><text x="445" y="288" fill="#8A8378">2021</text>
     <rect x="520" y="109" width="70" height="161" fill="#8A8378"/><text x="555" y="99">879</text><text x="555" y="288" fill="#8A8378">2022</text>
     <rect x="630" y="80" width="70" height="190" fill="#C8102E"/><text x="665" y="70" font-weight="700" fill="#C8102E">1,036</text><text x="665" y="288" fill="#8A8378">2023</text>
   </g>
@@ -80,10 +80,10 @@ tags: ["연료전지", "CHPS", "청정수소", "수소경제"]
 그리고 2025년, 판 자체가 흔들렸다. 이재명 정부는 2025년 청정수소 발전 경쟁입찰을 공고 마감일에 전격 취소했다. 낙찰 시 석탄발전소가 15년 이상 가동되도록 설계된 제도가 **'2040년 탈석탄'이라는 국정과제와 정면충돌**한다는 이유였다. 지난해 낙찰된 삼척그린파워 물량마저 공급기간 단축을 협의 중이다([뉴스타파](https://newstapa.org/article/sZbYU)). 문재인 정부에서 구상해 윤석열 정부에서 구체화된 청정수소 발전 구상이, 정권 교체와 함께 제동이 걸린 셈이다. 제도의 불확실성 자체가 산업의 최대 리스크가 됐다.
 
 <figure>
-<svg viewBox="0 0 800 220" role="img" aria-label="2024년 첫 청정수소 발전 입찰 결과. 정부 제시 물량 6500GWh 중 750GWh만 낙찰되어 약 11.5%에 그쳤다." style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 220" role="img" aria-label="2024년 첫 청정수소 발전 입찰 결과. 정부 제시 물량 6500GWh 중 750GWh만 낙찰되어 약 11.5%에 그쳤다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">2024 첫 청정수소 입찰: 목표의 11.5%만 낙찰</text>
   <text x="20" y="72" font-size="13" fill="#8A8378">정부 제시 물량</text>
-  <rect x="180" y="58" width="560" height="24" rx="4" fill="#E5DECF"/>
+  <rect x="180" y="58" width="560" height="24" rx="4" fill="#E4E7EC"/>
   <text x="748" y="76" font-size="13" font-weight="700" fill="#8A8378" text-anchor="end">6,500 GWh</text>
   <text x="20" y="122" font-size="13" fill="#23201D">실제 낙찰</text>
   <rect x="180" y="108" width="64" height="24" rx="4" fill="#C8102E"/>

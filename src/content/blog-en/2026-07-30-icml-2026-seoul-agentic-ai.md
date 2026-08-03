@@ -36,11 +36,11 @@ The scale was unprecedented. The table below shows the headline figures for ICML
 
 The submission curve captures the explosion of AI research on its own. From 1,037 papers in 2015 to 12,107 in 2025, the count jumped past 24,000 in 2026 — more than a 20-fold increase in a decade.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 200" width="100%" height="auto" role="img" aria-label="ICML paper submissions: 1,037 in 2015, 12,107 in 2025, and about 24,371 in 2026 — a steep surge">
   <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">ICML paper submissions (higher = more research activity)</text>
   <line x1="50" y1="165" x2="400" y2="165" stroke="#8A8378" stroke-width="1"/>
-  <rect x="80" y="158" width="55" height="7" fill="#E5DECF"/>
+  <rect x="80" y="158" width="55" height="7" fill="#E4E7EC"/>
   <text x="82" y="152" fill="#8A8378" font-size="11">1,037</text>
   <text x="88" y="182" fill="#8A8378" font-size="11">2015</text>
   <rect x="190" y="88" width="55" height="77" fill="#8A8378"/>

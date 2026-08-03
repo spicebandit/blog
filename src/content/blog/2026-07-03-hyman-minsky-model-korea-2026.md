@@ -52,7 +52,7 @@ tags: ["민스키모멘트", "버블", "금융위기", "한국경제"]
 
 인터넷에서 "민스키 모델 버블 차트"로 널리 퍼진, 잠행(Stealth) → 인지(Awareness) → 광기(Mania) → 붕괴(Blow-off)의 4국면과 '황소 함정(bull trap)', '새 패러다임(new paradigm)' 라벨이 붙은 그 유명한 곡선 차트는 사실 민스키 본인의 그림이 아니다. 교통지리학자인 [장폴 로드리게(Jean-Paul Rodrigue) 교수가 작성한 차트](https://transportgeography.org/contents/chapter3/transportation-and-economic-development/bubble-stages/)로, 민스키-킨들버거의 아이디어를 시각화한 2차 창작물에 가깝다. 내용은 같은 이야기다. 스마트머니가 조용히 사는 잠행 국면, 기관이 들어오는 인지 국면, 대중과 언론이 뛰어들며 "새 패러다임"을 외치는 광기 국면, 그리고 반등(황소 함정)에 속았다가 절망으로 끝나는 붕괴 국면이다. 아래에 그 차트를 우리말로 재구성했다.
 
-<svg viewBox="0 0 760 470" width="100%" role="img" aria-label="버블의 4국면 차트(로드리게 차트 재구성): 잠행, 인지, 광기, 붕괴. 이륙, 곰 함정, 언론 주목, 열광, 탐욕, 망상, 새로운 패러다임 정점, 부정, 황소 함정, 공포, 투매, 절망, 평균 회귀의 경로" style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 760 470" width="100%" role="img" aria-label="버블의 4국면 차트(로드리게 차트 재구성): 잠행, 인지, 광기, 붕괴. 이륙, 곰 함정, 언론 주목, 열광, 탐욕, 망상, 새로운 패러다임 정점, 부정, 황소 함정, 공포, 투매, 절망, 평균 회귀의 경로" style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
   <text x="380" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#23201D">버블의 해부학 — 4국면과 투자자 심리</text>
   <!-- 축 -->
   <line x1="55" y1="400" x2="735" y2="400" stroke="#23201D" stroke-width="1.5"/>

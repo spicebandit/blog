@@ -42,7 +42,7 @@ tags: ["지멘스에너지", "옴테라", "에너지기업", "리브랜딩"]
 
 두 번째 이유는 돈이다. 유명 브랜드를 빌려 쓰는 데는 대가가 따른다. 여러 매체 보도에 따르면, 지멘스에너지가 '지멘스' 브랜드 사용료로 지불하던 로열티는 매출에 연동돼 **최근 연 약 3억 유로(약 4,500억 원) 규모**에 이른 것으로 알려졌다. 라이선스 계약이 2030년까지 유효한 만큼 하루아침에 없어지는 건 아니지만, 옴테라로의 전환이 완료되면 이 반복 비용은 사라진다.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:20px 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 180" width="100%" height="auto" role="img" aria-label="지멘스 브랜드 로열티 연 약 3억 유로가 옴테라 독립 브랜드 전환으로 절감된다는 개념 비교">
   <text x="20" y="20" fill="#23201D" font-size="12" font-weight="bold">브랜드 로열티 (연간, 낮을수록 이득↑)</text>
   <line x1="20" y1="140" x2="400" y2="140" stroke="#8A8378" stroke-width="1"/>

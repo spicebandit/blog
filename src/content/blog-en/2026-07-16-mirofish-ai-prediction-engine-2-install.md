@@ -26,7 +26,7 @@ Second, the **backend** — the actual brain. Written in Python, it does all the
 
 Third, the **external services** — MiroFish doesn't hold intelligence itself; it borrows two external brains. One is the **LLM API** that lets agents speak and think (any OpenAI-format API works), the other is the **memory service** that stores each agent's long-term memory (the recommended setup uses Zep Cloud). Because of this design, MiroFish installs lightly — but most of the actual compute and cost happens in these external services.
 
-<figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:1.5rem 0">
+<figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px;margin:1.5rem 0">
 <svg viewBox="0 0 720 220" width="100%" height="auto" role="img" aria-label="MiroFish system structure: frontend (3000) and backend (5001) communicate, and the backend calls the LLM API and memory service">
   <rect x="20" y="80" width="150" height="60" rx="8" fill="#fff" stroke="#23201D" stroke-width="1.5"/>
   <text x="95" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#23201D">Frontend</text>
@@ -36,11 +36,11 @@ Third, the **external services** — MiroFish doesn't hold intelligence itself; 
   <text x="360" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#C8102E">Backend (brain)</text>
   <text x="360" y="124" text-anchor="middle" font-size="11" fill="#8A8378">Python · localhost:5001</text>
 
-  <rect x="550" y="20" width="150" height="55" rx="8" fill="#FAF6EE" stroke="#8A8378" stroke-width="1.5"/>
+  <rect x="550" y="20" width="150" height="55" rx="8" fill="#F6F7F9" stroke="#8A8378" stroke-width="1.5"/>
   <text x="625" y="43" text-anchor="middle" font-size="13" font-weight="700" fill="#23201D">LLM API</text>
   <text x="625" y="61" text-anchor="middle" font-size="10.5" fill="#8A8378">OpenAI format</text>
 
-  <rect x="550" y="145" width="150" height="55" rx="8" fill="#FAF6EE" stroke="#8A8378" stroke-width="1.5"/>
+  <rect x="550" y="145" width="150" height="55" rx="8" fill="#F6F7F9" stroke="#8A8378" stroke-width="1.5"/>
   <text x="625" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#23201D">Memory service</text>
   <text x="625" y="186" text-anchor="middle" font-size="10.5" fill="#8A8378">Zep Cloud (rec.)</text>
 

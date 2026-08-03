@@ -45,7 +45,7 @@ tags: ["전력시장", "정산실무", "SMP", "에너지정산금"]
 그래서 변동비가 SMP보다 낮은 발전기는 **(SMP − 변동비)만큼 마진**을 남깁니다. 예를 들어 어느 시간대에 가스복합이 한계발전기가 되어 SMP가 150원/kWh로 정해지면, 변동비 70원/kWh짜리 석탄발전기는 1kWh당 80원을 남기고, 변동비 120원/kWh짜리 가스복합은 30원을 남깁니다. 같은 시장 가격을 받아도 변동비가 낮은 발전기일수록 마진이 큰 구조입니다.
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="예시 SMP 150원과 가스복합 변동비 120원, 석탄 변동비 70원을 비교한 가로 막대 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="예시 SMP 150원과 가스복합 변동비 120원, 석탄 변동비 70원을 비교한 가로 막대 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">SMP와 발전기 변동비 비교 — 단위: 원/kWh (예시값)</text>
 <line x1="150" y1="70" x2="150" y2="196" stroke="#8A8378"/>
 <line x1="150" y1="196" x2="690" y2="196" stroke="#8A8378"/>
@@ -56,12 +56,12 @@ tags: ["전력시장", "정산실무", "SMP", "에너지정산금"]
 <text x="690" y="214" font-size="11" fill="#8A8378" text-anchor="middle">160</text>
 <text x="140" y="97" font-size="13" fill="#23201D" text-anchor="end">SMP</text>
 <rect x="150" y="80" width="506" height="24" rx="3" fill="#C8102E"/>
-<text x="648" y="97" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="end">150원</text>
+<text x="648" y="97" font-size="12" font-weight="700" fill="#F6F7F9" text-anchor="end">150원</text>
 <text x="140" y="137" font-size="13" fill="#23201D" text-anchor="end">가스복합 변동비</text>
 <rect x="150" y="120" width="405" height="24" rx="3" fill="#8A8378"/>
 <text x="563" y="137" font-size="12" fill="#8A8378">120원 (마진 30원)</text>
 <text x="140" y="177" font-size="13" fill="#23201D" text-anchor="end">석탄 변동비</text>
-<rect x="150" y="160" width="236" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="160" width="236" height="24" rx="3" fill="#E4E7EC"/>
 <text x="394" y="177" font-size="12" fill="#8A8378">70원 (마진 80원)</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">한계발전기(가스복합)의 변동비가 SMP가 되고, SMP와 변동비의 차이가 각 발전기의 마진이 된다 (예시값)</figcaption>
@@ -109,7 +109,7 @@ tags: ["전력시장", "정산실무", "SMP", "에너지정산금"]
 | 마진 (= (SMP − 변동비) × 정산전력량) | (150−120)×500,000 = 15,000,000 원 (1,500만원) | (150−70)×500,000 = 40,000,000 원 (4,000만원) |
 
 <figure style="margin:1.5rem 0;">
-<svg viewBox="0 0 720 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A발전기와 B발전기의 에너지정산금, 변동비, 마진을 비교한 가로 막대 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
+<svg viewBox="0 0 720 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A발전기와 B발전기의 에너지정산금, 변동비, 마진을 비교한 가로 막대 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">A·B 발전기 정산 비교 — 단위: 만원 (예시값)</text>
 <line x1="150" y1="70" x2="150" y2="316" stroke="#8A8378"/>
 <line x1="150" y1="316" x2="690" y2="316" stroke="#8A8378"/>
@@ -120,18 +120,18 @@ tags: ["전력시장", "정산실무", "SMP", "에너지정산금"]
 <text x="690" y="334" font-size="11" fill="#8A8378" text-anchor="middle">8,000</text>
 <text x="140" y="97" font-size="13" fill="#23201D" text-anchor="end">A 에너지정산금</text>
 <rect x="150" y="80" width="506" height="24" rx="3" fill="#8A8378"/>
-<text x="648" y="97" font-size="12" fill="#FAF6EE" text-anchor="end">7,500만원</text>
+<text x="648" y="97" font-size="12" fill="#F6F7F9" text-anchor="end">7,500만원</text>
 <text x="140" y="137" font-size="13" fill="#23201D" text-anchor="end">A 변동비</text>
-<rect x="150" y="120" width="405" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="120" width="405" height="24" rx="3" fill="#E4E7EC"/>
 <text x="563" y="137" font-size="12" fill="#8A8378">6,000만원</text>
 <text x="140" y="177" font-size="13" fill="#23201D" text-anchor="end">A 마진</text>
 <rect x="150" y="160" width="101" height="24" rx="3" fill="#C8102E"/>
 <text x="259" y="177" font-size="12" font-weight="700" fill="#C8102E">1,500만원</text>
 <text x="140" y="217" font-size="13" fill="#23201D" text-anchor="end">B 에너지정산금</text>
 <rect x="150" y="200" width="506" height="24" rx="3" fill="#8A8378"/>
-<text x="648" y="217" font-size="12" fill="#FAF6EE" text-anchor="end">7,500만원</text>
+<text x="648" y="217" font-size="12" fill="#F6F7F9" text-anchor="end">7,500만원</text>
 <text x="140" y="257" font-size="13" fill="#23201D" text-anchor="end">B 변동비</text>
-<rect x="150" y="240" width="236" height="24" rx="3" fill="#E5DECF"/>
+<rect x="150" y="240" width="236" height="24" rx="3" fill="#E4E7EC"/>
 <text x="394" y="257" font-size="12" fill="#8A8378">3,500만원</text>
 <text x="140" y="297" font-size="13" fill="#23201D" text-anchor="end">B 마진</text>
 <rect x="150" y="280" width="270" height="24" rx="3" fill="#C8102E"/>

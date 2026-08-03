@@ -29,9 +29,9 @@ There's one constraint here that makes phones fundamentally different from compu
 What about speed? According to the [PromptQuorum guide](https://www.promptquorum.com/power-local-llm/best-local-llm-apps-iphone-2026), which compiled measurements as of June 2026, an iPhone 16 Pro running Phi-4 Mini (3.8B, Q4) manages 10–15 tokens per second (14–20 in Metal-accelerated apps). Small 1B-class models reportedly hit 25–40 tokens per second on the latest devices ([Local AI Master](https://localaimaster.com/blog/run-llm-on-phone)). Considering that people read at roughly 5–7 tokens per second, that's **plenty fast for chat use**. Two things to brace for, though. Keep generating long-form text for 10–15 minutes and thermal throttling cuts speed by 30–50%; sustained inference reportedly drains the battery at 20–30% per hour. An iPhone local LLM is a tool for "short, frequent conversations" — not a long-report generator.
 
 <figure>
-<svg viewBox="0 0 800 260" role="img" aria-label="Bar chart comparing generation speed by model size on an iPhone 16 Pro-class device. 1B-class models 25 to 40 tokens per second, 3-4B-class models 10 to 20 tokens per second, human reading speed about 5 to 7 tokens per second" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
+<svg viewBox="0 0 800 260" role="img" aria-label="Bar chart comparing generation speed by model size on an iPhone 16 Pro-class device. 1B-class models 25 to 40 tokens per second, 3-4B-class models 10 to 20 tokens per second, human reading speed about 5 to 7 tokens per second" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
   <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">Generation speed by model size on an iPhone (16 Pro class, tokens/sec — higher is faster)</text>
-  <g stroke="#E5DECF" stroke-width="1">
+  <g stroke="#E4E7EC" stroke-width="1">
     <line x1="220" y1="50" x2="220" y2="210"/>
     <line x1="355" y1="50" x2="355" y2="210"/>
     <line x1="490" y1="50" x2="490" y2="210"/>
@@ -48,13 +48,13 @@ What about speed? According to the [PromptQuorum guide](https://www.promptquorum
   <text x="212" y="80" font-size="13" fill="#23201D" text-anchor="end">1B class (Llama 3.2 1B, etc.)</text>
   <rect x="220" y="62" width="337" height="26" rx="4" fill="#C8102E"/>
   <rect x="557" y="62" width="203" height="26" rx="4" fill="#EBB1B4"/>
-  <text x="560" y="80" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="end">25–40</text>
+  <text x="560" y="80" font-size="13" font-weight="700" fill="#F6F7F9" text-anchor="end">25–40</text>
   <text x="212" y="130" font-size="13" fill="#23201D" text-anchor="end">3–4B class (Phi-4 Mini, etc.)</text>
   <rect x="220" y="112" width="135" height="26" rx="4" fill="#8A8378"/>
-  <rect x="355" y="112" width="135" height="26" rx="4" fill="#E5DECF"/>
+  <rect x="355" y="112" width="135" height="26" rx="4" fill="#E4E7EC"/>
   <text x="498" y="130" font-size="13" fill="#23201D">10–20</text>
   <text x="212" y="180" font-size="13" fill="#23201D" text-anchor="end">Human reading speed (reference)</text>
-  <rect x="220" y="162" width="81" height="26" rx="4" fill="#E5DECF"/>
+  <rect x="220" y="162" width="81" height="26" rx="4" fill="#E4E7EC"/>
   <text x="309" y="180" font-size="13" fill="#8A8378">~5–7</text>
 </svg>
 <figcaption>Measured generation-speed ranges by model size (lighter shades show variation by app, quantization, and thermal state). Anything faster than reading speed is practical for chat. Sources: PromptQuorum (2026-06), Local AI Master</figcaption>
