@@ -1,7 +1,7 @@
 ---
 title: "Codex vs Claude Code — 뭐가 다르고 뭘 써야 하나"
 description: "OpenAI Codex와 Claude Code, 2026년 두 코딩 에이전트를 정면 비교한다. 로컬·대화형 vs 클라우드·자율이라는 철학 차이부터 벤치마크·비용·실전 선택 기준까지 정리했다."
-pubDate: 2026-07-10T07:45:00+09:00
+pubDate: 2026-07-10T14:43:49+09:00
 category: ax
 tags: ["Codex", "Claude Code", "AI 코딩", "개발도구"]
 ---

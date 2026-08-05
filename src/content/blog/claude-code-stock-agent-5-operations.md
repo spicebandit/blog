@@ -1,7 +1,7 @@
 ---
 title: "주식봇 자동화 운영 — 텔레그램 승인·launchd 무인화 [5편]"
 description: "Claude Code 주식봇 운영편. 텔레그램 인라인 버튼으로 매매를 폰에서 승인하고, launchd로 매일 아침·장중·마감을 자동 실행합니다. 주식 에이전트 무인 운영 체계 완성 가이드."
-pubDate: 2026-06-23T09:00:00+09:00
+pubDate: 2026-06-23T13:17:56+09:00
 updatedDate: 2026-07-06T20:30:00+09:00
 category: ax
 tags: ["ClaudeCode", "주식자동매매", "텔레그램봇", "launchd", "자동화"]

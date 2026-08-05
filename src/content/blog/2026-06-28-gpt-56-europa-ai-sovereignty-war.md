@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6부터 EUROPA까지 — AI 패권 전쟁과 '자국 AI'"
 description: "OpenAI가 사이버보안 특화 GPT-5.6 Sol을 공개한 같은 주, EU는 독자 오픈소스 프론티어 AI 개발에 착수했다. AI 경쟁의 전선이 모델 성능에서 '국가 AI 주권'으로 이동하고 있다."
-pubDate: 2026-06-29T08:25:00+09:00
+pubDate: 2026-06-29T16:40:40+09:00
 category: ai
 tags: ["GPT-5.6", "EU AI", "AI 주권", "오픈소스 AI"]
 ---

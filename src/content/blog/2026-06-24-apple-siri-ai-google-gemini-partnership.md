@@ -1,7 +1,7 @@
 ---
 title: "Siri AI 뭐가 달라지나 — iOS 27 9월 출시 총정리"
 description: "iOS 27과 함께 9월 출시될 Siri AI의 구체적 신기능 5가지, 아이폰 17 RAM 제한 이슈, 그리고 기대와 우려가 동시에 쌓이는 이유를 정리했다."
-pubDate: 2026-06-24T09:00:00+09:00
+pubDate: 2026-06-24T07:39:32+09:00
 category: ai
 tags: ["Siri AI", "iOS 27", "Apple", "WWDC 2026"]
 draft: false

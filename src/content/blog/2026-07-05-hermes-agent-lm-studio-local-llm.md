@@ -1,7 +1,7 @@
 ---
 title: "헤르메스 AI LM Studio 연동 — 로컬 구동 비용 0원 [3편]"
 description: "헤르메스 에이전트를 LM Studio 로컬 모델로 돌리는 법. 서버 켜기, hermes model 설정, config.yaml 커스텀 엔드포인트, 64K 컨텍스트 요건과 안 될 때 해결법까지 실전 정리."
-pubDate: 2026-07-05T10:57:00+09:00
+pubDate: 2026-07-05T11:35:07+09:00
 category: ax
 tags: ["hermes-agent", "lm-studio", "로컬 LLM", "ai-agent"]
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "AI 모델 홍수 시대, 하나만 쓰면 지는 이유"
 description: "2026년 6월은 역사상 최다 AI 모델이 출시된 달로 기록된다. GPT-5.5, Claude Opus 4.8, Gemini 3.1 Pro, Grok 4.3이 동시에 경쟁하는 지금, 단일 AI에 집착하는 것이 왜 실수인지, 어떻게 멀티AI 전략을 짤 것인지 정리했다."
-pubDate: 2026-06-27T08:00:00+09:00
+pubDate: 2026-06-27T07:16:42+09:00
 category: ai
 tags: ["AI모델", "멀티AI전략", "ChatGPT", "Claude"]
 ---

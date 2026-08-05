@@ -1,7 +1,7 @@
 ---
 title: "DART 전자공시 API를 클로드코드로 자동 조회하기"
 description: "한국 전자공시(DART) 오픈API를 클로드코드(Claude Code)에 연결해 상장사 재무제표·공시·임원현황을 명령 한 줄로 뽑는 법. 텔레그램으로 지시하고 결과를 텍스트는 물론 PPT·엑셀로 받는 활용법까지."
-pubDate: 2026-06-20T18:00:00+09:00
+pubDate: 2026-06-20T14:32:59+09:00
 category: ax
 tags: ["ClaudeCode", "DART", "전자공시", "OpenAPI", "Python"]
 ---

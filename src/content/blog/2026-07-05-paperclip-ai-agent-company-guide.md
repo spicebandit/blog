@@ -1,7 +1,7 @@
 ---
 title: "AI 직원으로 운영하는 회사 만들기 — Paperclip 입문 [1편]"
 description: "AI 직원으로 굴러가는 회사를 진짜로 만들 수 있을까. 오픈소스 Paperclip으로 AI 에이전트에게 직함·보고라인·예산을 주고 회사처럼 조직하는 법 — npx 한 줄 설치부터 첫 조직 설계까지."
-pubDate: 2026-07-06T08:00:00+09:00
+pubDate: 2026-07-06T07:09:04+09:00
 updatedDate: 2026-07-06T18:30:00+09:00
 category: ax
 tags: ["AI 직원", "AI 에이전트 회사", "paperclip", "멀티에이전트"]
