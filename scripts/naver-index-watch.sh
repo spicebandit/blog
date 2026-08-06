@@ -17,7 +17,7 @@ tell application "Safari"
     close front document
     return "LOGIN_EXPIRED"
   end if
-  set v to do JavaScript "(function(){var m=document.body.innerText.match(/색인[^0-9]*([0-9,]+)/);var u=document.body.innerText.match(/최근 업데이트[^0-9]*([0-9.]+)/);return (m?m[1]:'?')+'|'+(u?u[1]:'?');})();" in front document
+  set v to do JavaScript "(function(){var t=document.body.innerText;var m=t.match(/색인(?!제외)[^0-9]{0,12}([0-9][0-9.,]*)([백천만억]?)/);var u=t.match(/최근 업데이트[^0-9]*([0-9.]+)/);var raw='?',num='?';if(m){raw=m[1]+m[2];var mult={'백':100,'천':1000,'만':10000,'억':100000000}[m[2]]||1;num=String(Math.round(parseFloat(m[1].replace(/,/g,''))*mult));}return raw+'~'+num+'|'+(u?u[1]:'?');})();" in front document
   close front document
   return "OK|" & v
 end tell
@@ -28,12 +28,15 @@ case "$RES" in
   LOGIN_EXPIRED)
     notify "🔶 네이버 색인 추적: 사파리 네이버 로그인 만료 — 재로그인 필요합니다." ;;
   OK\|*)
+    # VAL 형식: "<표시값>~<숫자>|<업데이트일>"  예) "1.5백~150|2026.08.04"
     VAL="${RES#OK|}"; IDX="${VAL%%|*}"; UPD="${VAL##*|}"
+    RAW="${IDX%%~*}"; NUM="${IDX##*~}"
+    [ "$NUM" = "?" ] && exit 0   # 파싱 실패는 알림 없이 종료(다음 날 재시도)
     LAST="$(cat "$STATE" 2>/dev/null || echo '')"
-    if [ "$IDX" != "$LAST" ]; then
-      echo "$IDX" > "$STATE"
+    if [ "$NUM" != "$LAST" ]; then
+      echo "$NUM" > "$STATE"
       if [ -n "$LAST" ]; then
-        notify "📈 네이버 색인 변화: ${LAST} → ${IDX} 페이지 (진단 업데이트 ${UPD} 기준)"
+        notify "📈 네이버 색인 변화: ${LAST} → ${NUM} 페이지 (네이버 표시 ${RAW}, 진단 업데이트 ${UPD} 기준)"
       fi
     fi ;;
   *)
