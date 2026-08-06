@@ -1,10 +1,9 @@
 ---
 title: "LNG 도입단가 오르나 내리나, 가스공사 계약 뜯어보니"
 description: "가스공사 LNG 장·단기 도입계약을 뜯어보면 도입단가의 방향이 보인다. 2026년 카타르 충격으로 오르는 지금과, 가격 연동 기준이 유가에서 미국 가스로 넘어가는 2028년 이후를 데이터로 짚었다."
-pubDate: 2026-08-06T17:30:00+09:00
+pubDate: 2026-08-06T17:25:00+09:00
 category: energy
 tags: ["LNG", "가스공사", "천연가스", "에너지가격"]
-draft: true
 ---
 
 한국가스공사의 LNG 도입단가가 오르는지 내리는지 묻는다면, 2026년 8월 현재 정직한 답은 "지금은 오르고 있고, 2028년부터는 내려갈 여지가 있다"이다. 두 문장이 모순처럼 보이지만 그렇지 않다. 도입단가를 움직이는 힘이 지금과 그때가 다르기 때문이다. 지금은 지난 2~4월 중동에서 벌어진 일이 유가연동 계약의 시차를 타고 뒤늦게 도착하는 중이고, 2028년부터는 가스공사가 갈아끼운 계약들이 발효되면서 가격이 연동되는 기준 자체가 바뀐다.
@@ -34,12 +33,12 @@ draft: true
   <text x="87" y="214" font-size="12" fill="#8A8378" text-anchor="end">17,000</text>
   <text x="87" y="254" font-size="12" fill="#8A8378" text-anchor="end">16,000</text>
   <text x="87" y="294" font-size="12" fill="#8A8378" text-anchor="end">15,000</text>
-  <rect x="170" y="248" width="110" height="42" fill="#8A8378"/>
-  <rect x="355" y="172" width="110" height="118" fill="#8A8378"/>
-  <rect x="540" y="115" width="110" height="175" fill="#C8102E"/>
+  <rect x="170" y="248" width="110" height="42" fill="#A8BDD2"/>
+  <rect x="355" y="172" width="110" height="118" fill="#4E7FA8"/>
+  <rect x="540" y="115" width="110" height="175" fill="#1B4F8A"/>
   <text x="225" y="240" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">16,048</text>
   <text x="410" y="164" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">17,961</text>
-  <text x="595" y="107" font-size="14" font-weight="700" fill="#C8102E" text-anchor="middle">19,379</text>
+  <text x="595" y="107" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">19,379</text>
   <text x="225" y="312" font-size="13" fill="#23201D" text-anchor="middle">3월</text>
   <text x="410" y="312" font-size="13" fill="#23201D" text-anchor="middle">5월</text>
   <text x="595" y="312" font-size="13" fill="#23201D" text-anchor="middle">6월</text>
@@ -65,12 +64,12 @@ draft: true
   <text x="62" y="154" font-size="12" fill="#8A8378" text-anchor="end">12</text>
   <text x="62" y="99" font-size="12" fill="#8A8378" text-anchor="end">18</text>
   <text x="62" y="44" font-size="12" fill="#8A8378" text-anchor="end">24</text>
-  <polyline points="100,162 173,55 279,123 395,80 680,88" fill="none" stroke="#C8102E" stroke-width="3"/>
-  <circle cx="100" cy="162" r="5" fill="#C8102E"/>
-  <circle cx="173" cy="55" r="5" fill="#C8102E"/>
-  <circle cx="279" cy="123" r="5" fill="#C8102E"/>
-  <circle cx="395" cy="80" r="5" fill="#C8102E"/>
-  <circle cx="680" cy="88" r="5" fill="#C8102E"/>
+  <polyline points="100,162 173,55 279,123 395,80 680,88" fill="none" stroke="#1B4F8A" stroke-width="3"/>
+  <circle cx="100" cy="162" r="5" fill="#1B4F8A"/>
+  <circle cx="173" cy="55" r="5" fill="#1B4F8A"/>
+  <circle cx="279" cy="123" r="5" fill="#1B4F8A"/>
+  <circle cx="395" cy="80" r="5" fill="#1B4F8A"/>
+  <circle cx="680" cy="88" r="5" fill="#1B4F8A"/>
   <text x="100" y="184" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">10.7</text>
   <text x="173" y="45" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">22.4</text>
   <text x="279" y="145" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">15.0</text>
@@ -81,7 +80,7 @@ draft: true
   <text x="279" y="282" font-size="12" fill="#8A8378" text-anchor="middle">4/17</text>
   <text x="395" y="282" font-size="12" fill="#8A8378" text-anchor="middle">5/19</text>
   <text x="680" y="282" font-size="12" fill="#8A8378" text-anchor="middle">8월 초</text>
-  <text x="173" y="305" font-size="12" fill="#C8102E" text-anchor="middle">↑ 라스라판 피격 직후</text>
+  <text x="173" y="305" font-size="12" fill="#1B4F8A" text-anchor="middle">↑ 라스라판 피격 직후</text>
 </svg>
 <figcaption>2월 말 대비 3월 중순 108% 상승. 이후 조정을 받았지만 전쟁 이전 10달러대로는 복귀하지 못했다. 자료: 서울경제(2026-03-20), 에너지경제(2026-05-29), Trading Economics, LNG Price Index.</figcaption>
 </figure>
@@ -157,23 +156,23 @@ draft: true
   <text x="30" y="34" font-size="17" font-weight="700" fill="#23201D">2025년 LNG 도입단가 — 현물은 장기계약보다 확실히 비싸다</text>
   <text x="30" y="56" font-size="13" fill="#8A8378">단위: 달러/톤 (낮을수록 유리)</text>
   <rect x="150" y="80" width="513" height="26" fill="#23201D"/>
-  <rect x="150" y="120" width="420" height="26" fill="#8A8378"/>
-  <rect x="150" y="160" width="412" height="26" fill="#8A8378"/>
-  <rect x="150" y="200" width="402" height="26" fill="#C8102E"/>
-  <rect x="150" y="240" width="394" height="26" fill="#8A8378"/>
-  <rect x="150" y="280" width="385" height="26" fill="#8A8378"/>
-  <rect x="150" y="320" width="376" height="26" fill="#8A8378"/>
+  <rect x="150" y="120" width="420" height="26" fill="#A8BDD2"/>
+  <rect x="150" y="160" width="412" height="26" fill="#A8BDD2"/>
+  <rect x="150" y="200" width="402" height="26" fill="#1B4F8A"/>
+  <rect x="150" y="240" width="394" height="26" fill="#A8BDD2"/>
+  <rect x="150" y="280" width="385" height="26" fill="#A8BDD2"/>
+  <rect x="150" y="320" width="376" height="26" fill="#A8BDD2"/>
   <text x="140" y="98" font-size="13" fill="#23201D" text-anchor="end">현물 최고</text>
   <text x="140" y="138" font-size="13" fill="#23201D" text-anchor="end">호주</text>
   <text x="140" y="178" font-size="13" fill="#23201D" text-anchor="end">카타르</text>
-  <text x="140" y="218" font-size="13" font-weight="700" fill="#C8102E" text-anchor="end">전체 평균</text>
+  <text x="140" y="218" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="end">전체 평균</text>
   <text x="140" y="258" font-size="13" fill="#23201D" text-anchor="end">미국</text>
   <text x="140" y="298" font-size="13" fill="#23201D" text-anchor="end">러시아</text>
   <text x="140" y="338" font-size="13" fill="#23201D" text-anchor="end">말레이시아</text>
   <text x="673" y="98" font-size="13" font-weight="700" fill="#23201D">710</text>
   <text x="580" y="138" font-size="13" fill="#23201D">581</text>
   <text x="572" y="178" font-size="13" fill="#23201D">570</text>
-  <text x="562" y="218" font-size="13" font-weight="700" fill="#C8102E">557</text>
+  <text x="562" y="218" font-size="13" font-weight="700" fill="#1B4F8A">557</text>
   <text x="554" y="258" font-size="13" fill="#23201D">546</text>
   <text x="545" y="298" font-size="13" fill="#23201D">533</text>
   <text x="536" y="338" font-size="13" fill="#23201D">521</text>
@@ -203,18 +202,18 @@ draft: true
   <text x="30" y="34" font-size="17" font-weight="700" fill="#23201D">가격 연동지수 구성 — 유가 일변도에서 절반씩으로</text>
   <text x="30" y="56" font-size="13" fill="#8A8378">기간계약 물량 기준 비중(%)</text>
   <text x="30" y="100" font-size="13" fill="#23201D">2024년 실적</text>
-  <rect x="150" y="78" width="440" height="34" fill="#C8102E"/>
-  <rect x="590" y="78" width="90" height="34" fill="#23201D"/>
+  <rect x="150" y="78" width="440" height="34" fill="#23201D"/>
+  <rect x="590" y="78" width="90" height="34" fill="#1B4F8A"/>
   <text x="370" y="101" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">유가연동 83%</text>
   <text x="635" y="101" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">17%</text>
   <text x="30" y="175" font-size="13" fill="#23201D">KEEI 권고안</text>
-  <rect x="150" y="153" width="265" height="34" fill="#C8102E"/>
-  <rect x="415" y="153" width="265" height="34" fill="#23201D"/>
+  <rect x="150" y="153" width="265" height="34" fill="#23201D"/>
+  <rect x="415" y="153" width="265" height="34" fill="#1B4F8A"/>
   <text x="282" y="176" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">유가연동 약 50%</text>
   <text x="547" y="176" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">헨리허브 약 50%</text>
-  <rect x="150" y="212" width="14" height="14" fill="#C8102E"/>
+  <rect x="150" y="212" width="14" height="14" fill="#23201D"/>
   <text x="172" y="224" font-size="12" fill="#8A8378">유가(브렌트·JCC) 연동</text>
-  <rect x="330" y="212" width="14" height="14" fill="#23201D"/>
+  <rect x="330" y="212" width="14" height="14" fill="#1B4F8A"/>
   <text x="352" y="224" font-size="12" fill="#8A8378">헨리허브(미국 가스) 연동</text>
 </svg>
 <figcaption>에너지경제연구원은 단일 지수 의존보다 유가연동 46.6~52.5% · 헨리허브연동 47.5~53.4%의 포트폴리오가 가격 상승 위험 관리에 유리하다고 분석했다. 2028년 미국산 물량이 개시되면 실제 구성이 이 권고에 가까워진다.</figcaption>
