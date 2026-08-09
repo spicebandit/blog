@@ -56,6 +56,28 @@ function b64url(input) {
     .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
+/**
+ * 네트워크 일시 장애 대비 재시도 래퍼.
+ * launchd가 07:00에 깨울 때 Wi-Fi가 아직 붙지 않아 'fetch failed'로 죽는 사례가 있었다
+ * (2026-08-10 확인). 5s→10s→15s 백오프로 최대 4회 시도한다.
+ */
+async function fetchRetry(url, options, { attempts = 4, baseDelayMs = 5000 } = {}) {
+  let lastErr;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fetch(url, options);
+    } catch (err) {
+      lastErr = err;
+      if (i < attempts - 1) {
+        const wait = baseDelayMs * (i + 1);
+        console.error(`⚠️ 네트워크 실패 (${i + 1}/${attempts}) — ${wait / 1000}초 후 재시도: ${err.message}`);
+        await new Promise((r) => setTimeout(r, wait));
+      }
+    }
+  }
+  throw lastErr;
+}
+
 /** 서비스 계정으로 GA 읽기 권한 access token 발급 */
 async function getAccessToken(sa) {
   const now = Math.floor(Date.now() / 1000);
@@ -73,7 +95,7 @@ async function getAccessToken(sa) {
   signer.update(signingInput);
   const jwt = `${signingInput}.${b64url(signer.sign(sa.private_key))}`;
 
-  const res = await fetch('https://oauth2.googleapis.com/token', {
+  const res = await fetchRetry('https://oauth2.googleapis.com/token', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({
@@ -90,7 +112,7 @@ async function getAccessToken(sa) {
 
 /** 전날 합계(어제 vs 그제) + 인기 글 TOP5를 한 번에 조회 */
 async function fetchReport(token, propertyId) {
-  const res = await fetch(
+  const res = await fetchRetry(
     `https://analyticsdata.googleapis.com/v1beta/properties/${propertyId}:batchRunReports`,
     {
       method: 'POST',
@@ -164,7 +186,7 @@ async function fetchSearchKeywords(token) {
   try {
     const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' });
     const start = new Date(Date.now() - 7 * 86400000).toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' });
-    const res = await fetch(
+    const res = await fetchRetry(
       `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(GSC_SITE)}/searchAnalytics/query`,
       {
         method: 'POST',
