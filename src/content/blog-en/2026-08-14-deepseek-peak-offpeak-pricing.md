@@ -1,6 +1,6 @@
 ---
-title: "DeepSeek's New API Pricing Is a Price Increase Dressed as a Discount"
-description: "From August 16, DeepSeek splits API rates into peak and off-peak. The company frames it as half-price off-peak — but even the off-peak rate is 2.3x today's price, and the peak window lands on Asian working hours."
+title: "DeepSeek API Prices Rise August 16 — Here's How Much"
+description: "DeepSeek splits its API rates into peak and off-peak on August 16. Here are the increases by model, where the peak windows land in your time zone, and practical ways to hold the bill down."
 pubDate: 2026-08-14T08:48:05+09:00
 category: ai
 tags: ["DeepSeek", "LLM costs", "AI infrastructure", "API pricing"]
@@ -64,9 +64,7 @@ Cache hits are the discounted path you get when you send the same prefix over an
 
 It is worth holding two facts side by side, though. **The percentage increases are large, but the starting point was very low.** In absolute terms these are still not expensive tokens. Whether the change stings depends almost entirely on volume — a hobby project will not notice, and a pipeline burning billions of tokens a month will notice immediately.
 
-Still, the fact that *caching* took the biggest hit is itself worth reading closely. The power industry spent a century wrestling with the constraint that electricity cannot be stored, and the workaround it eventually found was **pumped-storage hydro** — a technique that began in Switzerland in 1907. Pump water uphill when power is cheap, release it downhill when power is expensive. Storage and time-arbitrage were the same act. More than 95% of the world's grid storage capacity still works this way.
-
-In AI inference, the thing occupying that slot is the **prompt cache**. Compute something once, hold onto it, reuse it later — it is the closest thing this industry has to storage. And in this repricing, the item that went up most was precisely the cache hit. **When the price of storage rises faster than the price of production, that tells you something about what the supplier is currently rationing.**
+Still, the fact that *caching* took the biggest hit is worth noting. A cache computes something once, holds onto it, and reuses it later — it is the closest thing this industry has to storage. **Putting the steepest price on that tells you what the supplier is currently rationing.**
 
 ### What it actually costs you
 
@@ -161,10 +159,6 @@ Step back for a second. Peak/off-peak pricing is not a software-industry inventi
 
 The logic behind time-of-use electricity rates is simple. **Electricity is hard to store, and generating capacity has to be built for the maximum demand you ever expect to serve.** If demand spikes for three hours a day, you can either build more plants to cover those three hours or use price to push some of that demand elsewhere. Pushing is cheaper. Industrial tariffs with seasonal and hourly differentials have been standard in many countries for decades, and every cheap-overnight-power scheme rests on the same arithmetic.
 
-The origin goes back further than most people assume. In 1890s Brighton, England, **Arthur Wright**, chief engineer of the Brighton and Hove Electric Light Company, devised a maximum demand indicator — a meter that recorded not just *how much* a customer used but *how hard* they drew at any one moment. That produced a two-part tariff, splitting the bill between a demand charge and a consumption charge.
-
-At Christmas 1894, the American utility magnate **Samuel Insull** visited Brighton and noticed something odd: shops that had closed for the night still had their lights burning. He asked why. The answer was not a flat-rate quirk but a metering-and-rate structure that made off-hours consumption cheap enough to leave on. Insull brought the idea home and applied a two-tier rate in Chicago in 1897. **Which is to say: rate cards have reflected the clock for well over a century.**
-
 GPU inference has exactly the same physics.
 
 | Property | Electricity | AI inference |
@@ -181,9 +175,7 @@ DeepSeek's stated rationale points in exactly that direction. The company descri
 
 What makes the parallel more than a metaphor is that the two industries are physically stacked. Running a GPU takes electricity; cooling it takes more. Power is one of the load-bearing components of inference cost. Data center operators already pay time-of-use rates for that power — and now the inference services running on top of those data centers have begun charging time-of-use rates of their own. **The rate structure propagated one layer up the stack.**
 
-Electricity is not the only industry that learned to slice price by the clock. After the US Airline Deregulation Act of 1978, American Airlines built dedicated systems to manage an inventory that evaporates the instant the aircraft leaves the gate — the seat — and in 1985 introduced a deep-discount fare aimed squarely at the low-cost carriers. The discipline became known as yield management, and it spread from seats to hotel rooms, then to rental cars and advertising inventory. It is why the person in the next seat paid a different price than you did.
-
-**An unsold seat, an empty room, electricity spilled to ground, an idle GPU — these are all the same kind of loss.** Every industry holding that kind of inventory has eventually divided its prices by time. AI inference just joined the list.
+**Electricity spilled to ground and an idle GPU are the same kind of loss.** Industries holding that kind of inventory end up dividing their prices by time, and AI inference has now joined the list.
 
 ## V4-Pro went GA on the same day
 
@@ -219,7 +211,7 @@ For roughly two years, LLM API prices have moved in one direction: down. Better 
 
 The more informative fact is not that prices went up. It is that **prices started being divided by time**. A single flat price is what you charge when supply comfortably exceeds demand; you have no reason to steer anyone. Splitting the rate by hour means capacity in specific hours is genuinely tight. When DeepSeek asks customers to spread their workloads out, that request is close to an admission that GPUs are short during those windows.
 
-The power industry walked this road first — but transplanting its sequence directly is a good way to misread the present one. **Insull's time-of-use rates were not a response to scarcity. They were a response to surplus.** The generators ran all night with almost nobody drawing from them, so the point of cutting the off-hours price was to fill the valley. Raise the load factor — average load divided by peak load — and the same plant sells more electricity without a dollar of new construction. The Chicago rates worked: within a year, a large share of household bills came down by 32%.
+A distinction matters here. Time-of-use pricing has two possible uses: **cutting the price in the quiet hours to fill idle capacity**, and **raising the price in the busy hours to scatter concentrated demand**. The power industry has long leaned on the first. That is why overnight electricity is cheap.
 
 **DeepSeek's change runs the other way. It raised the price in the valley too.** This is not a tariff designed to fill quiet hours; it is one designed to empty busy ones. The same instrument does opposite work depending on whether you have capacity to spare or capacity to ration, and a single line — the off-peak price — tells you which situation this rate card belongs to.
 
@@ -234,5 +226,3 @@ So the thing to take from this repricing is not "DeepSeek got expensive." It is 
 **Key sources**
 - DeepSeek API Docs, "Models & Pricing" — rate tables, peak/off-peak window definitions, effective date (https://api-docs.deepseek.com/quick_start/pricing, checked 2026-08-14)
 - DeepSeek, "DeepSeek-V4-Pro GA Release" announcement (https://api-docs.deepseek.com/news/news260813, 2026-08-13)
-- Arthur Wright's maximum demand indicator and Samuel Insull's Chicago two-tier rate: Grace's Guide and publicly available material on Samuel Insull
-- Origins of pumped-storage hydro, its share of global grid storage, and the development of yield management: publicly available encyclopedic references for each topic
