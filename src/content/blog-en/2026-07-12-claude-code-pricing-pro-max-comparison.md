@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Pricing 2026: Is the Pro Plan Enough?"
 description: "Claude Code runs on the Pro plan ($20/month) — but how smoothly it runs depends on how you use it. A 2026 breakdown of Pro, Max 5x/20x, and API pricing and usage limits, and whether Pro is enough if you mostly chat and run a few agents."
-pubDate: 2026-07-12T08:55:00+09:00
+pubDate: 2026-07-12T07:43:40+09:00
 category: ax
 tags: ["Claude Code", "AI pricing", "Claude Pro", "plan comparison"]
 lang: en

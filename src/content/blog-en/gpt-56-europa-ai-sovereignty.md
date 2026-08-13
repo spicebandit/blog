@@ -1,7 +1,7 @@
 ---
 title: "GPT-5.6 Sol and EUROPA: The AI Sovereignty Race Has Begun"
 description: "The same week OpenAI previewed cybersecurity-focused GPT-5.6 Sol, the EU selected the EUROPA consortium to build an open-source frontier model. AI competition is shifting from benchmarks to national sovereignty."
-pubDate: 2026-06-29T08:25:00+09:00
+pubDate: 2026-06-29T16:40:40+09:00
 category: ai
 tags: ["GPT-5.6", "EU AI", "AI sovereignty", "open-source AI"]
 lang: en

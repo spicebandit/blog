@@ -1,7 +1,7 @@
 ---
 title: "Stock Trading APIs Compared — KIS, Kiwoom, Toss"
 description: "Comparing open APIs from Korean brokers (KIS, Kiwoom, Toss, LS, Daishin) for automated trading and market data. REST vs OCX, auth, paper trading, and OS support — a developer's guide."
-pubDate: 2026-06-27T09:00:00+09:00
+pubDate: 2026-06-27T19:13:11+09:00
 category: ax
 tags: ["stock API", "automated trading", "broker API", "open API"]
 lang: en

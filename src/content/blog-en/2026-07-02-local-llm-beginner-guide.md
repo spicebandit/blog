@@ -1,7 +1,7 @@
 ---
 title: "Local LLM Beginner's Guide: Run AI on Your Own Computer"
 description: "A complete beginner's guide to local LLMs. From installing LM Studio and Ollama to choosing Gemma 4 or Qwen models, calculating memory needs, and quantization (GGUF) basics — have your first chat in 30 minutes, as of July 2026."
-pubDate: "2026-07-03T08:00:00+09:00"
+pubDate: 2026-07-03T08:07:33+09:00
 category: ax
 tags: ["local-llm", "lm-studio", "ollama", "open-source-ai"]
 lang: en

@@ -1,7 +1,7 @@
 ---
 title: "Hermes AI: Practical Use & Automation Guide [Part 2]"
 description: "A case-driven walkthrough of practical Hermes Agent usage: Telegram bot integration, cron automation, MCP server connections, and skill sharing."
-pubDate: "2026-06-29T17:35:00+09:00"
+pubDate: 2026-06-29T19:56:23+09:00
 category: ax
 tags: ["hermes-agent", "nous-research", "ai-automation", "telegram-bot"]
 lang: en

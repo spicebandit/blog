@@ -1,7 +1,7 @@
 ---
 title: "VS Code + Claude Code Setup Guide: AI Coding in One Window"
 description: "Learn how to set up VS Code with Claude Code for AI-assisted development. File explorer, editor, terminal, and AI chat — all in one screen."
-pubDate: 2026-06-10T09:00:00+09:00
+pubDate: 2026-06-12T10:23:26+09:00
 category: ax
 tags: ["VS Code", "Claude Code", "Developer Setup"]
 lang: en

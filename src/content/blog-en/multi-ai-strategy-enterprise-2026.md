@@ -1,7 +1,7 @@
 ---
 title: "Why Sticking to One AI Model Is Costing You in 2026"
 description: "June 2026 saw more frontier AI models launch than any month in history. Here's why a multi-AI strategy beats brand loyalty every time."
-pubDate: 2026-06-26T09:00:00+09:00
+pubDate: 2026-06-27T07:16:42+09:00
 category: ai
 tags: ["multi-AI strategy", "AI models", "Claude", "ChatGPT"]
 lang: en

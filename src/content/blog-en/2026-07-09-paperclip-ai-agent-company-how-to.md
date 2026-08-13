@@ -1,7 +1,7 @@
 ---
 title: "Paperclip Hands-On — From Setup to Running an AI-Staffed Company [Part 2]"
 description: "How to actually set up and run a company staffed by AI employees with Paperclip. From the npx install, defining agents in AGENTS.md, and assigning work as issues, to heartbeat and budget controls that stop tokens from spiraling — a step-by-step, command-level guide."
-pubDate: 2026-07-09T13:40:00+09:00
+pubDate: 2026-07-09T16:06:35+09:00
 category: ax
 tags: ["Paperclip", "AI agent company", "AI employees", "multi-agent"]
 lang: en

@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Mythos 5 Export Control: Only 100 US-Approved Firms Allowed — What About Korea?"
 description: "The US Commerce Department imposed export controls on Anthropic's frontier AI model Mythos 5, limiting use to roughly 100 US-approved firms. We analyze whether Korean companies are included, the backstory, and the impact on Anthropic's IPO."
-pubDate: 2026-06-30T09:00:00+09:00
+pubDate: 2026-06-30T16:18:29+09:00
 category: ai
 tags: ["Anthropic", "Mythos", "AI export control", "Claude"]
 lang: en

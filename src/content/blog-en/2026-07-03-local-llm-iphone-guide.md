@@ -1,7 +1,7 @@
 ---
 title: "Run a Local LLM on Your iPhone: Smartphone AI Guide, Part 2"
 description: "How to run AI on an iPhone with no internet. App comparison (PocketPal, Locally by LM Studio, fullmoon), which models fit which iPhone, and a 10-minute setup guide — smartphone local LLMs as of July 2026."
-pubDate: 2026-07-04T00:20:00+09:00
+pubDate: 2026-07-04T07:23:06+09:00
 category: ax
 tags: ["local-llm", "iphone-ai", "on-device-ai", "pocketpal"]
 lang: en

@@ -1,7 +1,7 @@
 ---
 title: "Scaling MiroFish — From API Automation to Real-World Use [Part 4]"
 description: "Turn MiroFish from a hobby into a tool. The finale covers API automation, running large simulations, real-world scenarios in markets, policy, and elections, counterfactual experiments, and the limits and ethics you must weigh alongside them."
-pubDate: 2026-07-20T00:05:00+09:00
+pubDate: 2026-07-20T11:35:49+09:00
 category: ax
 tags: ["MiroFish", "AI prediction", "automation", "multi-agent"]
 lang: en

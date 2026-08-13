@@ -1,7 +1,7 @@
 ---
 title: "Bernie Sanders' AI Warnings — Jobs, Wealth, and Power Explained"
 description: "A roundup for policymakers, workers, students, and public-sector staff thinking about jobs and policy in the AI era. From Bernie Sanders' warning about 100 million lost jobs to the 32-hour workweek, a robot tax, and a data center moratorium — the key issues, with his actual quotes and sources."
-pubDate: 2026-06-30T15:36:00+09:00
+pubDate: 2026-06-30T18:54:10+09:00
 category: ai
 tags: ["Bernie Sanders", "AI jobs", "AI policy", "data center moratorium"]
 lang: en

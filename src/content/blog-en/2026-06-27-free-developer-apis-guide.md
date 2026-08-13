@@ -1,7 +1,7 @@
 ---
 title: "Free Public APIs for Developers: A Curated List"
 description: "From Kakao/Naver maps and search to weather, exchange rates, AI (Claude/OpenAI), and GitHub — a developer's guide to free and free-tier private APIs you can use right away."
-pubDate: 2026-06-27T10:00:00+09:00
+pubDate: 2026-06-27T22:09:15+09:00
 category: ax
 tags: ["free API", "public API", "developer tools", "API guide"]
 lang: en

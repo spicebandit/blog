@@ -1,7 +1,7 @@
 ---
 title: "Korea AI Data Center Buildout and the 2031 Outlook"
 description: "Investment topping KRW 30 trillion is flooding Korea's AI data center market. From a new special law and global Big Tech deals to grid bottlenecks — the 2026 status and 2031 outlook."
-pubDate: "2026-06-23T10:00:00+09:00"
+pubDate: 2026-06-23T19:56:23+09:00
 category: ai
 tags: ["AI data center", "AI infrastructure", "data center investment", "GPU"]
 lang: en

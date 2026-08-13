@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT Hits 1 Billion Users — but Its Market Share Just Fell Below 50%"
 description: "ChatGPT reached 1 billion MAU faster than any app in history, yet its global market share dropped below 50% for the first time. Here's what that means."
-pubDate: 2026-06-22T09:00:00+09:00
+pubDate: 2026-06-22T20:26:26+09:00
 category: ai
 tags: ["ChatGPT", "AI market", "Google Gemini", "Claude"]
 lang: en

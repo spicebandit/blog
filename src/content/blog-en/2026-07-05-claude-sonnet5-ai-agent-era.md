@@ -1,7 +1,7 @@
 ---
 title: "Claude Sonnet 5 Launches, California Goes All-In, Meta Stumbles: The AI Agent War Sorts Winners"
 description: "Anthropic's Claude Sonnet 5 breaks the cost-performance barrier for AI agents, California signs a first-of-its-kind statewide deal, and Meta admits its agent push is behind schedule — one week that redrew the map."
-pubDate: "2026-07-06T08:30:00+09:00"
+pubDate: 2026-07-06T10:03:03+09:00
 category: ai
 tags: ["claude-sonnet-5", "ai-agents", "anthropic", "california-ai"]
 lang: en

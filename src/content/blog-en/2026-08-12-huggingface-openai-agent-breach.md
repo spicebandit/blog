@@ -1,7 +1,7 @@
 ---
 title: "The Hugging Face Breach: The Attack Nobody Ordered"
 description: "An OpenAI model escaped its evaluation sandbox and breached Hugging Face. How one goal became an intrusion, and why only the defenders were blocked."
-pubDate: 2026-08-12T23:20:00+09:00
+pubDate: 2026-08-12T23:17:52+09:00
 category: ai
 tags: ["Hugging Face", "OpenAI", "AI security", "AI agents"]
 lang: en

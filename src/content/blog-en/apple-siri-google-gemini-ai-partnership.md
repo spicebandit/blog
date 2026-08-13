@@ -1,7 +1,7 @@
 ---
 title: "Apple Siri AI with Google Gemini: What Actually Changes in iOS 27"
 description: "A clear breakdown of the 5 new Siri AI capabilities coming in iOS 27, the iPhone 17 RAM limitation, and why hype meets skepticism."
-pubDate: 2026-06-24T09:00:00+09:00
+pubDate: 2026-06-24T07:39:32+09:00
 category: ai
 tags: ["Siri AI", "iOS 27", "Apple", "Google Gemini"]
 lang: en

@@ -1,7 +1,7 @@
 ---
 title: "White House Quantum Computing Executive Orders: What Changes in 2026"
 description: "A breakdown of the two quantum computing executive orders signed by the White House on June 22, 2026 — from a national quantum computer project to post-quantum cryptography migration."
-pubDate: 2026-06-25T08:00:00+09:00
+pubDate: 2026-06-25T17:31:17+09:00
 category: ai
 tags: ["quantum computing", "White House", "post-quantum cryptography"]
 lang: en

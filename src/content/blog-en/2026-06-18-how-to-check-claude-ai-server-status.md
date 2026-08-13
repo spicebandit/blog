@@ -1,7 +1,7 @@
 ---
 title: "Check Claude Server Status — Is It Down? A 1-Minute Check"
 description: "Is Claude not working right now? How to tell in 1 minute whether it's your problem or a server outage. From the official status page to live alerts, RSS, API, and Downdetector — all in one place."
-pubDate: 2026-06-18T16:20:00+09:00
+pubDate: 2026-06-18T18:46:14+09:00
 updatedDate: 2026-07-20T18:10:00+09:00
 category: ax
 tags: ["Claude server status", "statusline", "Claude Code", "outage check"]

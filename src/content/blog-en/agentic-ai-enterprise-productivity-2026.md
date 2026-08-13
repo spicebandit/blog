@@ -1,7 +1,7 @@
 ---
 title: "Agentic AI in 2026: What's Actually Changing in Enterprise Adoption"
 description: "AI agents now act as autonomous workers, not just assistants. Gartner projects 40% of enterprise apps will embed agents by 2026. Here's what's real."
-pubDate: 2026-06-22T08:00:00+09:00
+pubDate: 2026-06-22T10:56:09+09:00
 category: ai
 tags: ["agentic AI", "AI agents", "enterprise AI", "productivity"]
 lang: en

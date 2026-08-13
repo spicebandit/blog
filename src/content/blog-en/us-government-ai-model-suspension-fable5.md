@@ -1,7 +1,7 @@
 ---
 title: "The Day the US Government Suspended an AI Model: Claude Fable 5 Export Control Crisis"
 description: "On June 12, 2026, the US government invoked export controls on Anthropic's Claude Fable 5 and Mythos 5, cutting off global access just 72 hours after launch. Here's what it means for AI governance."
-pubDate: 2026-06-23T09:00:00+09:00
+pubDate: 2026-06-23T13:16:17+09:00
 category: ai
 tags: ["AI regulation", "Claude", "Anthropic", "export controls"]
 lang: en

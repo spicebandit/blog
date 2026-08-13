@@ -1,7 +1,7 @@
 ---
 title: "Obsidian + AI: Automate Your Personal Knowledge Management"
 description: "Learn how to combine Obsidian with AI to auto-summarize notes, suggest links, and build a living knowledge base you can actually reuse."
-pubDate: 2026-06-24T10:00:00+09:00
+pubDate: 2026-06-24T18:43:16+09:00
 category: ax
 tags: ["Obsidian", "knowledge management", "AI automation"]
 lang: en

@@ -1,7 +1,7 @@
 ---
 title: "Nuclear Power in 2026: Renaissance, Role, and Unresolved Debates"
 description: "Nuclear power is back — driven by AI data centers and the push for carbon-free baseload. But safety, waste, and cost overruns remain unresolved. A balanced look at the 2026 nuclear debate."
-pubDate: 2026-06-18T09:45:00+09:00
+pubDate: 2026-06-18T09:49:39+09:00
 category: energy
 tags: ["nuclear power", "SMR", "energy transition", "power grid", "clean energy"]
 lang: en

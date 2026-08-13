@@ -1,7 +1,7 @@
 ---
 title: "Codex vs Claude Code — What Differs and Which to Use"
 description: "A head-to-head look at OpenAI Codex and Claude Code in 2026: the local-and-interactive vs cloud-and-autonomous philosophy gap, the benchmarks, the costs, and how to actually choose."
-pubDate: 2026-07-10T07:45:00+09:00
+pubDate: 2026-07-10T14:43:49+09:00
 category: ax
 tags: ["Codex", "Claude Code", "AI coding", "developer tools"]
 lang: en

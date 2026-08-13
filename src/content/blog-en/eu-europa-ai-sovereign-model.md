@@ -1,7 +1,7 @@
 ---
 title: "EU Launches EUROPA: Europe's First Sovereign Frontier AI Model"
 description: "The EU has selected the EUROPA consortium to build a 40B-parameter open-source LLM supporting all 24 official EU languages — a direct bid for AI sovereignty."
-pubDate: 2026-06-26T08:00:00+09:00
+pubDate: 2026-06-26T20:14:59+09:00
 category: ai
 tags: ["EU AI", "AI sovereignty", "EUROPA", "LLM"]
 lang: en

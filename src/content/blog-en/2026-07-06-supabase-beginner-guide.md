@@ -1,7 +1,7 @@
 ---
 title: "Supabase for Beginners — Setup, Pricing, Pitfalls & the Company's Rise [Guide]"
 description: "A complete Supabase beginner's guide: build a backend in 30 minutes, understand auth and the database, dodge the free-plan auto-pause trap, and see how the company reached a $10.5B valuation."
-pubDate: "2026-07-06T09:30:00+09:00"
+pubDate: 2026-07-06T19:16:18+09:00
 category: ax
 tags: ["supabase", "backend", "firebase", "database"]
 updatedDate: "2026-07-06T19:30:00+09:00"

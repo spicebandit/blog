@@ -1,7 +1,7 @@
 ---
 title: "Enterprise AI Agents — 62% Try, Only 23% Scale"
 description: "In 2026, 62% of companies are piloting AI agents but only 23% scale them company-wide. The gap between adoption and internalization, Korea's reality (61% gen-AI adoption vs 6.7% internalization), and what the winners did differently."
-pubDate: 2026-07-01T09:04:00+09:00
+pubDate: 2026-07-01T10:49:44+09:00
 category: ai
 tags: ["ai-agents", "agentic-ai", "enterprise-ax", "digital-transformation"]
 lang: en

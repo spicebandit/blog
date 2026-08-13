@@ -1,7 +1,7 @@
 ---
 title: "Running Your First MiroFish Simulation — A Beginner's Guide [Part 3]"
 description: "Let's run your first prediction with MiroFish. A step-by-step beginner's guide: what seed to feed, how to set agent count and rounds, how to read the report, using the god-view and agent chat, and the common mistakes first-timers make."
-pubDate: 2026-07-17T00:05:00+09:00
+pubDate: 2026-07-17T07:15:45+09:00
 category: ax
 tags: ["MiroFish", "AI prediction", "how-to", "multi-agent"]
 lang: en

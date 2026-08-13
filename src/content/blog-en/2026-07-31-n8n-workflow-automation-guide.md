@@ -1,7 +1,7 @@
 ---
 title: "What Is n8n? Concept, How-To, and vs. Zapier & Make"
 description: "A hands-on guide to n8n, the open-source workflow automation tool — its concept and how to use it — compared with Zapier and Make on price, features, and AI agents, plus which one to pick for your situation."
-pubDate: 2026-07-31T11:15:00+09:00
+pubDate: 2026-07-31T17:20:03+09:00
 category: ax
 tags: ["n8n", "Workflow Automation", "No-Code", "AI Automation"]
 lang: en

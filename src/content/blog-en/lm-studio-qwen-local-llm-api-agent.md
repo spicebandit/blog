@@ -1,7 +1,7 @@
 ---
 title: "Run Qwen Locally with LM Studio: API & AI Agents"
 description: "Run Qwen3.5 9B on an M5 MacBook Air with LM Studio and you get an OpenAI-compatible API. Here's how to wire it into any agent framework by changing one line — and where local LLMs still fall short."
-pubDate: 2026-07-09T13:45:00+09:00
+pubDate: 2026-07-09T19:13:28+09:00
 category: ax
 tags: ["LM Studio", "Qwen", "Local LLM", "AI Agents"]
 lang: en

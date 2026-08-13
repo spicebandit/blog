@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Opens Seoul Office While US Export Controls Block Its Top Models in Korea"
 description: "Anthropic launched its Seoul office on June 17, 2026, partnering with Naver, Samsung SDS, and LG CNS — yet a US export ban imposed days earlier cut Korean access to its most powerful AI models."
-pubDate: 2026-06-22T11:00:00+09:00
+pubDate: 2026-06-28T16:26:47+09:00
 category: ai
 tags: ["Anthropic", "AI export control", "Korea AI", "Claude"]
 lang: en

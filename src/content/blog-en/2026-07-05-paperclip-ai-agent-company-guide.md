@@ -1,7 +1,7 @@
 ---
 title: "Run a Company Staffed by AI Employees — Paperclip Guide [Part 1]"
 description: "Can you actually run a company staffed by AI employees? With open-source Paperclip you give AI agents titles, reporting lines, and budgets — from a one-line npx install to your first org chart."
-pubDate: "2026-07-06T08:00:00+09:00"
+pubDate: 2026-07-06T07:09:04+09:00
 updatedDate: "2026-07-06T18:30:00+09:00"
 category: ax
 tags: ["ai employees", "ai agent company", "paperclip", "multi-agent"]

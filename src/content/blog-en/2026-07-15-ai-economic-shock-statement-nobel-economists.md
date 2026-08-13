@@ -1,7 +1,7 @@
 ---
 title: "16 Nobel Laureates Warn: AI's Shock 'Bigger and Faster Than the Industrial Revolution'"
 description: "Over 200 scholars and AI executives, including 16 Nobel economics laureates, issued a joint statement urging the world to prepare for AI's economic shock now. Here's the statement, its signatories, why it came now, and its meaning — analyzed through the eyes of a historian, a sociologist, and a big-history lens."
-pubDate: 2026-07-15T10:11:00+09:00
+pubDate: 2026-07-15T18:25:25+09:00
 category: ai
 tags: ["AI shock", "AI unemployment", "Nobel economics", "technological unemployment"]
 lang: en
