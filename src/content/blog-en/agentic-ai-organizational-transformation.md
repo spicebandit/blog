@@ -3,6 +3,7 @@ title: "How Agentic AI Transforms Organizations: From Managing Execution to Desi
 description: "When organizations delegate operations to AI agents, decision speed explodes and leaders shift from managing execution to designing standards. A look at what that organizational change means."
 pubDate: 2026-06-11T12:00:00Z
 category: economy
+noindex: true
 tags: ["agentic AI", "organizational change", "leadership", "AI strategy", "future of work"]
 lang: en
 sourceSlug: agentic-ai-organization-delegation

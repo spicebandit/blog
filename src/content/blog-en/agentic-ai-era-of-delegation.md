@@ -3,6 +3,7 @@ title: "Agentic AI: The Era of Delegation Has Arrived"
 description: "Agentic AI doesn't just answer questions — it takes action. When humans delegate execution to AI agents, markets and organizations must be redesigned from scratch."
 pubDate: 2026-06-11T10:00:00Z
 category: economy
+noindex: true
 tags: ["agentic AI", "AI agents", "delegation", "future of work"]
 lang: en
 sourceSlug: agentic-ai-delegation-era

@@ -3,6 +3,7 @@ title: "How AI Agents Work — And Why Human Steering Still Matters"
 description: "AI agents can execute tasks autonomously, but they still need humans to set direction and correct course. A clear explanation of how agents work and how to collaborate with them effectively."
 pubDate: 2026-06-13T12:26:58+09:00
 category: ai
+noindex: true
 tags: ["AI agents", "agentic AI", "LLM", "human-AI collaboration", "AI explainer"]
 lang: en
 sourceSlug: 2026-06-13-how-ai-agents-work

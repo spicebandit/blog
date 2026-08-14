@@ -3,6 +3,7 @@ title: "How Agentic AI Is Rewriting the Rules of Market Competition"
 description: "When customers delegate choices to AI agents, brand power and advertising lose their grip. The new competitive edge is trust, verified data, and winning the delegation — not attention."
 pubDate: 2026-06-11T11:00:00Z
 category: economy
+noindex: true
 tags: ["agentic AI", "market competition", "delegation economy", "AI strategy"]
 lang: en
 sourceSlug: agentic-ai-market-delegation

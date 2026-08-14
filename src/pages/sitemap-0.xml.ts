@@ -31,7 +31,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   const [koPosts, enPosts] = await Promise.all([
     getCollection('blog', ({ data }) => !data.draft && !data.noindex),
-    getCollection('blog-en', ({ data }) => !data.draft),
+    getCollection('blog-en', ({ data }) => !data.draft && !data.noindex),
   ]);
 
   const entries: string[] = [];
