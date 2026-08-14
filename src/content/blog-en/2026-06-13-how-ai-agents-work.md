@@ -3,6 +3,7 @@ title: "How AI Agents Work — People Still Steer the Direction"
 description: "AI agents work on their own, but it's still people who set the direction and correct the course along the way. From how they work to how humans collaborate with them, explained simply."
 pubDate: 2026-06-13T12:26:58+09:00
 category: ai
+noindex: true
 tags: ["AI agents", "Agentic AI", "LLM", "Human-AI collaboration"]
 lang: en
 koSlug: 2026-06-13-how-ai-agents-work

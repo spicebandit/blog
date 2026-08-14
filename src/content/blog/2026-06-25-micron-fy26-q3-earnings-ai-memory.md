@@ -3,6 +3,7 @@ title: "마이크론 실적 415억달러, AI 메모리의 힘"
 description: "마이크론이 FY2026 3분기에 매출 415억달러로 사상 최대 실적을 냈다. 84%대 매출총이익률, HBM 풀가동, 1,000억달러 장기계약까지 핵심 숫자와 함께 남은 리스크를 균형 있게 짚었다."
 pubDate: 2026-06-25T15:25:48+09:00
 category: economy
+noindex: true
 tags: ["마이크론", "HBM", "AI반도체", "실적"]
 draft: false
 ---

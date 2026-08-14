@@ -4,6 +4,7 @@ description: "2026년 하반기 방안 확정을 앞둔 지역별 한계가격�
 pubDate: 2026-06-20T22:03:24+09:00
 updatedDate: 2026-07-04T13:30:00+09:00
 category: energy
+noindex: true
 tags: ["LMP", "지역별 차등 전기요금", "전력시장", "분산에너지법"]
 ---
 
