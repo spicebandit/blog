@@ -89,6 +89,9 @@ case "$TAG" in
   0801) ITEMS=(
     "$D/2026-07-31-tesla-china-business-split-korea-fsd.md|2026-08-01T08:00:00+09:00"
   );;
+  0818) ITEMS=(
+    "$D/2026-08-15-us-left-ai-boom-data-center-backlash.md|2026-08-18T08:37:29+09:00"
+  );;
   *) fail "알 수 없는 배치 태그: '$TAG'";;
 esac
 
