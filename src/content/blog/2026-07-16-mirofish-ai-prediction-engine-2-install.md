@@ -29,24 +29,19 @@ tags: ["미로피시", "MiroFish", "설치", "멀티에이전트"]
   <rect x="20" y="80" width="150" height="60" rx="8" fill="#fff" stroke="#23201D" stroke-width="1.5"/>
   <text x="95" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#23201D">프론트엔드</text>
   <text x="95" y="124" text-anchor="middle" font-size="11" fill="#8A8378">Vue · localhost:3000</text>
-
   <rect x="285" y="80" width="150" height="60" rx="8" fill="#fff" stroke="#C8102E" stroke-width="2"/>
   <text x="360" y="105" text-anchor="middle" font-size="14" font-weight="700" fill="#C8102E">백엔드(두뇌)</text>
   <text x="360" y="124" text-anchor="middle" font-size="11" fill="#8A8378">Python · localhost:5001</text>
-
   <rect x="550" y="20" width="150" height="55" rx="8" fill="#F6F7F9" stroke="#8A8378" stroke-width="1.5"/>
   <text x="625" y="43" text-anchor="middle" font-size="13" font-weight="700" fill="#23201D">LLM API</text>
   <text x="625" y="61" text-anchor="middle" font-size="10.5" fill="#8A8378">OpenAI 형식</text>
-
   <rect x="550" y="145" width="150" height="55" rx="8" fill="#F6F7F9" stroke="#8A8378" stroke-width="1.5"/>
   <text x="625" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#23201D">메모리 서비스</text>
   <text x="625" y="186" text-anchor="middle" font-size="10.5" fill="#8A8378">Zep Cloud(권장)</text>
-
   <line x1="170" y1="110" x2="285" y2="110" stroke="#23201D" stroke-width="1.5"/>
   <polygon points="285,110 277,106 277,114" fill="#23201D"/>
   <polygon points="170,110 178,106 178,114" fill="#23201D"/>
   <text x="227" y="102" text-anchor="middle" font-size="10" fill="#8A8378">REST API</text>
-
   <line x1="435" y1="100" x2="550" y2="55" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="4 3"/>
   <polygon points="550,55 541,55 546,63" fill="#C8102E"/>
   <line x1="435" y1="120" x2="550" y2="165" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="4 3"/>

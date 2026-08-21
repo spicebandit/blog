@@ -74,16 +74,13 @@ Hugging Face reports storage in **decimal gigabytes** (10⁹ bytes). Apple sells
 <svg viewBox="0 0 600 240" style="width:100%;height:auto" role="img" aria-label="Model size comparison in gibibytes. Qwen3.5-9B is 5.6 GiB, Qwen3.8-27B is 14.97 GiB, exceeding the roughly 12 GiB default GPU allocation ceiling">
   <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">4-bit model size vs. what a 16GB Mac can actually hand over</text>
   <text x="20" y="46" font-size="11" fill="#8A8378">All values in GiB · bar length proportional to size</text>
-
   <text x="20" y="86" font-size="13" fill="#23201D">Qwen3.5-9B</text>
   <rect x="150" y="70" width="147" height="24" fill="#1B4F8A"/>
   <text x="307" y="87" font-size="13" font-weight="700" fill="#23201D">5.6 GiB</text>
   <text x="150" y="110" font-size="11" fill="#8A8378">Runs comfortably — the model measured in this article</text>
-
   <text x="20" y="152" font-size="13" fill="#23201D">Qwen3.8-27B</text>
   <rect x="150" y="136" width="393" height="24" fill="#A8BDD2"/>
   <text x="150" y="176" font-size="11" fill="#8A8378">14.97 GiB — under the 16 GiB of RAM, but over the allocation ceiling</text>
-
   <line x1="465" y1="60" x2="465" y2="192" stroke="#23201D" stroke-width="2" stroke-dasharray="5,4"/>
   <text x="461" y="208" font-size="12" font-weight="700" fill="#23201D" text-anchor="end">GPU allocation ceiling ≈ 12 GiB</text>
   <line x1="570" y1="60" x2="570" y2="192" stroke="#8A8378" stroke-width="1" stroke-dasharray="3,3"/>
@@ -146,24 +143,19 @@ Results:
   <text x="82" y="156" font-size="11" fill="#8A8378" text-anchor="end">10</text>
   <text x="82" y="108" font-size="11" fill="#8A8378" text-anchor="end">20</text>
   <text x="82" y="60" font-size="11" fill="#8A8378" text-anchor="end">30</text>
-
   <rect x="120" y="155.3" width="80" height="44.7" fill="#A8BDD2"/>
   <text x="160" y="148" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">9.32</text>
   <text x="160" y="222" font-size="11" fill="#8A8378" text-anchor="middle">First run</text>
   <text x="160" y="238" font-size="11" fill="#8A8378" text-anchor="middle">(with load)</text>
-
   <rect x="240" y="76.6" width="80" height="123.4" fill="#4E7FA8"/>
   <text x="280" y="69" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">25.70</text>
   <text x="280" y="222" font-size="11" fill="#8A8378" text-anchor="middle">Short</text>
-
   <rect x="360" y="71.0" width="80" height="129.0" fill="#1B4F8A"/>
   <text x="400" y="63" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">26.86</text>
   <text x="400" y="222" font-size="11" fill="#8A8378" text-anchor="middle">Medium</text>
-
   <rect x="480" y="71.5" width="80" height="128.5" fill="#1B4F8A"/>
   <text x="520" y="63" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">26.78</text>
   <text x="520" y="222" font-size="11" fill="#8A8378" text-anchor="middle">Long</text>
-
   <text x="300" y="252" font-size="11" fill="#8A8378" text-anchor="middle">Measured: LM Studio · MLX 4-bit · temperature 0.3 · 2026-08-16</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">Once resident in memory, throughput holds in the high 26s regardless of output length. Only the first run is slow, and that's model loading.</figcaption>

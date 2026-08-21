@@ -31,19 +31,15 @@ tags: ["AI", "데이터센터", "전기요금", "미국정치"]
   <text x="82" y="191" font-size="11" fill="#8A8378" text-anchor="end">100</text>
   <text x="82" y="138" font-size="11" fill="#8A8378" text-anchor="end">200</text>
   <text x="82" y="85" font-size="11" fill="#8A8378" text-anchor="end">300</text>
-
   <rect x="130" y="224.7" width="90" height="15.3" fill="#A8BDD2"/>
   <text x="175" y="218" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">$28.92</text>
   <text x="175" y="262" font-size="12" fill="#8A8378" text-anchor="middle">2024/25</text>
-
   <rect x="270" y="97.3" width="90" height="142.7" fill="#4E7FA8"/>
   <text x="315" y="90.5" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">$269.92</text>
   <text x="315" y="262" font-size="12" fill="#8A8378" text-anchor="middle">2025/26</text>
-
   <rect x="410" y="66" width="90" height="174" fill="#1B4F8A"/>
   <text x="455" y="59" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">$329.17</text>
   <text x="455" y="262" font-size="12" fill="#8A8378" text-anchor="middle">2026/27</text>
-
   <text x="300" y="288" font-size="11" fill="#8A8378" text-anchor="middle">자료: PJM 기저용량경매(BRA) 결과 · S&amp;P Global · 2026/27은 FERC 승인 상한가</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">용량시장 낙찰가는 결국 소비자 요금으로 전가된다. 총 조달비용도 22억 달러에서 147억 달러로 뛰었다.</figcaption>
@@ -67,19 +63,15 @@ tags: ["AI", "데이터센터", "전기요금", "미국정치"]
   <text x="82" y="165" font-size="11" fill="#8A8378" text-anchor="end">5</text>
   <text x="82" y="126" font-size="11" fill="#8A8378" text-anchor="end">10</text>
   <text x="82" y="87" font-size="11" fill="#8A8378" text-anchor="end">15</text>
-
   <rect x="140" y="93.3" width="85" height="106.7" fill="#A8BDD2"/>
   <text x="182" y="86" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">13.72</text>
   <text x="182" y="222" font-size="12" fill="#8A8378" text-anchor="middle">2021년 7월</text>
-
   <rect x="285" y="70.8" width="85" height="129.2" fill="#4E7FA8"/>
   <text x="327" y="63" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">16.61</text>
   <text x="327" y="222" font-size="12" fill="#8A8378" text-anchor="middle">2024년 7월</text>
-
   <rect x="430" y="64.1" width="85" height="135.9" fill="#1B4F8A"/>
   <text x="472" y="57" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">17.47</text>
   <text x="472" y="222" font-size="12" fill="#8A8378" text-anchor="middle">2025년 7월</text>
-
   <text x="300" y="248" font-size="11" fill="#8A8378" text-anchor="middle">자료: 미국 에너지정보청(EIA) 주택용 평균 전력 판매가격</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">축을 자르지 않고 그리면 소매 요금 곡선은 이 정도다. 앞 그래프의 용량시장 폭등과 이 완만함 사이의 간극이, 뒤에 나올 논쟁의 핵심이다.</figcaption>

@@ -57,35 +57,27 @@ LMP는 여기에 **위치**를 넣는다. 송전 혼잡과 송전 손실을 가�
   <text x="62" y="184" font-size="11" fill="#8A8378" text-anchor="end">50</text>
   <text x="62" y="134" font-size="11" fill="#8A8378" text-anchor="end">100</text>
   <text x="62" y="84" font-size="11" fill="#8A8378" text-anchor="end">150</text>
-
   <rect x="100" y="126.5" width="46" height="103.5" fill="#A8BDD2"/>
   <text x="123" y="120" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">103.5</text>
   <text x="123" y="248" font-size="11" fill="#8A8378" text-anchor="middle">1월</text>
-
   <rect x="170" y="121.5" width="46" height="108.5" fill="#A8BDD2"/>
   <text x="193" y="115" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">108.5</text>
   <text x="193" y="248" font-size="11" fill="#8A8378" text-anchor="middle">2월</text>
-
   <rect x="240" y="120" width="46" height="110" fill="#A8BDD2"/>
   <text x="263" y="113" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">110.0</text>
   <text x="263" y="248" font-size="11" fill="#8A8378" text-anchor="middle">3월</text>
-
   <rect x="310" y="111.1" width="46" height="118.9" fill="#A8BDD2"/>
   <text x="333" y="104" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">118.9</text>
   <text x="333" y="248" font-size="11" fill="#8A8378" text-anchor="middle">4월</text>
-
   <rect x="380" y="108.6" width="46" height="121.4" fill="#A8BDD2"/>
   <text x="403" y="102" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">121.4</text>
   <text x="403" y="248" font-size="11" fill="#8A8378" text-anchor="middle">5월</text>
-
   <rect x="450" y="115.9" width="46" height="114.1" fill="#A8BDD2"/>
   <text x="473" y="109" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">114.1</text>
   <text x="473" y="248" font-size="11" fill="#8A8378" text-anchor="middle">6월</text>
-
   <rect x="520" y="96.2" width="46" height="133.8" fill="#1B4F8A"/>
   <text x="543" y="89" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">133.8</text>
   <text x="543" y="248" font-size="11" fill="#8A8378" text-anchor="middle">7월</text>
-
   <text x="300" y="270" font-size="11" fill="#8A8378" text-anchor="middle">자료: 전력거래소(KPX) 월별 계통한계가격</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">올해 육지 SMP는 100~134원 사이에서 움직였다. 논의되는 소매 인하폭 18원은 이 수준과 비교하면 결코 작은 값이 아니다.</figcaption>
@@ -110,25 +102,20 @@ LMP는 여기에 **위치**를 넣는다. 송전 혼잡과 송전 손실을 가�
 <svg viewBox="0 0 600 230" style="width:100%;height:auto" role="img" aria-label="권역별 산업용 전기요금 최대 인하폭. 남부권 18원, 중부권 15원, 수도권 북부 10원, 수도권 남부 0원">
   <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">산업용 지역요금제 권역별 최대 인하폭 (클수록 유리)</text>
   <text x="20" y="46" font-size="11" fill="#8A8378">원/kWh · 현행 산업용 약 182원 기준</text>
-
   <text x="20" y="76" font-size="13" fill="#23201D">남부권</text>
   <rect x="130" y="62" width="396" height="22" fill="#1B4F8A"/>
   <text x="536" y="78" font-size="13" font-weight="700" fill="#23201D">18원</text>
   <text x="140" y="78" font-size="11" fill="#FAF6EE">영남·호남 · 약 10% 인하</text>
-
   <text x="20" y="116" font-size="13" fill="#23201D">중부권</text>
   <rect x="130" y="102" width="330" height="22" fill="#4E7FA8"/>
   <text x="470" y="118" font-size="13" font-weight="700" fill="#23201D">15원</text>
   <text x="140" y="118" font-size="11" fill="#FAF6EE">강원·충청 · 약 8%</text>
-
   <text x="20" y="156" font-size="13" fill="#23201D">수도권 북부</text>
   <rect x="130" y="142" width="220" height="22" fill="#A8BDD2"/>
   <text x="360" y="158" font-size="13" font-weight="700" fill="#23201D">10원</text>
   <text x="140" y="158" font-size="11" fill="#23201D">인천·경기 북부 · 약 5%</text>
-
   <text x="20" y="196" font-size="13" fill="#23201D">수도권 남부</text>
   <text x="134" y="198" font-size="13" font-weight="700" fill="#23201D">할인 없음</text>
-
   <line x1="130" y1="212" x2="130" y2="56" stroke="#E5DECF" stroke-width="1"/>
   <text x="300" y="224" font-size="11" fill="#8A8378" text-anchor="middle">자료: 기후에너지환경부 간담회안 보도(2026-08-13) · 막대는 인하폭에 비례</text>
 </svg>
@@ -149,39 +136,30 @@ LMP는 여기에 **위치**를 넣는다. 송전 혼잡과 송전 손실을 가�
 <svg viewBox="0 0 600 250" style="width:100%;height:auto" role="img" aria-label="지역별 전력자급률 비교. 경북 262.6퍼센트, 전남 203.2, 인천 180.6, 충남 180.5, 강원 163.4, 서울 7.5, 대전 3.3퍼센트">
   <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">지역별 전력자급률 — 최고와 최저가 79배 (100% = 쓰는 만큼 만든다)</text>
   <text x="20" y="46" font-size="11" fill="#8A8378">% · 2025년 1~7월 누계</text>
-
   <line x1="110" y1="60" x2="110" y2="212" stroke="#E5DECF" stroke-width="1"/>
   <line x1="272" y1="60" x2="272" y2="212" stroke="#23201D" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="276" y="70" font-size="10" fill="#8A8378">100%</text>
-
   <text x="20" y="82" font-size="12" fill="#23201D">경북</text>
   <rect x="110" y="70" width="425" height="16" fill="#1B4F8A"/>
   <text x="541" y="83" font-size="11" font-weight="700" fill="#23201D">262.6</text>
-
   <text x="20" y="104" font-size="12" fill="#23201D">전남</text>
   <rect x="110" y="92" width="329" height="16" fill="#4E7FA8"/>
   <text x="445" y="105" font-size="11" font-weight="700" fill="#23201D">203.2</text>
-
   <text x="20" y="126" font-size="12" fill="#23201D">인천</text>
   <rect x="110" y="114" width="292" height="16" fill="#4E7FA8"/>
   <text x="408" y="127" font-size="11" font-weight="700" fill="#23201D">180.6</text>
-
   <text x="20" y="148" font-size="12" fill="#23201D">충남</text>
   <rect x="110" y="136" width="292" height="16" fill="#4E7FA8"/>
   <text x="408" y="149" font-size="11" font-weight="700" fill="#23201D">180.5</text>
-
   <text x="20" y="170" font-size="12" fill="#23201D">강원</text>
   <rect x="110" y="158" width="265" height="16" fill="#4E7FA8"/>
   <text x="381" y="171" font-size="11" font-weight="700" fill="#23201D">163.4</text>
-
   <text x="20" y="192" font-size="12" fill="#23201D">서울</text>
   <rect x="110" y="180" width="12" height="16" fill="#A8BDD2"/>
   <text x="128" y="193" font-size="11" font-weight="700" fill="#23201D">7.5</text>
-
   <text x="20" y="214" font-size="12" fill="#23201D">대전</text>
   <rect x="110" y="202" width="5" height="16" fill="#A8BDD2"/>
   <text x="121" y="215" font-size="11" font-weight="700" fill="#23201D">3.3</text>
-
   <text x="300" y="240" font-size="11" fill="#8A8378" text-anchor="middle">자료: 한국전력 제출자료(국회 박정 의원실) · 매일신문 보도(2025-09-25)</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">전기를 만드는 곳과 쓰는 곳이 갈라져 있다. 그 사이를 잇는 것이 송전선이고, 그 송전선이 지금 막혀 있다.</figcaption>
@@ -248,23 +226,18 @@ LMP는 여기에 **위치**를 넣는다. 송전 혼잡과 송전 손실을 가�
 <svg viewBox="0 0 600 250" style="width:100%;height:auto" role="img" aria-label="중앙급전발전소 200기 중 LMP 입지신호가 실제로 닿는 것은 21기뿐. 140기는 한전 자회사로 정산조정계수 보전, 39기는 이미 수도권 소재">
   <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">LMP 가격 신호는 실제로 몇 기에 닿는가</text>
   <text x="20" y="46" font-size="11" fill="#8A8378">중앙급전발전소 200기 기준(2024년 10월) · 막대는 기수에 비례</text>
-
   <text x="20" y="82" font-size="12" fill="#23201D">전체</text>
   <rect x="120" y="68" width="440" height="20" fill="#A8BDD2"/>
   <text x="130" y="83" font-size="12" font-weight="700" fill="#23201D">200기</text>
-
   <text x="20" y="122" font-size="12" fill="#23201D">한전 자회사</text>
   <rect x="120" y="108" width="308" height="20" fill="#4E7FA8"/>
   <text x="130" y="123" font-size="12" font-weight="700" fill="#FAF6EE">140기 — 정산조정계수로 손실 보전</text>
-
   <text x="20" y="162" font-size="12" fill="#23201D">민간 중 수도권</text>
   <rect x="120" y="148" width="86" height="20" fill="#4E7FA8"/>
   <text x="212" y="163" font-size="12" font-weight="700" fill="#23201D">39기 — 이미 수도권, 신호 무관</text>
-
   <text x="20" y="202" font-size="12" fill="#23201D">신호가 닿는 곳</text>
   <rect x="120" y="188" width="46" height="20" fill="#1B4F8A"/>
   <text x="172" y="203" font-size="12" font-weight="700" fill="#23201D">21기 (전체의 약 10%)</text>
-
   <line x1="120" y1="216" x2="120" y2="62" stroke="#E5DECF" stroke-width="1"/>
   <text x="300" y="238" font-size="11" fill="#8A8378" text-anchor="middle">자료: 이투뉴스 「산으로 가는 지역별 전기요금제」(2024-10-28) 입수 분류표</text>
 </svg>
