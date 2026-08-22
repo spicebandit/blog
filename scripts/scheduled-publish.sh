@@ -161,9 +161,35 @@ if [ "${#naver_urls[@]}" -gt 0 ]; then
   esac
 fi
 
+# 구글 서치콘솔 색인요청: IndexNow(빙·야후)만으로는 구글이 움직이지 않는다.
+# 2026-08-22 진단에서 확인 — 수동 색인요청을 넣은 글만 색인되고, 안 넣은 글은
+# 'Discovered - currently not indexed'(발견은 했으나 크롤 안 함) 상태로 방치됐다.
+# 네이버와 마찬가지로 사파리 로그인 세션에 의존하므로 실패해도 비치명.
+# URL당 100초가량 걸려 한 배치 최대 3건까지만 처리한다(초과분은 알림으로 안내).
+gsc_msg=""
+if [ "${#indexnow_urls[@]}" -gt 0 ]; then
+  gsc_targets=()
+  for u in "${indexnow_urls[@]}"; do
+    [ "${#gsc_targets[@]}" -ge 3 ] && break
+    gsc_targets+=("$u")
+  done
+  gres="$(osascript "$REPO/scripts/gsc-request-indexing.applescript" \
+      "https://search.google.com/search-console?resource_id=sc-domain:baseload.co.kr" \
+      "${gsc_targets[@]}" 2>&1)"
+  ok_cnt="$(printf '%s\n' "$gres" | grep -c '=> OK|' || true)"
+  case "$gres" in
+    LOGIN_EXPIRED) gsc_msg="⚠️ 구글 색인요청 실패(사파리 로그인 만료) — 수동 등록 필요." ;;
+    *) gsc_msg="구글 색인요청 ${ok_cnt}/${#gsc_targets[@]}건 접수." ;;
+  esac
+  if [ "${#indexnow_urls[@]}" -gt 3 ]; then
+    gsc_msg="${gsc_msg} (3건 초과분 $(( ${#indexnow_urls[@]} - 3 ))건은 수동 요청 필요)"
+  fi
+fi
+
 list=$(printf '• %s\n' "${files[@]##*/}")
 notify "✅ 예약발행 완료(${TAG}) — ${changed}건
 ${list}빌드 통과 → push(Vercel 배포). 옵시디언 동기화 완료.
+${gsc_msg}
 ${indexnow_msg}
 ${naver_msg}"
 cleanup
