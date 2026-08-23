@@ -102,7 +102,15 @@ try {
       const i = s.indexOf('=');
       return [s.slice(0, i), s.slice(i + 1)];
     }));
-    naver = `클릭 ${kv.CLICKS} · 노출 ${kv.IMPR} · CTR ${kv.CTR}% <i>(최근 30일)</i>`;
+    // 네이버 콘솔은 큰 수를 '9.3백'(=930), '1.2천'(=1200) 식으로 축약해 보여준다.
+    // 그대로 두면 '노출 9.3백'처럼 읽히므로 실수로 펴서 표시한다.
+    const unfold = (s) => {
+      const m = String(s ?? '').match(/^([0-9.]+)(백|천|만)?$/);
+      if (!m) return s;
+      const mult = { '백': 100, '천': 1000, '만': 10000 }[m[2]] ?? 1;
+      return Math.round(Number(m[1]) * mult).toLocaleString('ko-KR');
+    };
+    naver = `클릭 ${unfold(kv.CLICKS)} · 노출 ${unfold(kv.IMPR)} · CTR ${kv.CTR}% <i>(최근 30일)</i>`;
     if (kv.KW) {
       const kws = kv.KW.split(';').filter(Boolean).slice(0, 5);
       if (kws.length) naver += `\n🔑 ${kws.join(' · ')}`;
