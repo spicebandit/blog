@@ -86,6 +86,31 @@ try {
 } catch (e) { adsense = '⚠️ 자동 확인 오류 — adsense.google.com 수동 확인 권장'; }
 lines.push('', `💰 <b>애드센스</b>`, adsense);
 
+// 네이버 검색 성과 (최근 30일) — 사파리 세션으로 서치어드바이저 콘솔을 읽는다.
+// 네이버는 이 데이터를 API로 안 열어놓는데, 이 블로그는 네이버 클릭이 구글의 20배가 넘어
+// (2026-08-22 실측: 네이버 65 vs 구글 3) 빼놓으면 성과의 대부분이 안 보인다.
+// 세션이 자주 끊기므로 실패해도 브리프 전체를 막지 않는다.
+let naver = '';
+try {
+  const r = execSync('osascript scripts/naver-expose-report.applescript', { cwd: ROOT, encoding: 'utf8', timeout: 150000 }).trim();
+  if (r === 'LOGIN_EXPIRED') {
+    naver = '⚠️ 조회 실패 (서치어드바이저 로그인 만료) — 재로그인 필요';
+  } else if (r === 'NO_DATA' || !r.startsWith('CLICKS=')) {
+    naver = '❔ 데이터 없음 — searchadvisor.naver.com 수동 확인';
+  } else {
+    const kv = Object.fromEntries(r.split('|').map((s) => {
+      const i = s.indexOf('=');
+      return [s.slice(0, i), s.slice(i + 1)];
+    }));
+    naver = `클릭 ${kv.CLICKS} · 노출 ${kv.IMPR} · CTR ${kv.CTR}% <i>(최근 30일)</i>`;
+    if (kv.KW) {
+      const kws = kv.KW.split(';').filter(Boolean).slice(0, 5);
+      if (kws.length) naver += `\n🔑 ${kws.join(' · ')}`;
+    }
+  }
+} catch (e) { naver = '⚠️ 자동 조회 오류 — searchadvisor.naver.com 수동 확인'; }
+lines.push('', `🟢 <b>네이버 검색</b>`, naver);
+
 lines.push('', traffic);
 
 const msg = lines.join('\n');

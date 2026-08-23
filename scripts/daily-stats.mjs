@@ -150,14 +150,6 @@ async function fetchReport(token, propertyId) {
             orderBys: [{ dimension: { dimensionName: 'date' } }],
           },
           {
-            // 유입 경로 TOP (어제) — 검색/직접/SNS 등
-            dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
-            dimensions: [{ name: 'sessionDefaultChannelGroup' }],
-            metrics: [{ name: 'sessions' }],
-            orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
-            limit: 5,
-          },
-          {
             // 국가별 방문자 (어제). 해외(특히 미국 데이터센터)는 대부분 크롤러봇이라
             // 방문자=조회수 1:1로 잡힌다. 조회수까지 함께 받아 사람/봇 구분에 참고한다.
             dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
@@ -165,6 +157,17 @@ async function fetchReport(token, propertyId) {
             metrics: [{ name: 'totalUsers' }, { name: 'screenPageViews' }],
             orderBys: [{ metric: { metricName: 'totalUsers' }, desc: true }],
             limit: 6,
+          },
+          {
+            // 유입 소스별 (어제). 기존에는 채널 그룹(sessionDefaultChannelGroup)을 썼는데
+            // 네이버·구글이 'Organic Search' 한 칸에 뭉뚱그려져 어느 엔진인지 안 보였다.
+            // 이 블로그는 네이버 유입이 구글의 20배가 넘어(2026-08 확인) 소스 분리가 필수다.
+            // GA4 batchRunReports는 요청 5개가 상한이라 채널 그룹 대신 이걸 쓴다.
+            dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
+            dimensions: [{ name: 'sessionSource' }],
+            metrics: [{ name: 'sessions' }],
+            orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+            limit: 12,
           },
         ],
       }),
@@ -285,6 +288,28 @@ function parseCountries(report) {
   });
 }
 
+// 검색엔진·유입원 소스명 → 표시명. GA4 sessionSource는 'naver', 'm.search.naver.com',
+// 'google', 'bing', 'perplexity.ai' 등으로 잘게 쪼개져 오므로 같은 엔진끼리 묶는다.
+function parseEngines(report) {
+  const bucket = new Map();
+  for (const row of report?.rows ?? []) {
+    const raw = (row.dimensionValues?.[0]?.value ?? '').toLowerCase();
+    const n = Number(row.metricValues?.[0]?.value ?? 0);
+    let key;
+    if (raw.includes('naver')) key = '네이버';
+    else if (raw.includes('google')) key = '구글';
+    else if (raw.includes('bing')) key = '빙';
+    else if (raw.includes('daum') || raw.includes('kakao')) key = '다음';
+    else if (raw.includes('perplexity') || raw.includes('claude') || raw.includes('chatgpt') || raw.includes('openai')) key = 'AI검색';
+    else if (raw === '(direct)' || raw === '') key = '직접';
+    else key = '기타';
+    bucket.set(key, (bucket.get(key) ?? 0) + n);
+  }
+  return [...bucket.entries()]
+    .map(([engine, sessions]) => ({ engine, sessions }))
+    .sort((a, b) => b.sessions - a.sessions);
+}
+
 /** 값 배열 → 블록문자 스파크라인 */
 function sparkline(values) {
   const blocks = '▁▂▃▄▅▆▇█';
@@ -306,7 +331,7 @@ function mdLabel(ymd) {
   return `${Number(ymd.slice(4, 6))}/${Number(ymd.slice(6, 8))}`;
 }
 
-function formatMessage(totals, topPages, dailySeries, channels, keywords, countries) {
+function formatMessage(totals, topPages, dailySeries, keywords, countries, engines) {
   // 어제 날짜 (KST)
   const y = new Date(Date.now() - 24 * 60 * 60 * 1000);
   const dateStr = y.toLocaleDateString('ko-KR', {
@@ -337,10 +362,14 @@ function formatMessage(totals, topPages, dailySeries, channels, keywords, countr
     );
   }
 
-  // 유입 경로 (어제)
-  if (channels.length > 0 && t.sessions > 0) {
-    const top = channels.slice(0, 4).map((c) => `${c.channel} ${c.sessions}`).join(' · ');
-    lines.push('', `🚪 <b>유입경로</b> ${top}`);
+  // 유입 소스 (어제) — 네이버/구글을 따로 보여준다
+  if (engines && engines.length > 0 && t.sessions > 0) {
+    lines.push('', `🚪 <b>유입</b> ${engines.slice(0, 5).map((e) => `${e.engine} ${e.sessions}`).join(' · ')}`);
+    const se = engines.filter((e) => e.engine !== '직접' && e.engine !== '기타');
+    const seTotal = se.reduce((a, b) => a + b.sessions, 0);
+    if (seTotal > 0) {
+      lines.push(`🔍 <b>검색</b> ${se.map((e) => `${e.engine} ${e.sessions}`).join(' · ')} (합 ${seTotal})`);
+    }
   }
 
   // 국가별 방문자 (어제). 한국이 아닌데 조회수가 방문자 수 이하(1인 1페이지)면
@@ -401,10 +430,10 @@ async function main() {
     const totals = parseTotals(data.reports?.[0]);
     const topPages = parseTopPages(data.reports?.[1]);
     const dailySeries = parseDailySeries(data.reports?.[2]);
-    const channels = parseChannels(data.reports?.[3]);
     const keywords = await fetchSearchKeywords(token);
-    const countries = parseCountries(data.reports?.[4]);
-    const message = formatMessage(totals, topPages, dailySeries, channels, keywords, countries);
+    const countries = parseCountries(data.reports?.[3]);
+    const engines = parseEngines(data.reports?.[4]);
+    const message = formatMessage(totals, topPages, dailySeries, keywords, countries, engines);
 
     if (DRY) {
       console.log('--- DRY RUN (전송 안 함) ---');
