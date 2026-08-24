@@ -92,7 +92,14 @@ lines.push('', `💰 <b>애드센스</b>`, adsense);
 // 세션이 자주 끊기므로 실패해도 브리프 전체를 막지 않는다.
 let naver = '';
 try {
-  const r = execSync('osascript scripts/naver-expose-report.applescript', { cwd: ROOT, encoding: 'utf8', timeout: 150000 }).trim();
+  // OAuth 리디렉트 타이밍 때문에 로그인이 살아 있는데도 LOGIN_EXPIRED가 나오는 경우가 있다
+  // (2026-08 사이 세 번 오판). 한 번 실패하면 잠시 쉬고 재시도한 뒤에 판정한다.
+  const runOnce = () => execSync('osascript scripts/naver-expose-report.applescript', { cwd: ROOT, encoding: 'utf8', timeout: 150000 }).trim();
+  let r = runOnce();
+  if (r === 'LOGIN_EXPIRED') {
+    execSync('sleep 8');
+    r = runOnce();
+  }
   if (r === 'LOGIN_EXPIRED') {
     naver = '⚠️ 조회 실패 (서치어드바이저 로그인 만료) — 재로그인 필요';
   } else if (r === 'NO_DATA' || !r.startsWith('CLICKS=')) {
