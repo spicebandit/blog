@@ -46,14 +46,19 @@ on run argv
       end try
       if u2 contains "/console/site/request/crawl" and rs is "complete" then exit repeat
     end repeat
-    delay 3
-
-    -- ③ 입력폼이 실제로 있는지 확인한 뒤에만 제출
-    try
-      set inputCount to (do JavaScript "String([].slice.call(document.querySelectorAll('input[type=text]')).filter(function(i){return i.offsetParent!==null;}).length)" in front document) as text
-    on error
-      set inputCount to "0"
-    end try
+    -- ③ 콘솔은 SPA라 readyState complete 이후에도 본문이 늦게 그려진다.
+    -- 고정 delay로 한 번만 보면 폼을 못 찾아 NO_FORM 오판이 난다(2026-08-26 실제 발생).
+    -- 입력폼이 나타날 때까지 최대 40초 폴링한다.
+    set inputCount to "0"
+    repeat 20 times
+      delay 2
+      try
+        set inputCount to (do JavaScript "String([].slice.call(document.querySelectorAll('input[type=text]')).filter(function(i){return i.offsetParent!==null;}).length)" in front document) as text
+      on error
+        set inputCount to "0"
+      end try
+      if inputCount is not "0" then exit repeat
+    end repeat
     if inputCount is "0" then
       close front document
       return "NO_FORM"
