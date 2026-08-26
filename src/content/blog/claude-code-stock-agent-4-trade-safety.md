@@ -2,7 +2,7 @@
 title: "주식봇 리스크 관리·자동매매 실행 — 안전장치와 매수 흐름 [4편]"
 description: "Claude Code 주식봇의 리스크 매니저와 매매 실행 설계. 결정론적 실행 게이트, KIS API 매수·매도, manual 승인 흐름까지 — 봇이 실제로 주식을 사고파는 과정을 코드와 함께 공개합니다."
 pubDate: 2026-06-22T08:33:33+09:00
-updatedDate: 2026-07-06T20:30:00+09:00
+updatedDate: 2026-07-06T20:32:50+09:00
 category: ax
 tags: ["ClaudeCode", "주식자동매매", "리스크관리", "KIS API", "LLM"]
 ---

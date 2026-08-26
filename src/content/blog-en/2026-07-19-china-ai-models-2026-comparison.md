@@ -2,7 +2,7 @@
 title: "How Far Has China's AI Come? DeepSeek, Qwen & GLM Compared [2026]"
 description: "In 2026 China holds four of the top five open-weight AI models, closing in on the US. We compare DeepSeek, Qwen, Kimi, and GLM against GPT, Claude, and Gemini on performance and price — plus the chip-control leash, the open-source strategy, and the historical backdrop."
 pubDate: 2026-07-20T15:44:28+09:00
-updatedDate: 2026-07-20T09:45:00+09:00
+updatedDate: 2026-07-20T09:43:05+09:00
 category: ai
 tags: ["China AI", "DeepSeek", "Qwen", "AI model comparison"]
 lang: en

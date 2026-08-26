@@ -2,7 +2,7 @@
 title: "Kimi K3 Deep Dive — Pricing, Performance & Economics [2026]"
 description: "Moonshot's Kimi K3, dubbed 'the second DeepSeek,' rattled Big Tech stocks. We break down what the 2.8-trillion-parameter open-weight model actually is, its API and app pricing, and whether it's truly economical — measured against DeepSeek, Claude, and GPT."
 pubDate: 2026-07-20T18:54:12+09:00
-updatedDate: 2026-07-20T10:30:00+09:00
+updatedDate: 2026-07-20T10:10:20+09:00
 category: ai
 tags: ["Kimi K3", "Moonshot", "AI pricing", "China AI"]
 lang: en

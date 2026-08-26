@@ -2,7 +2,7 @@
 title: "클로드 상태 실시간 확인 — 지금 안 되면 장애? 1분 체크"
 description: "클로드(Claude)가 갑자기 안 될 때 내 문제인지 서버 장애인지 1분 만에 가리는 법. 이 페이지에서 바로 보는 실시간 상태 위젯부터 공식 상태페이지·RSS·다운디텍터까지 한눈에 정리."
 pubDate: 2026-06-18T18:46:14+09:00
-updatedDate: 2026-07-20T18:10:00+09:00
+updatedDate: 2026-07-20T18:10:33+09:00
 category: ax
 tags: ["클로드 상태", "클로드 서버 상태", "statusline", "Claude Code"]
 draft: false

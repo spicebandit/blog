@@ -2,7 +2,7 @@
 title: "Tesla FSD in Korea (2026) — Which Cars Get It, Which Don't"
 description: "Tesla made Korea its 2nd FSD market worldwide on July 10, 2026 — but only US-built HW3 Model 3/Y qualify, and China-built cars are still shut out. See exactly which cars are in or out, the UN R171 DCAS timeline, and when the rest follow."
 pubDate: 2026-07-16T16:08:53+09:00
-updatedDate: 2026-07-24T09:30:00+09:00
+updatedDate: 2026-07-24T09:41:35+09:00
 category: economy
 tags: ["Tesla FSD", "Autonomous Driving", "DCAS", "Vehicle Regulation"]
 lang: en

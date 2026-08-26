@@ -4,7 +4,7 @@ description: "A complete Supabase beginner's guide: build a backend in 30 minute
 pubDate: 2026-07-06T19:16:18+09:00
 category: ax
 tags: ["supabase", "backend", "firebase", "database"]
-updatedDate: "2026-07-06T19:30:00+09:00"
+updatedDate: 2026-07-06T19:21:51+09:00
 lang: en
 koSlug: 2026-07-06-supabase-beginner-guide
 ---

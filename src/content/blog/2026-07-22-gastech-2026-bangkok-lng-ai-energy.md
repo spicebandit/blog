@@ -2,7 +2,7 @@
 title: "가스텍 2026 방콕, LNG·AI 에너지 총집결"
 description: "세계 최대 가스·LNG 행사 가스텍(Gastech) 2026이 9월 방콕에서 열린다. 개최 개요와 올해 세 가지 특징 — AI 전력수요(AixEnergy)·아시아 무게중심 이동·에너지 안보를 취재로 정리했다."
 pubDate: 2026-07-22T18:10:22+09:00
-updatedDate: 2026-08-05T10:20:00+09:00
+updatedDate: 2026-08-05T10:20:37+09:00
 category: energy
 tags: ["가스텍", "LNG", "에너지안보", "AI전력"]
 ---

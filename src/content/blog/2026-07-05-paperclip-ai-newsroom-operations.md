@@ -2,7 +2,7 @@
 title: "AI 직원 회사, 열흘 운영해보니 — Paperclip 실전기 [3편]"
 description: "AI 직원으로 운영되는 회사를 Paperclip으로 열흘간 굴려본 기록. 사흘 만에 3억 토큰이 증발한 사건, 알림 중복 버그, 하트비트·예산의 교훈까지 — AI 에이전트 회사의 실제 운영 비용."
 pubDate: 2026-07-08T07:08:47+09:00
-updatedDate: 2026-07-09T13:45:00+09:00
+updatedDate: 2026-07-09T13:03:56+09:00
 category: ax
 tags: ["AI 직원", "AI 에이전트 회사", "paperclip", "멀티에이전트"]
 ---

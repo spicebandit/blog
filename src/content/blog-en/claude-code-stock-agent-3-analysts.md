@@ -2,7 +2,7 @@
 title: "Stock Bot LLM Analyst Design — Fundamental, Technical & News Agent Prompts and JSON Schema [Part 3]"
 description: "Designing the brain of a Claude Code stock trading bot. Prompt design for three analysts (fundamental, technical, news), enforcing a JSON schema, LLM retries and fallback, and a stock screener — real implementation."
 pubDate: 2026-06-21T17:22:30+09:00
-updatedDate: "2026-07-06T20:30:00+09:00"
+updatedDate: 2026-07-06T20:12:20+09:00
 category: ax
 tags: ["ClaudeCode", "LLM", "Gemini", "PromptEngineering"]
 lang: en
