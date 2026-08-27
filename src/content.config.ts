@@ -35,6 +35,7 @@ const blogEn = defineCollection({
     heroImage: z.string().optional(),
     author: z.string().optional(),
     lang: z.string().optional(), // article language tag (e.g. 'en')
+    noindex: z.boolean().default(false), // 검색엔진 비노출 — 한글 원문이 noindex이거나 중복 영문판인 경우
     koSlug: z.string().optional(), // original Korean article slug for hreflang alternate
     sourceSlug: z.string().optional(), // alias used by EditorInChief translations
   }),

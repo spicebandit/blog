@@ -11,7 +11,7 @@ interface Props {
   category:    CategorySlug;
 }
 
-const { recentPosts, catPosts, category } = Astro.props;
+const { recentPosts, catPosts, category, suppressAds = false } = Astro.props;
 ---
 
 <aside class="article-sidebar" aria-label="관련 기사">
@@ -60,8 +60,8 @@ const { recentPosts, catPosts, category } = Astro.props;
   )}
 
   {/* 사이드바 하단 광고: 애드핏(320×50) + 애드센스(승인 시 노출) */}
-  <AdSlot position="sidebar" network="adfit" />
-  <AdSlot position="sidebar" network="adsense" />
+  <AdSlot position="sidebar" network="adfit" suppress={suppressAds} />
+  <AdSlot position="sidebar" network="adsense" suppress={suppressAds} />
 </aside>
 
 <style>

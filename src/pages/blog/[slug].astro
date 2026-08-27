@@ -116,10 +116,10 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
         )}
       </article>
       {/* 슬롯 3: 기사 하단 (댓글 위) */}
-      <AdSlot position="bottom" class="ad-article-bottom" />
+      <AdSlot position="bottom" class="ad-article-bottom" suppress={isPreview || post.data.noindex} />
       <Comments pageId={post.id} pageTitle={post.data.title} />
     </div>
-    <Sidebar recentPosts={recentPosts} catPosts={catPosts} category={post.data.category} />
+    <Sidebar recentPosts={recentPosts} catPosts={catPosts} category={post.data.category} suppressAds={isPreview || post.data.noindex} />
   </div>
 </Base>
 

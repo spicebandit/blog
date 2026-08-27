@@ -18,14 +18,21 @@
 
 type AdPosition = 'header' | 'in-article' | 'bottom' | 'sidebar';
 type AdNetwork = 'auto' | 'adfit' | 'adsense';
+// suppress: true면 이 슬롯을 아예 렌더하지 않는다(noindex 페이지용)
 
 interface Props {
   position: AdPosition;
   network?: AdNetwork;
   class?: string;
+  suppress?: boolean;
 }
 
-const { position, network = 'auto', class: className } = Astro.props;
+const { position, network = 'auto', class: className, suppress = false } = Astro.props;
+
+// noindex 페이지(얇은 글·프리뷰·데이터 대시보드 등)에는 광고를 렌더하지 않는다.
+// 2026-08-27 애드센스 4차 반려에서 확인된 문제 — noindex는 검색 색인만 막을 뿐
+// 광고는 그대로 나가므로, 그 페이지들이 계속 애드센스 심사 대상으로 남아 있었다.
+// '복제된 콘텐츠가 있는 화면에 Google 게재 광고' 위반이 여기서 나왔다.
 
 const PUB_ID = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
 
@@ -67,7 +74,7 @@ const showAdsense =
   network === 'adfit'   ? false :
   network === 'adsense' ? hasAdsense :
   (!hasAdfit && hasAdsense);
-const showAd = showAdfit || showAdsense;
+const showAd = !suppress && (showAdfit || showAdsense);
 
 // AdFit dimensions per position (PC / mobile handled via CSS)
 const ADFIT_DIM: Record<AdPosition, { w: number; h: number }> = {
