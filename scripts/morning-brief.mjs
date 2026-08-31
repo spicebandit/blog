@@ -86,6 +86,22 @@ try {
 } catch (e) { adsense = '⚠️ 자동 확인 오류 — adsense.google.com 수동 확인 권장'; }
 lines.push('', `💰 <b>애드센스</b>`, adsense);
 
+// 재신청 준비 상태 — scripts/adsense-readiness.mjs가 주 1회 남긴 결과를 읽어 표시한다.
+// 4차 반려(2026-08-31) 대응으로 얇은 글을 noindex 처리했는데, 구글이 그걸 다시 크롤링해
+// 색인에서 뺄 때까지 시간이 걸린다. 색인에 남은 채 심사에 들어가면 예전 상태로 판단되므로
+// "실제로 빠졌는지"를 확인하고 신청해야 한다. 검사에 수 분이 걸려 브리프에서 직접 돌리지 않고
+// 별도 스케줄이 남긴 캐시를 읽기만 한다.
+try {
+  const cache = JSON.parse(readFileSync(join(ROOT, '.adsense-readiness.json'), 'utf8'));
+  const ageDays = Math.floor((Date.now() - new Date(cache.checkedAt).getTime()) / 86400000);
+  const stamp = ageDays === 0 ? '오늘' : `${ageDays}일 전`;
+  if (cache.ready) {
+    lines.push(`✅ <b>재신청 가능</b> — noindex 글 ${cache.total}건이 모두 색인에서 빠졌습니다 (${stamp} 확인)`);
+  } else {
+    lines.push(`⏳ 재신청 대기 — noindex ${cache.total}건 중 <b>${cache.still}건</b>이 아직 색인에 남음 (${stamp} 확인)`);
+  }
+} catch { /* 캐시가 아직 없으면 이 줄은 생략한다 */ }
+
 // 네이버 검색 성과 (최근 30일) — 사파리 세션으로 서치어드바이저 콘솔을 읽는다.
 // 네이버는 이 데이터를 API로 안 열어놓는데, 이 블로그는 네이버 클릭이 구글의 20배가 넘어
 // (2026-08-22 실측: 네이버 65 vs 구글 3) 빼놓으면 성과의 대부분이 안 보인다.
