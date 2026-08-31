@@ -6,6 +6,7 @@ category: ax
 tags: ["rtx-5090", "local-llm", "ollama", "vram"]
 lang: en
 koSlug: 2026-07-07-rtx5090-ollama-local-llm-parameters
+noindex: true # 2026-08-31 검색 성과 0(90일 클릭 0) — 애드센스 "가치 낮은 콘텐츠" 대응
 ---
 
 If you've bought an RTX 5090 — or you're weighing whether to — one question sits near the top of the list: **"How many billion parameters of local LLM will this thing actually run?"** The short answer: with its **32GB of VRAM, the RTX 5090 runs a 32B model very comfortably, and a 70B model only if you crank the quantization hard or offload part of it to the CPU.** This piece walks through *why* that's the answer — the VRAM math, feasibility and speed by model size, and hands-on Ollama tips — all in one place. If local LLMs are new to you, start with the [Local LLM Beginner's Guide [Part 1]](/en/blog/2026-07-02-local-llm-beginner-guide/).

@@ -5,6 +5,7 @@ pubDate: 2026-06-30T16:18:29+09:00
 category: ai
 tags: ["앤트로픽", "미토스", "AI 수출 통제", "Claude"]
 draft: false
+noindex: true # 2026-08-31 검색 성과 0(90일 클릭 0) — 애드센스 "가치 낮은 콘텐츠" 대응
 ---
 
 ![red padlock on black computer keyboard](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxBSSUyMGV4cG9ydCUyMGNvbnRyb2wlMjBjeWJlcnNlY3VyaXR5JTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgyNzgwNjE0fDA&ixlib=rb-4.1.0&q=80&w=1080)

@@ -4,6 +4,7 @@ description: "ESS 배터리는 EV와 우선순위가 다릅니다. 왜 LFP가 ES
 pubDate: 2026-07-02T17:55:55+09:00
 category: energy
 tags: ["ESS", "LFP", "전고체 배터리", "배터리 트렌드"]
+noindex: true # 2026-08-31 검색 성과 0(90일 클릭 0) — 애드센스 "가치 낮은 콘텐츠" 대응
 ---
 
 ![a large group of tires](https://images.unsplash.com/photo-1670322196746-e8c6ea72ab90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwyfHxsaXRoaXVtJTIwYmF0dGVyeSUyMGNlbGwlMjBtYW51ZmFjdHVyaW5nfGVufDF8MHx8fDE3ODMxMzQ4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080)

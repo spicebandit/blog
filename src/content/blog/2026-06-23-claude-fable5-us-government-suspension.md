@@ -5,6 +5,7 @@ pubDate: 2026-06-23T13:16:17+09:00
 category: ai
 tags: ["AI 규제", "Claude", "Anthropic", "수출통제"]
 draft: false
+noindex: true # 2026-08-31 검색 성과 0(90일 클릭 0) — 애드센스 "가치 낮은 콘텐츠" 대응
 ---
 
 > **편집자 주:** 이 기사는 [6월 14일 보도 — 미국의 첫 AI 모델 수출규제, 페이블5 사태](/blog/2026-06-14-us-ai-model-export-control-fable5/)의 심층 후속 분석입니다. 사건 개요와 한국 기업 시사점은 이전 기사를 참조하세요.
