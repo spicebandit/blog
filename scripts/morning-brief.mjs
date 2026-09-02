@@ -81,6 +81,8 @@ try {
   const head = r.split('|')[0];
   if (head === 'APPROVED') adsense = '🎉 <b>승인됨!</b> → Claude 클러스터 착수 가능 (설계 완료, "시작하자"만 주세요)';
   else if (head === 'REVIEWING') adsense = '🟡 심사 중 (승인 대기 — 승인되면 이 줄이 🎉로 바뀝니다)';
+  // 반려 상태. 로그인은 정상이며 계정 화면이 '수정 필요'를 띄우고 있다는 뜻이다.
+  else if (head === 'ACTION_NEEDED') adsense = '🔴 조치 필요 (반려 상태 — 로그인은 정상). 개선 후 재신청 대기 중';
   else if (head === 'LOGIN_EXPIRED') adsense = '⚠️ 확인 실패 (사파리 애드센스 로그인 만료) — 재로그인 필요';
   else adsense = '❔ 상태 불명 — adsense.google.com 수동 확인 권장';
 } catch (e) { adsense = '⚠️ 자동 확인 오류 — adsense.google.com 수동 확인 권장'; }
