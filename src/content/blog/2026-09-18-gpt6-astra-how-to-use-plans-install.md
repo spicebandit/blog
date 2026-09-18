@@ -1,6 +1,6 @@
 ---
-title: "GPT-6 아스트라 사용법 — Plus인데 왜 안 보이나"
-description: "GPT-6 아스트라를 쓰려면 어느 요금제를 사야 하는지, PC에 뭘 깔아야 하는지 정리했다. Plus 구독자에게 모델이 안 보이는 이유와 해결법, Codex CLI 설정, 그리고 꼭 알아야 할 안전 설정까지."
+title: "GPT-6 아스트라 사용법 — 요금제·설치·설정 총정리"
+description: "GPT-6 아스트라를 쓰려면 어느 요금제를 사야 하고 PC에 뭘 깔아야 하는지 정리했다. 요금제별 사용량 한도, ChatGPT 데스크톱 앱 설치, Codex CLI 설정, 그리고 꼭 알아야 할 안전 설정까지."
 pubDate: 2026-09-18T09:21:16+09:00
 category: ax
 tags: ["GPT-6", "아스트라", "ChatGPT", "AI에이전트"]
