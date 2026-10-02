@@ -156,11 +156,17 @@ for f in "${files[@]}"; do
 done
 naver_msg=""
 if [ "${#naver_urls[@]}" -gt 0 ]; then
+  # 서치어드바이저 세션은 짧다(2026-10-02 실측 약 77분 유휴 만료). 예약발행 시점에
+  # 로그인이 살아 있을 확률이 낮으므로, 실패하면 대기열에 넣어 다음 로그인 때 비운다.
   nres="$(osascript "$REPO/scripts/naver-bulk-submit.applescript" "${naver_urls[@]}" 2>&1)"
   case "$nres" in
     SUBMITTED*) naver_msg="네이버 수집요청 ${#naver_urls[@]}건 등록." ;;
-    LOGIN_EXPIRED) naver_msg="⚠️ 네이버 수집요청 실패(사파리 로그인 만료) — 수동 등록 필요." ;;
-    *) naver_msg="⚠️ 네이버 수집요청 확인 필요: ${nres}" ;;
+    LOGIN_EXPIRED)
+      bash "$REPO/scripts/naver-queue.sh" add "${naver_urls[@]}" >/dev/null 2>&1 || true
+      naver_msg="🔶 네이버 로그인 만료 → ${#naver_urls[@]}건을 대기열에 넣었습니다. 로그인 후 'scripts/naver-queue.sh drain'으로 한 번에 제출됩니다." ;;
+    *)
+      bash "$REPO/scripts/naver-queue.sh" add "${naver_urls[@]}" >/dev/null 2>&1 || true
+      naver_msg="⚠️ 네이버 수집요청 확인 필요(대기열에 보관): ${nres}" ;;
   esac
 fi
 
