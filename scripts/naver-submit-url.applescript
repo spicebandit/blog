@@ -42,12 +42,32 @@ on run argv
     tell application "Safari"
       activate
       make new document with properties {URL:siteParam}
-      delay 6
-      set pageTitle to do JavaScript "document.title" in front document
-      set pageURL to (URL of front document)
-      if pageURL contains "nid.naver.com" or pageTitle contains "로그인" then
+      delay 5
+      -- 로그인 판정은 한 번만 보면 안 된다. 네이버는 OAuth 리다이렉트를 2단계로 타기
+      -- 때문에, 고정 delay 직후에는 아직 nid.naver.com에 머물러 있어 멀쩡한 세션을
+      -- 만료로 오판한다(2026-10-07 실측: 로그인 직후인데 LOGIN_EXPIRED 반환).
+      -- 콘솔 URL에 정착하고 입력칸이 렌더될 때까지 폴링한다.
+      set settled to false
+      repeat 10 times
+        set pageURL to (URL of front document) as text
+        if pageURL does not contain "nid.naver.com" then
+          set inputCount to (do JavaScript "(function(){var i=[].slice.call(document.querySelectorAll('input[type=text]')).filter(function(x){return x.offsetParent!==null});return String(i.length);})();" in front document) as text
+          if inputCount is not "0" then
+            set settled to true
+            exit repeat
+          end if
+        end if
+        delay 3
+      end repeat
+      if not settled then
+        set pageURL to (URL of front document) as text
+        set pageTitle to (do JavaScript "document.title" in front document) as text
         close front document
-        return "LOGIN_EXPIRED"
+        if pageURL contains "nid.naver.com" or pageTitle contains "로그인" then
+          return "LOGIN_EXPIRED"
+        else
+          return "NO_INPUT"
+        end if
       end if
     end tell
 
