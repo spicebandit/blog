@@ -9,7 +9,7 @@ lang: en
 koSlug: 2026-07-07-toss-securities-open-api-guide
 ---
 
-If you want to build an automated trading bot or a market-analysis tool, you need a brokerage API. Unlike the first generation — Windows-only OCX controls that required a PC left running with the HTS resident — **the REST approach, where a token is all you need and the OS doesn't matter**, was a door Korea Investment & Securities (KIS) held open largely alone from 2022. In 2026 that choice widened with **Toss Securities' Open API**. What started in May as a staged rollout to pre-registered applicants became a **full service for all customers on August 13, 2026** — if you have a Toss Securities account today, you can issue credentials. So what makes Toss's API different, how do you register and use it, and when you stack it up against the incumbent KIS, which one should you reach for? This piece walks through Toss Securities' Open API from a developer's angle: **what it offers → how to get access → how to use it → limits and errors → the pros and cons versus Korea Investment (KIS)**.
+If you want to build an automated trading bot or a market-analysis tool, you need a brokerage API. Unlike the first generation — Windows-only OCX controls that required a PC left running with the HTS resident — **the REST approach, where a token is all you need and the OS doesn't matter**, was a door Korea Investment & Securities (KIS) held open largely alone from 2022. In 2026 that choice widened with **Toss Securities' Open API**. What started in May as a staged rollout to pre-registered applicants became a **full service for all customers on August 13, 2026** — if you have a Toss Securities account today, you can issue credentials. So what makes Toss's API different, how do you register and use it, and when you stack it up against the incumbent KIS, which one should you reach for? This piece is ordered **quickstart (credentials → first quote in 10 minutes) → your first order → the registration traps → reference for scope, endpoints, limits, realtime, and errors → pros and cons versus Korea Investment (KIS)**. **If you're new, start with the quickstart right below**; if you've already wired this up, skip straight to the reference sections.
 
 Here are the three most-asked questions, answered up front.
 
@@ -22,6 +22,133 @@ Here are the three most-asked questions, answered up front.
 > ⚠️ This is a technical guide to using an API. It is not investment advice and does not recommend buying or selling any security. API policies, fees, and coverage change, so always check each provider's official documentation.
 >
 > *Updated October 7, 2026 — endpoint inventory, per-group rate limits, and error codes were rebuilt against the official specs (REST v1.2.19 / realtime v1.2.2). Most importantly, **the WebSocket realtime API that did not exist at first publication has since shipped**, so that section was rewritten entirely.*
+
+## Quickstart — From Credentials to Your First Quote in 10 Minutes
+
+If you're starting out, following just this section will print Samsung Electronics' current price in your terminal. The endpoint inventory, limit tables, and error codes further down are **the place you come back to when you're stuck** — skip them for now.
+
+**Four things you need**
+
+| Requirement | How to check |
+|---|---|
+| A Toss Securities account | Open one in the Toss app. As of 2026-08-13 the API is available to all customers |
+| Desktop web (WTS) login | The credential screen exists **only on desktop web**, not in the mobile app |
+| **A static public IP** | Run `curl ifconfig.me`. Register that value as an allowed IP. On home routers or mobile networks the IP shifts and you get an instant 403 |
+| Python + requests | `pip install requests` |
+
+**Three steps to credentials**
+
+1. Log in to the Toss Securities **WTS (desktop web) → Settings > Open API** → issue `client_id` and `client_secret` (use the copy button — typing them by hand introduces stray whitespace)
+2. At the bottom of the same screen, **Allowed IP management** → register the IP you found above
+3. Put them in environment variables and run the code below
+
+```bash
+export TOSS_CLIENT_ID='c_...'
+export TOSS_CLIENT_SECRET='s_...'
+```
+
+**Code you can paste and run as-is**
+
+```python
+# quickstart.py — issue a token, then fetch Samsung Electronics and Apple quotes
+import os, requests
+
+BASE = "https://openapi.tossinvest.com"
+
+# 1) Get an access token (valid 24 hours)
+res = requests.post(f"{BASE}/oauth2/token", data={
+    "grant_type": "client_credentials",
+    "client_id": os.environ["TOSS_CLIENT_ID"],
+    "client_secret": os.environ["TOSS_CLIENT_SECRET"],
+})
+res.raise_for_status()
+token = res.json()["access_token"]
+
+# 2) Fetch quotes (token is enough — no account header needed)
+res = requests.get(f"{BASE}/api/v1/prices",
+                   headers={"Authorization": f"Bearer {token}"},
+                   params={"symbols": "005930,AAPL"})
+res.raise_for_status()
+
+for item in res.json()["result"]:
+    print(f"{item['symbol']:8} {item['lastPrice']:>10} {item['currency']}")
+
+# Your remaining budget comes back in a header
+print("calls remaining:", res.headers.get("X-RateLimit-Remaining"))
+```
+
+Running it gives you this.
+
+```
+005930        72000 KRW
+AAPL         185.70 USD
+calls remaining: 14
+```
+
+That's "connected." You haven't touched an account or an order, so no money can move.
+
+**Almost everyone gets stuck on one of these three**
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| **403** `access_denied` / `IP address not allowed` | IP not registered, or your IP changed | Re-check with `curl ifconfig.me` and register again. On a home router the IP rotates frequently |
+| **401** `invalid_client` | Wrong `client_id` / `client_secret` (including leading or trailing whitespace) | Re-copy with the WTS copy button. Unrelated to allowed IPs |
+| **400** `account-header-required` | You called an account or order API without the account header | Add the `X-Tossinvest-Account` header (see the first order below) |
+
+The third one never appears on quote calls. It shows up the moment you move to accounts, holdings, or orders.
+
+## Your First Order — One Share, Safeguards First
+
+To reach an order you first need your account identifier (`accountSeq`) and you must send it in the `X-Tossinvest-Account` header. **From here, real money moves.** Toss Securities' Open API has **no paper-trading environment, so even your first order executes on a live account** — hard-code a notional ceiling before you begin.
+
+```python
+# first_order.py — find the account, enforce a safeguard, buy 1 share at limit
+import os, uuid, requests
+
+BASE = "https://openapi.tossinvest.com"
+MAX_ORDER_KRW = 100_000   # ★ Safeguard: the code blocks anything above this
+
+# Note: issuing a new token instantly revokes the previous one.
+#       In production, issue once in one place and share it from a cache.
+res = requests.post(f"{BASE}/oauth2/token", data={
+    "grant_type": "client_credentials",
+    "client_id": os.environ["TOSS_CLIENT_ID"],
+    "client_secret": os.environ["TOSS_CLIENT_SECRET"],
+})
+res.raise_for_status()        # catches 403 (allowed IP) and 401 (credentials) right here
+token = res.json()["access_token"]
+h = {"Authorization": f"Bearer {token}"}
+
+# 1) Pull accountSeq from the account list
+accounts = requests.get(f"{BASE}/api/v1/accounts", headers=h).json()["result"]
+print(accounts)   # [{'accountNo': '12345678901', 'accountSeq': 1, 'accountType': 'BROKERAGE'}]
+ha = {**h, "X-Tossinvest-Account": str(accounts[0]["accountSeq"])}
+
+# 2) Pre-flight check — never send a request that breaches the ceiling
+symbol, qty, price = "005930", 1, 70000
+assert symbol.isdigit(), "this safeguard assumes a Korean symbol (KRW) — US prices are in USD"
+assert qty * price <= MAX_ORDER_KRW, f"safeguard tripped: {qty * price:,} KRW over limit"
+
+# 3) Limit buy — clientOrderId prevents duplicate orders
+res = requests.post(f"{BASE}/api/v1/orders", headers=ha, json={
+    "clientOrderId": f"first-{uuid.uuid4().hex[:8]}",
+    "symbol": symbol, "side": "BUY",
+    "orderType": "LIMIT", "timeInForce": "DAY",
+    "quantity": str(qty), "price": str(price),
+})
+print(res.status_code, res.json())
+# success → {'result': {'orderId': '0d5QIHjm...', 'clientOrderId': 'first-a1b2c3d4'}}
+# failure → {'error': {'code': 'order-hours-closed', ...}} — the cause arrives in `code`
+```
+
+If you boil it down to **three rules to follow from day one**:
+
+1. **Hard-code a notional ceiling.** One `assert` before the request, as above, is what stops an order with an extra zero. With no paper trading, it's your only net.
+2. **Always send `clientOrderId`.** If the network drops and you retry with the same value, it's treated as **the same order**. Without it, you buy twice. The key is valid for 10 minutes.
+3. **Code as if "order sent ≠ order filled."** Save the `orderId` from the response and poll `GET /api/v1/orders/{orderId}` for status. Getting rejected with `422 order-hours-closed` outside market hours is normal behavior, not a bug. If it hasn't filled yet, you can call `POST /api/v1/orders/{orderId}/cancel` with that same `orderId` — that's your escape hatch from a practice order.
+4. **Korean orders require the account's investor-directed exchange to be set to integrated (SOR).** The Open API doesn't support exchange-specific orders, so if that setting points at KRX or NXT, **even flawless code** is rejected with `422 investor-exchange-not-integrated`. You can't fix this in code — it's an account setting. If your first order keeps failing with a 422, check there first.
+
+Once that runs, everything else is a question of what more you can call. From here down, the article is reference: scope, limits, realtime, and errors.
 
 ## What the Toss Securities Open API Is — What You Get
 
@@ -47,14 +174,16 @@ One more defining trait: **documentation built to be read by AI coding agents.**
 ![Smartphone stock app and a laptop](https://images.unsplash.com/photo-1612461313144-fc1676a1bf17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBzdG9jayUyMHRyYWRpbmclMjBhcHAlMjBzbWFydHBob25lfGVufDF8MHx8fDE3ODMyOTc2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Dimitris Chapsoulas](https://unsplash.com/@synesthe2ia?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-android-smartphone-on-black-laptop-computer-CQFT1j8Ig30?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-## How to Get Access — From Client Registration to Token
+## Registration in Detail — Two Traps You Will Hit
 
-Short answer: **issue credentials under WTS Settings > Open API, register your allowed IP on the same screen, then call `POST /oauth2/token`.** The official guide lists four steps.
+Expanded against the official guide, the quickstart's three steps are really four.
 
 1. **Register a client** — log in to the Toss Securities WTS (desktop web) and issue `client_id` and `client_secret` under **Settings > Open API**.
 2. **Register allowed IPs** — at the bottom of that same menu, **Allowed IP management**, add the IPs that will call the API. Calls from any IP not on the list are blocked with a 403.
 3. **Issue an access token** — call `POST /oauth2/token` using the Client Credentials Grant.
 4. **Call the API** — pass the token as `Authorization: Bearer {access_token}`, and add `X-Tossinvest-Account` for account, asset, order, and conditional-order calls.
+
+If you just want to verify the token with curl first:
 
 ```bash
 curl -X POST https://openapi.tossinvest.com/oauth2/token \
@@ -115,39 +244,7 @@ Here are the REST endpoints per the official OpenAPI spec (v1.2.19). These are t
 
 *Source: [Toss Securities Open API — OpenAPI JSON](https://openapi.tossinvest.com/openapi-docs/latest/openapi.json) (v1.2.19, verified 2026-10-07)*
 
-In Python, the skeleton from token to quote to order is this short.
-
-```python
-import os, requests
-
-BASE = "https://openapi.tossinvest.com"
-
-# 1) Issue token (valid 24h, one per client)
-tok = requests.post(f"{BASE}/oauth2/token", data={
-    "grant_type": "client_credentials",
-    "client_id": os.environ["TOSS_CLIENT_ID"],
-    "client_secret": os.environ["TOSS_CLIENT_SECRET"],
-}).json()["access_token"]
-h = {"Authorization": f"Bearer {tok}"}
-
-# 2) Quotes — token only
-prices = requests.get(f"{BASE}/api/v1/prices", headers=h,
-                      params={"symbols": "005930,AAPL"}).json()
-
-# 3) Find the account → use accountSeq in the account header
-accounts = requests.get(f"{BASE}/api/v1/accounts", headers=h).json()["result"]
-ha = {**h, "X-Tossinvest-Account": str(accounts[0]["accountSeq"])}
-
-# 4) Limit buy — clientOrderId gives you idempotency
-order = requests.post(f"{BASE}/api/v1/orders", headers=ha, json={
-    "clientOrderId": "my-order-001",
-    "symbol": "005930", "side": "BUY",
-    "orderType": "LIMIT", "timeInForce": "DAY",
-    "quantity": "10", "price": "70000",
-}).json()
-```
-
-Four fields in the order request are worth knowing.
+The calling code is already covered — the quickstart and first-order examples above are the skeleton, and you reach any row in this table by swapping the endpoint and parameters. That said, **four fields in the order request are worth knowing.**
 
 - **`clientOrderId` (idempotency key)**: resend the same value and you get the original order result back. It stays valid for 10 minutes. It is the only thing standing between a network timeout retry and a duplicate order, so **there is no reason for an automated bot to skip it.** The server does not generate one for you.
 - **`timeInForce`**: `DAY` (default), `CLS` (at the close, US limit orders only), `OPG` (at the opening auction, Korean market only). `LIMIT` + `CLS` is what gives you an LOC order.
@@ -347,6 +444,7 @@ Once you wire up automated trading, these are the codes you'll actually meet.
 | 409 | `already-filled` · `already-canceled` | Modify/cancel target already closed | Re-query order status and branch |
 | 422 | `idempotency-key-conflict` | Same `clientOrderId`, different order contents | Generate a new key whenever the order changes |
 | 422 | `order-hours-closed` | Outside acceptable order hours | Check the session via the market calendar API and wait |
+| 422 | `investor-exchange-not-integrated` | Account's investor-directed exchange isn't integrated (SOR) (KR) | Not fixable in code — change the account setting to integrated (SOR) |
 | 422 | `insufficient-buying-power` | Not enough buying power | Check `/buying-power` right before ordering |
 | 422 | `insufficient-sellable-quantity` | Not enough sellable quantity | Check `/sellable-quantity` first — holdings ≠ sellable |
 | 422 | `price-out-of-range` | Price outside the daily limits | Check `/price-limits` and clamp the price |

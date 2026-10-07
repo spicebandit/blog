@@ -7,7 +7,7 @@ category: ax
 tags: ["토스증권API", "오픈API", "자동매매", "증권API"]
 ---
 
-주식 자동매매나 시세 분석 프로그램을 만들려면 증권사의 API가 필요하다. 윈도우 PC에 OCX를 깔고 HTS를 상주시켜야 했던 1세대와 달리 **토큰만 있으면 OS를 가리지 않는 REST 방식**은, 2022년 한국투자증권(KIS)이 몇 년간 거의 혼자 열어 둔 문이었다. 그 선택지가 2026년 **토스증권 Open API**로 넓어졌다. 5월부터 사전 신청자에게만 순차 제공되던 것이 **2026년 8월 13일 전체 고객 대상 정식 서비스로 전환**됐다 — 지금은 토스증권 계좌가 있으면 누구나 발급받을 수 있다. 그렇다면 토스증권 API는 무엇이 다르고, 어떻게 발급받아 쓰며, 기존 강자인 한국투자증권과 비교하면 무엇을 골라야 할까? 이 글은 토스증권 오픈API의 **특징 → 발급 방법 → 이용 방법 → 한도·에러 → 한투(KIS) 대비 장단점**을 개발자 관점에서 정리한다.
+주식 자동매매나 시세 분석 프로그램을 만들려면 증권사의 API가 필요하다. 윈도우 PC에 OCX를 깔고 HTS를 상주시켜야 했던 1세대와 달리 **토큰만 있으면 OS를 가리지 않는 REST 방식**은, 2022년 한국투자증권(KIS)이 몇 년간 거의 혼자 열어 둔 문이었다. 그 선택지가 2026년 **토스증권 Open API**로 넓어졌다. 5월부터 사전 신청자에게만 순차 제공되던 것이 **2026년 8월 13일 전체 고객 대상 정식 서비스로 전환**됐다 — 지금은 토스증권 계좌가 있으면 누구나 발급받을 수 있다. 그렇다면 토스증권 API는 무엇이 다르고, 어떻게 발급받아 쓰며, 기존 강자인 한국투자증권과 비교하면 무엇을 골라야 할까? 이 글은 **퀵스타트(발급→첫 시세 10분) → 첫 주문 → 발급 함정 → 범위·엔드포인트·한도·실시간·에러 레퍼런스 → 한투(KIS) 대비 장단점** 순서로 정리한다. **처음이면 바로 아래 퀵스타트부터** 보면 되고, 이미 붙여 본 사람이면 레퍼런스 구간으로 바로 내려가도 된다.
 
 가장 많이 찾는 세 가지 질문부터 답하면 이렇다.
 
@@ -20,6 +20,133 @@ tags: ["토스증권API", "오픈API", "자동매매", "증권API"]
 > ⚠️ 이 글은 API 활용 방법을 안내하는 기술 가이드이며, 특정 종목의 매수·매도를 권유하는 투자 조언이 아니다. API 정책·수수료·제공 범위는 변경될 수 있으니 각 사 공식 문서를 확인하자.
 >
 > *2026년 10월 7일 갱신 — 공식 스펙(REST v1.2.19 / 실시간 v1.2.2) 기준으로 엔드포인트 전체 목록, 그룹별 호출 한도, 에러 코드를 보강했다. 특히 **초기에 없던 웹소켓 실시간 API가 추가**되어 해당 내용을 전면 수정했다.*
+
+## 퀵스타트 — 발급부터 첫 시세까지 10분
+
+처음이면 아래만 따라 해도 삼성전자 현재가가 터미널에 찍힌다. 뒤쪽의 엔드포인트 목록·한도 표·에러 코드는 **나중에 막혔을 때 찾아오는 자리**이니 지금은 건너뛰어도 된다.
+
+**준비물 네 가지**
+
+| 준비물 | 확인 방법 |
+|---|---|
+| 토스증권 계좌 | 토스 앱에서 개설. 2026-08-13부터 전체 고객이 API를 쓸 수 있다 |
+| PC 웹(WTS) 로그인 | 발급 화면은 모바일 앱이 아니라 **PC 웹에만** 있다 |
+| **고정 공인 IP** | 터미널에서 `curl ifconfig.me`. 이 값을 허용 IP로 등록한다. 공유기·모바일 환경은 IP가 바뀌면 바로 403이 난다 |
+| 파이썬 + requests | `pip install requests` |
+
+**발급 3단계**
+
+1. 토스증권 **WTS(PC 웹) 로그인 → 설정 > Open API** → `client_id`·`client_secret` 발급 (복사 버튼으로 복사할 것 — 손으로 옮기면 공백이 섞인다)
+2. 같은 화면 하단 **허용 IP 관리** → 위에서 확인한 내 IP 등록
+3. 아래 코드에 환경변수로 넣고 실행
+
+```bash
+export TOSS_CLIENT_ID='c_...'
+export TOSS_CLIENT_SECRET='s_...'
+```
+
+**그대로 복붙해 돌아가는 코드**
+
+```python
+# quickstart.py — 토큰 발급 → 삼성전자·애플 현재가 조회
+import os, requests
+
+BASE = "https://openapi.tossinvest.com"
+
+# 1) 액세스 토큰 받기 (24시간 유효)
+res = requests.post(f"{BASE}/oauth2/token", data={
+    "grant_type": "client_credentials",
+    "client_id": os.environ["TOSS_CLIENT_ID"],
+    "client_secret": os.environ["TOSS_CLIENT_SECRET"],
+})
+res.raise_for_status()
+token = res.json()["access_token"]
+
+# 2) 현재가 조회 (토큰만 있으면 된다 — 계좌 헤더 불필요)
+res = requests.get(f"{BASE}/api/v1/prices",
+                   headers={"Authorization": f"Bearer {token}"},
+                   params={"symbols": "005930,AAPL"})
+res.raise_for_status()
+
+for item in res.json()["result"]:
+    print(f"{item['symbol']:8} {item['lastPrice']:>10} {item['currency']}")
+
+# 남은 호출 여유도 헤더로 확인할 수 있다
+print("남은 호출:", res.headers.get("X-RateLimit-Remaining"))
+```
+
+실행하면 이렇게 나온다.
+
+```
+005930        72000 KRW
+AAPL         185.70 USD
+남은 호출: 14
+```
+
+여기까지가 "연결 성공"이다. 계좌나 주문을 건드리지 않았으므로 돈이 움직일 일은 없다.
+
+**처음 막히는 건 거의 이 세 가지다**
+
+| 증상 | 원인 | 조치 |
+|---|---|---|
+| **403** `access_denied` / `IP address not allowed` | 허용 IP 미등록, 또는 IP가 바뀌었다 | `curl ifconfig.me`로 현재 IP를 다시 확인해 재등록. 공유기 환경이면 IP가 수시로 바뀐다 |
+| **401** `invalid_client` | `client_id`·`client_secret` 오입력 (앞뒤 공백·줄바꿈 포함) | WTS 복사 버튼으로 다시 복사. 허용 IP와는 무관한 문제다 |
+| **400** `account-header-required` | 계좌·주문 API를 계좌 헤더 없이 불렀다 | `X-Tossinvest-Account` 헤더 추가 (아래 첫 주문 참고) |
+
+세 번째는 시세 조회에선 안 나온다. 계좌·보유종목·주문으로 넘어가는 순간 만나게 되는 에러다.
+
+## 첫 주문 — 1주만, 안전장치부터
+
+주문까지 가보려면 계좌 식별값(`accountSeq`)을 먼저 알아야 하고, 그 값을 `X-Tossinvest-Account` 헤더에 실어야 한다. **여기서부터는 실제 돈이 움직인다.** 토스증권 Open API에는 **모의투자 환경이 없어 첫 주문도 실계좌에서 체결**되므로, 금액 상한을 코드에 박아 두고 시작하는 걸 권한다.
+
+```python
+# first_order.py — 계좌 확인 → 안전장치 → 지정가 1주 매수
+import os, uuid, requests
+
+BASE = "https://openapi.tossinvest.com"
+MAX_ORDER_KRW = 100_000   # ★ 안전장치: 이 금액을 넘는 주문은 코드가 막는다
+
+# 주의: 토큰을 새로 발급하면 기존 토큰이 즉시 무효화된다.
+#       실전에서는 한 곳에서 발급해 캐시로 공유할 것.
+res = requests.post(f"{BASE}/oauth2/token", data={
+    "grant_type": "client_credentials",
+    "client_id": os.environ["TOSS_CLIENT_ID"],
+    "client_secret": os.environ["TOSS_CLIENT_SECRET"],
+})
+res.raise_for_status()        # 403(허용 IP)·401(자격증명)을 여기서 바로 잡는다
+token = res.json()["access_token"]
+h = {"Authorization": f"Bearer {token}"}
+
+# 1) 계좌 목록에서 accountSeq 꺼내기
+accounts = requests.get(f"{BASE}/api/v1/accounts", headers=h).json()["result"]
+print(accounts)   # [{'accountNo': '12345678901', 'accountSeq': 1, 'accountType': 'BROKERAGE'}]
+ha = {**h, "X-Tossinvest-Account": str(accounts[0]["accountSeq"])}
+
+# 2) 주문 전 자가 점검 — 상한을 넘으면 요청을 보내지 않는다
+symbol, qty, price = "005930", 1, 70000
+assert symbol.isdigit(), "이 안전장치는 국내 종목(원화) 기준이다 — 미국 종목은 price가 달러다"
+assert qty * price <= MAX_ORDER_KRW, f"안전장치 작동: {qty * price:,}원은 상한 초과"
+
+# 3) 지정가 매수 — clientOrderId 로 중복 주문 방지
+res = requests.post(f"{BASE}/api/v1/orders", headers=ha, json={
+    "clientOrderId": f"first-{uuid.uuid4().hex[:8]}",
+    "symbol": symbol, "side": "BUY",
+    "orderType": "LIMIT", "timeInForce": "DAY",
+    "quantity": str(qty), "price": str(price),
+})
+print(res.status_code, res.json())
+# 성공 → {'result': {'orderId': '0d5QIHjm...', 'clientOrderId': 'first-a1b2c3d4'}}
+# 실패 → {'error': {'code': 'order-hours-closed', ...}} 처럼 code 로 원인이 온다
+```
+
+초보자가 **처음부터 지켜야 할 세 가지**만 추리면 이렇다.
+
+1. **금액 상한을 코드에 박는다.** 위 `assert`처럼 요청 전에 막는 한 줄이, 0 하나 더 붙은 주문을 막아준다. 모의투자가 없으니 이게 유일한 그물이다.
+2. **`clientOrderId`를 꼭 넣는다.** 네트워크가 끊겨 재시도할 때 같은 값이면 **같은 주문으로 처리**된다. 안 넣으면 두 번 산다. 유효기간은 10분이다.
+3. **"주문 냈다 ≠ 샀다"를 전제로 코딩한다.** 응답의 `orderId`를 저장해 두고 `GET /api/v1/orders/{orderId}`로 상태를 되물어 확인한다. 장 시간이 아니면 `422 order-hours-closed`로 거부되는 것도 정상 동작이다. 아직 체결되지 않았다면 그 `orderId`로 `POST /api/v1/orders/{orderId}/cancel`을 불러 취소할 수 있다 — 연습 주문의 탈출구는 이것이다.
+4. **국내 주문은 계좌의 '투자자지시 거래소'가 통합(SOR)이어야 한다.** Open API는 거래소를 지정한 주문을 지원하지 않아서, 이 설정이 KRX·NXT 지정으로 되어 있으면 **코드가 완벽해도** `422 investor-exchange-not-integrated`로 거부된다. 코드로는 고칠 수 없고 계좌 설정을 바꿔야 하는 항목이라, 첫 주문이 계속 422로 막히면 여기를 먼저 확인하자.
+
+여기까지 돌려봤다면 나머지는 "무엇을 더 부를 수 있는가"의 문제다. 아래부터는 범위·한도·실시간·에러를 레퍼런스로 정리한다.
 
 ## 토스증권 오픈API란 — 무엇을 주나
 
@@ -45,14 +172,16 @@ tags: ["토스증권API", "오픈API", "자동매매", "증권API"]
 ![스마트폰 주식 앱과 노트북](https://images.unsplash.com/photo-1612461313144-fc1676a1bf17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwzfHxtb2JpbGUlMjBzdG9jayUyMHRyYWRpbmclMjBhcHAlMjBzbWFydHBob25lfGVufDF8MHx8fDE3ODMyOTc2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Dimitris Chapsoulas](https://unsplash.com/@synesthe2ia?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/black-android-smartphone-on-black-laptop-computer-CQFT1j8Ig30?utm_source=spice-bandit-blog&utm_medium=referral)*
 
-## 발급 방법 — 클라이언트 등록부터 토큰까지
+## 발급 방법 상세 — 반드시 한 번 걸리는 함정 두 개
 
-답부터: **WTS 설정 > Open API에서 자격증명을 받고, 같은 화면에서 허용 IP를 등록한 뒤, `POST /oauth2/token`으로 토큰을 받는다.** 공식 가이드의 순서는 다음 네 단계다.
+퀵스타트의 3단계를 공식 가이드 기준으로 풀면 네 단계다.
 
 1. **클라이언트 등록** — 토스증권 WTS(PC 웹)에 로그인해 **설정 > Open API** 메뉴에서 `client_id`와 `client_secret`을 발급받는다.
 2. **허용 IP 등록** — 같은 메뉴 하단 **허용 IP 관리**에서 API를 호출할 IP를 등록한다. 목록에 없는 IP에서의 호출은 전부 403으로 차단된다.
 3. **액세스 토큰 발급** — `POST /oauth2/token`을 Client Credentials Grant로 호출한다.
 4. **API 호출** — 토큰을 `Authorization: Bearer {access_token}` 헤더에 담아 호출하고, 계좌·자산·주문·조건주문은 `X-Tossinvest-Account` 헤더를 추가한다.
+
+curl로 토큰만 먼저 확인하고 싶다면 이렇게 한다.
 
 ```bash
 curl -X POST https://openapi.tossinvest.com/oauth2/token \
@@ -113,39 +242,7 @@ curl -X POST https://openapi.tossinvest.com/oauth2/token \
 
 *출처: [토스증권 Open API OpenAPI JSON](https://openapi.tossinvest.com/openapi-docs/latest/openapi.json) (v1.2.19, 2026-10-07 확인)*
 
-파이썬으로 토큰 발급 → 시세 → 주문까지의 뼈대는 이렇게 짧다.
-
-```python
-import os, requests
-
-BASE = "https://openapi.tossinvest.com"
-
-# 1) 토큰 발급 (24시간 유효 · 클라이언트당 1개)
-tok = requests.post(f"{BASE}/oauth2/token", data={
-    "grant_type": "client_credentials",
-    "client_id": os.environ["TOSS_CLIENT_ID"],
-    "client_secret": os.environ["TOSS_CLIENT_SECRET"],
-}).json()["access_token"]
-h = {"Authorization": f"Bearer {tok}"}
-
-# 2) 시세 조회 — 토큰만 필요
-prices = requests.get(f"{BASE}/api/v1/prices", headers=h,
-                      params={"symbols": "005930,AAPL"}).json()
-
-# 3) 계좌 확인 → accountSeq 를 계좌 헤더에 사용
-accounts = requests.get(f"{BASE}/api/v1/accounts", headers=h).json()["result"]
-ha = {**h, "X-Tossinvest-Account": str(accounts[0]["accountSeq"])}
-
-# 4) 지정가 매수 — clientOrderId 로 멱등성 확보
-order = requests.post(f"{BASE}/api/v1/orders", headers=ha, json={
-    "clientOrderId": "my-order-001",
-    "symbol": "005930", "side": "BUY",
-    "orderType": "LIMIT", "timeInForce": "DAY",
-    "quantity": "10", "price": "70000",
-}).json()
-```
-
-주문 요청에서 알아둘 필드가 네 개 있다.
+호출 코드 자체는 위 퀵스타트·첫 주문 예제가 그대로 골격이다. 거기서 엔드포인트와 파라미터만 바꾸면 이 표의 어느 항목이든 쓸 수 있다. 다만 **주문 요청에서는 알아둘 필드가 네 개** 있다.
 
 - **`clientOrderId`(멱등성 키)**: 같은 값으로 재요청하면 이전 주문 결과를 그대로 돌려준다. 유효기간은 10분. 네트워크 타임아웃 뒤 재시도할 때 중복 주문을 막는 유일한 수단이니, **자동매매라면 안 넣을 이유가 없다.** 서버가 자동 생성해 주지는 않는다.
 - **`timeInForce`**: `DAY`(기본) / `CLS`(장 마감, 미국 지정가 전용) / `OPG`(장 개시 시가단일가, 국내 전용). `LIMIT`+`CLS` 조합이 곧 LOC 주문이다.
@@ -345,6 +442,7 @@ order = requests.post(f"{BASE}/api/v1/orders", headers=ha, json={
 | 409 | `already-filled` · `already-canceled` | 정정·취소 대상이 이미 종료됨 | 주문 상태 재조회 후 분기 |
 | 422 | `idempotency-key-conflict` | 같은 `clientOrderId`로 내용이 다른 주문 | 주문 내용이 바뀌면 키도 새로 생성 |
 | 422 | `order-hours-closed` | 주문 접수 불가 시간 | 장 운영 정보 API로 세션 확인 후 대기 |
+| 422 | `investor-exchange-not-integrated` | 계좌의 투자자지시 거래소가 통합(SOR)이 아님 (KR) | 코드로 해결 불가 — 계좌 설정을 통합(SOR)으로 변경 |
 | 422 | `insufficient-buying-power` | 매수 가능 금액 부족 | 주문 직전 `/buying-power` 확인 |
 | 422 | `insufficient-sellable-quantity` | 매도 가능 수량 부족 | 주문 직전 `/sellable-quantity` 확인 (보유 수량 ≠ 매도 가능 수량) |
 | 422 | `price-out-of-range` | 주문 가격이 상·하한가 밖 | `/price-limits`로 범위 확인 후 가격 보정 |
