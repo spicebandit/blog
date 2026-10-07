@@ -48,7 +48,17 @@ case "${1:-}" in
           echo "  ✓ ${res%%|*} · $u"; ok=$((ok+1)) ;;
         LOGIN_EXPIRED)
           # 세션이 끊기면 남은 건 건드리지 않고 그대로 둔다
-          echo "  ✗ LOGIN_EXPIRED — 중단. 남은 건 대기열에 유지"
+          echo "  ✗ LOGIN_EXPIRED — 네이버 로그인이 만료됐다. 사파리에서 로그인 후 재시도"
+          left+=("$u")
+          while IFS= read -r rest; do [ -n "$rest" ] && left+=("$rest"); done
+          break ;;
+        CONSOLE_BLOCKED)
+          # 로그인은 멀쩡한데 콘솔 라우트가 렌더되지 않는 상태(2026-10-07 실측).
+          # 사람이 사파리에서 서치어드바이저 > 웹마스터 도구를 한 번 열어 두면,
+          # 그 탭을 재사용해 제출이 된다.
+          echo "  ✗ CONSOLE_BLOCKED — 로그인은 살아 있으나 콘솔이 안 열린다."
+          echo "     → 사파리에서 https://searchadvisor.naver.com/ → '웹마스터 도구' →"
+          echo "       수집요청 화면을 열어 둔 뒤 다시 drain 하면 그 탭을 재사용한다."
           left+=("$u")
           while IFS= read -r rest; do [ -n "$rest" ] && left+=("$rest"); done
           break ;;
