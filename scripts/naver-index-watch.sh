@@ -13,9 +13,21 @@ tell application "Safari"
   make new document with properties {URL:"https://searchadvisor.naver.com/console/site/report/diagnosis?site=https%3A%2F%2Fwww.baseload.co.kr"}
   delay 8
   set pt to do JavaScript "document.title" in front document
+  -- 제목에 '로그인'이 있다고 바로 만료로 보면 안 된다. 로그인이 멀쩡한데도 콘솔
+  -- 라우트가 렌더되지 않아 제목만 '로그인 - ...'으로 남는 상태가 있다
+  -- (2026-10-07 실측, naver-submit-url.applescript와 같은 오판).
+  -- 그럴 땐 naver.com 로그인을 실제로 확인해 CONSOLE_BLOCKED와 구분한다.
   if pt contains "로그인" then
     close front document
-    return "LOGIN_EXPIRED"
+    make new document with properties {URL:"https://www.naver.com"}
+    delay 6
+    set li to do JavaScript "(function(){return /로그아웃/.test(document.body.innerText||'')?'Y':'N';})();" in front document
+    close front document
+    if li is "Y" then
+      return "CONSOLE_BLOCKED"
+    else
+      return "LOGIN_EXPIRED"
+    end if
   end if
   set v to do JavaScript "(function(){var t=document.body.innerText;var m=t.match(/색인(?!제외)[^0-9]{0,12}([0-9][0-9.,]*)([백천만억]?)/);var u=t.match(/최근 업데이트[^0-9]*([0-9.]+)/);var raw='?',num='?';if(m){raw=m[1]+m[2];var mult={'백':100,'천':1000,'만':10000,'억':100000000}[m[2]]||1;num=String(Math.round(parseFloat(m[1].replace(/,/g,''))*mult));}return raw+'~'+num+'|'+(u?u[1]:'?');})();" in front document
   close front document
@@ -27,6 +39,9 @@ EOF
 case "$RES" in
   LOGIN_EXPIRED)
     notify "🔶 네이버 색인 추적: 사파리 네이버 로그인 만료 — 재로그인 필요합니다." ;;
+  CONSOLE_BLOCKED)
+    # 로그인은 살아 있는데 콘솔이 안 열리는 상태. 재로그인을 요청하면 오진이다.
+    notify "🔶 네이버 색인 추적: 로그인은 살아 있으나 서치어드바이저 콘솔이 안 열립니다. 사파리에서 searchadvisor.naver.com → '웹마스터 도구'를 한 번 열어주시면 다음 실행에 잡힙니다." ;;
   OK\|*)
     # VAL 형식: "<표시값>~<숫자>|<업데이트일>"  예) "1.5백~150|2026.08.04"
     VAL="${RES#OK|}"; IDX="${VAL%%|*}"; UPD="${VAL##*|}"
