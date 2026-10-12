@@ -17,7 +17,7 @@ const { Content, headings } = await render(post);
 const SITE = Astro.site!;
 
 // 사이드바: 최근 영문 글 4개 (현재 글 제외, 발행순)
-const allEnPosts = await getCollection('blog-en', ({ data }) => !data.draft);
+const allEnPosts = await getCollection('blog-en', ({ data }) => !data.draft && !data.noindex);
 const recentEnPosts = allEnPosts
   .filter((p) => p.id !== post.id)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())

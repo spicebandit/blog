@@ -41,7 +41,7 @@ const hrefLangAlts = enMatch
     ]
   : undefined;
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('blog', ({ data }) => !data.draft && !data.noindex);
 const sorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const recentPosts = sorted.filter(p => p.id !== post.id).slice(0, 4);
 const catPosts = sorted.filter(p =>
@@ -86,7 +86,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
 
   <div class="article-layout">
     <div class="article-main">
-      <article data-pagefind-body={isPreview ? undefined : true}>
+      <article data-pagefind-body={isPreview || post.data.noindex ? undefined : true}>
         <h1>{post.data.title}</h1>
         <p style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin: 0 0 1.5em;">
           <a href={`/category/${post.data.category}/`} class="cat-chip">{categoryName(post.data.category)}</a>

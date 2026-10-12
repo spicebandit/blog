@@ -1,6 +1,6 @@
 ---
 import Analytics from '@vercel/analytics/astro';
-import { CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
+import { NAV_CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
 
 const ADSENSE_PUB = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
 const ADFIT_ENABLED =
@@ -86,7 +86,7 @@ const breadcrumbLd = breadcrumbs && breadcrumbs.length
 const pathname = Astro.url.pathname;
 const navItems = [
   { href: '/', label: '전체', cat: null as string | null },
-  ...CATEGORY_SLUGS.map((slug) => ({ href: `/category/${slug}/`, label: CATEGORY_NAMES[slug], cat: slug })),
+  ...NAV_CATEGORY_SLUGS.map((slug) => ({ href: `/category/${slug}/`, label: CATEGORY_NAMES[slug], cat: slug })),
 ];
 const isActive = (href: string) =>
   href === '/' ? pathname === '/' : pathname === href || pathname === href.replace(/\/$/, '');
@@ -687,15 +687,27 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     <footer class="site">
       <div class="wrap">
         <div class="footer-links">
-          <a href="/category/energy/">에너지</a>
-          <a href="/category/economy/">경제·경영</a>
-          <a href="/category/ai/">AI·AX</a>
-          <a href="/category/life/">Editor</a>
-          <a href="/rss.xml">RSS</a>
-          <a href="/about/">소개</a>
-          <a href="/contact/">연락처</a>
-          <a href="/privacy/">개인정보처리방침</a>
-          <a href="/terms/">이용약관</a>
+          {lang === 'en' ? (
+            <>
+              <a href="/en/">Home</a>
+              <a href="/rss.xml">RSS</a>
+              <a href="/en/about/">About</a>
+              <a href="/contact/">Contact</a>
+              <a href="/privacy/">Privacy</a>
+              <a href="/terms/">Terms</a>
+            </>
+          ) : (
+            <>
+              {NAV_CATEGORY_SLUGS.map((slug) => (
+                <a href={`/category/${slug}/`}>{CATEGORY_NAMES[slug]}</a>
+              ))}
+              <a href="/rss.xml">RSS</a>
+              <a href="/about/">소개</a>
+              <a href="/contact/">연락처</a>
+              <a href="/privacy/">개인정보처리방침</a>
+              <a href="/terms/">이용약관</a>
+            </>
+          )}
         </div>
         <p class="footer-legal">© {new Date().getFullYear()} BASELOAD</p>
       </div>

@@ -7,11 +7,11 @@ import BriefList from '../components/BriefList.astro';
 import CategorySection from '../components/CategorySection.astro';
 import AdSlot from '../components/AdSlot.astro';
 import type { CategorySlug } from '../lib/categories';
-import { CATEGORY_SLUGS } from '../lib/categories';
+import { NAV_CATEGORY_SLUGS } from '../lib/categories';
 import { firstBodyImage, kstDateStr } from '../lib/format';
 import popularData from '../data/popular-posts.json';
 
-const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+const allPosts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && !data.noindex))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 function postToSlide(p: (typeof allPosts)[0]) {
@@ -99,8 +99,8 @@ const hrefLangAlts = [
     <HomeSidebar recent={sidebarPosts} />
   </div>
 
-  <!-- Category sections × 4 -->
-  {CATEGORY_SLUGS.map((cat) => (
+  <!-- Category sections (GNB 노출 카테고리와 동일) -->
+  {NAV_CATEGORY_SLUGS.map((cat) => (
     <CategorySection category={cat} posts={byCat(cat)} total={catTotal(cat)} />
   ))}
 

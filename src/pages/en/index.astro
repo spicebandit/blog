@@ -12,7 +12,7 @@ const SITE = Astro.site!;
 
 // 영문판: AI·AX 글만 노출 (한글 홈과 동일 레이아웃, 문구만 영어)
 const raw = (await getCollection('blog-en', ({ data }) =>
-  (data.category === 'ai') && (!data.draft || import.meta.env.DEV)
+  (data.category === 'ai') && (!data.draft || import.meta.env.DEV) && !data.noindex
 )).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const posts = raw.map((p) => ({

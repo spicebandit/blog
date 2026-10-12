@@ -14,7 +14,7 @@ const PAGE_SIZE = 10;
 // /category/energy/ (1페이지), /category/energy/2/ ... 형태로 10편씩 페이지네이션
 export async function getStaticPaths({ paginate }: { paginate: any }) {
   const PAGE_SIZE = 10;
-  const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+  const allPosts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && !data.noindex))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return CATEGORY_SLUGS.flatMap((category) => {
@@ -47,7 +47,7 @@ const name = categoryName(category);
 const desc = categoryDescription(category);
 
 // 사이드바: 전체 글 기준 GA4 인기글 순위 (홈과 동일 로직)
-const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+const allPosts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && !data.noindex))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const popularRankMap = new Map<string, number>(
   (popularData.posts as { slug: string; views: number }[]).map((p, i) => [p.slug, i])

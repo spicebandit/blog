@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { CATEGORY_SLUGS } from '../lib/categories';
+import { NAV_CATEGORY_SLUGS } from '../lib/categories';
 
 function toDate(d: Date): string {
   return d.toISOString().split('T')[0];
@@ -51,13 +51,19 @@ export const GET: APIRoute = async ({ site }) => {
     entries.push(entry(`${base}/en/blog/${post.id}/`, lastmod, 'weekly', '0.8'));
   }
 
-  // Category listing pages
-  for (const cat of CATEGORY_SLUGS) {
+  // Category listing pages — GNB에서 내린 카테고리는 사이트맵에도 넣지 않는다
+  // (글 수가 적은 섹션을 주요 분류로 제출하지 않기 위함. 글 자체는 그대로 색인된다.)
+  for (const cat of NAV_CATEGORY_SLUGS) {
     entries.push(entry(`${base}/category/${cat}/`, buildDate, 'daily', '0.6'));
   }
 
   // 정적 정보·정책 페이지 (신뢰 페이지 — 소개·연락처·개인정보처리방침·이용약관)
   for (const p of ['about', 'contact', 'privacy', 'terms']) {
+    entries.push(entry(`${base}/${p}/`, buildDate, 'monthly', '0.5'));
+  }
+
+  // 영문판 홈·소개 (영문 글만 올리고 영문 신뢰 페이지를 빼면 /en/ 쪽에 운영 주체가 없다)
+  for (const p of ['en', 'en/about']) {
     entries.push(entry(`${base}/${p}/`, buildDate, 'monthly', '0.5'));
   }
 

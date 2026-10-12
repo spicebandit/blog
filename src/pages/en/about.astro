@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+
+// 영문판 소개 페이지. 한글 /about/ 과 같은 역할이지만 영문판의 실제 범위(AI·AX)에
+// 맞춰 썼다 — 영문판은 에너지·경제 글을 거의 싣지 않으므로 네 영역을 다 다룬다고
+// 쓰면 사실과 다르다.
+const hrefLangAlts = [
+  { lang: 'ko', href: 'https://www.baseload.co.kr/about/' },
+  { lang: 'en', href: 'https://www.baseload.co.kr/en/about/' },
+];
+---
+
+<Base
+  title="About — BASELOAD"
+  description="BASELOAD is an independent, one-person publication tracking shifts in energy, economics, and AI. The English edition focuses on AI and AI transformation (AX) — hands-on reports built from primary sources."
+  lang="en"
+  hrefLangAlts={hrefLangAlts}
+>
+  <article style="max-width:680px;margin:0 auto;padding-bottom:64px;">
+    <h1 style="font-size:1.75rem;margin-bottom:6px;">About</h1>
+    <p style="color:var(--accent);font-weight:700;font-size:1.05rem;margin:0 0 28px;">BASELOAD — Trend Tracker</p>
+
+    <h2>What this is</h2>
+    <p>
+      BASELOAD is a <strong>trend tracker covering energy, economics, and AI</strong>.
+      Rather than summarizing the day's headlines, it reads them through data and context to answer
+      one question: <strong>what is changing, and why does it matter?</strong>
+      Every piece aims to supply the background, comparisons, and figures you need to follow a trend —
+      not just the latest development.
+    </p>
+
+    <h2>What the English edition covers</h2>
+    <p>
+      The Korean site publishes across four areas — energy, economics and management, AI trends, and AX
+      (AI transformation). <strong>This English edition is narrower on purpose:</strong> it carries the
+      AI and AX reporting, where the material travels across languages without losing its value.
+      Korea-specific energy and electricity-market analysis stays on the
+      <a href="/">Korean site</a>, because much of it depends on domestic regulation and tariff structures.
+    </p>
+    <ul>
+      <li><strong>AI Trend</strong> — models, agents, policy, and market movement</li>
+      <li><strong>AX (AI transformation)</strong> — hands-on work with APIs, local LLMs, and agents: what we built, what broke, and what the specs actually say</li>
+    </ul>
+    <p>You can browse everything published in English on the <a href="/en/">English home page</a>.</p>
+
+    <h2>Editorial principles</h2>
+    <ul>
+      <li><strong>Evidence first</strong> — claims carry figures, examples, and sources. Unverified facts are not stated as settled.</li>
+      <li><strong>Context always</strong> — a number alone means little, so comparisons, trends, and implications come with it.</li>
+      <li><strong>A point of view</strong> — pieces converge on one core message instead of listing facts.</li>
+      <li><strong>Not investment advice</strong> — market and economy pieces are informational and never recommend buying or selling a specific security.</li>
+    </ul>
+
+    <h2>Who writes it</h2>
+    <p>
+      BASELOAD is an <strong>independent one-person publication</strong> with no corporate sponsorship.
+      The editor (pen name <strong>"Baseload Editor"</strong>) handles everything from topic selection
+      through research, analysis, writing, and editing. The perspective comes from years of tracking the
+      energy, economics, and AI beats, plus day-to-day practical work with data and AI tooling — the AX
+      pieces are generally written from systems the editor has actually built and run.
+      The legal name is withheld for privacy; the editorial process and the correction channel below are
+      what the publication offers in its place as accountability.
+    </p>
+
+    <h2>How a piece gets made</h2>
+    <ul>
+      <li><strong>Research</strong> — primary sources are checked first: official specifications, filings, institutional data, original reporting. Only verified facts make it in.</li>
+      <li><strong>Evidence</strong> — key figures and comparisons are shown as tables or charts, with sources named and linked.</li>
+      <li><strong>Review</strong> — a separate verification pass before publication checks figures and quotations against their sources.</li>
+      <li><strong>Corrections</strong> — when an error or gap surfaces after publication, the text is amended and the updated date is shown on the piece.</li>
+    </ul>
+    <p>
+      If you spot a factual error or something that needs adding, please tell us — through the comments at
+      the foot of any piece, or by email via the <a href="/contact/">contact page</a>. Reports are reviewed
+      and reflected in the text.
+    </p>
+
+    <p style="margin-top:28px;">
+      See also: <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy policy</a> · <a href="/about/">한국어 소개</a>
+    </p>
+  </article>
+</Base>

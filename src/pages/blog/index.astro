@@ -6,7 +6,7 @@ import { firstBodyImage } from '../../lib/format';
 
 const PAGE_SIZE = 20;
 
-const allPosts = (await getCollection('blog', ({ data }) => !data.draft || import.meta.env.DEV))
+const allPosts = (await getCollection('blog', ({ data }) => (!data.draft || import.meta.env.DEV) && !data.noindex))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);

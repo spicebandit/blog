@@ -7,6 +7,22 @@ export const CATEGORY_SLUGS = ['energy', 'economy', 'ai', 'ax', 'life'] as const
 
 export type CategorySlug = (typeof CATEGORY_SLUGS)[number];
 
+/**
+ * 상단 내비게이션(GNB)에 노출할 카테고리.
+ *
+ * CATEGORY_SLUGS와 분리한 이유: 글이 몇 편뿐인 카테고리가 메뉴에 걸려 있으면
+ * '공사 중·콘텐츠 부족' 섹션으로 읽힌다. 그렇다고 CATEGORY_SLUGS에서 빼면
+ * content.config.ts의 z.enum이 좁아져 이미 그 카테고리로 발행된 글이 빌드를 깨뜨린다.
+ * 그래서 스키마(=유효한 값)와 메뉴(=보여줄 값)를 따로 둔다.
+ *
+ * 2026-10-12: Editor(life)가 3편뿐이라 메뉴에서 제외했다(애드센스 심사 대응).
+ * 카테고리 페이지 /category/life/ 자체는 그대로 살아 있고 글도 정상 노출된다.
+ * 글이 충분히 쌓이면 아래 배열에 'life'를 다시 넣으면 끝이다.
+ */
+export const NAV_CATEGORY_SLUGS = CATEGORY_SLUGS.filter(
+  (slug) => slug !== 'life',
+) as readonly CategorySlug[];
+
 export const CATEGORY_NAMES: Record<CategorySlug, string> = {
   energy: '에너지',
   economy: '경제·경영',
