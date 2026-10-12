@@ -1,6 +1,7 @@
 ---
-title: "헤르메스 AI 실전 사용법·자동화 사례 완전 가이드 [2편]"
-description: "헤르메스 에이전트(Hermes Agent) 텔레그램 봇 연동, cron 자동화, MCP 서버 연결, 스킬 공유까지 실전 활용법을 사례 중심으로 정리합니다."
+title: "헤르메스 AI 사용방법 — 텔레그램 봇·cron 자동화·MCP 연결"
+description: "헤르메스 에이전트(Hermes Agent) 사용방법을 단계별로 정리했습니다. 텔레그램 봇 연동, cron 자동화 예약 실행, MCP 서버 연결, 스킬 공유까지 실제 설정 화면과 명령어 그대로 따라 할 수 있습니다."
+updatedDate: 2026-10-12T09:44:12+09:00
 pubDate: "2026-06-29T19:56:23+09:00"
 category: ax
 tags: ["hermes-agent", "nous-research", "ai-자동화", "텔레그램봇"]
