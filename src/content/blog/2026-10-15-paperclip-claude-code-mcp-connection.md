@@ -7,7 +7,7 @@ tags: ["Paperclip", "클로드코드", "MCP", "AI 에이전트 회사"]
 draft: true
 ---
 
-[1편](/blog/2026-07-05-paperclip-ai-agent-company-guide/)과 [2편](/blog/2026-07-09-paperclip-ai-agent-company-how-to/)을 쓴 7월 이후 페이퍼클립에 **릴리스가 열 번** 나왔습니다. 그중 가장 구조적인 변화는 2026년 10월 12일 릴리스의 **"Assistant Connection (MCP)"**입니다. 한 줄로 요약하면 **클로드 코드가 페이퍼클립에 로그인 사용자로 접속해 팀의 일원처럼 행동할 수 있게 됐습니다.**
+[1편](/blog/2026-07-05-paperclip-ai-agent-company-guide/)과 [2편](/blog/2026-07-09-paperclip-ai-agent-company-how-to/)을 쓴 7월 이후 페이퍼클립에 **릴리스가 열두 번**(패치 포함, 기능 릴리스만 세면 아홉 번) 나왔습니다. 그중 가장 구조적인 변화는 2026년 10월 12일 릴리스의 **"Assistant Connection (MCP)"**입니다. 한 줄로 요약하면 **클로드 코드가 페이퍼클립에 로그인 사용자로 접속해 팀의 일원처럼 행동할 수 있게 됐습니다.**
 
 여기서 많이 헷갈립니다. 페이퍼클립은 **원래도** 클로드 코드를 붙일 수 있었습니다. 그런데 그건 **방향이 반대**입니다. 이 글의 핵심은 그 두 방향을 구분하는 것입니다.
 
@@ -85,7 +85,8 @@ draft: true
 | `maxTurnsPerRun` | 한 번의 실행에서 허용할 최대 턴 |
 | `promptTemplate` | `{{agent.name}}`·`{{agent.id}}`·`{{context.*}}` 치환 지원 |
 | `env` | 환경변수 (API 키 등) |
-| `timeoutSec` | 실행 제한 시간 |
+| `timeoutSec` / `graceSec` | 실행 제한 시간과 SIGTERM 후 유예 |
+| `dangerouslySkipPermissions` | **권한 확인 생략 플래그.** 문서 예시는 `false`입니다. 자율 실행을 위해 켜는 유혹이 있는데, 에이전트가 사람 승인 없이 파일·명령을 집행하게 된다는 뜻이므로 격리된 환경에서만 고려할 항목입니다 |
 
 **알아둘 제약 네 가지** (공식 문서 기준)
 
@@ -94,7 +95,12 @@ draft: true
 3. **세션 재개는 조건부** — 에이전트에 저장된 `sessionId`가 있고 **`cwd`가 저장된 작업 디렉터리와 일치할 때만** 이어집니다. 작업 폴더를 바꾸면 맥락이 이어지지 않습니다
 4. **단일 머신 전제.** 공식 문서는 Process Adapter가 "개발용에 적합"하고 **분산 실행은 HTTP 어댑터**가 맞다고 안내합니다
 
-여기서 하나 주의할 게 있습니다. **공식 문서의 모델 목록이 릴리스보다 늦습니다.** 문서에는 Claude Opus 4.6·Sonnet 4.5(권장)·Haiku 4.5가 적혀 있는데, 10월 12일 릴리스 노트는 **클로드 코드 에이전트에 Claude Sonnet 5.5를 Low~Max effort로 선택할 수 있다**고 합니다. 설정할 모델 이름은 **릴리스 노트 쪽을 믿는 게 안전**합니다.
+여기서 하나 주의할 게 있습니다. **공식 문서의 모델 목록이 릴리스보다 늦습니다.** 문서에는 Claude Opus 4.6·Sonnet 4.5(권장)·Haiku 4.5가 적혀 있는데, 10월 12일 릴리스 노트는 **클로드 코드 에이전트에 Claude Sonnet 5.5를 Low~Max effort로 선택할 수 있다**고 합니다.
+
+그렇다고 "릴리스 노트를 보고 적으면 된다"고 말할 수는 없습니다. **릴리스 노트는 표시명만 주고 설정에 넣을 모델 ID 문자열을 공개하지 않습니다.** 그래서 `model` 값은 **제품 UI의 모델 메뉴에서 확인하는 쪽이 안전**합니다. 두 가지를 더 챙겨야 합니다.
+
+- **`effort` 허용값이 다릅니다.** 문서의 Process Adapter 설정은 `low`·`medium`·`high`를 예시로 듭니다. 릴리스 노트가 말하는 "Max effort"가 프로세스 어댑터 설정값으로 그대로 들어가는지는 **확인하지 못했습니다**
+- **샌드박스 이미지 재빌드 조건이 있습니다.** 릴리스 노트 원문 — "**Claude Code 2.1.284보다 오래된 버전으로 빌드한 커스텀 샌드박스 이미지는 CLI 경로에서 Sonnet 5.5가 동작하기 전에 다시 빌드해야 한다**". 같은 릴리스에서 하네스 핀이 Claude Code 2.1.286으로 올라갔습니다
 
 ## 새 방식 — Assistant Connection (MCP)로 팀에 합류
 
@@ -116,12 +122,16 @@ draft: true
 
 **켜는 절차 (공식 릴리스 노트 기준)**
 
-1. `Settings → Experimental → "Assistant connections (MCP)"` 활성화 — **아직 실험 기능**입니다
+1. `Settings → Experimental → "Assistant connections (MCP)"` 활성화 — **아직 실험 기능**입니다(설정 키 `enablePublicMcp`). 릴리스 노트는 이 스위치가 "공개 MCP 엔드포인트를 노출하며 `PAPERCLIP_PUBLIC_URL`이 HTTPS 오리진이어야 한다"고 적습니다
 2. **HTTPS `PAPERCLIP_PUBLIC_URL`** 설정 — OAuth 리다이렉트가 필요하므로 HTTP 로컬호스트로는 안 됩니다
 3. Connections에서 **Assistant Connection (MCP)** 카드로 클라이언트를 연결 (브라우저 OAuth 또는 device-code)
 4. 로컬 stdio 클라이언트는 **`paperclip mcp` CLI 브리지**를 device login과 함께 사용
 
-2번이 실질적인 관문입니다. 2편에서 설명한 로컬 실행(`npx`로 띄우고 localhost로 접속) 상태라면 **HTTPS 공개 URL을 먼저 마련해야** 합니다. 참고로 8월 24일 릴리스에 **Tailscale로 관리형 런타임에 실제 HTTPS URL을 노출**하는 기능(`PAPERCLIP_MANAGED_RUNTIME_HTTPS`)이 들어왔으니, 이 경로를 먼저 보는 게 빠를 수 있습니다.
+2번이 실질적인 관문입니다. 2편에서 설명한 로컬 실행(`npx`로 띄우고 localhost로 접속) 상태라면 **HTTPS 공개 URL을 먼저 마련해야** 합니다.
+
+**여기서 헷갈리기 쉬운 게 하나 있습니다.** 8월 24일 릴리스에 Tailscale 기반 HTTPS 노출 기능(`PAPERCLIP_MANAGED_RUNTIME_HTTPS`)이 들어왔지만, **이건 다른 레이어입니다.** 릴리스 노트가 대상을 명확히 적어뒀습니다 — "관리형 **워크트리 런타임**"을 `tailscale_https`로 노출하는 것이고, 해결하려는 문제는 "**에이전트의 브랜치 프리뷰**를 폰이나 다른 컴퓨터에서 못 보던 것"입니다. 즉 **에이전트 작업물 미리보기용**이고, MCP가 요구하는 `PAPERCLIP_PUBLIC_URL`(페이퍼클립 본체의 HTTPS 오리진)과는 관계가 없습니다.
+
+같은 릴리스가 언급한 **TLS 종단 플랫폼(Railway·Render·Fly 등) 뒤에 두는 구성**이 공개 HTTPS 오리진을 얻는 더 직접적인 경로로 보입니다. 다만 **이 부분은 실제로 확인하지 못했습니다** — 설치해서 세워본 결과가 아닙니다.
 
 ![공장의 자동화 설비](https://images.unsplash.com/photo-1647427060118-4911c9821b82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NzQ5NjZ8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMGF1dG9tYXRpb24lMjBtYWNoaW5lcnl8ZW58MXwwfHx8MTc5MjA1MDQyN3ww&ixlib=rb-4.1.0&q=80&w=1080)
 *Photo by [Simon Kadula](https://unsplash.com/@simonkadula?utm_source=spice-bandit-blog&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/a-factory-filled-with-lots-of-orange-machines-8gr6bObQLOI?utm_source=spice-bandit-blog&utm_medium=referral)*
@@ -132,7 +142,7 @@ draft: true
 
 | 목적 | 고를 것 | 이유 |
 |---|---|---|
-| 사람 없이 **밤새 일이 돌아가게** | **Process Adapter** | 하트비트로 주기 실행되는 '직원'이 필요합니다. MCP 연결은 내가 클로드 코드를 켜야 동작합니다 |
+| 사람 없이 **밤새 일이 돌아가게** | **Process Adapter** | 하트비트로 주기 실행되는 '직원'이 필요합니다. MCP 연결은 내 클라이언트가 접속해 있는 동안 동작하는 구조로 보입니다(자료에 명시된 서술은 아닙니다) |
 | 내가 쓰는 클로드 코드에서 **회사 업무를 조회·지시** | **Assistant Connection (MCP)** | 태스크 검색·생성·위임이 내 세션에서 바로 됩니다 |
 | 원격·여러 머신에 **분산 실행** | **HTTP 어댑터** | 공식 문서가 Process Adapter는 단일 머신·개발용이라고 명시합니다 |
 | 결과물을 **내 쪽 파이프라인으로 끌어오기** | **MCP + 이벤트 웹훅** | 문서·산출물 읽기와 서명된 웹훅 추적이 한 경로에 있습니다 |
@@ -147,9 +157,9 @@ draft: true
 | 변경 | 언제 | 2편 독자가 알아야 할 점 |
 |---|---|---|
 | **채팅형 태스크가 기본** | 8/24 | 2편에서 설명한 **이슈형 화면(페이지 헤더 + 코멘트 스레드 + Properties 사이드바)은 선택지로 밀렸습니다.** `enableClassicTaskInterface` 설정으로 되돌릴 수 있지만, 채팅 전용 기능은 거기서 동작하지 않습니다 |
-| **Decisions — propose/decide 워크플로** | 8/18 | 의사결정이 1급 기능이 됐습니다. 승인 흐름을 다시 볼 가치가 있습니다 |
-| **Import/Export가 Cloud Sync를 대체** | 8/18 | 회사 데이터 이전 방식이 바뀌었습니다 |
-| **릴리스 채널 분리** | 8/18 | canary → nightly → beta → stable. 안정성을 원하면 채널을 지정하세요 |
+| **Decisions — propose/decide 워크플로** | 8/17 | 의사결정이 1급 기능이 됐습니다. 승인 흐름을 다시 볼 가치가 있습니다 |
+| **Import/Export가 Cloud Sync를 대체** | 8/17 | 회사 데이터 이전 방식이 바뀌었습니다 |
+| **릴리스 채널 분리** | 8/17 | canary → nightly → beta → stable. 안정성을 원하면 채널을 지정하세요 |
 | **AI 자격증명이 Connections로 이관** | 9/16 | 2편의 환경변수 중심 키 관리와 위치가 달라졌습니다 |
 | **GitHub 접근이 "공유 토큰"에서 "신원"으로** | 9/16 | 토큰 하나를 돌려쓰는 구조가 아니게 됐습니다 |
 | **에이전트 전용 이메일**(AgentMail) | 9/16 | 에이전트가 자기 메일 주소를 갖습니다 |
