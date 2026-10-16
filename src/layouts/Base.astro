@@ -1,5 +1,4 @@
 ---
-import Analytics from '@vercel/analytics/astro';
 import { NAV_CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
 
 const ADSENSE_PUB = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
@@ -617,6 +616,21 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         });
       }
     </script>
+    <!-- Vercel Web Analytics (GA4 대조용 2차 계측). @vercel/analytics 2.0.1의 Astro
+         컴포넌트는 프로덕션에서 로더 script가 붙지 않아 수집이 0이었다(2026-10-17 실측).
+         공식 HTML 스니펫 직접 삽입으로 교체 + GA4와 동일 게이트 적용. -->
+    <script is:inline>
+      (function () {
+        // 프로덕션 도메인에서만 (localhost·프리뷰·구 도메인 제외)
+        if (location.hostname !== 'www.baseload.co.kr') return;
+        // 본인 방문 제외 — GA4와 같은 localStorage 플래그(?me= 로 토글)
+        if (window.__gaExcludeOwner) return;
+        var s = document.createElement('script');
+        s.defer = true;
+        s.src = '/_vercel/insights/script.js';
+        document.head.appendChild(s);
+      })();
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">콘텐츠로 건너뛰기</a>
@@ -719,8 +733,6 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         <path d="M12 19V5M5 12l7-7 7 7"/>
       </svg>
     </button>
-
-    <Analytics />
 
     <script is:inline>
       (function () {

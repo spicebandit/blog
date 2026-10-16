@@ -1,10 +1,9 @@
 ---
 title: "페이퍼클립에 클로드 코드 붙이는 두 방법 — MCP 연동 [3편]"
 description: "페이퍼클립이 2026년 10월 MCP 연동을 열었습니다. 기존 Process Adapter가 클로드 코드를 '직원'으로 돌리는 방식이라면, 새 Assistant Connection은 클로드 코드가 '로그인 사용자'로 팀에 합류하는 반대 방향입니다. 두 방식의 차이와 전제조건을 정리했습니다."
-pubDate: 2026-10-15T16:52:41+09:00
+pubDate: 2026-10-17T07:18:23+09:00
 category: ax
 tags: ["Paperclip", "클로드코드", "MCP", "AI 에이전트 회사"]
-draft: true
 ---
 
 [1편](/blog/2026-07-05-paperclip-ai-agent-company-guide/)과 [2편](/blog/2026-07-09-paperclip-ai-agent-company-how-to/)을 쓴 7월 이후 페이퍼클립에 **릴리스가 열두 번**(패치 포함, 기능 릴리스만 세면 아홉 번) 나왔습니다. 그중 가장 구조적인 변화는 2026년 10월 12일 릴리스의 **"Assistant Connection (MCP)"**입니다. 한 줄로 요약하면 **클로드 코드가 페이퍼클립에 로그인 사용자로 접속해 팀의 일원처럼 행동할 수 있게 됐습니다.**
