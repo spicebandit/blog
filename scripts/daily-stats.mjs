@@ -152,11 +152,17 @@ async function fetchReport(token, propertyId) {
           {
             // 국가별 방문자 (어제). 해외(특히 미국 데이터센터)는 대부분 크롤러봇이라
             // 방문자=조회수 1:1로 잡힌다. 조회수까지 함께 받아 사람/봇 구분에 참고한다.
+            //
+            // newVsReturning을 함께 받는 이유(2026-10-19): 브리프가 원본 합계만 찍어서
+            // "전체 방문자 28명"과 내가 따로 돌린 "외부 방문자 7명"이 어긋나 보였다.
+            // 같은 요청에 신규/재방문을 붙이면 한국신규(외부추정)·한국재방문(본인추정)·
+            // 해외(봇추정) 3분해를 추가 요청 없이 계산할 수 있다.
+            // GA4 batchRunReports는 요청 5개가 상한이라 요청을 더 늘릴 수 없다.
             dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
-            dimensions: [{ name: 'country' }],
+            dimensions: [{ name: 'country' }, { name: 'newVsReturning' }],
             metrics: [{ name: 'totalUsers' }, { name: 'screenPageViews' }],
             orderBys: [{ metric: { metricName: 'totalUsers' }, desc: true }],
-            limit: 6,
+            limit: 40,
           },
           {
             // 유입 소스별 (어제). 기존에는 채널 그룹(sessionDefaultChannelGroup)을 썼는데
@@ -277,15 +283,37 @@ const COUNTRY_KR = {
   'Singapore': '🇸🇬 싱가포르',
 };
 
+// 국가 × 신규/재방문 행을 받아 ①국가별 합계 ②방문자 3분해를 함께 만든다.
+// 3분해 정의는 scripts/ga-daily-external.mjs와 동일하게 맞춘다(두 숫자가 어긋나면 안 됨):
+//   외부추정 = 한국 신규 / 본인추정 = 한국 재방문 / 봇추정 = 해외 전체
 function parseCountries(report) {
-  return (report?.rows ?? []).map((row) => {
+  const byCountry = new Map();
+  const split = { krNew: 0, krNewViews: 0, krRet: 0, overseas: 0 };
+
+  for (const row of report?.rows ?? []) {
     const raw = row.dimensionValues?.[0]?.value ?? '(미상)';
-    return {
-      country: COUNTRY_KR[raw] ?? raw,
-      users: Number(row.metricValues?.[0]?.value ?? 0),
-      views: Number(row.metricValues?.[1]?.value ?? 0),
-    };
-  });
+    const nvr = row.dimensionValues?.[1]?.value ?? '';
+    const users = Number(row.metricValues?.[0]?.value ?? 0);
+    const views = Number(row.metricValues?.[1]?.value ?? 0);
+
+    const name = COUNTRY_KR[raw] ?? raw;
+    const cur = byCountry.get(name) ?? { country: name, users: 0, views: 0 };
+    cur.users += users;
+    cur.views += views;
+    byCountry.set(name, cur);
+
+    if (raw === 'South Korea') {
+      if (nvr === 'new') { split.krNew += users; split.krNewViews += views; }
+      else if (nvr === 'returning') { split.krRet += users; }
+      // nvr이 빈 값/미상인 한국 행은 어느 쪽으로도 세지 않는다(중복 집계 방지).
+    } else {
+      split.overseas += users;
+    }
+  }
+
+  const countries = [...byCountry.values()].sort((a, b) => b.users - a.users).slice(0, 6);
+  countries.split = split;
+  return countries;
 }
 
 // 검색엔진·유입원 소스명 → 표시명. GA4 sessionSource는 'naver', 'm.search.naver.com',
@@ -348,6 +376,16 @@ function formatMessage(totals, topPages, dailySeries, keywords, countries, engin
     `🖱 세션 <b>${t.sessions.toLocaleString()}</b>${delta(t.sessions, p.sessions)}`,
     `<i>(괄호는 그제 대비 증감)</i>`,
   ];
+
+  // 방문자 3분해 — 위 '방문자'는 봇 포함 원본 합계다. 그 숫자만 보여주면
+  // 따로 돌린 '외부 방문자' 추정치와 어긋나 보이므로 둘을 한자리에서 보여준다.
+  const sp = countries?.split;
+  if (sp && t.users > 0) {
+    lines.push(
+      `   └ 외부추정 <b>${sp.krNew}</b> · 본인추정 ${sp.krRet} · 봇추정 ${sp.overseas}`,
+      `<i>(외부추정=한국 신규, 본인추정=한국 재방문, 봇추정=해외 전체)</i>`,
+    );
+  }
 
   // 최근 7일 추이 (스파크라인 + 합계/일평균)
   if (dailySeries.length > 0) {
