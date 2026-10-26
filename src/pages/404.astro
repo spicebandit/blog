@@ -2,7 +2,16 @@
 import Base from '../layouts/Base.astro';
 import { NAV_CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
 ---
-<Base title="페이지를 찾을 수 없습니다" description="요청하신 페이지가 존재하지 않거나 아직 발행 전입니다.">
+<!-- noindex 필수 (2026-10-26 애드센스 6차 반려 원인).
+     이 페이지를 그냥 두면 ①애드센스 로더가 실려 '내용 없는 화면에 Google 광고'가 되고
+     ②robots 메타가 없어 색인 대상이 된다. 존재하지 않는 주소는 무한히 만들 수 있으므로
+     결과적으로 '똑같은 내용의 페이지 + 광고'가 무한 생성되는 꼴이고, 이것이 반려 사유인
+     "복제된 콘텐츠가 있는 화면에 Google 게재 광고"에 그대로 해당한다.
+     Base는 noindex=true를 받으면 robots 메타를 넣고 광고 로더를 아예 내보내지 않는다. -->
+<Base
+  title="페이지를 찾을 수 없습니다"
+  description="요청하신 페이지가 존재하지 않거나 아직 발행 전입니다."
+  noindex>
   <div class="not-found">
     <div class="nf-icon" aria-hidden="true">
       <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
