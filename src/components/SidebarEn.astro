@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { formatDateEN } from '../lib/format';
-import AdSlot from './AdSlot.astro';
 
 interface Props {
   suppressAds?: boolean;
@@ -35,8 +34,6 @@ const { recentPosts, suppressAds = false } = Astro.props;
     </section>
   )}
 
-  {/* English pages target overseas readers → AdSense only (AdFit is Korea-only) */}
-  <AdSlot position="sidebar" network="adsense" suppress={suppressAds} />
 </aside>
 
 <style>

@@ -1,13 +1,11 @@
 ---
 /**
- * AdSlot — Google AdSense + Kakao AdFit 광고 슬롯
+ * AdSlot — Kakao AdFit 광고 슬롯
+ *
+ * 2026-11-04: 구글 애드센스 철수(6회 연속 반려). 애드센스 코드는 전부 제거했고
+ * 카카오 애드핏 경로만 남겼다.
  *
  * 빌드 시 환경변수 확인:
- *   PUBLIC_ADSENSE_PUBLISHER_ID   e.g. ca-pub-1234567890123456
- *   PUBLIC_ADSENSE_SLOT_HEADER    header 슬롯 ID (10자리)
- *   PUBLIC_ADSENSE_SLOT_IN_ARTICLE
- *   PUBLIC_ADSENSE_SLOT_BOTTOM
- *   PUBLIC_ADSENSE_SLOT_SIDEBAR
  *   PUBLIC_ADFIT_UNIT_HEADER      e.g. DAN-XXXXXXXXXX (PC 728×90)
  *   PUBLIC_ADFIT_UNIT_HEADER_M    e.g. DAN-XXXXXXXXXX (모바일 320×100)
  *   PUBLIC_ADFIT_UNIT_IN_ARTICLE
@@ -17,7 +15,7 @@
  */
 
 type AdPosition = 'header' | 'in-article' | 'bottom' | 'sidebar';
-type AdNetwork = 'auto' | 'adfit' | 'adsense';
+type AdNetwork = 'auto' | 'adfit';
 // suppress: true면 이 슬롯을 아예 렌더하지 않는다(noindex 페이지용)
 
 interface Props {
@@ -30,18 +28,8 @@ interface Props {
 const { position, network = 'auto', class: className, suppress = false } = Astro.props;
 
 // noindex 페이지(얇은 글·프리뷰·데이터 대시보드 등)에는 광고를 렌더하지 않는다.
-// 2026-08-27 애드센스 4차 반려에서 확인된 문제 — noindex는 검색 색인만 막을 뿐
-// 광고는 그대로 나가므로, 그 페이지들이 계속 애드센스 심사 대상으로 남아 있었다.
-// '복제된 콘텐츠가 있는 화면에 Google 게재 광고' 위반이 여기서 나왔다.
-
-const PUB_ID = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
-
-const ADSENSE_SLOTS: Record<AdPosition, string> = {
-  'header':     import.meta.env.PUBLIC_ADSENSE_SLOT_HEADER     ?? '',
-  'in-article': import.meta.env.PUBLIC_ADSENSE_SLOT_IN_ARTICLE ?? '',
-  'bottom':     import.meta.env.PUBLIC_ADSENSE_SLOT_BOTTOM     ?? '',
-  'sidebar':    import.meta.env.PUBLIC_ADSENSE_SLOT_SIDEBAR     ?? '',
-};
+// 애드센스 시절 이걸 안 지켜서 반려를 받았다(noindex는 색인만 막고 광고는 그대로 나간다).
+// 광고망을 바꿔도 같은 원칙을 유지한다.
 
 const ADFIT_UNITS: Record<AdPosition, string> = {
   'header':     import.meta.env.PUBLIC_ADFIT_UNIT_HEADER     ?? '',
@@ -53,28 +41,15 @@ const ADFIT_UNITS: Record<AdPosition, string> = {
 };
 const ADFIT_HEADER_M = import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M ?? '';
 
-const slotId  = ADSENSE_SLOTS[position];
 const adfitId = ADFIT_UNITS[position];
 
-const hasAdsense = !!(PUB_ID && slotId);
 // 헤더 위치는 PC 단위(adfitId) 또는 모바일 단위(ADFIT_HEADER_M) 중 하나만 있어도 렌더
 const hasAdfit   = position === 'header' ? !!(adfitId || ADFIT_HEADER_M) : !!adfitId;
-const isInArticle = position === 'in-article';
 const isDev      = import.meta.env.DEV;
 
-// network prop으로 위치별 광고망 강제 지정 가능 (기본 'auto' = AdFit 우선)
-//  - 'adfit'   : AdFit만 노출
-//  - 'adsense' : AdSense만 노출
-//  - 'auto'    : AdFit 단위가 있으면 AdFit, 없으면 AdSense (AdSense 미승인 기간 빈 칸 방지)
-const showAdfit =
-  network === 'adsense' ? false :
-  network === 'adfit'   ? hasAdfit :
-  hasAdfit;
-const showAdsense =
-  network === 'adfit'   ? false :
-  network === 'adsense' ? hasAdsense :
-  (!hasAdfit && hasAdsense);
-const showAd = !suppress && (showAdfit || showAdsense);
+// network prop: 'adfit' | 'auto' 모두 애드핏 기준(애드센스 철수로 선택지가 하나다)
+const showAdfit = hasAdfit;
+const showAd = !suppress && showAdfit;
 
 // AdFit dimensions per position (PC / mobile handled via CSS)
 const ADFIT_DIM: Record<AdPosition, { w: number; h: number }> = {
@@ -90,27 +65,6 @@ const adfitDim = ADFIT_DIM[position];
   <div class:list={['ad-slot', `ad-${position}`, className]}>
     <span class="ad-label">광고</span>
 
-    {showAdsense && (
-      isInArticle ? (
-        <ins class="adsbygoogle"
-          style="display:block; text-align:center;"
-          data-ad-layout="in-article"
-          data-ad-format="fluid"
-          data-ad-client={PUB_ID}
-          data-ad-slot={slotId}>
-        </ins>
-        <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      ) : (
-        <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client={PUB_ID}
-          data-ad-slot={slotId}
-          data-ad-format="auto"
-          data-full-width-responsive="true">
-        </ins>
-        <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      )
-    )}
 
     {/* AdFit: 헤더 광고 (PC 728×90 / 모바일 320×50) */}
     {showAdfit && position === 'header' && (
@@ -143,7 +97,7 @@ const adfitDim = ADFIT_DIM[position];
   <div class:list={['ad-slot', 'ad-placeholder', `ad-${position}`, className]}>
     <span class="ad-label">광고 슬롯 [{position}]</span>
     <div class="ad-hint">
-      ENV 미설정 — <code>PUBLIC_ADSENSE_PUBLISHER_ID</code> 등 필요
+      ENV 미설정 — <code>PUBLIC_ADFIT_UNIT_*</code> 필요
     </div>
   </div>
 ) : null}
@@ -167,10 +121,6 @@ const adfitDim = ADFIT_DIM[position];
     text-transform: uppercase;
     color: var(--muted);
     margin-bottom: 8px;
-  }
-  /* AdSense가 광고를 채우지 않으면(unfilled) 슬롯 전체 숨김 */
-  .ad-slot:has(ins.adsbygoogle[data-ad-status="unfilled"]) {
-    display: none;
   }
 
   /* Placeholder (DEV only) */

@@ -1,15 +1,13 @@
 ---
 import { NAV_CATEGORY_SLUGS, CATEGORY_NAMES } from '../lib/categories';
 
-const ADSENSE_PUB = import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '';
+// 구글 애드센스는 2026-11-04 사용자 결정으로 철수했다(6회 연속 반려).
+// 광고는 카카오 애드핏 경로만 남겨 두었다 — AdSlot.astro 참고.
 const ADFIT_ENABLED =
   !!(import.meta.env.PUBLIC_ADFIT_UNIT_HEADER     ||
      import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M   ||
      import.meta.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ||
      import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM);
-const adsenseSrc = ADSENSE_PUB
-  ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUB}`
-  : '';
 
 interface HrefLangAlt {
   lang: string; // e.g. 'ko', 'en'
@@ -572,14 +570,9 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     <link rel="stylesheet" as="style" crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
-    {/* Google AdSense — noindex 페이지에는 로더조차 내보내지 않는다.
-        (2026-08-27 애드센스 4차 반려: noindex는 색인만 막을 뿐 광고는 그대로 나가서
-         얇은 글·프리뷰 페이지가 계속 심사 대상으로 남아 있었다.) */}
-    {adsenseSrc && !noindex && (
-      <script is:inline async src={adsenseSrc} crossorigin="anonymous"></script>
-    )}
-    {/* Kakao AdFit */}
-    {ADFIT_ENABLED && (
+    {/* Kakao AdFit — noindex 페이지에는 로더를 내보내지 않는다.
+        (얇은 글·프리뷰 페이지에 광고가 붙지 않도록. 애드센스 때 겪은 문제를 그대로 적용) */}
+    {ADFIT_ENABLED && !noindex && (
       <script is:inline async src="//t1.daumcdn.net/kas/static/ba.min.js"></script>
     )}
 
@@ -715,6 +708,7 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
               {NAV_CATEGORY_SLUGS.map((slug) => (
                 <a href={`/category/${slug}/`}>{CATEGORY_NAMES[slug]}</a>
               ))}
+              <a href="/books/">서재</a>
               <a href="/rss.xml">RSS</a>
               <a href="/about/">소개</a>
               <a href="/contact/">연락처</a>

@@ -59,9 +59,8 @@ const { recentPosts, catPosts, category, suppressAds = false } = Astro.props;
     </section>
   )}
 
-  {/* 사이드바 하단 광고: 애드핏(320×50) + 애드센스(승인 시 노출) */}
+  {/* 사이드바 하단 광고: 카카오 애드핏(320×50) */}
   <AdSlot position="sidebar" network="adfit" suppress={suppressAds} />
-  <AdSlot position="sidebar" network="adsense" suppress={suppressAds} />
 </aside>
 
 <style>

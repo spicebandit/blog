@@ -74,35 +74,10 @@ if (pendingDrafts.length) for (const p of pendingDrafts)
   lines.push(`• ${p.title} [${CAT[p.category] || p.category}] — ${p.f}`);
 else lines.push('• 없음');
 
-// 애드센스 승인 상태 (승인되면 Claude 클러스터 착수 트리거) — 사파리 세션으로 확인
-let adsense = '';
-try {
-  const r = execSync('osascript scripts/adsense-status.applescript', { cwd: ROOT, encoding: 'utf8', timeout: 45000 }).trim();
-  const head = r.split('|')[0];
-  if (head === 'APPROVED') adsense = '🎉 <b>승인됨!</b> → Claude 클러스터 착수 가능 (설계 완료, "시작하자"만 주세요)';
-  else if (head === 'REVIEWING') adsense = '🟡 심사 중 (승인 대기 — 승인되면 이 줄이 🎉로 바뀝니다)';
-  // 반려 상태. 로그인은 정상이며 계정 화면이 '수정 필요'를 띄우고 있다는 뜻이다.
-  else if (head === 'ACTION_NEEDED') adsense = '🔴 조치 필요 (반려 상태 — 로그인은 정상). 개선 후 재신청 대기 중';
-  else if (head === 'LOGIN_EXPIRED') adsense = '⚠️ 확인 실패 (사파리 애드센스 로그인 만료) — 재로그인 필요';
-  else adsense = '❔ 상태 불명 — adsense.google.com 수동 확인 권장';
-} catch (e) { adsense = '⚠️ 자동 확인 오류 — adsense.google.com 수동 확인 권장'; }
-lines.push('', `💰 <b>애드센스</b>`, adsense);
-
-// 재신청 준비 상태 — scripts/adsense-readiness.mjs가 주 1회 남긴 결과를 읽어 표시한다.
-// 4차 반려(2026-08-31) 대응으로 얇은 글을 noindex 처리했는데, 구글이 그걸 다시 크롤링해
-// 색인에서 뺄 때까지 시간이 걸린다. 색인에 남은 채 심사에 들어가면 예전 상태로 판단되므로
-// "실제로 빠졌는지"를 확인하고 신청해야 한다. 검사에 수 분이 걸려 브리프에서 직접 돌리지 않고
-// 별도 스케줄이 남긴 캐시를 읽기만 한다.
-try {
-  const cache = JSON.parse(readFileSync(join(ROOT, '.adsense-readiness.json'), 'utf8'));
-  const ageDays = Math.floor((Date.now() - new Date(cache.checkedAt).getTime()) / 86400000);
-  const stamp = ageDays === 0 ? '오늘' : `${ageDays}일 전`;
-  if (cache.ready) {
-    lines.push(`✅ <b>재신청 가능</b> — noindex 글 ${cache.total}건이 모두 색인에서 빠졌습니다 (${stamp} 확인)`);
-  } else {
-    lines.push(`⏳ 재신청 대기 — noindex ${cache.total}건 중 <b>${cache.still}건</b>이 아직 색인에 남음 (${stamp} 확인)`);
-  }
-} catch { /* 캐시가 아직 없으면 이 줄은 생략한다 */ }
+// 애드센스 줄은 2026-11-04 제거했다. 6회 연속 반려 후 실장님이 철수를 결정했고,
+// 매일 브리프에서 반려 상태를 마주하는 것 자체가 피로였다. 상태 조회 스크립트
+// (adsense-status.applescript, adsense-readiness.mjs)는 지우지 않고 남겨 뒀으니,
+// 나중에 다시 할 때 이 블록만 되살리면 된다(git 이력 참고).
 
 // 네이버 검색 성과 (최근 30일) — 사파리 세션으로 서치어드바이저 콘솔을 읽는다.
 // 네이버는 이 데이터를 API로 안 열어놓는데, 이 블로그는 네이버 클릭이 구글의 20배가 넘어

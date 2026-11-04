@@ -2,7 +2,6 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import Comments from '../../../components/Comments.astro';
-import AdSlot from '../../../components/AdSlot.astro';
 import SidebarEn from '../../../components/SidebarEn.astro';
 import { formatDateEN } from '../../../lib/format';
 
@@ -101,8 +100,6 @@ const hrefLangAlts = [
         ))}
       </div>
     )}
-    {/* 영문판은 해외 독자 대상이므로 애드센스만 (애드핏은 국내 전용) */}
-    <AdSlot position="bottom" network="adsense" class="ad-en-bottom" suppress={post.data.noindex} />
   </article>
   <Comments pageId={`en-${post.id}`} pageTitle={post.data.title} />
     </div>
