@@ -174,6 +174,28 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
     )}
 
     <style is:global>
+      /* ── 본문 중간 광고 (rehype-inarticle-ad가 꽂는다) ──
+         마크다운 변환 단계에서 끼워 넣는 HTML이라 AdSlot.astro의 스코프 스타일이
+         닿지 않는다. 그래서 여기 전역으로 둔다. 모양은 AdSlot과 동일하게 맞춘다. */
+      .ad-inarticle {
+        margin: 2.4em 0;
+        text-align: center;
+        overflow: hidden;
+        background: var(--bg-2);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 10px 12px 14px;
+      }
+      .ad-inarticle .ad-label {
+        display: block;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+
       /* ── DESIGN TOKENS (C안: 프리미엄 신문형) ── */
       :root {
         /* Brand — 남색(네이비) 단일 액센트 */

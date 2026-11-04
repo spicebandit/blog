@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypeInArticleAd from './src/lib/rehype-inarticle-ad.mjs';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
@@ -23,6 +24,9 @@ export default defineConfig({
     // 내부(상대) 링크는 그대로 같은 탭에서 이동한다.
     rehypePlugins: [
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+      // 본문 중간 광고(카카오 애드핏). 단위(PUBLIC_ADFIT_UNIT_IN_ARTICLE)가 없으면
+      // 아무것도 넣지 않으므로, 단위를 등록하는 순간 켜진다.
+      rehypeInArticleAd,
     ],
   },
 });
