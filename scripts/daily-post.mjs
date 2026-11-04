@@ -4,7 +4,8 @@
  *
  *   · 주제 선정부터 발행까지 Claude Code가 한다. 사람 승인을 기다리지 않는다.
  *   · 단, 실장님이 키워드를 주신 날은 무조건 그 키워드로 쓴다(.next-keyword.json).
- *   · 발행 후 결과를 텔레그램으로 보고한다.
+ *   · 발행 결과는 .last-post.json에 적어 두고, 알림은 07:02에 notify-post.mjs가 보낸다
+ *     (실장님이 '발행은 6시 전후, 알림은 7시'로 분리를 지시 — 2026-11-04).
  *
  * 이 스크립트가 직접 글을 쓰지는 않는다. 요일·키워드·유형만 정해서 프롬프트를 만들고
  * `claude -p`에 넘긴다. 실제 취재·작성·검수·발행은 그 세션이 CLAUDE.md 규칙대로 한다.
@@ -22,6 +23,7 @@ import { dirname, join } from 'node:path';
 const execFileP = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const KEYWORD_FILE = join(ROOT, '.next-keyword.json');
+const RESULT_FILE = join(ROOT, '.last-post.json');
 const DRY = process.argv.includes('--dry');
 
 /* 요일별 영역·유형 편성 (0=일 … 6=토)
@@ -44,17 +46,6 @@ function loadKeyword() {
   } catch {
     return null;
   }
-}
-
-async function telegram(text) {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID ?? '60888622';
-  if (!token) return;
-  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: chatId, text, disable_web_page_preview: true }),
-  }).catch(() => {});
 }
 
 function buildPrompt({ area, kind, keyword }) {
@@ -92,11 +83,18 @@ ${topicRule}
 
 ## 발행 승인
 **실장님이 2026-11-04에 완전 위임하셨습니다. 발행 전 사람 승인을 기다리지 마십시오.**
-대신 발행이 끝나면 텔레그램(chat_id 60888622)으로 이렇게 보고하십시오.
-- 제목, 왜 이 주제를 골랐는지 한 줄, 글 URL
-- 검수에서 고친 것이 있으면 한 줄
 
-문제가 생겨 발행하지 못했다면 그 사실과 이유를 텔레그램으로 알리십시오. 조용히 끝내지 마십시오.`;
+## 보고 방법 — 텔레그램을 직접 보내지 마십시오
+실장님은 새벽에 주무십니다. 알림은 아침 7시 2분에 따로 나갑니다.
+대신 **작업이 끝나면 저장소 루트의 `.last-post.json`에 결과를 적으십시오.**
+
+성공했으면:
+{"status":"ok","title":"<글 제목>","url":"<글 URL>","reason":"<이 주제를 고른 이유 한 줄>","fixes":"<검수에서 고친 것 한 줄, 없으면 빈 문자열>"}
+
+발행하지 못했으면:
+{"status":"fail","reason":"<무엇이 막혔는지>"}
+
+이 파일을 쓰지 않으면 실장님께 아무 알림도 가지 않습니다. 반드시 쓰십시오.`;
 }
 
 async function main() {
@@ -129,6 +127,9 @@ async function main() {
     unlinkSync(KEYWORD_FILE);
   }
 
+  // 지난 결과를 지운다. 안 지우면 오늘 실패했을 때 어제 것이 다시 나갈 수 있다.
+  if (existsSync(RESULT_FILE)) unlinkSync(RESULT_FILE);
+
   try {
     const { stdout } = await execFileP('/opt/homebrew/bin/claude', ['-p', prompt], {
       cwd: ROOT,
@@ -141,9 +142,12 @@ async function main() {
   } catch (e) {
     const msg = (e?.stderr || e?.message || String(e)).trim().slice(0, 500);
     console.error('[daily-post] 실패:', msg);
-    await telegram(`⚠️ 오늘 블로그 자동 발행이 실패했습니다.\n영역: ${plan.area} / ${plan.kind}` +
-      (kw ? `\n지정 키워드: ${kw.keyword}` : '') +
-      `\n\n${msg}\n\nlogs/daily-post.err.log 확인이 필요합니다.`);
+    // 알림은 07:02 notify-post.mjs가 보낸다. 여기서는 결과만 남긴다.
+    writeFileSync(RESULT_FILE, JSON.stringify({
+      status: 'fail',
+      reason: `자동 실행이 중단됐습니다 (${plan.area}/${plan.kind}` + (kw ? `, 지정키워드 "${kw.keyword}"` : '') + `): ${msg}`,
+      at: new Date().toISOString(),
+    }, null, 2));
     process.exitCode = 1;
   }
 }
