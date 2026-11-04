@@ -35,9 +35,11 @@ const ADFIT_UNITS: Record<AdPosition, string> = {
   'header':     import.meta.env.PUBLIC_ADFIT_UNIT_HEADER     ?? '',
   'in-article': import.meta.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ?? '',
   'bottom':     import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM     ?? '',
-  // 사이드바: 미사용 중인 모바일 헤더 유닛(320×50)을 재활용 — bottom 유닛과 한 페이지 중복 방지
-  'sidebar':    import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M
-             ?? import.meta.env.PUBLIC_ADFIT_UNIT_BOTTOM ?? '',
+  // 사이드바: 전용 단위를 쓴다. 예전에는 헤더/하단 단위를 재활용했는데,
+  // 애드핏은 한 페이지에 같은 단위를 중복 배치하면 하나만 채우므로
+  // 사이드바와 글 하단 중 한쪽이 빈 채로 돌고 있었다(2026-11-04 확인).
+  'sidebar':    import.meta.env.PUBLIC_ADFIT_UNIT_SIDEBAR
+             ?? import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M ?? '',
 };
 const ADFIT_HEADER_M = import.meta.env.PUBLIC_ADFIT_UNIT_HEADER_M ?? '';
 

@@ -23,7 +23,9 @@
  *    Vercel은 매번 새로 빌드하므로 배포에는 영향이 없다.
  */
 
-const UNIT = process.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ?? '';
+// 환경변수는 '변환 시점'에 읽는다. 모듈 로드 시점에 상수로 굳히면
+// 빌드 환경에 따라 아직 주입되기 전 값을 집을 수 있다.
+const unitId = () => process.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ?? '';
 const MIN_H2 = 4;
 const INSERT_BEFORE_NTH_H2 = 2;
 
@@ -58,6 +60,7 @@ function adNode(unit) {
 
 export default function rehypeInArticleAd() {
   return (tree, file) => {
+    const UNIT = unitId();
     if (!UNIT) return;
 
     const fm = file?.data?.astro?.frontmatter ?? {};
