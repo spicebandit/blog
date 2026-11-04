@@ -156,10 +156,23 @@ const adfitDim = ADFIT_DIM[position];
     .adfit-mobile { display: block !important; }
   }
 
-  /* 사이드바 하단 광고: 위 목록과 간격만 주고 정적 배치 (aside가 이미 sticky) */
+  /* 사이드바 광고 (2026-11-04 수정)
+     문제: 광고 단위가 320×50인데 .ad-slot 상자가 사이드바 폭(약 300~340px 이상)까지
+     늘어나 작은 배너 하나가 넓은 상자 안에 떠 있는 모양이 됐다. 게다가 .ad-slot의
+     위아래 선과 .ad-sidebar의 2px 선이 겹쳐 두 줄로 보였다.
+     해결: 상자를 광고 크기에 맞춰 줄이고 가운데 정렬, 테두리는 위쪽 한 줄만 남긴다. */
   .ad-sidebar {
-    margin-top: 8px;
-    padding-top: 20px;
-    border-top: 2px solid var(--line);
+    margin: 18px auto 0;
+    max-width: 320px;
+    padding: 14px 0 0;
+    background: none;
+    border-top: 1px solid var(--line);
+    border-bottom: none;
+  }
+  .ad-sidebar .ad-label {
+    margin-bottom: 6px;
+  }
+  .ad-sidebar :global(ins.kakao_ad_area) {
+    margin: 0 auto;
   }
 </style>
