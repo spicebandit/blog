@@ -23,9 +23,6 @@
  *    Vercel은 매번 새로 빌드하므로 배포에는 영향이 없다.
  */
 
-// 환경변수는 '변환 시점'에 읽는다. 모듈 로드 시점에 상수로 굳히면
-// 빌드 환경에 따라 아직 주입되기 전 값을 집을 수 있다.
-const unitId = () => process.env.PUBLIC_ADFIT_UNIT_IN_ARTICLE ?? '';
 const MIN_H2 = 4;
 const INSERT_BEFORE_NTH_H2 = 2;
 
@@ -58,9 +55,18 @@ function adNode(unit) {
   };
 }
 
-export default function rehypeInArticleAd() {
+/**
+ * @param {{ unit?: string }} options
+ *   unit — 애드핏 광고 단위(DAN-...). astro.config.mjs에서 Vite의 loadEnv로 읽어 넘긴다.
+ *
+ *   ⚠️ 여기서 process.env를 직접 읽으면 안 된다. 로컬(shell에 export한 경우)에서는
+ *      동작하지만 Vercel 빌드에서는 비어 있어 광고가 안 붙는다(2026-11-04 실측:
+ *      사이드바는 import.meta.env로 읽어 정상, 본문 중간만 계속 0건이었다).
+ *      환경변수는 astro.config에서 loadEnv로 읽어 옵션으로 주입한다.
+ */
+export default function rehypeInArticleAd(options = {}) {
+  const UNIT = options.unit ?? '';
   return (tree, file) => {
-    const UNIT = unitId();
     if (!UNIT) return;
 
     const fm = file?.data?.astro?.frontmatter ?? {};

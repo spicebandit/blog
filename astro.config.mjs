@@ -1,7 +1,16 @@
 import { defineConfig } from 'astro/config';
+import { loadEnv } from 'vite';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeInArticleAd from './src/lib/rehype-inarticle-ad.mjs';
 import vercel from '@astrojs/vercel';
+
+// 빌드 시 광고 단위를 읽는다. process.env를 직접 보면 Vercel 빌드에서 비어 있어
+// loadEnv(=Vite가 .env와 실제 환경변수를 합쳐 주는 표준 경로)를 쓴다.
+const { PUBLIC_ADFIT_UNIT_IN_ARTICLE = '' } = loadEnv(
+  process.env.NODE_ENV ?? 'production',
+  process.cwd(),
+  'PUBLIC_',
+);
 
 export default defineConfig({
   site: 'https://www.baseload.co.kr',
@@ -26,7 +35,7 @@ export default defineConfig({
       [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
       // 본문 중간 광고(카카오 애드핏). 단위(PUBLIC_ADFIT_UNIT_IN_ARTICLE)가 없으면
       // 아무것도 넣지 않으므로, 단위를 등록하는 순간 켜진다.
-      rehypeInArticleAd,
+      [rehypeInArticleAd, { unit: PUBLIC_ADFIT_UNIT_IN_ARTICLE }],
     ],
   },
 });
