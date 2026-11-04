@@ -15,3 +15,7 @@ scripts/.bernie/
 # 애드센스 재신청 준비 점검 캐시 (로컬 전용)
 .adsense-readiness.json
 .naver-queue
+
+# 다음 발행 예약 키워드(로컬 전용)
+.next-keyword.json
+.next-keyword.used.json
