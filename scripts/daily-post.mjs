@@ -14,13 +14,11 @@
  *        node scripts/daily-post.mjs --dry    (프롬프트만 출력, claude 호출 안 함)
  */
 
-import { execFile } from 'node:child_process';
-import { promisify } from 'node:util';
+import { spawn } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-const execFileP = promisify(execFile);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const KEYWORD_FILE = join(ROOT, '.next-keyword.json');
 const RESULT_FILE = join(ROOT, '.last-post.json');
@@ -76,8 +74,12 @@ ${topicRule}
 - **발행 전 독립 검수를 거치십시오.** 팩트 검수 에이전트와 역사가 리뷰 에이전트를 띄우고,
   지적사항을 반영해 통과시킨 뒤 발행합니다. 자기 글을 자기가 검수하지 않습니다.
 - category가 ai인 글은 영문판을 함께 만들어 발행합니다.
-- 발행 = draft 제거 + git push. 그 뒤 \`node scripts/sync-to-obsidian.mjs\`와
-  \`node scripts/indexnow-ping.mjs <URL>\`까지 실행합니다.
+- 발행 = draft 제거 + git push. 그 뒤 아래 셋을 **모두** 실행합니다.
+  1. node scripts/sync-to-obsidian.mjs
+  2. node scripts/indexnow-ping.mjs <URL>   (빙·야후 등 IndexNow 참여 검색엔진)
+  3. **scripts/naver-queue.sh add <URL>**   ← 빠뜨리지 마십시오.
+     우리 블로그 유입의 대부분이 네이버인데 IndexNow로는 네이버 수집요청이 되지 않습니다.
+     대기열에 넣어두면 로그인이 살아 있을 때 별도 작업이 자동으로 제출합니다.
 - 배포가 실제로 반영됐는지 라이브 URL로 확인하십시오(Vercel이 가끔 빌드를 걸지 않습니다.
   그럴 땐 빈 커밋으로 다시 트리거하십시오).
 
@@ -95,6 +97,45 @@ ${topicRule}
 {"status":"fail","reason":"<무엇이 막혔는지>"}
 
 이 파일을 쓰지 않으면 실장님께 아무 알림도 가지 않습니다. 반드시 쓰십시오.`;
+}
+
+/**
+ * claude CLI 실행.
+ *
+ * ⚠️ stdin을 반드시 닫아야 한다(2026-11-06 실제 실패).
+ *    launchd가 node를 직접 띄우면 stdin이 연결되지 않는데, claude CLI는 파이프 입력을
+ *    기다리다가 "no stdin data received in 3s" 경고를 내고 비정상 종료했다.
+ *    execFile은 stdin을 열어둔 채로 두기 때문에 spawn으로 바꾸고 'ignore'를 준다.
+ *    (아침 영어 스크립트가 멀쩡했던 건 osascript의 do shell script를 거쳐
+ *     stdin이 정상적으로 /dev/null에 연결됐기 때문이다.)
+ *
+ * 실패 시 stdout도 함께 남긴다. 경고만 stderr에 찍히고 진짜 원인이 stdout에 있는
+ * 경우가 있어서, stderr만 보면 원인을 못 찾는다.
+ */
+function runClaude(prompt) {
+  return new Promise((resolve, reject) => {
+    const child = spawn('/opt/homebrew/bin/claude', ['-p', prompt], {
+      cwd: ROOT,
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+    let out = '', err = '';
+    const timer = setTimeout(() => {
+      child.kill('SIGTERM');
+      reject(new Error('45분 안에 끝나지 않아 중단했습니다.'));
+    }, 45 * 60 * 1000);
+
+    child.stdout.on('data', (d) => { out += d; });
+    child.stderr.on('data', (d) => { err += d; });
+    child.on('error', (e) => { clearTimeout(timer); reject(e); });
+    child.on('close', (code) => {
+      clearTimeout(timer);
+      if (code === 0) return resolve({ stdout: out, stderr: err });
+      reject(new Error(
+        `claude가 코드 ${code}로 종료했습니다.\n` +
+        `[stderr] ${err.trim().slice(-400)}\n[stdout] ${out.trim().slice(-400)}`,
+      ));
+    });
+  });
 }
 
 async function main() {
@@ -131,16 +172,12 @@ async function main() {
   if (existsSync(RESULT_FILE)) unlinkSync(RESULT_FILE);
 
   try {
-    const { stdout } = await execFileP('/opt/homebrew/bin/claude', ['-p', prompt], {
-      cwd: ROOT,
-      maxBuffer: 8 * 1024 * 1024,
-      timeout: 45 * 60 * 1000,
-    });
+    const { stdout } = await runClaude(prompt);
     console.log(`[daily-post] ${now.toISOString()} 완료 · ${plan.area}/${plan.kind}` +
                 (kw ? ` · 지정키워드="${kw.keyword}"` : ''));
     console.log(stdout.trim().slice(-2000));
   } catch (e) {
-    const msg = (e?.stderr || e?.message || String(e)).trim().slice(0, 500);
+    const msg = (e?.message || String(e)).trim().slice(0, 800);
     console.error('[daily-post] 실패:', msg);
     // 알림은 07:02 notify-post.mjs가 보낸다. 여기서는 결과만 남긴다.
     writeFileSync(RESULT_FILE, JSON.stringify({
