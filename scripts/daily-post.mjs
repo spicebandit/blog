@@ -15,7 +15,7 @@
  */
 
 import { spawn } from 'node:child_process';
-import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -119,10 +119,14 @@ function runClaude(prompt) {
       stdio: ['ignore', 'pipe', 'pipe'],
     });
     let out = '', err = '';
+    // 타임아웃 120분 (2026-11-09에 45분으로는 모자란다는 게 두 번 확인됐다.
+    // 취재 → 작성 → 팩트검수 → 역사가리뷰 → 발행까지 한 시간을 넘긴다.
+    // 11/6과 11/9 모두 '글은 완성됐는데 발행 직전에 끊긴' 사고였다.)
     const timer = setTimeout(() => {
       child.kill('SIGTERM');
-      reject(new Error('45분 안에 끝나지 않아 중단했습니다.'));
-    }, 45 * 60 * 1000);
+      setTimeout(() => { try { child.kill('SIGKILL'); } catch {} }, 10000);
+      reject(new Error('120분 안에 끝나지 않아 중단했습니다.'));
+    }, 120 * 60 * 1000);
 
     child.stdout.on('data', (d) => { out += d; });
     child.stderr.on('data', (d) => { err += d; });
@@ -179,12 +183,41 @@ async function main() {
   } catch (e) {
     const msg = (e?.message || String(e)).trim().slice(0, 800);
     console.error('[daily-post] 실패:', msg);
-    // 알림은 07:02 notify-post.mjs가 보낸다. 여기서는 결과만 남긴다.
-    writeFileSync(RESULT_FILE, JSON.stringify({
-      status: 'fail',
-      reason: `자동 실행이 중단됐습니다 (${plan.area}/${plan.kind}` + (kw ? `, 지정키워드 "${kw.keyword}"` : '') + `): ${msg}`,
-      at: new Date().toISOString(),
-    }, null, 2));
+
+    // 세션이 결과 파일을 이미 남겼으면 그게 사실이다. 덮어쓰지 않는다.
+    // (중단돼도 글은 다 써놓은 경우가 있다 — 11/6, 11/9 실제 사례)
+    if (existsSync(RESULT_FILE)) {
+      console.error('[daily-post] 세션이 남긴 결과가 있어 유지합니다.');
+      process.exitCode = 1;
+      return;
+    }
+
+    // 중단됐지만 오늘 날짜 글 파일이 새로 생겼는지 확인한다. 있으면 '초안 완성, 발행 미완'으로
+    // 알린다. 무조건 실패로 적으면 멀쩡한 원고를 놓친다.
+    const today = new Date().toISOString().slice(0, 10);
+    let draft = null;
+    try {
+      draft = readdirSync(join(ROOT, 'src/content/blog'))
+        .filter((f) => f.startsWith(today) && f.endsWith('.md'))
+        .sort()
+        .pop() ?? null;
+    } catch { /* 디렉터리를 못 읽으면 그냥 실패로 간다 */ }
+
+    writeFileSync(RESULT_FILE, JSON.stringify(
+      draft
+        ? {
+            status: 'fail',
+            reason: `원고는 완성됐는데 발행 단계에서 중단됐습니다 (${plan.area}/${plan.kind}). ` +
+                    `초안 파일: src/content/blog/${draft} — 검수 후 수동 발행이 필요합니다. 사유: ${msg}`,
+            draft,
+            at: new Date().toISOString(),
+          }
+        : {
+            status: 'fail',
+            reason: `자동 실행이 중단됐습니다 (${plan.area}/${plan.kind}` + (kw ? `, 지정키워드 "${kw.keyword}"` : '') + `): ${msg}`,
+            at: new Date().toISOString(),
+          },
+      null, 2));
     process.exitCode = 1;
   }
 }
