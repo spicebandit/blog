@@ -1,6 +1,6 @@
 ---
-title: "Which Claude Model Should You Use? 5.2 vs 5.5 Pricing Explained"
-description: "Claude Fable 5.2 shipped on November 9, bringing the lineup to four models. Here's what each one costs, how to switch models in Claude Code, and the four changes that will break your code — all from the official docs."
+title: "Which Claude Model Should You Use? When Fable Is Worth Double"
+description: "Claude's lineup is now four models. The official docs say start with Opus 5.5 — and spell out the one condition that justifies paying double for Fable 5.2. Pricing, selection criteria, how to switch in Claude Code, and the four changes that break your code."
 pubDate: 2026-11-11T05:23:33+09:00
 category: ai
 tags: ["Claude", "Claude Code", "LLM Pricing", "AI Dev Tools"]
