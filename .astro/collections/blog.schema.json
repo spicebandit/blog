@@ -23,7 +23,8 @@
         "economy",
         "ai",
         "ax",
-        "life"
+        "life",
+        "bernie"
       ]
     },
     "tags": {
@@ -36,6 +37,15 @@
     "draft": {
       "default": false,
       "type": "boolean"
+    },
+    "videoId": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "videoDate": {
+      "type": "string"
     },
     "noindex": {
       "default": false,
