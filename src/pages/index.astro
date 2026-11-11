@@ -33,11 +33,14 @@ const yesterdayStr = kstDateStr(new Date(buildDate.getTime() - 86400000));
 
 // 히어로: 그날 올린 기사 전부 노출 (리드 1 + 나머지 서브).
 // 오늘 발행분이 없으면 어제 발행분, 그것도 없으면 최신 1건(리드만).
-let todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === todayStr);
+// 버니 아카이브는 매일 저녁 자동 발행되므로 히어로에서도 뺀다 — 안 빼면
+// 저녁 빌드부터 그날 리드가 버니 글로 바뀐다. (2026-11-11 지시)
+const frontPosts = allPosts.filter(p => p.data.category !== 'bernie');
+let todayPickSource = frontPosts.filter(p => kstDateStr(p.data.pubDate) === todayStr);
 if (todayPickSource.length === 0)
-  todayPickSource = allPosts.filter(p => kstDateStr(p.data.pubDate) === yesterdayStr);
+  todayPickSource = frontPosts.filter(p => kstDateStr(p.data.pubDate) === yesterdayStr);
 if (todayPickSource.length === 0)
-  todayPickSource = allPosts.slice(0, 1);
+  todayPickSource = frontPosts.slice(0, 1);
 
 const todayPickSlides = todayPickSource.map(postToSlide);
 const todayPickIds = new Set(todayPickSlides.map(p => p.id));
@@ -58,8 +61,12 @@ const sidebarPosts = [...allPosts]
   .map(postToSlide);
 
 // Latest Brief: 최신 6개, todayPick·사이드바와 겹치지 않도록 제외
+// 버니 샌더스 아카이브는 하루 1편씩 자동 발행돼 최신순 목록을 금방 점유한다.
+// 자체 카테고리 섹션(/category/bernie/)과 GNB 메뉴에는 그대로 노출되므로
+// 여기서만 빼서 Latest Brief가 직접 쓴 기사 위주로 보이게 한다. (2026-11-11 지시)
 const sidebarIds = new Set(sidebarPosts.map(p => p.id));
 const briefPosts = allPosts
+  .filter(p => p.data.category !== 'bernie')
   .filter(p => !todayPickIds.has(p.id) && !sidebarIds.has(p.id))
   .slice(0, 6)
   .map(p => ({
