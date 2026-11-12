@@ -196,6 +196,224 @@ const todayLabel = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'ko-KR', {
         margin-bottom: 8px;
       }
 
+      /* ── 공매도 리포트 블록 (scripts/short-report-block.mjs가 생성) ──
+         마크다운 안에 raw HTML로 들어오므로 스코프 스타일이 닿지 않는다 → 전역.
+         사이트 크림/잉크 톤 + 블루 팔레트만 쓴다. 레드(#C8102E)는 2026-08-06 지시로 금지.
+         설계 의도: 공매도 리포트는 '발행사가 하락에 돈을 건 주장'이다. 그래서
+         주장(claim) / 회사 입장(company) / 확인 가능한 자료(evidence)를 시각적으로
+         분리하고, 근거의 단단함을 배지 색 농도로 표현한다(진할수록 단단함). */
+      .short-report {
+        --sr-bg: #FAF6EE;
+        --sr-line: #E5DECF;
+        --sr-deep: #1B4F8A;
+        --sr-mid: #4E7FA8;
+        --sr-pale: #A8BDD2;
+        --sr-ink: #23201D;
+        --sr-dim: #8A8378;
+        margin: 2.6em 0;
+        font-size: 0.95rem;
+        line-height: 1.68;
+        color: var(--sr-ink);
+      }
+      .short-report .sr-section { margin-top: 2em; }
+      .short-report .sr-h {
+        font-size: 1.05rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin: 0 0 .5em;
+        padding-bottom: .4em;
+        border-bottom: 2px solid var(--sr-deep);
+        color: var(--sr-ink);
+      }
+      .short-report .sr-lede { margin: .5em 0 1em; font-size: .875rem; color: var(--sr-dim); }
+      .short-report .sr-muted { color: var(--sr-dim); }
+      .short-report .sr-tag {
+        display: inline-block;
+        min-width: 7.4em;
+        margin-right: .55em;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: .06em;
+        color: var(--sr-dim);
+        vertical-align: 1px;
+      }
+      .short-report .sr-badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 10.5px;
+        font-weight: 700;
+        letter-spacing: .02em;
+        white-space: nowrap;
+      }
+
+      /* ① 메타 + 이해관계 공시 */
+      .short-report .sr-meta {
+        background: var(--sr-bg);
+        border: 1px solid var(--sr-line);
+        border-left: 4px solid var(--sr-deep);
+        border-radius: 8px;
+        padding: 16px 18px;
+      }
+      .short-report .sr-kicker {
+        display: block;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--sr-deep);
+        margin-bottom: 4px;
+      }
+      .short-report .sr-meta-title { display: block; font-size: 1.05rem; line-height: 1.4; }
+      .short-report .sr-meta-grid {
+        margin: 14px 0 0;
+        padding: 12px 0 0;
+        border-top: 1px solid var(--sr-line);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 8px 18px;
+      }
+      .short-report .sr-meta-row { display: flex; gap: .6em; font-size: .875rem; }
+      .short-report .sr-meta-row dt { flex: 0 0 5.6em; font-weight: 700; color: var(--sr-dim); }
+      .short-report .sr-meta-row dd { margin: 0; }
+      .short-report .sr-disclosure {
+        margin: 14px 0 0;
+        padding: 11px 13px;
+        background: #fff;
+        border: 1px dashed var(--sr-mid);
+        border-radius: 6px;
+        font-size: .85rem;
+        line-height: 1.6;
+      }
+
+      /* ② 주장 카드 */
+      .short-report .sr-cards {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 14px;
+      }
+      .short-report .sr-card {
+        background: var(--sr-bg);
+        border: 1px solid var(--sr-line);
+        border-radius: 8px;
+        padding: 15px 16px;
+      }
+      .short-report .sr-card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+      .short-report .sr-card-no {
+        font-size: 10.5px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        color: var(--sr-dim);
+      }
+      .short-report .sr-card-title { margin: 0 0 .6em; font-size: .97rem; line-height: 1.4; font-weight: 700; }
+      .short-report .sr-card p { margin: 0 0 .5em; font-size: .875rem; }
+      .short-report .sr-card-claim { padding-left: .2em; border-left: 3px solid var(--sr-deep); padding-left: .7em; }
+      .short-report .sr-card-company { padding-left: .7em; border-left: 3px solid var(--sr-pale); }
+      .short-report .sr-card-ev { padding-left: .7em; border-left: 3px solid var(--sr-line); color: var(--sr-dim); font-size: .82rem; }
+
+      /* ③ 흐름도 */
+      .short-report .sr-flow {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 10px;
+        counter-reset: none;
+      }
+      .short-report .sr-step {
+        position: relative;
+        background: var(--sr-bg);
+        border: 1px solid var(--sr-line);
+        border-top: 3px solid var(--sr-mid);
+        border-radius: 8px;
+        padding: 13px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .short-report .sr-step-no {
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        color: var(--sr-deep);
+      }
+      .short-report .sr-step-name { font-size: .93rem; }
+      .short-report .sr-step-role { font-size: .78rem; color: var(--sr-dim); }
+      .short-report .sr-step-detail { margin-top: 4px; padding-top: 7px; border-top: 1px solid var(--sr-line); font-size: .82rem; }
+      .short-report .sr-flow-cap { margin: .8em 0 0; font-size: .8rem; color: var(--sr-dim); }
+
+      /* ④ 타임라인 */
+      .short-report .sr-tl { list-style: none; margin: 0; padding: 0; position: relative; }
+      .short-report .sr-tl::before {
+        content: '';
+        position: absolute;
+        top: .6em;
+        bottom: .6em;
+        left: 13px;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--sr-pale), var(--sr-mid), var(--sr-deep));
+      }
+      .short-report .sr-tl-item { position: relative; display: flex; gap: 14px; padding: 0 0 16px; }
+      .short-report .sr-tl-no {
+        position: relative;
+        z-index: 1;
+        flex: 0 0 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid var(--sr-mid);
+        color: var(--sr-deep);
+        font-size: 11.5px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .short-report .sr-tl-body {
+        flex: 1;
+        min-width: 0;
+        background: var(--sr-bg);
+        border: 1px solid var(--sr-line);
+        border-radius: 8px;
+        padding: 12px 14px;
+      }
+      .short-report .sr-tl-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 6px; }
+      .short-report .sr-tl-date { font-size: 11.5px; font-weight: 800; color: var(--sr-deep); }
+      .short-report .sr-tl-kind { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; color: var(--sr-dim); }
+      .short-report .sr-tl-title { display: block; font-size: .95rem; line-height: 1.4; margin-bottom: .35em; }
+      .short-report .sr-tl-text { margin: 0; font-size: .87rem; }
+
+      /* ⑤ 반박 */
+      .short-report .sr-reb-list { margin: 0; padding-left: 1.1em; }
+      .short-report .sr-reb-item { margin-bottom: .55em; font-size: .89rem; }
+
+      /* ⑥ 면책 */
+      .short-report .sr-disclaimer {
+        margin-top: 2em;
+        padding: 14px 16px;
+        background: #fff;
+        border: 1px solid var(--sr-ink);
+        border-radius: 8px;
+        font-size: .85rem;
+        line-height: 1.68;
+      }
+
+      @media (max-width: 560px) {
+        .short-report { font-size: .92rem; }
+        .short-report .sr-tag { display: block; min-width: 0; margin-bottom: 2px; }
+        .short-report .sr-meta-row { flex-direction: column; gap: 0; }
+      }
+
       /* ── DESIGN TOKENS (C안: 프리미엄 신문형) ── */
       :root {
         /* Brand — 남색(네이비) 단일 액센트 */
