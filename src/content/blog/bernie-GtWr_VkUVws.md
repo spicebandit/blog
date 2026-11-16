@@ -15,15 +15,13 @@ tags: ["버니 샌더스", "여성 인권", "낙태권", "버몬트"]
 ▶ [유튜브에서 보기](https://www.youtube.com/watch?v=GtWr_VkUVws)
 🗓 등록일: 2021-12-06
 
-## 🇺🇸 English
+## 전문 — 영어 원문과 한국어 대역
 
-The people of Vermont must have a representative who is a strong and unequivocal supporter of women's rights — a representative who will say without hesitation that a woman must have the right to control her own body, and that decisions regarding abortion must be made by the women themselves and not right-wing politicians.
-
-If men were the people giving birth to babies, there would not be a lot of discussion regarding the right, the choice.
-
-## 🇰🇷 한국어
+> The people of Vermont must have a representative who is a strong and unequivocal supporter of women's rights — a representative who will say without hesitation that a woman must have the right to control her own body, and that decisions regarding abortion must be made by the women themselves and not right-wing politicians.
 
 버몬트 주민들에게는 여성의 권리를 강력하게, 그리고 한 치의 모호함도 없이 지지하는 대표가 있어야 합니다. 여성은 자기 몸을 스스로 결정할 권리를 가져야 하고, 낙태에 관한 결정은 우파 정치인들이 아니라 여성 자신이 내려야 한다고 망설임 없이 말할 수 있는 대표 말입니다.
+
+> If men were the people giving birth to babies, there would not be a lot of discussion regarding the right, the choice.
 
 만약 아이를 낳는 쪽이 남성이었다면, 그 권리, 그 선택권을 두고 이렇게 많은 논쟁이 벌어지지는 않았을 것입니다.
 

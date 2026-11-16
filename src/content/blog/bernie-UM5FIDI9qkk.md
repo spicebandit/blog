@@ -15,19 +15,17 @@ videoDate: "2020-06-20"
 ▶ [유튜브에서 보기](https://www.youtube.com/watch?v=UM5FIDI9qkk)
 🗓 등록일: 2020-06-20
 
-## 🇺🇸 English
+## 전문 — 영어 원문과 한국어 대역
 
-On June 19, 1865, enslaved Africans were informed in Texas that they were free. The Civil War had been over since April of that year, and the Emancipation Proclamation had been signed and went into effect on January 1st, 1863. But on June 19, all slaves were freed.
-
-We celebrate annually, every year, June 19th, to acknowledge that all slaves became free on that day. Let's make that a national holiday. Yes, we celebrate in 47 states, yes, we gather, there are parades and family functions on that date — but it needs to be a national holiday.
-
-Go out there June 19th and celebrate, and demand that we have a national holiday. Thanks.
-
-## 🇰🇷 한국어
+> On June 19, 1865, enslaved Africans were informed in Texas that they were free. The Civil War had been over since April of that year, and the Emancipation Proclamation had been signed and went into effect on January 1st, 1863. But on June 19, all slaves were freed.
 
 1865년 6월 19일, 텍사스의 노예가 된 아프리카인들은 자신들이 자유의 몸이 되었다는 사실을 알게 되었습니다. 남북전쟁은 그해 4월에 이미 끝났고, 노예해방선언은 1863년 1월 1일에 서명되어 효력을 발휘하고 있었습니다. 하지만 모든 노예가 실제로 자유를 얻은 것은 6월 19일이었습니다.
 
+> We celebrate annually, every year, June 19th, to acknowledge that all slaves became free on that day. Let's make that a national holiday. Yes, we celebrate in 47 states, yes, we gather, there are parades and family functions on that date — but it needs to be a national holiday.
+
 우리는 매년 6월 19일을 기념합니다. 그날 모든 노예가 자유를 얻었다는 사실을 기리기 위해서입니다. 이날을 국경일로 만듭시다. 그렇습니다, 우리는 47개 주에서 이날을 기념하고, 함께 모이며, 그날에 맞춰 퍼레이드와 가족 행사를 엽니다. 하지만 이날은 반드시 국경일이 되어야 합니다.
+
+> Go out there June 19th and celebrate, and demand that we have a national holiday. Thanks.
 
 6월 19일, 거리로 나가 이날을 기념하고, 국경일로 제정할 것을 요구합시다. 감사합니다.
 
