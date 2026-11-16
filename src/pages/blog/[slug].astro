@@ -152,22 +152,24 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
 
   /* ── 그래프(figure)는 글줄보다 넓게 (2026-11-17 지시) ──
      글줄은 700px가 읽기에 맞지만, 인라인 SVG 그래프는 viewBox가 600~820이라
-     700px 폭에 넣으면 전체가 축소돼 라벨이 10px 밑으로 내려간다. 메인 칸은
-     실제로 868px(1200 − 사이드바 300 − gap 32)인데 168px를 안 쓰고 있었다.
-     figure만 그 여백까지 쓰게 하면 그래프와 글씨가 같은 비율로 커진다 —
-     균일 확대라 라벨이 겹치거나 밖으로 나갈 위험이 없다. */
-  .article-body :global(figure) {
-    width: calc(100% + 168px);
-    max-width: calc(100vw - 2rem);
+     700px에 넣으면 축소돼 라벨이 10px 밑으로 내려간다.
+
+     ★ 1차 시도에서 `width: calc(100% + 168px)`로 여백을 밀어냈다가 사이드바를
+     48px 침범했다. 컨테이너 좌우 패딩 24px을 빼먹어 메인 칸을 868px로 계산했는데
+     실제는 820px(1200 − 패딩 48 − 사이드바 300 − gap 32)였다. 고정 픽셀로
+     밀어내면 레이아웃이 조금만 바뀌어도 또 넘친다.
+
+     그래서 밀어내지 않는다. article의 폭 제한을 풀고 '글줄 요소'에만 700px를
+     걸어, figure가 메인 칸을 100%로 채우게 한다. 칸을 넘는 계산이 아예 없으므로
+     사이드바를 침범할 수 없다. */
+  .article-main article { max-width: none; }
+  .article-main article > :global(*:not(.article-body)) { max-width: 700px; }
+  .article-body > :global(*) { max-width: 700px; }
+  .article-body > :global(figure) {
+    max-width: 100%;
+    width: 100%;
     margin-left: 0;
-    margin-right: -168px;
-  }
-  /* 사이드바가 사라지는 폭에서는 글줄과 같은 폭으로 되돌린다 */
-  @media (max-width: 1199px) {
-    .article-body :global(figure) {
-      width: 100%;
-      margin-right: 0;
-    }
+    margin-right: 0;
   }
 
   /* 신문 디테일: 첫 문단 드롭캡 */
