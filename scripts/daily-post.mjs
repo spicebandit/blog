@@ -197,6 +197,41 @@ async function main() {
     console.log(`[daily-post] ${now.toISOString()} 완료 · ${plan.area}/${plan.kind}` +
                 (kw ? ` · 지정키워드="${kw.keyword}"` : ''));
     console.log(stdout.trim().slice(-2000));
+
+    // ── 정상 종료를 믿지 않는다 (2026-11-16 사고) ──
+    // claude -p가 0으로 끝나도 발행을 안 했을 수 있다. 실제 사례: 세션이 글을 다 쓰고
+    // 검수 재심사를 기다리다 자기 예산이 떨어져 '조용히' 종료 → 결과 파일도 없고
+    // draft:true로 남아 07:02 알림이 침묵했다. 그래서 종료 코드가 아니라 산출물을 본다.
+    if (!existsSync(RESULT_FILE)) {
+      const today = new Date().toISOString().slice(0, 10);
+      let draft = null;
+      try {
+        draft = readdirSync(join(ROOT, 'src/content/blog'))
+          .filter((f) => f.startsWith(today) && f.endsWith('.md'))
+          .sort()
+          .pop() ?? null;
+      } catch { /* 못 읽으면 draft 없이 기록한다 */ }
+
+      const stillDraft = draft
+        ? /^draft:\s*true\s*$/m.test(readFileSync(join(ROOT, 'src/content/blog', draft), 'utf8'))
+        : false;
+
+      console.error('[daily-post] 정상 종료했지만 결과 파일이 없습니다 — 발행 미완으로 기록합니다.');
+      writeFileSync(RESULT_FILE, JSON.stringify({
+        status: 'fail',
+        reason: draft
+          ? `세션이 정상 종료했지만 결과를 남기지 않았습니다 (${plan.area}/${plan.kind}). ` +
+            `초안 파일: src/content/blog/${draft}` +
+            (stillDraft ? ' — draft:true 상태로 남아 있어 발행되지 않았습니다. 검수 후 수동 발행이 필요합니다.'
+                        : ' — draft는 아니지만 결과 기록이 없어 발행 여부를 확인해야 합니다.')
+          : `세션이 정상 종료했지만 결과도 초안도 없습니다 (${plan.area}/${plan.kind}). 무엇도 쓰이지 않았습니다.`,
+        draft,
+        stillDraft,
+        at: new Date().toISOString(),
+      }, null, 2));
+      process.exitCode = 1;
+      return;
+    }
   } catch (e) {
     const msg = (e?.message || String(e)).trim().slice(0, 800);
     console.error('[daily-post] 실패:', msg);
