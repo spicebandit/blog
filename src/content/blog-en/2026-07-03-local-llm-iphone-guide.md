@@ -38,24 +38,24 @@ What about speed? According to the [PromptQuorum guide](https://www.promptquorum
     <line x1="625" y1="50" x2="625" y2="210"/>
     <line x1="760" y1="50" x2="760" y2="210"/>
   </g>
-  <g font-size="13" fill="#8A8378">
+  <g font-size="15" fill="#8A8378">
     <text x="220" y="228" text-anchor="middle">0</text>
     <text x="355" y="228" text-anchor="middle">10</text>
     <text x="490" y="228" text-anchor="middle">20</text>
     <text x="625" y="228" text-anchor="middle">30</text>
     <text x="760" y="228" text-anchor="middle">40 tok/s</text>
   </g>
-  <text x="212" y="80" font-size="14" fill="#23201D" text-anchor="end">1B class (Llama 3.2 1B, etc.)</text>
+  <text x="212" y="80" font-size="16" fill="#23201D" text-anchor="end">1B class (Llama 3.2 1B, etc.)</text>
   <rect x="220" y="62" width="337" height="26" rx="4" fill="#C8102E"/>
   <rect x="557" y="62" width="203" height="26" rx="4" fill="#EBB1B4"/>
-  <text x="560" y="80" font-size="14" font-weight="700" fill="#F6F7F9" text-anchor="end">25–40</text>
-  <text x="212" y="130" font-size="14" fill="#23201D" text-anchor="end">3–4B class (Phi-4 Mini, etc.)</text>
+  <text x="560" y="80" font-size="16" font-weight="700" fill="#F6F7F9" text-anchor="end">25–40</text>
+  <text x="212" y="130" font-size="16" fill="#23201D" text-anchor="end">3–4B class (Phi-4 Mini, etc.)</text>
   <rect x="220" y="112" width="135" height="26" rx="4" fill="#8A8378"/>
   <rect x="355" y="112" width="135" height="26" rx="4" fill="#E4E7EC"/>
-  <text x="498" y="130" font-size="14" fill="#23201D">10–20</text>
-  <text x="212" y="180" font-size="14" fill="#23201D" text-anchor="end">Human reading speed (reference)</text>
+  <text x="498" y="130" font-size="16" fill="#23201D">10–20</text>
+  <text x="212" y="180" font-size="16" fill="#23201D" text-anchor="end">Human reading speed (reference)</text>
   <rect x="220" y="162" width="81" height="26" rx="4" fill="#E4E7EC"/>
-  <text x="309" y="180" font-size="14" fill="#8A8378">~5–7</text>
+  <text x="309" y="180" font-size="16" fill="#8A8378">~5–7</text>
 </svg>
 <figcaption>Measured generation-speed ranges by model size (lighter shades show variation by app, quantization, and thermal state). Anything faster than reading speed is practical for chat. Sources: PromptQuorum (2026-06), Local AI Master</figcaption>
 </figure>

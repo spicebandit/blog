@@ -32,17 +32,17 @@ tags: ["회사채", "JTBC", "채권투자", "신용등급"]
 
 <figure>
 <svg viewBox="0 0 800 280" role="img" aria-label="JTBC 회사채 제이티비씨36-2 가격이 6월 12일 10,030원에서 15일 7,021원, 16일 4,914원, 17일 3,440원, 18일 2,555원으로 6거래일 만에 76% 하락한 계단식 붕괴를 보여주는 막대그래프." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="17" font-weight="700" fill="#23201D">JTBC '제이티비씨36-2' 6거래일 만에 76% 붕괴 (단위 원)</text>
-  <text x="20" y="50" font-size="13" fill="#8A8378">액면 1만 원 · 표면금리 8.1% · 만기 2026-07-31 · 6/15 법정관리 신청</text>
+  <text x="20" y="30" font-size="19" font-weight="700" fill="#23201D">JTBC '제이티비씨36-2' 6거래일 만에 76% 붕괴 (단위 원)</text>
+  <text x="20" y="50" font-size="15" fill="#8A8378">액면 1만 원 · 표면금리 8.1% · 만기 2026-07-31 · 6/15 법정관리 신청</text>
   <line x1="60" y1="230" x2="770" y2="230" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="13" fill="#23201D" text-anchor="middle">
+  <g font-size="15" fill="#23201D" text-anchor="middle">
     <rect x="90" y="80" width="90" height="150" fill="#8A8378"/><text x="135" y="72" font-weight="700">10,030</text><text x="135" y="250" fill="#8A8378">6/12</text>
     <rect x="230" y="125" width="90" height="105" fill="#E4E7EC"/><text x="275" y="117" fill="#23201D">7,021</text><text x="275" y="250" fill="#8A8378">6/15</text>
     <rect x="370" y="156" width="90" height="74" fill="#E4E7EC"/><text x="415" y="148" fill="#23201D">4,914</text><text x="415" y="250" fill="#8A8378">6/16</text>
     <rect x="510" y="178" width="90" height="52" fill="#C8102E" opacity="0.6"/><text x="555" y="170" fill="#23201D">3,440</text><text x="555" y="250" fill="#8A8378">6/17</text>
     <rect x="650" y="192" width="90" height="38" fill="#C8102E"/><text x="695" y="184" font-weight="700" fill="#C8102E">2,555</text><text x="695" y="250" fill="#8A8378">6/18</text>
   </g>
-  <text x="60" y="272" font-size="14" fill="#8A8378">출처: 이데일리(2026-06). 6/12→6/18 76.1% 하락 — 원금의 4분의 3이 증발.</text>
+  <text x="60" y="272" font-size="16" fill="#8A8378">출처: 이데일리(2026-06). 6/12→6/18 76.1% 하락 — 원금의 4분의 3이 증발.</text>
 </svg>
 </figure>
 

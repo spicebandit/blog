@@ -33,32 +33,32 @@ tags: ["유가", "호르무즈", "미국 중간선거", "에너지 안보"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 260" style="width:100%;height:auto" role="img" aria-label="2026년 11월 4일 자산별 등락률 막대그래프. 브렌트유 마이너스 8.7퍼센트, 에너지주 마이너스 4.74퍼센트로 하락했고, 다우지수는 1500포인트 상승해 2025년 4월 이후 최대 상승폭을 기록했다. 재생에너지주는 상승했다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">2026년 11월 4일 — 기름은 빠지고 주식은 올랐다</text>
-<text x="0" y="38" font-size="13" fill="#8A8378">중간선거 결과 확정 다음 날의 등락. 전쟁 당사국을 타격한 당일이다.</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">2026년 11월 4일 — 기름은 빠지고 주식은 올랐다</text>
+<text x="0" y="38" font-size="14" fill="#8A8378">중간선거 결과 확정 다음 날의 등락. 전쟁 당사국을 타격한 당일이다.</text>
 <line x1="250" y1="55" x2="250" y2="200" stroke="#23201D" stroke-width="1.5" />
-<text x="250" y="218" font-size="12" fill="#8A8378" text-anchor="middle">0%</text>
+<text x="250" y="218" font-size="13" fill="#8A8378" text-anchor="middle">0%</text>
 <!-- 브렌트유 -->
-<text x="0" y="78" font-size="13" font-weight="700" fill="#23201D">브렌트유</text>
+<text x="0" y="78" font-size="14" font-weight="700" fill="#23201D">브렌트유</text>
 <rect x="100" y="64" width="150" height="22" fill="#1B4F8A" rx="3" />
-<text x="104" y="80" font-size="13" font-weight="700" fill="#FAF6EE">−8.7%</text>
-<text x="258" y="80" font-size="12.5" fill="#8A8378">94.62달러 정산 · 9월 4일 이후 최저</text>
+<text x="104" y="80" font-size="14" font-weight="700" fill="#FAF6EE">−8.7%</text>
+<text x="258" y="80" font-size="13.5" fill="#8A8378">94.62달러 정산 · 9월 4일 이후 최저</text>
 <!-- 에너지주 -->
-<text x="0" y="116" font-size="13" fill="#23201D">에너지 섹터</text>
+<text x="0" y="116" font-size="14" fill="#23201D">에너지 섹터</text>
 <rect x="170" y="102" width="80" height="22" fill="#4E7FA8" rx="3" />
-<text x="180" y="118" font-size="13" fill="#FAF6EE">−4.74%</text>
-<text x="258" y="118" font-size="12.5" fill="#8A8378">유가 하락 → 생산기업 현금흐름 축소 전망</text>
+<text x="180" y="118" font-size="14" fill="#FAF6EE">−4.74%</text>
+<text x="258" y="118" font-size="13.5" fill="#8A8378">유가 하락 → 생산기업 현금흐름 축소 전망</text>
 <!-- 다우 -->
-<text x="0" y="154" font-size="13" fill="#23201D">다우지수</text>
+<text x="0" y="154" font-size="14" fill="#23201D">다우지수</text>
 <rect x="250" y="140" width="190" height="22" fill="#A8BDD2" rx="3" />
-<text x="260" y="156" font-size="13" fill="#23201D">+1,500p</text>
-<text x="448" y="156" font-size="12.5" fill="#8A8378">2025년 4월 이후 최대 상승폭</text>
+<text x="260" y="156" font-size="14" fill="#23201D">+1,500p</text>
+<text x="448" y="156" font-size="13.5" fill="#8A8378">2025년 4월 이후 최대 상승폭</text>
 <!-- 재생에너지 -->
-<text x="0" y="192" font-size="13" fill="#23201D">재생에너지주</text>
+<text x="0" y="192" font-size="14" fill="#23201D">재생에너지주</text>
 <rect x="250" y="178" width="120" height="22" fill="#A8BDD2" rx="3" />
-<text x="260" y="194" font-size="13" fill="#23201D">상승</text>
-<text x="378" y="194" font-size="12.5" fill="#8A8378">정책 기대가 반영됐다</text>
-<text x="0" y="240" font-size="12.5" fill="#8A8378">※ 같은 날 미국은 호르무즈 인근 이란 카슈섬을 타격했다. 공급 위험이 커진 날 유가는 반대로 움직였다.</text>
-<text x="0" y="256" font-size="12.5" fill="#8A8378">출처: 블룸버그·CNBC·보스턴글로브 보도(2026-11-03~04) 종합.</text>
+<text x="260" y="194" font-size="14" fill="#23201D">상승</text>
+<text x="378" y="194" font-size="13.5" fill="#8A8378">정책 기대가 반영됐다</text>
+<text x="0" y="240" font-size="13.5" fill="#8A8378">※ 같은 날 미국은 호르무즈 인근 이란 카슈섬을 타격했다. 공급 위험이 커진 날 유가는 반대로 움직였다.</text>
+<text x="0" y="256" font-size="13.5" fill="#8A8378">출처: 블룸버그·CNBC·보스턴글로브 보도(2026-11-03~04) 종합.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">유가와 주가가 반대로 움직인 날입니다. 에너지주가 함께 빠진 것은 유가 하락이 생산기업 수익 전망을 깎기 때문이고, 재생에너지주가 오른 것은 정책 기대 때문입니다. 이 조합 자체가 '시장은 전쟁이 아니라 정치를 봤다'는 증거입니다.</figcaption>
 </figure>
@@ -115,27 +115,27 @@ tags: ["유가", "호르무즈", "미국 중간선거", "에너지 안보"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 250" style="width:100%;height:auto" role="img" aria-label="민주당 의석수와 거부권 무력화 저지선 비교 막대그래프. 상원은 민주당 54석으로 저지선 67석에 13석 부족하고, 하원은 255석으로 저지선 290석에 35석 부족하다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">과반은 넘었지만, 대통령을 멈출 선에는 못 미친다</text>
-<text x="0" y="38" font-size="13" fill="#8A8378">거부권을 무력화하려면 양원 모두 3분의 2가 필요하다.</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">과반은 넘었지만, 대통령을 멈출 선에는 못 미친다</text>
+<text x="0" y="38" font-size="14" fill="#8A8378">거부권을 무력화하려면 양원 모두 3분의 2가 필요하다.</text>
 <!-- 상원 -->
-<text x="0" y="78" font-size="13" font-weight="700" fill="#23201D">상원</text>
+<text x="0" y="78" font-size="14" font-weight="700" fill="#23201D">상원</text>
 <rect x="70" y="62" width="356" height="24" fill="#1B4F8A" rx="3" />
-<text x="84" y="79" font-size="13" font-weight="700" fill="#FAF6EE">민주당 54석</text>
+<text x="84" y="79" font-size="14" font-weight="700" fill="#FAF6EE">민주당 54석</text>
 <rect x="426" y="62" width="86" height="24" fill="#E5DECF" rx="3" />
 <line x1="512" y1="54" x2="512" y2="96" stroke="#23201D" stroke-width="2" stroke-dasharray="4 3" />
-<text x="520" y="72" font-size="12.5" font-weight="700" fill="#23201D">저지선 67석</text>
-<text x="520" y="88" font-size="12.5" fill="#8A8378">13석 부족</text>
+<text x="520" y="72" font-size="13.5" font-weight="700" fill="#23201D">저지선 67석</text>
+<text x="520" y="88" font-size="13.5" fill="#8A8378">13석 부족</text>
 <!-- 하원 -->
-<text x="0" y="140" font-size="13" font-weight="700" fill="#23201D">하원</text>
+<text x="0" y="140" font-size="14" font-weight="700" fill="#23201D">하원</text>
 <rect x="70" y="124" width="352" height="24" fill="#4E7FA8" rx="3" />
-<text x="84" y="141" font-size="13" font-weight="700" fill="#FAF6EE">민주당 255석</text>
+<text x="84" y="141" font-size="14" font-weight="700" fill="#FAF6EE">민주당 255석</text>
 <rect x="422" y="124" width="90" height="24" fill="#E5DECF" rx="3" />
 <line x1="512" y1="116" x2="512" y2="158" stroke="#23201D" stroke-width="2" stroke-dasharray="4 3" />
-<text x="520" y="134" font-size="12.5" font-weight="700" fill="#23201D">저지선 290석</text>
-<text x="520" y="150" font-size="12.5" fill="#8A8378">35석 부족</text>
-<text x="0" y="196" font-size="12.5" fill="#8A8378">※ 민주당은 상원에서 7석을 뒤집었다(아이오와·캔자스·오하이오·메인·노스캐롤라이나·사우스캐롤라이나·텍사스).</text>
-<text x="0" y="212" font-size="12.5" fill="#8A8378">※ 하원 255석은 2009년(257석) 이후 최대 수준이다. 그래도 저지선에는 닿지 않는다.</text>
-<text x="0" y="234" font-size="12.5" fill="#8A8378">출처: NBC·NPR·CNBC 개표 집계(2026-11-04 기준). 일부 선거구는 개표 진행 중.</text>
+<text x="520" y="134" font-size="13.5" font-weight="700" fill="#23201D">저지선 290석</text>
+<text x="520" y="150" font-size="13.5" fill="#8A8378">35석 부족</text>
+<text x="0" y="196" font-size="13.5" fill="#8A8378">※ 민주당은 상원에서 7석을 뒤집었다(아이오와·캔자스·오하이오·메인·노스캐롤라이나·사우스캐롤라이나·텍사스).</text>
+<text x="0" y="212" font-size="13.5" fill="#8A8378">※ 하원 255석은 2009년(257석) 이후 최대 수준이다. 그래도 저지선에는 닿지 않는다.</text>
+<text x="0" y="234" font-size="13.5" fill="#8A8378">출처: NBC·NPR·CNBC 개표 집계(2026-11-04 기준). 일부 선거구는 개표 진행 중.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">역사적 압승이 맞습니다. 다만 '압승'과 '대통령을 법적으로 멈출 수 있는 의석'은 다른 기준입니다. 시장이 가격에 넣은 것은 앞의 것이고, 실제로 확전을 막으려면 뒤의 것이 필요합니다.</figcaption>
 </figure>

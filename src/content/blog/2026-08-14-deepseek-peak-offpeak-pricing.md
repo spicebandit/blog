@@ -39,7 +39,7 @@ tags: ["딥시크", "LLM비용", "AI인프라", "API가격"]
 
 <figure>
 <svg viewBox="0 0 720 300" role="img" aria-label="deepseek-v4-pro 출력 토큰 100만 개당 가격 비교. 현행 0.87달러, 오프피크 1.98달러, 피크 3.96달러" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">deepseek-v4-pro 출력 가격 — 오프피크도 지금보다 비싸다</text>
+  <text x="30" y="32" font-size="19" font-weight="700" fill="#23201D">deepseek-v4-pro 출력 가격 — 오프피크도 지금보다 비싸다</text>
   <text x="30" y="54" font-size="14" fill="#8A8378">100만 토큰당 미국 달러 · 낮을수록 유리</text>
   <line x1="150" y1="90" x2="150" y2="254" stroke="#E5DECF" stroke-width="1"/>
   <rect x="150" y="100" width="106" height="36" fill="#A8BDD2"/>
@@ -51,7 +51,7 @@ tags: ["딥시크", "LLM비용", "AI인프라", "API가격"]
   <text x="266" y="123" font-size="15" font-weight="700" fill="#23201D">$0.87</text>
   <text x="402" y="181" font-size="15" font-weight="700" fill="#23201D">$1.98  (2.3배)</text>
   <text x="620" y="239" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">$3.96  (4.6배)</text>
-  <text x="30" y="285" font-size="13" fill="#8A8378">자료: DeepSeek API Docs, Models &amp; Pricing (2026-08-14 확인)</text>
+  <text x="30" y="285" font-size="13.5" fill="#8A8378">자료: DeepSeek API Docs, Models &amp; Pricing (2026-08-14 확인)</text>
 </svg>
 <figcaption>회사는 "오프피크는 피크의 절반"이라고 안내한다. 맞는 말이지만, 그 절반조차 현행보다 2.3배다.</figcaption>
 </figure>
@@ -82,28 +82,28 @@ tags: ["딥시크", "LLM비용", "AI인프라", "API가격"]
 
 <figure>
 <svg viewBox="0 0 720 250" role="img" aria-label="한국 시간 기준 딥시크 피크·오프피크 시간대. 오전 10시부터 오후 1시, 오후 3시부터 7시가 피크이고 나머지는 오프피크" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">한국 시간 기준 요금 시간대 — 일하는 시간이 비싸다</text>
+  <text x="30" y="32" font-size="19" font-weight="700" fill="#23201D">한국 시간 기준 요금 시간대 — 일하는 시간이 비싸다</text>
   <text x="30" y="54" font-size="14" fill="#8A8378">KST 00시~24시 · 진한 구간이 피크(2배)</text>
   <rect x="40" y="90" width="640" height="44" fill="#A8BDD2"/>
   <rect x="307" y="90" width="80" height="44" fill="#1B4F8A"/>
   <rect x="440" y="90" width="107" height="44" fill="#1B4F8A"/>
-  <text x="347" y="118" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">10~13시</text>
-  <text x="493" y="118" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">15~19시</text>
-  <text x="173" y="118" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">오프피크</text>
-  <text x="613" y="118" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">오프피크</text>
+  <text x="347" y="118" font-size="13.5" font-weight="700" fill="#FAF6EE" text-anchor="middle">10~13시</text>
+  <text x="493" y="118" font-size="13.5" font-weight="700" fill="#FAF6EE" text-anchor="middle">15~19시</text>
+  <text x="173" y="118" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">오프피크</text>
+  <text x="613" y="118" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">오프피크</text>
   <line x1="40" y1="140" x2="680" y2="140" stroke="#8A8378" stroke-width="1"/>
-  <text x="40" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">0시</text>
-  <text x="200" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">6시</text>
-  <text x="307" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">10시</text>
-  <text x="387" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">13시</text>
-  <text x="440" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">15시</text>
-  <text x="547" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">19시</text>
-  <text x="680" y="158" font-size="12.5" fill="#8A8378" text-anchor="middle">24시</text>
+  <text x="40" y="158" font-size="13" fill="#8A8378" text-anchor="middle">0시</text>
+  <text x="200" y="158" font-size="13" fill="#8A8378" text-anchor="middle">6시</text>
+  <text x="307" y="158" font-size="13" fill="#8A8378" text-anchor="middle">10시</text>
+  <text x="387" y="158" font-size="13" fill="#8A8378" text-anchor="middle">13시</text>
+  <text x="440" y="158" font-size="13" fill="#8A8378" text-anchor="middle">15시</text>
+  <text x="547" y="158" font-size="13" fill="#8A8378" text-anchor="middle">19시</text>
+  <text x="680" y="158" font-size="13" fill="#8A8378" text-anchor="middle">24시</text>
   <rect x="40" y="185" width="14" height="14" fill="#1B4F8A"/>
-  <text x="62" y="197" font-size="13" fill="#23201D">피크 — UTC 01~04시, 06~10시</text>
+  <text x="62" y="197" font-size="13.5" fill="#23201D">피크 — UTC 01~04시, 06~10시</text>
   <rect x="300" y="185" width="14" height="14" fill="#A8BDD2"/>
-  <text x="322" y="197" font-size="13" fill="#23201D">오프피크 — 그 외 전 시간</text>
-  <text x="30" y="230" font-size="13" fill="#8A8378">점심시간(13~15시)과 퇴근 이후(19시~익일 10시)는 오프피크다.</text>
+  <text x="322" y="197" font-size="13.5" fill="#23201D">오프피크 — 그 외 전 시간</text>
+  <text x="30" y="230" font-size="13.5" fill="#8A8378">점심시간(13~15시)과 퇴근 이후(19시~익일 10시)는 오프피크다.</text>
 </svg>
 <figcaption>한국 개발자에게는 하루 중 가장 일이 많은 두 구간이 그대로 피크다. 미국 서부는 업무시간 전체가 오프피크지만, 유럽은 오전이 통째로 피크다.</figcaption>
 </figure>

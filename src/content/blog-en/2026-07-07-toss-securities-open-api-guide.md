@@ -273,44 +273,44 @@ Short answer: **limits are requests per second (TPS) per client × API group**, 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 450" style="width:100%;height:auto" role="img" aria-label="Bar chart of Toss Securities Open API per-second rate limits by group: candles 20, market data 15, orders 10, order info 6, token and holdings 5, market info 3, account list and all symbols 1.">
 <text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">Per-second limits by group — the bottleneck is account list &amp; all-symbols (1/sec)</text>
-<text x="0" y="40" font-size="13" fill="#8A8378">Unit: requests per second (TPS) · counted separately per client × group</text>
+<text x="0" y="40" font-size="14" fill="#8A8378">Unit: requests per second (TPS) · counted separately per client × group</text>
 <line x1="190" y1="52" x2="190" y2="408" stroke="#E5DECF" stroke-width="1" />
-<text x="182" y="76" font-size="13.5" fill="#23201D" text-anchor="end">Candles (CHART)</text>
+<text x="182" y="76" font-size="15" fill="#23201D" text-anchor="end">Candles (CHART)</text>
 <rect x="190" y="60" width="520" height="24" fill="#4E7FA8" rx="2" />
-<text x="718" y="77" font-size="13.5" fill="#23201D">20</text>
-<text x="182" y="110" font-size="13.5" fill="#23201D" text-anchor="end">MARKET_DATA</text>
+<text x="718" y="77" font-size="15" fill="#23201D">20</text>
+<text x="182" y="110" font-size="15" fill="#23201D" text-anchor="end">MARKET_DATA</text>
 <rect x="190" y="94" width="390" height="24" fill="#4E7FA8" rx="2" />
-<text x="588" y="111" font-size="13.5" fill="#23201D">15</text>
-<text x="182" y="144" font-size="13.5" fill="#23201D" text-anchor="end">Trading trends</text>
+<text x="588" y="111" font-size="15" fill="#23201D">15</text>
+<text x="182" y="144" font-size="15" fill="#23201D" text-anchor="end">Trading trends</text>
 <rect x="190" y="128" width="260" height="24" fill="#A8BDD2" rx="2" />
-<text x="458" y="145" font-size="13.5" fill="#23201D">10</text>
-<text x="182" y="178" font-size="13.5" fill="#23201D" text-anchor="end">ORDER</text>
+<text x="458" y="145" font-size="15" fill="#23201D">10</text>
+<text x="182" y="178" font-size="15" fill="#23201D" text-anchor="end">ORDER</text>
 <rect x="190" y="162" width="260" height="24" fill="#4E7FA8" rx="2" />
-<text x="458" y="179" font-size="13.5" fill="#23201D">10</text>
-<text x="182" y="212" font-size="13.5" fill="#23201D" text-anchor="end">Market indicators</text>
+<text x="458" y="179" font-size="15" fill="#23201D">10</text>
+<text x="182" y="212" font-size="15" fill="#23201D" text-anchor="end">Market indicators</text>
 <rect x="190" y="196" width="260" height="24" fill="#A8BDD2" rx="2" />
-<text x="458" y="213" font-size="13.5" fill="#23201D">10</text>
-<text x="182" y="246" font-size="13.5" fill="#23201D" text-anchor="end">ORDER_INFO</text>
+<text x="458" y="213" font-size="15" fill="#23201D">10</text>
+<text x="182" y="246" font-size="15" fill="#23201D" text-anchor="end">ORDER_INFO</text>
 <rect x="190" y="230" width="156" height="24" fill="#A8BDD2" rx="2" />
-<text x="354" y="247" font-size="13.5" fill="#23201D">6 (3 at the open)</text>
-<text x="182" y="280" font-size="13.5" fill="#23201D" text-anchor="end">Token · holdings · stock</text>
+<text x="354" y="247" font-size="15" fill="#23201D">6 (3 at the open)</text>
+<text x="182" y="280" font-size="15" fill="#23201D" text-anchor="end">Token · holdings · stock</text>
 <rect x="190" y="264" width="130" height="24" fill="#A8BDD2" rx="2" />
-<text x="328" y="281" font-size="13.5" fill="#23201D">5</text>
-<text x="182" y="314" font-size="13.5" fill="#23201D" text-anchor="end">FX · market calendar</text>
+<text x="328" y="281" font-size="15" fill="#23201D">5</text>
+<text x="182" y="314" font-size="15" fill="#23201D" text-anchor="end">FX · market calendar</text>
 <rect x="190" y="298" width="78" height="24" fill="#A8BDD2" rx="2" />
-<text x="276" y="315" font-size="13.5" fill="#23201D">3</text>
-<text x="182" y="348" font-size="13.5" fill="#23201D" text-anchor="end">Account list</text>
+<text x="276" y="315" font-size="15" fill="#23201D">3</text>
+<text x="182" y="348" font-size="15" fill="#23201D" text-anchor="end">Account list</text>
 <rect x="190" y="332" width="26" height="24" fill="#1B4F8A" rx="2" />
-<text x="224" y="349" font-size="13.5" font-weight="700" fill="#1B4F8A">1</text>
-<text x="182" y="382" font-size="13.5" fill="#23201D" text-anchor="end">All symbols</text>
+<text x="224" y="349" font-size="15" font-weight="700" fill="#1B4F8A">1</text>
+<text x="182" y="382" font-size="15" fill="#23201D" text-anchor="end">All symbols</text>
 <rect x="190" y="366" width="26" height="24" fill="#1B4F8A" rx="2" />
-<text x="224" y="383" font-size="13.5" font-weight="700" fill="#1B4F8A">1</text>
+<text x="224" y="383" font-size="15" font-weight="700" fill="#1B4F8A">1</text>
 <line x1="190" y1="408" x2="710" y2="408" stroke="#E5DECF" stroke-width="1" />
-<text x="190" y="426" font-size="12.5" fill="#8A8378">0</text>
-<text x="320" y="426" font-size="12.5" fill="#8A8378">5</text>
-<text x="450" y="426" font-size="12.5" fill="#8A8378">10</text>
-<text x="580" y="426" font-size="12.5" fill="#8A8378">15</text>
-<text x="704" y="426" font-size="12.5" fill="#8A8378">20</text>
+<text x="190" y="426" font-size="13.5" fill="#8A8378">0</text>
+<text x="320" y="426" font-size="13.5" fill="#8A8378">5</text>
+<text x="450" y="426" font-size="13.5" fill="#8A8378">10</text>
+<text x="580" y="426" font-size="13.5" fill="#8A8378">15</text>
+<text x="704" y="426" font-size="13.5" fill="#8A8378">20</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">Because the groups are split, heavy quote polling leaves your order budget untouched. Conversely, the account list and all-symbols endpoints allow one call per second — call either inside a loop and you hit 429 right away. Source: Toss Securities Open API integration guide (verified 2026-10-07).</figcaption>
 </figure>
@@ -391,24 +391,24 @@ The arrival of WebSocket doesn't make polling useless. The subscription cap is *
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 240" style="width:100%;height:auto" role="img" aria-label="Bar chart comparing calls per second needed to watch 100 symbols every second: REST polling needs 100 per second, the market data group allows 15 per second, and WebSocket needs zero additional calls after one subscription declaration.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">Watching 100 symbols every second — lower is better</text>
-<text x="0" y="40" font-size="13" fill="#8A8378">Unit: calls required per second</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">Watching 100 symbols every second — lower is better</text>
+<text x="0" y="40" font-size="14" fill="#8A8378">Unit: calls required per second</text>
 <line x1="210" y1="52" x2="210" y2="196" stroke="#E5DECF" stroke-width="1" />
-<text x="202" y="76" font-size="13.5" fill="#23201D" text-anchor="end">REST polling (needed)</text>
+<text x="202" y="76" font-size="15" fill="#23201D" text-anchor="end">REST polling (needed)</text>
 <rect x="210" y="60" width="500" height="26" fill="#1B4F8A" rx="2" />
-<text x="222" y="78" font-size="13.5" font-weight="700" fill="#FAF6EE">100 — 6.7× the limit</text>
-<text x="202" y="118" font-size="13.5" fill="#23201D" text-anchor="end">MARKET_DATA limit</text>
+<text x="222" y="78" font-size="15" font-weight="700" fill="#FAF6EE">100 — 6.7× the limit</text>
+<text x="202" y="118" font-size="15" fill="#23201D" text-anchor="end">MARKET_DATA limit</text>
 <rect x="210" y="102" width="75" height="26" fill="#A8BDD2" rx="2" />
-<text x="293" y="120" font-size="13.5" fill="#23201D">15</text>
-<text x="202" y="160" font-size="13.5" fill="#23201D" text-anchor="end">WebSocket subscription</text>
+<text x="293" y="120" font-size="15" fill="#23201D">15</text>
+<text x="202" y="160" font-size="15" fill="#23201D" text-anchor="end">WebSocket subscription</text>
 <rect x="210" y="144" width="3" height="26" fill="#4E7FA8" />
 <text x="221" y="162" font-size="13.5" fill="#23201D">0 — one declaration, then the server pushes (within the 100-sub cap)</text>
 <line x1="210" y1="196" x2="710" y2="196" stroke="#E5DECF" stroke-width="1" />
-<text x="210" y="214" font-size="12.5" fill="#8A8378">0</text>
-<text x="335" y="214" font-size="12.5" fill="#8A8378">25</text>
-<text x="460" y="214" font-size="12.5" fill="#8A8378">50</text>
-<text x="585" y="214" font-size="12.5" fill="#8A8378">75</text>
-<text x="700" y="214" font-size="12.5" fill="#8A8378">100</text>
+<text x="210" y="214" font-size="13.5" fill="#8A8378">0</text>
+<text x="335" y="214" font-size="13.5" fill="#8A8378">25</text>
+<text x="460" y="214" font-size="13.5" fill="#8A8378">50</text>
+<text x="585" y="214" font-size="13.5" fill="#8A8378">75</text>
+<text x="700" y="214" font-size="13.5" fill="#8A8378">100</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">The price endpoint accepts up to 200 symbols per call, so in practice one request can cover 100 symbols. But when you need per-symbol orderbook or trades, call volume scales with symbol count — and that's exactly the range WebSocket should take over. Limit source: Toss Securities integration guide (verified 2026-10-07).</figcaption>
 </figure>

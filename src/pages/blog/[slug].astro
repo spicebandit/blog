@@ -159,14 +159,17 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
      실제는 820px(1200 − 패딩 48 − 사이드바 300 − gap 32)였다. 고정 픽셀로
      밀어내면 레이아웃이 조금만 바뀌어도 또 넘친다.
 
-     그래서 밀어내지 않는다. article의 폭 제한을 풀고 '글줄 요소'에만 700px를
-     걸어, figure가 메인 칸을 100%로 채우게 한다. 칸을 넘는 계산이 아예 없으므로
-     사이드바를 침범할 수 없다. */
+     ★ 2차: 사이드바 침범은 없어졌지만 그래프가 글줄보다 넓어 어색하다는 지적을
+     받았다(2026-11-17). 그래서 **그래프 폭은 글줄과 똑같이 700px로 맞춘다.**
+     폭으로 키우는 길은 닫혔으므로, 그래프 가독성은 글꼴 크기로만 확보한다
+     (CLAUDE.md의 최소 12px·라벨 12.5~14·제목 16~18 기준).
+
+     다시 넓히지 말 것 — 두 번 시도해서 두 번 다 되돌렸다. */
   .article-main article { max-width: none; }
   .article-main article > :global(*:not(.article-body)) { max-width: 700px; }
   .article-body > :global(*) { max-width: 700px; }
   .article-body > :global(figure) {
-    max-width: 100%;
+    max-width: 700px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;

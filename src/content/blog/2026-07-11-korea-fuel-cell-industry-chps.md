@@ -23,11 +23,11 @@ tags: ["연료전지", "CHPS", "청정수소", "수소경제"]
 
 <figure>
 <svg viewBox="0 0 800 320" role="img" aria-label="국내 발전용 연료전지 누적 설치량 추이. 2018년 약 300MW, 2019년 464MW, 2020년 605MW, 2021년 737MW, 2022년 879MW, 2023년 1036MW로 증가해 세계 최초 1GW를 돌파했다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="17" font-weight="700" fill="#23201D">국내 발전용 연료전지 누적 설치량 (MW) — 5년 만에 3배</text>
-  <text x="20" y="50" font-size="13" fill="#8A8378">2023년 세계 최초 1GW 돌파 · 전 세계 보급량의 약 절반</text>
+  <text x="20" y="30" font-size="19" font-weight="700" fill="#23201D">국내 발전용 연료전지 누적 설치량 (MW) — 5년 만에 3배</text>
+  <text x="20" y="50" font-size="15" fill="#8A8378">2023년 세계 최초 1GW 돌파 · 전 세계 보급량의 약 절반</text>
   <line x1="60" y1="270" x2="770" y2="270" stroke="#8A8378" stroke-width="1"/>
   <line x1="60" y1="80" x2="60" y2="270" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="13" fill="#23201D" text-anchor="middle">
+  <g font-size="15" fill="#23201D" text-anchor="middle">
     <rect x="80" y="215" width="70" height="55" fill="#E4E7EC"/><text x="115" y="205">300</text><text x="115" y="288" fill="#8A8378">2018</text>
     <rect x="190" y="185" width="70" height="85" fill="#E4E7EC"/><text x="225" y="175">464</text><text x="225" y="288" fill="#8A8378">2019</text>
     <rect x="300" y="159" width="70" height="111" fill="#E4E7EC"/><text x="335" y="149">605</text><text x="335" y="288" fill="#8A8378">2020</text>
@@ -81,15 +81,15 @@ tags: ["연료전지", "CHPS", "청정수소", "수소경제"]
 
 <figure>
 <svg viewBox="0 0 800 220" role="img" aria-label="2024년 첫 청정수소 발전 입찰 결과. 정부 제시 물량 6500GWh 중 750GWh만 낙찰되어 약 11.5%에 그쳤다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="32" font-size="17" font-weight="700" fill="#23201D">2024 첫 청정수소 입찰: 목표의 11.5%만 낙찰</text>
-  <text x="20" y="72" font-size="14" fill="#8A8378">정부 제시 물량</text>
+  <text x="20" y="32" font-size="19" font-weight="700" fill="#23201D">2024 첫 청정수소 입찰: 목표의 11.5%만 낙찰</text>
+  <text x="20" y="72" font-size="16" fill="#8A8378">정부 제시 물량</text>
   <rect x="180" y="58" width="560" height="24" rx="4" fill="#E4E7EC"/>
-  <text x="748" y="76" font-size="14" font-weight="700" fill="#8A8378" text-anchor="end">6,500 GWh</text>
-  <text x="20" y="122" font-size="14" fill="#23201D">실제 낙찰</text>
+  <text x="748" y="76" font-size="16" font-weight="700" fill="#8A8378" text-anchor="end">6,500 GWh</text>
+  <text x="20" y="122" font-size="16" fill="#23201D">실제 낙찰</text>
   <rect x="180" y="108" width="64" height="24" rx="4" fill="#C8102E"/>
-  <text x="252" y="126" font-size="14" font-weight="700" fill="#C8102E">750 GWh (11.5%)</text>
-  <text x="20" y="176" font-size="14" fill="#8A8378">낙찰 기업: 한국남부발전 1곳 (응찰 5곳 중) · 삼척 암모니아 혼소, 2028년~</text>
-  <text x="180" y="200" font-size="13" fill="#8A8378">출처: 산업통상자원부·한국일보(2024-12-02)</text>
+  <text x="252" y="126" font-size="16" font-weight="700" fill="#C8102E">750 GWh (11.5%)</text>
+  <text x="20" y="176" font-size="16" fill="#8A8378">낙찰 기업: 한국남부발전 1곳 (응찰 5곳 중) · 삼척 암모니아 혼소, 2028년~</text>
+  <text x="180" y="200" font-size="15" fill="#8A8378">출처: 산업통상자원부·한국일보(2024-12-02)</text>
 </svg>
 <figcaption>암모니아 전량 수입 구조와 비현실적 상한가가 겹쳐, 세계 첫 청정수소 입찰은 사실상 유찰됐다.</figcaption>
 </figure>

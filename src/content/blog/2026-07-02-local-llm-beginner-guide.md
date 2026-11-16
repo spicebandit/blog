@@ -92,7 +92,7 @@ Ollama를 쓴다면 설치 후 터미널에 `ollama run gemma4` 한 줄이면 �
 
 <figure>
 <svg viewBox="0 0 800 400" role="img" aria-label="초보자 추천 로컬 LLM 모델별 필요 메모리 비교 바차트. Gemma 4 E2B 약 4GB, Gemma 4 E4B 약 6GB, Gemma 4 26B A4B 16에서 24GB, Qwen3.6-35B-A3B 약 20GB, Gemma 4 31B 17에서 20GB" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="17" font-weight="700" fill="#23201D">추천 모델별 필요 메모리 (Q4 양자화 기준, GB — 낮을수록 진입장벽 낮음)</text>
+  <text x="20" y="30" font-size="19" font-weight="700" fill="#23201D">추천 모델별 필요 메모리 (Q4 양자화 기준, GB — 낮을수록 진입장벽 낮음)</text>
   <!-- gridlines: 0,8,16,24,32 GB -->
   <g stroke="#E4E7EC" stroke-width="1">
     <line x1="200" y1="52" x2="200" y2="330"/>
@@ -101,7 +101,7 @@ Ollama를 쓴다면 설치 후 터미널에 `ollama run gemma4` 한 줄이면 �
     <line x1="632" y1="52" x2="632" y2="330"/>
     <line x1="776" y1="52" x2="776" y2="330"/>
   </g>
-  <g font-size="13" fill="#8A8378">
+  <g font-size="15" fill="#8A8378">
     <text x="200" y="348" text-anchor="middle">0</text>
     <text x="344" y="348" text-anchor="middle">8GB</text>
     <text x="488" y="348" text-anchor="middle">16GB</text>
@@ -109,27 +109,27 @@ Ollama를 쓴다면 설치 후 터미널에 `ollama run gemma4` 한 줄이면 �
     <text x="776" y="348" text-anchor="middle">32GB</text>
   </g>
   <!-- Gemma 4 E2B: ~4GB -->
-  <text x="192" y="80" font-size="14" fill="#23201D" text-anchor="end">Gemma 4 E2B</text>
+  <text x="192" y="80" font-size="16" fill="#23201D" text-anchor="end">Gemma 4 E2B</text>
   <rect x="200" y="62" width="72" height="28" rx="4" fill="#8A8378"/>
-  <text x="280" y="82" font-size="14" fill="#23201D">약 4GB</text>
+  <text x="280" y="82" font-size="16" fill="#23201D">약 4GB</text>
   <!-- Gemma 4 E4B: ~6GB (hero) -->
-  <text x="192" y="135" font-size="14" fill="#23201D" text-anchor="end">Gemma 4 E4B ★입문 추천</text>
+  <text x="192" y="135" font-size="16" fill="#23201D" text-anchor="end">Gemma 4 E4B ★입문 추천</text>
   <rect x="200" y="117" width="108" height="28" rx="4" fill="#C8102E"/>
-  <text x="316" y="137" font-size="14" font-weight="700" fill="#C8102E">약 6GB</text>
+  <text x="316" y="137" font-size="16" font-weight="700" fill="#C8102E">약 6GB</text>
   <!-- Gemma 4 26B A4B: 16~24GB range -->
-  <text x="192" y="190" font-size="14" fill="#23201D" text-anchor="end">Gemma 4 26B A4B</text>
+  <text x="192" y="190" font-size="16" fill="#23201D" text-anchor="end">Gemma 4 26B A4B</text>
   <rect x="200" y="172" width="288" height="28" rx="4" fill="#8A8378"/>
   <rect x="488" y="172" width="144" height="28" rx="4" fill="#E4E7EC"/>
-  <text x="640" y="192" font-size="14" fill="#23201D">16~24GB</text>
+  <text x="640" y="192" font-size="16" fill="#23201D">16~24GB</text>
   <!-- Qwen3.6-35B-A3B: ~20GB -->
-  <text x="192" y="245" font-size="14" fill="#23201D" text-anchor="end">Qwen3.6-35B-A3B</text>
+  <text x="192" y="245" font-size="16" fill="#23201D" text-anchor="end">Qwen3.6-35B-A3B</text>
   <rect x="200" y="227" width="360" height="28" rx="4" fill="#8A8378"/>
-  <text x="568" y="247" font-size="14" fill="#23201D">약 20GB</text>
+  <text x="568" y="247" font-size="16" fill="#23201D">약 20GB</text>
   <!-- Gemma 4 31B: 17~20GB range -->
-  <text x="192" y="300" font-size="14" fill="#23201D" text-anchor="end">Gemma 4 31B</text>
+  <text x="192" y="300" font-size="16" fill="#23201D" text-anchor="end">Gemma 4 31B</text>
   <rect x="200" y="282" width="306" height="28" rx="4" fill="#8A8378"/>
   <rect x="506" y="282" width="54" height="28" rx="4" fill="#E4E7EC"/>
-  <text x="568" y="302" font-size="14" fill="#23201D">17~20GB</text>
+  <text x="568" y="302" font-size="16" fill="#23201D">17~20GB</text>
 </svg>
 <figcaption>Q4 양자화 기준 필요 메모리(모델 가중치 기준, 컨텍스트용 메모리 별도). 연한 회색은 양자화 수준·컨텍스트 설정에 따른 범위. 출처: Google AI for Developers, Unsloth, APXML</figcaption>
 </figure>

@@ -92,22 +92,22 @@ tags: ["공매도", "AI 데이터센터", "CoreWeave", "리포트 읽기"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 250" style="width:100%;height:auto" role="img" aria-label="CoreWeave 2026년 3분기 손익 구조. 매출 36억 6,100만 달러에서 공시된 조정 영업이익은 3억 7900만 달러인데 이자비용이 8억 4600만 달러로 그보다 커서 순손실 7억 900만 달러가 났다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">영업으로 번 돈보다 이자가 크다</text>
-<text x="0" y="38" font-size="13" fill="#8A8378">CoreWeave 2026년 3분기 · 단위 백만 달러</text>
-<text x="0" y="76" font-size="13" fill="#23201D">조정 영업이익</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">영업으로 번 돈보다 이자가 크다</text>
+<text x="0" y="38" font-size="14" fill="#8A8378">CoreWeave 2026년 3분기 · 단위 백만 달러</text>
+<text x="0" y="76" font-size="14" fill="#23201D">조정 영업이익</text>
 <rect x="150" y="60" width="143" height="24" fill="#A8BDD2" rx="3" />
-<text x="162" y="78" font-size="13.5" font-weight="700" fill="#23201D">379</text>
-<text x="303" y="78" font-size="12.5" fill="#8A8378">공시값 · 가이던스 200~260 상회</text>
-<text x="0" y="124" font-size="13" font-weight="700" fill="#23201D">이자비용</text>
+<text x="162" y="78" font-size="15" font-weight="700" fill="#23201D">379</text>
+<text x="303" y="78" font-size="13.5" fill="#8A8378">공시값 · 가이던스 200~260 상회</text>
+<text x="0" y="124" font-size="14" font-weight="700" fill="#23201D">이자비용</text>
 <rect x="150" y="108" width="320" height="24" fill="#1B4F8A" rx="3" />
-<text x="162" y="126" font-size="13.5" font-weight="700" fill="#FAF6EE">846</text>
-<text x="480" y="126" font-size="12.5" fill="#8A8378">조정 영업이익의 2.2배</text>
-<text x="0" y="172" font-size="13" fill="#23201D">순손실</text>
+<text x="162" y="126" font-size="15" font-weight="700" fill="#FAF6EE">846</text>
+<text x="480" y="126" font-size="13.5" fill="#8A8378">조정 영업이익의 2.2배</text>
+<text x="0" y="172" font-size="14" fill="#23201D">순손실</text>
 <rect x="150" y="156" width="268" height="24" fill="#4E7FA8" rx="3" />
-<text x="162" y="174" font-size="13.5" font-weight="700" fill="#FAF6EE">−709</text>
-<text x="428" y="174" font-size="12.5" fill="#8A8378">같은 분기 설비투자 14,511</text>
-<text x="0" y="212" font-size="12.5" fill="#8A8378">※ 매출은 1년에 168% 늘었다. 그런데도 순손실인 이유는 이자와 감가상각이 함께 커지기 때문이다.</text>
-<text x="0" y="232" font-size="12.5" fill="#8A8378">출처: CoreWeave 2026년 3분기 실적 발표(2026-11-10). 모두 공시값이다.</text>
+<text x="162" y="174" font-size="15" font-weight="700" fill="#FAF6EE">−709</text>
+<text x="428" y="174" font-size="13.5" fill="#8A8378">같은 분기 설비투자 14,511</text>
+<text x="0" y="212" font-size="13.5" fill="#8A8378">※ 매출은 1년에 168% 늘었다. 그런데도 순손실인 이유는 이자와 감가상각이 함께 커지기 때문이다.</text>
+<text x="0" y="232" font-size="13.5" fill="#8A8378">출처: CoreWeave 2026년 3분기 실적 발표(2026-11-10). 모두 공시값이다.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">Kerrisdale이 맞춘 쪽과 틀린 쪽이 같은 표에 있습니다. 성장은 리포트 전망을 넘겼고, 조달 비용 구조는 리포트가 본 대로입니다.</figcaption>
 </figure>

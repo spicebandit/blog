@@ -51,7 +51,7 @@ Three facts in this table translate directly into use-case decisions.
 <figure>
 <svg viewBox="0 0 820 420" role="img" aria-label="Bar chart of decode speed by model measured on iPhone Air with A19 chip. LFM2 1.2B 77.3 tokens per second, Qwen 3.5 0.8B 73.7, Qwen 3.5 2B 36.6, LFM2 2.6B 35.9, Gemma 4 E2B 35.0, Llama 3.2 3B 26.9, Phi-3.5 Mini 23.2, Qwen 3.5 4B 14.7, Llama 3.1 8B 7.6, human reading speed about 6 tokens per second" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
   <text x="20" y="28" font-size="17" font-weight="700" fill="#23201D">Decode speed by model (tok/s — higher is faster) · quality score in parentheses</text>
-  <text x="20" y="48" font-size="13" fill="#8A8378">Measured on iPhone Air (A19, 11.5GB RAM, iOS 26.6.1) · Sept–Oct 2026 · source: pocket-ai-lab</text>
+  <text x="20" y="48" font-size="15" fill="#8A8378">Measured on iPhone Air (A19, 11.5GB RAM, iOS 26.6.1) · Sept–Oct 2026 · source: pocket-ai-lab</text>
   <g stroke="#E5DECF" stroke-width="1">
     <line x1="250" y1="62" x2="250" y2="364"/>
     <line x1="380" y1="62" x2="380" y2="364"/>
@@ -60,53 +60,53 @@ Three facts in this table translate directly into use-case decisions.
     <line x1="770" y1="62" x2="770" y2="364"/>
   </g>
   <!-- row 1 -->
-  <text x="242" y="83" font-size="13" fill="#23201D" text-anchor="end">LFM2 1.2B (GGUF)</text>
+  <text x="242" y="83" font-size="15" fill="#23201D" text-anchor="end">LFM2 1.2B (GGUF)</text>
   <rect x="250" y="70" width="502" height="18" rx="3" fill="#1B4F8A"/>
-  <text x="742" y="83" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="end">77.3 (58.5)</text>
+  <text x="742" y="83" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">77.3 (58.5)</text>
   <!-- row 2 -->
-  <text x="242" y="113" font-size="13" fill="#23201D" text-anchor="end">Qwen 3.5 0.8B</text>
+  <text x="242" y="113" font-size="15" fill="#23201D" text-anchor="end">Qwen 3.5 0.8B</text>
   <rect x="250" y="100" width="479" height="18" rx="3" fill="#A8BDD2"/>
-  <text x="719" y="113" font-size="13" fill="#23201D" text-anchor="end">73.7 (46.6)</text>
+  <text x="719" y="113" font-size="15" fill="#23201D" text-anchor="end">73.7 (46.6)</text>
   <!-- row 3 -->
-  <text x="242" y="143" font-size="13" fill="#23201D" text-anchor="end">Qwen 3.5 2B</text>
+  <text x="242" y="143" font-size="15" fill="#23201D" text-anchor="end">Qwen 3.5 2B</text>
   <rect x="250" y="130" width="238" height="18" rx="3" fill="#4E7FA8"/>
-  <text x="496" y="143" font-size="13" fill="#23201D">36.6 (64.4)</text>
+  <text x="496" y="143" font-size="15" fill="#23201D">36.6 (64.4)</text>
   <!-- row 4 -->
-  <text x="242" y="173" font-size="13" fill="#23201D" text-anchor="end">LFM2 2.6B</text>
+  <text x="242" y="173" font-size="15" fill="#23201D" text-anchor="end">LFM2 2.6B</text>
   <rect x="250" y="160" width="233" height="18" rx="3" fill="#A8BDD2"/>
-  <text x="491" y="173" font-size="13" fill="#23201D">35.9 (60.2)</text>
+  <text x="491" y="173" font-size="15" fill="#23201D">35.9 (60.2)</text>
   <!-- row 5 -->
-  <text x="242" y="203" font-size="13" fill="#23201D" text-anchor="end">Gemma 4 E2B</text>
+  <text x="242" y="203" font-size="15" fill="#23201D" text-anchor="end">Gemma 4 E2B</text>
   <rect x="250" y="190" width="228" height="18" rx="3" fill="#4E7FA8"/>
-  <text x="486" y="203" font-size="13" fill="#23201D">35.0 (63.6)</text>
+  <text x="486" y="203" font-size="15" fill="#23201D">35.0 (63.6)</text>
   <!-- row 6 -->
-  <text x="242" y="233" font-size="13" fill="#23201D" text-anchor="end">Llama 3.2 3B (GGUF)</text>
+  <text x="242" y="233" font-size="15" fill="#23201D" text-anchor="end">Llama 3.2 3B (GGUF)</text>
   <rect x="250" y="220" width="175" height="18" rx="3" fill="#A8BDD2"/>
-  <text x="433" y="233" font-size="13" fill="#23201D">26.9 (59.3)</text>
+  <text x="433" y="233" font-size="15" fill="#23201D">26.9 (59.3)</text>
   <!-- row 7 -->
-  <text x="242" y="263" font-size="13" fill="#23201D" text-anchor="end">Phi-3.5 Mini (GGUF)</text>
+  <text x="242" y="263" font-size="15" fill="#23201D" text-anchor="end">Phi-3.5 Mini (GGUF)</text>
   <rect x="250" y="250" width="151" height="18" rx="3" fill="#4E7FA8"/>
-  <text x="409" y="263" font-size="13" fill="#23201D">23.2 (66.1)</text>
+  <text x="409" y="263" font-size="15" fill="#23201D">23.2 (66.1)</text>
   <!-- row 8 -->
-  <text x="242" y="293" font-size="13" fill="#23201D" text-anchor="end">Qwen 3.5 4B (GGUF)</text>
+  <text x="242" y="293" font-size="15" fill="#23201D" text-anchor="end">Qwen 3.5 4B (GGUF)</text>
   <rect x="250" y="280" width="96" height="18" rx="3" fill="#1B4F8A"/>
-  <text x="354" y="293" font-size="13" font-weight="700" fill="#23201D">14.7 (68.6 — top quality)</text>
+  <text x="354" y="293" font-size="15" font-weight="700" fill="#23201D">14.7 (68.6 — top quality)</text>
   <!-- row 9 -->
-  <text x="242" y="323" font-size="13" fill="#23201D" text-anchor="end">Llama 3.1 8B (MLX)</text>
+  <text x="242" y="323" font-size="15" fill="#23201D" text-anchor="end">Llama 3.1 8B (MLX)</text>
   <rect x="250" y="310" width="49" height="18" rx="3" fill="#A8BDD2"/>
-  <text x="307" y="323" font-size="13" fill="#23201D">7.6 (57.6 · throttled −66%)</text>
+  <text x="307" y="323" font-size="15" fill="#23201D">7.6 (57.6 · throttled −66%)</text>
   <!-- row 10 -->
-  <text x="242" y="353" font-size="13" fill="#8A8378" text-anchor="end">Human reading speed (ref.)</text>
+  <text x="242" y="353" font-size="15" fill="#8A8378" text-anchor="end">Human reading speed (ref.)</text>
   <rect x="250" y="340" width="39" height="18" rx="3" fill="#E5DECF"/>
-  <text x="297" y="353" font-size="13" fill="#8A8378">~6</text>
-  <g font-size="12.5" fill="#8A8378">
+  <text x="297" y="353" font-size="15" fill="#8A8378">~6</text>
+  <g font-size="15" fill="#8A8378">
     <text x="250" y="382" text-anchor="middle">0</text>
     <text x="380" y="382" text-anchor="middle">20</text>
     <text x="510" y="382" text-anchor="middle">40</text>
     <text x="640" y="382" text-anchor="middle">60</text>
     <text x="770" y="382" text-anchor="middle">80 tok/s</text>
   </g>
-  <text x="20" y="408" font-size="12.5" fill="#8A8378">Dark bars: fastest (LFM2 1.2B) and highest quality (Qwen 3.5 4B). They sit at opposite ends.</text>
+  <text x="20" y="408" font-size="15" fill="#8A8378">Dark bars: fastest (LFM2 1.2B) and highest quality (Qwen 3.5 4B). They sit at opposite ends.</text>
 </svg>
 <figcaption>The speed leader and the quality leader are at opposite ends of the table. On an iPhone you're better off keeping two models for different jobs than picking one "best" model. Source: pocket-ai-lab (Oct 2026).</figcaption>
 </figure>
@@ -137,8 +137,8 @@ One more point on energy. "The Battery Price of edge AI," published in July 2026
 
 <figure>
 <svg viewBox="0 0 820 300" role="img" aria-label="Bar chart of throughput by thermal state during sustained inference on iPhone 16 Pro. Normal state 40.49 tokens per second, Warm state about 25, Hot state 23.67" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
-  <text x="20" y="28" font-size="17" font-weight="700" fill="#23201D">Throughput by thermal state — it bends at run three</text>
-  <text x="20" y="48" font-size="13" fill="#8A8378">iPhone 16 Pro · Qwen 2.5 1.5B (4-bit) · 258-token prompt × 20 runs · source: arXiv:2603.23640</text>
+  <text x="20" y="28" font-size="20" font-weight="700" fill="#23201D">Throughput by thermal state — it bends at run three</text>
+  <text x="20" y="48" font-size="15" fill="#8A8378">iPhone 16 Pro · Qwen 2.5 1.5B (4-bit) · 258-token prompt × 20 runs · source: arXiv:2603.23640</text>
   <g stroke="#E5DECF" stroke-width="1">
     <line x1="200" y1="62" x2="200" y2="238"/>
     <line x1="336" y1="62" x2="336" y2="238"/>
@@ -146,23 +146,23 @@ One more point on energy. "The Battery Price of edge AI," published in July 2026
     <line x1="607" y1="62" x2="607" y2="238"/>
     <line x1="742" y1="62" x2="742" y2="238"/>
   </g>
-  <text x="192" y="92" font-size="14" fill="#23201D" text-anchor="end">Normal (runs 1–2)</text>
+  <text x="192" y="92" font-size="16.5" fill="#23201D" text-anchor="end">Normal (runs 1–2)</text>
   <rect x="200" y="74" width="549" height="34" rx="4" fill="#1B4F8A"/>
-  <text x="739" y="96" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">40.49 tok/s</text>
-  <text x="192" y="152" font-size="14" fill="#23201D" text-anchor="end">Warm (runs 3–16)</text>
+  <text x="739" y="96" font-size="18" font-weight="700" fill="#FAF6EE" text-anchor="end">40.49 tok/s</text>
+  <text x="192" y="152" font-size="16.5" fill="#23201D" text-anchor="end">Warm (runs 3–16)</text>
   <rect x="200" y="134" width="340" height="34" rx="4" fill="#4E7FA8"/>
-  <text x="530" y="156" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">~25 (−38%)</text>
-  <text x="192" y="212" font-size="14" fill="#23201D" text-anchor="end">Hot (runs 17–20)</text>
+  <text x="530" y="156" font-size="18" font-weight="700" fill="#FAF6EE" text-anchor="end">~25 (−38%)</text>
+  <text x="192" y="212" font-size="16.5" fill="#23201D" text-anchor="end">Hot (runs 17–20)</text>
   <rect x="200" y="194" width="321" height="34" rx="4" fill="#A8BDD2"/>
-  <text x="511" y="216" font-size="15" font-weight="700" fill="#23201D" text-anchor="end">23.67 (−41.5%)</text>
-  <g font-size="12.5" fill="#8A8378">
+  <text x="511" y="216" font-size="18" font-weight="700" fill="#23201D" text-anchor="end">23.67 (−41.5%)</text>
+  <g font-size="15" fill="#8A8378">
     <text x="200" y="256" text-anchor="middle">0</text>
     <text x="336" y="256" text-anchor="middle">10</text>
     <text x="471" y="256" text-anchor="middle">20</text>
     <text x="607" y="256" text-anchor="middle">30</text>
     <text x="742" y="256" text-anchor="middle">40 tok/s</text>
   </g>
-  <text x="20" y="282" font-size="13" fill="#23201D">Across the same 20 runs, battery fell 100% → 95%. Heat cuts performance first; battery follows.</text>
+  <text x="20" y="282" font-size="15" fill="#23201D">Across the same 20 runs, battery fell 100% → 95%. Heat cuts performance first; battery follows.</text>
 </svg>
 <figcaption>The key point: degradation isn't a problem of "long sessions," it's a problem of "the third request." Source: arXiv:2603.23640 (rev. June 2026).</figcaption>
 </figure>
@@ -206,7 +206,7 @@ Add roughly 1.7GB of weights for a 3B model palettized to 4-bit and you're at **
 
 <figure>
 <svg viewBox="0 0 820 260" role="img" aria-label="Bar chart of memory use for a 3B 4-bit model. Weights alone 1.7 gigabytes; adding a 2048-token KV cache reaches 2.77 gigabytes, past the estimated 2 gigabyte limit for 6GB devices" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;font-family:system-ui">
-  <text x="20" y="28" font-size="17" font-weight="700" fill="#23201D">Pasting the document is what crosses the line (3B, 4-bit)</text>
+  <text x="20" y="28" font-size="20" font-weight="700" fill="#23201D">Pasting the document is what crosses the line (3B, 4-bit)</text>
   <text x="20" y="48" font-size="13" fill="#8A8378">Weights 1.7GB + 2,048-token KV cache 1.07GB ≈ 2.77GB · dashed line = estimated jetsam limit on 6GB devices</text>
   <g stroke="#E5DECF" stroke-width="1">
     <line x1="210" y1="62" x2="210" y2="186"/>
@@ -214,16 +214,16 @@ Add roughly 1.7GB of weights for a 3B model palettized to 4-bit and you're at **
     <line x1="598" y1="62" x2="598" y2="186"/>
     <line x1="791" y1="62" x2="791" y2="186"/>
   </g>
-  <text x="202" y="96" font-size="14" fill="#23201D" text-anchor="end">Weights only</text>
+  <text x="202" y="96" font-size="16.5" fill="#23201D" text-anchor="end">Weights only</text>
   <rect x="210" y="76" width="329" height="32" rx="4" fill="#4E7FA8"/>
-  <text x="529" y="97" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="end">1.70 GB</text>
-  <text x="202" y="156" font-size="14" fill="#23201D" text-anchor="end">+ 2,048-token context</text>
+  <text x="529" y="97" font-size="16.5" font-weight="700" fill="#FAF6EE" text-anchor="end">1.70 GB</text>
+  <text x="202" y="156" font-size="16.5" fill="#23201D" text-anchor="end">+ 2,048-token context</text>
   <rect x="210" y="136" width="329" height="32" rx="4" fill="#4E7FA8"/>
   <rect x="539" y="136" width="207" height="32" rx="4" fill="#1B4F8A"/>
-  <text x="736" y="157" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="end">2.77 GB</text>
+  <text x="736" y="157" font-size="16.5" font-weight="700" fill="#FAF6EE" text-anchor="end">2.77 GB</text>
   <line x1="597" y1="66" x2="597" y2="182" stroke="#23201D" stroke-width="2" stroke-dasharray="5 4"/>
-  <text x="604" y="76" font-size="13" font-weight="700" fill="#23201D">est. limit 2GB</text>
-  <g font-size="12.5" fill="#8A8378">
+  <text x="604" y="76" font-size="15" font-weight="700" fill="#23201D">est. limit 2GB</text>
+  <g font-size="15" fill="#8A8378">
     <text x="210" y="204" text-anchor="middle">0</text>
     <text x="404" y="204" text-anchor="middle">1.0</text>
     <text x="598" y="204" text-anchor="middle">2.0</text>

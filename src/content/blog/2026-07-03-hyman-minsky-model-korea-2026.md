@@ -53,54 +53,54 @@ tags: ["민스키모멘트", "버블", "금융위기", "한국경제"]
 인터넷에서 "민스키 모델 버블 차트"로 널리 퍼진, 잠행(Stealth) → 인지(Awareness) → 광기(Mania) → 붕괴(Blow-off)의 4국면과 '황소 함정(bull trap)', '새 패러다임(new paradigm)' 라벨이 붙은 그 유명한 곡선 차트는 사실 민스키 본인의 그림이 아니다. 교통지리학자인 [장폴 로드리게(Jean-Paul Rodrigue) 교수가 작성한 차트](https://transportgeography.org/contents/chapter3/transportation-and-economic-development/bubble-stages/)로, 민스키-킨들버거의 아이디어를 시각화한 2차 창작물에 가깝다. 내용은 같은 이야기다. 스마트머니가 조용히 사는 잠행 국면, 기관이 들어오는 인지 국면, 대중과 언론이 뛰어들며 "새 패러다임"을 외치는 광기 국면, 그리고 반등(황소 함정)에 속았다가 절망으로 끝나는 붕괴 국면이다. 아래에 그 차트를 우리말로 재구성했다.
 
 <svg viewBox="0 0 760 470" width="100%" role="img" aria-label="버블의 4국면 차트(로드리게 차트 재구성): 잠행, 인지, 광기, 붕괴. 이륙, 곰 함정, 언론 주목, 열광, 탐욕, 망상, 새로운 패러다임 정점, 부정, 황소 함정, 공포, 투매, 절망, 평균 회귀의 경로" style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="380" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#23201D">버블의 해부학 — 4국면과 투자자 심리</text>
+  <text x="380" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#23201D">버블의 해부학 — 4국면과 투자자 심리</text>
   <!-- 축 -->
   <line x1="55" y1="400" x2="735" y2="400" stroke="#23201D" stroke-width="1.5"/>
   <line x1="55" y1="400" x2="55" y2="55" stroke="#23201D" stroke-width="1.5"/>
-  <text x="728" y="418" text-anchor="end" font-size="12.5" fill="#23201D">시간 →</text>
-  <text x="40" y="230" text-anchor="middle" font-size="12.5" fill="#23201D" transform="rotate(-90 40 230)">가격</text>
+  <text x="728" y="418" text-anchor="end" font-size="13.5" fill="#23201D">시간 →</text>
+  <text x="40" y="230" text-anchor="middle" font-size="13.5" fill="#23201D" transform="rotate(-90 40 230)">가격</text>
   <!-- 국면 구분선 -->
   <line x1="235" y1="60" x2="235" y2="400" stroke="#23201D" stroke-dasharray="3 4" stroke-width="0.7" opacity="0.45"/>
   <line x1="345" y1="60" x2="345" y2="400" stroke="#23201D" stroke-dasharray="3 4" stroke-width="0.7" opacity="0.45"/>
   <line x1="497" y1="60" x2="497" y2="400" stroke="#23201D" stroke-dasharray="3 4" stroke-width="0.7" opacity="0.45"/>
   <!-- 국면 이름 + 주도 세력 -->
-  <text x="145" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#23201D">잠행</text>
-  <text x="145" y="441" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.65">스마트머니</text>
-  <text x="290" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#23201D">인지</text>
-  <text x="290" y="441" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.65">기관투자자</text>
-  <text x="421" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#23201D">광기</text>
-  <text x="421" y="441" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.65">대중 · 언론</text>
-  <text x="616" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#C8102E">붕괴</text>
-  <text x="616" y="441" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.65">모두의 탈출</text>
+  <text x="145" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#23201D">잠행</text>
+  <text x="145" y="441" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.65">스마트머니</text>
+  <text x="290" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#23201D">인지</text>
+  <text x="290" y="441" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.65">기관투자자</text>
+  <text x="421" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#23201D">광기</text>
+  <text x="421" y="441" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.65">대중 · 언론</text>
+  <text x="616" y="425" text-anchor="middle" font-size="14" font-weight="bold" fill="#C8102E">붕괴</text>
+  <text x="616" y="441" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.65">모두의 탈출</text>
   <!-- 장기 평균선 -->
   <line x1="55" y1="378" x2="735" y2="310" stroke="#23201D" stroke-dasharray="6 5" stroke-width="1" opacity="0.55"/>
-  <text x="700" y="298" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.7">장기 평균</text>
+  <text x="700" y="298" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.7">장기 평균</text>
   <!-- 상승 곡선 (잉크) -->
   <path d="M 60 372 C 100 366, 130 358, 160 345 C 185 334, 198 316, 208 303 C 216 293, 222 296, 228 310 C 233 321, 238 328, 245 324 C 265 312, 292 292, 318 268 C 340 248, 362 226, 385 200 C 410 172, 435 138, 455 108 C 466 92, 476 82, 484 80" fill="none" stroke="#23201D" stroke-width="3"/>
   <!-- 하락 곡선 (레드) -->
   <path d="M 484 80 C 492 82, 500 100, 508 130 C 514 152, 520 160, 528 148 C 536 136, 542 128, 548 138 C 560 160, 580 215, 600 268 C 614 305, 628 345, 642 362 C 648 369, 654 370, 660 364 C 678 346, 700 328, 725 318" fill="none" stroke="#C8102E" stroke-width="3"/>
   <!-- 라벨: 상승 경로 -->
-  <text x="150" y="330" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">이륙</text>
-  <text x="206" y="283" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">첫 매도</text>
-  <text x="234" y="345" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">곰 함정</text>
-  <text x="318" y="252" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">언론 주목</text>
-  <text x="374" y="196" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">열광</text>
-  <text x="404" y="152" text-anchor="end" font-size="12" fill="#23201D" opacity="0.8">탐욕</text>
-  <text x="432" y="108" text-anchor="end" font-size="12" fill="#23201D" opacity="0.8">망상</text>
+  <text x="150" y="330" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">이륙</text>
+  <text x="206" y="283" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">첫 매도</text>
+  <text x="234" y="345" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">곰 함정</text>
+  <text x="318" y="252" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">언론 주목</text>
+  <text x="374" y="196" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">열광</text>
+  <text x="404" y="152" text-anchor="end" font-size="13" fill="#23201D" opacity="0.8">탐욕</text>
+  <text x="432" y="108" text-anchor="end" font-size="13" fill="#23201D" opacity="0.8">망상</text>
   <!-- 정점 -->
   <circle cx="484" cy="80" r="4.5" fill="#C8102E"/>
-  <text x="484" y="63" text-anchor="middle" font-size="13" font-weight="bold" fill="#C8102E">"새로운 패러다임!"</text>
+  <text x="484" y="63" text-anchor="middle" font-size="14" font-weight="bold" fill="#C8102E">"새로운 패러다임!"</text>
   <!-- 라벨: 하락 경로 -->
-  <text x="513" y="176" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">부정</text>
-  <text x="537" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#C8102E">황소 함정</text>
-  <text x="568" y="230" text-anchor="end" font-size="12" fill="#23201D" opacity="0.8">공포</text>
-  <text x="598" y="330" text-anchor="end" font-size="12" fill="#23201D" opacity="0.8">투매</text>
-  <text x="653" y="390" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">절망</text>
-  <text x="708" y="345" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.8">평균 회귀</text>
+  <text x="513" y="176" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">부정</text>
+  <text x="537" y="115" text-anchor="middle" font-size="13" font-weight="bold" fill="#C8102E">황소 함정</text>
+  <text x="568" y="230" text-anchor="end" font-size="13" fill="#23201D" opacity="0.8">공포</text>
+  <text x="598" y="330" text-anchor="end" font-size="13" fill="#23201D" opacity="0.8">투매</text>
+  <text x="653" y="390" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">절망</text>
+  <text x="708" y="345" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.8">평균 회귀</text>
   <!-- 민스키 모멘트: 황소 함정 이후의 본격 붕괴 구간 -->
   <line x1="571" y1="182" x2="601" y2="172" stroke="#C8102E" stroke-width="1" opacity="0.8"/>
-  <text x="606" y="176" text-anchor="start" font-size="12.5" font-weight="bold" fill="#C8102E">민스키 모멘트</text>
-  <text x="380" y="458" text-anchor="middle" font-size="12" fill="#23201D" opacity="0.6">장폴 로드리게(Jean-Paul Rodrigue)의 'Phases of a Bubble' 차트를 우리말로 재구성 — 원본: transportgeography.org</text>
+  <text x="606" y="176" text-anchor="start" font-size="13.5" font-weight="bold" fill="#C8102E">민스키 모멘트</text>
+  <text x="380" y="458" text-anchor="middle" font-size="13" fill="#23201D" opacity="0.6">장폴 로드리게(Jean-Paul Rodrigue)의 'Phases of a Bubble' 차트를 우리말로 재구성 — 원본: transportgeography.org</text>
 </svg>
 
 ## 역사 속 버블 — 400년째 반복되는 같은 각본

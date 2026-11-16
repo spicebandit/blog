@@ -270,45 +270,45 @@ curl -X POST https://openapi.tossinvest.com/oauth2/token \
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 450" style="width:100%;height:auto" role="img" aria-label="토스증권 Open API 그룹별 초당 호출 한도 막대그래프. 캔들 20회, 시세 15회, 주문 10회, 수수료·가능금액 6회, 토큰·보유주식 5회, 환율·장운영 3회, 계좌목록·전종목 1회.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">그룹별 초당 호출 한도 — 병목은 계좌 목록·전종목 조회(초당 1회)</text>
-<text x="0" y="40" font-size="13" fill="#8A8378">단위: 초당 요청 수(TPS) · 클라이언트 × 그룹 단위로 별도 집계</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">그룹별 초당 호출 한도 — 병목은 계좌 목록·전종목 조회(초당 1회)</text>
+<text x="0" y="40" font-size="14" fill="#8A8378">단위: 초당 요청 수(TPS) · 클라이언트 × 그룹 단위로 별도 집계</text>
 <line x1="160" y1="52" x2="160" y2="408" stroke="#E5DECF" stroke-width="1" />
-<text x="152" y="76" font-size="13.5" fill="#23201D" text-anchor="end">캔들(CHART)</text>
+<text x="152" y="76" font-size="15" fill="#23201D" text-anchor="end">캔들(CHART)</text>
 <rect x="160" y="60" width="560" height="24" fill="#4E7FA8" rx="2" />
-<text x="728" y="77" font-size="13.5" fill="#23201D">20</text>
-<text x="152" y="110" font-size="13.5" fill="#23201D" text-anchor="end">시세(MARKET_DATA)</text>
+<text x="728" y="77" font-size="15" fill="#23201D">20</text>
+<text x="152" y="110" font-size="15" fill="#23201D" text-anchor="end">시세(MARKET_DATA)</text>
 <rect x="160" y="94" width="420" height="24" fill="#4E7FA8" rx="2" />
-<text x="588" y="111" font-size="13.5" fill="#23201D">15</text>
-<text x="152" y="144" font-size="13.5" fill="#23201D" text-anchor="end">수급 동향</text>
+<text x="588" y="111" font-size="15" fill="#23201D">15</text>
+<text x="152" y="144" font-size="15" fill="#23201D" text-anchor="end">수급 동향</text>
 <rect x="160" y="128" width="280" height="24" fill="#A8BDD2" rx="2" />
-<text x="448" y="145" font-size="13.5" fill="#23201D">10</text>
-<text x="152" y="178" font-size="13.5" fill="#23201D" text-anchor="end">주문(ORDER)</text>
+<text x="448" y="145" font-size="15" fill="#23201D">10</text>
+<text x="152" y="178" font-size="15" fill="#23201D" text-anchor="end">주문(ORDER)</text>
 <rect x="160" y="162" width="280" height="24" fill="#4E7FA8" rx="2" />
-<text x="448" y="179" font-size="13.5" fill="#23201D">10</text>
-<text x="152" y="212" font-size="13.5" fill="#23201D" text-anchor="end">시장지표</text>
+<text x="448" y="179" font-size="15" fill="#23201D">10</text>
+<text x="152" y="212" font-size="15" fill="#23201D" text-anchor="end">시장지표</text>
 <rect x="160" y="196" width="280" height="24" fill="#A8BDD2" rx="2" />
-<text x="448" y="213" font-size="13.5" fill="#23201D">10</text>
-<text x="152" y="246" font-size="13.5" fill="#23201D" text-anchor="end">주문정보(ORDER_INFO)</text>
+<text x="448" y="213" font-size="15" fill="#23201D">10</text>
+<text x="152" y="246" font-size="15" fill="#23201D" text-anchor="end">주문정보(ORDER_INFO)</text>
 <rect x="160" y="230" width="168" height="24" fill="#A8BDD2" rx="2" />
-<text x="336" y="247" font-size="13.5" fill="#23201D">6 (개장 직후 3)</text>
-<text x="152" y="280" font-size="13.5" fill="#23201D" text-anchor="end">토큰·보유주식·종목</text>
+<text x="336" y="247" font-size="15" fill="#23201D">6 (개장 직후 3)</text>
+<text x="152" y="280" font-size="15" fill="#23201D" text-anchor="end">토큰·보유주식·종목</text>
 <rect x="160" y="264" width="140" height="24" fill="#A8BDD2" rx="2" />
-<text x="308" y="281" font-size="13.5" fill="#23201D">5</text>
-<text x="152" y="314" font-size="13.5" fill="#23201D" text-anchor="end">환율·장 운영</text>
+<text x="308" y="281" font-size="15" fill="#23201D">5</text>
+<text x="152" y="314" font-size="15" fill="#23201D" text-anchor="end">환율·장 운영</text>
 <rect x="160" y="298" width="84" height="24" fill="#A8BDD2" rx="2" />
-<text x="252" y="315" font-size="13.5" fill="#23201D">3</text>
-<text x="152" y="348" font-size="13.5" fill="#23201D" text-anchor="end">계좌 목록</text>
+<text x="252" y="315" font-size="15" fill="#23201D">3</text>
+<text x="152" y="348" font-size="15" fill="#23201D" text-anchor="end">계좌 목록</text>
 <rect x="160" y="332" width="28" height="24" fill="#1B4F8A" rx="2" />
-<text x="196" y="349" font-size="13.5" font-weight="700" fill="#1B4F8A">1</text>
-<text x="152" y="382" font-size="13.5" fill="#23201D" text-anchor="end">전종목 조회</text>
+<text x="196" y="349" font-size="15" font-weight="700" fill="#1B4F8A">1</text>
+<text x="152" y="382" font-size="15" fill="#23201D" text-anchor="end">전종목 조회</text>
 <rect x="160" y="366" width="28" height="24" fill="#1B4F8A" rx="2" />
-<text x="196" y="383" font-size="13.5" font-weight="700" fill="#1B4F8A">1</text>
+<text x="196" y="383" font-size="15" font-weight="700" fill="#1B4F8A">1</text>
 <line x1="160" y1="408" x2="720" y2="408" stroke="#E5DECF" stroke-width="1" />
-<text x="160" y="426" font-size="12.5" fill="#8A8378">0</text>
-<text x="300" y="426" font-size="12.5" fill="#8A8378">5</text>
-<text x="440" y="426" font-size="12.5" fill="#8A8378">10</text>
-<text x="580" y="426" font-size="12.5" fill="#8A8378">15</text>
-<text x="714" y="426" font-size="12.5" fill="#8A8378">20</text>
+<text x="160" y="426" font-size="13.5" fill="#8A8378">0</text>
+<text x="300" y="426" font-size="13.5" fill="#8A8378">5</text>
+<text x="440" y="426" font-size="13.5" fill="#8A8378">10</text>
+<text x="580" y="426" font-size="13.5" fill="#8A8378">15</text>
+<text x="714" y="426" font-size="13.5" fill="#8A8378">20</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">그룹이 쪼개져 있어 시세를 많이 긁어도 주문 한도는 따로 남는다. 반대로 계좌 목록·전종목 조회는 초당 1회라, 이 둘을 루프 안에서 호출하는 코드는 즉시 429를 만난다. 출처: 토스증권 Open API 연동 가이드(2026-10-07 확인).</figcaption>
 </figure>
@@ -389,24 +389,24 @@ curl -X POST https://openapi.tossinvest.com/oauth2/token \
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 240" style="width:100%;height:auto" role="img" aria-label="100종목을 1초 주기로 볼 때 필요한 초당 호출 수 비교 막대그래프. REST 폴링은 초당 100회가 필요하지만 시세 그룹 한도는 초당 15회이고, 웹소켓은 구독 선언 1회 뒤 추가 호출이 0회다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">100종목 · 1초 주기로 보려면 — 낮을수록 유리</text>
-<text x="0" y="40" font-size="13" fill="#8A8378">단위: 초당 필요 호출 수</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">100종목 · 1초 주기로 보려면 — 낮을수록 유리</text>
+<text x="0" y="40" font-size="14" fill="#8A8378">단위: 초당 필요 호출 수</text>
 <line x1="210" y1="52" x2="210" y2="196" stroke="#E5DECF" stroke-width="1" />
-<text x="202" y="76" font-size="13.5" fill="#23201D" text-anchor="end">REST 폴링 (필요량)</text>
+<text x="202" y="76" font-size="15" fill="#23201D" text-anchor="end">REST 폴링 (필요량)</text>
 <rect x="210" y="60" width="500" height="26" fill="#1B4F8A" rx="2" />
-<text x="222" y="78" font-size="13.5" font-weight="700" fill="#FAF6EE">100회 — 한도의 6.7배</text>
-<text x="202" y="118" font-size="13.5" fill="#23201D" text-anchor="end">MARKET_DATA 한도</text>
+<text x="222" y="78" font-size="15" font-weight="700" fill="#FAF6EE">100회 — 한도의 6.7배</text>
+<text x="202" y="118" font-size="15" fill="#23201D" text-anchor="end">MARKET_DATA 한도</text>
 <rect x="210" y="102" width="75" height="26" fill="#A8BDD2" rx="2" />
-<text x="293" y="120" font-size="13.5" fill="#23201D">15회</text>
-<text x="202" y="160" font-size="13.5" fill="#23201D" text-anchor="end">웹소켓 구독</text>
+<text x="293" y="120" font-size="15" fill="#23201D">15회</text>
+<text x="202" y="160" font-size="15" fill="#23201D" text-anchor="end">웹소켓 구독</text>
 <rect x="210" y="144" width="3" height="26" fill="#4E7FA8" />
-<text x="221" y="162" font-size="13.5" fill="#23201D">0회 — 선언 1회 뒤 서버가 푸시 (구독 100건 한도 내)</text>
+<text x="221" y="162" font-size="15" fill="#23201D">0회 — 선언 1회 뒤 서버가 푸시 (구독 100건 한도 내)</text>
 <line x1="210" y1="196" x2="710" y2="196" stroke="#E5DECF" stroke-width="1" />
-<text x="210" y="214" font-size="12.5" fill="#8A8378">0</text>
-<text x="335" y="214" font-size="12.5" fill="#8A8378">25</text>
-<text x="460" y="214" font-size="12.5" fill="#8A8378">50</text>
-<text x="585" y="214" font-size="12.5" fill="#8A8378">75</text>
-<text x="700" y="214" font-size="12.5" fill="#8A8378">100</text>
+<text x="210" y="214" font-size="13.5" fill="#8A8378">0</text>
+<text x="335" y="214" font-size="13.5" fill="#8A8378">25</text>
+<text x="460" y="214" font-size="13.5" fill="#8A8378">50</text>
+<text x="585" y="214" font-size="13.5" fill="#8A8378">75</text>
+<text x="700" y="214" font-size="13.5" fill="#8A8378">100</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">현재가 조회는 한 번에 심볼 200개를 묶어 보낼 수 있어 실제로는 1회로도 100종목을 커버하지만, 호가·체결을 종목별로 받아야 하는 경우엔 호출 수가 종목 수만큼 늘어난다. 그 구간이 웹소켓으로 넘어갈 자리다. 한도 출처: 토스증권 연동 가이드(2026-10-07 확인).</figcaption>
 </figure>

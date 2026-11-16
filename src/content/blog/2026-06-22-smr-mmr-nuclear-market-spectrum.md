@@ -22,26 +22,26 @@ SMR 논의가 가속화된 직접적 계기는 두 가지다. 하나는 **AI 데
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SMR 3계층 출력 규모 스펙트럼 범위 막대 차트, 단위 메가와트" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-<text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">SMR 3계층 출력 스펙트럼 — 단위: MWe</text>
-<text x="24" y="56" font-size="13" fill="#8A8378">참고: 기존 대형 원전은 1,000+ MWe (축 범위 밖)</text>
+<text x="24" y="34" font-size="19" font-weight="700" fill="#23201D">SMR 3계층 출력 스펙트럼 — 단위: MWe</text>
+<text x="24" y="56" font-size="13.5" fill="#8A8378">참고: 기존 대형 원전은 1,000+ MWe (축 범위 밖)</text>
 <line x1="330" y1="68" x2="330" y2="194" stroke="#E4E7EC"/>
 <line x1="510" y1="68" x2="510" y2="194" stroke="#E4E7EC"/>
 <line x1="690" y1="68" x2="690" y2="194" stroke="#E4E7EC"/>
 <text x="140" y="96" text-anchor="end" font-size="14" fill="#23201D">1계층 유틸리티</text>
 <rect x="330" y="80" width="360" height="24" rx="3" fill="#C8102E"/>
-<text x="682" y="96" text-anchor="end" font-size="13" font-weight="700" fill="#F6F7F9">100~300 MWe</text>
+<text x="682" y="96" text-anchor="end" font-size="13.5" font-weight="700" fill="#F6F7F9">100~300 MWe</text>
 <text x="140" y="136" text-anchor="end" font-size="14" fill="#23201D">2계층 데이터센터</text>
 <rect x="186" y="120" width="144" height="24" rx="3" fill="#C8102E"/>
-<text x="336" y="136" font-size="13" font-weight="700" fill="#C8102E">20~100 MWe</text>
+<text x="336" y="136" font-size="13.5" font-weight="700" fill="#C8102E">20~100 MWe</text>
 <text x="140" y="176" text-anchor="end" font-size="14" fill="#23201D">3계층 MMR</text>
 <rect x="152" y="160" width="34" height="24" rx="3" fill="#C8102E"/>
-<text x="192" y="176" font-size="13" font-weight="700" fill="#C8102E">1~20 MWe</text>
+<text x="192" y="176" font-size="13.5" font-weight="700" fill="#C8102E">1~20 MWe</text>
 <line x1="150" y1="194" x2="690" y2="194" stroke="#8A8378"/>
 <line x1="150" y1="68" x2="150" y2="194" stroke="#8A8378"/>
-<text x="150" y="212" text-anchor="middle" font-size="12.5" fill="#8A8378">0</text>
-<text x="330" y="212" text-anchor="middle" font-size="12.5" fill="#8A8378">100</text>
-<text x="510" y="212" text-anchor="middle" font-size="12.5" fill="#8A8378">200</text>
-<text x="690" y="212" text-anchor="middle" font-size="12.5" fill="#8A8378">300</text>
+<text x="150" y="212" text-anchor="middle" font-size="13" fill="#8A8378">0</text>
+<text x="330" y="212" text-anchor="middle" font-size="13" fill="#8A8378">100</text>
+<text x="510" y="212" text-anchor="middle" font-size="13" fill="#8A8378">200</text>
+<text x="690" y="212" text-anchor="middle" font-size="13" fill="#8A8378">300</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">같은 'SMR' 이름 아래 출력 규모가 전혀 다른 세 개의 시장이 묶여 있다.</figcaption>
 </figure>
@@ -158,7 +158,7 @@ Oklo는 아예 비즈니스 모델 자체가 다르다. 원자로를 팔지 않�
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SMR 계층별 LCOE와 경쟁 전원 비교 범위 막대 차트, 단위 달러 퍼 메가와트시" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-<text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">계층별 LCOE vs 경쟁 전원 — 단위: $/MWh (낮을수록 유리)</text>
+<text x="24" y="34" font-size="19" font-weight="700" fill="#23201D">계층별 LCOE vs 경쟁 전원 — 단위: $/MWh (낮을수록 유리)</text>
 <line x1="258" y1="64" x2="258" y2="314" stroke="#E4E7EC"/>
 <line x1="366" y1="64" x2="366" y2="314" stroke="#E4E7EC"/>
 <line x1="474" y1="64" x2="474" y2="314" stroke="#E4E7EC"/>
@@ -166,30 +166,30 @@ Oklo는 아예 비즈니스 모델 자체가 다르다. 원자로를 팔지 않�
 <line x1="690" y1="64" x2="690" y2="314" stroke="#E4E7EC"/>
 <text x="140" y="96" text-anchor="end" font-size="14" fill="#23201D">1계층 SMR</text>
 <rect x="198" y="80" width="39" height="24" rx="3" fill="#C8102E"/>
-<text x="243" y="96" font-size="13" font-weight="700" fill="#C8102E">$44~80</text>
+<text x="243" y="96" font-size="13.5" font-weight="700" fill="#C8102E">$44~80</text>
 <text x="140" y="136" text-anchor="end" font-size="14" fill="#23201D">LNG 복합발전</text>
 <rect x="193" y="120" width="38" height="24" rx="3" fill="#8A8378"/>
-<text x="237" y="136" font-size="13" fill="#8A8378">$40~75</text>
+<text x="237" y="136" font-size="13.5" fill="#8A8378">$40~75</text>
 <text x="140" y="176" text-anchor="end" font-size="14" fill="#23201D">해상풍력</text>
 <rect x="236" y="160" width="43" height="24" rx="3" fill="#8A8378"/>
-<text x="285" y="176" font-size="13" fill="#8A8378">$80~120</text>
+<text x="285" y="176" font-size="13.5" fill="#8A8378">$80~120</text>
 <text x="140" y="216" text-anchor="end" font-size="14" fill="#23201D">2계층 SMR</text>
 <rect x="193" y="200" width="54" height="24" rx="3" fill="#C8102E"/>
-<text x="253" y="216" font-size="13" font-weight="700" fill="#C8102E">$40~90</text>
+<text x="253" y="216" font-size="13.5" font-weight="700" fill="#C8102E">$40~90</text>
 <text x="140" y="256" text-anchor="end" font-size="14" fill="#23201D">3계층 MMR</text>
 <rect x="258" y="240" width="216" height="24" rx="3" fill="#C8102E"/>
-<text x="480" y="256" font-size="13" font-weight="700" fill="#C8102E">$100~300</text>
+<text x="480" y="256" font-size="13.5" font-weight="700" fill="#C8102E">$100~300</text>
 <text x="140" y="296" text-anchor="end" font-size="14" fill="#23201D">원격지 디젤</text>
 <rect x="366" y="280" width="324" height="24" rx="3" fill="#8A8378"/>
-<text x="682" y="296" text-anchor="end" font-size="13" font-weight="700" fill="#F6F7F9">$200~500</text>
+<text x="682" y="296" text-anchor="end" font-size="13.5" font-weight="700" fill="#F6F7F9">$200~500</text>
 <line x1="150" y1="314" x2="690" y2="314" stroke="#8A8378"/>
 <line x1="150" y1="64" x2="150" y2="314" stroke="#8A8378"/>
-<text x="150" y="332" text-anchor="middle" font-size="12.5" fill="#8A8378">0</text>
-<text x="258" y="332" text-anchor="middle" font-size="12.5" fill="#8A8378">100</text>
-<text x="366" y="332" text-anchor="middle" font-size="12.5" fill="#8A8378">200</text>
-<text x="474" y="332" text-anchor="middle" font-size="12.5" fill="#8A8378">300</text>
-<text x="582" y="332" text-anchor="middle" font-size="12.5" fill="#8A8378">400</text>
-<text x="690" y="332" text-anchor="middle" font-size="12.5" fill="#8A8378">500</text>
+<text x="150" y="332" text-anchor="middle" font-size="13" fill="#8A8378">0</text>
+<text x="258" y="332" text-anchor="middle" font-size="13" fill="#8A8378">100</text>
+<text x="366" y="332" text-anchor="middle" font-size="13" fill="#8A8378">200</text>
+<text x="474" y="332" text-anchor="middle" font-size="13" fill="#8A8378">300</text>
+<text x="582" y="332" text-anchor="middle" font-size="13" fill="#8A8378">400</text>
+<text x="690" y="332" text-anchor="middle" font-size="13" fill="#8A8378">500</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">계층마다 경쟁 상대가 다르다 — 3계층 MMR은 전력망이 아니라 원격지 디젤($200~500/MWh)과 경쟁한다.</figcaption>
 </figure>

@@ -42,24 +42,24 @@ tags: ["LNG", "용량시장", "집단에너지", "전력시장"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 212" style="width:100%;height:auto" role="img" aria-label="제11차 전력수급기본계획의 LNG 발전 설비용량과 발전량 전망. 설비용량은 2023년 43.2기가와트에서 2038년 69.2기가와트로 60퍼센트 늘어나지만, 발전량은 같은 기간 157.7테라와트시에서 74.3테라와트시로 53퍼센트 줄어든다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">설비는 60% 늘리고 발전량은 반으로 줄인다</text>
-<text x="0" y="38" font-size="13" fill="#8A8378">제11차 전력수급기본계획의 LNG 발전 전망 · 두 묶음은 단위가 다르다</text>
-<text x="0" y="70" font-size="13" font-weight="700" fill="#8A8378">설비용량 (GW)</text>
-<text x="0" y="94" font-size="13" fill="#23201D">2023년</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">설비는 60% 늘리고 발전량은 반으로 줄인다</text>
+<text x="0" y="38" font-size="14" fill="#8A8378">제11차 전력수급기본계획의 LNG 발전 전망 · 두 묶음은 단위가 다르다</text>
+<text x="0" y="70" font-size="14" font-weight="700" fill="#8A8378">설비용량 (GW)</text>
+<text x="0" y="94" font-size="14" fill="#23201D">2023년</text>
 <rect x="110" y="78" width="300" height="22" fill="#A8BDD2" rx="3" />
-<text x="120" y="94" font-size="13" font-weight="700" fill="#23201D">43.2</text>
-<text x="0" y="122" font-size="13" fill="#23201D">2038년</text>
+<text x="120" y="94" font-size="14" font-weight="700" fill="#23201D">43.2</text>
+<text x="0" y="122" font-size="14" fill="#23201D">2038년</text>
 <rect x="110" y="106" width="480" height="22" fill="#1B4F8A" rx="3" />
-<text x="120" y="122" font-size="13" font-weight="700" fill="#FAF6EE">69.2</text>
-<text x="600" y="122" font-size="12.5" font-weight="700" fill="#23201D">+60%</text>
-<text x="0" y="158" font-size="13" font-weight="700" fill="#8A8378">발전량 (TWh)</text>
-<text x="0" y="182" font-size="13" fill="#23201D">2023년</text>
+<text x="120" y="122" font-size="14" font-weight="700" fill="#FAF6EE">69.2</text>
+<text x="600" y="122" font-size="13.5" font-weight="700" fill="#23201D">+60%</text>
+<text x="0" y="158" font-size="14" font-weight="700" fill="#8A8378">발전량 (TWh)</text>
+<text x="0" y="182" font-size="14" fill="#23201D">2023년</text>
 <rect x="110" y="166" width="480" height="22" fill="#4E7FA8" rx="3" />
-<text x="120" y="182" font-size="13" font-weight="700" fill="#FAF6EE">157.7</text>
-<text x="0" y="210" font-size="13" fill="#23201D">2038년</text>
+<text x="120" y="182" font-size="14" font-weight="700" fill="#FAF6EE">157.7</text>
+<text x="0" y="210" font-size="14" fill="#23201D">2038년</text>
 <rect x="110" y="194" width="226" height="22" fill="#A8BDD2" rx="3" />
-<text x="120" y="210" font-size="13" font-weight="700" fill="#23201D">74.3</text>
-<text x="346" y="210" font-size="12.5" font-weight="700" fill="#23201D">−53%</text>
+<text x="120" y="210" font-size="14" font-weight="700" fill="#23201D">74.3</text>
+<text x="346" y="210" font-size="13.5" font-weight="700" fill="#23201D">−53%</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">출처: 제11차 전력수급기본계획(2024~2038). 적게 돌리는 설비는 전력 판매로 고정비를 회수하기 어렵습니다. 그 간극을 메우는 장치가 용량요금이고, 그 값을 정하는 방식을 바꾸는 것이 용량시장입니다.</figcaption>
 </figure>

@@ -81,7 +81,7 @@ KSTAR는 1995년 12월 '국가핵융합연구개발 기본계획'으로 착수�
 
 <figure>
 <svg viewBox="0 0 720 300" role="img" aria-label="7대 SEED 에너지 3축 시간표. 2027년 SMR 상세설계 착수, 2030년 인허가 규제체계 완비, 2035년 SMR 상용화와 핵융합 실증로 건설, 2030년대 말 핵융합 100MWe급 실증발전, 2040년대 상용 공급" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">에너지 3축의 시간표 — 2035년에 몰려 있다</text>
+  <text x="30" y="32" font-size="19" font-weight="700" fill="#23201D">에너지 3축의 시간표 — 2035년에 몰려 있다</text>
   <text x="30" y="54" font-size="14" fill="#8A8378">가로 간격은 순서이며 연도 간격에 비례하지 않는다</text>
   <line x1="80" y1="150" x2="660" y2="150" stroke="#A8BDD2" stroke-width="3"/>
   <circle cx="80" cy="150" r="7" fill="#4E7FA8"/>
@@ -91,23 +91,23 @@ KSTAR는 1995년 12월 '국가핵융합연구개발 기본계획'으로 착수�
   <circle cx="660" cy="150" r="7" fill="#A8BDD2"/>
   <text x="80" y="130" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">2027</text>
   <text x="225" y="130" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">2030</text>
-  <text x="400" y="126" font-size="16" font-weight="700" fill="#1B4F8A" text-anchor="middle">2035</text>
+  <text x="400" y="126" font-size="16.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">2035</text>
   <text x="545" y="130" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">2030년대 말</text>
   <text x="660" y="130" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">2040년대</text>
-  <text x="80" y="178" font-size="12.5" fill="#23201D" text-anchor="middle">SMR</text>
-  <text x="80" y="194" font-size="12.5" fill="#23201D" text-anchor="middle">상세설계 착수</text>
-  <text x="225" y="178" font-size="12.5" fill="#23201D" text-anchor="middle">인허가 규제</text>
-  <text x="225" y="194" font-size="12.5" fill="#23201D" text-anchor="middle">체계 완비</text>
-  <text x="400" y="180" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">SMR 상용화(부산 기장)</text>
-  <text x="400" y="200" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">핵융합 실증로 건설</text>
-  <text x="545" y="178" font-size="12.5" fill="#23201D" text-anchor="middle">핵융합 100MWe급</text>
-  <text x="545" y="194" font-size="12.5" fill="#23201D" text-anchor="middle">실증 발전</text>
-  <text x="660" y="178" font-size="12.5" fill="#23201D" text-anchor="middle">300~500MWe급</text>
-  <text x="660" y="194" font-size="12.5" fill="#23201D" text-anchor="middle">상용 공급</text>
+  <text x="80" y="178" font-size="13" fill="#23201D" text-anchor="middle">SMR</text>
+  <text x="80" y="194" font-size="13" fill="#23201D" text-anchor="middle">상세설계 착수</text>
+  <text x="225" y="178" font-size="13" fill="#23201D" text-anchor="middle">인허가 규제</text>
+  <text x="225" y="194" font-size="13" fill="#23201D" text-anchor="middle">체계 완비</text>
+  <text x="400" y="180" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">SMR 상용화(부산 기장)</text>
+  <text x="400" y="200" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">핵융합 실증로 건설</text>
+  <text x="545" y="178" font-size="13" fill="#23201D" text-anchor="middle">핵융합 100MWe급</text>
+  <text x="545" y="194" font-size="13" fill="#23201D" text-anchor="middle">실증 발전</text>
+  <text x="660" y="178" font-size="13" fill="#23201D" text-anchor="middle">300~500MWe급</text>
+  <text x="660" y="194" font-size="13" fill="#23201D" text-anchor="middle">상용 공급</text>
   <rect x="80" y="240" width="580" height="30" fill="#E5DECF"/>
   <rect x="80" y="240" width="145" height="30" fill="#4E7FA8"/>
-  <text x="152" y="260" font-size="12.5" font-weight="700" fill="#FAF6EE" text-anchor="middle">현 정부 임기</text>
-  <text x="450" y="260" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">결과는 다음 정부 이후에 나온다</text>
+  <text x="152" y="260" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">현 정부 임기</text>
+  <text x="450" y="260" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">결과는 다음 정부 이후에 나온다</text>
 </svg>
 <figcaption>세 축의 핵심 성과가 모두 2035년에 걸려 있다. 씨앗을 심는 정부와 거두는 정부가 다르다는 뜻이다.</figcaption>
 </figure>
@@ -142,7 +142,7 @@ SMR을 예로 들면 문제가 선명해진다. 부지는 부산 기장으로 �
 
 <figure>
 <svg viewBox="0 0 720 280" role="img" aria-label="역대 정부 성장동력 정책 선정 품목 수. 2003년 차세대 성장동력 10대, 2009년 신성장동력 17개, 2015년 미래성장동력 19대, 2017년 혁신성장동력 13개, 2026년 7대 SEED" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">정부가 바뀔 때마다 새로 선정된 '미래 먹거리'</text>
+  <text x="30" y="32" font-size="19" font-weight="700" fill="#23201D">정부가 바뀔 때마다 새로 선정된 '미래 먹거리'</text>
   <text x="30" y="54" font-size="14" fill="#8A8378">선정 품목 수 · 발표 연도</text>
   <rect x="90" y="151" width="76" height="79" fill="#A8BDD2"/>
   <rect x="212" y="96" width="76" height="134" fill="#A8BDD2"/>
@@ -155,16 +155,16 @@ SMR을 예로 들면 문제가 선명해진다. 부지는 부산 기장으로 �
   <text x="494" y="119" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">13</text>
   <text x="616" y="167" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="middle">7</text>
   <line x1="70" y1="230" x2="670" y2="230" stroke="#8A8378" stroke-width="1"/>
-  <text x="128" y="250" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2003</text>
-  <text x="250" y="250" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2009</text>
-  <text x="372" y="250" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2015</text>
-  <text x="494" y="250" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2017</text>
-  <text x="616" y="250" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">2026</text>
-  <text x="128" y="268" font-size="12.5" fill="#8A8378" text-anchor="middle">차세대성장동력</text>
-  <text x="250" y="268" font-size="12.5" fill="#8A8378" text-anchor="middle">신성장동력</text>
-  <text x="372" y="268" font-size="12.5" fill="#8A8378" text-anchor="middle">미래성장동력</text>
-  <text x="494" y="268" font-size="12.5" fill="#8A8378" text-anchor="middle">혁신성장동력</text>
-  <text x="616" y="268" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">7대 SEED</text>
+  <text x="128" y="250" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">2003</text>
+  <text x="250" y="250" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">2009</text>
+  <text x="372" y="250" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">2015</text>
+  <text x="494" y="250" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">2017</text>
+  <text x="616" y="250" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">2026</text>
+  <text x="128" y="268" font-size="13" fill="#8A8378" text-anchor="middle">차세대성장동력</text>
+  <text x="250" y="268" font-size="13" fill="#8A8378" text-anchor="middle">신성장동력</text>
+  <text x="372" y="268" font-size="13" fill="#8A8378" text-anchor="middle">미래성장동력</text>
+  <text x="494" y="268" font-size="13" fill="#8A8378" text-anchor="middle">혁신성장동력</text>
+  <text x="616" y="268" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">7대 SEED</text>
 </svg>
 <figcaption>2015년의 19대는 2014년 13대로 출발해 산업부의 산업엔진과 통합되며 늘어난 숫자다. 1992년 G7 프로젝트는 품목 집계 방식이 달라 이 비교에서 제외했다. 이번이 품목 수가 가장 적다는 점은 오히려 긍정적 신호일 수 있다.</figcaption>
 </figure>

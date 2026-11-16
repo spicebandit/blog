@@ -118,33 +118,33 @@ IEA의 이 수치는 일본과 한국을 묶은 지역 집계다. 뒤에서 한�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 300" style="width:100%;height:auto" role="img" aria-label="분모 정의에 따라 달라지는 한국 전력화율. 국내 통계 기준은 22.4퍼센트, 원료용 에너지를 제외한 IEA 기준으로 한국 단독 추정은 약 34.6퍼센트로 COP31 서약 목표 35퍼센트에 사실상 도달한다. IEA가 일본과 한국을 묶어 서술한 값은 약 3분의 1 수준이다.">
-<text x="0" y="20" font-size="16.5" font-weight="700" fill="#23201D">같은 나라, 다른 전력화율 — 분모에 원료용 에너지를 넣느냐 빼느냐</text>
-<text x="0" y="40" font-size="13" fill="#8A8378">단위: 최종에너지 소비 중 전기 비중(%). 점선은 COP31 서약 목표 35%</text>
+<text x="0" y="20" font-size="18" font-weight="700" fill="#23201D">같은 나라, 다른 전력화율 — 분모에 원료용 에너지를 넣느냐 빼느냐</text>
+<text x="0" y="40" font-size="14" fill="#8A8378">단위: 최종에너지 소비 중 전기 비중(%). 점선은 COP31 서약 목표 35%</text>
 <line x1="100" y1="70" x2="700" y2="70" stroke="#E5DECF" stroke-width="1" />
 <line x1="100" y1="112.5" x2="700" y2="112.5" stroke="#E5DECF" stroke-width="1" />
 <line x1="100" y1="155" x2="700" y2="155" stroke="#E5DECF" stroke-width="1" />
 <line x1="100" y1="197.5" x2="700" y2="197.5" stroke="#E5DECF" stroke-width="1" />
 <line x1="100" y1="240" x2="700" y2="240" stroke="#23201D" stroke-width="1.5" />
-<text x="92" y="74" font-size="12.5" fill="#8A8378" text-anchor="end">40</text>
-<text x="92" y="116.5" font-size="12.5" fill="#8A8378" text-anchor="end">30</text>
-<text x="92" y="159" font-size="12.5" fill="#8A8378" text-anchor="end">20</text>
-<text x="92" y="201.5" font-size="12.5" fill="#8A8378" text-anchor="end">10</text>
-<text x="92" y="244" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+<text x="92" y="74" font-size="13.5" fill="#8A8378" text-anchor="end">40</text>
+<text x="92" y="116.5" font-size="13.5" fill="#8A8378" text-anchor="end">30</text>
+<text x="92" y="159" font-size="13.5" fill="#8A8378" text-anchor="end">20</text>
+<text x="92" y="201.5" font-size="13.5" fill="#8A8378" text-anchor="end">10</text>
+<text x="92" y="244" font-size="13.5" fill="#8A8378" text-anchor="end">0</text>
 <line x1="100" y1="91.25" x2="700" y2="91.25" stroke="#1B4F8A" stroke-width="2" stroke-dasharray="6 4" />
-<text x="700" y="86" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="end">서약 목표 35%</text>
+<text x="700" y="86" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="end">서약 목표 35%</text>
 <rect x="130" y="144.8" width="120" height="95.2" fill="#A8BDD2" rx="2" />
-<text x="190" y="137" font-size="16" font-weight="700" fill="#23201D" text-anchor="middle">22.4%</text>
-<text x="190" y="262" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">국내 통계 기준</text>
-<text x="190" y="279" font-size="12.5" fill="#8A8378" text-anchor="middle">KEEI · 비에너지용 포함</text>
+<text x="190" y="137" font-size="17" font-weight="700" fill="#23201D" text-anchor="middle">22.4%</text>
+<text x="190" y="262" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">국내 통계 기준</text>
+<text x="190" y="279" font-size="13.5" fill="#8A8378" text-anchor="middle">KEEI · 비에너지용 포함</text>
 <rect x="320" y="92.9" width="120" height="147.1" fill="#1B4F8A" rx="2" />
-<text x="380" y="120" font-size="16" font-weight="700" fill="#FAF6EE" text-anchor="middle">약 34.6%</text>
-<text x="380" y="262" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">IEA 기준 · 한국 단독</text>
-<text x="380" y="279" font-size="12.5" fill="#8A8378" text-anchor="middle">본문 추정 · 원료용 전부 제외</text>
+<text x="380" y="120" font-size="17" font-weight="700" fill="#FAF6EE" text-anchor="middle">약 34.6%</text>
+<text x="380" y="262" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="middle">IEA 기준 · 한국 단독</text>
+<text x="380" y="279" font-size="13.5" fill="#8A8378" text-anchor="middle">본문 추정 · 원료용 전부 제외</text>
 <rect x="510" y="112.5" width="120" height="127.5" fill="#4E7FA8" rx="2" />
 <rect x="510" y="99.75" width="120" height="12.75" fill="#A8BDD2" rx="2" />
-<text x="570" y="137" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="middle">약 1/3</text>
-<text x="570" y="262" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="middle">IEA 서술 · 일본+한국</text>
-<text x="570" y="279" font-size="12.5" fill="#8A8378" text-anchor="middle">"약 3분의 1" · 개별값 미공표</text>
+<text x="570" y="137" font-size="16.5" font-weight="700" fill="#FAF6EE" text-anchor="middle">약 1/3</text>
+<text x="570" y="262" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">IEA 서술 · 일본+한국</text>
+<text x="570" y="279" font-size="13.5" fill="#8A8378" text-anchor="middle">"약 3분의 1" · 개별값 미공표</text>
 </svg>
 <figcaption style="font-size:12.5px;color:#8A8378;margin-top:10px;">IEA는 일본·한국을 묶어 "전기가 최종에너지의 약 3분의 1"이라고만 서술했을 뿐 나라별 값은 공표하지 않았다(그래서 두 나라의 우열은 이 자료로 말할 수 없다). 같은 정의로 한국만 계산하면 약 34.6%다. 국내 통계와의 12%p 차이는 석유화학 원료용 납사와 제철용 원료탄을 분모에 넣는지에서 나온다.</figcaption>
 </figure>
@@ -162,49 +162,49 @@ IEA의 이 수치는 일본과 한국을 묶은 지역 집계다. 뒤에서 한�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 330" style="width:100%;height:auto" role="img" aria-label="IEA 기준 지역별 전력화율과 경제성 있는 잠재력 비교. 동아시아는 현재 약 33퍼센트에서 40퍼센트 이상, 동남아는 25퍼센트에서 37퍼센트, 유럽은 24퍼센트에서 35퍼센트 초과, 세계 평균은 23퍼센트에서 33퍼센트, 인도는 19퍼센트에서 32퍼센트로 올라갈 수 있다.">
-<text x="0" y="20" font-size="16.5" font-weight="700" fill="#23201D">IEA 기준 전력화율 — 현재(2025) 대 '지금 경제성 있는 잠재력'</text>
+<text x="0" y="20" font-size="18" font-weight="700" fill="#23201D">IEA 기준 전력화율 — 현재(2025) 대 '지금 경제성 있는 잠재력'</text>
 <text x="0" y="40" font-size="12" fill="#8A8378">단위: %. 연한 막대=2025년 실적, 진한 막대=오늘의 비용으로 경제성 있는 전기화를 전부 실행했을 때. 점선은 서약 목표 35%</text>
 <line x1="80" y1="75" x2="730" y2="75" stroke="#E5DECF" stroke-width="1" />
 <line x1="80" y1="133.3" x2="730" y2="133.3" stroke="#E5DECF" stroke-width="1" />
 <line x1="80" y1="191.7" x2="730" y2="191.7" stroke="#E5DECF" stroke-width="1" />
 <line x1="80" y1="250" x2="730" y2="250" stroke="#23201D" stroke-width="1.5" />
-<text x="72" y="79" font-size="12.5" fill="#8A8378" text-anchor="end">45</text>
-<text x="72" y="137.3" font-size="12.5" fill="#8A8378" text-anchor="end">30</text>
-<text x="72" y="195.7" font-size="12.5" fill="#8A8378" text-anchor="end">15</text>
-<text x="72" y="254" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+<text x="72" y="79" font-size="13.5" fill="#8A8378" text-anchor="end">45</text>
+<text x="72" y="137.3" font-size="13.5" fill="#8A8378" text-anchor="end">30</text>
+<text x="72" y="195.7" font-size="13.5" fill="#8A8378" text-anchor="end">15</text>
+<text x="72" y="254" font-size="13.5" fill="#8A8378" text-anchor="end">0</text>
 <line x1="80" y1="113.9" x2="730" y2="113.9" stroke="#1B4F8A" stroke-width="2" stroke-dasharray="6 4" />
-<text x="728" y="108" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="end">35%</text>
+<text x="728" y="108" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="end">35%</text>
 <!-- 동아시아 -->
 <rect x="95" y="121.7" width="48" height="128.3" fill="#A8BDD2" rx="2" />
-<text x="119" y="114" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">33</text>
+<text x="119" y="114" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">33</text>
 <rect x="147" y="94.4" width="48" height="155.6" fill="#1B4F8A" rx="2" />
-<text x="171" y="87" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">40+</text>
-<text x="145" y="272" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">동아시아</text>
+<text x="171" y="87" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">40+</text>
+<text x="145" y="272" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="middle">동아시아</text>
 <!-- 동남아 -->
 <rect x="223" y="152.8" width="48" height="97.2" fill="#A8BDD2" rx="2" />
-<text x="247" y="145" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">25</text>
+<text x="247" y="145" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">25</text>
 <rect x="275" y="106.1" width="48" height="143.9" fill="#1B4F8A" rx="2" />
-<text x="299" y="99" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">37</text>
-<text x="273" y="272" font-size="13.5" fill="#23201D" text-anchor="middle">동남아</text>
+<text x="299" y="99" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">37</text>
+<text x="273" y="272" font-size="15" fill="#23201D" text-anchor="middle">동남아</text>
 <!-- 유럽 -->
 <rect x="351" y="156.7" width="48" height="93.3" fill="#A8BDD2" rx="2" />
-<text x="375" y="149" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">24</text>
+<text x="375" y="149" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">24</text>
 <rect x="403" y="113.9" width="48" height="136.1" fill="#1B4F8A" rx="2" />
-<text x="427" y="106" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">35+</text>
-<text x="401" y="272" font-size="13.5" fill="#23201D" text-anchor="middle">유럽</text>
+<text x="427" y="106" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">35+</text>
+<text x="401" y="272" font-size="15" fill="#23201D" text-anchor="middle">유럽</text>
 <!-- 세계 평균 -->
 <rect x="479" y="160.6" width="48" height="89.4" fill="#A8BDD2" rx="2" />
-<text x="503" y="153" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">23</text>
+<text x="503" y="153" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">23</text>
 <rect x="531" y="121.7" width="48" height="128.3" fill="#1B4F8A" rx="2" />
-<text x="555" y="114" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">33</text>
-<text x="529" y="272" font-size="13.5" fill="#23201D" text-anchor="middle">세계 평균</text>
+<text x="555" y="114" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">33</text>
+<text x="529" y="272" font-size="15" fill="#23201D" text-anchor="middle">세계 평균</text>
 <!-- 인도 -->
 <rect x="607" y="176.1" width="48" height="73.9" fill="#A8BDD2" rx="2" />
-<text x="631" y="168" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">19</text>
+<text x="631" y="168" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">19</text>
 <rect x="659" y="125.6" width="48" height="124.4" fill="#1B4F8A" rx="2" />
-<text x="683" y="118" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">32</text>
-<text x="657" y="272" font-size="13.5" fill="#23201D" text-anchor="middle">인도</text>
-<text x="405" y="300" font-size="13" fill="#8A8378" text-anchor="middle">동아시아와 유럽은 경제성만으로 목표를 넘기고, 세계 평균은 33%에서 멈춘다 — 남은 2%p는 정책이 밀어야 한다</text>
+<text x="683" y="118" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">32</text>
+<text x="657" y="272" font-size="15" fill="#23201D" text-anchor="middle">인도</text>
+<text x="405" y="300" font-size="14" fill="#8A8378" text-anchor="middle">동아시아와 유럽은 경제성만으로 목표를 넘기고, 세계 평균은 33%에서 멈춘다 — 남은 2%p는 정책이 밀어야 한다</text>
 </svg>
 <figcaption style="font-size:12.5px;color:#8A8378;margin-top:10px;">IEA 분석의 핵심은 기술이 아니라 배치가 병목이라는 것이다. 현재값은 IEA의 지역 집계(동아시아는 일본·한국 기준 약 3분의 1), 잠재력은 보고서 Figure 2.4 기준이다. 유럽은 잠재력 증가폭이 약 15%p로 가장 크다.</figcaption>
 </figure>
@@ -254,21 +254,21 @@ IEA의 이 수치는 일본과 한국을 묶은 지역 집계다. 뒤에서 한�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 250" style="width:100%;height:auto" role="img" aria-label="2026년 한국 부문별 전력화율 전망. 건물 부문은 48.9퍼센트로 이미 서약 목표를 넘지만 산업 부문은 17.8퍼센트에 불과하며 전체 평균은 22.4퍼센트다.">
-<text x="0" y="20" font-size="16.5" font-weight="700" fill="#23201D">2026년 한국 부문별 전력화율 — 건물은 이미 넘었고 산업이 발목을 잡는다</text>
-<text x="0" y="40" font-size="13" fill="#8A8378">단위: 해당 부문 최종에너지 소비 중 전기 비중(%). 점선은 서약 목표 35%</text>
+<text x="0" y="20" font-size="18" font-weight="700" fill="#23201D">2026년 한국 부문별 전력화율 — 건물은 이미 넘었고 산업이 발목을 잡는다</text>
+<text x="0" y="40" font-size="14" fill="#8A8378">단위: 해당 부문 최종에너지 소비 중 전기 비중(%). 점선은 서약 목표 35%</text>
 <line x1="150" y1="58" x2="150" y2="206" stroke="#23201D" stroke-width="1.5" />
 <line x1="481" y1="56" x2="481" y2="212" stroke="#1B4F8A" stroke-width="2" stroke-dasharray="6 4" />
-<text x="481" y="50" font-size="13.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">서약 목표 35%</text>
+<text x="481" y="50" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="middle">서약 목표 35%</text>
 <rect x="150" y="70" width="462" height="36" fill="#4E7FA8" rx="2" />
-<text x="140" y="93" font-size="14" fill="#23201D" text-anchor="end">건물</text>
-<text x="622" y="93" font-size="14" font-weight="700" fill="#23201D">48.9%</text>
+<text x="140" y="93" font-size="15" fill="#23201D" text-anchor="end">건물</text>
+<text x="622" y="93" font-size="15" font-weight="700" fill="#23201D">48.9%</text>
 <rect x="150" y="118" width="212" height="36" fill="#A8BDD2" rx="2" />
-<text x="140" y="141" font-size="14" fill="#23201D" text-anchor="end">전체 평균</text>
-<text x="372" y="141" font-size="14" font-weight="700" fill="#23201D">22.4%</text>
+<text x="140" y="141" font-size="15" fill="#23201D" text-anchor="end">전체 평균</text>
+<text x="372" y="141" font-size="15" font-weight="700" fill="#23201D">22.4%</text>
 <rect x="150" y="166" width="168" height="36" fill="#1B4F8A" rx="2" />
-<text x="140" y="189" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="end">산업</text>
-<text x="328" y="189" font-size="14" font-weight="700" fill="#1B4F8A">17.8%</text>
-<text x="400" y="234" font-size="13" fill="#8A8378" text-anchor="middle">산업은 한국 최종에너지의 60.2%를 쓰면서 전력화율은 전체 평균보다도 낮다</text>
+<text x="140" y="189" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="end">산업</text>
+<text x="328" y="189" font-size="15" font-weight="700" fill="#1B4F8A">17.8%</text>
+<text x="400" y="234" font-size="14" fill="#8A8378" text-anchor="middle">산업은 한국 최종에너지의 60.2%를 쓰면서 전력화율은 전체 평균보다도 낮다</text>
 </svg>
 <figcaption style="font-size:12.5px;color:#8A8378;margin-top:10px;">건물 부문만 보면 한국은 이미 서약 목표를 크게 넘어섰다. 문제는 에너지의 60%를 쓰는 산업이 17.8%에 머물러 있다는 점이다.</figcaption>
 </figure>

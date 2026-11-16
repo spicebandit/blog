@@ -125,26 +125,26 @@ tags: ["오픈AI", "AI 에이전트", "챗GPT", "AI 비교"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 236" style="width:100%;height:auto" role="img" aria-label="상시 작동 AI 에이전트 네 서비스의 최소 월 요금 비교. 메타 뮤즈는 무료 티어가 있고 그록 봇은 월 30달러, 오픈AI 닷츠는 월 100달러부터이며 클로드 듀엣은 리서치 프리뷰 기간 추가 요금이 없다. 다만 뮤즈와 듀엣은 한국에서 쓸 수 없다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">싼 것은 한국에서 못 쓴다</text>
-<text x="0" y="38" font-size="13" fill="#8A8378">상시 에이전트 최소 월 요금 (달러) · 막대 아래는 한국 사용 가능 여부</text>
-<text x="0" y="76" font-size="13" fill="#23201D">메타 뮤즈</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">싼 것은 한국에서 못 쓴다</text>
+<text x="0" y="38" font-size="14" fill="#8A8378">상시 에이전트 최소 월 요금 (달러) · 막대 아래는 한국 사용 가능 여부</text>
+<text x="0" y="76" font-size="14" fill="#23201D">메타 뮤즈</text>
 <rect x="150" y="60" width="18" height="24" fill="#A8BDD2" rx="3" />
-<text x="176" y="78" font-size="13" font-weight="700" fill="#23201D">0 (무료 티어)</text>
-<text x="620" y="78" font-size="12.5" font-weight="700" fill="#8A8378">한국 불가</text>
-<text x="0" y="112" font-size="13" fill="#23201D">클로드 듀엣</text>
+<text x="176" y="78" font-size="14" font-weight="700" fill="#23201D">0 (무료 티어)</text>
+<text x="620" y="78" font-size="13.5" font-weight="700" fill="#8A8378">한국 불가</text>
+<text x="0" y="112" font-size="14" fill="#23201D">클로드 듀엣</text>
 <rect x="150" y="96" width="18" height="24" fill="#A8BDD2" rx="3" />
-<text x="176" y="114" font-size="13" font-weight="700" fill="#23201D">0 (프리뷰, 기존 플랜 소진)</text>
-<text x="620" y="114" font-size="12.5" font-weight="700" fill="#8A8378">한국 불가</text>
-<text x="0" y="148" font-size="13" font-weight="700" fill="#23201D">그록 봇</text>
+<text x="176" y="114" font-size="14" font-weight="700" fill="#23201D">0 (프리뷰, 기존 플랜 소진)</text>
+<text x="620" y="114" font-size="13.5" font-weight="700" fill="#8A8378">한국 불가</text>
+<text x="0" y="148" font-size="14" font-weight="700" fill="#23201D">그록 봇</text>
 <rect x="150" y="132" width="90" height="24" fill="#4E7FA8" rx="3" />
-<text x="162" y="150" font-size="13.5" font-weight="700" fill="#FAF6EE">30</text>
-<text x="620" y="150" font-size="12.5" font-weight="700" fill="#23201D">한국 가능</text>
-<text x="0" y="184" font-size="13" font-weight="700" fill="#23201D">오픈AI 닷츠</text>
+<text x="162" y="150" font-size="15" font-weight="700" fill="#FAF6EE">30</text>
+<text x="620" y="150" font-size="13.5" font-weight="700" fill="#23201D">한국 가능</text>
+<text x="0" y="184" font-size="14" font-weight="700" fill="#23201D">오픈AI 닷츠</text>
 <rect x="150" y="168" width="300" height="24" fill="#1B4F8A" rx="3" />
-<text x="162" y="186" font-size="13.5" font-weight="700" fill="#FAF6EE">100</text>
-<text x="620" y="186" font-size="12.5" font-weight="700" fill="#23201D">한국 가능</text>
-<text x="0" y="216" font-size="12.5" fill="#8A8378">※ 막대는 각 서비스에서 상시 에이전트를 쓸 수 있는 최소 월 요금. 뮤즈는 사용량 제한이 붙은 무료 티어다.</text>
-<text x="0" y="232" font-size="12.5" fill="#8A8378">출처: 각 사 요금 페이지 및 2026년 10~11월 비교 보도. 환율·플랜 구성은 변동.</text>
+<text x="162" y="186" font-size="15" font-weight="700" fill="#FAF6EE">100</text>
+<text x="620" y="186" font-size="13.5" font-weight="700" fill="#23201D">한국 가능</text>
+<text x="0" y="216" font-size="13.5" fill="#8A8378">※ 막대는 각 서비스에서 상시 에이전트를 쓸 수 있는 최소 월 요금. 뮤즈는 사용량 제한이 붙은 무료 티어다.</text>
+<text x="0" y="232" font-size="13.5" fill="#8A8378">출처: 각 사 요금 페이지 및 2026년 10~11월 비교 보도. 환율·플랜 구성은 변동.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">한국 사용자에게 선택지는 사실상 둘입니다. 무료 티어가 있는 뮤즈와 프리뷰가 공짜인 듀엣은 아직 들어오지 않았습니다.</figcaption>
 </figure>

@@ -28,7 +28,7 @@ tags: ["로컬LLM", "아이폰AI", "온디바이스AI", "PocketPal"]
 
 <figure>
 <svg viewBox="0 0 800 260" role="img" aria-label="아이폰 16 Pro급 기준 모델 크기별 생성 속도 비교 바차트. 1B급 모델 초당 25에서 40토큰, 3~4B급 모델 초당 10에서 20토큰, 사람이 읽는 속도 초당 약 5에서 7토큰" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="17" font-weight="700" fill="#23201D">아이폰(16 Pro급)에서 모델 크기별 생성 속도 (토큰/초 — 높을수록 빠름)</text>
+  <text x="20" y="30" font-size="19" font-weight="700" fill="#23201D">아이폰(16 Pro급)에서 모델 크기별 생성 속도 (토큰/초 — 높을수록 빠름)</text>
   <g stroke="#E4E7EC" stroke-width="1">
     <line x1="220" y1="50" x2="220" y2="210"/>
     <line x1="355" y1="50" x2="355" y2="210"/>
@@ -36,24 +36,24 @@ tags: ["로컬LLM", "아이폰AI", "온디바이스AI", "PocketPal"]
     <line x1="625" y1="50" x2="625" y2="210"/>
     <line x1="760" y1="50" x2="760" y2="210"/>
   </g>
-  <g font-size="13" fill="#8A8378">
+  <g font-size="15" fill="#8A8378">
     <text x="220" y="228" text-anchor="middle">0</text>
     <text x="355" y="228" text-anchor="middle">10</text>
     <text x="490" y="228" text-anchor="middle">20</text>
     <text x="625" y="228" text-anchor="middle">30</text>
     <text x="760" y="228" text-anchor="middle">40 tok/s</text>
   </g>
-  <text x="212" y="80" font-size="14" fill="#23201D" text-anchor="end">1B급 (Llama 3.2 1B 등)</text>
+  <text x="212" y="80" font-size="16" fill="#23201D" text-anchor="end">1B급 (Llama 3.2 1B 등)</text>
   <rect x="220" y="62" width="337" height="26" rx="4" fill="#C8102E"/>
   <rect x="557" y="62" width="203" height="26" rx="4" fill="#EBB1B4"/>
-  <text x="560" y="80" font-size="14" font-weight="700" fill="#F6F7F9" text-anchor="end">25~40</text>
-  <text x="212" y="130" font-size="14" fill="#23201D" text-anchor="end">3~4B급 (Phi-4 Mini 등)</text>
+  <text x="560" y="80" font-size="16" font-weight="700" fill="#F6F7F9" text-anchor="end">25~40</text>
+  <text x="212" y="130" font-size="16" fill="#23201D" text-anchor="end">3~4B급 (Phi-4 Mini 등)</text>
   <rect x="220" y="112" width="135" height="26" rx="4" fill="#8A8378"/>
   <rect x="355" y="112" width="135" height="26" rx="4" fill="#E4E7EC"/>
-  <text x="498" y="130" font-size="14" fill="#23201D">10~20</text>
-  <text x="212" y="180" font-size="14" fill="#23201D" text-anchor="end">사람이 읽는 속도 (참고)</text>
+  <text x="498" y="130" font-size="16" fill="#23201D">10~20</text>
+  <text x="212" y="180" font-size="16" fill="#23201D" text-anchor="end">사람이 읽는 속도 (참고)</text>
   <rect x="220" y="162" width="81" height="26" rx="4" fill="#E4E7EC"/>
-  <text x="309" y="180" font-size="14" fill="#8A8378">약 5~7</text>
+  <text x="309" y="180" font-size="16" fill="#8A8378">약 5~7</text>
 </svg>
 <figcaption>모델 크기별 생성 속도 실측 범위(연한 색은 앱·양자화·발열 상태에 따른 변동 폭). 읽는 속도보다 빠르면 채팅용으로 실용적이다. 출처: PromptQuorum(2026-06), Local AI Master</figcaption>
 </figure>

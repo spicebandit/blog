@@ -70,34 +70,34 @@ REA가 한 일이 바로 그 희소성을 없앤 것입니다.
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 290" style="width:100%;height:auto" role="img" aria-label="주요 오픈소스 저장소의 일평균 GitHub 스타 획득 속도 비교 막대그래프. REA는 하루 1683.2개로 압도적 1위이며, 2위 Ollama 151.8개의 약 11배다. LangChain 101.2개, VS Code 47.7개, Next.js 39.0개 순이다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">생성 이후 누적 평균 스타 획득 속도 — REA는 2위의 11배</text>
-<text x="0" y="38" font-size="13" fill="#8A8378">총 스타 ÷ 생성일부터 2026-10-18까지의 경과일. GitHub API 실측값으로 계산.</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">생성 이후 누적 평균 스타 획득 속도 — REA는 2위의 11배</text>
+<text x="0" y="38" font-size="14" fill="#8A8378">총 스타 ÷ 생성일부터 2026-10-18까지의 경과일. GitHub API 실측값으로 계산.</text>
 <!-- REA -->
-<text x="0" y="72" font-size="13" font-weight="700" fill="#23201D">REA</text>
+<text x="0" y="72" font-size="14" font-weight="700" fill="#23201D">REA</text>
 <rect x="120" y="58" width="560" height="22" fill="#1B4F8A" rx="3" />
-<text x="672" y="74" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="end">1,683.2</text>
-<text x="690" y="74" font-size="12.5" fill="#8A8378">스타/일</text>
+<text x="672" y="74" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="end">1,683.2</text>
+<text x="690" y="74" font-size="13.5" fill="#8A8378">스타/일</text>
 <!-- Ollama -->
-<text x="0" y="110" font-size="13" fill="#23201D">Ollama</text>
+<text x="0" y="110" font-size="14" fill="#23201D">Ollama</text>
 <rect x="120" y="96" width="50" height="22" fill="#A8BDD2" rx="3" />
-<text x="178" y="112" font-size="13" fill="#23201D">151.8</text>
+<text x="178" y="112" font-size="14" fill="#23201D">151.8</text>
 <!-- LangChain -->
-<text x="0" y="148" font-size="13" fill="#23201D">LangChain</text>
+<text x="0" y="148" font-size="14" fill="#23201D">LangChain</text>
 <rect x="120" y="134" width="34" height="22" fill="#A8BDD2" rx="3" />
-<text x="162" y="150" font-size="13" fill="#23201D">101.2</text>
+<text x="162" y="150" font-size="14" fill="#23201D">101.2</text>
 <!-- VS Code -->
-<text x="0" y="186" font-size="13" fill="#23201D">VS Code</text>
+<text x="0" y="186" font-size="14" fill="#23201D">VS Code</text>
 <rect x="120" y="172" width="16" height="22" fill="#A8BDD2" rx="3" />
-<text x="144" y="188" font-size="13" fill="#23201D">47.7</text>
+<text x="144" y="188" font-size="14" fill="#23201D">47.7</text>
 <!-- Next.js -->
-<text x="0" y="224" font-size="13" fill="#23201D">Next.js</text>
+<text x="0" y="224" font-size="14" fill="#23201D">Next.js</text>
 <rect x="120" y="210" width="13" height="22" fill="#A8BDD2" rx="3" />
-<text x="141" y="226" font-size="13" fill="#23201D">39.0</text>
+<text x="141" y="226" font-size="14" fill="#23201D">39.0</text>
 <line x1="120" y1="244" x2="680" y2="244" stroke="#E5DECF" stroke-width="1" />
-<text x="120" y="262" font-size="12" fill="#8A8378">0</text>
-<text x="400" y="262" font-size="12" fill="#8A8378" text-anchor="middle">840</text>
-<text x="680" y="262" font-size="12" fill="#8A8378" text-anchor="end">1,680 스타/일</text>
-<text x="0" y="282" font-size="12.5" fill="#8A8378">※ REA는 생성 187일차, Ollama 1,210일차, LangChain 1,462일차, VS Code 4,063일차, Next.js 3,665일차.</text>
+<text x="120" y="262" font-size="13" fill="#8A8378">0</text>
+<text x="400" y="262" font-size="13" fill="#8A8378" text-anchor="middle">840</text>
+<text x="680" y="262" font-size="13" fill="#8A8378" text-anchor="end">1,680 스타/일</text>
+<text x="0" y="282" font-size="13.5" fill="#8A8378">※ REA는 생성 187일차, Ollama 1,210일차, LangChain 1,462일차, VS Code 4,063일차, Next.js 3,665일차.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">주의해서 읽어야 할 그래프입니다. REA의 스타는 187일에 고르게 쌓인 것이 아니라 10월 초순 열흘 남짓에 집중됐으므로, 이 막대는 실제 피크 속도를 크게 낮춰 보여줍니다. 반대로 비교군은 수년치 평균이라 애초에 같은 성격의 수치가 아닙니다. '누적 평균으로 환산해도 11배'라는 하한선으로만 읽으십시오. 출처: GitHub REST API 실측(2026-10-18).</figcaption>
 </figure>
@@ -251,31 +251,31 @@ rea update
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 310" style="width:100%;height:auto" role="img" aria-label="클린룸 방식과 REA 방식의 구조 비교 그림. 위쪽 클린룸은 분석팀과 구현팀이 격리벽으로 분리되어 있고 그 사이를 표현이 제거된 명세서만 통과한다. 아래쪽 REA는 하나의 AI 에이전트가 분석과 구현을 동시에 수행해 격리벽이 존재하지 않는다.">
-<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">'분리'는 법적 요건이 아니라, 결백을 입증하는 장치였습니다</text>
+<text x="0" y="18" font-size="17" font-weight="700" fill="#23201D">'분리'는 법적 요건이 아니라, 결백을 입증하는 장치였습니다</text>
 <!-- clean room -->
-<text x="0" y="48" font-size="13.5" font-weight="700" fill="#4E7FA8">1982년 컴팩 이후 — 클린룸</text>
+<text x="0" y="48" font-size="15" font-weight="700" fill="#4E7FA8">1982년 컴팩 이후 — 클린룸</text>
 <rect x="0" y="58" width="180" height="58" fill="#4E7FA8" rx="4" />
-<text x="16" y="82" font-size="13.5" font-weight="700" fill="#FAF6EE">분석팀 (1팀)</text>
-<text x="16" y="102" font-size="12.5" fill="#E5DECF">원본을 뜯어 명세만 작성</text>
+<text x="16" y="82" font-size="15" font-weight="700" fill="#FAF6EE">분석팀 (1팀)</text>
+<text x="16" y="102" font-size="13.5" fill="#E5DECF">원본을 뜯어 명세만 작성</text>
 <rect x="265" y="48" width="14" height="78" fill="#23201D" rx="2" />
-<text x="272" y="140" font-size="12" fill="#23201D" text-anchor="middle">격리벽</text>
-<text x="196" y="80" font-size="12.5" fill="#8A8378">명세서만</text>
-<text x="196" y="98" font-size="12.5" fill="#8A8378">통과</text>
+<text x="272" y="140" font-size="13" fill="#23201D" text-anchor="middle">격리벽</text>
+<text x="196" y="80" font-size="13.5" fill="#8A8378">명세서만</text>
+<text x="196" y="98" font-size="13.5" fill="#8A8378">통과</text>
 <rect x="320" y="58" width="180" height="58" fill="#A8BDD2" rx="4" />
-<text x="336" y="82" font-size="13.5" font-weight="700" fill="#23201D">구현팀 (2팀)</text>
-<text x="336" y="102" font-size="12.5" fill="#23201D">원본을 본 적 없음</text>
-<text x="518" y="82" font-size="12.5" fill="#8A8378">원본 표현을 못 봤으므로</text>
-<text x="518" y="100" font-size="12.5" fill="#8A8378">'베꼈다'는 입증이 어렵다</text>
+<text x="336" y="82" font-size="15" font-weight="700" fill="#23201D">구현팀 (2팀)</text>
+<text x="336" y="102" font-size="13.5" fill="#23201D">원본을 본 적 없음</text>
+<text x="518" y="82" font-size="13.5" fill="#8A8378">원본 표현을 못 봤으므로</text>
+<text x="518" y="100" font-size="13.5" fill="#8A8378">'베꼈다'는 입증이 어렵다</text>
 <line x1="0" y1="160" x2="760" y2="160" stroke="#E5DECF" stroke-width="1" />
 <!-- REA -->
-<text x="0" y="192" font-size="13.5" font-weight="700" fill="#1B4F8A">2026년 REA — 분리가 사라진다</text>
+<text x="0" y="192" font-size="15" font-weight="700" fill="#1B4F8A">2026년 REA — 분리가 사라진다</text>
 <rect x="0" y="202" width="500" height="58" fill="#1B4F8A" rx="4" />
-<text x="20" y="226" font-size="13.5" font-weight="700" fill="#FAF6EE">AI 에이전트 하나가 분석과 구현을 동시에</text>
-<text x="20" y="246" font-size="12.5" fill="#E5DECF">디스어셈블한 표현을 그대로 읽은 상태에서 곧바로 코드를 쓴다</text>
-<text x="518" y="226" font-size="12.5" fill="#8A8378">격리벽이 없다 → 분쟁에서</text>
-<text x="518" y="244" font-size="12.5" fill="#8A8378">결백을 입증할 카드가 없다</text>
-<text x="0" y="290" font-size="12.5" fill="#8A8378">※ 클린룸은 법이 요구한 절차가 아니라, 침해가 아님을 입증하기 위해 업계가 만든 방어 관행입니다.</text>
-<text x="0" y="306" font-size="12.5" fill="#8A8378">※ 분석만 하는 용도(보안 연구·호환·보존)에는 이 구조적 문제가 생기지 않습니다.</text>
+<text x="20" y="226" font-size="15" font-weight="700" fill="#FAF6EE">AI 에이전트 하나가 분석과 구현을 동시에</text>
+<text x="20" y="246" font-size="13.5" fill="#E5DECF">디스어셈블한 표현을 그대로 읽은 상태에서 곧바로 코드를 쓴다</text>
+<text x="518" y="226" font-size="13.5" fill="#8A8378">격리벽이 없다 → 분쟁에서</text>
+<text x="518" y="244" font-size="13.5" fill="#8A8378">결백을 입증할 카드가 없다</text>
+<text x="0" y="290" font-size="13.5" fill="#8A8378">※ 클린룸은 법이 요구한 절차가 아니라, 침해가 아님을 입증하기 위해 업계가 만든 방어 관행입니다.</text>
+<text x="0" y="306" font-size="13.5" fill="#8A8378">※ 분석만 하는 용도(보안 연구·호환·보존)에는 이 구조적 문제가 생기지 않습니다.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">REA의 진짜 변화는 성능이 아니라 구조입니다. 한 에이전트가 '본 것'과 '쓴 것'을 모두 담당하는 순간, 40여 년간 침해 주장을 방어해 온 입증 장치가 사라집니다. 불법이 된다는 뜻은 아닙니다 — 분쟁이 생겼을 때 내밀 카드가 없어진다는 뜻입니다.</figcaption>
 </figure>
