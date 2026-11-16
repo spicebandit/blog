@@ -41,19 +41,19 @@ Here is the full picture from DeepSeek's official pricing documentation. All fig
 
 <figure>
 <svg viewBox="0 0 720 300" role="img" aria-label="Price comparison for deepseek-v4-pro output tokens per million. Current 0.87 dollars, off-peak 1.98 dollars, peak 3.96 dollars" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="17" font-weight="700" fill="#23201D">deepseek-v4-pro output — even off-peak costs more than today</text>
-  <text x="30" y="54" font-size="13" fill="#8A8378">USD per 1M tokens · lower is better</text>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">deepseek-v4-pro output — even off-peak costs more than today</text>
+  <text x="30" y="54" font-size="14" fill="#8A8378">USD per 1M tokens · lower is better</text>
   <line x1="150" y1="90" x2="150" y2="254" stroke="#E5DECF" stroke-width="1"/>
   <rect x="150" y="100" width="106" height="36" fill="#A8BDD2"/>
   <rect x="150" y="158" width="242" height="36" fill="#4E7FA8"/>
   <rect x="150" y="216" width="484" height="36" fill="#1B4F8A"/>
-  <text x="140" y="123" font-size="13" fill="#23201D" text-anchor="end">Current</text>
-  <text x="140" y="181" font-size="13" fill="#23201D" text-anchor="end">Off-peak</text>
-  <text x="140" y="239" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="end">Peak</text>
-  <text x="266" y="123" font-size="14" font-weight="700" fill="#23201D">$0.87</text>
-  <text x="402" y="181" font-size="14" font-weight="700" fill="#23201D">$1.98  (2.3x)</text>
-  <text x="620" y="239" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="end">$3.96  (4.6x)</text>
-  <text x="30" y="285" font-size="12" fill="#8A8378">Source: DeepSeek API Docs, Models &amp; Pricing (checked 2026-08-14)</text>
+  <text x="140" y="123" font-size="14" fill="#23201D" text-anchor="end">Current</text>
+  <text x="140" y="181" font-size="14" fill="#23201D" text-anchor="end">Off-peak</text>
+  <text x="140" y="239" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="end">Peak</text>
+  <text x="266" y="123" font-size="15" font-weight="700" fill="#23201D">$0.87</text>
+  <text x="402" y="181" font-size="15" font-weight="700" fill="#23201D">$1.98  (2.3x)</text>
+  <text x="620" y="239" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">$3.96  (4.6x)</text>
+  <text x="30" y="285" font-size="13" fill="#8A8378">Source: DeepSeek API Docs, Models &amp; Pricing (checked 2026-08-14)</text>
 </svg>
 <figcaption>DeepSeek says off-peak is half of peak. True — but that half is still 2.3x what the same call costs today.</figcaption>
 </figure>
@@ -96,53 +96,53 @@ Written in UTC that looks neutral. Mapped onto local clocks it is anything but.
 
 <figure>
 <svg viewBox="0 0 720 345" role="img" aria-label="DeepSeek peak windows in UTC compared with local business hours in five regions. San Francisco business hours fall entirely in off-peak, while Seoul and Beijing overlap heavily with peak" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="28" font-size="17" font-weight="700" fill="#23201D">Whose working day is expensive? It depends on the longitude</text>
-  <text x="30" y="50" font-size="13" fill="#8A8378">Local 09:00–18:00 mapped onto the UTC clock · dark = peak (2x)</text>
+  <text x="30" y="28" font-size="18" font-weight="700" fill="#23201D">Whose working day is expensive? It depends on the longitude</text>
+  <text x="30" y="50" font-size="14" fill="#8A8378">Local 09:00–18:00 mapped onto the UTC clock · dark = peak (2x)</text>
   <rect x="170" y="72" width="450" height="26" fill="#A8BDD2"/>
   <rect x="188.75" y="72" width="56.25" height="26" fill="#1B4F8A"/>
   <rect x="282.5" y="72" width="75" height="26" fill="#1B4F8A"/>
-  <text x="160" y="90" font-size="12" font-weight="700" fill="#23201D" text-anchor="end">DeepSeek rate</text>
-  <text x="217" y="90" font-size="10" font-weight="700" fill="#FAF6EE" text-anchor="middle">01–04</text>
-  <text x="320" y="90" font-size="10" font-weight="700" fill="#FAF6EE" text-anchor="middle">06–10</text>
+  <text x="160" y="90" font-size="13" font-weight="700" fill="#23201D" text-anchor="end">DeepSeek rate</text>
+  <text x="217" y="90" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="middle">01–04</text>
+  <text x="320" y="90" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="middle">06–10</text>
   <line x1="170" y1="104" x2="620" y2="104" stroke="#8A8378" stroke-width="1"/>
-  <text x="170" y="120" font-size="11" fill="#8A8378" text-anchor="middle">0</text>
-  <text x="226" y="120" font-size="11" fill="#8A8378" text-anchor="middle">3</text>
-  <text x="282" y="120" font-size="11" fill="#8A8378" text-anchor="middle">6</text>
-  <text x="339" y="120" font-size="11" fill="#8A8378" text-anchor="middle">9</text>
-  <text x="395" y="120" font-size="11" fill="#8A8378" text-anchor="middle">12</text>
-  <text x="451" y="120" font-size="11" fill="#8A8378" text-anchor="middle">15</text>
-  <text x="508" y="120" font-size="11" fill="#8A8378" text-anchor="middle">18</text>
-  <text x="564" y="120" font-size="11" fill="#8A8378" text-anchor="middle">21</text>
-  <text x="620" y="120" font-size="11" fill="#8A8378" text-anchor="middle">24</text>
-  <text x="170" y="140" font-size="11" fill="#8A8378">UTC hour</text>
-  <text x="632" y="140" font-size="10" fill="#8A8378">peak h</text>
+  <text x="170" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">0</text>
+  <text x="226" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">3</text>
+  <text x="282" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">6</text>
+  <text x="339" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">9</text>
+  <text x="395" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">12</text>
+  <text x="451" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">15</text>
+  <text x="508" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">18</text>
+  <text x="564" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">21</text>
+  <text x="620" y="120" font-size="12.5" fill="#8A8378" text-anchor="middle">24</text>
+  <text x="170" y="140" font-size="12.5" fill="#8A8378">UTC hour</text>
+  <text x="632" y="140" font-size="12" fill="#8A8378">peak h</text>
   <rect x="170" y="152" width="168.75" height="16" fill="#A8BDD2"/>
   <rect x="188.75" y="152" width="56.25" height="16" fill="#1B4F8A"/>
   <rect x="282.5" y="152" width="56.25" height="16" fill="#1B4F8A"/>
-  <text x="160" y="164" font-size="11" fill="#23201D" text-anchor="end">Seoul (UTC+9)</text>
-  <text x="632" y="164" font-size="11" font-weight="700" fill="#23201D">6 / 9</text>
+  <text x="160" y="164" font-size="12.5" fill="#23201D" text-anchor="end">Seoul (UTC+9)</text>
+  <text x="632" y="164" font-size="12.5" font-weight="700" fill="#23201D">6 / 9</text>
   <rect x="188.75" y="180" width="168.75" height="16" fill="#A8BDD2"/>
   <rect x="188.75" y="180" width="56.25" height="16" fill="#1B4F8A"/>
   <rect x="282.5" y="180" width="75" height="16" fill="#1B4F8A"/>
-  <text x="160" y="192" font-size="11" fill="#23201D" text-anchor="end">Beijing (UTC+8)</text>
-  <text x="632" y="192" font-size="11" font-weight="700" fill="#23201D">7 / 9</text>
+  <text x="160" y="192" font-size="12.5" fill="#23201D" text-anchor="end">Beijing (UTC+8)</text>
+  <text x="632" y="192" font-size="12.5" font-weight="700" fill="#23201D">7 / 9</text>
   <rect x="301.25" y="208" width="168.75" height="16" fill="#A8BDD2"/>
   <rect x="301.25" y="208" width="56.25" height="16" fill="#1B4F8A"/>
-  <text x="160" y="220" font-size="11" fill="#23201D" text-anchor="end">Frankfurt (UTC+2)</text>
-  <text x="632" y="220" font-size="11" fill="#23201D">3 / 9</text>
+  <text x="160" y="220" font-size="12.5" fill="#23201D" text-anchor="end">Frankfurt (UTC+2)</text>
+  <text x="632" y="220" font-size="12.5" fill="#23201D">3 / 9</text>
   <rect x="320" y="236" width="168.75" height="16" fill="#A8BDD2"/>
   <rect x="320" y="236" width="37.5" height="16" fill="#1B4F8A"/>
-  <text x="160" y="248" font-size="11" fill="#23201D" text-anchor="end">London (UTC+1)</text>
-  <text x="632" y="248" font-size="11" fill="#23201D">2 / 9</text>
+  <text x="160" y="248" font-size="12.5" fill="#23201D" text-anchor="end">London (UTC+1)</text>
+  <text x="632" y="248" font-size="12.5" fill="#23201D">2 / 9</text>
   <rect x="470" y="264" width="150" height="16" fill="#A8BDD2"/>
   <rect x="170" y="264" width="18.75" height="16" fill="#A8BDD2"/>
-  <text x="160" y="276" font-size="11" fill="#23201D" text-anchor="end">San Francisco (UTC−7)</text>
-  <text x="632" y="276" font-size="11" font-weight="700" fill="#8A8378">0 / 9</text>
+  <text x="160" y="276" font-size="12.5" fill="#23201D" text-anchor="end">San Francisco (UTC−7)</text>
+  <text x="632" y="276" font-size="12.5" font-weight="700" fill="#8A8378">0 / 9</text>
   <rect x="170" y="294" width="12" height="12" fill="#1B4F8A"/>
-  <text x="188" y="304" font-size="12" fill="#23201D">Peak — 2x rate</text>
+  <text x="188" y="304" font-size="13" fill="#23201D">Peak — 2x rate</text>
   <rect x="320" y="294" width="12" height="12" fill="#A8BDD2"/>
-  <text x="338" y="304" font-size="12" fill="#23201D">Off-peak — all other hours</text>
-  <text x="30" y="332" font-size="12" fill="#8A8378">Source: DeepSeek API Docs, peak windows 01:00–04:00 and 06:00–10:00 UTC (checked 2026-08-14)</text>
+  <text x="338" y="304" font-size="13" fill="#23201D">Off-peak — all other hours</text>
+  <text x="30" y="332" font-size="13" fill="#8A8378">Source: DeepSeek API Docs, peak windows 01:00–04:00 and 06:00–10:00 UTC (checked 2026-08-14)</text>
 </svg>
 <figcaption>Seven peak hours a day, but they fall very differently depending on where you work. San Francisco's business day ends exactly as the first peak block begins; Beijing's starts inside it.</figcaption>
 </figure>

@@ -25,26 +25,26 @@ Here's which models are practical at each unified-memory tier, based on Q4 quant
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="Viable local LLM sizes by MacBook unified memory. 8GB runs 3 to 4B, 16GB up to 14B, 24GB around 20B, 32GB around 32B, 64GB 70B, 128GB beyond 70B.">
-  <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">Practical model size by MacBook unified memory (Q4)</text>
-  <text x="12" y="58" fill="#23201D" font-size="13" font-weight="bold">8GB</text>
+  <text x="12" y="22" fill="#23201D" font-size="16" font-weight="bold">Practical model size by MacBook unified memory (Q4)</text>
+  <text x="12" y="58" fill="#23201D" font-size="14" font-weight="bold">8GB</text>
   <rect x="90" y="44" width="60" height="20" fill="#E4E7EC"/>
-  <text x="158" y="58" fill="#8A8378" font-size="12">3–4B (7–8B is tight) — entry / lightweight</text>
-  <text x="12" y="94" fill="#23201D" font-size="13" font-weight="bold">16GB</text>
+  <text x="158" y="58" fill="#8A8378" font-size="13">3–4B (7–8B is tight) — entry / lightweight</text>
+  <text x="12" y="94" fill="#23201D" font-size="14" font-weight="bold">16GB</text>
   <rect x="90" y="80" width="120" height="20" fill="#E4E7EC"/>
-  <text x="218" y="94" fill="#8A8378" font-size="12">~14B comfortably — the minimum to buy today</text>
-  <text x="12" y="130" fill="#23201D" font-size="13" font-weight="bold">24GB</text>
+  <text x="218" y="94" fill="#8A8378" font-size="13">~14B comfortably — the minimum to buy today</text>
+  <text x="12" y="130" fill="#23201D" font-size="14" font-weight="bold">24GB</text>
   <rect x="90" y="116" width="180" height="20" fill="#E4E7EC"/>
-  <text x="278" y="130" fill="#8A8378" font-size="12">~20B class</text>
-  <text x="12" y="166" fill="#23201D" font-size="13" font-weight="bold">32GB</text>
+  <text x="278" y="130" fill="#8A8378" font-size="13">~20B class</text>
+  <text x="12" y="166" fill="#23201D" font-size="14" font-weight="bold">32GB</text>
   <rect x="90" y="152" width="250" height="20" fill="#C8102E"/>
-  <text x="348" y="166" fill="#23201D" font-size="12" font-weight="bold">32B class — the practical sweet spot</text>
-  <text x="12" y="202" fill="#23201D" font-size="13" font-weight="bold">64GB</text>
+  <text x="348" y="166" fill="#23201D" font-size="13" font-weight="bold">32B class — the practical sweet spot</text>
+  <text x="12" y="202" fill="#23201D" font-size="14" font-weight="bold">64GB</text>
   <rect x="90" y="188" width="360" height="20" fill="#C8102E"/>
-  <text x="458" y="202" fill="#23201D" font-size="12" font-weight="bold">70B class</text>
-  <text x="12" y="238" fill="#23201D" font-size="13" font-weight="bold">128GB</text>
+  <text x="458" y="202" fill="#23201D" font-size="13" font-weight="bold">70B class</text>
+  <text x="12" y="238" fill="#23201D" font-size="14" font-weight="bold">128GB</text>
   <rect x="90" y="224" width="480" height="20" fill="#8A8378"/>
-  <text x="12" y="270" fill="#8A8378" font-size="11">* Usable memory is about 70% of unified memory. A long context needs more.</text>
-  <text x="12" y="288" fill="#8A8378" font-size="11">* This is "does it load." Speed (tok/s) is a separate matter of chip tier (bandwidth).</text>
+  <text x="12" y="270" fill="#8A8378" font-size="12.5">* Usable memory is about 70% of unified memory. A long context needs more.</text>
+  <text x="12" y="288" fill="#8A8378" font-size="12.5">* This is "does it load." Speed (tok/s) is a separate matter of chip tier (bandwidth).</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:0.85em;margin-top:6px;">"How far it loads" is set by memory; "how fast it runs" is set by the chip tier.</figcaption>
 </figure>

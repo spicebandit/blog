@@ -70,29 +70,29 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 210" style="width:100%;height:auto" role="img" aria-label="유럽 FSD 승인 확산. 2026년 4월 네덜란드 승인 이후 리투아니아, 에스토니아, 덴마크, 벨기에가 차례로 인정했고 10월 EU 표결이 예정돼 있다">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">유럽은 나라별로 하나씩 열렸다 — 다음이 EU 전체 표결</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">색이 진해질수록 파급 범위가 넓다</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">유럽은 나라별로 하나씩 열렸다 — 다음이 EU 전체 표결</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">색이 진해질수록 파급 범위가 넓다</text>
   <line x1="55" y1="115" x2="555" y2="115" stroke="#E5DECF" stroke-width="2"/>
   <circle cx="90" cy="115" r="11" fill="#1B4F8A"/>
-  <text x="90" y="93" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">4·10</text>
-  <text x="90" y="141" font-size="10" fill="#23201D" text-anchor="middle">네덜란드</text>
-  <text x="90" y="155" font-size="10" fill="#8A8378" text-anchor="middle">잠정 승인</text>
+  <text x="90" y="93" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">4·10</text>
+  <text x="90" y="141" font-size="12" fill="#23201D" text-anchor="middle">네덜란드</text>
+  <text x="90" y="155" font-size="12" fill="#8A8378" text-anchor="middle">잠정 승인</text>
   <circle cx="215" cy="115" r="8" fill="#A8BDD2"/>
-  <text x="215" y="93" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">5·18</text>
-  <text x="215" y="141" font-size="10" fill="#23201D" text-anchor="middle">리투아니아</text>
+  <text x="215" y="93" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">5·18</text>
+  <text x="215" y="141" font-size="12" fill="#23201D" text-anchor="middle">리투아니아</text>
   <circle cx="300" cy="115" r="8" fill="#A8BDD2"/>
-  <text x="300" y="93" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">5·29</text>
-  <text x="300" y="141" font-size="10" fill="#23201D" text-anchor="middle">에스토니아</text>
+  <text x="300" y="93" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">5·29</text>
+  <text x="300" y="141" font-size="12" fill="#23201D" text-anchor="middle">에스토니아</text>
   <circle cx="385" cy="115" r="8" fill="#A8BDD2"/>
-  <text x="385" y="93" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">6·9</text>
-  <text x="385" y="141" font-size="10" fill="#23201D" text-anchor="middle">덴마크</text>
+  <text x="385" y="93" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">6·9</text>
+  <text x="385" y="141" font-size="12" fill="#23201D" text-anchor="middle">덴마크</text>
   <circle cx="455" cy="115" r="8" fill="#A8BDD2"/>
-  <text x="455" y="93" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">6·10</text>
-  <text x="455" y="141" font-size="10" fill="#23201D" text-anchor="middle">벨기에</text>
+  <text x="455" y="93" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">6·10</text>
+  <text x="455" y="141" font-size="12" fill="#23201D" text-anchor="middle">벨기에</text>
   <circle cx="545" cy="115" r="13" fill="#23201D"/>
-  <text x="545" y="91" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">10월</text>
-  <text x="545" y="141" font-size="10" font-weight="700" fill="#23201D" text-anchor="middle">EU 표결</text>
-  <text x="55" y="190" font-size="11" fill="#8A8378">독일·프랑스·이탈리아는 시연 단계 — EU 차원 결정을 기다리는 중이다</text>
+  <text x="545" y="91" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">10월</text>
+  <text x="545" y="141" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">EU 표결</text>
+  <text x="55" y="190" font-size="12.5" fill="#8A8378">독일·프랑스·이탈리아는 시연 단계 — EU 차원 결정을 기다리는 중이다</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">작은 나라가 먼저 열고 큰 나라가 기다리는 구도다. 이 순서 자체가 규제의 성격을 말해 준다.</figcaption>
 </figure>
@@ -197,17 +197,17 @@ tags: ["테슬라FSD", "자율주행", "DCAS", "자율주행규제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 220" style="width:100%;height:auto" role="img" aria-label="시나리오별 국내 중국산 테슬라 FSD 해금 시점. EU 표결 통과 시 2027년 3분기, 연기 또는 조건부면 2027년 4분기, 부결이면 2028년">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">10월 EU 표결 결과별 국내 해금 시점 (빠를수록 왼쪽)</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">막대가 짧을수록 이르다 · 어느 경우에도 국내 절차는 건너뛸 수 없다</text>
-  <text x="20" y="86" font-size="12" font-weight="700" fill="#23201D">A 통과</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">10월 EU 표결 결과별 국내 해금 시점 (빠를수록 왼쪽)</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">막대가 짧을수록 이르다 · 어느 경우에도 국내 절차는 건너뛸 수 없다</text>
+  <text x="20" y="86" font-size="13" font-weight="700" fill="#23201D">A 통과</text>
   <rect x="110" y="70" width="230" height="24" fill="#A8BDD2"/>
-  <text x="350" y="88" font-size="12" font-weight="700" fill="#23201D">2027년 3분기</text>
-  <text x="20" y="136" font-size="12" font-weight="700" fill="#23201D">B 연기</text>
+  <text x="350" y="88" font-size="13" font-weight="700" fill="#23201D">2027년 3분기</text>
+  <text x="20" y="136" font-size="13" font-weight="700" fill="#23201D">B 연기</text>
   <rect x="110" y="120" width="290" height="24" fill="#1B4F8A"/>
-  <text x="410" y="138" font-size="12" font-weight="700" fill="#23201D">2027년 4분기 (유력)</text>
-  <text x="20" y="186" font-size="12" font-weight="700" fill="#23201D">C 부결</text>
+  <text x="410" y="138" font-size="13" font-weight="700" fill="#23201D">2027년 4분기 (유력)</text>
+  <text x="20" y="186" font-size="13" font-weight="700" fill="#23201D">C 부결</text>
   <rect x="110" y="170" width="400" height="24" fill="#23201D"/>
-  <text x="520" y="188" font-size="12" font-weight="700" fill="#23201D">2028년</text>
+  <text x="520" y="188" font-size="13" font-weight="700" fill="#23201D">2028년</text>
   <line x1="110" y1="200" x2="110" y2="64" stroke="#E5DECF" stroke-width="1"/>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">세 시나리오의 폭은 1년 남짓이다. 다만 이건 지금 확인되는 흐름 안에서의 폭이다.</figcaption>

@@ -40,20 +40,20 @@ Before you start, check your hardware. The entry barrier for local LLMs isn't th
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 250" width="100%" height="auto" role="img" aria-label="Bar chart of approximate file size by model size at 4-bit quantization. 7 to 8B about 5 gigabytes, 12 to 14B about 9 gigabytes, 27 to 32B about 17 to 20 gigabytes, 70B and up about 40 gigabytes or more.">
-  <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">Approx. file size by model size (Q4 quantization · lower = easier entry)</text>
-  <text x="150" y="58" fill="#23201D" font-size="13">7–8B</text>
+  <text x="12" y="22" fill="#23201D" font-size="16" font-weight="bold">Approx. file size by model size (Q4 quantization · lower = easier entry)</text>
+  <text x="150" y="58" fill="#23201D" font-size="14">7–8B</text>
   <rect x="200" y="44" width="55" height="20" fill="#E4E7EC"/>
-  <text x="263" y="58" fill="#8A8378" font-size="12">~5GB — 16GB RAM is enough</text>
-  <text x="132" y="103" fill="#23201D" font-size="13">12–14B</text>
+  <text x="263" y="58" fill="#8A8378" font-size="13">~5GB — 16GB RAM is enough</text>
+  <text x="132" y="103" fill="#23201D" font-size="14">12–14B</text>
   <rect x="200" y="89" width="99" height="20" fill="#E4E7EC"/>
-  <text x="307" y="103" fill="#8A8378" font-size="12">~9GB — 16–24GB RAM</text>
-  <text x="132" y="148" fill="#23201D" font-size="13">27–32B</text>
+  <text x="307" y="103" fill="#8A8378" font-size="13">~9GB — 16–24GB RAM</text>
+  <text x="132" y="148" fill="#23201D" font-size="14">27–32B</text>
   <rect x="200" y="134" width="200" height="20" fill="#C8102E"/>
-  <text x="408" y="148" fill="#23201D" font-size="12" font-weight="bold">~17–20GB — sweet spot for a 32GB Mac</text>
-  <text x="140" y="193" fill="#23201D" font-size="13">70B+</text>
+  <text x="408" y="148" fill="#23201D" font-size="13" font-weight="bold">~17–20GB — sweet spot for a 32GB Mac</text>
+  <text x="140" y="193" fill="#23201D" font-size="14">70B+</text>
   <rect x="200" y="179" width="430" height="20" fill="#E4E7EC"/>
-  <text x="205" y="193" fill="#8A8378" font-size="12">~40GB or more — needs 64GB+</text>
-  <text x="12" y="232" fill="#8A8378" font-size="11">* Rough figures based on GGUF Q4-family file sizes. At runtime, extra memory is needed in proportion to context length.</text>
+  <text x="205" y="193" fill="#8A8378" font-size="13">~40GB or more — needs 64GB+</text>
+  <text x="12" y="232" fill="#8A8378" font-size="12.5">* Rough figures based on GGUF Q4-family file sizes. At runtime, extra memory is needed in proportion to context length.</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:0.85em;margin-top:6px;">For agent use you also need headroom for a 64K context, so plan for one tier more memory than the values shown.</figcaption>
 </figure>

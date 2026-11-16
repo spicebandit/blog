@@ -39,20 +39,20 @@ draft: false
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 250" width="100%" height="auto" role="img" aria-label="모델 크기별 대략적인 파일 크기(4비트 양자화 기준) 막대 그래프. 7~8B 약 5기가바이트, 12~14B 약 9기가바이트, 27~32B 약 17~20기가바이트, 70B 이상 약 40기가바이트 이상.">
-  <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">모델 크기별 대략 파일 크기 (Q4 양자화 · 낮을수록 진입장벽↓)</text>
-  <text x="150" y="58" fill="#23201D" font-size="13">7~8B</text>
+  <text x="12" y="22" fill="#23201D" font-size="16" font-weight="bold">모델 크기별 대략 파일 크기 (Q4 양자화 · 낮을수록 진입장벽↓)</text>
+  <text x="150" y="58" fill="#23201D" font-size="14">7~8B</text>
   <rect x="200" y="44" width="55" height="20" fill="#E4E7EC"/>
-  <text x="263" y="58" fill="#8A8378" font-size="12">약 5GB — 16GB RAM이면 충분</text>
-  <text x="132" y="103" fill="#23201D" font-size="13">12~14B</text>
+  <text x="263" y="58" fill="#8A8378" font-size="13">약 5GB — 16GB RAM이면 충분</text>
+  <text x="132" y="103" fill="#23201D" font-size="14">12~14B</text>
   <rect x="200" y="89" width="99" height="20" fill="#E4E7EC"/>
-  <text x="307" y="103" fill="#8A8378" font-size="12">약 9GB — 16~24GB RAM</text>
-  <text x="132" y="148" fill="#23201D" font-size="13">27~32B</text>
+  <text x="307" y="103" fill="#8A8378" font-size="13">약 9GB — 16~24GB RAM</text>
+  <text x="132" y="148" fill="#23201D" font-size="14">27~32B</text>
   <rect x="200" y="134" width="200" height="20" fill="#C8102E"/>
-  <text x="408" y="148" fill="#23201D" font-size="12" font-weight="bold">약 17~20GB — 32GB 맥의 스위트스폿</text>
-  <text x="140" y="193" fill="#23201D" font-size="13">70B급+</text>
+  <text x="408" y="148" fill="#23201D" font-size="13" font-weight="bold">약 17~20GB — 32GB 맥의 스위트스폿</text>
+  <text x="140" y="193" fill="#23201D" font-size="14">70B급+</text>
   <rect x="200" y="179" width="430" height="20" fill="#E4E7EC"/>
-  <text x="205" y="193" fill="#8A8378" font-size="12">약 40GB 이상 — 64GB+ 필요</text>
-  <text x="12" y="232" fill="#8A8378" font-size="11">* GGUF Q4 계열 파일 크기 기준의 대략값. 실행 시 컨텍스트 길이만큼 메모리가 추가로 필요하다.</text>
+  <text x="205" y="193" fill="#8A8378" font-size="13">약 40GB 이상 — 64GB+ 필요</text>
+  <text x="12" y="232" fill="#8A8378" font-size="12.5">* GGUF Q4 계열 파일 크기 기준의 대략값. 실행 시 컨텍스트 길이만큼 메모리가 추가로 필요하다.</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:0.85em;margin-top:6px;">에이전트 용도로는 64K 컨텍스트 여유까지 계산해야 하므로, 표시된 값보다 한 단계 여유 있는 메모리를 권한다.</figcaption>
 </figure>

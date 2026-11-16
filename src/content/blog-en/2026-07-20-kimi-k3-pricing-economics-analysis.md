@@ -66,8 +66,8 @@ First, positioning. K3's $3/$15 (input/output) is no DeepSeek-style ultra-low pr
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 250" width="100%" height="auto" role="img" aria-label="API output price per million tokens across major models: DeepSeek about 0.7 dollars, Gemini 3 Pro 12, GPT-5.6 Sol and Claude Sonnet and Kimi K3 15, Claude Opus 25">
-  <text x="20" y="26" font-size="15" font-weight="700" fill="#23201D">API output price per 1M tokens (lower = cheaper, $)</text>
-  <g font-size="12.5" fill="#23201D">
+  <text x="20" y="26" font-size="16" font-weight="700" fill="#23201D">API output price per 1M tokens (lower = cheaper, $)</text>
+  <g font-size="13.5" fill="#23201D">
     <text x="150" y="62" text-anchor="end">DeepSeek V4</text>
     <rect x="160" y="48" width="18" height="20" rx="3" fill="#8A8378"/>
     <text x="186" y="63" fill="#23201D">~$0.7</text>
@@ -99,8 +99,8 @@ So where do the economics come from? Three places.
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="Coding benchmark comparison of Kimi K3 and GLM-5.2: DeepSWE K3 67.5 vs GLM 46.2, FrontierSWE K3 81.2 vs GLM 67.3, K3 ahead">
-  <text x="20" y="26" font-size="15" font-weight="700" fill="#23201D">Coding benchmark comparison (higher = better, pts)</text>
-  <g font-size="12.5" fill="#23201D">
+  <text x="20" y="26" font-size="16" font-weight="700" fill="#23201D">Coding benchmark comparison (higher = better, pts)</text>
+  <g font-size="13.5" fill="#23201D">
     <text x="160" y="66" text-anchor="end">DeepSWE · K3</text>
     <rect x="170" y="52" width="328" height="20" rx="3" fill="#C8102E"/>
     <text x="506" y="67" font-weight="700" fill="#C8102E">67.5</text>

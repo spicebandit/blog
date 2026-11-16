@@ -62,28 +62,28 @@ tags: ["한국전력", "전력시장", "반도체클러스터", "민간발전"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 620 250" style="width:100%;height:auto" role="img" aria-label="한전채 발행한도와 잔액 비교. 현행 한도 121조 3천억, 현재 잔액 71조 5천억, 2028년 일몰 후 한도 48조 6천억으로 잔액보다 작아진다">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">2028년, 발행 한도가 잔액보다 작아진다</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">조 원 · 축은 0부터</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">2028년, 발행 한도가 잔액보다 작아진다</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">조 원 · 축은 0부터</text>
   <line x1="70" y1="200" x2="600" y2="200" stroke="#23201D" stroke-width="1.5"/>
   <line x1="70" y1="155" x2="600" y2="155" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="110" x2="600" y2="110" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="65" x2="600" y2="65" stroke="#E5DECF" stroke-width="1"/>
-  <text x="62" y="204" font-size="11" fill="#8A8378" text-anchor="end">0</text>
-  <text x="62" y="159" font-size="11" fill="#8A8378" text-anchor="end">45</text>
-  <text x="62" y="114" font-size="11" fill="#8A8378" text-anchor="end">90</text>
-  <text x="62" y="69" font-size="11" fill="#8A8378" text-anchor="end">135</text>
+  <text x="62" y="204" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+  <text x="62" y="159" font-size="12.5" fill="#8A8378" text-anchor="end">45</text>
+  <text x="62" y="114" font-size="12.5" fill="#8A8378" text-anchor="end">90</text>
+  <text x="62" y="69" font-size="12.5" fill="#8A8378" text-anchor="end">135</text>
   <rect x="120" y="80" width="105" height="120" fill="#A8BDD2"/>
-  <text x="172" y="72" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">121.3</text>
-  <text x="172" y="222" font-size="12" fill="#23201D" text-anchor="middle">현행 한도</text>
-  <text x="172" y="238" font-size="11" fill="#8A8378" text-anchor="middle">5배 특례</text>
+  <text x="172" y="72" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">121.3</text>
+  <text x="172" y="222" font-size="13" fill="#23201D" text-anchor="middle">현행 한도</text>
+  <text x="172" y="238" font-size="12.5" fill="#8A8378" text-anchor="middle">5배 특례</text>
   <rect x="280" y="129" width="105" height="71" fill="#4E7FA8"/>
-  <text x="332" y="121" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">71.5</text>
-  <text x="332" y="222" font-size="12" fill="#23201D" text-anchor="middle">현재 잔액</text>
-  <text x="332" y="238" font-size="11" fill="#8A8378" text-anchor="middle">2026년 6월 말</text>
+  <text x="332" y="121" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">71.5</text>
+  <text x="332" y="222" font-size="13" fill="#23201D" text-anchor="middle">현재 잔액</text>
+  <text x="332" y="238" font-size="12.5" fill="#8A8378" text-anchor="middle">2026년 6월 말</text>
   <rect x="440" y="152" width="105" height="48" fill="#1B4F8A"/>
-  <text x="492" y="144" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">48.6</text>
-  <text x="492" y="222" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">2028년 한도</text>
-  <text x="492" y="238" font-size="11" fill="#8A8378" text-anchor="middle">일몰 후 2배</text>
+  <text x="492" y="144" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">48.6</text>
+  <text x="492" y="222" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2028년 한도</text>
+  <text x="492" y="238" font-size="12.5" fill="#8A8378" text-anchor="middle">일몰 후 2배</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">가운데 막대가 오른쪽 막대보다 높다는 것이 문제의 전부다. 만기가 돌아와도 차환할 한도가 없다.</figcaption>
 </figure>

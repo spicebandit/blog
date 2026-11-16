@@ -70,30 +70,30 @@ tags: ["미국 CPI", "연준", "금리", "석유 최고가격제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0;">
 <svg viewBox="0 0 620 300" width="100%" height="auto" role="img" aria-label="미국 헤드라인 CPI 전월비 추이. 8월 0.4퍼센트, 9월 0.6퍼센트, 10월 0.4퍼센트. 10월은 9월보다 낮다.">
-<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">미국 헤드라인 CPI 전월비 — 10월은 9월보다 낮다</text>
-<text x="12" y="42" font-size="12" fill="#8A8378">계절조정 전월비(%). 괄호는 그 속도가 1년 이어질 경우의 연율 환산</text>
+<text x="12" y="22" font-size="16" font-weight="700" fill="#23201D">미국 헤드라인 CPI 전월비 — 10월은 9월보다 낮다</text>
+<text x="12" y="42" font-size="13" fill="#8A8378">계절조정 전월비(%). 괄호는 그 속도가 1년 이어질 경우의 연율 환산</text>
 <line x1="60" y1="250" x2="600" y2="250" stroke="#E5DECF" stroke-width="1.5"/>
 <line x1="60" y1="180" x2="600" y2="180" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3,3"/>
 <line x1="60" y1="110" x2="600" y2="110" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3,3"/>
-<text x="50" y="254" font-size="11" fill="#8A8378" text-anchor="end">0</text>
-<text x="50" y="184" font-size="11" fill="#8A8378" text-anchor="end">0.2</text>
-<text x="50" y="114" font-size="11" fill="#8A8378" text-anchor="end">0.4</text>
+<text x="50" y="254" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+<text x="50" y="184" font-size="12.5" fill="#8A8378" text-anchor="end">0.2</text>
+<text x="50" y="114" font-size="12.5" fill="#8A8378" text-anchor="end">0.4</text>
 <!-- 8월 -->
 <rect x="110" y="110" width="90" height="140" fill="#A8BDD2"/>
-<text x="155" y="132" font-size="16" font-weight="700" fill="#23201D" text-anchor="middle">0.4%</text>
-<text x="155" y="152" font-size="11" fill="#23201D" text-anchor="middle">(연율 4.9%)</text>
-<text x="155" y="270" font-size="13" fill="#23201D" text-anchor="middle">2026년 8월</text>
+<text x="155" y="132" font-size="17" font-weight="700" fill="#23201D" text-anchor="middle">0.4%</text>
+<text x="155" y="152" font-size="12.5" fill="#23201D" text-anchor="middle">(연율 4.9%)</text>
+<text x="155" y="270" font-size="14" fill="#23201D" text-anchor="middle">2026년 8월</text>
 <!-- 9월 -->
 <rect x="265" y="40" width="90" height="210" fill="#4E7FA8"/>
-<text x="310" y="62" font-size="16" font-weight="700" fill="#FAF6EE" text-anchor="middle">0.6%</text>
-<text x="310" y="82" font-size="11" fill="#FAF6EE" text-anchor="middle">(연율 7.4%)</text>
-<text x="310" y="270" font-size="13" fill="#23201D" text-anchor="middle">9월</text>
+<text x="310" y="62" font-size="17" font-weight="700" fill="#FAF6EE" text-anchor="middle">0.6%</text>
+<text x="310" y="82" font-size="12.5" fill="#FAF6EE" text-anchor="middle">(연율 7.4%)</text>
+<text x="310" y="270" font-size="14" fill="#23201D" text-anchor="middle">9월</text>
 <!-- 10월 -->
 <rect x="420" y="110" width="90" height="140" fill="#1B4F8A"/>
-<text x="465" y="132" font-size="16" font-weight="700" fill="#FAF6EE" text-anchor="middle">0.4%</text>
-<text x="465" y="152" font-size="11" fill="#FAF6EE" text-anchor="middle">(연율 4.9%)</text>
-<text x="465" y="270" font-size="13" fill="#23201D" text-anchor="middle">10월</text>
-<text x="465" y="290" font-size="11" fill="#8A8378" text-anchor="middle">전년비 미발표</text>
+<text x="465" y="132" font-size="17" font-weight="700" fill="#FAF6EE" text-anchor="middle">0.4%</text>
+<text x="465" y="152" font-size="12.5" fill="#FAF6EE" text-anchor="middle">(연율 4.9%)</text>
+<text x="465" y="270" font-size="14" fill="#23201D" text-anchor="middle">10월</text>
+<text x="465" y="290" font-size="12.5" fill="#8A8378" text-anchor="middle">전년비 미발표</text>
 </svg>
 <figcaption style="font-size:12.5px;color:#8A8378;margin-top:10px;line-height:1.6;">전월비만 보면 9월 0.6% → 10월 0.4%로 속도가 떨어졌다. 그런데 시장은 10월을 '재가속'으로 읽었다. 연율 환산은 (1+월간변화율)<sup>12</sup>−1로 필자가 계산한 값이다. 출처: BLS CPI 각 월 보도자료.</figcaption>
 </figure>
@@ -114,21 +114,21 @@ tags: ["미국 CPI", "연준", "금리", "석유 최고가격제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0;">
 <svg viewBox="0 0 620 250" width="100%" height="auto" role="img" aria-label="2026년 9월 미국 물가 전년동월비 비교. 헤드라인 3.7퍼센트, 코어 2.6퍼센트. 차이 1.1퍼센트포인트는 대부분 에너지 때문이다.">
-<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">전년비가 마지막으로 발표된 달(9월) — 헤드라인과 코어의 간격</text>
-<text x="12" y="42" font-size="12" fill="#8A8378">전년동월비(%). 간격 1.1%p의 대부분은 에너지·식품이 만든다</text>
+<text x="12" y="22" font-size="16" font-weight="700" fill="#23201D">전년비가 마지막으로 발표된 달(9월) — 헤드라인과 코어의 간격</text>
+<text x="12" y="42" font-size="13" fill="#8A8378">전년동월비(%). 간격 1.1%p의 대부분은 에너지·식품이 만든다</text>
 <line x1="150" y1="70" x2="150" y2="200" stroke="#E5DECF" stroke-width="1.5"/>
 <line x1="150" y1="200" x2="580" y2="200" stroke="#E5DECF" stroke-width="1.5"/>
 <rect x="150" y="85" width="333" height="40" fill="#1B4F8A"/>
-<text x="140" y="110" font-size="13" font-weight="700" fill="#23201D" text-anchor="end">헤드라인</text>
-<text x="470" y="110" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">3.7%</text>
+<text x="140" y="110" font-size="14" font-weight="700" fill="#23201D" text-anchor="end">헤드라인</text>
+<text x="470" y="110" font-size="16" font-weight="700" fill="#FAF6EE" text-anchor="end">3.7%</text>
 <rect x="150" y="145" width="234" height="40" fill="#A8BDD2"/>
-<text x="140" y="170" font-size="13" font-weight="700" fill="#23201D" text-anchor="end">코어</text>
-<text x="371" y="170" font-size="15" font-weight="700" fill="#23201D" text-anchor="end">2.6%</text>
+<text x="140" y="170" font-size="14" font-weight="700" fill="#23201D" text-anchor="end">코어</text>
+<text x="371" y="170" font-size="16" font-weight="700" fill="#23201D" text-anchor="end">2.6%</text>
 <line x1="384" y1="145" x2="384" y2="215" stroke="#23201D" stroke-width="1" stroke-dasharray="3,3"/>
 <line x1="483" y1="85" x2="483" y2="215" stroke="#23201D" stroke-width="1" stroke-dasharray="3,3"/>
-<text x="433" y="232" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">1.1%p</text>
+<text x="433" y="232" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">1.1%p</text>
 <line x1="330" y1="200" x2="330" y2="212" stroke="#8A8378" stroke-width="1"/>
-<text x="330" y="228" font-size="11" fill="#8A8378" text-anchor="middle">연준 목표 2%</text>
+<text x="330" y="228" font-size="12.5" fill="#8A8378" text-anchor="middle">연준 목표 2%</text>
 </svg>
 <figcaption style="font-size:12.5px;color:#8A8378;margin-top:10px;line-height:1.6;">두 지표의 격차 1.1%p는 코어에서 빠진 항목(식품·에너지)이 더 빠르게 올랐기 때문에 생긴다. 기여도 자체와는 다른 개념이다. 10월분은 전년비가 발표되지 않아 같은 비교를 할 수 없다. 출처: BLS CPI 2026년 9월 보도자료.</figcaption>
 </figure>
@@ -167,22 +167,22 @@ tags: ["미국 CPI", "연준", "금리", "석유 최고가격제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0;">
 <svg viewBox="0 0 620 230" width="100%" height="auto" role="img" aria-label="한국 10월 소비자물가 2.8퍼센트에 석유 최고가격제 효과 0.8퍼센트포인트를 더하면 약 3.6퍼센트가 된다.">
-<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">한국 10월 물가 2.8% — 상한제를 걷어내면 3.6%</text>
-<text x="12" y="42" font-size="12" fill="#8A8378">전년동월비(%). 발표치와 정부 추정 기여도</text>
+<text x="12" y="22" font-size="16" font-weight="700" fill="#23201D">한국 10월 물가 2.8% — 상한제를 걷어내면 3.6%</text>
+<text x="12" y="42" font-size="13" fill="#8A8378">전년동월비(%). 발표치와 정부 추정 기여도</text>
 <line x1="130" y1="70" x2="130" y2="180" stroke="#E5DECF" stroke-width="1.5"/>
 <line x1="130" y1="180" x2="580" y2="180" stroke="#E5DECF" stroke-width="1.5"/>
 <rect x="130" y="85" width="280" height="36" fill="#A8BDD2"/>
-<text x="120" y="108" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="end">발표치</text>
-<text x="398" y="108" font-size="14" font-weight="700" fill="#23201D" text-anchor="end">2.8%</text>
+<text x="120" y="108" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="end">발표치</text>
+<text x="398" y="108" font-size="15" font-weight="700" fill="#23201D" text-anchor="end">2.8%</text>
 <rect x="130" y="133" width="280" height="36" fill="#A8BDD2"/>
 <rect x="410" y="133" width="80" height="36" fill="#1B4F8A"/>
-<text x="120" y="156" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="end">상한제 제외 시</text>
-<text x="478" y="156" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="end">3.6%</text>
-<text x="450" y="127" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">+0.8%p</text>
-<text x="130" y="200" font-size="11" fill="#8A8378" text-anchor="middle">0</text>
-<text x="330" y="200" font-size="11" fill="#8A8378" text-anchor="middle">2%</text>
-<text x="490" y="200" font-size="11" fill="#8A8378" text-anchor="middle">3.6%</text>
-<text x="12" y="222" font-size="11.5" fill="#8A8378">보상 재원: 확보 예산 약 5조 6,500억 원(2026 예비비+2027 예산안) · 지급액 미확정</text>
+<text x="120" y="156" font-size="13.5" font-weight="700" fill="#23201D" text-anchor="end">상한제 제외 시</text>
+<text x="478" y="156" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="end">3.6%</text>
+<text x="450" y="127" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">+0.8%p</text>
+<text x="130" y="200" font-size="12.5" fill="#8A8378" text-anchor="middle">0</text>
+<text x="330" y="200" font-size="12.5" fill="#8A8378" text-anchor="middle">2%</text>
+<text x="490" y="200" font-size="12.5" fill="#8A8378" text-anchor="middle">3.6%</text>
+<text x="12" y="222" font-size="13" fill="#8A8378">보상 재원: 확보 예산 약 5조 6,500억 원(2026 예비비+2027 예산안) · 지급액 미확정</text>
 </svg>
 <figcaption style="font-size:12.5px;color:#8A8378;margin-top:10px;line-height:1.6;">상한제는 물가를 없앤 것이 아니라 가계 고지서에서 재정으로 옮긴 것이다. 출처: 기획재정부 추정, 국회예산정책처.</figcaption>
 </figure>

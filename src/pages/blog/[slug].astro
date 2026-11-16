@@ -150,6 +150,26 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
     max-width: 700px; /* 읽기 가독폭 ≈ 신문 한 단(줄이 너무 길지 않게) */
   }
 
+  /* ── 그래프(figure)는 글줄보다 넓게 (2026-11-17 지시) ──
+     글줄은 700px가 읽기에 맞지만, 인라인 SVG 그래프는 viewBox가 600~820이라
+     700px 폭에 넣으면 전체가 축소돼 라벨이 10px 밑으로 내려간다. 메인 칸은
+     실제로 868px(1200 − 사이드바 300 − gap 32)인데 168px를 안 쓰고 있었다.
+     figure만 그 여백까지 쓰게 하면 그래프와 글씨가 같은 비율로 커진다 —
+     균일 확대라 라벨이 겹치거나 밖으로 나갈 위험이 없다. */
+  .article-body :global(figure) {
+    width: calc(100% + 168px);
+    max-width: calc(100vw - 2rem);
+    margin-left: 0;
+    margin-right: -168px;
+  }
+  /* 사이드바가 사라지는 폭에서는 글줄과 같은 폭으로 되돌린다 */
+  @media (max-width: 1199px) {
+    .article-body :global(figure) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
   /* 신문 디테일: 첫 문단 드롭캡 */
   .article-body > :global(p:first-of-type)::first-letter {
     font-family: var(--font-serif);

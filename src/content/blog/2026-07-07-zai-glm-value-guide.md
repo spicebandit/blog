@@ -47,29 +47,29 @@ z.ai는 칭화대 계열에서 출발한 **Zhipu AI**의 글로벌 서비스 브
 
 <figure style="margin:1.5rem 0;padding:1rem;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="출력 토큰 100만 개당 가격 비교 막대그래프. GLM-5.2 4.4달러, GLM-4.7-FlashX 0.4달러, Claude Sonnet 4.6 15달러.">
-  <text x="320" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#23201D">출력 토큰 100만 개당 가격 (USD · 낮을수록 저렴)</text>
+  <text x="320" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#23201D">출력 토큰 100만 개당 가격 (USD · 낮을수록 저렴)</text>
   <!-- y축 눈금 -->
   <line x1="80" y1="250" x2="600" y2="250" stroke="#23201D" stroke-width="1.5"/>
   <line x1="80" y1="60" x2="80" y2="250" stroke="#E4E7EC" stroke-width="1"/>
-  <text x="72" y="254" text-anchor="end" font-size="11" fill="#8A8378">0</text>
-  <text x="72" y="188" text-anchor="end" font-size="11" fill="#8A8378">5</text>
-  <text x="72" y="125" text-anchor="end" font-size="11" fill="#8A8378">10</text>
-  <text x="72" y="64" text-anchor="end" font-size="11" fill="#8A8378">15</text>
+  <text x="72" y="254" text-anchor="end" font-size="12.5" fill="#8A8378">0</text>
+  <text x="72" y="188" text-anchor="end" font-size="12.5" fill="#8A8378">5</text>
+  <text x="72" y="125" text-anchor="end" font-size="12.5" fill="#8A8378">10</text>
+  <text x="72" y="64" text-anchor="end" font-size="12.5" fill="#8A8378">15</text>
   <line x1="80" y1="187" x2="600" y2="187" stroke="#E4E7EC" stroke-width="0.5"/>
   <line x1="80" y1="124" x2="600" y2="124" stroke="#E4E7EC" stroke-width="0.5"/>
   <!-- 막대: 스케일 12.6px/$ (250 기준선 - 값*12.6) -->
   <!-- GLM-5.2 4.4 -> 높이 55.5 -->
   <rect x="150" y="194" width="90" height="56" fill="#C8102E"/>
-  <text x="195" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#C8102E">$4.40</text>
-  <text x="195" y="270" text-anchor="middle" font-size="12" fill="#23201D">GLM-5.2</text>
+  <text x="195" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#C8102E">$4.40</text>
+  <text x="195" y="270" text-anchor="middle" font-size="13" fill="#23201D">GLM-5.2</text>
   <!-- FlashX 0.4 -> 높이 5 -->
   <rect x="290" y="245" width="90" height="5" fill="#C8102E" opacity="0.6"/>
-  <text x="335" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#C8102E">$0.40</text>
-  <text x="335" y="270" text-anchor="middle" font-size="12" fill="#23201D">GLM-4.7-FlashX</text>
+  <text x="335" y="238" text-anchor="middle" font-size="14" font-weight="700" fill="#C8102E">$0.40</text>
+  <text x="335" y="270" text-anchor="middle" font-size="13" fill="#23201D">GLM-4.7-FlashX</text>
   <!-- Claude 15 -> 높이 189 -->
   <rect x="430" y="61" width="90" height="189" fill="#8A8378"/>
-  <text x="475" y="53" text-anchor="middle" font-size="13" font-weight="700" fill="#23201D">$15.00</text>
-  <text x="475" y="270" text-anchor="middle" font-size="12" fill="#23201D">Claude Sonnet 4.6</text>
+  <text x="475" y="53" text-anchor="middle" font-size="14" font-weight="700" fill="#23201D">$15.00</text>
+  <text x="475" y="270" text-anchor="middle" font-size="13" fill="#23201D">Claude Sonnet 4.6</text>
 </svg>
 <figcaption style="font-size:0.85rem;color:#8A8378;margin-top:0.5rem;">같은 1M 출력 토큰에 GLM-5.2는 $4.40, 비교군 Claude Sonnet 4.6은 $15.00. 대량으로 돌릴수록 격차가 벌어진다.</figcaption>
 </figure>

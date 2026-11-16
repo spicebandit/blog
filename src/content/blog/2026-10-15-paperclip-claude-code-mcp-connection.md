@@ -29,39 +29,39 @@ tags: ["Paperclip", "클로드코드", "MCP", "AI 에이전트 회사"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 330" style="width:100%;height:auto" role="img" aria-label="페이퍼클립과 클로드 코드를 연결하는 두 방향 비교 그림. 위쪽 Process Adapter는 페이퍼클립이 클로드 코드를 자식 프로세스로 실행해 직원처럼 일을 시키는 방향이고, 아래쪽 Assistant Connection은 클로드 코드가 MCP로 페이퍼클립에 로그인 사용자로 접속해 태스크를 읽고 만들고 위임하는 방향이다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">같은 두 도구, 정반대 방향 — 화살표가 어디서 어디로 가는지가 전부입니다</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">같은 두 도구, 정반대 방향 — 화살표가 어디서 어디로 가는지가 전부입니다</text>
 <!-- 기존 방식 -->
-<text x="0" y="48" font-size="12.5" font-weight="700" fill="#4E7FA8">기존 — Process Adapter (adapterType: claude_local)</text>
+<text x="0" y="48" font-size="13.5" font-weight="700" fill="#4E7FA8">기존 — Process Adapter (adapterType: claude_local)</text>
 <rect x="0" y="58" width="190" height="62" fill="#4E7FA8" rx="4" />
-<text x="16" y="84" font-size="13" font-weight="700" fill="#FAF6EE">페이퍼클립</text>
-<text x="16" y="104" font-size="11" fill="#E5DECF">사장 — 일을 시킴</text>
+<text x="16" y="84" font-size="14" font-weight="700" fill="#FAF6EE">페이퍼클립</text>
+<text x="16" y="104" font-size="12.5" fill="#E5DECF">사장 — 일을 시킴</text>
 <line x1="190" y1="89" x2="320" y2="89" stroke="#4E7FA8" stroke-width="2.5" />
 <path d="M320 89 L310 84 L310 94 Z" fill="#4E7FA8" />
-<text x="200" y="80" font-size="11" fill="#8A8378">자식 프로세스로 실행</text>
-<text x="200" y="106" font-size="11" fill="#8A8378">(같은 머신)</text>
+<text x="200" y="80" font-size="12.5" fill="#8A8378">자식 프로세스로 실행</text>
+<text x="200" y="106" font-size="12.5" fill="#8A8378">(같은 머신)</text>
 <rect x="320" y="58" width="190" height="62" fill="#A8BDD2" rx="4" />
-<text x="336" y="84" font-size="13" font-weight="700" fill="#23201D">클로드 코드</text>
-<text x="336" y="104" font-size="11" fill="#23201D">직원 — 일을 받음</text>
-<text x="528" y="80" font-size="11" fill="#8A8378">일감이 위에서 내려옴</text>
-<text x="528" y="106" font-size="11" fill="#8A8378">하트비트로 돌아감</text>
+<text x="336" y="84" font-size="14" font-weight="700" fill="#23201D">클로드 코드</text>
+<text x="336" y="104" font-size="12.5" fill="#23201D">직원 — 일을 받음</text>
+<text x="528" y="80" font-size="12.5" fill="#8A8378">일감이 위에서 내려옴</text>
+<text x="528" y="106" font-size="12.5" fill="#8A8378">하트비트로 돌아감</text>
 <!-- 구분선 -->
 <line x1="0" y1="146" x2="760" y2="146" stroke="#E5DECF" stroke-width="1" />
 <!-- 신규 방식 -->
-<text x="0" y="178" font-size="12.5" font-weight="700" fill="#1B4F8A">신규(2026-10-12) — Assistant Connection (MCP)</text>
+<text x="0" y="178" font-size="13.5" font-weight="700" fill="#1B4F8A">신규(2026-10-12) — Assistant Connection (MCP)</text>
 <rect x="0" y="188" width="190" height="62" fill="#A8BDD2" rx="4" />
-<text x="16" y="214" font-size="13" font-weight="700" fill="#23201D">페이퍼클립</text>
-<text x="16" y="234" font-size="11" fill="#23201D">일하는 곳 — 접속 대상</text>
+<text x="16" y="214" font-size="14" font-weight="700" fill="#23201D">페이퍼클립</text>
+<text x="16" y="234" font-size="12.5" fill="#23201D">일하는 곳 — 접속 대상</text>
 <line x1="320" y1="219" x2="190" y2="219" stroke="#1B4F8A" stroke-width="2.5" />
 <path d="M190 219 L200 214 L200 224 Z" fill="#1B4F8A" />
-<text x="200" y="210" font-size="11" fill="#8A8378">OAuth·device-code로 접속</text>
-<text x="200" y="236" font-size="11" fill="#8A8378">(로그인 사용자 자격)</text>
+<text x="200" y="210" font-size="12.5" fill="#8A8378">OAuth·device-code로 접속</text>
+<text x="200" y="236" font-size="12.5" fill="#8A8378">(로그인 사용자 자격)</text>
 <rect x="320" y="188" width="190" height="62" fill="#1B4F8A" rx="4" />
-<text x="336" y="214" font-size="13" font-weight="700" fill="#FAF6EE">클로드 코드</text>
-<text x="336" y="234" font-size="11" fill="#E5DECF">동료 — 일을 만들고 맡김</text>
-<text x="528" y="210" font-size="11" fill="#8A8378">내가 쓰던 클로드 코드가</text>
-<text x="528" y="236" font-size="11" fill="#8A8378">회사 업무에 손을 뻗음</text>
-<text x="0" y="288" font-size="12" fill="#8A8378">※ 둘은 배타적이지 않습니다. 직원으로 돌리는 에이전트와, 내가 쓰는 클로드 코드를 동시에 둘 수 있습니다.</text>
-<text x="0" y="310" font-size="12" fill="#8A8378">※ MCP 쪽은 아직 Experimental 플래그가 필요한 실험 기능입니다.</text>
+<text x="336" y="214" font-size="14" font-weight="700" fill="#FAF6EE">클로드 코드</text>
+<text x="336" y="234" font-size="12.5" fill="#E5DECF">동료 — 일을 만들고 맡김</text>
+<text x="528" y="210" font-size="12.5" fill="#8A8378">내가 쓰던 클로드 코드가</text>
+<text x="528" y="236" font-size="12.5" fill="#8A8378">회사 업무에 손을 뻗음</text>
+<text x="0" y="288" font-size="13" fill="#8A8378">※ 둘은 배타적이지 않습니다. 직원으로 돌리는 에이전트와, 내가 쓰는 클로드 코드를 동시에 둘 수 있습니다.</text>
+<text x="0" y="310" font-size="13" fill="#8A8378">※ MCP 쪽은 아직 Experimental 플래그가 필요한 실험 기능입니다.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">같은 두 이름이 등장하지만 역할이 뒤바뀝니다. 기존 방식에서 클로드 코드는 지시를 받는 직원이고, 새 방식에서는 태스크를 만들고 위임하는 쪽입니다. 출처: 페이퍼클립 공식 문서 및 v2026.1012.0 릴리스 노트(2026-10-15 확인).</figcaption>
 </figure>

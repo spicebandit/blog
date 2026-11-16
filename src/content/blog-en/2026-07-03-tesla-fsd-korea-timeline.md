@@ -17,14 +17,14 @@ koSlug: 2026-07-03-tesla-fsd-korea-timeline
 
 <figure>
 <svg viewBox="0 0 800 320" role="img" aria-label="Proportional bar showing that only 4,292 of Korea's 180,684 registered Teslas (2.4%) can legally use FSD, plus a breakdown of the eligible fleet: Model X 2,708, Model S 1,193, Cybertruck 391" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">Of 180,684 Teslas in Korea, only 4,292 (2.4%) can legally run FSD</text>
+  <text x="20" y="32" font-size="17" font-weight="700" fill="#23201D">Of 180,684 Teslas in Korea, only 4,292 (2.4%) can legally run FSD</text>
   <rect x="50" y="60" width="17" height="40" fill="#C8102E"/>
   <rect x="67" y="60" width="683" height="40" fill="#E4E7EC"/>
   <line x1="58" y1="104" x2="58" y2="122" stroke="#C8102E" stroke-width="1.5"/>
-  <text x="50" y="138" font-size="13" font-weight="700" fill="#C8102E">FSD eligible: 4,292 (2.4%)</text>
-  <text x="750" y="138" font-size="13" fill="#8A8378" text-anchor="end">Not eligible (China-built Model 3/Y etc.): 176,392 (97.6%)</text>
-  <text x="20" y="180" font-size="14" font-weight="700" fill="#23201D">The 4,292 eligible cars (all US-built)</text>
-  <g font-size="13" fill="#23201D">
+  <text x="50" y="138" font-size="14" font-weight="700" fill="#C8102E">FSD eligible: 4,292 (2.4%)</text>
+  <text x="750" y="138" font-size="14" fill="#8A8378" text-anchor="end">Not eligible (China-built Model 3/Y etc.): 176,392 (97.6%)</text>
+  <text x="20" y="180" font-size="15" font-weight="700" fill="#23201D">The 4,292 eligible cars (all US-built)</text>
+  <g font-size="14" fill="#23201D">
     <text x="160" y="212" text-anchor="end">Model X</text>
     <rect x="170" y="196" width="400" height="22" rx="4" fill="#C8102E"/>
     <text x="578" y="212" font-weight="700" fill="#23201D">2,708</text>
@@ -89,8 +89,8 @@ To gauge Korea's timing, zoom out to the globe. FSD (Supervised) is now leaping 
 
 <figure>
 <svg viewBox="0 0 1000 540" role="img" aria-label="Schematic map of Tesla FSD (Supervised) global spread. The US, Canada, Mexico, Puerto Rico, Australia, the Netherlands, and Korea are deployed; China, the Baltics, and Sweden are approved or expanding; Germany, France, and other EU states are pending review." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">Tesla FSD (Supervised) global spread — schematic (July 2026)</text>
-  <text x="24" y="54" font-size="12" fill="#8A8378">A wave that started in North America now reaches Australia, Europe, and Asia. Korea is the 2nd market to get v14 Lite.</text>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">Tesla FSD (Supervised) global spread — schematic (July 2026)</text>
+  <text x="24" y="54" font-size="13" fill="#8A8378">A wave that started in North America now reaches Australia, Europe, and Asia. Korea is the 2nd market to get v14 Lite.</text>
   <g fill="#E4E7EC" stroke="#D8CFBB" stroke-width="1">
     <path d="M150,95 L250,88 L300,110 L300,140 L262,150 L240,168 L225,205 L208,195 L214,160 L188,150 L162,128 Z"/>
     <path d="M262,220 L305,214 L332,244 L326,300 L300,360 L286,395 L276,345 L292,292 L262,258 Z"/>
@@ -122,18 +122,18 @@ To gauge Korea's timing, zoom out to the globe. FSD (Supervised) is now leaping 
     <circle cx="524" cy="120" r="5"/>
     <circle cx="500" cy="126" r="5"/>
   </g>
-  <g font-size="12" fill="#23201D" font-weight="700">
+  <g font-size="13" fill="#23201D" font-weight="700">
     <text x="205" y="140" text-anchor="middle">US</text>
     <text x="835" y="138" text-anchor="middle">Korea</text>
     <text x="862" y="336" text-anchor="middle">Australia</text>
     <text x="515" y="98" text-anchor="middle">Netherlands</text>
   </g>
-  <g font-size="11" fill="#8A8378">
+  <g font-size="12.5" fill="#8A8378">
     <text x="792" y="172" text-anchor="middle">China</text>
     <text x="548" y="76" text-anchor="middle">Baltics/Nordics</text>
     <text x="490" y="146" text-anchor="middle">DE/FR pending</text>
   </g>
-  <g font-size="12" fill="#23201D">
+  <g font-size="13" fill="#23201D">
     <circle cx="40" cy="500" r="6" fill="#C8102E"/><text x="54" y="504">Deployed</text>
     <circle cx="180" cy="500" r="6" fill="#23201D"/><text x="194" y="504">Approved/expanding</text>
     <circle cx="400" cy="500" r="6" fill="#F6F7F9" stroke="#8A8378" stroke-width="2"/><text x="414" y="504">Pending review</text>
@@ -151,32 +151,32 @@ Lay the ministry's procedural blocks on a calendar and three paths emerge.
 
 <figure>
 <svg viewBox="0 0 800 300" role="img" aria-label="Timeline of expected FSD availability by group in Korea: US-built AI4 in use since November 2025, US-built HW3 in the second half of 2026, China-built AI4 between H1 2027 (optimistic) and Q4 2027 (base case), with a pessimistic scenario extending into 2028" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">Expected FSD unlock timing by group (as of July 2026)</text>
+  <text x="20" y="30" font-size="17" font-weight="700" fill="#23201D">Expected FSD unlock timing by group (as of July 2026)</text>
   <g stroke="#E4E7EC" stroke-width="1">
     <line x1="197" y1="50" x2="197" y2="240"/>
     <line x1="385" y1="50" x2="385" y2="240"/>
     <line x1="572" y1="50" x2="572" y2="240"/>
     <line x1="760" y1="50" x2="760" y2="240"/>
   </g>
-  <g font-size="12" fill="#8A8378">
+  <g font-size="13" fill="#8A8378">
     <text x="197" y="258" text-anchor="middle">2026</text>
     <text x="385" y="258" text-anchor="middle">2027</text>
     <text x="572" y="258" text-anchor="middle">2028</text>
     <text x="760" y="258" text-anchor="middle">2029</text>
   </g>
-  <text x="188" y="78" font-size="13" fill="#23201D" text-anchor="end">① US-built AI4</text>
+  <text x="188" y="78" font-size="14" fill="#23201D" text-anchor="end">① US-built AI4</text>
   <rect x="166" y="62" width="594" height="20" rx="4" fill="#C8102E"/>
-  <text x="180" y="77" font-size="12" font-weight="700" fill="#fff">In use since Nov 2025</text>
-  <text x="188" y="123" font-size="13" fill="#23201D" text-anchor="end">② US-built HW3</text>
+  <text x="180" y="77" font-size="13" font-weight="700" fill="#fff">In use since Nov 2025</text>
+  <text x="188" y="123" font-size="14" fill="#23201D" text-anchor="end">② US-built HW3</text>
   <rect x="291" y="107" width="94" height="20" rx="4" fill="#23201D"/>
-  <text x="391" y="122" font-size="12" fill="#23201D">H2 2026 (V14 Lite staged rollout)</text>
-  <text x="188" y="168" font-size="13" fill="#23201D" text-anchor="end">③ China-built AI4</text>
+  <text x="391" y="122" font-size="13" fill="#23201D">H2 2026 (V14 Lite staged rollout)</text>
+  <text x="188" y="168" font-size="14" fill="#23201D" text-anchor="end">③ China-built AI4</text>
   <rect x="385" y="152" width="140" height="20" rx="4" fill="#8A8378"/>
   <rect x="525" y="152" width="94" height="20" rx="4" fill="#C8102E"/>
-  <text x="625" y="167" font-size="12" fill="#23201D">Optimistic H1 2027 ~ Base Q4 2027</text>
-  <text x="188" y="213" font-size="13" fill="#23201D" text-anchor="end">④ Pessimistic case</text>
+  <text x="625" y="167" font-size="13" fill="#23201D">Optimistic H1 2027 ~ Base Q4 2027</text>
+  <text x="188" y="213" font-size="14" fill="#23201D" text-anchor="end">④ Pessimistic case</text>
   <rect x="572" y="197" width="188" height="20" rx="4" fill="#E4E7EC"/>
-  <text x="580" y="212" font-size="12" fill="#8A8378">Could slip into 2028</text>
+  <text x="580" y="212" font-size="13" fill="#8A8378">Could slip into 2028</text>
 </svg>
 <figcaption>Author's estimate based on the ministry's disclosed procedural durations (6 months consultation + 6 months drafting + 3–4 months notice-to-review). Dark blue marks the center of gravity. Source: <a href="https://www.bloter.net/news/articleView.html?idxno=647466">Bloter (quoting MOLIT)</a></figcaption>
 </figure>

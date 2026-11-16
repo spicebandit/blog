@@ -56,23 +56,23 @@ tags: ["IRA", "배터리", "미국 민주당", "에너지정책"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 290" style="width:100%;height:auto" role="img" aria-label="미국 소비자 전기차 보조금 종료 이후 전기차 판매와 배터리 공장 가동률 변화. 2025년 9월 30일 보조금 종료 뒤 2026년 1분기 판매는 전년 대비 27퍼센트, 2분기는 25퍼센트 감소했고 배터리 셀 공장 가동률은 블룸버그NEF가 70퍼센트 아래로 전망했다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">보조금이 끊긴 건 공장이 아니라 수요였다</text>
-<text x="0" y="38" font-size="11.5" fill="#8A8378">2025년 9월 30일 소비자 전기차 공제(30D) 종료 이후 미국 시장</text>
-<text x="0" y="78" font-size="12" fill="#23201D">2026년 1분기 판매</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">보조금이 끊긴 건 공장이 아니라 수요였다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">2025년 9월 30일 소비자 전기차 공제(30D) 종료 이후 미국 시장</text>
+<text x="0" y="78" font-size="13" fill="#23201D">2026년 1분기 판매</text>
 <rect x="190" y="62" width="324" height="24" fill="#1B4F8A" rx="3" />
-<text x="204" y="80" font-size="12.5" font-weight="700" fill="#FAF6EE">전년 대비 −27%</text>
-<text x="524" y="80" font-size="11" fill="#8A8378">21만 6,399대 · 신차의 5.8%</text>
-<text x="0" y="126" font-size="12" fill="#23201D">2026년 2분기 판매</text>
+<text x="204" y="80" font-size="13.5" font-weight="700" fill="#FAF6EE">전년 대비 −27%</text>
+<text x="524" y="80" font-size="12.5" fill="#8A8378">21만 6,399대 · 신차의 5.8%</text>
+<text x="0" y="126" font-size="13" fill="#23201D">2026년 2분기 판매</text>
 <rect x="190" y="110" width="300" height="24" fill="#4E7FA8" rx="3" />
-<text x="204" y="128" font-size="12.5" font-weight="700" fill="#FAF6EE">전년 대비 −25%</text>
-<text x="0" y="174" font-size="12" font-weight="700" fill="#23201D">셀 공장 가동률</text>
+<text x="204" y="128" font-size="13.5" font-weight="700" fill="#FAF6EE">전년 대비 −25%</text>
+<text x="0" y="174" font-size="13" font-weight="700" fill="#23201D">셀 공장 가동률</text>
 <rect x="190" y="158" width="280" height="24" fill="#A8BDD2" rx="3" />
-<text x="204" y="176" font-size="12.5" font-weight="700" fill="#23201D">70% 아래 (BNEF 2026 전망)</text>
-<text x="480" y="176" font-size="11" fill="#8A8378">생산능력이 수요를 앞질렀다</text>
-<text x="0" y="220" font-size="11" fill="#8A8378">※ 45X 공제는 '만들어 판 만큼' 주는 생산 연동 공제다. 가동률이 떨어지면 공제도 그만큼 줄어든다.</text>
-<text x="0" y="238" font-size="11" fill="#8A8378">※ 얼티엄 스프링힐 공장은 2026년 1월 EV 셀 생산을 멈춘 뒤 ESS용 LFP로 전환했다(3월 결정, 2분기 가동).</text>
-<text x="0" y="256" font-size="11" fill="#8A8378">※ 2025년 8~9월에는 공제 종료 전 막차 수요로 판매가 사상 최고를 찍었다 — 그 반동도 섞여 있다.</text>
-<text x="0" y="278" font-size="11" fill="#8A8378">출처: Cox Automotive/Kelley Blue Book(분기 판매), BloombergNEF(가동률 전망), Manufacturing Magazine. 분기별 집계 기관이 달라 대수는 직접 비교하지 않았다.</text>
+<text x="204" y="176" font-size="13.5" font-weight="700" fill="#23201D">70% 아래 (BNEF 2026 전망)</text>
+<text x="480" y="176" font-size="12.5" fill="#8A8378">생산능력이 수요를 앞질렀다</text>
+<text x="0" y="220" font-size="12.5" fill="#8A8378">※ 45X 공제는 '만들어 판 만큼' 주는 생산 연동 공제다. 가동률이 떨어지면 공제도 그만큼 줄어든다.</text>
+<text x="0" y="238" font-size="12.5" fill="#8A8378">※ 얼티엄 스프링힐 공장은 2026년 1월 EV 셀 생산을 멈춘 뒤 ESS용 LFP로 전환했다(3월 결정, 2분기 가동).</text>
+<text x="0" y="256" font-size="12.5" fill="#8A8378">※ 2025년 8~9월에는 공제 종료 전 막차 수요로 판매가 사상 최고를 찍었다 — 그 반동도 섞여 있다.</text>
+<text x="0" y="278" font-size="12.5" fill="#8A8378">출처: Cox Automotive/Kelley Blue Book(분기 판매), BloombergNEF(가동률 전망), Manufacturing Magazine. 분기별 집계 기관이 달라 대수는 직접 비교하지 않았다.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">제조 공제를 아무리 지켜줘도 팔리지 않으면 받을 공제가 없습니다. 한국 배터리사의 실적을 되돌리는 열쇠는 45X가 아니라 30D 쪽에 있습니다.</figcaption>
 </figure>

@@ -23,26 +23,26 @@ tags: ["맥북", "로컬LLM", "애플실리콘", "Ollama"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="맥북 통합메모리별 로컬LLM 가능 모델. 8기가 3~4B, 16기가 14B까지, 24기가 20B급, 32기가 32B급, 64기가 70B, 128기가 70B 이상.">
-  <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">맥북 통합메모리별 실용 모델 크기 (Q4 기준)</text>
-  <text x="12" y="58" fill="#23201D" font-size="13" font-weight="bold">8GB</text>
+  <text x="12" y="22" fill="#23201D" font-size="16" font-weight="bold">맥북 통합메모리별 실용 모델 크기 (Q4 기준)</text>
+  <text x="12" y="58" fill="#23201D" font-size="14" font-weight="bold">8GB</text>
   <rect x="90" y="44" width="60" height="20" fill="#E4E7EC"/>
-  <text x="158" y="58" fill="#8A8378" font-size="12">3~4B (7~8B는 빠듯) — 입문·경량</text>
-  <text x="12" y="94" fill="#23201D" font-size="13" font-weight="bold">16GB</text>
+  <text x="158" y="58" fill="#8A8378" font-size="13">3~4B (7~8B는 빠듯) — 입문·경량</text>
+  <text x="12" y="94" fill="#23201D" font-size="14" font-weight="bold">16GB</text>
   <rect x="90" y="80" width="120" height="20" fill="#E4E7EC"/>
-  <text x="218" y="94" fill="#8A8378" font-size="12">~14B 쾌적 — 지금 사는 최소 권장</text>
-  <text x="12" y="130" fill="#23201D" font-size="13" font-weight="bold">24GB</text>
+  <text x="218" y="94" fill="#8A8378" font-size="13">~14B 쾌적 — 지금 사는 최소 권장</text>
+  <text x="12" y="130" fill="#23201D" font-size="14" font-weight="bold">24GB</text>
   <rect x="90" y="116" width="180" height="20" fill="#E4E7EC"/>
-  <text x="278" y="130" fill="#8A8378" font-size="12">~20B급</text>
-  <text x="12" y="166" fill="#23201D" font-size="13" font-weight="bold">32GB</text>
+  <text x="278" y="130" fill="#8A8378" font-size="13">~20B급</text>
+  <text x="12" y="166" fill="#23201D" font-size="14" font-weight="bold">32GB</text>
   <rect x="90" y="152" width="250" height="20" fill="#C8102E"/>
-  <text x="348" y="166" fill="#23201D" font-size="12" font-weight="bold">32B급 — 실용 스위트스폿</text>
-  <text x="12" y="202" fill="#23201D" font-size="13" font-weight="bold">64GB</text>
+  <text x="348" y="166" fill="#23201D" font-size="13" font-weight="bold">32B급 — 실용 스위트스폿</text>
+  <text x="12" y="202" fill="#23201D" font-size="14" font-weight="bold">64GB</text>
   <rect x="90" y="188" width="360" height="20" fill="#C8102E"/>
-  <text x="458" y="202" fill="#23201D" font-size="12" font-weight="bold">70B급</text>
-  <text x="12" y="238" fill="#23201D" font-size="13" font-weight="bold">128GB</text>
+  <text x="458" y="202" fill="#23201D" font-size="13" font-weight="bold">70B급</text>
+  <text x="12" y="238" fill="#23201D" font-size="14" font-weight="bold">128GB</text>
   <rect x="90" y="224" width="480" height="20" fill="#8A8378"/>
-  <text x="12" y="270" fill="#8A8378" font-size="11">* 실사용 가능 메모리는 통합메모리의 약 70%. 컨텍스트가 길면 더 필요.</text>
-  <text x="12" y="288" fill="#8A8378" font-size="11">* 용량이 '올라가는가'의 기준. 속도(tok/s)는 칩 등급(대역폭)에 따라 별개.</text>
+  <text x="12" y="270" fill="#8A8378" font-size="12.5">* 실사용 가능 메모리는 통합메모리의 약 70%. 컨텍스트가 길면 더 필요.</text>
+  <text x="12" y="288" fill="#8A8378" font-size="12.5">* 용량이 '올라가는가'의 기준. 속도(tok/s)는 칩 등급(대역폭)에 따라 별개.</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:0.85em;margin-top:6px;">"어디까지 올라가나"는 메모리가, "얼마나 빠른가"는 칩 등급이 정한다.</figcaption>
 </figure>

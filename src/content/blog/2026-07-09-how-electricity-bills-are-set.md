@@ -67,20 +67,20 @@ tags: ["전기요금", "연료비조정단가", "한전", "총괄원가"]
 
 <figure>
 <svg viewBox="0 0 640 220" role="img" aria-label="한전 적자·부채 규모: 2022년 단일 영업손실 32.6조, 2021~2023 누적 영업적자 47.8조, 미해소 36.1조, 연결 총부채 205.7조" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px">
-  <text x="20" y="30" font-size="15" font-weight="700" fill="#23201D">요금 동결의 청구서 — 한전에 쌓인 적자·부채</text>
-  <text x="20" y="52" font-size="12" fill="#8A8378">단위: 조 원 · 영업적자는 별도기준, 총부채는 연결기준</text>
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">요금 동결의 청구서 — 한전에 쌓인 적자·부채</text>
+  <text x="20" y="52" font-size="13" fill="#8A8378">단위: 조 원 · 영업적자는 별도기준, 총부채는 연결기준</text>
   <!-- bars -->
-  <text x="20" y="80" font-size="12" fill="#23201D">2022년 단일 영업손실</text>
+  <text x="20" y="80" font-size="13" fill="#23201D">2022년 단일 영업손실</text>
   <rect x="230" y="68" width="130" height="18" fill="#8A8378"></rect>
-  <text x="368" y="82" font-size="12" font-weight="700" fill="#23201D">32.6</text>
-  <text x="20" y="110" font-size="12" fill="#23201D">2021~23 누적 영업적자</text>
+  <text x="368" y="82" font-size="13" font-weight="700" fill="#23201D">32.6</text>
+  <text x="20" y="110" font-size="13" fill="#23201D">2021~23 누적 영업적자</text>
   <rect x="230" y="98" width="191" height="18" fill="#C8102E"></rect>
-  <text x="429" y="112" font-size="12" font-weight="700" fill="#23201D">47.8</text>
-  <text x="20" y="140" font-size="12" fill="#23201D">└ 아직 미해소분</text>
+  <text x="429" y="112" font-size="13" font-weight="700" fill="#23201D">47.8</text>
+  <text x="20" y="140" font-size="13" fill="#23201D">└ 아직 미해소분</text>
   <rect x="230" y="128" width="144" height="18" fill="#E4E7EC"></rect>
-  <text x="382" y="142" font-size="12" font-weight="700" fill="#23201D">36.1</text>
-  <text x="20" y="182" font-size="13" font-weight="700" fill="#C8102E">연결 총부채 205.7조</text>
-  <text x="20" y="202" font-size="12" fill="#8A8378">하루 이자만 약 119억 원 · 2028년 '회사채 절벽' 우려</text>
+  <text x="382" y="142" font-size="13" font-weight="700" fill="#23201D">36.1</text>
+  <text x="20" y="182" font-size="14" font-weight="700" fill="#C8102E">연결 총부채 205.7조</text>
+  <text x="20" y="202" font-size="13" fill="#8A8378">하루 이자만 약 119억 원 · 2028년 '회사채 절벽' 우려</text>
 </svg>
 <figcaption>요금을 눌러 둔 만큼 부채로 쌓였다. 흑자 전환에도 총부채 205조는 그대로다.</figcaption>
 </figure>

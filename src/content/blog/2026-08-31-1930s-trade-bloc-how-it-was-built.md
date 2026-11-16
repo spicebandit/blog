@@ -87,31 +87,31 @@ tags: ["블록경제", "보호무역", "무역전쟁", "식민지 공업화"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 210" style="width:100%;height:auto" role="img" aria-label="1930년대 블록 형성 순서. 1931년 위기 대응에서 시작해 1932년 오타와, 1934년 독일 신계획, 1936년 4개년 계획으로 이어졌다">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">블록은 한 번에 만들어지지 않았다 — 5년에 걸친 축적</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">색이 진해질수록 되돌리기 어려운 단계</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">블록은 한 번에 만들어지지 않았다 — 5년에 걸친 축적</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">색이 진해질수록 되돌리기 어려운 단계</text>
   <line x1="40" y1="120" x2="560" y2="120" stroke="#E5DECF" stroke-width="2"/>
   <circle cx="80" cy="120" r="9" fill="#A8BDD2"/>
-  <text x="80" y="150" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">1931</text>
-  <text x="80" y="166" font-size="10" fill="#8A8378" text-anchor="middle">은행위기</text>
-  <text x="80" y="180" font-size="10" fill="#8A8378" text-anchor="middle">외환통제</text>
-  <text x="80" y="104" font-size="10" fill="#8A8378" text-anchor="middle">응급조치</text>
+  <text x="80" y="150" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">1931</text>
+  <text x="80" y="166" font-size="12" fill="#8A8378" text-anchor="middle">은행위기</text>
+  <text x="80" y="180" font-size="12" fill="#8A8378" text-anchor="middle">외환통제</text>
+  <text x="80" y="104" font-size="12" fill="#8A8378" text-anchor="middle">응급조치</text>
   <circle cx="200" cy="120" r="9" fill="#A8BDD2"/>
-  <text x="200" y="150" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">1932</text>
-  <text x="200" y="166" font-size="10" fill="#8A8378" text-anchor="middle">오타와</text>
-  <text x="200" y="180" font-size="10" fill="#8A8378" text-anchor="middle">제국특혜</text>
-  <text x="200" y="104" font-size="10" fill="#8A8378" text-anchor="middle">제도화</text>
+  <text x="200" y="150" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">1932</text>
+  <text x="200" y="166" font-size="12" fill="#8A8378" text-anchor="middle">오타와</text>
+  <text x="200" y="180" font-size="12" fill="#8A8378" text-anchor="middle">제국특혜</text>
+  <text x="200" y="104" font-size="12" fill="#8A8378" text-anchor="middle">제도화</text>
   <circle cx="320" cy="120" r="10" fill="#4E7FA8"/>
-  <text x="320" y="150" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">1934</text>
-  <text x="320" y="166" font-size="10" fill="#8A8378" text-anchor="middle">독일 신계획</text>
-  <text x="320" y="180" font-size="10" fill="#8A8378" text-anchor="middle">청산협정</text>
-  <text x="320" y="102" font-size="10" fill="#8A8378" text-anchor="middle">체제화</text>
+  <text x="320" y="150" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">1934</text>
+  <text x="320" y="166" font-size="12" fill="#8A8378" text-anchor="middle">독일 신계획</text>
+  <text x="320" y="180" font-size="12" fill="#8A8378" text-anchor="middle">청산협정</text>
+  <text x="320" y="102" font-size="12" fill="#8A8378" text-anchor="middle">체제화</text>
   <circle cx="450" cy="120" r="12" fill="#1B4F8A"/>
-  <text x="450" y="150" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">1936</text>
-  <text x="450" y="166" font-size="10" fill="#8A8378" text-anchor="middle">4개년 계획</text>
-  <text x="450" y="180" font-size="10" fill="#8A8378" text-anchor="middle">전쟁 준비</text>
-  <text x="450" y="100" font-size="10" font-weight="700" fill="#23201D" text-anchor="middle">안보화</text>
+  <text x="450" y="150" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">1936</text>
+  <text x="450" y="166" font-size="12" fill="#8A8378" text-anchor="middle">4개년 계획</text>
+  <text x="450" y="180" font-size="12" fill="#8A8378" text-anchor="middle">전쟁 준비</text>
+  <text x="450" y="100" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">안보화</text>
   <circle cx="545" cy="120" r="6" fill="#23201D"/>
-  <text x="545" y="150" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">1939</text>
+  <text x="545" y="150" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">1939</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">1931년의 조치는 위기 대응이었다. 1936년의 조치는 전쟁 준비였다. 같은 도구가 5년 사이에 성격을 바꿨다.</figcaption>
 </figure>

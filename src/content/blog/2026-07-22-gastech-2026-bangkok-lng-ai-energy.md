@@ -78,16 +78,16 @@ dmg events의 크리스토퍼 허드슨 회장은 "에너지 산업이 최근 �
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 220" width="100%" height="auto" role="img" aria-label="전 세계 데이터센터 전력수요: 2022년 460TWh에서 2026년 약 1000TWh로 두 배 초과, 2030년 약 945TWh(2022년 대비 두 배 이상)">
   <line x1="60" y1="180" x2="400" y2="180" stroke="#8A8378" stroke-width="1"/>
-  <text x="72" y="196" fill="#8A8378" font-size="12">2022</text>
-  <text x="200" y="196" fill="#23201D" font-size="12">2026(E)</text>
-  <text x="325" y="196" fill="#23201D" font-size="12">2030(E)</text>
+  <text x="72" y="196" fill="#8A8378" font-size="13">2022</text>
+  <text x="200" y="196" fill="#23201D" font-size="13">2026(E)</text>
+  <text x="325" y="196" fill="#23201D" font-size="13">2030(E)</text>
   <rect x="70" y="115" width="60" height="65" fill="#E4E7EC"/>
-  <text x="78" y="109" fill="#8A8378" font-size="12">460</text>
+  <text x="78" y="109" fill="#8A8378" font-size="13">460</text>
   <rect x="195" y="40" width="60" height="140" fill="#C8102E"/>
-  <text x="197" y="34" fill="#C8102E" font-size="12" font-weight="bold">~1,000</text>
+  <text x="197" y="34" fill="#C8102E" font-size="13" font-weight="bold">~1,000</text>
   <rect x="320" y="48" width="60" height="132" fill="#8A8378"/>
-  <text x="325" y="42" fill="#23201D" font-size="12">~945</text>
-  <text x="60" y="16" fill="#23201D" font-size="12" font-weight="bold">데이터센터 전력수요 (TWh, 높을수록 부담↑)</text>
+  <text x="325" y="42" fill="#23201D" font-size="13">~945</text>
+  <text x="60" y="16" fill="#23201D" font-size="13" font-weight="bold">데이터센터 전력수요 (TWh, 높을수록 부담↑)</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">전 세계 데이터센터 전력 소비 추이·전망. 2026년 약 1,000TWh로 2022년의 두 배를 넘고, 2030년에도 두 배 이상 수준. 출처: IEA Electricity 2024 전망.</figcaption>
 </figure>
@@ -129,12 +129,12 @@ dmg events의 크리스토퍼 허드슨 회장은 "에너지 산업이 최근 �
 <svg viewBox="0 0 420 200" width="100%" height="auto" role="img" aria-label="한국 중동산 LNG 수입 비중: 2024년 33%에서 2025년 말 20% 미만으로 하락">
   <line x1="60" y1="160" x2="400" y2="160" stroke="#8A8378" stroke-width="1"/>
   <rect x="110" y="50" width="70" height="110" fill="#8A8378"/>
-  <text x="128" y="44" fill="#23201D" font-size="13" font-weight="bold">33%</text>
-  <text x="112" y="176" fill="#8A8378" font-size="12">2024년</text>
+  <text x="128" y="44" fill="#23201D" font-size="14" font-weight="bold">33%</text>
+  <text x="112" y="176" fill="#8A8378" font-size="13">2024년</text>
   <rect x="270" y="95" width="70" height="65" fill="#C8102E"/>
-  <text x="280" y="89" fill="#C8102E" font-size="13" font-weight="bold">&lt;20%</text>
-  <text x="262" y="176" fill="#23201D" font-size="12">2025년 말</text>
-  <text x="60" y="20" fill="#23201D" font-size="12" font-weight="bold">한국 중동산 LNG 수입 비중 (낮을수록 안보↑)</text>
+  <text x="280" y="89" fill="#C8102E" font-size="14" font-weight="bold">&lt;20%</text>
+  <text x="262" y="176" fill="#23201D" font-size="13">2025년 말</text>
+  <text x="60" y="20" fill="#23201D" font-size="13" font-weight="bold">한국 중동산 LNG 수입 비중 (낮을수록 안보↑)</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">한국은 중동산 LNG 비중을 33%(2024)에서 20% 미만(2025년 말)으로 낮추고, 그 빈자리를 오세아니아·북미로 채웠다. 출처: 국내 언론 종합 보도(2026).</figcaption>
 </figure>

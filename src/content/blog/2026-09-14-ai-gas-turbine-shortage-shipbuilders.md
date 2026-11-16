@@ -38,26 +38,26 @@ tags: ["가스터빈", "데이터센터", "전력망", "조선업"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 620 240" style="width:100%;height:auto" role="img" aria-label="GE 베르노바 가스터빈 수주잔고 추이. 2025년 말 83기가와트에서 2026년 1분기 100기가와트, 2분기 116기가와트로 늘었다">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">GE 베르노바 수주잔고 — 반년 만에 40% 증가</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">GW · 슬롯 예약 포함 · 축은 0부터</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">GE 베르노바 수주잔고 — 반년 만에 40% 증가</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">GW · 슬롯 예약 포함 · 축은 0부터</text>
   <line x1="75" y1="190" x2="590" y2="190" stroke="#23201D" stroke-width="1.5"/>
   <line x1="75" y1="145" x2="590" y2="145" stroke="#E5DECF" stroke-width="1"/>
   <line x1="75" y1="100" x2="590" y2="100" stroke="#E5DECF" stroke-width="1"/>
   <line x1="75" y1="55" x2="590" y2="55" stroke="#E5DECF" stroke-width="1"/>
-  <text x="67" y="194" font-size="11" fill="#8A8378" text-anchor="end">0</text>
-  <text x="67" y="149" font-size="11" fill="#8A8378" text-anchor="end">45</text>
-  <text x="67" y="104" font-size="11" fill="#8A8378" text-anchor="end">90</text>
-  <text x="67" y="59" font-size="11" fill="#8A8378" text-anchor="end">135</text>
+  <text x="67" y="194" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+  <text x="67" y="149" font-size="12.5" fill="#8A8378" text-anchor="end">45</text>
+  <text x="67" y="104" font-size="12.5" fill="#8A8378" text-anchor="end">90</text>
+  <text x="67" y="59" font-size="12.5" fill="#8A8378" text-anchor="end">135</text>
   <rect x="130" y="107" width="100" height="83" fill="#A8BDD2"/>
-  <text x="180" y="100" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">83</text>
-  <text x="180" y="212" font-size="12" fill="#23201D" text-anchor="middle">2025년 말</text>
+  <text x="180" y="100" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">83</text>
+  <text x="180" y="212" font-size="13" fill="#23201D" text-anchor="middle">2025년 말</text>
   <rect x="280" y="90" width="100" height="100" fill="#4E7FA8"/>
-  <text x="330" y="83" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">100</text>
-  <text x="330" y="212" font-size="12" fill="#23201D" text-anchor="middle">2026년 1분기</text>
+  <text x="330" y="83" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">100</text>
+  <text x="330" y="212" font-size="13" fill="#23201D" text-anchor="middle">2026년 1분기</text>
   <rect x="430" y="74" width="100" height="116" fill="#1B4F8A"/>
-  <text x="480" y="67" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">116</text>
-  <text x="480" y="212" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">2026년 2분기</text>
-  <text x="75" y="232" font-size="11" fill="#8A8378">GE의 연간 생산 목표는 2026년 3분기에 20GW 수준이다</text>
+  <text x="480" y="67" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">116</text>
+  <text x="480" y="212" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2026년 2분기</text>
+  <text x="75" y="232" font-size="12.5" fill="#8A8378">GE의 연간 생산 목표는 2026년 3분기에 20GW 수준이다</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">확정 수주 53GW와 슬롯 예약 63GW를 합쳐 116GW. 연 20GW 생산으로 나누면 6년 가까운 물량이다.</figcaption>
 </figure>

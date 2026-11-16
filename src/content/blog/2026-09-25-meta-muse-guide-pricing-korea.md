@@ -127,20 +127,20 @@ tags: ["메타 뮤즈", "AI 에이전트", "Muse Spark", "AI 요금제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:18px 16px;margin:28px 0">
 <svg viewBox="0 0 640 190" width="100%" height="auto" role="img" aria-label="뮤즈 요금제별 주당 토큰 제공량. Power는 월 20달러에 주당 5억 토큰, Maximum은 월 100달러에 주당 30억 토큰">
-<text x="16" y="24" font-size="14" font-weight="700" fill="#23201D">요금은 5배, 제공량은 6배 — 주당 토큰</text>
-<text x="16" y="44" font-size="11" fill="#8A8378">단위: 억 토큰 / 주</text>
+<text x="16" y="24" font-size="15" font-weight="700" fill="#23201D">요금은 5배, 제공량은 6배 — 주당 토큰</text>
+<text x="16" y="44" font-size="12.5" fill="#8A8378">단위: 억 토큰 / 주</text>
 <!-- Power -->
-<text x="16" y="86" font-size="12" fill="#23201D">Power</text>
-<text x="16" y="102" font-size="10" fill="#8A8378">$20/월</text>
+<text x="16" y="86" font-size="13" fill="#23201D">Power</text>
+<text x="16" y="102" font-size="12" fill="#8A8378">$20/월</text>
 <rect x="100" y="70" width="80" height="26" fill="#A8BDD2" rx="2"/>
-<text x="190" y="88" font-size="12" font-weight="700" fill="#23201D">5억</text>
+<text x="190" y="88" font-size="13" font-weight="700" fill="#23201D">5억</text>
 <!-- Maximum -->
-<text x="16" y="146" font-size="12" fill="#23201D">Maximum</text>
-<text x="16" y="162" font-size="10" fill="#8A8378">$100/월</text>
+<text x="16" y="146" font-size="13" fill="#23201D">Maximum</text>
+<text x="16" y="162" font-size="12" fill="#8A8378">$100/월</text>
 <rect x="100" y="130" width="480" height="26" fill="#1B4F8A" rx="2"/>
-<text x="330" y="148" font-size="13" font-weight="700" fill="#FAF6EE">30억</text>
+<text x="330" y="148" font-size="14" font-weight="700" fill="#FAF6EE">30억</text>
 <line x1="100" y1="172" x2="600" y2="172" stroke="#E5DECF" stroke-width="1"/>
-<text x="16" y="186" font-size="10" fill="#8A8378">출처: 메타 고객센터 'About Muse subscriptions'</text>
+<text x="16" y="186" font-size="12" fill="#8A8378">출처: 메타 고객센터 'About Muse subscriptions'</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:10px">토큰당 단가로는 상위 요금제가 약 17% 저렴하다. 다만 <strong>무료 한도가 공개되지 않아</strong> 실제로 얼마가 필요한지는 써봐야 안다.</figcaption>
 </figure>

@@ -43,41 +43,41 @@ tags: ["산업용 전기요금", "계시별 요금제", "전력수요관리", "�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0">
 <svg viewBox="0 0 720 180" role="img" aria-label="겨울철 산업용(을) 24시간 요금 시간대 띠그래프. 0시부터 9시까지 경부하, 9시부터 10시까지 중간부하, 10시부터 12시까지 최대부하, 12시부터 17시까지 중간부하, 17시부터 20시까지 최대부하, 20시부터 22시까지 중간부하, 22시부터 23시까지 최대부하, 23시부터 24시까지 경부하." style="width:100%;height:auto">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">겨울철(11~2월) 산업용(을) 24시간 요금 시간대</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">진할수록 비싼 요금 · 경부하 10시간 · 중간부하 8시간 · 최대부하 6시간</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">겨울철(11~2월) 산업용(을) 24시간 요금 시간대</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">진할수록 비싼 요금 · 경부하 10시간 · 중간부하 8시간 · 최대부하 6시간</text>
 <!-- 23:00~09:00 경부하 (0~9시 구간) -->
 <rect x="24" y="56" width="252" height="34" fill="#A8BDD2"/>
-<text x="150" y="78" font-size="12" text-anchor="middle" fill="#23201D">경부하</text>
+<text x="150" y="78" font-size="13" text-anchor="middle" fill="#23201D">경부하</text>
 <!-- 09:00~10:00 중간부하 -->
 <rect x="276" y="56" width="28" height="34" fill="#4E7FA8"/>
 <!-- 10:00~12:00 최대부하 -->
 <rect x="304" y="56" width="56" height="34" fill="#1B4F8A"/>
-<text x="332" y="78" font-size="11" text-anchor="middle" fill="#FAF6EE">최대</text>
+<text x="332" y="78" font-size="12.5" text-anchor="middle" fill="#FAF6EE">최대</text>
 <!-- 12:00~17:00 중간부하 -->
 <rect x="360" y="56" width="140" height="34" fill="#4E7FA8"/>
-<text x="430" y="78" font-size="12" text-anchor="middle" fill="#FAF6EE">중간부하</text>
+<text x="430" y="78" font-size="13" text-anchor="middle" fill="#FAF6EE">중간부하</text>
 <!-- 17:00~20:00 최대부하 -->
 <rect x="500" y="56" width="84" height="34" fill="#1B4F8A"/>
-<text x="542" y="78" font-size="11" text-anchor="middle" fill="#FAF6EE">최대부하</text>
+<text x="542" y="78" font-size="12.5" text-anchor="middle" fill="#FAF6EE">최대부하</text>
 <!-- 20:00~22:00 중간부하 -->
 <rect x="584" y="56" width="56" height="34" fill="#4E7FA8"/>
-<text x="612" y="78" font-size="11" text-anchor="middle" fill="#FAF6EE">중간</text>
+<text x="612" y="78" font-size="12.5" text-anchor="middle" fill="#FAF6EE">중간</text>
 <!-- 22:00~23:00 최대부하 -->
 <rect x="640" y="56" width="28" height="34" fill="#1B4F8A"/>
 <!-- 23:00~24:00 경부하 -->
 <rect x="668" y="56" width="28" height="34" fill="#A8BDD2"/>
 <!-- 축 눈금 -->
 <line x1="24" y1="92" x2="696" y2="92" stroke="#E5DECF" stroke-width="1"/>
-<text x="24" y="108" font-size="10" text-anchor="middle" fill="#8A8378">0시</text>
-<text x="192" y="108" font-size="10" text-anchor="middle" fill="#8A8378">6</text>
-<text x="304" y="108" font-size="10" text-anchor="middle" fill="#8A8378">10</text>
-<text x="360" y="108" font-size="10" text-anchor="middle" fill="#8A8378">12</text>
-<text x="500" y="108" font-size="10" text-anchor="middle" fill="#8A8378">17</text>
-<text x="584" y="108" font-size="10" text-anchor="middle" fill="#8A8378">20</text>
-<text x="640" y="108" font-size="10" text-anchor="middle" fill="#8A8378">22</text>
-<text x="696" y="108" font-size="10" text-anchor="middle" fill="#8A8378">24시</text>
-<text x="24" y="138" font-size="11" font-weight="700" fill="#23201D">놓치기 쉬운 두 구간</text>
-<text x="24" y="156" font-size="11" fill="#23201D">① 경부하는 22시가 아니라 23시부터  ② 22~23시 한 시간은 최대부하</text>
+<text x="24" y="108" font-size="12" text-anchor="middle" fill="#8A8378">0시</text>
+<text x="192" y="108" font-size="12" text-anchor="middle" fill="#8A8378">6</text>
+<text x="304" y="108" font-size="12" text-anchor="middle" fill="#8A8378">10</text>
+<text x="360" y="108" font-size="12" text-anchor="middle" fill="#8A8378">12</text>
+<text x="500" y="108" font-size="12" text-anchor="middle" fill="#8A8378">17</text>
+<text x="584" y="108" font-size="12" text-anchor="middle" fill="#8A8378">20</text>
+<text x="640" y="108" font-size="12" text-anchor="middle" fill="#8A8378">22</text>
+<text x="696" y="108" font-size="12" text-anchor="middle" fill="#8A8378">24시</text>
+<text x="24" y="138" font-size="12.5" font-weight="700" fill="#23201D">놓치기 쉬운 두 구간</text>
+<text x="24" y="156" font-size="12.5" fill="#23201D">① 경부하는 22시가 아니라 23시부터  ② 22~23시 한 시간은 최대부하</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:10px">겨울철 최대부하는 오전·저녁·심야 세 토막으로 흩어져 있다. 자료: 한국전력 전기요금표.</figcaption>
 </figure>
@@ -96,32 +96,32 @@ tags: ["산업용 전기요금", "계시별 요금제", "전력수요관리", "�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0">
 <svg viewBox="0 0 700 260" role="img" aria-label="2026년 4월 계시별 요금제 개편의 시간대별 단가 조정폭 막대그래프. 최대부하는 여름과 겨울에 킬로와트시당 16.9원 인하, 봄가을에 13.2원 인하되고, 경부하는 전 계절 5.1원 인상된다." style="width:100%;height:auto">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">2026년 4월 개편 — 시간대별 단가 조정폭 (원/kWh)</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">왼쪽으로 갈수록 인하 · 오른쪽으로 갈수록 인상 · 가운데 선이 0원</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">2026년 4월 개편 — 시간대별 단가 조정폭 (원/kWh)</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">왼쪽으로 갈수록 인하 · 오른쪽으로 갈수록 인상 · 가운데 선이 0원</text>
 <line x1="430" y1="56" x2="430" y2="214" stroke="#23201D" stroke-width="1.5"/>
 <line x1="280" y1="56" x2="280" y2="214" stroke="#E5DECF" stroke-width="1"/>
 <line x1="130" y1="56" x2="130" y2="214" stroke="#E5DECF" stroke-width="1"/>
 <line x1="580" y1="56" x2="580" y2="214" stroke="#E5DECF" stroke-width="1"/>
 <!-- 최대부하 여름겨울 -->
-<text x="200" y="80" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">최대부하 (여름·겨울)</text>
+<text x="200" y="80" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">최대부하 (여름·겨울)</text>
 <rect x="261" y="66" width="169" height="20" fill="#1B4F8A"/>
-<text x="253" y="81" font-size="12" font-weight="700" text-anchor="end" fill="#1B4F8A">−16.9</text>
+<text x="253" y="81" font-size="13" font-weight="700" text-anchor="end" fill="#1B4F8A">−16.9</text>
 <!-- 최대부하 봄가을 -->
-<text x="200" y="124" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">최대부하 (봄·가을)</text>
+<text x="200" y="124" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">최대부하 (봄·가을)</text>
 <rect x="298" y="110" width="132" height="20" fill="#4E7FA8"/>
-<text x="290" y="125" font-size="12" text-anchor="end" fill="#23201D">−13.2</text>
+<text x="290" y="125" font-size="13" text-anchor="end" fill="#23201D">−13.2</text>
 <!-- 중간부하 -->
-<text x="200" y="168" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">중간부하 (전 계절)</text>
-<text x="440" y="168" font-size="11" fill="#8A8378">정부 발표에 별도 수치 없음</text>
+<text x="200" y="168" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">중간부하 (전 계절)</text>
+<text x="440" y="168" font-size="12.5" fill="#8A8378">정부 발표에 별도 수치 없음</text>
 <!-- 경부하 -->
-<text x="200" y="208" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">경부하 (전 계절)</text>
+<text x="200" y="208" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">경부하 (전 계절)</text>
 <rect x="430" y="194" width="51" height="20" fill="#23201D"/>
-<text x="489" y="209" font-size="12" font-weight="700" fill="#23201D">+5.1</text>
+<text x="489" y="209" font-size="13" font-weight="700" fill="#23201D">+5.1</text>
 <line x1="130" y1="214" x2="660" y2="214" stroke="#E5DECF" stroke-width="1"/>
-<text x="130" y="232" font-size="10" text-anchor="middle" fill="#8A8378">−30원</text>
-<text x="280" y="232" font-size="10" text-anchor="middle" fill="#8A8378">−15원</text>
-<text x="430" y="232" font-size="10" text-anchor="middle" fill="#8A8378">0</text>
-<text x="580" y="232" font-size="10" text-anchor="middle" fill="#8A8378">+15원</text>
+<text x="130" y="232" font-size="12" text-anchor="middle" fill="#8A8378">−30원</text>
+<text x="280" y="232" font-size="12" text-anchor="middle" fill="#8A8378">−15원</text>
+<text x="430" y="232" font-size="12" text-anchor="middle" fill="#8A8378">0</text>
+<text x="580" y="232" font-size="12" text-anchor="middle" fill="#8A8378">+15원</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:10px">겨울철은 시간대 구분은 그대로 두고 단가만 조정됐다. 자료: 기후에너지환경부(2026-03-13).</figcaption>
 </figure>

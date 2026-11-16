@@ -256,22 +256,22 @@ claude --debug     # 심층 로그. 출력은 ~/.claude/debug/<session-id>.txt �
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 330" style="width:100%;height:auto" role="img" aria-label="클로드 오류 대응 순서도. 상태페이지 확인, 한도 확인, 요청 크기 확인, 환경 확인, 지원팀 문의 순으로 진행">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">오류가 떴을 때 확인 순서 — 위에서부터 하나씩</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">위쪽일수록 흔하고, 확인 비용도 싸다</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">오류가 떴을 때 확인 순서 — 위에서부터 하나씩</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">위쪽일수록 흔하고, 확인 비용도 싸다</text>
   <rect x="30" y="60" width="540" height="42" rx="6" fill="#1B4F8A"/>
-  <text x="46" y="79" font-size="13" font-weight="700" fill="#FAF6EE">1. 장애인가?</text>
-  <text x="46" y="95" font-size="11" fill="#FAF6EE">status.claude.com에 공지가 있으면 → 기다린다. 내가 할 게 없다</text>
+  <text x="46" y="79" font-size="14" font-weight="700" fill="#FAF6EE">1. 장애인가?</text>
+  <text x="46" y="95" font-size="12.5" fill="#FAF6EE">status.claude.com에 공지가 있으면 → 기다린다. 내가 할 게 없다</text>
   <rect x="30" y="114" width="540" height="42" rx="6" fill="#4E7FA8"/>
-  <text x="46" y="133" font-size="13" font-weight="700" fill="#FAF6EE">2. 내 한도인가?</text>
-  <text x="46" y="149" font-size="11" fill="#FAF6EE">5시간 한도 · 지출 상한 · 429 → 대기하거나 요금제·크레딧으로 해결</text>
+  <text x="46" y="133" font-size="14" font-weight="700" fill="#FAF6EE">2. 내 한도인가?</text>
+  <text x="46" y="149" font-size="12.5" fill="#FAF6EE">5시간 한도 · 지출 상한 · 429 → 대기하거나 요금제·크레딧으로 해결</text>
   <rect x="30" y="168" width="540" height="42" rx="6" fill="#4E7FA8"/>
-  <text x="46" y="187" font-size="13" font-weight="700" fill="#FAF6EE">3. 내 요청이 무거운가?</text>
-  <text x="46" y="203" font-size="11" fill="#FAF6EE">컨텍스트 초과 · 413 · 타임아웃 → 쪼개거나 /compact로 압축</text>
+  <text x="46" y="187" font-size="14" font-weight="700" fill="#FAF6EE">3. 내 요청이 무거운가?</text>
+  <text x="46" y="203" font-size="12.5" fill="#FAF6EE">컨텍스트 초과 · 413 · 타임아웃 → 쪼개거나 /compact로 압축</text>
   <rect x="30" y="222" width="540" height="42" rx="6" fill="#A8BDD2"/>
-  <text x="46" y="241" font-size="13" font-weight="700" fill="#23201D">4. 내 환경인가?</text>
-  <text x="46" y="257" font-size="11" fill="#23201D">로그인 실패 · TLS · 프록시 → VPN·확장 프로그램·인증서 점검</text>
+  <text x="46" y="241" font-size="14" font-weight="700" fill="#23201D">4. 내 환경인가?</text>
+  <text x="46" y="257" font-size="12.5" fill="#23201D">로그인 실패 · TLS · 프록시 → VPN·확장 프로그램·인증서 점검</text>
   <rect x="30" y="276" width="540" height="38" rx="6" fill="#FAF6EE" stroke="#23201D" stroke-width="1.5"/>
-  <text x="46" y="300" font-size="12" font-weight="700" fill="#23201D">5. 그래도 안 되면 → request_id를 챙겨 지원팀 문의</text>
+  <text x="46" y="300" font-size="13" font-weight="700" fill="#23201D">5. 그래도 안 되면 → request_id를 챙겨 지원팀 문의</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">위 두 단계는 확인이 몇 초면 끝난다. 아래로 갈수록 손이 많이 간다.</figcaption>
 </figure>

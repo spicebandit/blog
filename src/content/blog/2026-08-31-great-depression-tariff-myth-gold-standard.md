@@ -46,23 +46,23 @@ tags: ["보호무역", "대공황", "무역전쟁", "금본위제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 240" style="width:100%;height:auto" role="img" aria-label="스무트-홀리 관세율. 과세 대상 수입품 기준으로는 40.1퍼센트에서 59.1퍼센트로 올랐지만, 전체 수입품 기준으로는 13.5퍼센트에서 19.8퍼센트에 그쳤다">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">같은 관세, 두 개의 숫자 — 무엇을 분모로 놓느냐의 문제</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">평균 관세율(%) · 왼쪽 1929년, 오른쪽 인상 후</text>
-  <text x="20" y="82" font-size="12" font-weight="700" fill="#23201D">과세 대상</text>
-  <text x="20" y="98" font-size="11" fill="#8A8378">수입품만</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">같은 관세, 두 개의 숫자 — 무엇을 분모로 놓느냐의 문제</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">평균 관세율(%) · 왼쪽 1929년, 오른쪽 인상 후</text>
+  <text x="20" y="82" font-size="13" font-weight="700" fill="#23201D">과세 대상</text>
+  <text x="20" y="98" font-size="12.5" fill="#8A8378">수입품만</text>
   <rect x="130" y="68" width="160" height="22" fill="#A8BDD2"/>
-  <text x="210" y="84" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">40.1%</text>
+  <text x="210" y="84" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">40.1%</text>
   <rect x="300" y="68" width="236" height="22" fill="#1B4F8A"/>
-  <text x="418" y="84" font-size="12" font-weight="700" fill="#FAF6EE" text-anchor="middle">59.1%</text>
+  <text x="418" y="84" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">59.1%</text>
   <!-- 두 번째 그룹 -->
-  <text x="20" y="152" font-size="12" font-weight="700" fill="#23201D">전체 수입품</text>
-  <text x="20" y="168" font-size="11" fill="#8A8378">무관세 포함</text>
+  <text x="20" y="152" font-size="13" font-weight="700" fill="#23201D">전체 수입품</text>
+  <text x="20" y="168" font-size="12.5" fill="#8A8378">무관세 포함</text>
   <rect x="130" y="138" width="54" height="22" fill="#A8BDD2"/>
-  <text x="192" y="154" font-size="12" font-weight="700" fill="#23201D">13.5%</text>
+  <text x="192" y="154" font-size="13" font-weight="700" fill="#23201D">13.5%</text>
   <rect x="300" y="138" width="79" height="22" fill="#1B4F8A"/>
-  <text x="387" y="154" font-size="12" font-weight="700" fill="#23201D">19.8%</text>
+  <text x="387" y="154" font-size="13" font-weight="700" fill="#23201D">19.8%</text>
   <line x1="130" y1="196" x2="536" y2="196" stroke="#E5DECF" stroke-width="1"/>
-  <text x="130" y="216" font-size="11" fill="#8A8378">1933년 미국 수입의 63%는 애초에 관세가 붙지 않았다</text>
+  <text x="130" y="216" font-size="12.5" fill="#8A8378">1933년 미국 수입의 63%는 애초에 관세가 붙지 않았다</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">"20% 인상"이라는 표현이 통용된 이유는 두 숫자가 섞여 쓰였기 때문이다. 어느 쪽이든 대공황 전체를 설명하기에는 작다.</figcaption>
 </figure>
@@ -87,29 +87,29 @@ tags: ["보호무역", "대공황", "무역전쟁", "금본위제"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 250" style="width:100%;height:auto" role="img" aria-label="미국 수출입 붕괴. 수입은 44억 달러에서 15억 달러로, 수출은 54억 달러에서 21억 달러로 감소했다">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">미국 수출입, 4년 만에 3분의 1 토막</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">10억 달러 · 축은 0부터</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">미국 수출입, 4년 만에 3분의 1 토막</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">10억 달러 · 축은 0부터</text>
   <line x1="70" y1="196" x2="560" y2="196" stroke="#23201D" stroke-width="1.5"/>
   <line x1="70" y1="152" x2="560" y2="152" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="108" x2="560" y2="108" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="64" x2="560" y2="64" stroke="#E5DECF" stroke-width="1"/>
-  <text x="62" y="200" font-size="11" fill="#8A8378" text-anchor="end">0</text>
-  <text x="62" y="156" font-size="11" fill="#8A8378" text-anchor="end">20</text>
-  <text x="62" y="112" font-size="11" fill="#8A8378" text-anchor="end">40</text>
-  <text x="62" y="68" font-size="11" fill="#8A8378" text-anchor="end">60</text>
+  <text x="62" y="200" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+  <text x="62" y="156" font-size="12.5" fill="#8A8378" text-anchor="end">20</text>
+  <text x="62" y="112" font-size="12.5" fill="#8A8378" text-anchor="end">40</text>
+  <text x="62" y="68" font-size="12.5" fill="#8A8378" text-anchor="end">60</text>
   <!-- 수입 -->
   <rect x="120" y="99" width="80" height="97" fill="#A8BDD2"/>
-  <text x="160" y="92" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">44</text>
+  <text x="160" y="92" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">44</text>
   <rect x="215" y="163" width="80" height="33" fill="#1B4F8A"/>
-  <text x="255" y="156" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">15</text>
-  <text x="207" y="220" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">수입 −66%</text>
+  <text x="255" y="156" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">15</text>
+  <text x="207" y="220" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">수입 −66%</text>
   <!-- 수출 -->
   <rect x="350" y="77" width="80" height="119" fill="#A8BDD2"/>
-  <text x="390" y="70" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">54</text>
+  <text x="390" y="70" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">54</text>
   <rect x="445" y="150" width="80" height="46" fill="#1B4F8A"/>
-  <text x="485" y="143" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">21</text>
-  <text x="437" y="220" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">수출 −61%</text>
-  <text x="120" y="240" font-size="11" fill="#8A8378">연한 막대 1929년 · 진한 막대 1933년</text>
+  <text x="485" y="143" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">21</text>
+  <text x="437" y="220" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">수출 −61%</text>
+  <text x="120" y="240" font-size="12.5" fill="#8A8378">연한 막대 1929년 · 진한 막대 1933년</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">관세가 걸린 건 수입의 3분의 1인데, 붕괴는 전체에서 일어났다. 산수가 맞지 않는다.</figcaption>
 </figure>

@@ -46,31 +46,31 @@ tags: ["미국 국채", "금리", "연준", "채권시장"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:18px 16px;margin:28px 0">
 <svg viewBox="0 0 640 250" width="100%" height="auto" role="img" aria-label="만기별 미국 국채 금리 곡선. 2년물 4.87%, 5년물 5.03%, 10년물 5.18%, 20년물 5.53%, 30년물 5.47%. 20년물이 30년물보다 높다">
-<text x="16" y="24" font-size="14" font-weight="700" fill="#23201D">수익률곡선 — 20년물이 30년물보다 높다 (2026.9.24 종가)</text>
-<text x="16" y="44" font-size="11" fill="#8A8378">단위: %</text>
+<text x="16" y="24" font-size="15" font-weight="700" fill="#23201D">수익률곡선 — 20년물이 30년물보다 높다 (2026.9.24 종가)</text>
+<text x="16" y="44" font-size="12.5" fill="#8A8378">단위: %</text>
 <!-- 2년물 -->
-<text x="16" y="82" font-size="12" fill="#23201D">2년물</text>
+<text x="16" y="82" font-size="13" fill="#23201D">2년물</text>
 <rect x="80" y="68" width="330" height="18" fill="#A8BDD2" rx="2"/>
-<text x="420" y="82" font-size="12" font-weight="700" fill="#23201D">4.87</text>
+<text x="420" y="82" font-size="13" font-weight="700" fill="#23201D">4.87</text>
 <!-- 5년물 -->
-<text x="16" y="112" font-size="12" fill="#23201D">5년물</text>
+<text x="16" y="112" font-size="13" fill="#23201D">5년물</text>
 <rect x="80" y="98" width="371" height="18" fill="#A8BDD2" rx="2"/>
-<text x="461" y="112" font-size="12" font-weight="700" fill="#23201D">5.03</text>
+<text x="461" y="112" font-size="13" font-weight="700" fill="#23201D">5.03</text>
 <!-- 10년물 -->
-<text x="16" y="142" font-size="12" fill="#23201D">10년물</text>
+<text x="16" y="142" font-size="13" fill="#23201D">10년물</text>
 <rect x="80" y="128" width="409" height="18" fill="#4E7FA8" rx="2"/>
-<text x="499" y="142" font-size="12" font-weight="700" fill="#4E7FA8">5.18</text>
-<text x="539" y="142" font-size="10" fill="#8A8378">19년 만</text>
+<text x="499" y="142" font-size="13" font-weight="700" fill="#4E7FA8">5.18</text>
+<text x="539" y="142" font-size="12" fill="#8A8378">19년 만</text>
 <!-- 20년물 -->
-<text x="16" y="172" font-size="12" fill="#23201D">20년물</text>
+<text x="16" y="172" font-size="13" fill="#23201D">20년물</text>
 <rect x="80" y="158" width="498" height="18" fill="#1B4F8A" rx="2"/>
-<text x="588" y="172" font-size="12" font-weight="700" fill="#1B4F8A">5.53</text>
+<text x="588" y="172" font-size="13" font-weight="700" fill="#1B4F8A">5.53</text>
 <!-- 30년물 -->
-<text x="16" y="202" font-size="12" fill="#23201D">30년물</text>
+<text x="16" y="202" font-size="13" fill="#23201D">30년물</text>
 <rect x="80" y="188" width="483" height="18" fill="#4E7FA8" rx="2"/>
-<text x="573" y="202" font-size="12" font-weight="700" fill="#4E7FA8">5.47</text>
+<text x="573" y="202" font-size="13" font-weight="700" fill="#4E7FA8">5.47</text>
 <line x1="80" y1="216" x2="600" y2="216" stroke="#E5DECF" stroke-width="1"/>
-<text x="16" y="238" font-size="10" fill="#8A8378">출처: 미 재무부 일일 국채 수익률곡선 (2026.9.24 종가) · 가로축 기점 4.50%</text>
+<text x="16" y="238" font-size="12" fill="#8A8378">출처: 미 재무부 일일 국채 수익률곡선 (2026.9.24 종가) · 가로축 기점 4.50%</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:10px">만기가 길수록 금리가 높아야 정상인데 <strong>20년물이 30년물을 넘어섰다.</strong> 만기별 수급이 뒤틀렸다는 신호다.</figcaption>
 </figure>
@@ -97,22 +97,22 @@ tags: ["미국 국채", "금리", "연준", "채권시장"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:18px 16px;margin:28px 0">
 <svg viewBox="0 0 640 200" width="100%" height="auto" role="img" aria-label="10월 금리 인상 확률 변화. 한 달 전 11퍼센트에서 9월 23일 66퍼센트로 급등">
-<text x="16" y="24" font-size="14" font-weight="700" fill="#23201D">한 달 만에 뒤집힌 기대 — 10월 인상 확률</text>
-<text x="16" y="44" font-size="11" fill="#8A8378">단위: %</text>
+<text x="16" y="24" font-size="15" font-weight="700" fill="#23201D">한 달 만에 뒤집힌 기대 — 10월 인상 확률</text>
+<text x="16" y="44" font-size="12.5" fill="#8A8378">단위: %</text>
 <!-- 한 달 전 -->
-<text x="16" y="86" font-size="12" fill="#23201D">한 달 전</text>
+<text x="16" y="86" font-size="13" fill="#23201D">한 달 전</text>
 <rect x="110" y="72" width="55" height="20" fill="#A8BDD2" rx="2"/>
-<text x="175" y="87" font-size="12" font-weight="700" fill="#23201D">11</text>
+<text x="175" y="87" font-size="13" font-weight="700" fill="#23201D">11</text>
 <!-- 9월 22일 -->
-<text x="16" y="126" font-size="12" fill="#23201D">9월 22일</text>
+<text x="16" y="126" font-size="13" fill="#23201D">9월 22일</text>
 <rect x="110" y="112" width="275" height="20" fill="#4E7FA8" rx="2"/>
-<text x="395" y="127" font-size="12" font-weight="700" fill="#4E7FA8">55</text>
+<text x="395" y="127" font-size="13" font-weight="700" fill="#4E7FA8">55</text>
 <!-- 9월 23일 -->
-<text x="16" y="166" font-size="12" fill="#23201D">9월 23일</text>
+<text x="16" y="166" font-size="13" fill="#23201D">9월 23일</text>
 <rect x="110" y="152" width="332" height="20" fill="#1B4F8A" rx="2"/>
-<text x="452" y="167" font-size="12" font-weight="700" fill="#1B4F8A">66</text>
+<text x="452" y="167" font-size="13" font-weight="700" fill="#1B4F8A">66</text>
 <line x1="110" y1="182" x2="600" y2="182" stroke="#E5DECF" stroke-width="1"/>
-<text x="16" y="196" font-size="10" fill="#8A8378">출처: CME 페드워치 기준, 파이낸셜뉴스 (2026.9.24)</text>
+<text x="16" y="196" font-size="12" fill="#8A8378">출처: CME 페드워치 기준, 파이낸셜뉴스 (2026.9.24)</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:10px">금리 자체보다 <strong>기대가 바뀐 속도</strong>가 채권 가격을 무너뜨린다.</figcaption>
 </figure>

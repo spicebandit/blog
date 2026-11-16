@@ -19,48 +19,48 @@ LMP(지역별 한계가격)가 무엇인지, 왜 전기에 '입지 가격'이 �
 
 <figure>
 <svg viewBox="0 0 720 420" role="img" aria-label="광역지자체별 전력자립도 비교 막대 그래프. 경북 215.6%, 충남 213.6%, 강원 212.8%, 전남 197.9%, 인천 186.3% 순으로 높고, 대구 13.1%, 충북 10.8%, 서울 10.4%, 광주 9.3%, 대전 3.1% 순으로 낮다." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">전력자립도 격차 — 만드는 곳과 쓰는 곳이 다르다 (높을수록 전력 생산 초과)</text>
-  <text x="24" y="54" font-size="12" fill="#8A8378">단위: %, 지역 생산 전력 ÷ 지역 소비 전력</text>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">전력자립도 격차 — 만드는 곳과 쓰는 곳이 다르다 (높을수록 전력 생산 초과)</text>
+  <text x="24" y="54" font-size="13" fill="#8A8378">단위: %, 지역 생산 전력 ÷ 지역 소비 전력</text>
   <!-- grid -->
   <line x1="120" y1="70" x2="120" y2="380" stroke="#E4E7EC" stroke-width="1"/>
   <line x1="345" y1="70" x2="345" y2="380" stroke="#E4E7EC" stroke-width="1" stroke-dasharray="3 3"/>
   <line x1="570" y1="70" x2="570" y2="380" stroke="#E4E7EC" stroke-width="1" stroke-dasharray="3 3"/>
-  <text x="120" y="398" font-size="11" fill="#8A8378" text-anchor="middle">0%</text>
-  <text x="345" y="398" font-size="11" fill="#8A8378" text-anchor="middle">100%</text>
-  <text x="570" y="398" font-size="11" fill="#8A8378" text-anchor="middle">200%</text>
+  <text x="120" y="398" font-size="12.5" fill="#8A8378" text-anchor="middle">0%</text>
+  <text x="345" y="398" font-size="12.5" fill="#8A8378" text-anchor="middle">100%</text>
+  <text x="570" y="398" font-size="12.5" fill="#8A8378" text-anchor="middle">200%</text>
   <!-- high group (ink) -->
-  <text x="110" y="92" font-size="13" fill="#23201D" text-anchor="end" font-weight="600">경북</text>
+  <text x="110" y="92" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">경북</text>
   <rect x="120" y="80" width="485" height="16" fill="#23201D" rx="2"/>
-  <text x="612" y="93" font-size="12" fill="#23201D" font-weight="700">215.6</text>
-  <text x="110" y="120" font-size="13" fill="#23201D" text-anchor="end" font-weight="600">충남</text>
+  <text x="612" y="93" font-size="13" fill="#23201D" font-weight="700">215.6</text>
+  <text x="110" y="120" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">충남</text>
   <rect x="120" y="108" width="481" height="16" fill="#23201D" rx="2"/>
-  <text x="608" y="121" font-size="12" fill="#23201D" font-weight="700">213.6</text>
-  <text x="110" y="148" font-size="13" fill="#23201D" text-anchor="end" font-weight="600">강원</text>
+  <text x="608" y="121" font-size="13" fill="#23201D" font-weight="700">213.6</text>
+  <text x="110" y="148" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">강원</text>
   <rect x="120" y="136" width="479" height="16" fill="#8A8378" rx="2"/>
-  <text x="606" y="149" font-size="12" fill="#23201D">212.8</text>
-  <text x="110" y="176" font-size="13" fill="#23201D" text-anchor="end" font-weight="600">전남</text>
+  <text x="606" y="149" font-size="13" fill="#23201D">212.8</text>
+  <text x="110" y="176" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">전남</text>
   <rect x="120" y="164" width="445" height="16" fill="#8A8378" rx="2"/>
-  <text x="572" y="177" font-size="12" fill="#23201D">197.9</text>
-  <text x="110" y="204" font-size="13" fill="#23201D" text-anchor="end" font-weight="600">인천</text>
+  <text x="572" y="177" font-size="13" fill="#23201D">197.9</text>
+  <text x="110" y="204" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">인천</text>
   <rect x="120" y="192" width="419" height="16" fill="#8A8378" rx="2"/>
-  <text x="546" y="205" font-size="12" fill="#23201D">186.3</text>
+  <text x="546" y="205" font-size="13" fill="#23201D">186.3</text>
   <!-- low group (red) -->
-  <text x="110" y="252" font-size="13" fill="#C8102E" text-anchor="end" font-weight="600">대구</text>
+  <text x="110" y="252" font-size="14" fill="#C8102E" text-anchor="end" font-weight="600">대구</text>
   <rect x="120" y="240" width="29" height="16" fill="#C8102E" rx="2"/>
-  <text x="156" y="253" font-size="12" fill="#C8102E" font-weight="700">13.1</text>
-  <text x="110" y="280" font-size="13" fill="#C8102E" text-anchor="end" font-weight="600">충북</text>
+  <text x="156" y="253" font-size="13" fill="#C8102E" font-weight="700">13.1</text>
+  <text x="110" y="280" font-size="14" fill="#C8102E" text-anchor="end" font-weight="600">충북</text>
   <rect x="120" y="268" width="24" height="16" fill="#C8102E" rx="2"/>
-  <text x="151" y="281" font-size="12" fill="#C8102E" font-weight="700">10.8</text>
-  <text x="110" y="308" font-size="13" fill="#C8102E" text-anchor="end" font-weight="600">서울</text>
+  <text x="151" y="281" font-size="13" fill="#C8102E" font-weight="700">10.8</text>
+  <text x="110" y="308" font-size="14" fill="#C8102E" text-anchor="end" font-weight="600">서울</text>
   <rect x="120" y="296" width="23" height="16" fill="#C8102E" rx="2"/>
-  <text x="150" y="309" font-size="12" fill="#C8102E" font-weight="700">10.4</text>
-  <text x="110" y="336" font-size="13" fill="#C8102E" text-anchor="end" font-weight="600">광주</text>
+  <text x="150" y="309" font-size="13" fill="#C8102E" font-weight="700">10.4</text>
+  <text x="110" y="336" font-size="14" fill="#C8102E" text-anchor="end" font-weight="600">광주</text>
   <rect x="120" y="324" width="21" height="16" fill="#C8102E" rx="2"/>
-  <text x="148" y="337" font-size="12" fill="#C8102E" font-weight="700">9.3</text>
-  <text x="110" y="364" font-size="13" fill="#C8102E" text-anchor="end" font-weight="600">대전</text>
+  <text x="148" y="337" font-size="13" fill="#C8102E" font-weight="700">9.3</text>
+  <text x="110" y="364" font-size="14" fill="#C8102E" text-anchor="end" font-weight="600">대전</text>
   <rect x="120" y="352" width="7" height="16" fill="#C8102E" rx="2"/>
-  <text x="134" y="365" font-size="12" fill="#C8102E" font-weight="700">3.1</text>
-  <text x="620" y="252" font-size="11" fill="#8A8378" text-anchor="end"></text>
+  <text x="134" y="365" font-size="13" fill="#C8102E" font-weight="700">3.1</text>
+  <text x="620" y="252" font-size="12.5" fill="#8A8378" text-anchor="end"></text>
 </svg>
 <figcaption>광역지자체별 전력자립도. 상위 5곳(잉크·그레이)은 쓰는 전기의 2배 안팎을 생산하고, 하위 5곳(레드)은 10% 안팎에 그친다. 출처: 한전 통계를 인용한 <a href="https://www.newsis.com/view/NISX20260627_0003686002">뉴시스(2026.6.28)</a></figcaption>
 </figure>
@@ -153,21 +153,21 @@ LMP(지역별 한계가격)가 무엇인지, 왜 전기에 '입지 가격'이 �
 
 <figure>
 <svg viewBox="0 0 720 300" role="img" aria-label="2029년까지 신규 데이터센터 수요의 지역 분포 막대 그래프. 전체 732건 중 수도권 601건(82%), 비수도권 131건(18%). 신규 전력수요는 약 49GW." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="24" y="36" font-size="17" font-weight="700" fill="#23201D">신규 데이터센터, 10건 중 8건이 수도권행 — 차등요금이 겨냥하는 지점</text>
-  <text x="24" y="56" font-size="12" fill="#8A8378">~2029년 신규 수요 732건의 입지 신청 분포 · 신규 전력수요 약 49GW (산업통상자원부, 2023년 집계)</text>
+  <text x="24" y="36" font-size="18" font-weight="700" fill="#23201D">신규 데이터센터, 10건 중 8건이 수도권행 — 차등요금이 겨냥하는 지점</text>
+  <text x="24" y="56" font-size="13" fill="#8A8378">~2029년 신규 수요 732건의 입지 신청 분포 · 신규 전력수요 약 49GW (산업통상자원부, 2023년 집계)</text>
   <!-- 수도권 bar -->
-  <text x="150" y="122" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">수도권</text>
+  <text x="150" y="122" font-size="15" fill="#23201D" text-anchor="end" font-weight="600">수도권</text>
   <rect x="165" y="100" width="492" height="38" fill="#C8102E" rx="3"/>
-  <text x="405" y="125" font-size="15" fill="#F6F7F9" font-weight="700" text-anchor="middle">601건 (82%)</text>
+  <text x="405" y="125" font-size="16" fill="#F6F7F9" font-weight="700" text-anchor="middle">601건 (82%)</text>
   <!-- 비수도권 bar -->
-  <text x="150" y="192" font-size="14" fill="#23201D" text-anchor="end" font-weight="600">비수도권</text>
+  <text x="150" y="192" font-size="15" fill="#23201D" text-anchor="end" font-weight="600">비수도권</text>
   <rect x="165" y="170" width="107" height="38" fill="#8A8378" rx="3"/>
-  <text x="282" y="195" font-size="15" fill="#23201D" font-weight="700">131건 (18%)</text>
+  <text x="282" y="195" font-size="16" fill="#23201D" font-weight="700">131건 (18%)</text>
   <!-- axis -->
   <line x1="165" y1="230" x2="657" y2="230" stroke="#E4E7EC" stroke-width="1"/>
-  <text x="165" y="248" font-size="11" fill="#8A8378">0건</text>
-  <text x="657" y="248" font-size="11" fill="#8A8378" text-anchor="end">732건</text>
-  <text x="24" y="282" font-size="12" fill="#8A8378">차등요금·인센티브의 1차 과녁은 이 수도권 쏠림의 분산이다.</text>
+  <text x="165" y="248" font-size="12.5" fill="#8A8378">0건</text>
+  <text x="657" y="248" font-size="12.5" fill="#8A8378" text-anchor="end">732건</text>
+  <text x="24" y="282" font-size="13" fill="#8A8378">차등요금·인센티브의 1차 과녁은 이 수도권 쏠림의 분산이다.</text>
 </svg>
 <figcaption>2029년까지 신규 데이터센터 수요 732건 중 601건(82%)이 수도권에 신청됐다. 출처: 산업통상자원부 집계(2023)를 인용한 언론 보도 종합</figcaption>
 </figure>

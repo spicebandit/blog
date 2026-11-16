@@ -36,25 +36,25 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="나트륨이온·LFP·NCM 에너지밀도 범위 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">에너지밀도 비교 — 높을수록 유리 (Wh/kg, 셀 기준)</text>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">에너지밀도 비교 — 높을수록 유리 (Wh/kg, 셀 기준)</text>
   <!-- 차트영역 x:170~690 (520px), 0~260Wh/kg → 2px/Wh -->
   <line x1="170" y1="60" x2="170" y2="210" stroke="#8A8378" stroke-width="1"/>
   <line x1="170" y1="210" x2="690" y2="210" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="11" fill="#8A8378" text-anchor="middle">
+  <g font-size="12.5" fill="#8A8378" text-anchor="middle">
     <text x="170" y="228">0</text><text x="300" y="228">65</text><text x="430" y="228">130</text><text x="560" y="228">195</text><text x="690" y="228">260</text>
   </g>
   <!-- Na-ion 120~175 → x 410~520 -->
-  <text x="160" y="84" font-size="13" fill="#23201D" text-anchor="end" font-weight="700">나트륨이온</text>
+  <text x="160" y="84" font-size="14" fill="#23201D" text-anchor="end" font-weight="700">나트륨이온</text>
   <rect x="410" y="70" width="110" height="24" rx="3" fill="#C8102E"/>
-  <text x="528" y="87" font-size="12" fill="#C8102E" font-weight="700">120~175</text>
+  <text x="528" y="87" font-size="13" fill="#C8102E" font-weight="700">120~175</text>
   <!-- LFP 90~160 → x 350~490 -->
-  <text x="160" y="134" font-size="13" fill="#23201D" text-anchor="end">LFP</text>
+  <text x="160" y="134" font-size="14" fill="#23201D" text-anchor="end">LFP</text>
   <rect x="350" y="120" width="140" height="24" rx="3" fill="#8A8378"/>
-  <text x="498" y="137" font-size="12" fill="#8A8378">90~160</text>
+  <text x="498" y="137" font-size="13" fill="#8A8378">90~160</text>
   <!-- NCM 150~250 → x 470~670 -->
-  <text x="160" y="184" font-size="13" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
+  <text x="160" y="184" font-size="14" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
   <rect x="470" y="170" width="200" height="24" rx="3" fill="#E4E7EC"/>
-  <text x="560" y="187" font-size="12" fill="#8A8378" font-weight="700">150~250</text>
+  <text x="560" y="187" font-size="13" fill="#8A8378" font-weight="700">150~250</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">나트륨이온 최상급(CATL Naxtra 175Wh/kg)은 이미 LFP 상단을 넘본다. 다만 범용 셀은 아직 120~160Wh/kg대다.</figcaption>
 </figure>
@@ -73,21 +73,21 @@ tags: ["나트륨이온 배터리", "ESS", "배터리 트렌드", "CATL"]
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2025년 나트륨이온과 LFP 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh, 2025년 평균 추정)</text>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh, 2025년 평균 추정)</text>
   <!-- 차트영역 x:170~690 (520px), 0~80$/kWh → 6.5px/$ -->
   <line x1="170" y1="60" x2="170" y2="170" stroke="#8A8378" stroke-width="1"/>
   <line x1="170" y1="170" x2="690" y2="170" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="11" fill="#8A8378" text-anchor="middle">
+  <g font-size="12.5" fill="#8A8378" text-anchor="middle">
     <text x="170" y="188">0</text><text x="300" y="188">20</text><text x="430" y="188">40</text><text x="560" y="188">60</text><text x="690" y="188">80</text>
   </g>
   <!-- LFP 52 → width 338 -->
-  <text x="160" y="84" font-size="13" fill="#23201D" text-anchor="end">LFP</text>
+  <text x="160" y="84" font-size="14" fill="#23201D" text-anchor="end">LFP</text>
   <rect x="170" y="70" width="338" height="26" rx="3" fill="#8A8378"/>
-  <text x="516" y="88" font-size="12" fill="#8A8378" font-weight="700">$52</text>
+  <text x="516" y="88" font-size="13" fill="#8A8378" font-weight="700">$52</text>
   <!-- Na-ion 59 → width 383.5 -->
-  <text x="160" y="134" font-size="13" fill="#23201D" text-anchor="end" font-weight="700">나트륨이온</text>
+  <text x="160" y="134" font-size="14" fill="#23201D" text-anchor="end" font-weight="700">나트륨이온</text>
   <rect x="170" y="120" width="384" height="26" rx="3" fill="#C8102E"/>
-  <text x="562" y="138" font-size="12" fill="#C8102E" font-weight="700">$59 (격차 13%)</text>
+  <text x="562" y="138" font-size="13" fill="#C8102E" font-weight="700">$59 (격차 13%)</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">우드매켄지 2025년 평균 추정. 아직 나트륨이 비싸지만 하락 기울기가 더 가팔라 2035년경 파리티 전망이다.</figcaption>
 </figure>

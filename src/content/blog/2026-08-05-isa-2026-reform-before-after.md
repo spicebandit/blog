@@ -61,8 +61,8 @@ ISA는 2016년 3월 처음 도입됐다. 저금리·고령화 국면에서 특�
 
 <figure>
 <svg viewBox="0 0 720 240" role="img" aria-label="2026년 세제개편안 ISA 관련 입법 일정. 8월 3일 발표, 8월 7일 대통령 재검토 지시, 8월 20일 입법예고 종료, 8월 27일 차관회의, 9월 1일 국무회의, 9월 초 국회 제출" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="17" font-weight="700" fill="#23201D">ISA 개편, 확정까지 남은 절차</text>
-  <text x="30" y="54" font-size="13" fill="#8A8378">국회 심의에서 또 바뀔 수 있다 · 2026년</text>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">ISA 개편, 확정까지 남은 절차</text>
+  <text x="30" y="54" font-size="14" fill="#8A8378">국회 심의에서 또 바뀔 수 있다 · 2026년</text>
   <line x1="90" y1="120" x2="660" y2="120" stroke="#A8BDD2" stroke-width="3"/>
   <line x1="318" y1="120" x2="660" y2="120" stroke="#A8BDD2" stroke-width="3" stroke-dasharray="6 4"/>
   <circle cx="90" cy="120" r="7" fill="#4E7FA8"/>
@@ -71,21 +71,21 @@ ISA는 2016년 3월 처음 도입됐다. 저금리·고령화 국면에서 특�
   <circle cx="432" cy="120" r="7" fill="#A8BDD2"/>
   <circle cx="546" cy="120" r="7" fill="#A8BDD2"/>
   <circle cx="660" cy="120" r="7" fill="#A8BDD2"/>
-  <text x="90" y="102" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">8/3</text>
-  <text x="204" y="102" font-size="12" font-weight="700" fill="#1B4F8A" text-anchor="middle">8/7</text>
-  <text x="318" y="102" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">8/20</text>
-  <text x="432" y="102" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">8/27</text>
-  <text x="546" y="102" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">9/1</text>
-  <text x="660" y="102" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">9월 초</text>
-  <text x="90" y="148" font-size="11" fill="#23201D" text-anchor="middle">개편안 발표</text>
-  <text x="204" y="148" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">대통령</text>
-  <text x="204" y="164" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">재검토 지시</text>
-  <text x="318" y="148" font-size="11" fill="#23201D" text-anchor="middle">입법예고</text>
-  <text x="318" y="164" font-size="11" fill="#23201D" text-anchor="middle">종료</text>
-  <text x="432" y="148" font-size="11" fill="#23201D" text-anchor="middle">차관회의</text>
-  <text x="546" y="148" font-size="11" fill="#23201D" text-anchor="middle">국무회의</text>
-  <text x="660" y="148" font-size="11" fill="#23201D" text-anchor="middle">국회 제출</text>
-  <text x="30" y="206" font-size="12" fill="#8A8378">점선 구간 = 아직 진행되지 않은 일정. 국회 심의를 거쳐야 최종 확정된다.</text>
+  <text x="90" y="102" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">8/3</text>
+  <text x="204" y="102" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">8/7</text>
+  <text x="318" y="102" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">8/20</text>
+  <text x="432" y="102" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">8/27</text>
+  <text x="546" y="102" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">9/1</text>
+  <text x="660" y="102" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">9월 초</text>
+  <text x="90" y="148" font-size="12.5" fill="#23201D" text-anchor="middle">개편안 발표</text>
+  <text x="204" y="148" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">대통령</text>
+  <text x="204" y="164" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">재검토 지시</text>
+  <text x="318" y="148" font-size="12.5" fill="#23201D" text-anchor="middle">입법예고</text>
+  <text x="318" y="164" font-size="12.5" fill="#23201D" text-anchor="middle">종료</text>
+  <text x="432" y="148" font-size="12.5" fill="#23201D" text-anchor="middle">차관회의</text>
+  <text x="546" y="148" font-size="12.5" fill="#23201D" text-anchor="middle">국무회의</text>
+  <text x="660" y="148" font-size="12.5" fill="#23201D" text-anchor="middle">국회 제출</text>
+  <text x="30" y="206" font-size="13" fill="#8A8378">점선 구간 = 아직 진행되지 않은 일정. 국회 심의를 거쳐야 최종 확정된다.</text>
 </svg>
 <figcaption>정부안이 국회에 제출되는 것은 9월 초다. 확정은 그 이후 정기국회 심의를 거쳐야 한다. 2024년 상향안이 12월 국회에서 삭제된 전례가 있다.</figcaption>
 </figure>

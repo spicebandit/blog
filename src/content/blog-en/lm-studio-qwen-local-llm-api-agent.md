@@ -25,23 +25,23 @@ Why does that matter? Cloud APIs are convenient, but they bill you three ways �
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="Approximate 4-bit quantized memory footprint by Qwen3.5 dense size, with the 16GB MacBook Air usable limit">
-<text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="700" fill="#23201D">Memory by Qwen3.5 size (4-bit, approx.) — lower is lighter</text>
-<text x="20" y="48" font-family="sans-serif" font-size="12" fill="#8A8378">Gray dashed line = practical ceiling on a 16GB MacBook Air (model + context headroom)</text>
+<text x="20" y="28" font-family="sans-serif" font-size="17" font-weight="700" fill="#23201D">Memory by Qwen3.5 size (4-bit, approx.) — lower is lighter</text>
+<text x="20" y="48" font-family="sans-serif" font-size="13" fill="#8A8378">Gray dashed line = practical ceiling on a 16GB MacBook Air (model + context headroom)</text>
 <line x1="150" y1="80" x2="150" y2="250" stroke="#E4E7EC" stroke-width="1"/>
 <rect x="150" y="90" width="16" height="24" fill="#8A8378"/>
-<text x="110" y="107" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">0.8B</text>
-<text x="174" y="107" font-family="sans-serif" font-size="12" fill="#23201D">~0.7GB</text>
+<text x="110" y="107" font-family="sans-serif" font-size="14" fill="#23201D" text-anchor="end">0.8B</text>
+<text x="174" y="107" font-family="sans-serif" font-size="13" fill="#23201D">~0.7GB</text>
 <rect x="150" y="128" width="55" height="24" fill="#8A8378"/>
-<text x="110" y="145" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">4B</text>
-<text x="213" y="145" font-family="sans-serif" font-size="12" fill="#23201D">~2.5GB</text>
+<text x="110" y="145" font-family="sans-serif" font-size="14" fill="#23201D" text-anchor="end">4B</text>
+<text x="213" y="145" font-family="sans-serif" font-size="13" fill="#23201D">~2.5GB</text>
 <rect x="150" y="166" width="121" height="24" fill="#C8102E"/>
-<text x="110" y="183" font-family="sans-serif" font-size="13" font-weight="700" fill="#23201D" text-anchor="end">9B</text>
-<text x="279" y="183" font-family="sans-serif" font-size="12" fill="#23201D">~5.5GB · comfy on 16GB</text>
+<text x="110" y="183" font-family="sans-serif" font-size="14" font-weight="700" fill="#23201D" text-anchor="end">9B</text>
+<text x="279" y="183" font-family="sans-serif" font-size="13" fill="#23201D">~5.5GB · comfy on 16GB</text>
 <rect x="150" y="204" width="363" height="24" fill="#23201D"/>
-<text x="110" y="221" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">27B</text>
-<text x="521" y="221" font-family="sans-serif" font-size="12" fill="#23201D">~16.5GB · needs 32GB</text>
+<text x="110" y="221" font-family="sans-serif" font-size="14" fill="#23201D" text-anchor="end">27B</text>
+<text x="521" y="221" font-family="sans-serif" font-size="13" fill="#23201D">~16.5GB · needs 32GB</text>
 <line x1="392" y1="80" x2="392" y2="250" stroke="#8A8378" stroke-width="1.5" stroke-dasharray="4 3"/>
-<text x="392" y="270" font-family="sans-serif" font-size="11" fill="#8A8378" text-anchor="middle">16GB usable ceiling</text>
+<text x="392" y="270" font-family="sans-serif" font-size="12.5" fill="#8A8378" text-anchor="middle">16GB usable ceiling</text>
 </svg>
 <figcaption style="font-family:sans-serif;font-size:12px;color:#8A8378;margin-top:8px">Quantized sizes are approximations that vary by build and context length. You must leave memory for the OS and apps, so "total memory" is not your model budget.</figcaption>
 </figure>

@@ -35,28 +35,28 @@ tags: ["애프터마켓", "거래시간 연장", "한국거래소", "NXT"]
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="9월 14일 이후 하루 거래 시간표 타임라인. 정규장 9시부터 15시 30분, 신설 애프터마켓은 16시부터 20시까지 실시간 접속매매" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;">
-<text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">하루 거래 시간표 (9월 14일 이후) — 시각 기준</text>
+<text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">하루 거래 시간표 (9월 14일 이후) — 시각 기준</text>
 <line x1="150" y1="54" x2="150" y2="254" stroke="#E5DECF"/>
 <line x1="195" y1="54" x2="195" y2="254" stroke="#E5DECF"/>
 <line x1="330" y1="54" x2="330" y2="254" stroke="#E5DECF"/>
 <line x1="487.5" y1="54" x2="487.5" y2="254" stroke="#E5DECF"/>
 <line x1="600" y1="54" x2="600" y2="254" stroke="#E5DECF"/>
 <line x1="690" y1="54" x2="690" y2="254" stroke="#E5DECF"/>
-<text x="140" y="77" text-anchor="end" font-size="13" fill="#23201D">장 시작 동시호가</text>
+<text x="140" y="77" text-anchor="end" font-size="14" fill="#23201D">장 시작 동시호가</text>
 <rect x="172.5" y="60" width="22.5" height="24" rx="3" fill="#A8BDD2"/>
-<text x="201" y="77" font-size="12" fill="#8A8378">08:30~09:00</text>
-<text x="140" y="117" text-anchor="end" font-size="13" fill="#23201D">정규장</text>
+<text x="201" y="77" font-size="13" fill="#8A8378">08:30~09:00</text>
+<text x="140" y="117" text-anchor="end" font-size="14" fill="#23201D">정규장</text>
 <rect x="195" y="100" width="292.5" height="24" rx="3" fill="#4E7FA8"/>
-<text x="341" y="117" text-anchor="middle" font-size="12" fill="#FAF6EE">09:00~15:30 실시간 접속매매</text>
-<text x="140" y="157" text-anchor="end" font-size="13" fill="#23201D">시간외 종가</text>
+<text x="341" y="117" text-anchor="middle" font-size="13" fill="#FAF6EE">09:00~15:30 실시간 접속매매</text>
+<text x="140" y="157" text-anchor="end" font-size="14" fill="#23201D">시간외 종가</text>
 <rect x="495" y="140" width="15" height="24" rx="3" fill="#A8BDD2"/>
-<text x="489" y="157" text-anchor="end" font-size="12" fill="#8A8378">15:40~16:00</text>
-<text x="140" y="197" text-anchor="end" font-size="13" fill="#23201D">기존 시간외 단일가</text>
+<text x="489" y="157" text-anchor="end" font-size="13" fill="#8A8378">15:40~16:00</text>
+<text x="140" y="197" text-anchor="end" font-size="14" fill="#23201D">기존 시간외 단일가</text>
 <rect x="510" y="180" width="90" height="24" rx="3" fill="#A8BDD2"/>
-<text x="504" y="197" text-anchor="end" font-size="12" fill="#8A8378">16:00~18:00 (10분 단일가)</text>
-<text x="140" y="237" text-anchor="end" font-size="13" font-weight="700" fill="#1B4F8A">애프터마켓 (신설)</text>
+<text x="504" y="197" text-anchor="end" font-size="13" fill="#8A8378">16:00~18:00 (10분 단일가)</text>
+<text x="140" y="237" text-anchor="end" font-size="14" font-weight="700" fill="#1B4F8A">애프터마켓 (신설)</text>
 <rect x="510" y="220" width="180" height="24" rx="3" fill="#1B4F8A"/>
-<text x="600" y="237" text-anchor="middle" font-size="12" fill="#FAF6EE">16:00~20:00 실시간</text>
+<text x="600" y="237" text-anchor="middle" font-size="13" fill="#FAF6EE">16:00~20:00 실시간</text>
 <line x1="150" y1="254" x2="690" y2="254" stroke="#8A8378"/>
 <line x1="150" y1="254" x2="150" y2="260" stroke="#8A8378"/>
 <line x1="195" y1="254" x2="195" y2="260" stroke="#8A8378"/>
@@ -64,12 +64,12 @@ tags: ["애프터마켓", "거래시간 연장", "한국거래소", "NXT"]
 <line x1="487.5" y1="254" x2="487.5" y2="260" stroke="#8A8378"/>
 <line x1="600" y1="254" x2="600" y2="260" stroke="#8A8378"/>
 <line x1="690" y1="254" x2="690" y2="260" stroke="#8A8378"/>
-<text x="150" y="276" text-anchor="middle" font-size="11" fill="#8A8378">08:00</text>
-<text x="195" y="276" text-anchor="middle" font-size="11" fill="#8A8378">09:00</text>
-<text x="330" y="276" text-anchor="middle" font-size="11" fill="#8A8378">12:00</text>
-<text x="487.5" y="276" text-anchor="middle" font-size="11" fill="#8A8378">15:30</text>
-<text x="600" y="276" text-anchor="middle" font-size="11" fill="#8A8378">18:00</text>
-<text x="690" y="276" text-anchor="middle" font-size="11" fill="#8A8378">20:00</text>
+<text x="150" y="276" text-anchor="middle" font-size="12.5" fill="#8A8378">08:00</text>
+<text x="195" y="276" text-anchor="middle" font-size="12.5" fill="#8A8378">09:00</text>
+<text x="330" y="276" text-anchor="middle" font-size="12.5" fill="#8A8378">12:00</text>
+<text x="487.5" y="276" text-anchor="middle" font-size="12.5" fill="#8A8378">15:30</text>
+<text x="600" y="276" text-anchor="middle" font-size="12.5" fill="#8A8378">18:00</text>
+<text x="690" y="276" text-anchor="middle" font-size="12.5" fill="#8A8378">20:00</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">16시 이후 거래가 '10분 단일가(~18시)'에서 정규장식 실시간 접속매매(~20시)로 바뀌고 2시간 길어진다.</figcaption>
 </figure>

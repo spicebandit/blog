@@ -66,9 +66,9 @@ SK하이닉스의 선택을 이해하려면 대안을 봐야 한다. 미국 자�
 
 <figure>
 <svg viewBox="0 0 800 260" role="img" aria-label="외국 기업 미국 IPO 규모 비교. 2014년 알리바바 250억 달러, 2026년 SK하이닉스 265억 달러로 알리바바를 넘어 역대 최대." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">외국 기업 미국 IPO 규모 — SK하이닉스, 알리바바를 넘다</text>
-  <text x="20" y="52" font-size="12" fill="#8A8378">단위: 억 달러 · 공모 조달액 기준</text>
-  <g font-size="13" fill="#23201D">
+  <text x="20" y="32" font-size="17" font-weight="700" fill="#23201D">외국 기업 미국 IPO 규모 — SK하이닉스, 알리바바를 넘다</text>
+  <text x="20" y="52" font-size="13" fill="#8A8378">단위: 억 달러 · 공모 조달액 기준</text>
+  <g font-size="14" fill="#23201D">
     <text x="150" y="100" text-anchor="end">알리바바 (2014)</text>
     <rect x="160" y="82" width="472" height="26" rx="4" fill="#8A8378"/>
     <text x="642" y="102" font-weight="700" fill="#8A8378">250</text>
@@ -77,8 +77,8 @@ SK하이닉스의 선택을 이해하려면 대안을 봐야 한다. 미국 자�
     <text x="670" y="162" font-weight="700" fill="#C8102E">265</text>
   </g>
   <line x1="160" y1="200" x2="720" y2="200" stroke="#E4E7EC" stroke-width="1"/>
-  <text x="160" y="224" font-size="12" fill="#8A8378">미 IPO 전체로는 스페이스X에 이어 역대 2위 규모</text>
-  <text x="160" y="244" font-size="12" fill="#8A8378">출처: 이투데이·MBC(2026-07)</text>
+  <text x="160" y="224" font-size="13" fill="#8A8378">미 IPO 전체로는 스페이스X에 이어 역대 2위 규모</text>
+  <text x="160" y="244" font-size="13" fill="#8A8378">출처: 이투데이·MBC(2026-07)</text>
 </svg>
 <figcaption>SK하이닉스의 공모 규모는 12년간 깨지지 않던 외국 기업 미 IPO 최대 기록을 갈아치웠다.</figcaption>
 </figure>

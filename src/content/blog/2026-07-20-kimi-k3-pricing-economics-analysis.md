@@ -63,8 +63,8 @@ tags: ["키미K3", "문샷", "AI요금제", "중국AI"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 250" width="100%" height="auto" role="img" aria-label="주요 AI 모델의 출력 토큰 100만개당 API 가격 비교. 딥시크 약 0.7달러, 제미나이3 프로 12달러, GPT-5.6 Sol과 클로드 소네트와 키미 K3 15달러, 클로드 오푸스 25달러">
-  <text x="20" y="26" font-size="15" font-weight="700" fill="#23201D">출력 100만 토큰당 API 가격 비교 (낮을수록 저렴, 단위 $)</text>
-  <g font-size="12.5" fill="#23201D">
+  <text x="20" y="26" font-size="16" font-weight="700" fill="#23201D">출력 100만 토큰당 API 가격 비교 (낮을수록 저렴, 단위 $)</text>
+  <g font-size="13.5" fill="#23201D">
     <text x="150" y="62" text-anchor="end">딥시크 V4</text>
     <rect x="160" y="48" width="18" height="20" rx="3" fill="#8A8378"/>
     <text x="186" y="63" fill="#23201D">~$0.7</text>
@@ -96,8 +96,8 @@ tags: ["키미K3", "문샷", "AI요금제", "중국AI"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="코딩 벤치마크에서 키미 K3와 GLM-5.2 점수 비교. DeepSWE는 K3 67.5 대 GLM 46.2, FrontierSWE는 K3 81.2 대 GLM 67.3으로 K3가 앞선다">
-  <text x="20" y="26" font-size="15" font-weight="700" fill="#23201D">코딩 벤치마크 비교 (높을수록 우수, 점)</text>
-  <g font-size="12.5" fill="#23201D">
+  <text x="20" y="26" font-size="16" font-weight="700" fill="#23201D">코딩 벤치마크 비교 (높을수록 우수, 점)</text>
+  <g font-size="13.5" fill="#23201D">
     <text x="150" y="66" text-anchor="end">DeepSWE · K3</text>
     <rect x="160" y="52" width="338" height="20" rx="3" fill="#C8102E"/>
     <text x="506" y="67" font-weight="700" fill="#C8102E">67.5</text>

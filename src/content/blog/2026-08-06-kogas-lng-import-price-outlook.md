@@ -19,29 +19,29 @@ tags: ["LNG", "가스공사", "천연가스", "에너지가격"]
 
 <figure>
 <svg viewBox="0 0 720 340" role="img" aria-label="발전용 도시가스 요금 추이. 2026년 3월 GJ당 16,048원, 5월 17,961원, 6월 19,379원으로 3개월간 20.1퍼센트 상승" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="34" font-size="17" font-weight="700" fill="#23201D">발전용 도시가스 요금 — 석 달 만에 +20.1% (높을수록 부담)</text>
-  <text x="30" y="56" font-size="13" fill="#8A8378">단위: 원/GJ · 2026년 · 세로축은 15,000원부터 시작</text>
+  <text x="30" y="34" font-size="18" font-weight="700" fill="#23201D">발전용 도시가스 요금 — 석 달 만에 +20.1% (높을수록 부담)</text>
+  <text x="30" y="56" font-size="14" fill="#8A8378">단위: 원/GJ · 2026년 · 세로축은 15,000원부터 시작</text>
   <line x1="95" y1="90" x2="690" y2="90" stroke="#E5DECF" stroke-width="1"/>
   <line x1="95" y1="130" x2="690" y2="130" stroke="#E5DECF" stroke-width="1"/>
   <line x1="95" y1="170" x2="690" y2="170" stroke="#E5DECF" stroke-width="1"/>
   <line x1="95" y1="210" x2="690" y2="210" stroke="#E5DECF" stroke-width="1"/>
   <line x1="95" y1="250" x2="690" y2="250" stroke="#E5DECF" stroke-width="1"/>
   <line x1="95" y1="290" x2="690" y2="290" stroke="#8A8378" stroke-width="1"/>
-  <text x="87" y="94" font-size="12" fill="#8A8378" text-anchor="end">20,000</text>
-  <text x="87" y="134" font-size="12" fill="#8A8378" text-anchor="end">19,000</text>
-  <text x="87" y="174" font-size="12" fill="#8A8378" text-anchor="end">18,000</text>
-  <text x="87" y="214" font-size="12" fill="#8A8378" text-anchor="end">17,000</text>
-  <text x="87" y="254" font-size="12" fill="#8A8378" text-anchor="end">16,000</text>
-  <text x="87" y="294" font-size="12" fill="#8A8378" text-anchor="end">15,000</text>
+  <text x="87" y="94" font-size="13" fill="#8A8378" text-anchor="end">20,000</text>
+  <text x="87" y="134" font-size="13" fill="#8A8378" text-anchor="end">19,000</text>
+  <text x="87" y="174" font-size="13" fill="#8A8378" text-anchor="end">18,000</text>
+  <text x="87" y="214" font-size="13" fill="#8A8378" text-anchor="end">17,000</text>
+  <text x="87" y="254" font-size="13" fill="#8A8378" text-anchor="end">16,000</text>
+  <text x="87" y="294" font-size="13" fill="#8A8378" text-anchor="end">15,000</text>
   <rect x="170" y="248" width="110" height="42" fill="#A8BDD2"/>
   <rect x="355" y="172" width="110" height="118" fill="#4E7FA8"/>
   <rect x="540" y="115" width="110" height="175" fill="#1B4F8A"/>
-  <text x="225" y="240" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">16,048</text>
-  <text x="410" y="164" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">17,961</text>
-  <text x="595" y="107" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="middle">19,379</text>
-  <text x="225" y="312" font-size="13" fill="#23201D" text-anchor="middle">3월</text>
-  <text x="410" y="312" font-size="13" fill="#23201D" text-anchor="middle">5월</text>
-  <text x="595" y="312" font-size="13" fill="#23201D" text-anchor="middle">6월</text>
+  <text x="225" y="240" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">16,048</text>
+  <text x="410" y="164" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">17,961</text>
+  <text x="595" y="107" font-size="15" font-weight="700" fill="#1B4F8A" text-anchor="middle">19,379</text>
+  <text x="225" y="312" font-size="14" fill="#23201D" text-anchor="middle">3월</text>
+  <text x="410" y="312" font-size="14" fill="#23201D" text-anchor="middle">5월</text>
+  <text x="595" y="312" font-size="14" fill="#23201D" text-anchor="middle">6월</text>
 </svg>
 <figcaption>3월 대비 6월 +20.1%. 같은 기간 민수용(주택용·일반용) 요금은 동결돼, 인상분은 발전·산업 부문이 먼저 떠안았다. 자료: 에너지경제(2026-05-29).</figcaption>
 </figure>
@@ -52,35 +52,35 @@ tags: ["LNG", "가스공사", "천연가스", "에너지가격"]
 
 <figure>
 <svg viewBox="0 0 720 330" role="img" aria-label="JKM 동북아 LNG 현물 가격 추이. 2026년 2월 27일 10.7달러에서 3월 19일 22.4달러로 급등한 뒤 8월 초까지 18달러대 유지" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="34" font-size="17" font-weight="700" fill="#23201D">JKM 동북아 LNG 현물가격 — 급등 뒤 전쟁 이전으로는 못 돌아왔다</text>
-  <text x="30" y="56" font-size="13" fill="#8A8378">단위: 달러/MMBtu · 2026년 · 가로축은 날짜 간격에 비례</text>
+  <text x="30" y="34" font-size="18" font-weight="700" fill="#23201D">JKM 동북아 LNG 현물가격 — 급등 뒤 전쟁 이전으로는 못 돌아왔다</text>
+  <text x="30" y="56" font-size="14" fill="#8A8378">단위: 달러/MMBtu · 2026년 · 가로축은 날짜 간격에 비례</text>
   <line x1="70" y1="260" x2="700" y2="260" stroke="#8A8378" stroke-width="1"/>
   <line x1="70" y1="205" x2="700" y2="205" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="150" x2="700" y2="150" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="95" x2="700" y2="95" stroke="#E5DECF" stroke-width="1"/>
   <line x1="70" y1="40" x2="700" y2="40" stroke="#E5DECF" stroke-width="1"/>
-  <text x="62" y="264" font-size="12" fill="#8A8378" text-anchor="end">0</text>
-  <text x="62" y="209" font-size="12" fill="#8A8378" text-anchor="end">6</text>
-  <text x="62" y="154" font-size="12" fill="#8A8378" text-anchor="end">12</text>
-  <text x="62" y="99" font-size="12" fill="#8A8378" text-anchor="end">18</text>
-  <text x="62" y="44" font-size="12" fill="#8A8378" text-anchor="end">24</text>
+  <text x="62" y="264" font-size="13" fill="#8A8378" text-anchor="end">0</text>
+  <text x="62" y="209" font-size="13" fill="#8A8378" text-anchor="end">6</text>
+  <text x="62" y="154" font-size="13" fill="#8A8378" text-anchor="end">12</text>
+  <text x="62" y="99" font-size="13" fill="#8A8378" text-anchor="end">18</text>
+  <text x="62" y="44" font-size="13" fill="#8A8378" text-anchor="end">24</text>
   <polyline points="100,162 173,55 279,123 395,80 680,88" fill="none" stroke="#1B4F8A" stroke-width="3"/>
   <circle cx="100" cy="162" r="5" fill="#1B4F8A"/>
   <circle cx="173" cy="55" r="5" fill="#1B4F8A"/>
   <circle cx="279" cy="123" r="5" fill="#1B4F8A"/>
   <circle cx="395" cy="80" r="5" fill="#1B4F8A"/>
   <circle cx="680" cy="88" r="5" fill="#1B4F8A"/>
-  <text x="100" y="184" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">10.7</text>
-  <text x="173" y="45" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">22.4</text>
-  <text x="279" y="145" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">15.0</text>
-  <text x="395" y="70" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">19.6</text>
-  <text x="680" y="78" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">18.8</text>
-  <text x="100" y="282" font-size="12" fill="#8A8378" text-anchor="middle">2/27</text>
-  <text x="173" y="282" font-size="12" fill="#8A8378" text-anchor="middle">3/19</text>
-  <text x="279" y="282" font-size="12" fill="#8A8378" text-anchor="middle">4/17</text>
-  <text x="395" y="282" font-size="12" fill="#8A8378" text-anchor="middle">5/19</text>
-  <text x="680" y="282" font-size="12" fill="#8A8378" text-anchor="middle">8월 초</text>
-  <text x="173" y="305" font-size="12" fill="#1B4F8A" text-anchor="middle">↑ 라스라판 피격 직후</text>
+  <text x="100" y="184" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">10.7</text>
+  <text x="173" y="45" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">22.4</text>
+  <text x="279" y="145" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">15.0</text>
+  <text x="395" y="70" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">19.6</text>
+  <text x="680" y="78" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">18.8</text>
+  <text x="100" y="282" font-size="13" fill="#8A8378" text-anchor="middle">2/27</text>
+  <text x="173" y="282" font-size="13" fill="#8A8378" text-anchor="middle">3/19</text>
+  <text x="279" y="282" font-size="13" fill="#8A8378" text-anchor="middle">4/17</text>
+  <text x="395" y="282" font-size="13" fill="#8A8378" text-anchor="middle">5/19</text>
+  <text x="680" y="282" font-size="13" fill="#8A8378" text-anchor="middle">8월 초</text>
+  <text x="173" y="305" font-size="13" fill="#1B4F8A" text-anchor="middle">↑ 라스라판 피격 직후</text>
 </svg>
 <figcaption>2월 말 대비 3월 중순 108% 상승. 이후 조정을 받았지만 전쟁 이전 10달러대로는 복귀하지 못했다. 자료: 서울경제(2026-03-20), 에너지경제(2026-05-29), Trading Economics, LNG Price Index.</figcaption>
 </figure>
@@ -153,8 +153,8 @@ tags: ["LNG", "가스공사", "천연가스", "에너지가격"]
 
 <figure>
 <svg viewBox="0 0 720 380" role="img" aria-label="2025년 한국 LNG 국가별 도입단가 비교. 현물 최고 710달러대, 호주 581, 카타르 570, 전체 평균 557, 미국 546, 러시아 533, 말레이시아 521달러" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="34" font-size="17" font-weight="700" fill="#23201D">2025년 LNG 도입단가 — 현물은 장기계약보다 확실히 비싸다</text>
-  <text x="30" y="56" font-size="13" fill="#8A8378">단위: 달러/톤 (낮을수록 유리)</text>
+  <text x="30" y="34" font-size="18" font-weight="700" fill="#23201D">2025년 LNG 도입단가 — 현물은 장기계약보다 확실히 비싸다</text>
+  <text x="30" y="56" font-size="14" fill="#8A8378">단위: 달러/톤 (낮을수록 유리)</text>
   <rect x="150" y="80" width="513" height="26" fill="#23201D"/>
   <rect x="150" y="120" width="420" height="26" fill="#A8BDD2"/>
   <rect x="150" y="160" width="412" height="26" fill="#A8BDD2"/>
@@ -162,21 +162,21 @@ tags: ["LNG", "가스공사", "천연가스", "에너지가격"]
   <rect x="150" y="240" width="394" height="26" fill="#A8BDD2"/>
   <rect x="150" y="280" width="385" height="26" fill="#A8BDD2"/>
   <rect x="150" y="320" width="376" height="26" fill="#A8BDD2"/>
-  <text x="140" y="98" font-size="13" fill="#23201D" text-anchor="end">현물 최고</text>
-  <text x="140" y="138" font-size="13" fill="#23201D" text-anchor="end">호주</text>
-  <text x="140" y="178" font-size="13" fill="#23201D" text-anchor="end">카타르</text>
-  <text x="140" y="218" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="end">전체 평균</text>
-  <text x="140" y="258" font-size="13" fill="#23201D" text-anchor="end">미국</text>
-  <text x="140" y="298" font-size="13" fill="#23201D" text-anchor="end">러시아</text>
-  <text x="140" y="338" font-size="13" fill="#23201D" text-anchor="end">말레이시아</text>
-  <text x="673" y="98" font-size="13" font-weight="700" fill="#23201D">710</text>
-  <text x="580" y="138" font-size="13" fill="#23201D">581</text>
-  <text x="572" y="178" font-size="13" fill="#23201D">570</text>
-  <text x="562" y="218" font-size="13" font-weight="700" fill="#1B4F8A">557</text>
-  <text x="554" y="258" font-size="13" fill="#23201D">546</text>
-  <text x="545" y="298" font-size="13" fill="#23201D">533</text>
-  <text x="536" y="338" font-size="13" fill="#23201D">521</text>
-  <text x="30" y="368" font-size="12" fill="#8A8378">자료: 관세청 수입통계 기반 국내 보도(2026-01) · 현물 최고는 2025년 중 최고 체결 수준</text>
+  <text x="140" y="98" font-size="14" fill="#23201D" text-anchor="end">현물 최고</text>
+  <text x="140" y="138" font-size="14" fill="#23201D" text-anchor="end">호주</text>
+  <text x="140" y="178" font-size="14" fill="#23201D" text-anchor="end">카타르</text>
+  <text x="140" y="218" font-size="14" font-weight="700" fill="#1B4F8A" text-anchor="end">전체 평균</text>
+  <text x="140" y="258" font-size="14" fill="#23201D" text-anchor="end">미국</text>
+  <text x="140" y="298" font-size="14" fill="#23201D" text-anchor="end">러시아</text>
+  <text x="140" y="338" font-size="14" fill="#23201D" text-anchor="end">말레이시아</text>
+  <text x="673" y="98" font-size="14" font-weight="700" fill="#23201D">710</text>
+  <text x="580" y="138" font-size="14" fill="#23201D">581</text>
+  <text x="572" y="178" font-size="14" fill="#23201D">570</text>
+  <text x="562" y="218" font-size="14" font-weight="700" fill="#1B4F8A">557</text>
+  <text x="554" y="258" font-size="14" fill="#23201D">546</text>
+  <text x="545" y="298" font-size="14" fill="#23201D">533</text>
+  <text x="536" y="338" font-size="14" fill="#23201D">521</text>
+  <text x="30" y="368" font-size="13" fill="#8A8378">자료: 관세청 수입통계 기반 국내 보도(2026-01) · 현물 최고는 2025년 중 최고 체결 수준</text>
 </svg>
 <figcaption>기간계약이 만료돼 현물 비중이 늘수록 평균 도입단가는 위로 끌려간다. 톤당 150달러 차이는 연 100만 톤 기준 약 1억 5,000만 달러다.</figcaption>
 </figure>
@@ -199,22 +199,22 @@ tags: ["LNG", "가스공사", "천연가스", "에너지가격"]
 
 <figure>
 <svg viewBox="0 0 720 250" role="img" aria-label="한국 LNG 기간계약의 가격지수 구성. 2024년 유가연동 83퍼센트 헨리허브연동 17퍼센트에서 에너지경제연구원 권고 포트폴리오는 약 50대 50" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="34" font-size="17" font-weight="700" fill="#23201D">가격 연동지수 구성 — 유가 일변도에서 절반씩으로</text>
-  <text x="30" y="56" font-size="13" fill="#8A8378">기간계약 물량 기준 비중(%)</text>
-  <text x="30" y="100" font-size="13" fill="#23201D">2024년 실적</text>
+  <text x="30" y="34" font-size="18" font-weight="700" fill="#23201D">가격 연동지수 구성 — 유가 일변도에서 절반씩으로</text>
+  <text x="30" y="56" font-size="14" fill="#8A8378">기간계약 물량 기준 비중(%)</text>
+  <text x="30" y="100" font-size="14" fill="#23201D">2024년 실적</text>
   <rect x="150" y="78" width="440" height="34" fill="#23201D"/>
   <rect x="590" y="78" width="90" height="34" fill="#1B4F8A"/>
-  <text x="370" y="101" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">유가연동 83%</text>
-  <text x="635" y="101" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">17%</text>
-  <text x="30" y="175" font-size="13" fill="#23201D">KEEI 권고안</text>
+  <text x="370" y="101" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="middle">유가연동 83%</text>
+  <text x="635" y="101" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">17%</text>
+  <text x="30" y="175" font-size="14" fill="#23201D">KEEI 권고안</text>
   <rect x="150" y="153" width="265" height="34" fill="#23201D"/>
   <rect x="415" y="153" width="265" height="34" fill="#1B4F8A"/>
-  <text x="282" y="176" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">유가연동 약 50%</text>
-  <text x="547" y="176" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">헨리허브 약 50%</text>
+  <text x="282" y="176" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="middle">유가연동 약 50%</text>
+  <text x="547" y="176" font-size="15" font-weight="700" fill="#FAF6EE" text-anchor="middle">헨리허브 약 50%</text>
   <rect x="150" y="212" width="14" height="14" fill="#23201D"/>
-  <text x="172" y="224" font-size="12" fill="#8A8378">유가(브렌트·JCC) 연동</text>
+  <text x="172" y="224" font-size="13" fill="#8A8378">유가(브렌트·JCC) 연동</text>
   <rect x="330" y="212" width="14" height="14" fill="#1B4F8A"/>
-  <text x="352" y="224" font-size="12" fill="#8A8378">헨리허브(미국 가스) 연동</text>
+  <text x="352" y="224" font-size="13" fill="#8A8378">헨리허브(미국 가스) 연동</text>
 </svg>
 <figcaption>에너지경제연구원은 단일 지수 의존보다 유가연동 46.6~52.5% · 헨리허브연동 47.5~53.4%의 포트폴리오가 가격 상승 위험 관리에 유리하다고 분석했다. 2028년 미국산 물량이 개시되면 실제 구성이 이 권고에 가까워진다.</figcaption>
 </figure>

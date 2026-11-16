@@ -48,9 +48,9 @@ There are also hour-equivalent figures for the weekly caps. When Anthropic intro
 
 <figure>
 <svg viewBox="0 0 800 240" role="img" aria-label="Relative usage by Claude Code plan. Using Pro as the 1x baseline, Max 5x offers about 5x and Max 20x about 20x the per-session usage." style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;font-family:system-ui">
-  <text x="20" y="32" font-size="16" font-weight="700" fill="#23201D">Relative usage by plan (Pro = 1x baseline)</text>
-  <text x="20" y="52" font-size="12" fill="#8A8378">Per-session usage multiple · monthly price</text>
-  <g font-size="13" fill="#23201D">
+  <text x="20" y="32" font-size="17" font-weight="700" fill="#23201D">Relative usage by plan (Pro = 1x baseline)</text>
+  <text x="20" y="52" font-size="13" fill="#8A8378">Per-session usage multiple · monthly price</text>
+  <g font-size="14" fill="#23201D">
     <text x="150" y="92" text-anchor="end">Pro ($20)</text>
     <rect x="160" y="76" width="30" height="24" rx="4" fill="#8A8378"/>
     <text x="198" y="94" font-weight="700" fill="#8A8378">1x</text>
@@ -61,7 +61,7 @@ There are also hour-equivalent figures for the weekly caps. When Anthropic intro
     <rect x="160" y="172" width="600" height="24" rx="4" fill="#C8102E"/>
     <text x="748" y="190" font-weight="700" fill="#C8102E" text-anchor="end">20x</text>
   </g>
-  <text x="160" y="222" font-size="12" fill="#8A8378">Source: Claude Help Center (Max plan) · multiples are per-session usage</text>
+  <text x="160" y="222" font-size="13" fill="#8A8378">Source: Claude Help Center (Max plan) · multiples are per-session usage</text>
 </svg>
 <figcaption>The difference between plans is not features but how much you can run without interruption. Prices jump 4x and 10x, but usage rises 5x and 20x.</figcaption>
 </figure>

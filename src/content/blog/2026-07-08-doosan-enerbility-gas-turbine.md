@@ -74,22 +74,22 @@ tags: ["두산에너빌리티", "가스터빈", "AI전력난", "발전"]
 
 <figure style="margin:1.5rem 0;padding:1rem;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
 <svg viewBox="0 0 640 280" width="100%" height="auto" role="img" aria-label="두산에너빌리티 수주잔고 전망 막대그래프. 2026년 약 30조 원, 2027년 약 42조 원.">
-  <text x="320" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#23201D">두산에너빌리티 수주잔고 전망 (증권가 추정, 조 원)</text>
+  <text x="320" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#23201D">두산에너빌리티 수주잔고 전망 (증권가 추정, 조 원)</text>
   <line x1="70" y1="240" x2="600" y2="240" stroke="#23201D" stroke-width="1.5"/>
-  <text x="62" y="244" text-anchor="end" font-size="11" fill="#8A8378">0</text>
-  <text x="62" y="170" text-anchor="end" font-size="11" fill="#8A8378">20</text>
-  <text x="62" y="100" text-anchor="end" font-size="11" fill="#8A8378">40</text>
+  <text x="62" y="244" text-anchor="end" font-size="12.5" fill="#8A8378">0</text>
+  <text x="62" y="170" text-anchor="end" font-size="12.5" fill="#8A8378">20</text>
+  <text x="62" y="100" text-anchor="end" font-size="12.5" fill="#8A8378">40</text>
   <line x1="70" y1="170" x2="600" y2="170" stroke="#E4E7EC" stroke-width="0.5"/>
   <line x1="70" y1="100" x2="600" y2="100" stroke="#E4E7EC" stroke-width="0.5"/>
   <!-- 스케일 3.5px/조 (240 기준선 - 값*3.5) -->
   <!-- 2026: 30조 -> 높이 105 -->
   <rect x="180" y="135" width="120" height="105" fill="#8A8378"/>
-  <text x="240" y="127" text-anchor="middle" font-size="14" font-weight="700" fill="#23201D">약 30조</text>
-  <text x="240" y="258" text-anchor="middle" font-size="12" fill="#23201D">2026년(E)</text>
+  <text x="240" y="127" text-anchor="middle" font-size="15" font-weight="700" fill="#23201D">약 30조</text>
+  <text x="240" y="258" text-anchor="middle" font-size="13" fill="#23201D">2026년(E)</text>
   <!-- 2027: 42조 -> 높이 147 -->
   <rect x="380" y="93" width="120" height="147" fill="#C8102E"/>
-  <text x="440" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#C8102E">약 42조</text>
-  <text x="440" y="258" text-anchor="middle" font-size="12" fill="#23201D">2027년(E)</text>
+  <text x="440" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#C8102E">약 42조</text>
+  <text x="440" y="258" text-anchor="middle" font-size="13" fill="#23201D">2027년(E)</text>
 </svg>
 <figcaption style="font-size:0.85rem;color:#8A8378;margin-top:0.5rem;">증권가는 수주잔고가 2026년 약 30조 원 → 2027년 약 42조 원으로 늘 것으로 추정한다. 추정치이며 실제와 다를 수 있다.</figcaption>
 </figure>

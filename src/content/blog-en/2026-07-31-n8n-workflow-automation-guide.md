@@ -74,14 +74,14 @@ The most important difference is **billing model**. Zapier counts each individua
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 180" width="100%" height="auto" role="img" aria-label="For a multi-step workflow run 10,000 times a month, Zapier's per-task billing is costly while n8n's per-execution billing is 80-90 percent cheaper">
-  <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">Cost for multi-step × 10K runs/mo (lower = better)</text>
+  <text x="20" y="18" fill="#23201D" font-size="13" font-weight="bold">Cost for multi-step × 10K runs/mo (lower = better)</text>
   <line x1="20" y1="150" x2="400" y2="150" stroke="#8A8378" stroke-width="1"/>
   <rect x="70" y="40" width="80" height="110" fill="#8A8378"/>
-  <text x="76" y="34" fill="#23201D" font-size="12" font-weight="bold">Zapier (per task)</text>
-  <text x="90" y="166" fill="#8A8378" font-size="11">baseline 100%</text>
+  <text x="76" y="34" fill="#23201D" font-size="13" font-weight="bold">Zapier (per task)</text>
+  <text x="90" y="166" fill="#8A8378" font-size="12.5">baseline 100%</text>
   <rect x="270" y="128" width="80" height="22" fill="#C8102E"/>
-  <text x="268" y="122" fill="#C8102E" font-size="12" font-weight="bold">n8n (per exec) ~10-20%</text>
-  <text x="278" y="166" fill="#8A8378" font-size="11">80-90%↓</text>
+  <text x="268" y="122" fill="#C8102E" font-size="13" font-weight="bold">n8n (per exec) ~10-20%</text>
+  <text x="278" y="166" fill="#8A8378" font-size="12.5">80-90%↓</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">The more complex and high-volume the automation, the cheaper per-execution billing (n8n) is than per-task billing (Zapier). Source: media comparisons (2026).</figcaption>
 </figure>

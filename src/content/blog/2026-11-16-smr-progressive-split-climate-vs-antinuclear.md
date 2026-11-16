@@ -39,22 +39,22 @@ NRDC가 내세운 찬성 논거의 핵심은 원자력의 미덕이 아니었다
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:28px 0;">
 <svg viewBox="0 0 640 230" style="width:100%;height:auto" role="img" aria-label="아이오와 석탄 발전량이 2024년 약 14.5TWh에서 2025년 19.1TWh로 32% 증가했음을 보여주는 막대그래프">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">아이오와 석탄 발전량 — 풍력 1위 주에서 석탄이 되돌아왔다</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">단위: TWh · 높을수록 탄소 배출 증가</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">아이오와 석탄 발전량 — 풍력 1위 주에서 석탄이 되돌아왔다</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">단위: TWh · 높을수록 탄소 배출 증가</text>
 <line x1="120" y1="60" x2="120" y2="180" stroke="#E5DECF" stroke-width="1"/>
 <line x1="120" y1="180" x2="620" y2="180" stroke="#E5DECF" stroke-width="1"/>
-<text x="112" y="100" font-size="10" fill="#8A8378" text-anchor="end">20</text>
+<text x="112" y="100" font-size="12" fill="#8A8378" text-anchor="end">20</text>
 <line x1="120" y1="96" x2="620" y2="96" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="112" y="142" font-size="10" fill="#8A8378" text-anchor="end">10</text>
+<text x="112" y="142" font-size="12" fill="#8A8378" text-anchor="end">10</text>
 <line x1="120" y1="138" x2="620" y2="138" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="112" y="184" font-size="10" fill="#8A8378" text-anchor="end">0</text>
+<text x="112" y="184" font-size="12" fill="#8A8378" text-anchor="end">0</text>
 <rect x="160" y="119" width="150" height="61" fill="#A8BDD2"/>
-<text x="235" y="141" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">14.5</text>
-<text x="235" y="198" font-size="11" fill="#23201D" text-anchor="middle">2024년 (비중 20.6%)</text>
+<text x="235" y="141" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">14.5</text>
+<text x="235" y="198" font-size="12.5" fill="#23201D" text-anchor="middle">2024년 (비중 20.6%)</text>
 <rect x="400" y="99" width="150" height="81" fill="#1B4F8A"/>
-<text x="475" y="125" font-size="13" font-weight="700" fill="#FAF6EE" text-anchor="middle">19.1</text>
-<text x="475" y="198" font-size="11" fill="#23201D" text-anchor="middle">2025년 (비중 25.6%)</text>
-<text x="475" y="78" font-size="12" font-weight="700" fill="#1B4F8A" text-anchor="middle">+32%</text>
+<text x="475" y="125" font-size="14" font-weight="700" fill="#FAF6EE" text-anchor="middle">19.1</text>
+<text x="475" y="198" font-size="12.5" fill="#23201D" text-anchor="middle">2025년 (비중 25.6%)</text>
+<text x="475" y="78" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">+32%</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:8px;">NRDC가 듀안아널드 소유권 통합을 지지한 근거. 같은 기간 풍력 발전량은 1.6% 줄었다. 즉 석탄은 풍력을 밀어낸 게 아니라, 정체된 풍력을 앞질러 간 수요 증가분을 가져갔다. 출처: NRDC의 NRC 제출 의견서(2026-03-02), EIA·EPA 데이터.</figcaption>
 </figure>
@@ -177,39 +177,39 @@ So what? **민주당 기후 연합이 원자력에 내준 양보가, 결과적�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:28px 0;">
 <svg viewBox="0 0 640 300" style="width:100%;height:auto" role="img" aria-label="갤럽 2026년 조사에서 민주당 지지층과 공화당 지지층의 에너지원별 비중 확대 선호 비율. 태양광은 민주 87% 대 공화 38%, 풍력은 81% 대 22%, 원자력은 42% 대 52%로 원자력 격차가 가장 작다">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">정당별 '비중을 더 늘려야' 응답 — 원자력만 격차가 10%p</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">갤럽 2026년 3월 조사 · 단위 % · 진한 막대=민주당·민주성향, 연한 막대=공화당·공화성향</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">정당별 '비중을 더 늘려야' 응답 — 원자력만 격차가 10%p</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">갤럽 2026년 3월 조사 · 단위 % · 진한 막대=민주당·민주성향, 연한 막대=공화당·공화성향</text>
 <line x1="120" y1="60" x2="120" y2="250" stroke="#E5DECF" stroke-width="1"/>
 <line x1="120" y1="250" x2="620" y2="250" stroke="#E5DECF" stroke-width="1"/>
 <line x1="120" y1="155" x2="620" y2="155" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="112" y="159" font-size="10" fill="#8A8378" text-anchor="end">50</text>
+<text x="112" y="159" font-size="12" fill="#8A8378" text-anchor="end">50</text>
 <line x1="120" y1="60" x2="620" y2="60" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="112" y="64" font-size="10" fill="#8A8378" text-anchor="end">100</text>
-<text x="112" y="254" font-size="10" fill="#8A8378" text-anchor="end">0</text>
+<text x="112" y="64" font-size="12" fill="#8A8378" text-anchor="end">100</text>
+<text x="112" y="254" font-size="12" fill="#8A8378" text-anchor="end">0</text>
 <rect x="150" y="85" width="40" height="165" fill="#1B4F8A"/>
-<text x="170" y="79" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">87</text>
+<text x="170" y="79" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">87</text>
 <rect x="194" y="178" width="40" height="72" fill="#A8BDD2"/>
-<text x="214" y="172" font-size="11" fill="#23201D" text-anchor="middle">38</text>
-<text x="192" y="270" font-size="11" fill="#23201D" text-anchor="middle">태양광</text>
-<text x="192" y="285" font-size="10" fill="#8A8378" text-anchor="middle">격차 49%p</text>
+<text x="214" y="172" font-size="12.5" fill="#23201D" text-anchor="middle">38</text>
+<text x="192" y="270" font-size="12.5" fill="#23201D" text-anchor="middle">태양광</text>
+<text x="192" y="285" font-size="12" fill="#8A8378" text-anchor="middle">격차 49%p</text>
 <rect x="270" y="96" width="40" height="154" fill="#1B4F8A"/>
-<text x="290" y="90" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">81</text>
+<text x="290" y="90" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">81</text>
 <rect x="314" y="208" width="40" height="42" fill="#A8BDD2"/>
-<text x="334" y="202" font-size="11" fill="#23201D" text-anchor="middle">22</text>
-<text x="312" y="270" font-size="11" fill="#23201D" text-anchor="middle">풍력</text>
-<text x="312" y="285" font-size="10" fill="#8A8378" text-anchor="middle">격차 59%p</text>
+<text x="334" y="202" font-size="12.5" fill="#23201D" text-anchor="middle">22</text>
+<text x="312" y="270" font-size="12.5" fill="#23201D" text-anchor="middle">풍력</text>
+<text x="312" y="285" font-size="12" fill="#8A8378" text-anchor="middle">격차 59%p</text>
 <rect x="390" y="170" width="40" height="80" fill="#4E7FA8"/>
-<text x="410" y="164" font-size="11" font-weight="700" fill="#4E7FA8" text-anchor="middle">42</text>
+<text x="410" y="164" font-size="12.5" font-weight="700" fill="#4E7FA8" text-anchor="middle">42</text>
 <rect x="434" y="151" width="40" height="99" fill="#A8BDD2"/>
-<text x="454" y="145" font-size="11" fill="#23201D" text-anchor="middle">52</text>
-<text x="432" y="270" font-size="11" font-weight="700" fill="#23201D" text-anchor="middle">원자력</text>
-<text x="432" y="285" font-size="10" font-weight="700" fill="#1B4F8A" text-anchor="middle">격차 10%p ← 최소</text>
+<text x="454" y="145" font-size="12.5" fill="#23201D" text-anchor="middle">52</text>
+<text x="432" y="270" font-size="12.5" font-weight="700" fill="#23201D" text-anchor="middle">원자력</text>
+<text x="432" y="285" font-size="12" font-weight="700" fill="#1B4F8A" text-anchor="middle">격차 10%p ← 최소</text>
 <rect x="510" y="197" width="40" height="53" fill="#4E7FA8"/>
-<text x="530" y="191" font-size="11" fill="#4E7FA8" text-anchor="middle">28</text>
+<text x="530" y="191" font-size="12.5" fill="#4E7FA8" text-anchor="middle">28</text>
 <rect x="554" y="138" width="40" height="112" fill="#A8BDD2"/>
-<text x="574" y="132" font-size="11" fill="#23201D" text-anchor="middle">59</text>
-<text x="552" y="270" font-size="11" fill="#23201D" text-anchor="middle">천연가스</text>
-<text x="552" y="285" font-size="10" fill="#8A8378" text-anchor="middle">격차 31%p</text>
+<text x="574" y="132" font-size="12.5" fill="#23201D" text-anchor="middle">59</text>
+<text x="552" y="270" font-size="12.5" fill="#23201D" text-anchor="middle">천연가스</text>
+<text x="552" y="285" font-size="12" fill="#8A8378" text-anchor="middle">격차 31%p</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:8px;">모든 에너지원 중 원자력에서만 정당 간 격차가 10%p로 좁혀졌다. 갤럽은 이를 "당파적 견해가 가장 유사한 에너지원"으로 표현했다. 출처: Gallup, 'Less Support in U.S. for Solar, Wind Energy; More for Nuclear'(2026-04-22).</figcaption>
 </figure>
@@ -220,20 +220,20 @@ So what? **민주당 기후 연합이 원자력에 내준 양보가, 결과적�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 14px;margin:28px 0;">
 <svg viewBox="0 0 640 210" style="width:100%;height:auto" role="img" aria-label="민주당 지지층은 원자력 비중 확대에는 42%가 찬성하지만 자기 지역 원전 건설에는 59%가 반대한다는 비교 막대그래프">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">민주당 지지층의 두 얼굴 — 질문을 바꾸면 합의가 사라진다</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">갤럽 2026년 3월 조사 · 단위 % · 민주당·민주성향 응답자</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">민주당 지지층의 두 얼굴 — 질문을 바꾸면 합의가 사라진다</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">갤럽 2026년 3월 조사 · 단위 % · 민주당·민주성향 응답자</text>
 <line x1="20" y1="60" x2="620" y2="60" stroke="#E5DECF" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="30" y="80" font-size="12" fill="#23201D">"원자력 비중을 더 늘려야" 찬성</text>
+<text x="30" y="80" font-size="13" fill="#23201D">"원자력 비중을 더 늘려야" 찬성</text>
 <rect x="300" y="68" width="252" height="22" fill="#E5DECF"/>
 <rect x="300" y="68" width="106" height="22" fill="#4E7FA8"/>
-<text x="562" y="84" font-size="12" font-weight="700" fill="#4E7FA8">42%</text>
-<text x="30" y="125" font-size="12" font-weight="700" fill="#23201D">"내 지역에 원전 건설" 반대</text>
+<text x="562" y="84" font-size="13" font-weight="700" fill="#4E7FA8">42%</text>
+<text x="30" y="125" font-size="13" font-weight="700" fill="#23201D">"내 지역에 원전 건설" 반대</text>
 <rect x="300" y="113" width="252" height="22" fill="#E5DECF"/>
 <rect x="300" y="113" width="149" height="22" fill="#1B4F8A"/>
-<text x="562" y="129" font-size="12" font-weight="700" fill="#1B4F8A">59%</text>
+<text x="562" y="129" font-size="13" font-weight="700" fill="#1B4F8A">59%</text>
 <line x1="20" y1="155" x2="620" y2="155" stroke="#E5DECF" stroke-width="1"/>
-<text x="30" y="178" font-size="11" fill="#8A8378">전체 응답: 지역 내 건설 찬성 45% · 반대 53%</text>
-<text x="30" y="196" font-size="11" fill="#8A8378">정당 격차: 비중 확대 10%p → 지역 건설 19%p (공화 59% 찬성 vs 민주 59% 반대)</text>
+<text x="30" y="178" font-size="12.5" fill="#8A8378">전체 응답: 지역 내 건설 찬성 45% · 반대 53%</text>
+<text x="30" y="196" font-size="12.5" fill="#8A8378">정당 격차: 비중 확대 10%p → 지역 건설 19%p (공화 59% 찬성 vs 민주 59% 반대)</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:8px;">추상적 에너지 믹스 질문에서는 초당적 수렴이 보이지만, 입지 질문으로 내려가면 다시 갈라진다. 출처: Gallup(2026-04-22).</figcaption>
 </figure>

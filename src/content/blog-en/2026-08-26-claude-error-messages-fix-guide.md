@@ -254,22 +254,22 @@ When you can't find your exact message, work down this list. The earlier steps a
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 330" style="width:100%;height:auto" role="img" aria-label="Claude error triage order. Check status page, then your limits, then request size, then your environment, then contact support">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">Triage order — work down from the top</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">The higher the step, the more common it is and the cheaper to check</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">Triage order — work down from the top</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">The higher the step, the more common it is and the cheaper to check</text>
   <rect x="30" y="60" width="540" height="42" rx="6" fill="#1B4F8A"/>
-  <text x="46" y="79" font-size="13" font-weight="700" fill="#FAF6EE">1. Is it an outage?</text>
-  <text x="46" y="95" font-size="11" fill="#FAF6EE">status.claude.com shows an incident → wait. Nothing else to do</text>
+  <text x="46" y="79" font-size="14" font-weight="700" fill="#FAF6EE">1. Is it an outage?</text>
+  <text x="46" y="95" font-size="12.5" fill="#FAF6EE">status.claude.com shows an incident → wait. Nothing else to do</text>
   <rect x="30" y="114" width="540" height="42" rx="6" fill="#4E7FA8"/>
-  <text x="46" y="133" font-size="13" font-weight="700" fill="#FAF6EE">2. Is it your limit?</text>
-  <text x="46" y="149" font-size="11" fill="#FAF6EE">5-hour cap · spend cap · 429 → wait, upgrade, or buy credits</text>
+  <text x="46" y="133" font-size="14" font-weight="700" fill="#FAF6EE">2. Is it your limit?</text>
+  <text x="46" y="149" font-size="12.5" fill="#FAF6EE">5-hour cap · spend cap · 429 → wait, upgrade, or buy credits</text>
   <rect x="30" y="168" width="540" height="42" rx="6" fill="#4E7FA8"/>
-  <text x="46" y="187" font-size="13" font-weight="700" fill="#FAF6EE">3. Is your request too heavy?</text>
-  <text x="46" y="203" font-size="11" fill="#FAF6EE">Context overflow · 413 · timeout → split it up or /compact</text>
+  <text x="46" y="187" font-size="14" font-weight="700" fill="#FAF6EE">3. Is your request too heavy?</text>
+  <text x="46" y="203" font-size="12.5" fill="#FAF6EE">Context overflow · 413 · timeout → split it up or /compact</text>
   <rect x="30" y="222" width="540" height="42" rx="6" fill="#A8BDD2"/>
-  <text x="46" y="241" font-size="13" font-weight="700" fill="#23201D">4. Is it your environment?</text>
-  <text x="46" y="257" font-size="11" fill="#23201D">Login · TLS · proxy → check VPN, extensions, certificates</text>
+  <text x="46" y="241" font-size="14" font-weight="700" fill="#23201D">4. Is it your environment?</text>
+  <text x="46" y="257" font-size="12.5" fill="#23201D">Login · TLS · proxy → check VPN, extensions, certificates</text>
   <rect x="30" y="276" width="540" height="38" rx="6" fill="#FAF6EE" stroke="#23201D" stroke-width="1.5"/>
-  <text x="46" y="300" font-size="12" font-weight="700" fill="#23201D">5. Still stuck → grab the request_id and contact support</text>
+  <text x="46" y="300" font-size="13" font-weight="700" fill="#23201D">5. Still stuck → grab the request_id and contact support</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">Steps 1 and 2 take seconds. Everything below takes real work.</figcaption>
 </figure>

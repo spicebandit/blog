@@ -44,14 +44,14 @@ tags: ["지멘스에너지", "옴테라", "에너지기업", "리브랜딩"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 180" width="100%" height="auto" role="img" aria-label="지멘스 브랜드 로열티 연 약 3억 유로가 옴테라 독립 브랜드 전환으로 절감된다는 개념 비교">
-  <text x="20" y="20" fill="#23201D" font-size="12" font-weight="bold">브랜드 로열티 (연간, 낮을수록 이득↑)</text>
+  <text x="20" y="20" fill="#23201D" font-size="13" font-weight="bold">브랜드 로열티 (연간, 낮을수록 이득↑)</text>
   <line x1="20" y1="140" x2="400" y2="140" stroke="#8A8378" stroke-width="1"/>
   <rect x="70" y="45" width="80" height="95" fill="#8A8378"/>
-  <text x="60" y="38" fill="#23201D" font-size="12" font-weight="bold">약 €3억</text>
-  <text x="55" y="158" fill="#8A8378" font-size="11">'지멘스' 라이선스</text>
+  <text x="60" y="38" fill="#23201D" font-size="13" font-weight="bold">약 €3억</text>
+  <text x="55" y="158" fill="#8A8378" font-size="12.5">'지멘스' 라이선스</text>
   <rect x="270" y="132" width="80" height="8" fill="#C8102E"/>
-  <text x="283" y="126" fill="#C8102E" font-size="12" font-weight="bold">≈ €0</text>
-  <text x="268" y="158" fill="#23201D" font-size="11">옴테라(전환완료 후)</text>
+  <text x="283" y="126" fill="#C8102E" font-size="13" font-weight="bold">≈ €0</text>
+  <text x="268" y="158" fill="#23201D" font-size="12.5">옴테라(전환완료 후)</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">지멘스 브랜드에 매년 지불하던 약 3억 유로 규모의 로열티가 전환 완료 후 사라진다(라이선스는 2030년까지 유효). 출처: 매체 보도 종합(2026).</figcaption>
 </figure>

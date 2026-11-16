@@ -46,23 +46,23 @@ Plug the math above into the 5090's 32GB and you get this table. Figures are for
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 12px 8px;">
 <svg viewBox="0 0 640 280" width="100%" height="auto" role="img" aria-label="Bar chart of Q4 required memory by model size on an RTX 5090 with 32GB of VRAM. 8B about 5 gigabytes, 14B about 9 gigabytes, and 32B about 20 gigabytes all fit within 32 gigabytes. 70B about 40 gigabytes exceeds the limit.">
-  <text x="12" y="22" fill="#23201D" font-size="15" font-weight="bold">Required VRAM by Q4 model on an RTX 5090 (32GB)</text>
+  <text x="12" y="22" fill="#23201D" font-size="16" font-weight="bold">Required VRAM by Q4 model on an RTX 5090 (32GB)</text>
   <line x1="200" y1="40" x2="200" y2="230" stroke="#C8102E" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="205" y="52" fill="#C8102E" font-size="11" font-weight="bold">← 32GB limit line</text>
-  <text x="150" y="76" fill="#23201D" font-size="13">8B</text>
+  <text x="205" y="52" fill="#C8102E" font-size="12.5" font-weight="bold">← 32GB limit line</text>
+  <text x="150" y="76" fill="#23201D" font-size="14">8B</text>
   <rect x="70" y="62" width="20" height="20" fill="#E4E7EC"/>
-  <text x="95" y="76" fill="#8A8378" font-size="11">~5GB · very fast</text>
-  <text x="140" y="116" fill="#23201D" font-size="13">14B</text>
+  <text x="95" y="76" fill="#8A8378" font-size="12.5">~5GB · very fast</text>
+  <text x="140" y="116" fill="#23201D" font-size="14">14B</text>
   <rect x="70" y="102" width="36" height="20" fill="#E4E7EC"/>
-  <text x="112" y="116" fill="#8A8378" font-size="11">~9GB · fast</text>
-  <text x="140" y="156" fill="#23201D" font-size="13">32B</text>
+  <text x="112" y="116" fill="#8A8378" font-size="12.5">~9GB · fast</text>
+  <text x="140" y="156" fill="#23201D" font-size="14">32B</text>
   <rect x="70" y="142" width="80" height="20" fill="#C8102E"/>
-  <text x="156" y="156" fill="#23201D" font-size="11" font-weight="bold">~20GB · sweet spot (40–55 tok/s)</text>
-  <text x="140" y="196" fill="#23201D" font-size="13">70B</text>
+  <text x="156" y="156" fill="#23201D" font-size="12.5" font-weight="bold">~20GB · sweet spot (40–55 tok/s)</text>
+  <text x="140" y="196" fill="#23201D" font-size="14">70B</text>
   <rect x="70" y="182" width="160" height="20" fill="#8A8378"/>
-  <text x="234" y="196" fill="#8A8378" font-size="11">~40GB · over limit → needs Q3 or offloading</text>
-  <text x="12" y="252" fill="#8A8378" font-size="11">* Approximate values based on Q4 file sizes. In practice, extra VRAM is needed in proportion to context length.</text>
-  <text x="12" y="270" fill="#8A8378" font-size="11">* Speed (tok/s) is a rough figure that varies with hardware, model, and settings.</text>
+  <text x="234" y="196" fill="#8A8378" font-size="12.5">~40GB · over limit → needs Q3 or offloading</text>
+  <text x="12" y="252" fill="#8A8378" font-size="12.5">* Approximate values based on Q4 file sizes. In practice, extra VRAM is needed in proportion to context length.</text>
+  <text x="12" y="270" fill="#8A8378" font-size="12.5">* Speed (tok/s) is a rough figure that varies with hardware, model, and settings.</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:0.85em;margin-top:6px;">Up to 32B fits comfortably within 32GB; 70B crosses the limit line and forces a compromise.</figcaption>
 </figure>

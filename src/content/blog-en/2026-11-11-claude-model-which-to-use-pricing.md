@@ -40,42 +40,42 @@ That "from" on Haiku 5.5 carries a condition. **Prompts up to 100,000 tokens bil
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0">
 <svg viewBox="0 0 700 300" role="img" aria-label="Bar chart comparing input and output prices per million tokens across four Claude models. Fable 5.2 is the most expensive at 8 dollars input and 40 dollars output; Haiku 5.5 is the cheapest at 0.10 and 0.50 dollars." style="width:100%;height:auto">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">Price per million tokens — lower is cheaper (USD)</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">Top bar = input · Bottom bar = output</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">Price per million tokens — lower is cheaper (USD)</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">Top bar = input · Bottom bar = output</text>
 <line x1="120" y1="56" x2="120" y2="262" stroke="#E5DECF" stroke-width="1"/>
 <line x1="220" y1="56" x2="220" y2="262" stroke="#E5DECF" stroke-width="1"/>
 <line x1="320" y1="56" x2="320" y2="262" stroke="#E5DECF" stroke-width="1"/>
 <line x1="420" y1="56" x2="420" y2="262" stroke="#E5DECF" stroke-width="1"/>
 <line x1="520" y1="56" x2="520" y2="262" stroke="#E5DECF" stroke-width="1"/>
 <!-- Fable 5.2 -->
-<text x="112" y="76" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">Fable 5.2</text>
+<text x="112" y="76" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">Fable 5.2</text>
 <rect x="120" y="60" width="80" height="14" fill="#4E7FA8"/>
-<text x="208" y="71" font-size="11" fill="#23201D">$8</text>
+<text x="208" y="71" font-size="12.5" fill="#23201D">$8</text>
 <rect x="120" y="78" width="400" height="14" fill="#1B4F8A"/>
-<text x="528" y="89" font-size="11" font-weight="700" fill="#1B4F8A">$40</text>
+<text x="528" y="89" font-size="12.5" font-weight="700" fill="#1B4F8A">$40</text>
 <!-- Opus 5.5 -->
-<text x="112" y="134" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">Opus 5.5</text>
+<text x="112" y="134" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">Opus 5.5</text>
 <rect x="120" y="118" width="40" height="14" fill="#A8BDD2"/>
-<text x="168" y="129" font-size="11" fill="#23201D">$4</text>
+<text x="168" y="129" font-size="12.5" fill="#23201D">$4</text>
 <rect x="120" y="136" width="200" height="14" fill="#4E7FA8"/>
-<text x="328" y="147" font-size="11" fill="#23201D">$20</text>
+<text x="328" y="147" font-size="12.5" fill="#23201D">$20</text>
 <!-- Sonnet 5.5 -->
-<text x="112" y="192" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">Sonnet 5.5</text>
+<text x="112" y="192" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">Sonnet 5.5</text>
 <rect x="120" y="176" width="20" height="14" fill="#A8BDD2"/>
-<text x="148" y="187" font-size="11" fill="#23201D">$2</text>
+<text x="148" y="187" font-size="12.5" fill="#23201D">$2</text>
 <rect x="120" y="194" width="100" height="14" fill="#A8BDD2"/>
-<text x="228" y="205" font-size="11" fill="#23201D">$10</text>
+<text x="228" y="205" font-size="12.5" fill="#23201D">$10</text>
 <!-- Haiku 5.5 -->
-<text x="112" y="250" font-size="12" font-weight="700" text-anchor="end" fill="#23201D">Haiku 5.5</text>
+<text x="112" y="250" font-size="13" font-weight="700" text-anchor="end" fill="#23201D">Haiku 5.5</text>
 <rect x="120" y="234" width="2" height="14" fill="#A8BDD2"/>
-<text x="130" y="245" font-size="11" fill="#8A8378">$0.10</text>
+<text x="130" y="245" font-size="12.5" fill="#8A8378">$0.10</text>
 <rect x="120" y="252" width="5" height="14" fill="#A8BDD2"/>
-<text x="133" y="263" font-size="11" fill="#8A8378">$0.50 (prompts up to 100K tokens)</text>
-<text x="116" y="280" font-size="10" fill="#8A8378">0</text>
-<text x="212" y="280" font-size="10" fill="#8A8378">10</text>
-<text x="312" y="280" font-size="10" fill="#8A8378">20</text>
-<text x="412" y="280" font-size="10" fill="#8A8378">30</text>
-<text x="512" y="280" font-size="10" fill="#8A8378">40</text>
+<text x="133" y="263" font-size="12.5" fill="#8A8378">$0.50 (prompts up to 100K tokens)</text>
+<text x="116" y="280" font-size="12" fill="#8A8378">0</text>
+<text x="212" y="280" font-size="12" fill="#8A8378">10</text>
+<text x="312" y="280" font-size="12" fill="#8A8378">20</text>
+<text x="412" y="280" font-size="12" fill="#8A8378">30</text>
+<text x="512" y="280" font-size="12" fill="#8A8378">40</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:8px">The output rate is what decides the bill. Fable 5.2 costs 2× Opus 5.5, 4× Sonnet 5.5, and 80× Haiku 5.5 at its lower tier ($0.50/MTok). Source: Anthropic Pricing docs, retrieved 2026-11-11.</figcaption>
 </figure>
@@ -104,56 +104,56 @@ For capability, Anthropic's own published benchmarks are what we have. The usefu
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px 12px;margin:28px 0">
 <svg viewBox="0 0 700 390" role="img" aria-label="Bar chart comparing benchmark scores for Fable 5.1, Opus 5.5 and Fable 5.2. FrontierCode 2.0 scores 32.4, 45.5 and 49.1 percent; AutomationBench scores 31.4, 42.5 and 51.4 percent; AA-Briefcase scores 61.5, 61.2 and 66.1 percent." style="width:100%;height:auto">
-<text x="12" y="22" font-size="14" font-weight="700" fill="#23201D">Benchmark scores (%, higher is better)</text>
-<text x="12" y="40" font-size="11" fill="#8A8378">Light bar = Fable 5.1 · Mid bar = Opus 5.5 · Dark bar = Fable 5.2</text>
+<text x="12" y="22" font-size="15" font-weight="700" fill="#23201D">Benchmark scores (%, higher is better)</text>
+<text x="12" y="40" font-size="12.5" fill="#8A8378">Light bar = Fable 5.1 · Mid bar = Opus 5.5 · Dark bar = Fable 5.2</text>
 <line x1="230" y1="56" x2="230" y2="352" stroke="#E5DECF" stroke-width="1"/>
 <line x1="335" y1="56" x2="335" y2="352" stroke="#E5DECF" stroke-width="1"/>
 <line x1="440" y1="56" x2="440" y2="352" stroke="#E5DECF" stroke-width="1"/>
 <line x1="545" y1="56" x2="545" y2="352" stroke="#E5DECF" stroke-width="1"/>
 <!-- FrontierCode 2.0 -->
-<text x="222" y="84" font-size="11" font-weight="700" text-anchor="end" fill="#23201D">FrontierCode 2.0</text>
+<text x="222" y="84" font-size="12.5" font-weight="700" text-anchor="end" fill="#23201D">FrontierCode 2.0</text>
 <rect x="230" y="62" width="113" height="11" fill="#A8BDD2"/>
-<text x="349" y="71" font-size="10" fill="#8A8378">32.4</text>
+<text x="349" y="71" font-size="12" fill="#8A8378">32.4</text>
 <rect x="230" y="75" width="159" height="11" fill="#4E7FA8"/>
-<text x="395" y="84" font-size="10" fill="#23201D">45.5</text>
+<text x="395" y="84" font-size="12" fill="#23201D">45.5</text>
 <rect x="230" y="88" width="172" height="11" fill="#1B4F8A"/>
-<text x="408" y="97" font-size="10" font-weight="700" fill="#1B4F8A">49.1</text>
+<text x="408" y="97" font-size="12" font-weight="700" fill="#1B4F8A">49.1</text>
 <!-- FrontierSWE v2 -->
-<text x="222" y="146" font-size="11" font-weight="700" text-anchor="end" fill="#23201D">FrontierSWE v2</text>
+<text x="222" y="146" font-size="12.5" font-weight="700" text-anchor="end" fill="#23201D">FrontierSWE v2</text>
 <rect x="230" y="124" width="197" height="11" fill="#A8BDD2"/>
-<text x="433" y="133" font-size="10" fill="#8A8378">56.3</text>
+<text x="433" y="133" font-size="12" fill="#8A8378">56.3</text>
 <rect x="230" y="137" width="218" height="11" fill="#4E7FA8"/>
-<text x="454" y="146" font-size="10" fill="#23201D">62.3</text>
+<text x="454" y="146" font-size="12" fill="#23201D">62.3</text>
 <rect x="230" y="150" width="245" height="11" fill="#1B4F8A"/>
-<text x="481" y="159" font-size="10" font-weight="700" fill="#1B4F8A">69.9</text>
+<text x="481" y="159" font-size="12" font-weight="700" fill="#1B4F8A">69.9</text>
 <!-- AutomationBench -->
-<text x="222" y="208" font-size="11" font-weight="700" text-anchor="end" fill="#23201D">AutomationBench</text>
+<text x="222" y="208" font-size="12.5" font-weight="700" text-anchor="end" fill="#23201D">AutomationBench</text>
 <rect x="230" y="186" width="110" height="11" fill="#A8BDD2"/>
-<text x="346" y="195" font-size="10" fill="#8A8378">31.4</text>
+<text x="346" y="195" font-size="12" fill="#8A8378">31.4</text>
 <rect x="230" y="199" width="149" height="11" fill="#4E7FA8"/>
-<text x="385" y="208" font-size="10" fill="#23201D">42.5</text>
+<text x="385" y="208" font-size="12" fill="#23201D">42.5</text>
 <rect x="230" y="212" width="180" height="11" fill="#1B4F8A"/>
-<text x="416" y="221" font-size="10" font-weight="700" fill="#1B4F8A">51.4</text>
+<text x="416" y="221" font-size="12" font-weight="700" fill="#1B4F8A">51.4</text>
 <!-- Terminal-Bench-Science 0.1 -->
-<text x="222" y="270" font-size="11" font-weight="700" text-anchor="end" fill="#23201D">Terminal-Bench-Science 0.1</text>
+<text x="222" y="270" font-size="12.5" font-weight="700" text-anchor="end" fill="#23201D">Terminal-Bench-Science 0.1</text>
 <rect x="230" y="248" width="184" height="11" fill="#A8BDD2"/>
-<text x="420" y="257" font-size="10" fill="#8A8378">52.6</text>
+<text x="420" y="257" font-size="12" fill="#8A8378">52.6</text>
 <rect x="230" y="261" width="205" height="11" fill="#4E7FA8"/>
-<text x="441" y="270" font-size="10" fill="#23201D">58.7</text>
+<text x="441" y="270" font-size="12" fill="#23201D">58.7</text>
 <rect x="230" y="274" width="261" height="11" fill="#1B4F8A"/>
-<text x="497" y="283" font-size="10" font-weight="700" fill="#1B4F8A">74.6</text>
+<text x="497" y="283" font-size="12" font-weight="700" fill="#1B4F8A">74.6</text>
 <!-- AA-Briefcase v1.1 -->
-<text x="222" y="332" font-size="11" font-weight="700" text-anchor="end" fill="#23201D">AA-Briefcase v1.1</text>
+<text x="222" y="332" font-size="12.5" font-weight="700" text-anchor="end" fill="#23201D">AA-Briefcase v1.1</text>
 <rect x="230" y="310" width="215" height="11" fill="#A8BDD2"/>
-<text x="451" y="319" font-size="10" fill="#8A8378">61.5</text>
+<text x="451" y="319" font-size="12" fill="#8A8378">61.5</text>
 <rect x="230" y="323" width="214" height="11" fill="#4E7FA8"/>
-<text x="450" y="332" font-size="10" fill="#23201D">61.2</text>
+<text x="450" y="332" font-size="12" fill="#23201D">61.2</text>
 <rect x="230" y="336" width="231" height="11" fill="#1B4F8A"/>
-<text x="467" y="345" font-size="10" font-weight="700" fill="#1B4F8A">66.1</text>
-<text x="226" y="372" font-size="10" fill="#8A8378">0</text>
-<text x="326" y="372" font-size="10" fill="#8A8378">30</text>
-<text x="431" y="372" font-size="10" fill="#8A8378">60</text>
-<text x="536" y="372" font-size="10" fill="#8A8378">90</text>
+<text x="467" y="345" font-size="12" font-weight="700" fill="#1B4F8A">66.1</text>
+<text x="226" y="372" font-size="12" fill="#8A8378">0</text>
+<text x="326" y="372" font-size="12" fill="#8A8378">30</text>
+<text x="431" y="372" font-size="12" fill="#8A8378">60</text>
+<text x="536" y="372" font-size="12" fill="#8A8378">90</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;margin-top:8px">Coding (FrontierCode 2.0) and automation (AutomationBench) gained close to 20 points over the previous Fable. On knowledge work (AA-Briefcase), Fable 5.2 scores 66.1% against Opus 5.5's 61.2% — a 4.9-point gap — and on the same benchmark's Elo, Opus 5.5 leads 1800 to 1785. All scores at each model's highest available effort. Source: Anthropic product page (claude/fable), retrieved 2026-11-11.</figcaption>
 </figure>

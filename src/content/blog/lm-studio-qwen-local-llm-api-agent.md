@@ -23,29 +23,29 @@ tags: ["LM Studio", "Qwen", "로컬LLM", "AI에이전트"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-label="Qwen3.5 dense 모델 크기별 4비트 양자화 메모리 사용량과 맥북에어 M5 구성별 권장 모델">
-<text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="700" fill="#23201D">Qwen3.5 크기별 메모리(4비트 양자화, 근사치) — 낮을수록 가벼움</text>
-<text x="20" y="48" font-family="sans-serif" font-size="12" fill="#8A8378">회색 점선 = 16GB 맥북에어 실질 상한(모델+컨텍스트 여유 감안)</text>
+<text x="20" y="28" font-family="sans-serif" font-size="17" font-weight="700" fill="#23201D">Qwen3.5 크기별 메모리(4비트 양자화, 근사치) — 낮을수록 가벼움</text>
+<text x="20" y="48" font-family="sans-serif" font-size="13" fill="#8A8378">회색 점선 = 16GB 맥북에어 실질 상한(모델+컨텍스트 여유 감안)</text>
 <line x1="150" y1="80" x2="150" y2="250" stroke="#E4E7EC" stroke-width="1"/>
 <!-- scale 1GB = 22px, start x=150 -->
 <!-- 0.8B ~0.7GB -->
 <rect x="150" y="90" width="16" height="24" fill="#8A8378"/>
-<text x="110" y="107" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">0.8B</text>
-<text x="174" y="107" font-family="sans-serif" font-size="12" fill="#23201D">~0.7GB</text>
+<text x="110" y="107" font-family="sans-serif" font-size="14" fill="#23201D" text-anchor="end">0.8B</text>
+<text x="174" y="107" font-family="sans-serif" font-size="13" fill="#23201D">~0.7GB</text>
 <!-- 4B ~2.5GB -->
 <rect x="150" y="128" width="55" height="24" fill="#8A8378"/>
-<text x="110" y="145" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">4B</text>
-<text x="213" y="145" font-family="sans-serif" font-size="12" fill="#23201D">~2.5GB</text>
+<text x="110" y="145" font-family="sans-serif" font-size="14" fill="#23201D" text-anchor="end">4B</text>
+<text x="213" y="145" font-family="sans-serif" font-size="13" fill="#23201D">~2.5GB</text>
 <!-- 9B ~5.5GB -->
 <rect x="150" y="166" width="121" height="24" fill="#C8102E"/>
-<text x="110" y="183" font-family="sans-serif" font-size="13" font-weight="700" fill="#23201D" text-anchor="end">9B</text>
-<text x="279" y="183" font-family="sans-serif" font-size="12" fill="#23201D">~5.5GB · 16GB 쾌적</text>
+<text x="110" y="183" font-family="sans-serif" font-size="14" font-weight="700" fill="#23201D" text-anchor="end">9B</text>
+<text x="279" y="183" font-family="sans-serif" font-size="13" fill="#23201D">~5.5GB · 16GB 쾌적</text>
 <!-- 27B ~16.5GB -->
 <rect x="150" y="204" width="363" height="24" fill="#23201D"/>
-<text x="110" y="221" font-family="sans-serif" font-size="13" fill="#23201D" text-anchor="end">27B</text>
+<text x="110" y="221" font-family="sans-serif" font-size="14" fill="#23201D" text-anchor="end">27B</text>
 <text x="521" y="221" font-family="sans-serif" font-size="12" fill="#23201D">~16.5GB · 32GB 필요</text>
 <!-- 16GB usable limit ~11GB => 150+11*22=392 -->
 <line x1="392" y1="80" x2="392" y2="250" stroke="#8A8378" stroke-width="1.5" stroke-dasharray="4 3"/>
-<text x="392" y="270" font-family="sans-serif" font-size="11" fill="#8A8378" text-anchor="middle">16GB 실사용 상한</text>
+<text x="392" y="270" font-family="sans-serif" font-size="12.5" fill="#8A8378" text-anchor="middle">16GB 실사용 상한</text>
 </svg>
 <figcaption style="font-family:sans-serif;font-size:12px;color:#8A8378;margin-top:8px">양자화 용량은 빌드·컨텍스트 길이에 따라 달라지는 근사치다. OS·앱이 쓰는 메모리를 남겨야 하므로 '전체 메모리 = 모델 예산'이 아니다.</figcaption>
 </figure>

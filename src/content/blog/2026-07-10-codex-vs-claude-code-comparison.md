@@ -62,7 +62,7 @@ tags: ["Codex", "Claude Code", "AI 코딩", "개발도구"]
   <line x1="70" y1="40" x2="70" y2="300" stroke="#8A8378" stroke-width="1"/>
   <line x1="70" y1="300" x2="690" y2="300" stroke="#23201D" stroke-width="1.5"/>
   <!-- y grid 25/50/75/100 -->
-  <g font-family="sans-serif" font-size="11" fill="#8A8378">
+  <g font-family="sans-serif" font-size="12.5" fill="#8A8378">
     <line x1="70" y1="235" x2="690" y2="235" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="239">25</text>
     <line x1="70" y1="170" x2="690" y2="170" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="174">50</text>
     <line x1="70" y1="105" x2="690" y2="105" stroke="#E4E7EC" stroke-width="1"/><text x="40" y="109">75</text>
@@ -71,24 +71,24 @@ tags: ["Codex", "Claude Code", "AI 코딩", "개발도구"]
   <!-- Group 1: Verified (Claude 88.6->h230, Codex 87.6->h228) -->
   <rect x="130" y="70" width="46" height="230" fill="#C8102E"/>
   <rect x="182" y="72" width="46" height="228" fill="#23201D"/>
-  <text x="179" y="316" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#23201D">SWE-bench Verified</text>
-  <text x="153" y="64" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#C8102E">88.6</text>
-  <text x="205" y="64" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#23201D">87.6</text>
+  <text x="179" y="316" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#23201D">SWE-bench Verified</text>
+  <text x="153" y="64" text-anchor="middle" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#C8102E">88.6</text>
+  <text x="205" y="64" text-anchor="middle" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#23201D">87.6</text>
   <!-- Group 2: Pro (Claude 69.2->h180, Codex 58.6->h152) -->
   <rect x="320" y="120" width="46" height="180" fill="#C8102E"/>
   <rect x="372" y="148" width="46" height="152" fill="#23201D"/>
-  <text x="369" y="316" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#23201D">SWE-bench Pro</text>
-  <text x="343" y="114" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#C8102E">69.2</text>
-  <text x="395" y="142" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#23201D">58.6</text>
+  <text x="369" y="316" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#23201D">SWE-bench Pro</text>
+  <text x="343" y="114" text-anchor="middle" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#C8102E">69.2</text>
+  <text x="395" y="142" text-anchor="middle" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#23201D">58.6</text>
   <!-- Group 3: Terminal-Bench (Claude 74.6->h194, Codex 78.2->h203) -->
   <rect x="510" y="106" width="46" height="194" fill="#C8102E"/>
   <rect x="562" y="97" width="46" height="203" fill="#23201D"/>
-  <text x="559" y="316" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#23201D">Terminal-Bench 2.1</text>
-  <text x="533" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#C8102E">74.6</text>
-  <text x="585" y="91" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#23201D">78.2</text>
+  <text x="559" y="316" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#23201D">Terminal-Bench 2.1</text>
+  <text x="533" y="100" text-anchor="middle" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#C8102E">74.6</text>
+  <text x="585" y="91" text-anchor="middle" font-family="sans-serif" font-size="12.5" font-weight="700" fill="#23201D">78.2</text>
   <!-- legend -->
-  <rect x="430" y="20" width="12" height="12" fill="#C8102E"/><text x="448" y="30" font-family="sans-serif" font-size="12" fill="#23201D">Claude Code (Opus 4.8)</text>
-  <rect x="600" y="20" width="12" height="12" fill="#23201D"/><text x="618" y="30" font-family="sans-serif" font-size="12" fill="#23201D">Codex (GPT-5.5)</text>
+  <rect x="430" y="20" width="12" height="12" fill="#C8102E"/><text x="448" y="30" font-family="sans-serif" font-size="13" fill="#23201D">Claude Code (Opus 4.8)</text>
+  <rect x="600" y="20" width="12" height="12" fill="#23201D"/><text x="618" y="30" font-family="sans-serif" font-size="13" fill="#23201D">Codex (GPT-5.5)</text>
 </svg>
 <figcaption style="font-size:0.85rem;color:#8A8378;margin-top:8px;">난이도 높은 SWE-bench Pro는 Claude Code가, 터미널 실무형 Terminal-Bench는 Codex가 앞선다. 출처: Composio(2026-06).</figcaption>
 </figure>

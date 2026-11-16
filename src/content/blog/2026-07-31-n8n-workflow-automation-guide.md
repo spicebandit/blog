@@ -72,14 +72,14 @@ n8n을 쓰는 방법은 크게 세 가지다. 목적과 기술 수준에 따라 
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 420 180" width="100%" height="auto" role="img" aria-label="10단계 워크플로를 월 1만 번 실행할 때, 자피어는 태스크당 과금으로 비용이 크고 n8n은 실행당 과금으로 80~90% 저렴함을 나타낸 비교 막대">
-  <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">여러 단계 × 월 1만 실행 시 비용 (낮을수록 이득↑)</text>
+  <text x="20" y="18" fill="#23201D" font-size="13" font-weight="bold">여러 단계 × 월 1만 실행 시 비용 (낮을수록 이득↑)</text>
   <line x1="20" y1="150" x2="400" y2="150" stroke="#8A8378" stroke-width="1"/>
   <rect x="70" y="40" width="80" height="110" fill="#8A8378"/>
-  <text x="78" y="34" fill="#23201D" font-size="12" font-weight="bold">자피어(태스크당)</text>
-  <text x="95" y="166" fill="#8A8378" font-size="11">기준 100%</text>
+  <text x="78" y="34" fill="#23201D" font-size="13" font-weight="bold">자피어(태스크당)</text>
+  <text x="95" y="166" fill="#8A8378" font-size="12.5">기준 100%</text>
   <rect x="270" y="128" width="80" height="22" fill="#C8102E"/>
-  <text x="278" y="122" fill="#C8102E" font-size="12" font-weight="bold">n8n(실행당) ~10~20%</text>
-  <text x="278" y="166" fill="#8A8378" font-size="11">80~90%↓</text>
+  <text x="278" y="122" fill="#C8102E" font-size="13" font-weight="bold">n8n(실행당) ~10~20%</text>
+  <text x="278" y="166" fill="#8A8378" font-size="12.5">80~90%↓</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">복잡·대량 자동화일수록 실행당 과금(n8n)이 태스크당 과금(자피어)보다 크게 저렴하다. 출처: 매체 비교자료(2026).</figcaption>
 </figure>

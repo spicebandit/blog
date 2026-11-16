@@ -104,13 +104,13 @@ The number we hit was dramatic. Over three days, **313 million tokens** were con
 
 <figure>
 <svg viewBox="0 0 640 150" role="img" aria-label="Token use over 3 days: CEO 57 percent, remaining agents 43 percent" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px">
-  <text x="20" y="30" font-size="15" font-weight="700" fill="#23201D">313M tokens over 3 days — the culprit is one CEO</text>
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">313M tokens over 3 days — the culprit is one CEO</text>
   <rect x="20" y="55" width="340" height="34" fill="#C8102E"></rect>
   <rect x="364" y="55" width="256" height="34" fill="#E4E7EC"></rect>
-  <text x="30" y="77" font-size="13" font-weight="700" fill="#ffffff">CEO 57% · 177M</text>
-  <text x="374" y="77" font-size="13" font-weight="700" fill="#23201D">Other 6 agents 43% · 136M</text>
-  <text x="20" y="118" font-size="12" fill="#8A8378">Cause: only the CEO had heartbeat ON (288 wakes/day) + top-tier model. Others: on-demand + light models.</text>
-  <text x="20" y="138" font-size="12" fill="#8A8378">In short, most tokens went not to 'writing' but to 'simulating the company.'</text>
+  <text x="30" y="77" font-size="14" font-weight="700" fill="#ffffff">CEO 57% · 177M</text>
+  <text x="374" y="77" font-size="14" font-weight="700" fill="#23201D">Other 6 agents 43% · 136M</text>
+  <text x="20" y="118" font-size="13" fill="#8A8378">Cause: only the CEO had heartbeat ON (288 wakes/day) + top-tier model. Others: on-demand + light models.</text>
+  <text x="20" y="138" font-size="13" fill="#8A8378">In short, most tokens went not to 'writing' but to 'simulating the company.'</text>
 </svg>
 <figcaption>Time spent awake is the cost. Heavy model × frequent heartbeat = a bill bomb.</figcaption>
 </figure>

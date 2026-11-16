@@ -31,39 +31,39 @@ Answer first: **with the Process Adapter, Paperclip is the boss; with the MCP co
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 330" style="width:100%;height:auto" role="img" aria-label="A diagram comparing the two directions for connecting Paperclip and Claude Code. On top, the Process Adapter has Paperclip spawn Claude Code as a child process and assign it work like an employee. On the bottom, the Assistant Connection has Claude Code connect into Paperclip over MCP as a logged-in user, reading, creating, and delegating tasks.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">Same two tools, opposite directions — which way the arrow points is the whole story</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">Same two tools, opposite directions — which way the arrow points is the whole story</text>
 <!-- existing path -->
-<text x="0" y="48" font-size="12.5" font-weight="700" fill="#4E7FA8">Existing — Process Adapter (adapterType: claude_local)</text>
+<text x="0" y="48" font-size="13.5" font-weight="700" fill="#4E7FA8">Existing — Process Adapter (adapterType: claude_local)</text>
 <rect x="0" y="58" width="190" height="62" fill="#4E7FA8" rx="4" />
-<text x="16" y="84" font-size="13" font-weight="700" fill="#FAF6EE">Paperclip</text>
-<text x="16" y="104" font-size="11" fill="#E5DECF">The boss — assigns work</text>
+<text x="16" y="84" font-size="14" font-weight="700" fill="#FAF6EE">Paperclip</text>
+<text x="16" y="104" font-size="12.5" fill="#E5DECF">The boss — assigns work</text>
 <line x1="190" y1="89" x2="320" y2="89" stroke="#4E7FA8" stroke-width="2.5" />
 <path d="M320 89 L310 84 L310 94 Z" fill="#4E7FA8" />
-<text x="200" y="80" font-size="11" fill="#8A8378">spawned as a child process</text>
-<text x="200" y="106" font-size="11" fill="#8A8378">(same machine)</text>
+<text x="200" y="80" font-size="12.5" fill="#8A8378">spawned as a child process</text>
+<text x="200" y="106" font-size="12.5" fill="#8A8378">(same machine)</text>
 <rect x="320" y="58" width="190" height="62" fill="#A8BDD2" rx="4" />
-<text x="336" y="84" font-size="13" font-weight="700" fill="#23201D">Claude Code</text>
-<text x="336" y="104" font-size="11" fill="#23201D">The employee — receives work</text>
-<text x="528" y="80" font-size="11" fill="#8A8378">work comes down from above</text>
-<text x="528" y="106" font-size="11" fill="#8A8378">driven by the heartbeat</text>
+<text x="336" y="84" font-size="14" font-weight="700" fill="#23201D">Claude Code</text>
+<text x="336" y="104" font-size="12.5" fill="#23201D">The employee — receives work</text>
+<text x="528" y="80" font-size="12.5" fill="#8A8378">work comes down from above</text>
+<text x="528" y="106" font-size="12.5" fill="#8A8378">driven by the heartbeat</text>
 <!-- divider -->
 <line x1="0" y1="146" x2="760" y2="146" stroke="#E5DECF" stroke-width="1" />
 <!-- new path -->
-<text x="0" y="178" font-size="12.5" font-weight="700" fill="#1B4F8A">New (2026-10-12) — Assistant Connection (MCP)</text>
+<text x="0" y="178" font-size="13.5" font-weight="700" fill="#1B4F8A">New (2026-10-12) — Assistant Connection (MCP)</text>
 <rect x="0" y="188" width="190" height="62" fill="#A8BDD2" rx="4" />
-<text x="16" y="214" font-size="13" font-weight="700" fill="#23201D">Paperclip</text>
-<text x="16" y="234" font-size="11" fill="#23201D">The workplace — connected to</text>
+<text x="16" y="214" font-size="14" font-weight="700" fill="#23201D">Paperclip</text>
+<text x="16" y="234" font-size="12.5" fill="#23201D">The workplace — connected to</text>
 <line x1="320" y1="219" x2="190" y2="219" stroke="#1B4F8A" stroke-width="2.5" />
 <path d="M190 219 L200 214 L200 224 Z" fill="#1B4F8A" />
-<text x="200" y="210" font-size="11" fill="#8A8378">connects via OAuth / device code</text>
-<text x="200" y="236" font-size="11" fill="#8A8378">(as a logged-in user)</text>
+<text x="200" y="210" font-size="12.5" fill="#8A8378">connects via OAuth / device code</text>
+<text x="200" y="236" font-size="12.5" fill="#8A8378">(as a logged-in user)</text>
 <rect x="320" y="188" width="190" height="62" fill="#1B4F8A" rx="4" />
-<text x="336" y="214" font-size="13" font-weight="700" fill="#FAF6EE">Claude Code</text>
-<text x="336" y="234" font-size="11" fill="#E5DECF">The colleague — creates and delegates</text>
-<text x="528" y="210" font-size="11" fill="#8A8378">the Claude Code you already use</text>
-<text x="528" y="236" font-size="11" fill="#8A8378">reaches into the company's work</text>
-<text x="0" y="288" font-size="12" fill="#8A8378">※ The two are not mutually exclusive. You can run agents as employees and connect your own Claude Code at the same time.</text>
-<text x="0" y="310" font-size="12" fill="#8A8378">※ The MCP side still sits behind an Experimental flag.</text>
+<text x="336" y="214" font-size="14" font-weight="700" fill="#FAF6EE">Claude Code</text>
+<text x="336" y="234" font-size="12.5" fill="#E5DECF">The colleague — creates and delegates</text>
+<text x="528" y="210" font-size="12.5" fill="#8A8378">the Claude Code you already use</text>
+<text x="528" y="236" font-size="12.5" fill="#8A8378">reaches into the company's work</text>
+<text x="0" y="288" font-size="13" fill="#8A8378">※ The two are not mutually exclusive. You can run agents as employees and connect your own Claude Code at the same time.</text>
+<text x="0" y="310" font-size="13" fill="#8A8378">※ The MCP side still sits behind an Experimental flag.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">The same two names appear in both rows, but the roles swap. In the old path Claude Code is the employee taking orders; in the new one it is the side creating and delegating tasks. Sources: Paperclip official documentation and the v2026.1012.0 release notes (checked 2026-10-15).</figcaption>
 </figure>

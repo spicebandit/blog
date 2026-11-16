@@ -21,26 +21,26 @@ tags: ["AI", "데이터센터", "전기요금", "미국정치"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 300" style="width:100%;height:auto" role="img" aria-label="PJM 용량시장 낙찰가 추이. 2024/25년도 28.92달러, 2025/26년도 269.92달러, 2026/27년도 329.17달러(MW-day 기준)로 2년 만에 약 11배 상승">
-  <text x="20" y="22" font-size="15" font-weight="700" fill="#23201D">PJM 용량시장 낙찰가 — 2년 만에 약 11배 (높을수록 요금 부담↑)</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">달러/MW-day</text>
+  <text x="20" y="22" font-size="16" font-weight="700" fill="#23201D">PJM 용량시장 낙찰가 — 2년 만에 약 11배 (높을수록 요금 부담↑)</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">달러/MW-day</text>
   <line x1="90" y1="240" x2="575" y2="240" stroke="#23201D" stroke-width="1.5"/>
   <line x1="90" y1="187.1" x2="575" y2="187.1" stroke="#E5DECF" stroke-width="1"/>
   <line x1="90" y1="134.3" x2="575" y2="134.3" stroke="#E5DECF" stroke-width="1"/>
   <line x1="90" y1="81.4" x2="575" y2="81.4" stroke="#E5DECF" stroke-width="1"/>
-  <text x="82" y="244" font-size="11" fill="#8A8378" text-anchor="end">0</text>
-  <text x="82" y="191" font-size="11" fill="#8A8378" text-anchor="end">100</text>
-  <text x="82" y="138" font-size="11" fill="#8A8378" text-anchor="end">200</text>
-  <text x="82" y="85" font-size="11" fill="#8A8378" text-anchor="end">300</text>
+  <text x="82" y="244" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+  <text x="82" y="191" font-size="12.5" fill="#8A8378" text-anchor="end">100</text>
+  <text x="82" y="138" font-size="12.5" fill="#8A8378" text-anchor="end">200</text>
+  <text x="82" y="85" font-size="12.5" fill="#8A8378" text-anchor="end">300</text>
   <rect x="130" y="224.7" width="90" height="15.3" fill="#A8BDD2"/>
-  <text x="175" y="218" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">$28.92</text>
-  <text x="175" y="262" font-size="12" fill="#8A8378" text-anchor="middle">2024/25</text>
+  <text x="175" y="218" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">$28.92</text>
+  <text x="175" y="262" font-size="13" fill="#8A8378" text-anchor="middle">2024/25</text>
   <rect x="270" y="97.3" width="90" height="142.7" fill="#4E7FA8"/>
-  <text x="315" y="90.5" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">$269.92</text>
-  <text x="315" y="262" font-size="12" fill="#8A8378" text-anchor="middle">2025/26</text>
+  <text x="315" y="90.5" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">$269.92</text>
+  <text x="315" y="262" font-size="13" fill="#8A8378" text-anchor="middle">2025/26</text>
   <rect x="410" y="66" width="90" height="174" fill="#1B4F8A"/>
-  <text x="455" y="59" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">$329.17</text>
-  <text x="455" y="262" font-size="12" fill="#8A8378" text-anchor="middle">2026/27</text>
-  <text x="300" y="288" font-size="11" fill="#8A8378" text-anchor="middle">자료: PJM 기저용량경매(BRA) 결과 · S&amp;P Global · 2026/27은 FERC 승인 상한가</text>
+  <text x="455" y="59" font-size="15" font-weight="700" fill="#23201D" text-anchor="middle">$329.17</text>
+  <text x="455" y="262" font-size="13" fill="#8A8378" text-anchor="middle">2026/27</text>
+  <text x="300" y="288" font-size="12.5" fill="#8A8378" text-anchor="middle">자료: PJM 기저용량경매(BRA) 결과 · S&amp;P Global · 2026/27은 FERC 승인 상한가</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">용량시장 낙찰가는 결국 소비자 요금으로 전가된다. 총 조달비용도 22억 달러에서 147억 달러로 뛰었다.</figcaption>
 </figure>
@@ -53,26 +53,26 @@ tags: ["AI", "데이터센터", "전기요금", "미국정치"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 260" style="width:100%;height:auto" role="img" aria-label="미국 주택용 전기요금 7월 기준 추이. 2021년 7월 13.72센트, 2024년 7월 16.61센트, 2025년 7월 17.47센트 per kWh">
-  <text x="20" y="22" font-size="15" font-weight="700" fill="#23201D">미국 주택용 전기요금(7월 기준) — 소매 요금은 완만하게 오른다</text>
-  <text x="20" y="44" font-size="11" fill="#8A8378">센트/kWh · 축은 0부터 (절단 없음)</text>
+  <text x="20" y="22" font-size="16" font-weight="700" fill="#23201D">미국 주택용 전기요금(7월 기준) — 소매 요금은 완만하게 오른다</text>
+  <text x="20" y="44" font-size="12.5" fill="#8A8378">센트/kWh · 축은 0부터 (절단 없음)</text>
   <line x1="90" y1="200" x2="575" y2="200" stroke="#23201D" stroke-width="1.5"/>
   <line x1="90" y1="161.1" x2="575" y2="161.1" stroke="#E5DECF" stroke-width="1"/>
   <line x1="90" y1="122.2" x2="575" y2="122.2" stroke="#E5DECF" stroke-width="1"/>
   <line x1="90" y1="83.3" x2="575" y2="83.3" stroke="#E5DECF" stroke-width="1"/>
-  <text x="82" y="204" font-size="11" fill="#8A8378" text-anchor="end">0</text>
-  <text x="82" y="165" font-size="11" fill="#8A8378" text-anchor="end">5</text>
-  <text x="82" y="126" font-size="11" fill="#8A8378" text-anchor="end">10</text>
-  <text x="82" y="87" font-size="11" fill="#8A8378" text-anchor="end">15</text>
+  <text x="82" y="204" font-size="12.5" fill="#8A8378" text-anchor="end">0</text>
+  <text x="82" y="165" font-size="12.5" fill="#8A8378" text-anchor="end">5</text>
+  <text x="82" y="126" font-size="12.5" fill="#8A8378" text-anchor="end">10</text>
+  <text x="82" y="87" font-size="12.5" fill="#8A8378" text-anchor="end">15</text>
   <rect x="140" y="93.3" width="85" height="106.7" fill="#A8BDD2"/>
-  <text x="182" y="86" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">13.72</text>
-  <text x="182" y="222" font-size="12" fill="#8A8378" text-anchor="middle">2021년 7월</text>
+  <text x="182" y="86" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">13.72</text>
+  <text x="182" y="222" font-size="13" fill="#8A8378" text-anchor="middle">2021년 7월</text>
   <rect x="285" y="70.8" width="85" height="129.2" fill="#4E7FA8"/>
-  <text x="327" y="63" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">16.61</text>
-  <text x="327" y="222" font-size="12" fill="#8A8378" text-anchor="middle">2024년 7월</text>
+  <text x="327" y="63" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">16.61</text>
+  <text x="327" y="222" font-size="13" fill="#8A8378" text-anchor="middle">2024년 7월</text>
   <rect x="430" y="64.1" width="85" height="135.9" fill="#1B4F8A"/>
-  <text x="472" y="57" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">17.47</text>
-  <text x="472" y="222" font-size="12" fill="#8A8378" text-anchor="middle">2025년 7월</text>
-  <text x="300" y="248" font-size="11" fill="#8A8378" text-anchor="middle">자료: 미국 에너지정보청(EIA) 주택용 평균 전력 판매가격</text>
+  <text x="472" y="57" font-size="14" font-weight="700" fill="#23201D" text-anchor="middle">17.47</text>
+  <text x="472" y="222" font-size="13" fill="#8A8378" text-anchor="middle">2025년 7월</text>
+  <text x="300" y="248" font-size="12.5" fill="#8A8378" text-anchor="middle">자료: 미국 에너지정보청(EIA) 주택용 평균 전력 판매가격</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">축을 자르지 않고 그리면 소매 요금 곡선은 이 정도다. 앞 그래프의 용량시장 폭등과 이 완만함 사이의 간극이, 뒤에 나올 논쟁의 핵심이다.</figcaption>
 </figure>
@@ -167,21 +167,21 @@ tags: ["AI", "데이터센터", "전기요금", "미국정치"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0">
 <svg viewBox="0 0 600 220" style="width:100%;height:auto" role="img" aria-label="데이터센터 입지 카운티의 경제 효과. 고용 3.5퍼센트, 임금 5퍼센트, 사업체 수 4.7퍼센트, 가구소득 1.9퍼센트 증가">
-  <text x="20" y="24" font-size="15" font-weight="700" fill="#23201D">데이터센터 입지 후 카운티 변화 — 효과는 있으나 투자 규모 대비 작다</text>
-  <text x="20" y="62" font-size="13" fill="#23201D">고용</text>
+  <text x="20" y="24" font-size="16" font-weight="700" fill="#23201D">데이터센터 입지 후 카운티 변화 — 효과는 있으나 투자 규모 대비 작다</text>
+  <text x="20" y="62" font-size="14" fill="#23201D">고용</text>
   <rect x="120" y="48" width="217" height="20" fill="#4E7FA8"/>
-  <text x="349" y="63" font-size="13" font-weight="700" fill="#23201D">+3.5%</text>
-  <text x="20" y="98" font-size="13" fill="#23201D">임금</text>
+  <text x="349" y="63" font-size="14" font-weight="700" fill="#23201D">+3.5%</text>
+  <text x="20" y="98" font-size="14" fill="#23201D">임금</text>
   <rect x="120" y="84" width="310" height="20" fill="#1B4F8A"/>
-  <text x="442" y="99" font-size="13" font-weight="700" fill="#23201D">+5%</text>
-  <text x="20" y="134" font-size="13" fill="#23201D">사업체 수</text>
+  <text x="442" y="99" font-size="14" font-weight="700" fill="#23201D">+5%</text>
+  <text x="20" y="134" font-size="14" fill="#23201D">사업체 수</text>
   <rect x="120" y="120" width="291" height="20" fill="#4E7FA8"/>
-  <text x="423" y="135" font-size="13" font-weight="700" fill="#23201D">+4.7%</text>
-  <text x="20" y="170" font-size="13" fill="#23201D">가구소득</text>
+  <text x="423" y="135" font-size="14" font-weight="700" fill="#23201D">+4.7%</text>
+  <text x="20" y="170" font-size="14" fill="#23201D">가구소득</text>
   <rect x="120" y="156" width="118" height="20" fill="#A8BDD2"/>
-  <text x="250" y="171" font-size="13" font-weight="700" fill="#23201D">+1.9%</text>
+  <text x="250" y="171" font-size="14" font-weight="700" fill="#23201D">+1.9%</text>
   <line x1="120" y1="188" x2="120" y2="40" stroke="#E5DECF" stroke-width="1"/>
-  <text x="300" y="208" font-size="11" fill="#8A8378" text-anchor="middle">자료: 조지아공대 셸러 경영대 워킹페이퍼(Yue·Zeng, 2026)</text>
+  <text x="300" y="208" font-size="12.5" fill="#8A8378" text-anchor="middle">자료: 조지아공대 셸러 경영대 워킹페이퍼(Yue·Zeng, 2026)</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:8px">숫자 자체는 플러스다. 쟁점은 크기와 분배 — 그리고 같은 연구가 입지 지역 전기요금 약 5% 상승도 함께 보고했다는 점이다.</figcaption>
 </figure>

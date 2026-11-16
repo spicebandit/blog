@@ -32,10 +32,10 @@ The real question is "does it work as well as GPT or Claude?" The sober mid-2026
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 240" width="100%" height="auto" role="img" aria-label="The composite performance gap between the top US proprietary model and the top Chinese open model narrowed from the low 20s in 2024 to about 9 points in 2026">
-  <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">US–China top-AI performance gap (composite-score diff, smaller = catching up)</text>
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#23201D">US–China top-AI performance gap (composite-score diff, smaller = catching up)</text>
   <line x1="60" y1="190" x2="700" y2="190" stroke="#8A8378" stroke-width="1"/>
   <line x1="60" y1="60" x2="60" y2="190" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="11" fill="#8A8378">
+  <g font-size="12.5" fill="#8A8378">
     <text x="60" y="208" text-anchor="middle">early 2024</text>
     <text x="253" y="208" text-anchor="middle">late 2024</text>
     <text x="446" y="208" text-anchor="middle">late 2025</text>
@@ -46,7 +46,7 @@ The real question is "does it work as well as GPT or Claude?" The sober mid-2026
   </g>
   <polyline points="60,72 253,110 446,150 640,180" fill="none" stroke="#C8102E" stroke-width="2.5"/>
   <circle cx="60" cy="72" r="4" fill="#C8102E"/><circle cx="253" cy="110" r="4" fill="#C8102E"/><circle cx="446" cy="150" r="4" fill="#C8102E"/><circle cx="640" cy="180" r="5" fill="#C8102E"/>
-  <text x="640" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#C8102E">~9 pts</text>
+  <text x="640" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#C8102E">~9 pts</text>
 </svg>
 <figcaption style="font-size:0.85rem;color:#8A8378;text-align:center;margin-top:8px">Composite-score gap of the top Chinese open model vs. the top US proprietary model (conceptual trend). Based on aggregated public leaderboards and reporting; varies by benchmark. Source: <a href="https://www.turingpost.com/p/chinesemodels">Turing Post</a> and others.</figcaption>
 </figure>
@@ -81,8 +81,8 @@ As disruptive as performance, maybe more, is price. Chinese models charge API fe
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="API input price per million tokens: DeepSeek about $0.28, top GPT family about $10">
-  <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">API input price (per 1M tokens, lower = cheaper)</text>
-  <g font-size="13" fill="#23201D">
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#23201D">API input price (per 1M tokens, lower = cheaper)</text>
+  <g font-size="14" fill="#23201D">
     <text x="150" y="78" text-anchor="end">DeepSeek V3.2</text>
     <rect x="160" y="62" width="14" height="24" rx="3" fill="#C8102E"/>
     <text x="184" y="80" font-weight="700" fill="#C8102E">~$0.28</text>

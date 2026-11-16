@@ -46,24 +46,24 @@ tags: ["데이터센터", "전기요금", "미국 중간선거", "AI 전력수�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 300" style="width:100%;height:auto" role="img" aria-label="PJM 용량시장 경매 낙찰가 추이 막대그래프. 2024에서 2025년 기간 메가와트데이당 28.92달러였던 가격이 2025에서 2026년 269.92달러, 2028에서 2029년 325달러로 올라 약 11.2배가 됐다. 2028에서 2029년 가격은 규제 상한에 3년 연속 붙은 값이다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">PJM 용량 경매 낙찰가 — 3년 만에 11배, 그리고 상한에 붙었다</text>
-<text x="0" y="38" font-size="11.5" fill="#8A8378">용량시장은 '필요할 때 발전할 수 있게 대기시키는 값'이다. 이 값이 소매 전기요금에 실린다. 단위: $/MW-day</text>
-<text x="0" y="82" font-size="12" fill="#23201D">2024/25</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">PJM 용량 경매 낙찰가 — 3년 만에 11배, 그리고 상한에 붙었다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">용량시장은 '필요할 때 발전할 수 있게 대기시키는 값'이다. 이 값이 소매 전기요금에 실린다. 단위: $/MW-day</text>
+<text x="0" y="82" font-size="13" fill="#23201D">2024/25</text>
 <rect x="120" y="66" width="48" height="24" fill="#A8BDD2" rx="3" />
-<text x="178" y="84" font-size="12" fill="#23201D">$28.92</text>
-<text x="0" y="128" font-size="12" fill="#23201D">2025/26</text>
+<text x="178" y="84" font-size="13" fill="#23201D">$28.92</text>
+<text x="0" y="128" font-size="13" fill="#23201D">2025/26</text>
 <rect x="120" y="112" width="449" height="24" fill="#4E7FA8" rx="3" />
-<text x="134" y="130" font-size="12.5" font-weight="700" fill="#FAF6EE">$269.92</text>
-<text x="579" y="130" font-size="11" fill="#8A8378">9.3배</text>
-<text x="0" y="174" font-size="12" font-weight="700" fill="#23201D">2028/29</text>
+<text x="134" y="130" font-size="13.5" font-weight="700" fill="#FAF6EE">$269.92</text>
+<text x="579" y="130" font-size="12.5" fill="#8A8378">9.3배</text>
+<text x="0" y="174" font-size="13" font-weight="700" fill="#23201D">2028/29</text>
 <rect x="120" y="158" width="541" height="24" fill="#1B4F8A" rx="3" />
-<text x="134" y="176" font-size="12.5" font-weight="700" fill="#FAF6EE">$325.00</text>
-<text x="671" y="176" font-size="12" font-weight="700" fill="#23201D">11.2배</text>
-<text x="0" y="222" font-size="11" fill="#8A8378">※ 2028/29 낙찰가는 규제 상한에 3년 연속 붙은 값이다. 상한이 없었다면 $554.72였을 것으로 산정됐다.</text>
-<text x="0" y="240" font-size="11" fill="#8A8378">※ 2025/26 경매에서 데이터센터 수요가 비용의 63%(147억 달러 중 93억)를 차지했다. 2028/29에는 38%로 비중이 낮아졌다.</text>
-<text x="0" y="258" font-size="11" fill="#8A8378">※ 이 값은 발전소를 새로 짓는 비용이 아니라 기존 설비를 '대기 상태로 확보'하는 비용이다.</text>
-<text x="0" y="276" font-size="11" fill="#8A8378">※ PJM은 버지니아·오하이오·펜실베이니아 등 13개 주와 워싱턴DC를 묶는 미국 최대 전력망 운영기관이다.</text>
-<text x="0" y="294" font-size="11" fill="#8A8378">출처: PJM 기준용량경매(BRA) 결과보고서, Monitoring Analytics.</text>
+<text x="134" y="176" font-size="13.5" font-weight="700" fill="#FAF6EE">$325.00</text>
+<text x="671" y="176" font-size="13" font-weight="700" fill="#23201D">11.2배</text>
+<text x="0" y="222" font-size="12.5" fill="#8A8378">※ 2028/29 낙찰가는 규제 상한에 3년 연속 붙은 값이다. 상한이 없었다면 $554.72였을 것으로 산정됐다.</text>
+<text x="0" y="240" font-size="12.5" fill="#8A8378">※ 2025/26 경매에서 데이터센터 수요가 비용의 63%(147억 달러 중 93억)를 차지했다. 2028/29에는 38%로 비중이 낮아졌다.</text>
+<text x="0" y="258" font-size="12.5" fill="#8A8378">※ 이 값은 발전소를 새로 짓는 비용이 아니라 기존 설비를 '대기 상태로 확보'하는 비용이다.</text>
+<text x="0" y="276" font-size="12.5" fill="#8A8378">※ PJM은 버지니아·오하이오·펜실베이니아 등 13개 주와 워싱턴DC를 묶는 미국 최대 전력망 운영기관이다.</text>
+<text x="0" y="294" font-size="12.5" fill="#8A8378">출처: PJM 기준용량경매(BRA) 결과보고서, Monitoring Analytics.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">책임 소재가 비교적 또렷하게 드러난 드문 사례입니다. 다만 데이터센터 비중이 63%에서 38%로 내려간 것에서 보듯, 용량가격 급등의 원인은 데이터센터 하나가 아닙니다. 예비율 기준 상향 같은 시장규칙 변경도 함께 작용했습니다.</figcaption>
 </figure>
@@ -86,17 +86,17 @@ tags: ["데이터센터", "전기요금", "미국 중간선거", "AI 전력수�
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 240" style="width:100%;height:auto" role="img" aria-label="ABC 워싱턴포스트 입소스 공동조사 결과 막대그래프. AI가 사회에 해롭다 57퍼센트, 우리 지역 신규 데이터센터 반대 72퍼센트로, 내 지역 반대가 15퍼센트포인트 더 높다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">같은 조사 안의 15%p 격차 — 반대는 '우리 동네'에서 더 강하다</text>
-<text x="0" y="38" font-size="11.5" fill="#8A8378">ABC·워싱턴포스트·입소스 공동조사(2026-10-09~13, 2,545명). 수치가 클수록 부정적.</text>
-<text x="0" y="86" font-size="12" fill="#23201D">AI가 사회에 해롭다</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">같은 조사 안의 15%p 격차 — 반대는 '우리 동네'에서 더 강하다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">ABC·워싱턴포스트·입소스 공동조사(2026-10-09~13, 2,545명). 수치가 클수록 부정적.</text>
+<text x="0" y="86" font-size="13" fill="#23201D">AI가 사회에 해롭다</text>
 <rect x="210" y="70" width="285" height="26" fill="#A8BDD2" rx="3" />
-<text x="505" y="89" font-size="13" font-weight="700" fill="#23201D">57%</text>
-<text x="0" y="146" font-size="12" font-weight="700" fill="#23201D">우리 지역 신규 건설 반대</text>
+<text x="505" y="89" font-size="14" font-weight="700" fill="#23201D">57%</text>
+<text x="0" y="146" font-size="13" font-weight="700" fill="#23201D">우리 지역 신규 건설 반대</text>
 <rect x="210" y="130" width="360" height="26" fill="#1B4F8A" rx="3" />
-<text x="580" y="149" font-size="13" font-weight="700" fill="#23201D">72%</text>
-<text x="0" y="192" font-size="11" fill="#8A8378">※ 기술 자체에 대한 거부(57%)보다 '내 지역에 짓는 것'에 대한 거부(72%)가 15%포인트 크다.</text>
-<text x="0" y="210" font-size="11" fill="#8A8378">※ 별도 출구조사에서는 유권자 56%가 "AI와 데이터센터가 투표 결정에 중요했다"고 답했다.</text>
-<text x="0" y="230" font-size="11" fill="#8A8378">출처: ABC News / The Washington Post / Ipsos 공동조사(2026-10).</text>
+<text x="580" y="149" font-size="14" font-weight="700" fill="#23201D">72%</text>
+<text x="0" y="192" font-size="12.5" fill="#8A8378">※ 기술 자체에 대한 거부(57%)보다 '내 지역에 짓는 것'에 대한 거부(72%)가 15%포인트 크다.</text>
+<text x="0" y="210" font-size="12.5" fill="#8A8378">※ 별도 출구조사에서는 유권자 56%가 "AI와 데이터센터가 투표 결정에 중요했다"고 답했다.</text>
+<text x="0" y="230" font-size="12.5" fill="#8A8378">출처: ABC News / The Washington Post / Ipsos 공동조사(2026-10).</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">같은 조사 안에서 비교해야 의미가 있는 숫자입니다. 기술에 대한 반대(57%)보다 내 지역 건설 반대(72%)가 큽니다. 기술 거부라기보다 비용과 부담의 분배 문제로 읽힙니다. 오픈AI가 지역사회 투자와 물 관리 계획을 들고나온 이유도 여기에 있습니다.</figcaption>
 </figure>

@@ -31,20 +31,20 @@ TDF가 폭발적으로 커진 결정적 계기는 미국의 **2006년 연금보�
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 440 200" width="100%" height="auto" role="img" aria-label="국내 TDF 수탁고: 2017년 0.68조원에서 2020년 5.23조원으로 급성장">
-  <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">국내 TDF 수탁고 (조 원, 높을수록 성장)</text>
+  <text x="20" y="18" fill="#23201D" font-size="13" font-weight="bold">국내 TDF 수탁고 (조 원, 높을수록 성장)</text>
   <line x1="45" y1="165" x2="420" y2="165" stroke="#8A8378" stroke-width="1"/>
   <rect x="70" y="158" width="45" height="7" fill="#E4E7EC"/>
-  <text x="72" y="152" fill="#8A8378" font-size="11">0.68</text>
-  <text x="80" y="182" fill="#8A8378" font-size="11">2017</text>
+  <text x="72" y="152" fill="#8A8378" font-size="12.5">0.68</text>
+  <text x="80" y="182" fill="#8A8378" font-size="12.5">2017</text>
   <rect x="160" y="145" width="45" height="20" fill="#E4E7EC"/>
-  <text x="162" y="139" fill="#8A8378" font-size="11">1.37</text>
-  <text x="170" y="182" fill="#8A8378" font-size="11">2018</text>
+  <text x="162" y="139" fill="#8A8378" font-size="12.5">1.37</text>
+  <text x="170" y="182" fill="#8A8378" font-size="12.5">2018</text>
   <rect x="250" y="116" width="45" height="49" fill="#8A8378"/>
-  <text x="252" y="110" fill="#23201D" font-size="11">3.34</text>
-  <text x="260" y="182" fill="#8A8378" font-size="11">2019</text>
+  <text x="252" y="110" fill="#23201D" font-size="12.5">3.34</text>
+  <text x="260" y="182" fill="#8A8378" font-size="12.5">2019</text>
   <rect x="340" y="88" width="45" height="77" fill="#C8102E"/>
-  <text x="338" y="82" fill="#C8102E" font-size="11" font-weight="bold">5.23</text>
-  <text x="350" y="182" fill="#23201D" font-size="11">2020</text>
+  <text x="338" y="82" fill="#C8102E" font-size="12.5" font-weight="bold">5.23</text>
+  <text x="350" y="182" fill="#23201D" font-size="12.5">2020</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">국내 TDF 수탁고는 2017년 말 0.68조 원에서 2020년 말 5.23조 원으로 3년 만에 8배 가까이 커졌다. 이후 디폴트옵션 도입으로 성장세가 이어졌다. 출처: 금융투자협회·언론 종합.</figcaption>
 </figure>
@@ -55,20 +55,20 @@ TDF를 이해하는 열쇠는 단 하나, **글라이드패스(Glide Path)**다.
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px;margin:20px 0">
 <svg viewBox="0 0 440 220" width="100%" height="auto" role="img" aria-label="글라이드패스 개념도: 나이가 들수록 주식 비중이 약 80%에서 30%로 낮아지고 채권 비중이 높아진다">
-  <text x="20" y="18" fill="#23201D" font-size="12" font-weight="bold">글라이드패스 — 나이 들수록 주식↓ 채권↑</text>
+  <text x="20" y="18" fill="#23201D" font-size="13" font-weight="bold">글라이드패스 — 나이 들수록 주식↓ 채권↑</text>
   <line x1="45" y1="180" x2="420" y2="180" stroke="#8A8378" stroke-width="1"/>
   <line x1="45" y1="40" x2="45" y2="180" stroke="#8A8378" stroke-width="1"/>
-  <text x="10" y="45" fill="#8A8378" font-size="10">100%</text>
-  <text x="20" y="184" fill="#8A8378" font-size="10">0%</text>
+  <text x="10" y="45" fill="#8A8378" font-size="12">100%</text>
+  <text x="20" y="184" fill="#8A8378" font-size="12">0%</text>
   <!-- 주식 하강선 (네이비) -->
   <polyline points="45,60 160,80 275,120 390,150" fill="none" stroke="#C8102E" stroke-width="2.5"/>
-  <text x="300" y="112" fill="#C8102E" font-size="11" font-weight="bold">주식(위험)</text>
+  <text x="300" y="112" fill="#C8102E" font-size="12.5" font-weight="bold">주식(위험)</text>
   <!-- 채권 상승선 (웜그레이) -->
   <polyline points="45,160 160,140 275,100 390,70" fill="none" stroke="#8A8378" stroke-width="2.5" stroke-dasharray="5 3"/>
-  <text x="300" y="66" fill="#8A8378" font-size="11" font-weight="bold">채권(안전)</text>
-  <text x="60" y="205" fill="#8A8378" font-size="11">사회초년</text>
-  <text x="200" y="205" fill="#8A8378" font-size="11">중년</text>
-  <text x="350" y="205" fill="#23201D" font-size="11" font-weight="bold">은퇴</text>
+  <text x="300" y="66" fill="#8A8378" font-size="12.5" font-weight="bold">채권(안전)</text>
+  <text x="60" y="205" fill="#8A8378" font-size="12.5">사회초년</text>
+  <text x="200" y="205" fill="#8A8378" font-size="12.5">중년</text>
+  <text x="350" y="205" fill="#23201D" font-size="12.5" font-weight="bold">은퇴</text>
 </svg>
 <figcaption style="color:#8A8378;font-size:13px;margin-top:8px">글라이드패스 개념도. 은퇴가 다가올수록 주식(빨강) 비중이 낮아지고 채권(회색) 비중이 높아진다. 실제 경로·비중은 운용사마다 다르다.</figcaption>
 </figure>

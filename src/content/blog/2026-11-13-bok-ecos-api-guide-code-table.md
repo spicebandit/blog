@@ -105,18 +105,18 @@ https://ecos.bok.or.kr/api/StatisticTableList/sample/json/kr/1/10
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 176" style="width:100%;height:auto" role="img" aria-label="ECOS 통계표 목록이 돌려주는 844행의 구성. 실제 조회 가능한 통계표가 617개이고 분류 폴더가 227개다. 폴더는 SRCH_YN 값이 N이라 조회할 수 없다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">844행 중 조회되는 것은 617개뿐이다</text>
-<text x="0" y="38" font-size="11.5" fill="#8A8378">StatisticTableList 응답 구성 · SRCH_YN으로 갈린다</text>
-<text x="0" y="78" font-size="12" font-weight="700" fill="#23201D">SRCH_YN = Y</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">844행 중 조회되는 것은 617개뿐이다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">StatisticTableList 응답 구성 · SRCH_YN으로 갈린다</text>
+<text x="0" y="78" font-size="13" font-weight="700" fill="#23201D">SRCH_YN = Y</text>
 <rect x="130" y="62" width="438" height="24" fill="#1B4F8A" rx="3" />
-<text x="142" y="80" font-size="12.5" font-weight="700" fill="#FAF6EE">617개</text>
-<text x="578" y="80" font-size="11" fill="#8A8378">실제 조회 가능한 통계표</text>
-<text x="0" y="122" font-size="12" fill="#23201D">SRCH_YN = N</text>
+<text x="142" y="80" font-size="13.5" font-weight="700" fill="#FAF6EE">617개</text>
+<text x="578" y="80" font-size="12.5" fill="#8A8378">실제 조회 가능한 통계표</text>
+<text x="0" y="122" font-size="13" fill="#23201D">SRCH_YN = N</text>
 <rect x="130" y="106" width="161" height="24" fill="#A8BDD2" rx="3" />
-<text x="142" y="124" font-size="12.5" font-weight="700" fill="#23201D">227개</text>
-<text x="301" y="124" font-size="11" fill="#8A8378">분류 폴더 — 조회하면 데이터가 없다</text>
-<text x="0" y="158" font-size="11" fill="#8A8378">※ 폴더는 코드가 0000000001처럼 숫자로만 돼 있고, 통계표는 102Y004처럼 Y가 들어간다.</text>
-<text x="0" y="174" font-size="11" fill="#8A8378">출처: 2026년 11월 13일 StatisticTableList 전수 조회.</text>
+<text x="142" y="124" font-size="13.5" font-weight="700" fill="#23201D">227개</text>
+<text x="301" y="124" font-size="12.5" fill="#8A8378">분류 폴더 — 조회하면 데이터가 없다</text>
+<text x="0" y="158" font-size="12.5" fill="#8A8378">※ 폴더는 코드가 0000000001처럼 숫자로만 돼 있고, 통계표는 102Y004처럼 Y가 들어간다.</text>
+<text x="0" y="174" font-size="12.5" fill="#8A8378">출처: 2026년 11월 13일 StatisticTableList 전수 조회.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">코드가 숫자로만 돼 있으면 폴더입니다. 거기에 StatisticSearch를 걸면 INFO-200만 돌아옵니다.</figcaption>
 </figure>

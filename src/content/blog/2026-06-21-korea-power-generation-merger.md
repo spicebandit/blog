@@ -47,8 +47,8 @@ tags: ["발전공기업", "전력산업", "에너지전환", "전기요금"]
 
 <figure>
 <svg viewBox="0 0 720 270" role="img" aria-label="발전공기업 통합 추진 일정. 2001년 분할, 2026년 3월 국회 법안 발의, 6월 18일 기후부 중간보고, 7월 14일 확정 시점 연기, 2026년 9월 구조개편안 발표 예정" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="17" font-weight="700" fill="#23201D">발전공기업 통합 추진 경과 — 결승선이 뒤로 밀렸다</text>
-  <text x="30" y="54" font-size="13" fill="#8A8378">일정 순서를 표시한 것으로, 가로 간격은 실제 기간과 무관하다</text>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">발전공기업 통합 추진 경과 — 결승선이 뒤로 밀렸다</text>
+  <text x="30" y="54" font-size="14" fill="#8A8378">일정 순서를 표시한 것으로, 가로 간격은 실제 기간과 무관하다</text>
   <line x1="60" y1="120" x2="680" y2="120" stroke="#E5DECF" stroke-width="3"/>
   <line x1="516" y1="120" x2="680" y2="120" stroke="#1B4F8A" stroke-width="3" stroke-dasharray="6 4"/>
   <circle cx="90" cy="120" r="8" fill="#A8BDD2"/>
@@ -56,22 +56,22 @@ tags: ["발전공기업", "전력산업", "에너지전환", "전기요금"]
   <circle cx="374" cy="120" r="8" fill="#4E7FA8"/>
   <circle cx="516" cy="120" r="8" fill="#4E7FA8"/>
   <circle cx="658" cy="120" r="9" fill="#1B4F8A"/>
-  <text x="90" y="100" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">2001</text>
-  <text x="232" y="100" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">2026.3.18</text>
-  <text x="374" y="100" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">2026.6.18</text>
-  <text x="516" y="100" font-size="12" font-weight="700" fill="#23201D" text-anchor="middle">2026.7.14</text>
-  <text x="658" y="100" font-size="12" font-weight="700" fill="#1B4F8A" text-anchor="middle">2026.9</text>
-  <text x="90" y="150" font-size="11" fill="#23201D" text-anchor="middle">한전서 발전부문</text>
-  <text x="90" y="166" font-size="11" fill="#23201D" text-anchor="middle">분할(5사 체제)</text>
-  <text x="232" y="150" font-size="11" fill="#23201D" text-anchor="middle">국회, 한국발전공사법</text>
-  <text x="232" y="166" font-size="11" fill="#23201D" text-anchor="middle">발의</text>
-  <text x="374" y="150" font-size="11" fill="#23201D" text-anchor="middle">기후부 중간보고</text>
-  <text x="374" y="166" font-size="11" fill="#23201D" text-anchor="middle">'1사 통합' 권고</text>
-  <text x="516" y="150" font-size="11" fill="#23201D" text-anchor="middle">사장단 면담</text>
-  <text x="516" y="166" font-size="11" fill="#23201D" text-anchor="middle">"연내 수립"으로 연기</text>
-  <text x="658" y="150" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">구조조정안 확정</text>
-  <text x="658" y="166" font-size="11" font-weight="700" fill="#1B4F8A" text-anchor="middle">+ 특별법 추진</text>
-  <text x="30" y="238" font-size="12" fill="#8A8378">점선 구간 = 아직 진행되지 않은 일정</text>
+  <text x="90" y="100" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2001</text>
+  <text x="232" y="100" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2026.3.18</text>
+  <text x="374" y="100" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2026.6.18</text>
+  <text x="516" y="100" font-size="13" font-weight="700" fill="#23201D" text-anchor="middle">2026.7.14</text>
+  <text x="658" y="100" font-size="13" font-weight="700" fill="#1B4F8A" text-anchor="middle">2026.9</text>
+  <text x="90" y="150" font-size="12.5" fill="#23201D" text-anchor="middle">한전서 발전부문</text>
+  <text x="90" y="166" font-size="12.5" fill="#23201D" text-anchor="middle">분할(5사 체제)</text>
+  <text x="232" y="150" font-size="12.5" fill="#23201D" text-anchor="middle">국회, 한국발전공사법</text>
+  <text x="232" y="166" font-size="12.5" fill="#23201D" text-anchor="middle">발의</text>
+  <text x="374" y="150" font-size="12.5" fill="#23201D" text-anchor="middle">기후부 중간보고</text>
+  <text x="374" y="166" font-size="12.5" fill="#23201D" text-anchor="middle">'1사 통합' 권고</text>
+  <text x="516" y="150" font-size="12.5" fill="#23201D" text-anchor="middle">사장단 면담</text>
+  <text x="516" y="166" font-size="12.5" fill="#23201D" text-anchor="middle">"연내 수립"으로 연기</text>
+  <text x="658" y="150" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">구조조정안 확정</text>
+  <text x="658" y="166" font-size="12.5" font-weight="700" fill="#1B4F8A" text-anchor="middle">+ 특별법 추진</text>
+  <text x="30" y="238" font-size="13" fill="#8A8378">점선 구간 = 아직 진행되지 않은 일정</text>
 </svg>
 <figcaption>당초 7월로 예고됐던 최종안 발표가 밀렸다가 9월로 잡혔다. 자료: 기후에너지환경부 중간보고회(2026-06-18), 서울경제(2026-07-14·2026-08-23), 주간한국(2026-08-06) 보도 재구성.</figcaption>
 </figure>
@@ -101,19 +101,19 @@ tags: ["발전공기업", "전력산업", "에너지전환", "전기요금"]
 
 <figure>
 <svg viewBox="0 0 720 230" role="img" aria-label="충남의 발전 5사 설비 집중도. 발전소 기수 기준 53.8퍼센트, 설비용량 기준 36.7퍼센트" style="width:100%;height:auto;background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px">
-  <text x="30" y="32" font-size="17" font-weight="700" fill="#23201D">충남이 본사 유치에 내세우는 근거 — 설비 집중도</text>
-  <text x="30" y="54" font-size="13" fill="#8A8378">발전 5사 전체 대비 충남 소재 비중(%)</text>
+  <text x="30" y="32" font-size="18" font-weight="700" fill="#23201D">충남이 본사 유치에 내세우는 근거 — 설비 집중도</text>
+  <text x="30" y="54" font-size="14" fill="#8A8378">발전 5사 전체 대비 충남 소재 비중(%)</text>
   <rect x="200" y="82" width="440" height="32" fill="#E5DECF"/>
   <rect x="200" y="82" width="237" height="32" fill="#1B4F8A"/>
   <rect x="200" y="140" width="440" height="32" fill="#E5DECF"/>
   <rect x="200" y="140" width="161" height="32" fill="#4E7FA8"/>
-  <text x="190" y="103" font-size="13" fill="#23201D" text-anchor="end">석탄화력 기수</text>
-  <text x="190" y="161" font-size="13" fill="#23201D" text-anchor="end">설비용량</text>
-  <text x="447" y="103" font-size="14" font-weight="700" fill="#1B4F8A">53.8%</text>
-  <text x="371" y="161" font-size="14" font-weight="700" fill="#4E7FA8">36.7%</text>
-  <text x="205" y="103" font-size="12" fill="#FAF6EE">28기 / 52기</text>
-  <text x="205" y="161" font-size="12" fill="#FAF6EE">19,096MW</text>
-  <text x="30" y="205" font-size="12" fill="#8A8378">충남은 2038년까지 폐쇄 예정 발전소도 21기로 가장 많다</text>
+  <text x="190" y="103" font-size="14" fill="#23201D" text-anchor="end">석탄화력 기수</text>
+  <text x="190" y="161" font-size="14" fill="#23201D" text-anchor="end">설비용량</text>
+  <text x="447" y="103" font-size="15" font-weight="700" fill="#1B4F8A">53.8%</text>
+  <text x="371" y="161" font-size="15" font-weight="700" fill="#4E7FA8">36.7%</text>
+  <text x="205" y="103" font-size="13" fill="#FAF6EE">28기 / 52기</text>
+  <text x="205" y="161" font-size="13" fill="#FAF6EE">19,096MW</text>
+  <text x="30" y="205" font-size="13" fill="#8A8378">충남은 2038년까지 폐쇄 예정 발전소도 21기로 가장 많다</text>
 </svg>
 <figcaption>설비는 충남에 몰려 있지만 본사는 진주·부산·울산 등에 흩어져 있다. 이 불일치가 유치 경쟁의 출발점이다. 자료: 주간한국(2026-08-06) 보도 재구성.</figcaption>
 </figure>

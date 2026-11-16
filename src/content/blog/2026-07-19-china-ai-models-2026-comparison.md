@@ -30,10 +30,10 @@ tags: ["중국AI", "딥시크", "큐원", "AI모델비교"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 240" width="100%" height="auto" role="img" aria-label="미국 최상위 독점 모델과 중국 최상위 오픈모델의 종합 성능 격차가 2024년 약 20점대에서 2026년 약 9점으로 좁혀졌음을 보여주는 선형 추이">
-  <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">미·중 최상위 AI 성능 격차 (종합점수 차, 작을수록 추격)</text>
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#23201D">미·중 최상위 AI 성능 격차 (종합점수 차, 작을수록 추격)</text>
   <line x1="60" y1="190" x2="700" y2="190" stroke="#8A8378" stroke-width="1"/>
   <line x1="60" y1="60" x2="60" y2="190" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="11" fill="#8A8378">
+  <g font-size="12.5" fill="#8A8378">
     <text x="60" y="208" text-anchor="middle">2024 초</text>
     <text x="253" y="208" text-anchor="middle">2024 말</text>
     <text x="446" y="208" text-anchor="middle">2025 말</text>
@@ -44,7 +44,7 @@ tags: ["중국AI", "딥시크", "큐원", "AI모델비교"]
   </g>
   <polyline points="60,72 253,110 446,150 640,180" fill="none" stroke="#C8102E" stroke-width="2.5"/>
   <circle cx="60" cy="72" r="4" fill="#C8102E"/><circle cx="253" cy="110" r="4" fill="#C8102E"/><circle cx="446" cy="150" r="4" fill="#C8102E"/><circle cx="640" cy="180" r="5" fill="#C8102E"/>
-  <text x="640" y="170" text-anchor="middle" font-size="12" font-weight="700" fill="#C8102E">약 9점</text>
+  <text x="640" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#C8102E">약 9점</text>
 </svg>
 <figcaption style="font-size:0.85rem;color:#8A8378;text-align:center;margin-top:8px">최상위 미국 독점 모델 대비 최상위 중국 오픈모델의 종합 점수 격차(개념 추이). 여러 공개 리더보드·보도 종합 기준이며 지표에 따라 편차가 있다. 출처: <a href="https://www.turingpost.com/p/chinesemodels">Turing Post</a> 등.</figcaption>
 </figure>
@@ -79,8 +79,8 @@ tags: ["중국AI", "딥시크", "큐원", "AI모델비교"]
 
 <figure style="background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;padding:16px 14px;margin:1.5rem 0">
 <svg viewBox="0 0 720 200" width="100%" height="auto" role="img" aria-label="입력 100만 토큰당 API 가격 비교. 딥시크 약 0.28달러, GPT 계열 약 10달러 수준">
-  <text x="20" y="28" font-size="15" font-weight="700" fill="#23201D">API 입력가격 비교 (100만 토큰당, 낮을수록 저렴)</text>
-  <g font-size="13" fill="#23201D">
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#23201D">API 입력가격 비교 (100만 토큰당, 낮을수록 저렴)</text>
+  <g font-size="14" fill="#23201D">
     <text x="150" y="78" text-anchor="end">딥시크 V3.2</text>
     <rect x="160" y="62" width="14" height="24" rx="3" fill="#C8102E"/>
     <text x="184" y="80" font-weight="700" fill="#C8102E">약 $0.28</text>

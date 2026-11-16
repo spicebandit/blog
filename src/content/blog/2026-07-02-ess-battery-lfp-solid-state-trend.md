@@ -14,25 +14,25 @@ ESS(에너지저장장치) 배터리를 이해하려면 먼저 **"ESS는 전기�
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 배터리 셀 원가 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh)</text>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">셀 원가 비교 — 낮을수록 유리 ($/kWh)</text>
   <!-- x축 눈금 0~200, 차트영역 x:150~690 (540px) -->
   <line x1="150" y1="70" x2="150" y2="210" stroke="#8A8378" stroke-width="1"/>
   <line x1="150" y1="210" x2="690" y2="210" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="11" fill="#8A8378" text-anchor="middle">
+  <g font-size="12.5" fill="#8A8378" text-anchor="middle">
     <text x="150" y="228">0</text><text x="285" y="228">50</text><text x="420" y="228">100</text><text x="555" y="228">150</text><text x="690" y="228">200</text>
   </g>
   <!-- LFP 80~100 -->
-  <text x="140" y="94" font-size="13" fill="#23201D" text-anchor="end" font-weight="700">LFP</text>
+  <text x="140" y="94" font-size="14" fill="#23201D" text-anchor="end" font-weight="700">LFP</text>
   <rect x="366" y="80" width="54" height="24" rx="3" fill="#C8102E"/>
-  <text x="428" y="97" font-size="12" fill="#C8102E" font-weight="700">$80~100</text>
+  <text x="428" y="97" font-size="13" fill="#C8102E" font-weight="700">$80~100</text>
   <!-- NCM 100~140 -->
-  <text x="140" y="134" font-size="13" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
+  <text x="140" y="134" font-size="14" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
   <rect x="420" y="120" width="108" height="24" rx="3" fill="#8A8378"/>
-  <text x="536" y="137" font-size="12" fill="#8A8378">$100~140</text>
+  <text x="536" y="137" font-size="13" fill="#8A8378">$100~140</text>
   <!-- 전고체 140~175 -->
-  <text x="140" y="174" font-size="13" fill="#23201D" text-anchor="end">전고체(전망)</text>
+  <text x="140" y="174" font-size="14" fill="#23201D" text-anchor="end">전고체(전망)</text>
   <rect x="528" y="160" width="94" height="24" rx="3" fill="#E4E7EC"/>
-  <text x="630" y="177" font-size="12" fill="#8A8378">$140~175</text>
+  <text x="630" y="177" font-size="13" fill="#8A8378">$140~175</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">막대는 셀 기준 원가 범위(보도·업계 전망). ESS는 kWh당 단가가 곧 사업성이라 LFP가 유리하다.</figcaption>
 </figure>
@@ -63,25 +63,25 @@ ESS(에너지저장장치) 배터리를 이해하려면 먼저 **"ESS는 전기�
 
 <figure style="margin:1.5rem 0;">
 <svg viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ESS 배터리 수명 비교 그래프" style="width:100%;height:auto;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px;">
-  <text x="24" y="34" font-size="17" font-weight="700" fill="#23201D">수명 비교 — 높을수록 유리 (충·방전 사이클)</text>
+  <text x="24" y="34" font-size="18" font-weight="700" fill="#23201D">수명 비교 — 높을수록 유리 (충·방전 사이클)</text>
   <line x1="150" y1="60" x2="150" y2="180" stroke="#8A8378" stroke-width="1"/>
   <line x1="150" y1="180" x2="690" y2="180" stroke="#8A8378" stroke-width="1"/>
-  <g font-size="11" fill="#8A8378" text-anchor="middle">
+  <g font-size="12.5" fill="#8A8378" text-anchor="middle">
     <text x="150" y="198">0</text><text x="285" y="198">1,500</text><text x="420" y="198">3,000</text><text x="555" y="198">4,500</text><text x="690" y="198">6,000</text>
   </g>
   <!-- 눈금 6000 = 540px → 0.09px/사이클 -->
   <!-- LFP 3000~5000 -->
-  <text x="140" y="84" font-size="13" fill="#23201D" text-anchor="end" font-weight="700">LFP</text>
+  <text x="140" y="84" font-size="14" fill="#23201D" text-anchor="end" font-weight="700">LFP</text>
   <rect x="150" y="70" width="450" height="24" rx="3" fill="#C8102E"/>
-  <text x="608" y="87" font-size="12" fill="#C8102E" font-weight="700">3,000~5,000회</text>
+  <text x="608" y="87" font-size="13" fill="#C8102E" font-weight="700">3,000~5,000회</text>
   <!-- NCM 1000~2000 -->
-  <text x="140" y="124" font-size="13" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
+  <text x="140" y="124" font-size="14" fill="#23201D" text-anchor="end">NCM(삼원계)</text>
   <rect x="150" y="110" width="180" height="24" rx="3" fill="#8A8378"/>
-  <text x="338" y="127" font-size="12" fill="#8A8378">1,000~2,000회</text>
+  <text x="338" y="127" font-size="13" fill="#8A8378">1,000~2,000회</text>
   <!-- 전고체 미확정 -->
-  <text x="140" y="164" font-size="13" fill="#23201D" text-anchor="end">전고체</text>
+  <text x="140" y="164" font-size="14" fill="#23201D" text-anchor="end">전고체</text>
   <rect x="150" y="150" width="120" height="24" rx="3" fill="none" stroke="#8A8378" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="280" y="167" font-size="12" fill="#8A8378">미확정(높을 것으로 기대)</text>
+  <text x="280" y="167" font-size="13" fill="#8A8378">미확정(높을 것으로 기대)</text>
 </svg>
 <figcaption style="font-size:12px;color:#8A8378;text-align:center;margin-top:4px;">매일 충·방전하는 ESS에서 수명은 사업성의 핵심. LFP가 대중 리튬이온 중 가장 길다.</figcaption>
 </figure>

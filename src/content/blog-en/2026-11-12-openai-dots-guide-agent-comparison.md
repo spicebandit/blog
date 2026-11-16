@@ -127,26 +127,26 @@ Four companies shipped the same category of product within three months, between
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 236" style="width:100%;height:auto" role="img" aria-label="Minimum monthly price for four always-on AI agents against how widely each is available. Meta Muse has a free tier but ships in only four markets, Claude Duet is free during preview but US-only, Grok Bot starts at thirty dollars with broad availability, and OpenAI Dots starts at one hundred dollars across roughly twenty countries.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">The cheap ones have the narrowest reach</text>
-<text x="0" y="38" font-size="11.5" fill="#8A8378">Minimum monthly price in USD · availability on the right</text>
-<text x="0" y="76" font-size="12" fill="#23201D">Meta Muse</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">The cheap ones have the narrowest reach</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">Minimum monthly price in USD · availability on the right</text>
+<text x="0" y="76" font-size="13" fill="#23201D">Meta Muse</text>
 <rect x="150" y="60" width="18" height="24" fill="#A8BDD2" rx="3" />
-<text x="176" y="78" font-size="12" font-weight="700" fill="#23201D">0 (free tier)</text>
-<text x="600" y="78" font-size="11" font-weight="700" fill="#8A8378">4 markets</text>
-<text x="0" y="112" font-size="12" fill="#23201D">Claude Duet</text>
+<text x="176" y="78" font-size="13" font-weight="700" fill="#23201D">0 (free tier)</text>
+<text x="600" y="78" font-size="12.5" font-weight="700" fill="#8A8378">4 markets</text>
+<text x="0" y="112" font-size="13" fill="#23201D">Claude Duet</text>
 <rect x="150" y="96" width="18" height="24" fill="#A8BDD2" rx="3" />
-<text x="176" y="114" font-size="12" font-weight="700" fill="#23201D">0 (preview, uses plan limits)</text>
-<text x="600" y="114" font-size="11" font-weight="700" fill="#8A8378">US only</text>
-<text x="0" y="148" font-size="12" font-weight="700" fill="#23201D">Grok Bot</text>
+<text x="176" y="114" font-size="13" font-weight="700" fill="#23201D">0 (preview, uses plan limits)</text>
+<text x="600" y="114" font-size="12.5" font-weight="700" fill="#8A8378">US only</text>
+<text x="0" y="148" font-size="13" font-weight="700" fill="#23201D">Grok Bot</text>
 <rect x="150" y="132" width="90" height="24" fill="#4E7FA8" rx="3" />
-<text x="162" y="150" font-size="12.5" font-weight="700" fill="#FAF6EE">30</text>
-<text x="600" y="150" font-size="11" font-weight="700" fill="#23201D">Broad</text>
-<text x="0" y="184" font-size="12" font-weight="700" fill="#23201D">OpenAI Dots</text>
+<text x="162" y="150" font-size="13.5" font-weight="700" fill="#FAF6EE">30</text>
+<text x="600" y="150" font-size="12.5" font-weight="700" fill="#23201D">Broad</text>
+<text x="0" y="184" font-size="13" font-weight="700" fill="#23201D">OpenAI Dots</text>
 <rect x="150" y="168" width="300" height="24" fill="#1B4F8A" rx="3" />
-<text x="162" y="186" font-size="12.5" font-weight="700" fill="#FAF6EE">100</text>
-<text x="600" y="186" font-size="11" font-weight="700" fill="#23201D">~20 countries</text>
-<text x="0" y="216" font-size="11" fill="#8A8378">※ Bars show the cheapest plan that includes the always-on agent. Muse's free tier carries usage caps.</text>
-<text x="0" y="232" font-size="11" fill="#8A8378">Sources: vendor pricing pages and October–November 2026 comparisons. Plan structures shift.</text>
+<text x="162" y="186" font-size="13.5" font-weight="700" fill="#FAF6EE">100</text>
+<text x="600" y="186" font-size="12.5" font-weight="700" fill="#23201D">~20 countries</text>
+<text x="0" y="216" font-size="12.5" fill="#8A8378">※ Bars show the cheapest plan that includes the always-on agent. Muse's free tier carries usage caps.</text>
+<text x="0" y="232" font-size="12.5" fill="#8A8378">Sources: vendor pricing pages and October–November 2026 comparisons. Plan structures shift.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">If you are outside the US, price and availability pull in opposite directions. The two free options are the two narrowest.</figcaption>
 </figure>

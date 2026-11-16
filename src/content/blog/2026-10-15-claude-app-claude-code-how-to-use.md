@@ -107,37 +107,37 @@ Manual 모드에서는 이 세 가지가 보입니다.
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 290" style="width:100%;height:auto" role="img" aria-label="클로드 코드 데스크톱 앱의 주요 권한 모드를 통제 수준 순서로 배열한 그림. Plan은 읽기와 탐색은 하되 소스를 수정하지 않고, Manual은 편집과 명령 실행 전에 매번 승인을 받고, Accept edits는 파일 편집과 기본 파일 명령만 자동 수락하며 그 외 터미널 명령은 묻고, Auto는 일상적 확인 없이 진행하되 셸과 네트워크 실행 전 분류기가 요청과 맞는지 검사한다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">권한 모드 — 왼쪽이 내 통제가 강하고, 오른쪽이 클로드 자율이 큽니다</text>
-<text x="0" y="38" font-size="12" fill="#8A8378">공식 권고: 복잡한 작업은 Plan부터 → 승인 후 Accept edits·Manual로 실행</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">권한 모드 — 왼쪽이 내 통제가 강하고, 오른쪽이 클로드 자율이 큽니다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">공식 권고: 복잡한 작업은 Plan부터 → 승인 후 Accept edits·Manual로 실행</text>
 <line x1="40" y1="186" x2="720" y2="186" stroke="#E5DECF" stroke-width="1" />
-<text x="40" y="208" font-size="11" fill="#8A8378">내 통제 강함</text>
-<text x="720" y="208" font-size="11" fill="#8A8378" text-anchor="end">클로드 자율 큼</text>
+<text x="40" y="208" font-size="12.5" fill="#8A8378">내 통제 강함</text>
+<text x="720" y="208" font-size="12.5" fill="#8A8378" text-anchor="end">클로드 자율 큼</text>
 <rect x="40" y="56" width="160" height="118" fill="#1B4F8A" rx="4" />
-<text x="56" y="80" font-size="13" font-weight="700" fill="#FAF6EE">Plan</text>
-<text x="56" y="102" font-size="11.5" fill="#FAF6EE">읽기·탐색은 하되</text>
-<text x="56" y="120" font-size="11.5" fill="#FAF6EE">소스는 수정 안 함</text>
-<text x="56" y="146" font-size="11" fill="#A8BDD2">범위 큰 작업 전에</text>
-<text x="56" y="163" font-size="11" fill="#A8BDD2">접근 방법부터 볼 때</text>
+<text x="56" y="80" font-size="14" font-weight="700" fill="#FAF6EE">Plan</text>
+<text x="56" y="102" font-size="13" fill="#FAF6EE">읽기·탐색은 하되</text>
+<text x="56" y="120" font-size="13" fill="#FAF6EE">소스는 수정 안 함</text>
+<text x="56" y="146" font-size="12.5" fill="#A8BDD2">범위 큰 작업 전에</text>
+<text x="56" y="163" font-size="12.5" fill="#A8BDD2">접근 방법부터 볼 때</text>
 <rect x="212" y="56" width="160" height="118" fill="#4E7FA8" rx="4" />
-<text x="228" y="80" font-size="13" font-weight="700" fill="#FAF6EE">Manual</text>
-<text x="228" y="102" font-size="11.5" fill="#FAF6EE">파일 편집·명령 실행</text>
-<text x="228" y="120" font-size="11.5" fill="#FAF6EE">전에 매번 물어봄</text>
-<text x="228" y="146" font-size="11" fill="#FAF6EE" font-weight="700">★ 초보자 시작점</text>
-<text x="228" y="163" font-size="11" fill="#E5DECF">수락 전엔 파일 그대로</text>
+<text x="228" y="80" font-size="14" font-weight="700" fill="#FAF6EE">Manual</text>
+<text x="228" y="102" font-size="13" fill="#FAF6EE">파일 편집·명령 실행</text>
+<text x="228" y="120" font-size="13" fill="#FAF6EE">전에 매번 물어봄</text>
+<text x="228" y="146" font-size="12.5" fill="#FAF6EE" font-weight="700">★ 초보자 시작점</text>
+<text x="228" y="163" font-size="12.5" fill="#E5DECF">수락 전엔 파일 그대로</text>
 <rect x="384" y="56" width="160" height="118" fill="#A8BDD2" rx="4" />
-<text x="400" y="80" font-size="13" font-weight="700" fill="#23201D">Accept edits</text>
-<text x="400" y="102" font-size="11.5" fill="#23201D">파일 편집·기본 파일명령</text>
-<text x="400" y="120" font-size="11.5" fill="#23201D">(mkdir·touch·mv)은 자동</text>
-<text x="400" y="146" font-size="11" fill="#23201D">그 외 터미널 명령은</text>
-<text x="400" y="163" font-size="11" fill="#23201D">여전히 물어봄</text>
+<text x="400" y="80" font-size="14" font-weight="700" fill="#23201D">Accept edits</text>
+<text x="400" y="102" font-size="13" fill="#23201D">파일 편집·기본 파일명령</text>
+<text x="400" y="120" font-size="13" fill="#23201D">(mkdir·touch·mv)은 자동</text>
+<text x="400" y="146" font-size="12.5" fill="#23201D">그 외 터미널 명령은</text>
+<text x="400" y="163" font-size="12.5" fill="#23201D">여전히 물어봄</text>
 <rect x="556" y="56" width="164" height="118" fill="#23201D" rx="4" />
-<text x="572" y="80" font-size="13" font-weight="700" fill="#FAF6EE">Auto</text>
-<text x="572" y="102" font-size="11.5" fill="#FAF6EE">일상적 확인 없이 진행</text>
-<text x="572" y="120" font-size="11.5" fill="#FAF6EE">셸·네트워크 실행 전엔</text>
-<text x="572" y="146" font-size="11" fill="#A8BDD2">분류기가 요청과 맞는지</text>
-<text x="572" y="163" font-size="11" fill="#A8BDD2">검사한 뒤 실행</text>
-<text x="0" y="246" font-size="12" fill="#8A8378">※ Auto는 모델 요건(Opus 4.6+·Sonnet 4.6+·Haiku 5.5·Fable)이 있고 관리자가 끌 수 있습니다.</text>
-<text x="0" y="268" font-size="12" fill="#8A8378">※ 이 밖에 Bypass permissions가 있으나 공식 문서가 샌드박스·VM 전용으로 못 박은 모드입니다.</text>
+<text x="572" y="80" font-size="14" font-weight="700" fill="#FAF6EE">Auto</text>
+<text x="572" y="102" font-size="13" fill="#FAF6EE">일상적 확인 없이 진행</text>
+<text x="572" y="120" font-size="13" fill="#FAF6EE">셸·네트워크 실행 전엔</text>
+<text x="572" y="146" font-size="12.5" fill="#A8BDD2">분류기가 요청과 맞는지</text>
+<text x="572" y="163" font-size="12.5" fill="#A8BDD2">검사한 뒤 실행</text>
+<text x="0" y="246" font-size="13" fill="#8A8378">※ Auto는 모델 요건(Opus 4.6+·Sonnet 4.6+·Haiku 5.5·Fable)이 있고 관리자가 끌 수 있습니다.</text>
+<text x="0" y="268" font-size="13" fill="#8A8378">※ 이 밖에 Bypass permissions가 있으나 공식 문서가 샌드박스·VM 전용으로 못 박은 모드입니다.</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">네 모드의 동작 설명과 "복잡한 작업은 Plan부터" 권고는 클로드 코드 공식 문서(2026-10-15 확인) 기준입니다. 그 아래 "작고 처음이면 Manual부터"는 글쓴이 의견입니다.</figcaption>
 </figure>

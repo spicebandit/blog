@@ -27,19 +27,19 @@ tags: ["COP31", "기후변화", "에너지정책", "탄소중립"]
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 210" style="width:100%;height:auto" role="img" aria-label="COP31 일정 타임라인. 본회의는 2026년 11월 9일부터 20일까지이며, 세계지도자 정상회의는 11월 11일과 12일 이틀간 본회의 기간 안에 배치됐다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">COP31 일정 — 정상회의가 본회의 기간 안에 들어간다</text>
-<text x="0" y="38" font-size="12" fill="#8A8378">가로축은 2026년 11월 8일~21일</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">COP31 일정 — 정상회의가 본회의 기간 안에 들어간다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">가로축은 2026년 11월 8일~21일</text>
 <line x1="60" y1="150" x2="720" y2="150" stroke="#E5DECF" stroke-width="1" />
-<text x="60" y="170" font-size="11" fill="#8A8378" text-anchor="middle">11/8</text>
-<text x="200" y="170" font-size="11" fill="#8A8378" text-anchor="middle">11/11</text>
-<text x="340" y="170" font-size="11" fill="#8A8378" text-anchor="middle">11/14</text>
-<text x="480" y="170" font-size="11" fill="#8A8378" text-anchor="middle">11/17</text>
-<text x="620" y="170" font-size="11" fill="#8A8378" text-anchor="middle">11/20</text>
+<text x="60" y="170" font-size="12.5" fill="#8A8378" text-anchor="middle">11/8</text>
+<text x="200" y="170" font-size="12.5" fill="#8A8378" text-anchor="middle">11/11</text>
+<text x="340" y="170" font-size="12.5" fill="#8A8378" text-anchor="middle">11/14</text>
+<text x="480" y="170" font-size="12.5" fill="#8A8378" text-anchor="middle">11/17</text>
+<text x="620" y="170" font-size="12.5" fill="#8A8378" text-anchor="middle">11/20</text>
 <rect x="107" y="60" width="560" height="30" fill="#1B4F8A" rx="3" />
-<text x="118" y="80" font-size="12.5" font-weight="700" fill="#FAF6EE">본회의 11/9 ~ 11/20</text>
+<text x="118" y="80" font-size="13.5" font-weight="700" fill="#FAF6EE">본회의 11/9 ~ 11/20</text>
 <rect x="200" y="100" width="94" height="30" fill="#23201D" rx="3" />
-<text x="208" y="120" font-size="12" font-weight="700" fill="#FAF6EE">정상회의</text>
-<text x="302" y="120" font-size="12" fill="#23201D">11/11~12 — 회의 3·4일차</text>
+<text x="208" y="120" font-size="13" font-weight="700" fill="#FAF6EE">정상회의</text>
+<text x="302" y="120" font-size="13" fill="#23201D">11/11~12 — 회의 3·4일차</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">직전 COP30은 정상회의를 본회의(2025년 11월 10~21일) 개막 전에 따로 열었다. COP31은 본회의 안에 넣었으므로, 정상회의만 보려 해도 본회의 일정에 맞춰 움직여야 한다. 출처: UNFCCC COP31 공식 페이지 · Climate Home News.</figcaption>
 </figure>
@@ -115,29 +115,29 @@ COP 개최지는 유엔 5개 지역그룹(아프리카, 아시아·태평양, �
 
 <figure style="background:#FAF6EE;border:1px solid #E5DECF;border-radius:8px;padding:16px;margin:24px 0;">
 <svg viewBox="0 0 760 310" style="width:100%;height:auto" role="img" aria-label="터키의 2035년 배출량 비교. 2018년 대비 현행 정책 전망은 7에서 25퍼센트 증가, 터키의 NDC 목표는 30퍼센트 증가, 1.5도 경로는 48퍼센트 감축이다.">
-<text x="0" y="18" font-size="15" font-weight="700" fill="#23201D">터키 2035년 배출량 — 목표조차 증가 방향이다</text>
-<text x="0" y="38" font-size="12" fill="#8A8378">2018년 배출량 대비 변화율(%) · LULUCF 제외 · 가로축 1%p = 7px 동일 축척</text>
+<text x="0" y="18" font-size="16" font-weight="700" fill="#23201D">터키 2035년 배출량 — 목표조차 증가 방향이다</text>
+<text x="0" y="38" font-size="13" fill="#8A8378">2018년 배출량 대비 변화율(%) · LULUCF 제외 · 가로축 1%p = 7px 동일 축척</text>
 <line x1="105" y1="58" x2="105" y2="226" stroke="#E5DECF" stroke-width="1" />
 <line x1="266" y1="58" x2="266" y2="226" stroke="#E5DECF" stroke-width="1" />
 <line x1="546" y1="58" x2="546" y2="226" stroke="#E5DECF" stroke-width="1" />
 <line x1="651" y1="58" x2="651" y2="226" stroke="#E5DECF" stroke-width="1" />
 <line x1="441" y1="52" x2="441" y2="232" stroke="#23201D" stroke-width="1.5" />
-<text x="660" y="84" font-size="12.5" font-weight="700" fill="#1B4F8A">NDC 목표 +30%</text>
+<text x="660" y="84" font-size="13.5" font-weight="700" fill="#1B4F8A">NDC 목표 +30%</text>
 <rect x="441" y="66" width="210" height="26" fill="#1B4F8A" rx="2" />
-<text x="433" y="84" font-size="12.5" fill="#23201D" text-anchor="end">터키 2035 NDC 목표</text>
-<text x="625" y="126" font-size="12.5" font-weight="700" fill="#4E7FA8">+7 ~ +25%</text>
+<text x="433" y="84" font-size="13.5" fill="#23201D" text-anchor="end">터키 2035 NDC 목표</text>
+<text x="625" y="126" font-size="13.5" font-weight="700" fill="#4E7FA8">+7 ~ +25%</text>
 <rect x="490" y="108" width="126" height="26" fill="#4E7FA8" rx="2" />
-<text x="433" y="126" font-size="12.5" fill="#23201D" text-anchor="end">현행 정책 전망</text>
+<text x="433" y="126" font-size="13.5" fill="#23201D" text-anchor="end">현행 정책 전망</text>
 <rect x="105" y="150" width="336" height="26" fill="#A8BDD2" rx="2" />
-<text x="117" y="168" font-size="12.5" font-weight="700" fill="#23201D">-48% (감축)</text>
-<text x="449" y="168" font-size="12.5" fill="#23201D">1.5℃ 요구 경로</text>
-<text x="0" y="204" font-size="12" fill="#8A8378">※ 같은 2035년을 두고 방향이 반대다 — 이것이 개최국을 둘러싼 쟁점의 핵심이다</text>
+<text x="117" y="168" font-size="13.5" font-weight="700" fill="#23201D">-48% (감축)</text>
+<text x="449" y="168" font-size="13.5" fill="#23201D">1.5℃ 요구 경로</text>
+<text x="0" y="204" font-size="13" fill="#8A8378">※ 같은 2035년을 두고 방향이 반대다 — 이것이 개최국을 둘러싼 쟁점의 핵심이다</text>
 <line x1="105" y1="226" x2="705" y2="226" stroke="#E5DECF" stroke-width="1" />
-<text x="105" y="246" font-size="11" fill="#8A8378" text-anchor="middle">-48%</text>
-<text x="266" y="246" font-size="11" fill="#8A8378" text-anchor="middle">-25%</text>
-<text x="441" y="246" font-size="11" fill="#23201D" text-anchor="middle">0 (2018년 수준)</text>
-<text x="546" y="246" font-size="11" fill="#8A8378" text-anchor="middle">+15%</text>
-<text x="651" y="246" font-size="11" fill="#8A8378" text-anchor="middle">+30%</text>
+<text x="105" y="246" font-size="12.5" fill="#8A8378" text-anchor="middle">-48%</text>
+<text x="266" y="246" font-size="12.5" fill="#8A8378" text-anchor="middle">-25%</text>
+<text x="441" y="246" font-size="12.5" fill="#23201D" text-anchor="middle">0 (2018년 수준)</text>
+<text x="546" y="246" font-size="12.5" fill="#8A8378" text-anchor="middle">+15%</text>
+<text x="651" y="246" font-size="12.5" fill="#8A8378" text-anchor="middle">+30%</text>
 </svg>
 <figcaption style="font-size:13px;color:#8A8378;margin-top:10px;">터키 자신의 2035년 NDC 목표(+30%)와 현행 정책 전망(+7~25%)이 모두 증가 방향인데, 1.5℃ 경로는 -48%를 요구한다. 출처: Climate Action Tracker — Türkiye(2026-10-12 확인).</figcaption>
 </figure>

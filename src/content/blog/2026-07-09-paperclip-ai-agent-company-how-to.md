@@ -103,13 +103,13 @@ open → assigned → in-progress → review → done
 
 <figure>
 <svg viewBox="0 0 640 150" role="img" aria-label="3일간 토큰 소모: CEO 57퍼센트, 나머지 에이전트 43퍼센트" style="width:100%;height:auto;background:#F6F7F9;border:1px solid #E4E7EC;border-radius:8px">
-  <text x="20" y="30" font-size="15" font-weight="700" fill="#23201D">3일간 토큰 소모 3.13억 — 범인은 CEO 한 명</text>
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#23201D">3일간 토큰 소모 3.13억 — 범인은 CEO 한 명</text>
   <rect x="20" y="55" width="340" height="34" fill="#C8102E"></rect>
   <rect x="364" y="55" width="256" height="34" fill="#E4E7EC"></rect>
-  <text x="30" y="77" font-size="13" font-weight="700" fill="#ffffff">CEO 57% · 1.77억</text>
-  <text x="374" y="77" font-size="13" font-weight="700" fill="#23201D">나머지 6명 43% · 1.36억</text>
-  <text x="20" y="118" font-size="12" fill="#8A8378">원인: CEO만 하트비트 ON(하루 288회 기상) + 최상위 모델. 나머지는 on-demand + 경량 모델.</text>
-  <text x="20" y="138" font-size="12" fill="#8A8378">즉 대부분의 토큰은 '글쓰기'가 아니라 '회사 시뮬레이션'에 쓰였다.</text>
+  <text x="30" y="77" font-size="14" font-weight="700" fill="#ffffff">CEO 57% · 1.77억</text>
+  <text x="374" y="77" font-size="14" font-weight="700" fill="#23201D">나머지 6명 43% · 1.36억</text>
+  <text x="20" y="118" font-size="13" fill="#8A8378">원인: CEO만 하트비트 ON(하루 288회 기상) + 최상위 모델. 나머지는 on-demand + 경량 모델.</text>
+  <text x="20" y="138" font-size="13" fill="#8A8378">즉 대부분의 토큰은 '글쓰기'가 아니라 '회사 시뮬레이션'에 쓰였다.</text>
 </svg>
 <figcaption>깨어 있는 시간이 곧 비용이다. 무거운 모델 × 잦은 하트비트 = 청구서 폭탄.</figcaption>
 </figure>
