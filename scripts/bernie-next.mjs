@@ -272,24 +272,40 @@ async function cmdScan() {
   console.log(`\n분류 완료: 이번 실행 ${processed}개 처리, 누적 연설영상(hasSpeech) ${total}개`);
 }
 
+// 2026년분을 먼저 올리고, 그 전 연도는 그 뒤에 채운다 (2026-11-17 지시).
+// 큐가 196편이라 오래된 순으로만 가면 최신 발언이 반년 뒤에나 올라온다.
+// 시의성 있는 것부터 내보내고 과거분은 뒤에서 메우는 쪽이 낫다.
+const PRIORITY_YEAR = '2026';
+
 function pickNextFromCache() {
   const list = getVideoList();
   const cache = loadClassified();
   const done = getDoneIds();
   const skip = new Set(loadSkipped().map((s) => s.id));
-  let scanned = 0,
-    unscanned = 0;
+  let unscanned = 0;
+
+  const eligible = [];
   for (const v of list) {
     const e = cache[v.id];
     if (!e) {
       unscanned++;
       continue;
     }
-    scanned++;
     if (!e.hasSpeech || done.has(v.id) || skip.has(v.id)) continue;
-    return { candidate: e, unscanned };
+    eligible.push(e);
   }
-  return { candidate: null, unscanned };
+
+  // 우선연도를 앞으로, 그 안에서는 오래된 순. 날짜가 없는 것은 맨 뒤로 보낸다.
+  eligible.sort((a, b) => {
+    const ay = (a.uploadDate || '').slice(0, 4);
+    const by = (b.uploadDate || '').slice(0, 4);
+    const ap = ay === PRIORITY_YEAR ? 0 : 1;
+    const bp = by === PRIORITY_YEAR ? 0 : 1;
+    if (ap !== bp) return ap - bp;
+    return (a.uploadDate || '9999').localeCompare(b.uploadDate || '9999');
+  });
+
+  return { candidate: eligible[0] ?? null, unscanned, eligible };
 }
 
 function cmdNext() {
@@ -331,7 +347,19 @@ function cmdStatus() {
   console.log(`발행 완료      : ${done.size}`);
   console.log(`수동 스킵      : ${skip.size}`);
   console.log(`남은 큐        : ${remaining.length}`);
-  if (remaining[0]) console.log(`다음 후보      : ${remaining[0].id} (${cache[remaining[0].id].uploadDate}) ${cache[remaining[0].id].title.slice(0, 40)}`);
+
+  // 연도별로 몇 편 남았는지 — 우선연도 정책이 실제로 어떻게 소진되는지 보이게
+  const byYear = {};
+  for (const v of remaining) {
+    const y = (cache[v.id].uploadDate || '????').slice(0, 4);
+    byYear[y] = (byYear[y] ?? 0) + 1;
+  }
+  const years = Object.keys(byYear).sort().reverse();
+  console.log(`연도별 잔여    : ${years.map((y) => `${y} ${byYear[y]}편`).join(' · ')}`);
+  console.log(`우선 발행      : ${PRIORITY_YEAR}년분 ${byYear[PRIORITY_YEAR] ?? 0}편 먼저, 그 뒤 과거분`);
+
+  const { candidate } = pickNextFromCache();
+  if (candidate) console.log(`다음 후보      : ${candidate.id} (${candidate.uploadDate}) ${candidate.title.slice(0, 40)}`);
 }
 
 // ---- main ----
