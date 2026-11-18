@@ -1,7 +1,8 @@
 ---
-title: "5 Things to Actually Ask Claude Code For (Excel, PDFs, Folders)"
-description: "What can you actually ask Claude Code to do? Five non-coding jobs — merging CSVs, sorting a downloads folder, pulling fields out of PDFs, collecting public data, and building a one-page report — with the exact prompts and the places they broke."
+title: "5 Claude Code Examples in the Official Claude App (Excel, PDFs, Folders)"
+description: "Five Claude Code examples run from the official Claude desktop app — no terminal. Merging CSVs, sorting a downloads folder, pulling fields out of PDFs, collecting public data, and building a one-page report, with the exact prompts and the places they broke."
 pubDate: 2026-11-18T05:23:56+09:00
+updatedDate: 2026-11-18T09:52:18+09:00
 category: ax
 tags: ["Claude Code", "Claude desktop app", "automation", "AI at work"]
 lang: en
