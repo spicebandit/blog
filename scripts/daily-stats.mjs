@@ -187,6 +187,69 @@ async function fetchReport(token, propertyId) {
 }
 
 /**
+ * 봇 의심 세션 분리 (어제) — 참여 지표 기반.
+ *
+ * 왜 필요한가(2026-11-23): 실장님이 "네이버는 어제 클릭 5인데 왜 조회수 28이냐"고 물으셨다.
+ * 세 숫자는 각각 다른 것을 재므로(노출≠클릭≠전채널 조회수) 모순은 아니지만, 안을 열어 보니
+ * 11/22의 29세션 중 **싱가포르 8 + 도시미확인 5가 평균체류 0초·이탈 100%**였다. 싱가포르는
+ * AWS ap-southeast-1 지역이다. GA4 기본 봇 필터는 이런 데이터센터 트래픽을 못 걸러낸다.
+ * 그동안 브리프 머리에 찍힌 조회수는 봇을 포함한 숫자였고, 실장님은 그걸 독자 수로 읽으셨다.
+ *
+ * 기존 '국가 3분해'(해외 전체 = 봇)로는 부족하다. 그 가정은 영문판 실제 독자까지 봇으로 센다.
+ * 그래서 국적이 아니라 **행동**으로 가른다.
+ *
+ * 판정: (도시 × 소스) 조합이 평균체류 1초 미만 + 이탈률 100%면 봇으로 본다.
+ *   사람도 즉시 이탈할 수 있으므로 '의심'이라고만 쓴다. 함께 내는 GA4 표준 지표
+ *   engagedSessions(10초 이상 체류 또는 2페이지 이상 또는 전환)가 '사람 하한선'이고,
+ *   봇제외 세션이 '사람 상한선'이다. 실제 독자는 그 사이에 있다.
+ *
+ * batchRunReports는 요청 5개가 상한이고 이미 5개를 다 쓰고 있어 별도 호출로 둔다.
+ * 실패해도 리포트 전체를 막지 않는다(null 반환).
+ */
+async function fetchBotSplit(token, propertyId) {
+  try {
+    const res = await fetchRetry(
+      `https://analyticsdata.googleapis.com/v1beta/properties/${propertyId}:runReport`,
+      {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }],
+          dimensions: [{ name: 'city' }, { name: 'sessionSource' }],
+          metrics: [
+            { name: 'sessions' },
+            { name: 'averageSessionDuration' },
+            { name: 'bounceRate' },
+            { name: 'engagedSessions' },
+          ],
+          orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+          limit: 200,
+        }),
+      },
+    );
+    const data = await res.json();
+    if (!res.ok) return null;
+    let bot = 0;
+    let engaged = 0;
+    const why = [];
+    for (const row of data.rows ?? []) {
+      const n = Number(row.metricValues?.[0]?.value ?? 0);
+      const dur = Number(row.metricValues?.[1]?.value ?? 0);
+      const bounce = Number(row.metricValues?.[2]?.value ?? 0);
+      engaged += Number(row.metricValues?.[3]?.value ?? 0);
+      if (n > 0 && dur < 1 && bounce >= 0.999) {
+        bot += n;
+        const city = row.dimensionValues?.[0]?.value || '(도시미확인)';
+        why.push(`${city} ${n}`);
+      }
+    }
+    return { bot, engaged, why };
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Search Console 검색 키워드 TOP (최근 7일).
  * GSC는 2~3일 지연이 있어 '어제'만 보면 비기 쉬우므로 7일 창으로 조회한다.
  * 실패(권한/전파 지연 등)해도 GA 리포트를 막지 않도록 throw하지 않고 []를 돌려준다.
@@ -359,7 +422,7 @@ function mdLabel(ymd) {
   return `${Number(ymd.slice(4, 6))}/${Number(ymd.slice(6, 8))}`;
 }
 
-function formatMessage(totals, topPages, dailySeries, keywords, countries, engines) {
+function formatMessage(totals, topPages, dailySeries, keywords, countries, engines, botSplit) {
   // 어제 날짜 (KST)
   const y = new Date(Date.now() - 24 * 60 * 60 * 1000);
   const dateStr = y.toLocaleDateString('ko-KR', {
@@ -377,13 +440,27 @@ function formatMessage(totals, topPages, dailySeries, keywords, countries, engin
     `<i>(괄호는 그제 대비 증감)</i>`,
   ];
 
-  // 방문자 3분해 — 위 '방문자'는 봇 포함 원본 합계다. 그 숫자만 보여주면
-  // 따로 돌린 '외부 방문자' 추정치와 어긋나 보이므로 둘을 한자리에서 보여준다.
+  // ★ 사람 추정을 머리 숫자 바로 아래 둔다 (2026-11-23).
+  // 위 조회수·방문자는 봇 포함 원본이다. 그 숫자만 보이면 독자 수로 읽히고,
+  // 실제로 그렇게 읽혀서 "네이버 클릭 5인데 왜 28이냐"는 지적을 받았다.
+  // 봇제외(상한)와 참여세션(하한)을 함께 줘서 범위로 읽히게 한다.
+  if (botSplit && t.sessions > 0) {
+    const human = Math.max(0, t.sessions - botSplit.bot);
+    lines.push(
+      `   └ 🧹 <b>사람 추정 ${Math.min(botSplit.engaged, human)}~${Math.max(botSplit.engaged, human)}세션</b> (봇 의심 ${botSplit.bot} 제외)`,
+      `<i>(상한=봇의심 제외 / 하한=참여세션. 봇의심=체류 0초+이탈 100%, 참여=10초↑ 또는 2페이지↑)</i>`,
+    );
+    if (botSplit.why.length) {
+      lines.push(`<i>   봇의심 출처: ${botSplit.why.slice(0, 5).join(' · ')}</i>`);
+    }
+  }
+
+  // 방문자 3분해(국적 기반) — 보조 지표로 남긴다. '해외 전체 = 봇' 가정이라
+  // 영문판 실제 독자까지 봇으로 세는 한계가 있어, 위 행동 기반 추정을 우선한다.
   const sp = countries?.split;
   if (sp && t.users > 0) {
     lines.push(
-      `   └ 외부추정 <b>${sp.krNew}</b> · 본인추정 ${sp.krRet} · 봇추정 ${sp.overseas}`,
-      `<i>(외부추정=한국 신규, 본인추정=한국 재방문, 봇추정=해외 전체)</i>`,
+      `   └ 국적기준 참고: 외부추정 ${sp.krNew} · 본인추정 ${sp.krRet} · 해외 ${sp.overseas}`,
     );
   }
 
@@ -471,7 +548,8 @@ async function main() {
     const keywords = await fetchSearchKeywords(token);
     const countries = parseCountries(data.reports?.[3]);
     const engines = parseEngines(data.reports?.[4]);
-    const message = formatMessage(totals, topPages, dailySeries, keywords, countries, engines);
+    const botSplit = await fetchBotSplit(token, propertyId);
+    const message = formatMessage(totals, topPages, dailySeries, keywords, countries, engines, botSplit);
 
     if (DRY) {
       console.log('--- DRY RUN (전송 안 함) ---');
