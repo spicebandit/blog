@@ -53,6 +53,13 @@ on run argv
   set siteParam to "https://searchadvisor.naver.com/console/site/request/crawl?site=https%3A%2F%2Fwww.baseload.co.kr"
   set readRows to "(function(){return [].slice.call(document.querySelectorAll('table tbody tr')).map(function(r){return (r.textContent||'')}).join(' ');})();"
 
+  -- ⓿ 앞선 실패가 남긴 'NAVER 로그인' 잔여 창을 먼저 치운다 (2026-11-25 추가).
+  --    딥링크가 로그인으로 튕기면 창이 하나씩 쌓이는데, 재시도를 몇 번 하면 10개가 된다.
+  --    그 상태가 다음 시도의 렌더링을 방해하고, 사람이 보기에도 사파리가 엉망이 된다.
+  --    (naver-expose-report.applescript가 같은 이유로 이미 이 정리를 하고 있었다.)
+  --    사람이 직접 연 콘솔 탭(요약·사이트 관리 등)은 건드리지 않는다 — 그게 성공 경로다.
+  my closeStaleLoginWindows()
+
   with timeout of 180 seconds
     -- ① 사람이 이미 열어둔 콘솔 탭이 있으면 그걸 쓴다. 딥링크로 새 창을 띄우면
     --    콘솔 라우트가 렌더되지 않는 상태가 있어서(2026-10-07), 열린 탭이 가장 확실하다.
@@ -193,3 +200,21 @@ on readAllPages(readRows)
     return combined
   end tell
 end readAllPages
+
+-- 로그인 화면으로 튕긴 잔여 창만 닫는다. 제목으로 가리므로 사람이 연 콘솔 탭은 안전하다.
+-- 주의: 사파리는 창 목록을 캐시된 상태로 돌려줄 때가 있어 close가 성공을 반환하고도
+-- 목록이 그대로 보인다. 그래서 역순 1회 순회로만 시도하고 결과를 믿지 않는다(재시도 금지).
+on closeStaleLoginWindows()
+  try
+    with timeout of 20 seconds
+      tell application "Safari"
+        repeat with i from (count of windows) to 1 by -1
+          try
+            set wn to name of window i
+            if wn is "NAVER 로그인" or wn is "로그인 - 네이버 서치어드바이저" then close window i
+          end try
+        end repeat
+      end tell
+    end timeout
+  end try
+end closeStaleLoginWindows
