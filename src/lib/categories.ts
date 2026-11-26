@@ -23,6 +23,21 @@ export const NAV_CATEGORY_SLUGS = CATEGORY_SLUGS.filter(
   (slug) => slug !== 'life',
 ) as readonly CategorySlug[];
 
+/**
+ * 검색엔진 색인에서 제외할 카테고리 (사이트에는 그대로 노출되지만 sitemap 제외 + noindex).
+ *
+ * 2026-11-26: bernie(숏츠 자막 번역 아카이브)를 제외했다. 네이버 사이트 진단에서
+ * '소프트 404' 20건이 전부 /blog/bernie-* 였다 — 썸네일 1장 + 자막 번역 1,500자대의
+ * 동일 구조라 네이버가 내용 없는 페이지로 분류해 색인을 거부한다. 색인은 못 얻고
+ * '얇은 페이지 양산' 신호만 남으므로 아카이브로만 두고 검색엔진에 제출하지 않는다.
+ */
+export const NOINDEX_CATEGORY_SLUGS: readonly CategorySlug[] = ['bernie'];
+
+/** 해당 카테고리 글/목록을 검색엔진에서 빼야 하는가 */
+export function isNoindexCategory(slug: string): boolean {
+  return (NOINDEX_CATEGORY_SLUGS as readonly string[]).includes(slug);
+}
+
 export const CATEGORY_NAMES: Record<CategorySlug, string> = {
   energy: '에너지',
   economy: '경제·경영',

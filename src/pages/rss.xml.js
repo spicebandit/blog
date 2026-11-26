@@ -1,8 +1,10 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { isNoindexCategory } from '../lib/categories';
 
 export async function GET(context) {
-  const posts = (await getCollection('blog', ({ data }) => !data.draft && !data.noindex))
+  // 색인 제외 카테고리(bernie)는 피드로도 내보내지 않는다 — 검색엔진이 RSS로 URL을 줍는다
+  const posts = (await getCollection('blog', ({ data }) => !data.draft && !data.noindex && !isNoindexCategory(data.category)))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   return rss({
     title: 'BASELOAD',

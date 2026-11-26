@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { NAV_CATEGORY_SLUGS } from '../lib/categories';
+import { NAV_CATEGORY_SLUGS, isNoindexCategory } from '../lib/categories';
 
 function toDate(d: Date): string {
   return d.toISOString().split('T')[0];
@@ -30,7 +30,7 @@ export const GET: APIRoute = async ({ site }) => {
   const buildDate = toDate(new Date());
 
   const [koPosts, enPosts] = await Promise.all([
-    getCollection('blog', ({ data }) => !data.draft && !data.noindex),
+    getCollection('blog', ({ data }) => !data.draft && !data.noindex && !isNoindexCategory(data.category)),
     getCollection('blog-en', ({ data }) => !data.draft && !data.noindex),
   ]);
 
@@ -54,6 +54,7 @@ export const GET: APIRoute = async ({ site }) => {
   // Category listing pages — GNB에서 내린 카테고리는 사이트맵에도 넣지 않는다
   // (글 수가 적은 섹션을 주요 분류로 제출하지 않기 위함. 글 자체는 그대로 색인된다.)
   for (const cat of NAV_CATEGORY_SLUGS) {
+    if (isNoindexCategory(cat)) continue; // 색인 제외 카테고리는 목록 페이지도 제출하지 않는다
     entries.push(entry(`${base}/category/${cat}/`, buildDate, 'daily', '0.6'));
   }
 

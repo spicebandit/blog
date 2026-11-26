@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Comments from '../../components/Comments.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Sidebar from '../../components/Sidebar.astro';
-import { categoryName } from '../../lib/categories';
+import { categoryName, isNoindexCategory } from '../../lib/categories';
 import { formatDateKR } from '../../lib/format';
 
 export async function getStaticPaths() {
@@ -61,6 +61,9 @@ const plain = post.body
       .replace(/[#>*`_~\-]/g, '')
   : '';
 const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500));
+
+// 검색엔진 비노출 판정: 초안 프리뷰 + 글 단위 noindex + 색인 제외 카테고리(bernie)
+const hideFromSearch = isPreview || post.data.noindex || isNoindexCategory(post.data.category);
 ---
 <Base
   title={post.data.title}
@@ -70,7 +73,7 @@ const readingMin = Math.max(1, Math.round(plain.replace(/\s/g, '').length / 500)
   updatedDate={post.data.updatedDate}
   wide={true}
   hrefLangAlts={hrefLangAlts}
-  noindex={isPreview || post.data.noindex}
+  noindex={hideFromSearch}
   ogImage={ogImage}
   breadcrumbs={breadcrumbs}
   author={post.data.author}

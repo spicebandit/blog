@@ -5,7 +5,7 @@ import Base from '../../../layouts/Base.astro';
 import PostCard from '../../../components/PostCard.astro';
 import HomeSidebar from '../../../components/HomeSidebar.astro';
 import AdSlot from '../../../components/AdSlot.astro';
-import { CATEGORY_SLUGS, categoryName, categoryDescription, type CategorySlug } from '../../../lib/categories';
+import { CATEGORY_SLUGS, categoryName, categoryDescription, isNoindexCategory, type CategorySlug } from '../../../lib/categories';
 import { firstBodyImage } from '../../../lib/format';
 import popularData from '../../../data/popular-posts.json';
 
@@ -74,7 +74,7 @@ const breadcrumbs = [
   { name, url: `/category/${category}/` },
 ];
 ---
-<Base title={pageTitle} description={`${name} — ${desc}`} wide={true} breadcrumbs={breadcrumbs}>
+<Base title={pageTitle} description={`${name} — ${desc}`} wide={true} breadcrumbs={breadcrumbs} noindex={isNoindexCategory(category)}>
   <!-- 신문 섹션면 헤더: 섹션명 + 한 줄 소개 + 이중괘선 -->
   <header class="section-head">
     <div class="section-head-row">
